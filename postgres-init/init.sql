@@ -1,4 +1,4 @@
-CREATE ROLE ssot_readonly nologin;
+CREATE ROLE ssot_readonly NOLOGIN;
 GRANT CONNECT ON DATABASE ssot TO ssot_readonly;
 GRANT USAGE ON SCHEMA public TO ssot_readonly;
 GRANT SELECT ON ALL TABLES IN SCHEMA public TO ssot_readonly;
