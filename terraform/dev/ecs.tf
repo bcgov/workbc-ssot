@@ -148,7 +148,8 @@ resource "aws_ecs_task_definition" "app" {
 }
 
 resource "aws_ecs_service" "main" {
-  count                             = local.create_ecs_service
+#  count                             = local.create_ecs_service
+  count                             = 1
   name                              = "workbc-ssot-service"
   cluster                           = aws_ecs_cluster.main.id
   task_definition                   = aws_ecs_task_definition.app[count.index].arn
