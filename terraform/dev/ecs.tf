@@ -88,62 +88,34 @@ resource "aws_ecs_task_definition" "app" {
 #		]
 
 
+	},
+	{
+		essential   = false
+		name        = "swagger"
+		image       = "${var.app_repo}/swagger:1.0"
+		networkMode = "awsvpc"
+
+		portMappings = [
+			{
+				hostPort = 8080
+				protocol = "tcp"
+				containerPort = 8080
+			}
+		]
+		environment = [
+			{
+				name = "API_URL",
+				value = "http://localhost:3000/"
+			}
+		]
+
+		dependsOn = [
+			{
+				containerName = "postgrest"
+				condition = "START"
+			}
+		]
 	}
-#	},
-#	{
-#		essential   = false
-#		name        = "drush"
-#		image       = var.app_image
-#		networkMode = "awsvpc"
-#
-#		entryPoint = ["sh", "-c"]
-#		command = ["drush cr; drush updb -y; drush cr; drush cim -y;"]
-#		environment = [
-#			{
-#				name = "POSTGRES_PORT",
-#				value = "5432"
-#			},
-#			{
-#				name = "POSTGRES_DB",
-#				value = "drupal_cc"
-#			},
-#			{
-#				name = "OPENSHIFT_BUILD_NAME",
-#				value = "aws"
-#			},
-#			{
-#				name = "POSTGRES_HOST",
-#				value = "${aws_rds_cluster_instance.postgres.endpoint}"
-#			}
-#		]
-#		secrets = [
-#			{
-#				name = "POSTGRES_USER",
-#				valueFrom = "${data.aws_secretsmanager_secret_version.creds.arn}:username::"
-#			},
-#			{
-#				name = "POSTGRES_PASSWORD",
-#				valueFrom = "${data.aws_secretsmanager_secret_version.creds.arn}:password::"
-#			}
-#		]
-#		mountPoints = [
-#			{
-#				containerPath = "/contents",
-#				sourceVolume = "contents"
-#			},
-#			{
-#				containerPath = "/app",
-#				sourceVolume = "app"
-#			}
-#		]
-#		volumesFrom = []
-#		dependsOn = [
-#			{
-#				containerName = "init"
-#				condition = "COMPLETE"
-#			}
-#		]
-#	}
   ])
 }
 
