@@ -14,7 +14,3 @@ locals {
   )
   conn_str = "postgres://${local.db_creds.adm_username}:${local.db_creds.adm_password}@${data.aws_rds_cluster_instance.postgres.endpoint}:5432/ssot"
 }
-  
-data "aws_rds_cluster_instance" "postgres" {
-  cluster_identifier = data.aws_rds_cluster.postgres.id
-}
