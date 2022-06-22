@@ -37,7 +37,7 @@ resource "aws_ecs_task_definition" "app" {
 	{
 		essential   = true
 		name        = "postgrest"
-		image       = ${var.app_repo}/postgrest:1.0
+		image       = "${var.app_repo}/postgrest:1.0"
 		networkMode = "awsvpc"
 		
 		logConfiguration = {
