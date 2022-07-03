@@ -19,14 +19,4 @@ This is the WorkBC Single Source of Truth (SSoT) API service.
 - Restore: `docker-compose exec -T db psql --username ssot ssot < ssot.sql`
 
 ## Migration
-The folder `migration` contains a simple migration system from Excel / CSV files to a PostgreSQL database. The idea is to read a spreadsheet file into a local SQLite database, then apply a number of transformations to the tables, then load the database into a PostgreSQL database. Here's how it works:
-
-- For a spreadsheet file `Example_WorkBC_Sheet.xlsx`, create a local file `Example_WorkBC_Sheet.sql` that contains SQL transformations on the data that will be imported from the sheet.
-- Run `migrate.sh Example_WorkBC_Sheet.xlsx` to import the sheet and apply the SQL transformations - the output is `Example_WorkBC_Sheet.db` which is a SQLite database file.
-- When you are satisfied with the data inside the SQLite database, run `migrate.sh Example_WorkBC_Sheet.xlsx pgsql://ssot:ssot@localhost/ssot` to import the data into a PostgreSQL database, where the same tables will be recreated.
-
-The dependencies for this migration system are:
-
-- SQLite (https://www.sqlite.org/)
-- dsq for data conversion (https://github.com/multiprocessio/dsq)
-- pgloader for data loading (https://pgloader.io/)
+Please refer to [migration/README.md](migration/README.md).
