@@ -10,7 +10,7 @@ The dependencies for this migration system are:
 
 The steps for this migration are:
 
-- Convert the Excel sheet to CSV. Since multiple sheets can exist in an Excel file, we define an output template `Excel_File-%s.csv` that `ssconvert` uses to generate each CSV seperately with the sheet name appended to the base filename.
+- Convert the Excel sheet to CSV. Since multiple sheets can exist in an Excel file, we define an output template `Data_File-%s.csv` that `ssconvert` uses to generate each CSV seperately with the sheet name appended to the base filename.
 ```
 ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet /path/to/Data_File.xlsx "Data_File-%s.csv"
 ```
