@@ -1,5 +1,5 @@
 load csv
-    from 'WorkBC_2021_Wage_Data-Sheet1.csv'
+    from 'data/WorkBC_2021_Wage_Data-Sheet1.csv'
     (
         noc,
         occupation_title,
@@ -19,13 +19,13 @@ load csv
     before load do
     $$ drop table if exists wages_2021; $$,
     $$ create table if not exists wages_2021 (
-          noc text primary key,
-          occupation_title text,
-          esdc_wage_rate_low_2021 text,
-          esdc_wage_rate_median_2021 text,
-          esdc_wage_rate_high_2021 text,
-          calculated_median_annual_salary_2021 text,
-          source_information text
+        noc text primary key,
+        occupation_title text,
+        esdc_wage_rate_low_2021 text,
+        esdc_wage_rate_median_2021 text,
+        esdc_wage_rate_high_2021 text,
+        calculated_median_annual_salary_2021 text,
+        source_information text
     );
     $$
 
