@@ -1,5 +1,5 @@
 {
-    "[sql]": {
+    "[load]": {
         "files.trimTrailingWhitespace": false
     }
 }
