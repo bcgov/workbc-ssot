@@ -5,10 +5,18 @@ This folder contains a simple migration system from Excel / CSV files to a Postg
 
 The dependencies for this migration system are:
 
+- Linux or compatible system with `find` and `unzip` commands.
 - [`ssconvert`](https://help.gnome.org/users/gnumeric/stable/gnumeric.html#sect-files-ssconvert) for conversion from Excel to CSV
 - [`pgloader`](https://pgloader.io/) for data loading into PostgreSQL
 
 The steps for this migration are:
+
+- Copy the original data files to a local `data/` folder .
+```
+mkdir data
+find /path/to/WorkBC/src/SSIS -type f -ipath '*Delivered*' -not -iname '*.ivt' -not -iname '*.txt' -exec cp {} data \;
+for f in data/*.zip; do unzip -o "$f" -d data; done
+```
 
 - Convert the Excel sheet to CSV. Since multiple sheets can exist in an Excel file, we define an output template `Data_File-%s.csv` that `ssconvert` uses to generate each CSV seperately with the sheet name appended to the base filename.
 ```
