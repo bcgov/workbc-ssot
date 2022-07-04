@@ -22,9 +22,13 @@ for f in data/*.zip; do unzip -o "$f" -d data; done
 ```
 ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet data/Data_File.xlsx "data/Data_File-%s.csv"
 ```
-**WARNING!** Make sure that your CSV headers do not contain newlines in order for the data transformation to succeed.
 
-- Write a data loading script to transform the CSV into PostgreSQL data. Follow the [`pgloader` documentation](https://pgloader.readthedocs.io/en/latest/tutorial/tutorial.html#loading-csv-data-with-pgloader) and refer to examples in this present folder. Name the script `Data_File.load` to correspond to `Data_File.xlsx`.
+- Make sure that your CSV headers do not contain newlines in order for the data transformation to succeed.
+```
+php csv_header.php < "data/Data_File-Sheet_Name.csv"  > "data/Data_file-Sheet_Name-Fixed.csv"
+```
+
+- Write a data loading script to transform the CSV file into PostgreSQL data. Follow the [`pgloader` documentation](https://pgloader.readthedocs.io/en/latest/tutorial/tutorial.html#loading-csv-data-with-pgloader) and refer to examples in this present folder. Name the script `Data_File.load` to correspond to `Data_File.xlsx`.
 
 - Run the transformation and examine the output to ensure there are no errors.
 ```
