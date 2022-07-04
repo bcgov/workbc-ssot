@@ -1,0 +1,39 @@
+load csv
+    from 'data/UPDATED FINAL Skills Data for Career Profiles (updated April16 19)-Sheet1.csv'
+    (
+        noc,
+        skills_competencies,
+        importance,
+        importance_description,
+        proficiency,
+        proficiency_description
+    )
+    into postgresql://workbc:workbc@localhost/ssot?skills_latest
+    with
+        skip header = 1,
+        fields optionally enclosed by '"',
+        fields terminated by ',',
+        drop indexes
+
+    before load do
+    $$ drop table if exists skills_latest; $$,
+    $$ create table if not exists skills_latest (
+        noc text,
+        skills_competencies text,
+        importance text,
+        importance_description text,
+        proficiency text,
+        proficiency_description text
+    );
+    $$
+
+    after load do
+    $$ create index noc_idx on skills_latest (noc); $$,
+    $$ comment on table skills_latest is 'UPDATED FINAL Skills Data for Career Profiles (updated April16 19)'; $$,
+    $$ comment on column skills_latest.noc is 'NOC'; $$,
+    $$ comment on column skills_latest.skills_competencies is 'Skills Competencies'; $$,
+    $$ comment on column skills_latest.importance is 'Importance'; $$,
+    $$ comment on column skills_latest.importance_description is 'Importance Description'; $$,
+    $$ comment on column skills_latest.proficiency is 'Proficiency'; $$,
+    $$ comment on column skills_latest.proficiency_description is 'Proficiency Description'; $$
+;
