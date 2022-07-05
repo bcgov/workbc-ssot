@@ -14,7 +14,7 @@ for f in migration/data/*.zip; do unzip -o "$f" -d migration/data; done
 docker-compose exec migrator bash
 ```
 
-- Convert the Excel sheet to CSV. Since multiple sheets can exist in an Excel file, we define an output template `Data_File-%s.csv` that `ssconvert` uses to generate each CSV seperately with the sheet name appended to the base filename.
+- Convert the Excel sheet to CSV. Since multiple sheets can exist in an Excel file, we define an output template `Data_File-%s.csv` that `ssconvert` uses to generate each CSV separately with the sheet name appended to the base filename.
 ```
 ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet data/Data_File.xlsx "data/Data_File-%s.csv"
 ```
