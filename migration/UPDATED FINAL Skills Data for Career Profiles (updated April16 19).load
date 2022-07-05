@@ -1,0 +1,41 @@
+load csv
+    from 'data/UPDATED FINAL Skills Data for Career Profiles (updated April16 19)-Sheet1.csv'
+    (
+        noc,
+        skills_competencies,
+        importance,
+        importance_description,
+        proficiency,
+        proficiency_description
+    )
+    into postgresql:///
+    target table skills
+    with
+        skip header = 1,
+        fields optionally enclosed by '"',
+        fields terminated by ',',
+        drop indexes
+
+    before load do
+    $$ drop table if exists skills; $$,
+    $$ create table if not exists skills
+    (
+        noc text,
+        skills_competencies text,
+        importance text,
+        importance_description text,
+        proficiency text,
+        proficiency_description text
+    );
+    $$
+
+    after load do
+    $$ create index noc_idx on skills (noc); $$,
+    $$ comment on table skills is 'UPDATED FINAL Skills Data for Career Profiles (updated April16 19)'; $$,
+    $$ comment on column skills.noc is 'NOC'; $$,
+    $$ comment on column skills.skills_competencies is 'Skills Competencies'; $$,
+    $$ comment on column skills.importance is 'Importance'; $$,
+    $$ comment on column skills.importance_description is 'Importance Description'; $$,
+    $$ comment on column skills.proficiency is 'Proficiency'; $$,
+    $$ comment on column skills.proficiency_description is 'Proficiency Description'; $$
+;

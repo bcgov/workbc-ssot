@@ -18,3 +18,5 @@ This is the WorkBC Single Source of Truth (SSoT) API service.
 - Backup: `docker-compose exec -T db pg_dump --username ssot ssot > ssot.sql`
 - Restore: `docker-compose exec -T db psql --username ssot ssot < ssot.sql`
 
+## Migration
+Please refer to [migration/README.md](migration#readme).

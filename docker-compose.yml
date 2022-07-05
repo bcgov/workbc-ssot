@@ -33,3 +33,17 @@ services:
       API_URL: http://localhost:3000/
     depends_on:
       - ssot
+  migrator:
+    build:
+      context: ./migration
+    stdin_open: true
+    tty: true
+    depends_on:
+      - db
+    volumes:
+      - ./migration:/app
+    environment:
+      PGUSER: ssot
+      PGPASSWORD: ssot
+      PGDATABASE: ssot
+      PGHOST: db

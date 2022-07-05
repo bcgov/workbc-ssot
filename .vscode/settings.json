@@ -1,0 +1,5 @@
+{
+    "[load]": {
+        "files.trimTrailingWhitespace": false
+    }
+}
