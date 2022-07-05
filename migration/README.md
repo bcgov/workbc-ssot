@@ -26,7 +26,7 @@ php csv_header.php < "data/Data_File-Sheet_Name.csv"  > "data/Data_file-Sheet_Na
 
 - Write a data loading script to transform the CSV file into PostgreSQL data. Follow the [`pgloader` documentation](https://pgloader.readthedocs.io/en/latest/tutorial/tutorial.html#loading-csv-data-with-pgloader) and refer to examples in this present folder. Name the script `Data_File.load` to correspond to the source `Data_File.xlsx`.
 
-- Run the transformation and examine the output to ensure there are no errors.
+- Run the transformation and examine the output to ensure there are no errors. Note that the script expects the environment variables `PGUSER`, `PGPASSWORD`, `PGDATABASE`, and `PGHOST` to be set for the PostgreSQL database.
 ```
 pgloader Data_File.load
 ```
