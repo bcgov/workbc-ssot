@@ -1,5 +1,5 @@
 load csv
-    from 'data/WorkBC_2021_Wage_Data-Sheet1.csv'
+    from 'data/WorkBC_2021_Wage_Data-Sheet1-Fixed.csv'
     (
         noc,
         occupation_title,
@@ -9,7 +9,8 @@ load csv
         calculated_median_annual_salary_2021,
         source_information
     )
-    into postgresql://workbc:workbc@localhost/ssot?wages_2021
+    into postgresql:///
+    target table wages
     with
         skip header = 1,
         fields optionally enclosed by '"',
@@ -17,8 +18,9 @@ load csv
         drop indexes
 
     before load do
-    $$ drop table if exists wages_2021; $$,
-    $$ create table if not exists wages_2021 (
+    $$ drop table if exists wages; $$,
+    $$ create table if not exists wages
+    (
         noc text primary key,
         occupation_title text,
         esdc_wage_rate_low_2021 text,
@@ -30,12 +32,12 @@ load csv
     $$
 
     after load do
-    $$ comment on table wages_2021 is 'WorkBC_2021_Wage_Data'; $$,
-    $$ comment on column wages_2021.noc is 'NOC'; $$,
-    $$ comment on column wages_2021.esdc_wage_rate_high_2021 is 'ESDC Wage Rate High 2021'; $$,
-    $$ comment on column wages_2021.esdc_wage_rate_low_2021 is 'ESDC Wage Rate Low 2021'; $$,
-    $$ comment on column wages_2021.esdc_wage_rate_median_2021 is 'ESDC Wage Rate Median 2021'; $$,
-    $$ comment on column wages_2021.occupation_title is 'Occupation Title'; $$,
-    $$ comment on column wages_2021.source_information is 'Source Information'; $$,
-    $$ comment on column wages_2021.calculated_median_annual_salary_2021 is 'Calculated Median Annual Salary 2021'; $$
+    $$ comment on table wages is 'WorkBC_2021_Wage_Data'; $$,
+    $$ comment on column wages.noc is 'NOC'; $$,
+    $$ comment on column wages.esdc_wage_rate_high_2021 is 'ESDC Wage Rate High 2021'; $$,
+    $$ comment on column wages.esdc_wage_rate_low_2021 is 'ESDC Wage Rate Low 2021'; $$,
+    $$ comment on column wages.esdc_wage_rate_median_2021 is 'ESDC Wage Rate Median 2021'; $$,
+    $$ comment on column wages.occupation_title is 'Occupation Title'; $$,
+    $$ comment on column wages.source_information is 'Source Information'; $$,
+    $$ comment on column wages.calculated_median_annual_salary_2021 is 'Calculated Median Annual Salary 2021'; $$
 ;
