@@ -14,9 +14,9 @@ This is the WorkBC Single Source of Truth (SSoT) API service.
 - `docker-compose build && docker-compose up`
 - Open http://localhost:8080 to acccess the OpenAPI / Swagger Web interface
 - Invoke PostgREST API directly via http://localhost:3000
-- Open the PostgreSQL `ssot` database directly via `postgresql://ssot:ssot@localhost/ssot`
-- Backup: `docker-compose exec -T db pg_dump --username ssot ssot > ssot.sql`
-- Restore: `docker-compose exec -T db psql --username ssot ssot < ssot.sql`
+- Open the PostgreSQL `ssot` database directly via `postgresql://workbc:workbc@localhost/ssot`
+- Backup: `docker-compose exec -T postgres pg_dump --username workbc ssot > ssot.sql`
+- Restore: `docker-compose exec -T postgres psql --username workbc ssot < ssot.sql`
 
 ## Migration
 Please refer to [migration/README.md](migration#readme).

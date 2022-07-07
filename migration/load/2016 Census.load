@@ -1,5 +1,5 @@
 load csv
-    from 'data/2016 Census-Career Profiles.csv'
+    from '../data/2016 Census-Career Profiles.csv'
     (
         noc,
         description,
@@ -36,7 +36,7 @@ load csv
         industry_5_name,
         industry_5
     )
-    into postgresql:///
+    into postgresql:///ssot
     target table census
     with
         skip header = 4,

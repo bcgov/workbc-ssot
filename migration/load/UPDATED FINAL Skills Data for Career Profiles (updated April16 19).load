@@ -1,5 +1,5 @@
 load csv
-    from 'data/UPDATED FINAL Skills Data for Career Profiles (updated April16 19)-Sheet1.csv'
+    from '../data/UPDATED FINAL Skills Data for Career Profiles (updated April16 19)-Sheet1.csv'
     (
         noc,
         skills_competencies,
@@ -8,7 +8,7 @@ load csv
         proficiency,
         proficiency_description
     )
-    into postgresql:///
+    into postgresql:///ssot
     target table skills
     with
         skip header = 1,
