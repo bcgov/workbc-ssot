@@ -62,7 +62,7 @@ variable "app_count" {
 #}
 
 variable "health_check_path" {
-  default = "/index.html"
+  default = "/"
 }
 
 variable "fargate_cpu" {
