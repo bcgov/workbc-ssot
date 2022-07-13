@@ -145,13 +145,13 @@ resource "aws_ecs_service" "main" {
     assign_public_ip = false
   }
 
-#  load_balancer {
-#    target_group_arn = aws_alb_target_group.app.id
-#    container_name   = "nginx"
-#    container_port   = var.app_port
-#  }
+  load_balancer {
+    target_group_arn = aws_alb_target_group.app.id
+    container_name   = "postgrest"
+    container_port   = var.app_port
+  }
 
-#  depends_on = [data.aws_alb_listener.front_end, aws_iam_role_policy_attachment.ecs_task_execution_role]
+  depends_on = [aws_alb_listener.front_end, aws_iam_role_policy_attachment.ecs_task_execution_role]
 
   tags = var.common_tags
 }
