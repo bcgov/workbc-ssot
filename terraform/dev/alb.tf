@@ -65,5 +65,5 @@ resource "aws_lb_listener_rule" "host_based_weighted_routing" {
       values = ["*"]
     }
   }
-*/    
-}
+   
+}*/
