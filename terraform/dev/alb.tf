@@ -5,10 +5,9 @@ resource "aws_alb" "main" {
   name = "ssot-lb"
   internal           = true
   load_balancer_type = "application"
-  security_groups    = [data.aws_security_group.web.id]
+  # App sg is required for drupal to call ssot
+  security_groups    = [data.aws_security_group.web.id, data.aws_security_group.app.id]
   subnets            = module.network.aws_subnet_ids.web.ids 
-
-#  enable_deletion_protection = yes
 
   tags = var.common_tags
 }
