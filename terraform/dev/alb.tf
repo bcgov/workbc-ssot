@@ -2,7 +2,7 @@
 
 # Internal Load Balancer
 resource "aws_alb" "main" {
-  name = ""
+  name = "ssot-lb"
   internal           = true
   load_balancer_type = "application"
   security_groups    = [data.aws_security_group.web.id]
@@ -51,19 +51,3 @@ resource "aws_alb_target_group" "app" {
   tags = var.common_tags
 }
 
-/*
-resource "aws_lb_listener_rule" "host_based_weighted_routing" {
-  listener_arn = aws_alb_listener.front_end.arn
-
-  action {
-    type             = "forward"
-    target_group_arn = aws_alb_target_group.app.arn
-  }
-
-  condition {
-    host_header {
-      values = ["*"]
-    }
-  }
-   
-}*/
