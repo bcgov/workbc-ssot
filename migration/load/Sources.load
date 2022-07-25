@@ -1,0 +1,34 @@
+load csv
+    from 'Sources.csv'
+    (
+        label,
+        endpoint,
+        filename,
+        sheet
+    )
+    into postgresql:///ssot
+    target table sources
+    with
+        skip header = 1,
+        fields optionally enclosed by '"',
+        fields terminated by ',',
+        drop indexes
+
+    before load do
+    $$ drop table if exists sources; $$,
+    $$ create table if not exists sources
+    (
+        endpoint text primary key,
+        label text,
+        filename text,
+        sheet text
+    );
+    $$
+
+    after load do
+    $$ comment on table sources is 'Data Provenance (Sources) Metadata'; $$,
+    $$ comment on column sources.label is 'Source label'; $$,
+    $$ comment on column sources.endpoint is 'API endpoint'; $$,
+    $$ comment on column sources.filename is 'Source filename'; $$,
+    $$ comment on column sources.sheet is 'Source sheet'; $$
+;

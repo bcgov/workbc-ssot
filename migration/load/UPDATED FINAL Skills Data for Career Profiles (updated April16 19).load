@@ -30,7 +30,7 @@ load csv
     $$
 
     after load do
-    $$ create index noc_idx on skills (noc); $$,
+    $$ create index skills_noc_idx on skills (noc); $$,
     $$ comment on table skills is 'UPDATED FINAL Skills Data for Career Profiles (updated April16 19)'; $$,
     $$ comment on column skills.noc is 'NOC'; $$,
     $$ comment on column skills.skills_competencies is 'Skills Competencies'; $$,
