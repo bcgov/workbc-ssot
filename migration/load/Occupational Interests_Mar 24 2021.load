@@ -1,0 +1,34 @@
+load csv
+    from '../data/Occupational Interests_Mar 24 2021-Occ Interest_Stack.csv'
+    (
+        noc,
+        options,
+        occupational_interest
+    )
+    into postgresql:///ssot
+    target table occupational_interests
+    with
+        skip header = 1,
+        fields optionally enclosed by '"',
+        fields terminated by ',',
+        drop indexes
+
+    before load do
+    $$ drop table if exists occupational_interests; $$,
+    $$ create table if not exists occupational_interests
+    (
+        noc text,
+        options text,
+        occupational_interest text
+    );
+    $$
+
+    after load do
+    $$ update occupational_interests set noc = substring(noc, 2); $$,
+    $$ delete from occupational_interests where trim(occupational_interest) = ''; $$,
+    $$ create index occupational_interests_noc_idx on occupational_interests (noc); $$,
+    $$ comment on table occupational_interests is 'Occupational Interests_Mar 24 2021'; $$,
+    $$ comment on column occupational_interests.noc is 'NOC'; $$,
+    $$ comment on column occupational_interests.options is 'Options'; $$,
+    $$ comment on column occupational_interests.occupational_interest is 'Occupational interest'; $$
+;
