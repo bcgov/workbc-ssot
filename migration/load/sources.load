@@ -1,5 +1,5 @@
 load csv
-    from 'Sources.csv'
+    from 'sources.csv'
     (
         label,
         endpoint,
@@ -26,9 +26,9 @@ load csv
     $$
 
     after load do
-    $$ comment on table sources is 'Data Provenance (Sources) Metadata'; $$,
+    $$ comment on table sources is 'Data sources metadata'; $$,
     $$ comment on column sources.label is 'Source label'; $$,
-    $$ comment on column sources.endpoint is 'API endpoint'; $$,
+    $$ comment on column sources.endpoint is 'Database table / API endpoint'; $$,
     $$ comment on column sources.filename is 'Source filename'; $$,
     $$ comment on column sources.sheet is 'Source sheet'; $$
 ;
