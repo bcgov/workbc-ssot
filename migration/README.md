@@ -50,6 +50,6 @@ php monthly_labour_market_update year{YYYY} month{1..12} < "data/Update_File-She
 SOURCE="data/Update_file-Sheet_Name-Transformed.csv" pgloader load/monthly_labour_market_updates.load
 ```
 ## Data Sources
-The `load/sources.csv` file contains an inventory of all the migrated data sources, including the label that can be displayed to end-users.
+The `load/sources.csv` file contains provenance metadata for all the migrated data sources, including a source label that can be displayed to end-users. The level of granularity of the metadata is the "Data point", which represents a field or a section of the dataset. If the value is `NULL`, then the provenance covers all data points, except for those that may be specifically mentioned in other records of this table.
 
 By examining this inventory, you can determine which source spreadsheets are needed to recreate the full dataset.

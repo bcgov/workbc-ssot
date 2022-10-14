@@ -3,6 +3,7 @@ load csv
     (
         label,
         endpoint,
+        datapoint,
         filename,
         sheet
     )
@@ -20,6 +21,7 @@ load csv
     (
         endpoint text primary key,
         label text,
+        datapoint text,
         filename text,
         sheet text
     );
@@ -29,6 +31,7 @@ load csv
     $$ comment on table sources is 'Data sources metadata'; $$,
     $$ comment on column sources.label is 'Source label'; $$,
     $$ comment on column sources.endpoint is 'Database table / API endpoint'; $$,
+    $$ comment on column sources.datapoint is 'Data point'; $$,
     $$ comment on column sources.filename is 'Source filename'; $$,
     $$ comment on column sources.sheet is 'Source sheet'; $$
 ;
