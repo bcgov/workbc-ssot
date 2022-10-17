@@ -1,0 +1,50 @@
+load csv
+    from '../data/3.3.2_WorkBC_Industry_Profile_2021_2031_updated-BC.csv'
+    (
+        industry,
+        share_total_employment_pct_2021,
+        share_total_employment_pct_2026,
+        share_total_employment_pct_2031,
+        employment_2021,
+        employment_2026,
+        employment_2031,
+        annual_employment_growth_rate_pct_2021_2026,
+        annual_employment_growth_rate_pct_2026_2031
+    )
+    into postgresql:///ssot
+    target table industry_outlook
+    with
+        null if 'NA',
+        skip header = 2,
+        fields optionally enclosed by '"',
+        fields terminated by ',',
+        drop indexes
+
+    before load do
+    $$ drop table if exists industry_outlook; $$,
+    $$ create table if not exists industry_outlook
+    (
+        industry text primary key,
+        share_total_employment_pct_2021 numeric,
+        share_total_employment_pct_2026 numeric,
+        share_total_employment_pct_2031 numeric,
+        employment_2021 int,
+        employment_2026 int,
+        employment_2031 int,
+        annual_employment_growth_rate_pct_2021_2026 numeric,
+        annual_employment_growth_rate_pct_2026_2031 numeric
+    );
+    $$
+
+    after load do
+    $$ comment on table industry_outlook is '3.3.2_WorkBC_Industry_Profile_2021_2031_updated'; $$,
+    $$ comment on column industry_outlook.industry is 'Industry'; $$,
+    $$ comment on column industry_outlook.share_total_employment_pct_2021 is 'Forecasted industry share of total employment (%): 2021'; $$,
+    $$ comment on column industry_outlook.share_total_employment_pct_2026 is 'Forecasted industry share of total employment (%): 2026'; $$,
+    $$ comment on column industry_outlook.share_total_employment_pct_2031 is 'Forecasted industry share of total employment (%): 2031'; $$,
+    $$ comment on column industry_outlook.employment_2021 is 'Forecasted employment: 2021'; $$,
+    $$ comment on column industry_outlook.employment_2026 is 'Forecasted employment: 2026'; $$,
+    $$ comment on column industry_outlook.employment_2031 is 'Forecasted employment: 2031'; $$,
+    $$ comment on column industry_outlook.annual_employment_growth_rate_pct_2021_2026 is 'Forecasted average annual employment growth rate (%): 2021-2026'; $$,
+    $$ comment on column industry_outlook.annual_employment_growth_rate_pct_2026_2031 is 'Forecasted average annual employment growth rate (%): 2026-2031'; $$
+;

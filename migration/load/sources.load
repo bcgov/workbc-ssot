@@ -5,7 +5,10 @@ load csv
         endpoint,
         datapoint,
         filename,
-        sheet
+        sheet,
+        range,
+        author,
+        date
     )
     into postgresql:///ssot
     target table sources
@@ -23,7 +26,10 @@ load csv
         label text,
         datapoint text,
         filename text,
-        sheet text
+        sheet text,
+        range text,
+        author text,
+        date text
     );
     $$
 
@@ -33,5 +39,8 @@ load csv
     $$ comment on column sources.endpoint is 'Database table / API endpoint'; $$,
     $$ comment on column sources.datapoint is 'Data point'; $$,
     $$ comment on column sources.filename is 'Source filename'; $$,
-    $$ comment on column sources.sheet is 'Source sheet'; $$
+    $$ comment on column sources.sheet is 'Source sheet'; $$,
+    $$ comment on column sources.range is 'Source range'; $$,
+    $$ comment on column sources.author is 'Author'; $$,
+    $$ comment on column sources.date is 'Date'; $$
 ;

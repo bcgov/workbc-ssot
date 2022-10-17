@@ -19,6 +19,11 @@ docker-compose exec migrator bash
 ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/Data_File.xlsx" "data/Data_File-%s.csv"
 ```
 
+- In some cases, there are multiple tables per sheet. You need to extract each table to its own file for further processing.
+```
+php csv_split --range 1-20 --output "data/Data_File-Sheet_Name-Table1_Name.csv" --range 23-60 --output "data/Data_File-Sheet_Name-Table1_Name.csv" < "data/Data_File-Sheet_Name.csv"
+```
+
 - Make sure that your CSV headers do not contain newlines in order for the data transformation to succeed.
 ```
 php csv_header.php < "data/Data_File-Sheet_Name.csv"  > "data/Data_file-Sheet_Name-Transformed.csv"
@@ -52,4 +57,4 @@ SOURCE="data/Update_file-Sheet_Name-Transformed.csv" pgloader load/monthly_labou
 ## Data Sources
 The `load/sources.csv` file contains provenance metadata for all the migrated data sources, including a source label that can be displayed to end-users. The level of granularity of the metadata is the "Data point", which represents a field or a section of the dataset. If the value is `NULL`, then the provenance covers all data points, except for those that may be specifically mentioned in other records of this table.
 
-By examining this inventory, you can determine which source spreadsheets are needed to recreate the full dataset.
+By examining this metadata, you can determine which source spreadsheets/tabs/ranges are needed to recreate the full dataset.
