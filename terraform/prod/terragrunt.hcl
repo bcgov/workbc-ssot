@@ -11,7 +11,7 @@ locals {
 }
 
 generate "prod_tfvars" {
-  path              = prod.auto.tfvars"
+  path              = "prod.auto.tfvars"
   if_exists         = "overwrite"
   disable_signature = true
   contents          = <<-EOF
