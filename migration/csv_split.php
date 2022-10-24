@@ -3,7 +3,7 @@
 /**
  * Split CSV into several files based on given ranges.
  *
- * php csv_split --range [start1-end1] --range [start2-end2] ... --output /path/to/output1.csv --output /path/to/output2.csv ... < /path/to/input.csv
+ * php csv_split.php --range [start1-end1] --range [start2-end2] ... --output /path/to/output1.csv --output /path/to/output2.csv ... < /path/to/input.csv
  */
 
 $opts = getopt('', [

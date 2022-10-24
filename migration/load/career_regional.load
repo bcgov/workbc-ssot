@@ -1,0 +1,99 @@
+load csv
+    from 'career_regional.csv'
+    (
+        noc,
+        description,
+        cariboo_employment_current,
+        cariboo_average_annual_employment_growth_10y_pct,
+        cariboo_expected_number_of_job_openings_10y,
+        blank_1,
+        kootenay_employment_current,
+        kootenay_average_annual_employment_growth_10y_pct,
+        kootenay_expected_number_of_job_openings_10y,
+        blank_2,
+        mainland_southwest_employment_current,
+        mainland_southwest_annual_employment_growth_10y_pct,
+        mainland_southwest_expected_number_of_job_openings_10y,
+        blank_3,
+        north_coast_and_nechako_employment_current,
+        north_coast_and_nechako_annual_employment_growth_10y_pct,
+        north_coast_and_nechako_expected_number_of_job_openings_10y,
+        blank_4,
+        northeast_employment_current,
+        northeast_annual_employment_growth_10y_pct,
+        northeast_expected_number_of_job_openings_10y,
+        blank_5,
+        thompson_okanagan_employment_current,
+        thompson_okanagan_annual_employment_growth_10y_pct,
+        thompson_okanagan_expected_number_of_job_openings_10y,
+        blank_6,
+        vancouver_island_coast_employment_current,
+        vancouver_island_coast_annual_employment_growth_10y_pct,
+        vancouver_island_coast_expected_number_of_job_openings_10y
+    )
+    into postgresql:///ssot
+    target table career_regional
+    with
+        null if 'NA',
+        skip header = 4,
+        fields optionally enclosed by '"',
+        fields terminated by ',',
+        drop indexes
+
+    before load do
+    $$ drop table if exists career_regional; $$,
+    $$ create table if not exists career_regional
+    (
+        noc text primary key,
+        description text,
+        cariboo_employment_current int,
+        cariboo_average_annual_employment_growth_10y_pct numeric,
+        cariboo_expected_number_of_job_openings_10y int,
+        kootenay_employment_current int,
+        kootenay_average_annual_employment_growth_10y_pct numeric,
+        kootenay_expected_number_of_job_openings_10y int,
+        mainland_southwest_employment_current int,
+        mainland_southwest_annual_employment_growth_10y_pct numeric,
+        mainland_southwest_expected_number_of_job_openings_10y int,
+        north_coast_and_nechako_employment_current int,
+        north_coast_and_nechako_annual_employment_growth_10y_pct numeric,
+        north_coast_and_nechako_expected_number_of_job_openings_10y int,
+        northeast_employment_current int,
+        northeast_annual_employment_growth_10y_pct numeric,
+        northeast_expected_number_of_job_openings_10y int,
+        thompson_okanagan_employment_current int,
+        thompson_okanagan_annual_employment_growth_10y_pct numeric,
+        thompson_okanagan_expected_number_of_job_openings_10y int,
+        vancouver_island_coast_employment_current int,
+        vancouver_island_coast_annual_employment_growth_10y_pct numeric,
+        vancouver_island_coast_expected_number_of_job_openings_10y int
+    );
+    $$
+
+    after load do
+    $$ update career_regional set noc = substring(noc, 2); $$,
+    $$ comment on table career_regional is '3.3.1_WorkBC_Career_Profile_Data_2022-2032 > Regional Outlook'; $$,
+    $$ comment on column career_regional.noc is 'NOC'; $$,
+    $$ comment on column career_regional.description is 'Occupation'; $$,
+    $$ comment on column career_regional.cariboo_employment_current is 'Cariboo: Employment in 2022'; $$,
+    $$ comment on column career_regional.cariboo_average_annual_employment_growth_10y_pct is 'Caribo: Average annual employment growth (%) 2022-2032'; $$,
+    $$ comment on column career_regional.cariboo_expected_number_of_job_openings_10y is 'Cariboo: Expected number of job openings 2022-2032'; $$,
+    $$ comment on column career_regional.kootenay_employment_current is 'Kootenay: Employment in 2022'; $$,
+    $$ comment on column career_regional.kootenay_average_annual_employment_growth_10y_pct is 'Kootenay: Average annual employment growth (%) 2022-2032'; $$,
+    $$ comment on column career_regional.kootenay_expected_number_of_job_openings_10y is 'Kootenay: Expected number of job openings 2022-2032'; $$,
+    $$ comment on column career_regional.mainland_southwest_employment_current is 'Mainland/Southwest: Employment in 2022'; $$,
+    $$ comment on column career_regional.mainland_southwest_annual_employment_growth_10y_pct is 'Mainland/Southwest: Average annual employment growth (%) 2022-2032'; $$,
+    $$ comment on column career_regional.mainland_southwest_expected_number_of_job_openings_10y is 'Mainland/Southwest: Expected number of job openings 2022-2032'; $$,
+    $$ comment on column career_regional.north_coast_and_nechako_employment_current is 'North Coast and Nechako: Employment in 2022'; $$,
+    $$ comment on column career_regional.north_coast_and_nechako_annual_employment_growth_10y_pct is 'North Coast and Nechako: Average annual employment growth (%) 2022-2032'; $$,
+    $$ comment on column career_regional.north_coast_and_nechako_expected_number_of_job_openings_10y is 'North Coast and Nechako: Expected number of job openings 2022-2032'; $$,
+    $$ comment on column career_regional.northeast_employment_current is 'Northeast: Employment in 2022'; $$,
+    $$ comment on column career_regional.northeast_annual_employment_growth_10y_pct is 'Northeast: Average annual employment growth (%) 2022-2032'; $$,
+    $$ comment on column career_regional.northeast_expected_number_of_job_openings_10y is 'Northeast: Expected number of job openings 2022-2032'; $$,
+    $$ comment on column career_regional.thompson_okanagan_employment_current is 'Thompson-Okanagan: Employment in 2022'; $$,
+    $$ comment on column career_regional.thompson_okanagan_annual_employment_growth_10y_pct is 'Thompson-Okanagan: Average annual employment growth (%) 2022-2032'; $$,
+    $$ comment on column career_regional.thompson_okanagan_expected_number_of_job_openings_10y is 'Thompson-Okanagan: Expected number of job openings 2022-2032'; $$,
+    $$ comment on column career_regional.vancouver_island_coast_employment_current is 'Vancouver Island/Coast: Employment in 2022'; $$,
+    $$ comment on column career_regional.vancouver_island_coast_annual_employment_growth_10y_pct is 'Vancouver Island/Coast: Average annual employment growth (%) 2022-2032'; $$,
+    $$ comment on column career_regional.vancouver_island_coast_expected_number_of_job_openings_10y is 'Vancouver Island/Coast: Expected number of job openings 2022-2032'; $$
+;

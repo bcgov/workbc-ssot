@@ -1,27 +1,21 @@
 load csv
-    from '../data/HOO BC and Region for new tool (with Skills and Competencies 2021)-Sheet1-Transformed.csv'
+    from 'high_opportunity_occupations.csv'
     (
         occupation,
-        openings_2021_2031,
-        wage_rate_low_2020,
-        wage_rate_median_2020,
-        wage_rate_high_2020,
-        median_annual_salary,
+        openings_forecast,
+        wage_rate_low,
+        wage_rate_median,
+        wage_rate_high,
         occupational_interest,
-        skills_and_competencies_top_3_2019,
-        skills_and_competencies_primary_2019,
-        skills_and_competencies_secondary_2019,
-        skills_and_competencies_tertiary_2019,
+        skills_and_competencies_top_3,
         noc,
-        noc_hash,
-        typical_education_background,
-        region
+        typical_education_background
     )
     into postgresql:///ssot
     target table high_opportunity_occupations
     with
         null if 'NA',
-        skip header = 1,
+        skip header = 4,
         fields optionally enclosed by '"',
         fields terminated by ',',
         drop indexes
@@ -30,40 +24,29 @@ load csv
     $$ drop table if exists high_opportunity_occupations; $$,
     $$ create table if not exists high_opportunity_occupations
     (
-        occupation text,
-        openings_2021_2031 text,
-        wage_rate_low_2020 text,
-        wage_rate_median_2020 text,
-        wage_rate_high_2020 text,
-        median_annual_salary text,
-        occupational_interest text,
-        skills_and_competencies_top_3_2019 text,
-        skills_and_competencies_primary_2019 text,
-        skills_and_competencies_secondary_2019 text,
-        skills_and_competencies_tertiary_2019 text,
         noc text,
-        noc_hash text,
-        typical_education_background text,
-        region text
+        occupation text,
+        openings_forecast int,
+        wage_rate_low numeric,
+        wage_rate_median numeric,
+        wage_rate_high numeric,
+        occupational_interest text,
+        skills_and_competencies_top_3 text,
+        typical_education_background text
     );
     $$
 
     after load do
+    $$ update high_opportunity_occupations set noc = substring(noc, 2); $$,
     $$ create index high_opportunity_occupations_noc_idx on high_opportunity_occupations (noc); $$,
     $$ comment on table high_opportunity_occupations is 'HOO BC and Region for new tool (with Skills and Competencies 2021)'; $$,
     $$ comment on column high_opportunity_occupations.occupation is 'Occupation Title'; $$,
-    $$ comment on column high_opportunity_occupations.openings_2021_2031 is 'Job Openings 2021-2031'; $$,
-    $$ comment on column high_opportunity_occupations.wage_rate_low_2020 is 'Wage Rate Low 2020'; $$,
-    $$ comment on column high_opportunity_occupations.wage_rate_median_2020 is 'Wage Rate Median 2020'; $$,
-    $$ comment on column high_opportunity_occupations.wage_rate_high_2020 is 'Wage Rate High 2020'; $$,
-    $$ comment on column high_opportunity_occupations.median_annual_salary is 'Median Annual Salary'; $$,
+    $$ comment on column high_opportunity_occupations.openings_forecast is 'Job Openings 2021-2031'; $$,
+    $$ comment on column high_opportunity_occupations.wage_rate_low is 'Wage Rate Low 2020'; $$,
+    $$ comment on column high_opportunity_occupations.wage_rate_median is 'Wage Rate Median 2020'; $$,
+    $$ comment on column high_opportunity_occupations.wage_rate_high is 'Wage Rate High 2020'; $$,
     $$ comment on column high_opportunity_occupations.occupational_interest is 'Occupational Interest'; $$,
-    $$ comment on column high_opportunity_occupations.skills_and_competencies_top_3_2019 is 'Skills and Competencies (Top 3 together) 2019'; $$,
-    $$ comment on column high_opportunity_occupations.skills_and_competencies_primary_2019 is 'First (2019)'; $$,
-    $$ comment on column high_opportunity_occupations.skills_and_competencies_secondary_2019 is 'Second (2019)'; $$,
-    $$ comment on column high_opportunity_occupations.skills_and_competencies_tertiary_2019 is 'Tertiary (2019)'; $$,
+    $$ comment on column high_opportunity_occupations.skills_and_competencies_top_3 is 'Skills and Competencies (Top 3 together) 2019'; $$,
     $$ comment on column high_opportunity_occupations.noc is 'NOC'; $$,
-    $$ comment on column high_opportunity_occupations.noc_hash is '#NOC'; $$,
-    $$ comment on column high_opportunity_occupations.typical_education_background is 'Typical Education Background'; $$,
-    $$ comment on column high_opportunity_occupations.region is 'Geography'; $$
+    $$ comment on column high_opportunity_occupations.typical_education_background is 'Typical Education Background'; $$
 ;

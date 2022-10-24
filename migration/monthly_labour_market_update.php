@@ -3,7 +3,7 @@
 /**
  * Transform the WorkBC LMS data into a format digestible by pgloader.
  *
- * Usage: php monthly_labour_market_update year{YYYY} month{1..12} < /path/to/input.csv > /path/to/output.csv
+ * Usage: php monthly_labour_market_update.php year{YYYY} month{1..12} < /path/to/input.csv > /path/to/output.csv
  */
 
 $usage = "Usage: php monthly_labour_market_update year{YYYY} month{1..12} < /path/to/input.csv > /path/to/output.csv";

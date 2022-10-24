@@ -1,0 +1,501 @@
+"4-digit NOC",Description,"Typical Education Background"
+#0011,Legislators,Degree
+#0012,"Senior government managers and officials",Degree
+#0013,"Senior managers - financial, communications and other business services",Degree
+#0014,"Senior managers - health, education, social and community services and membership organizations",Degree
+#0015,"Senior managers - trade, broadcasting and other services, n.e.c.",Degree
+#0016,"Senior managers - construction, transportation, production and utilities",Degree
+#0111,"Financial managers",Degree
+#0112,"Human resources managers",Degree
+#0113,"Purchasing managers",Degree
+#0114,"Other administrative services managers",Degree
+#0121,"Insurance, real estate and financial brokerage managers",Degree
+#0122,"Banking, credit and other investment managers",Degree
+#0124,"Advertising, marketing and public relations managers",Degree
+#0125,"Other business services managers",Degree
+#0131,"Telecommunication carriers managers",Degree
+#0132,"Postal and courier services managers","Diploma/Certificate Excluding Apprenticeship"
+#0211,"Engineering managers",Degree
+#0212,"Architecture and science managers",Degree
+#0213,"Computer and information systems managers",Degree
+#0311,"Managers in health care",Degree
+#0411,"Government managers - health and social policy development and program administration",Degree
+#0412,"Government managers - economic analysis, policy development and program administration",Degree
+#0413,"Government managers - education policy development and program administration",Degree
+#0414,"Other managers in public administration",Degree
+#0421,"Administrators - post-secondary education and vocational training",Degree
+#0422,"School principals and administrators of elementary and secondary education",Degree
+#0423,"Managers in social, community and correctional services",Degree
+#0431,"Commissioned police officers","Diploma/Certificate Excluding Apprenticeship"
+#0432,"Fire chiefs and senior firefighting officers","Diploma/Certificate Excluding Apprenticeship"
+#0433,"Commissioned officers of the Canadian Armed Forces",Degree
+#0511,"Library, archive, museum and art gallery managers",Degree
+#0512,"Managers - publishing, motion pictures, broadcasting and performing arts",Degree
+#0513,"Recreation, sports and fitness program and service directors",Degree
+#0601,"Corporate sales managers",Degree
+#0621,"Retail and wholesale trade managers","Diploma/Certificate Excluding Apprenticeship"
+#0631,"Restaurant and food service managers","High School"
+#0632,"Accommodation service managers",Degree
+#0651,"Managers in customer and personal services, n.e.c.","Diploma/Certificate Excluding Apprenticeship"
+#0711,"Construction managers","Diploma/Certificate Excluding Apprenticeship"
+#0712,"Home building and renovation managers","Diploma/Certificate Excluding Apprenticeship"
+#0714,"Facility operation and maintenance managers","Diploma/Certificate Excluding Apprenticeship"
+#0731,"Managers in transportation","Diploma/Certificate Excluding Apprenticeship"
+#0811,"Managers in natural resources production and fishing",Degree
+#0821,"Managers in agriculture","Diploma/Certificate Excluding Apprenticeship"
+#0822,"Managers in horticulture","Diploma/Certificate Excluding Apprenticeship"
+#0823,"Managers in aquaculture","High School"
+#0911,"Manufacturing managers","Diploma/Certificate Excluding Apprenticeship"
+#0912,"Utilities managers",Degree
+#1111,"Financial auditors and accountants",Degree
+#1112,"Financial and investment analysts",Degree
+#1113,"Securities agents, investment dealers and brokers",Degree
+#1114,"Other financial officers",Degree
+#1121,"Human resources professionals",Degree
+#1122,"Professional occupations in business management consulting",Degree
+#1123,"Professional occupations in advertising, marketing and public relations",Degree
+#1211,"Supervisors, general office and administrative support workers","Diploma/Certificate Excluding Apprenticeship"
+#1212,"Supervisors, finance and insurance office workers",Degree
+#1213,"Supervisors, library, correspondence and related information workers",Degree
+#1214,"Supervisors, mail and message distribution occupations","Diploma/Certificate Excluding Apprenticeship"
+#1215,"Supervisors, supply chain, tracking and scheduling co-ordination occupations","Diploma/Certificate Excluding Apprenticeship"
+#1221,"Administrative officers","Diploma/Certificate Excluding Apprenticeship"
+#1222,"Executive assistants",Degree
+#1223,"Human resources and recruitment officers",Degree
+#1224,"Property administrators","Diploma/Certificate Excluding Apprenticeship"
+#1225,"Purchasing agents and officers",Degree
+#1226,"Conference and event planners",Degree
+#1227,"Court officers and justices of the peace","Diploma/Certificate Excluding Apprenticeship"
+#1228,"Employment insurance, immigration, border services and revenue officers",Degree
+#1241,"Administrative assistants","Diploma/Certificate Excluding Apprenticeship"
+#1242,"Legal administrative assistants","Diploma/Certificate Excluding Apprenticeship"
+#1243,"Medical administrative assistants","Diploma/Certificate Excluding Apprenticeship"
+#1251,"Court reporters, medical transcriptionists and related occupations","Diploma/Certificate Excluding Apprenticeship"
+#1252,"Health information management occupations","Diploma/Certificate Excluding Apprenticeship"
+#1253,"Records management technicians","Diploma/Certificate Excluding Apprenticeship"
+#1254,"Statistical officers and related research support occupations",Degree
+#1311,"Accounting technicians and bookkeepers","Diploma/Certificate Excluding Apprenticeship"
+#1312,"Insurance adjusters and claims examiners","Diploma/Certificate Excluding Apprenticeship"
+#1313,"Insurance underwriters",Degree
+#1314,"Assessors, valuators and appraisers",Degree
+#1315,"Customs, ship and other brokers","Diploma/Certificate Excluding Apprenticeship"
+#1411,"General office support workers","Diploma/Certificate Excluding Apprenticeship"
+#1414,Receptionists,"Diploma/Certificate Excluding Apprenticeship"
+#1415,"Personnel clerks",Degree
+#1416,"Court clerks","Diploma/Certificate Excluding Apprenticeship"
+#1422,"Data entry clerks","Diploma/Certificate Excluding Apprenticeship"
+#1423,"Desktop publishing operators and related occupations","Diploma/Certificate Excluding Apprenticeship"
+#1431,"Accounting and related clerks","Diploma/Certificate Excluding Apprenticeship"
+#1432,"Payroll administrators","Diploma/Certificate Excluding Apprenticeship"
+#1434,"Banking, insurance and other financial clerks",Degree
+#1435,Collectors,"Diploma/Certificate Excluding Apprenticeship"
+#1451,"Library assistants and clerks",Degree
+#1452,"Correspondence, publication and regulatory clerks",Degree
+#1454,"Survey interviewers and statistical clerks","Diploma/Certificate Excluding Apprenticeship"
+#1511,"Mail, postal and related workers","High School"
+#1512,"Letter carriers","High School"
+#1513,"Couriers, messengers and door-to-door distributors","High School"
+#1521,"Shippers and receivers","High School"
+#1522,"Storekeepers and partspersons","Apprenticeship Certificate"
+#1523,"Production logistics co-ordinators","Diploma/Certificate Excluding Apprenticeship"
+#1524,"Purchasing and inventory control workers","Diploma/Certificate Excluding Apprenticeship"
+#1525,Dispatchers,"Diploma/Certificate Excluding Apprenticeship"
+#1526,"Transportation route and crew schedulers","Diploma/Certificate Excluding Apprenticeship"
+#2111,"Physicists and astronomers",Degree
+#2112,Chemists,Degree
+#2113,"Geoscientists and oceanographers",Degree
+#2114,"Meteorologists and climatologists",Degree
+#2115,"Other professional occupations in physical sciences",Degree
+#2121,"Biologists and related scientists",Degree
+#2122,"Forestry professionals",Degree
+#2123,"Agricultural representatives, consultants and specialists",Degree
+#2131,"Civil engineers",Degree
+#2132,"Mechanical engineers",Degree
+#2133,"Electrical and electronics engineers",Degree
+#2134,"Chemical engineers",Degree
+#2141,"Industrial and manufacturing engineers",Degree
+#2142,"Metallurgical and materials engineers",Degree
+#2143,"Mining engineers",Degree
+#2144,"Geological engineers",Degree
+#2145,"Petroleum engineers",Degree
+#2146,"Aerospace engineers",Degree
+#2147,"Computer engineers (except software engineers and designers)",Degree
+#2148,"Other professional engineers, n.e.c.",Degree
+#2151,Architects,Degree
+#2152,"Landscape architects",Degree
+#2153,"Urban and land use planners",Degree
+#2154,"Land surveyors","Diploma/Certificate Excluding Apprenticeship"
+#2161,"Mathematicians, statisticians and actuaries",Degree
+#2171,"Information systems analysts and consultants",Degree
+#2172,"Database analysts and data administrators",Degree
+#2173,"Software engineers and designers",Degree
+#2174,"Computer programmers and interactive media developers",Degree
+#2175,"Web designers and developers",Degree
+#2211,"Chemical technologists and technicians",Degree
+#2212,"Geological and mineral technologists and technicians","Diploma/Certificate Excluding Apprenticeship"
+#2221,"Biological technologists and technicians",Degree
+#2222,"Agricultural and fish products inspectors",Degree
+#2223,"Forestry technologists and technicians","Diploma/Certificate Excluding Apprenticeship"
+#2224,"Conservation and fishery officers","Diploma/Certificate Excluding Apprenticeship"
+#2225,"Landscape and horticulture technicians and specialists","Apprenticeship Certificate"
+#2231,"Civil engineering technologists and technicians","Diploma/Certificate Excluding Apprenticeship"
+#2232,"Mechanical engineering technologists and technicians","Diploma/Certificate Excluding Apprenticeship"
+#2233,"Industrial engineering and manufacturing technologists and technicians","Diploma/Certificate Excluding Apprenticeship"
+#2234,"Construction estimators","Diploma/Certificate Excluding Apprenticeship"
+#2241,"Electrical and electronics engineering technologists and technicians","Diploma/Certificate Excluding Apprenticeship"
+#2242,"Electronic service technicians (household and business equipment)","Diploma/Certificate Excluding Apprenticeship"
+#2243,"Industrial instrument technicians and mechanics","Apprenticeship Certificate"
+#2244,"Aircraft instrument, electrical and avionics mechanics, technicians and inspectors","Diploma/Certificate Excluding Apprenticeship"
+#2251,"Architectural technologists and technicians","Diploma/Certificate Excluding Apprenticeship"
+#2252,"Industrial designers",Degree
+#2253,"Drafting technologists and technicians","Diploma/Certificate Excluding Apprenticeship"
+#2254,"Land survey technologists and technicians","Diploma/Certificate Excluding Apprenticeship"
+#2255,"Technical occupations in geomatics and meteorology",Degree
+#2261,"Non-destructive testers and inspection technicians","Diploma/Certificate Excluding Apprenticeship"
+#2262,"Engineering inspectors and regulatory officers","Diploma/Certificate Excluding Apprenticeship"
+#2263,"Inspectors in public and environmental health and occupational health and safety",Degree
+#2264,"Construction inspectors","Diploma/Certificate Excluding Apprenticeship"
+#2271,"Air pilots, flight engineers and flying instructors","Diploma/Certificate Excluding Apprenticeship"
+#2272,"Air traffic controllers and related occupations","Diploma/Certificate Excluding Apprenticeship"
+#2273,"Deck officers, water transport","Diploma/Certificate Excluding Apprenticeship"
+#2274,"Engineer officers, water transport","Diploma/Certificate Excluding Apprenticeship"
+#2275,"Railway traffic controllers and marine traffic regulators","Diploma/Certificate Excluding Apprenticeship"
+#2281,"Computer network technicians","Diploma/Certificate Excluding Apprenticeship"
+#2282,"User support technicians","Diploma/Certificate Excluding Apprenticeship"
+#2283,"Information systems testing technicians",Degree
+#3011,"Nursing co-ordinators and supervisors",Degree
+#3012,"Registered nurses and registered psychiatric nurses",Degree
+#3111,"Specialist physicians",Degree
+#3112,"General practitioners and family physicians",Degree
+#3113,Dentists,Degree
+#3114,Veterinarians,Degree
+#3121,Optometrists,Degree
+#3122,Chiropractors,Degree
+#3124,"Allied primary health practitioners",Degree
+#3125,"Other professional occupations in health diagnosing and treating",Degree
+#3131,Pharmacists,Degree
+#3132,"Dietitians and nutritionists",Degree
+#3141,"Audiologists and speech-language pathologists",Degree
+#3142,Physiotherapists,Degree
+#3143,"Occupational therapists",Degree
+#3144,"Other professional occupations in therapy and assessment",Degree
+#3211,"Medical laboratory technologists","Diploma/Certificate Excluding Apprenticeship"
+#3212,"Medical laboratory technicians and pathologists' assistants","Diploma/Certificate Excluding Apprenticeship"
+#3213,"Animal health technologists and veterinary technicians","Diploma/Certificate Excluding Apprenticeship"
+#3214,"Respiratory therapists, clinical perfusionists and cardiopulmonary technologists","Diploma/Certificate Excluding Apprenticeship"
+#3215,"Medical radiation technologists","Diploma/Certificate Excluding Apprenticeship"
+#3216,"Medical sonographers",Degree
+#3217,"Cardiology technologists and electrophysiological diagnostic technologists, n.e.c.","Diploma/Certificate Excluding Apprenticeship"
+#3219,"Other medical technologists and technicians (except dental health)","Diploma/Certificate Excluding Apprenticeship"
+#3221,Denturists,"Diploma/Certificate Excluding Apprenticeship"
+#3222,"Dental hygienists and dental therapists","Diploma/Certificate Excluding Apprenticeship"
+#3223,"Dental technologists, technicians and laboratory assistants","Diploma/Certificate Excluding Apprenticeship"
+#3231,Opticians,"Diploma/Certificate Excluding Apprenticeship"
+#3232,"Practitioners of natural healing","Diploma/Certificate Excluding Apprenticeship"
+#3233,"Licensed practical nurses","Diploma/Certificate Excluding Apprenticeship"
+#3234,"Paramedical occupations","Diploma/Certificate Excluding Apprenticeship"
+#3236,"Massage therapists","Diploma/Certificate Excluding Apprenticeship"
+#3237,"Other technical occupations in therapy and assessment","Diploma/Certificate Excluding Apprenticeship"
+#3411,"Dental assistants","Diploma/Certificate Excluding Apprenticeship"
+#3413,"Nurse aides, orderlies and patient service associates","Diploma/Certificate Excluding Apprenticeship"
+#3414,"Other assisting occupations in support of health services","Diploma/Certificate Excluding Apprenticeship"
+#4011,"University professors and lecturers",Degree
+#4012,"Post-secondary teaching and research assistants",Degree
+#4021,"College and other vocational instructors",Degree
+#4031,"Secondary school teachers",Degree
+#4032,"Elementary school and kindergarten teachers",Degree
+#4033,"Educational counsellors",Degree
+#4111,Judges,Degree
+#4112,"Lawyers and Quebec notaries",Degree
+#4151,Psychologists,Degree
+#4152,"Social workers",Degree
+#4153,"Family, marriage and other related counsellors",Degree
+#4154,"Professional occupations in religion",Degree
+#4155,"Probation and parole officers and related occupations",Degree
+#4156,"Employment counsellors",Degree
+#4161,"Natural and applied science policy researchers, consultants and program officers",Degree
+#4162,"Economists and economic policy researchers and analysts",Degree
+#4163,"Business development officers and marketing researchers and consultants",Degree
+#4164,"Social policy researchers, consultants and program officers",Degree
+#4165,"Health policy researchers, consultants and program officers",Degree
+#4166,"Education policy researchers, consultants and program officers",Degree
+#4167,"Recreation, sports and fitness policy researchers, consultants and program officers",Degree
+#4168,"Program officers unique to government",Degree
+#4169,"Other professional occupations in social science, n.e.c.",Degree
+#4211,"Paralegal and related occupations","Diploma/Certificate Excluding Apprenticeship"
+#4212,"Social and community service workers","Diploma/Certificate Excluding Apprenticeship"
+#4214,"Early childhood educators and assistants","Diploma/Certificate Excluding Apprenticeship"
+#4215,"Instructors of persons with disabilities","Diploma/Certificate Excluding Apprenticeship"
+#4216,"Other instructors",Degree
+#4217,"Other religious occupations",Degree
+#4311,"Police officers (except commissioned)","Diploma/Certificate Excluding Apprenticeship"
+#4312,Firefighters,"Diploma/Certificate Excluding Apprenticeship"
+#4313,"Non-commissioned ranks of the Canadian Armed Forces","High School"
+#4411,"Home child care providers","Diploma/Certificate Excluding Apprenticeship"
+#4412,"Home support workers, housekeepers and related occupations","Diploma/Certificate Excluding Apprenticeship"
+#4413,"Elementary and secondary school teacher assistants","Diploma/Certificate Excluding Apprenticeship"
+#4421,"Sheriffs and bailiffs","Diploma/Certificate Excluding Apprenticeship"
+#4422,"Correctional service officers","Diploma/Certificate Excluding Apprenticeship"
+#4423,"By-law enforcement and other regulatory officers, n.e.c.","Diploma/Certificate Excluding Apprenticeship"
+#5111,Librarians,Degree
+#5112,"Conservators and curators",Degree
+#5113,Archivists,Degree
+#5121,"Authors and writers",Degree
+#5122,Editors,Degree
+#5123,Journalists,Degree
+#5125,"Translators, terminologists and interpreters",Degree
+#5131,"Producers, directors, choreographers and related occupations",Degree
+#5132,"Conductors, composers and arrangers",Degree
+#5133,"Musicians and singers",Degree
+#5134,Dancers,Degree
+#5135,"Actors and comedians",Degree
+#5136,"Painters, sculptors and other visual artists",Degree
+#5211,"Library and public archive technicians",Degree
+#5212,"Technical occupations related to museums and art galleries",Degree
+#5221,Photographers,"Diploma/Certificate Excluding Apprenticeship"
+#5222,"Film and video camera operators","Diploma/Certificate Excluding Apprenticeship"
+#5223,"Graphic arts technicians","Diploma/Certificate Excluding Apprenticeship"
+#5224,"Broadcast technicians","Diploma/Certificate Excluding Apprenticeship"
+#5225,"Audio and video recording technicians","Diploma/Certificate Excluding Apprenticeship"
+#5226,"Other technical and co-ordinating occupations in motion pictures, broadcasting and the performing arts","Diploma/Certificate Excluding Apprenticeship"
+#5227,"Support occupations in motion pictures, broadcasting, photography and the performing arts","Diploma/Certificate Excluding Apprenticeship"
+#5231,"Announcers and other broadcasters","Diploma/Certificate Excluding Apprenticeship"
+#5232,"Other performers, n.e.c.","Diploma/Certificate Excluding Apprenticeship"
+#5241,"Graphic designers and illustrators","Diploma/Certificate Excluding Apprenticeship"
+#5242,"Interior designers and interior decorators","Diploma/Certificate Excluding Apprenticeship"
+#5243,"Theatre, fashion, exhibit and other creative designers","Diploma/Certificate Excluding Apprenticeship"
+#5244,"Artisans and craftspersons","Diploma/Certificate Excluding Apprenticeship"
+#5245,"Patternmakers - textile, leather and fur products","Diploma/Certificate Excluding Apprenticeship"
+#5251,Athletes,"High School"
+#5252,Coaches,Degree
+#5253,"Sports officials and referees",Degree
+#5254,"Program leaders and instructors in recreation, sport and fitness","Diploma/Certificate Excluding Apprenticeship"
+#6211,"Retail sales supervisors","High School"
+#6221,"Technical sales specialists - wholesale trade",Degree
+#6222,"Retail and wholesale buyers","Diploma/Certificate Excluding Apprenticeship"
+#6231,"Insurance agents and brokers","Diploma/Certificate Excluding Apprenticeship"
+#6232,"Real estate agents and salespersons","Diploma/Certificate Excluding Apprenticeship"
+#6235,"Financial sales representatives",Degree
+#6311,"Food service supervisors","High School"
+#6312,"Executive housekeepers","High School"
+#6313,"Accommodation, travel, tourism and related services supervisors","High School"
+#6314,"Customer and information services supervisors","Diploma/Certificate Excluding Apprenticeship"
+#6315,"Cleaning supervisors","High School"
+#6316,"Other services supervisors","Diploma/Certificate Excluding Apprenticeship"
+#6321,Chefs,"Diploma/Certificate Excluding Apprenticeship"
+#6322,Cooks,"Apprenticeship Certificate"
+#6331,"Butchers, meat cutters and fishmongers - retail and wholesale","Apprenticeship Certificate"
+#6332,Bakers,"Apprenticeship Certificate"
+#6341,"Hairstylists and barbers","Apprenticeship Certificate"
+#6342,"Tailors, dressmakers, furriers and milliners","Diploma/Certificate Excluding Apprenticeship"
+#6343,"Shoe repairers and shoemakers","High School"
+#6344,"Jewellers, jewellery and watch repairers and related occupations","Diploma/Certificate Excluding Apprenticeship"
+#6345,Upholsterers,"High School"
+#6346,"Funeral directors and embalmers","Apprenticeship Certificate"
+#6411,"Sales and account representatives - wholesale trade (non-technical)","Diploma/Certificate Excluding Apprenticeship"
+#6421,"Retail salespersons","High School"
+#6511,"Maîtres d'hôtel and hosts/hostesses","High School"
+#6512,Bartenders,"High School"
+#6513,"Food and beverage servers","High School"
+#6521,"Travel counsellors","Diploma/Certificate Excluding Apprenticeship"
+#6522,"Pursers and flight attendants","Diploma/Certificate Excluding Apprenticeship"
+#6523,"Airline ticket and service agents","Diploma/Certificate Excluding Apprenticeship"
+#6524,"Ground and water transport ticket agents, cargo service representatives and related clerks","High School"
+#6525,"Hotel front desk clerks","Diploma/Certificate Excluding Apprenticeship"
+#6531,"Tour and travel guides",Degree
+#6532,"Outdoor sport and recreational guides","Diploma/Certificate Excluding Apprenticeship"
+#6533,"Casino occupations","High School"
+#6541,"Security guards and related security service occupations","Diploma/Certificate Excluding Apprenticeship"
+#6551,"Customer services representatives - financial institutions","Diploma/Certificate Excluding Apprenticeship"
+#6552,"Other customer and information services representatives","Diploma/Certificate Excluding Apprenticeship"
+#6561,"Image, social and other personal consultants","Diploma/Certificate Excluding Apprenticeship"
+#6562,"Estheticians, electrologists and related occupations","Apprenticeship Certificate"
+#6563,"Pet groomers and animal care workers","Diploma/Certificate Excluding Apprenticeship"
+#6564,"Other personal service occupations","High School"
+#6611,Cashiers,"High School"
+#6621,"Service station attendants","High School"
+#6622,"Store shelf stockers, clerks and order fillers","High School"
+#6623,"Other sales related occupations","Diploma/Certificate Excluding Apprenticeship"
+#6711,"Food counter attendants, kitchen helpers and related support occupations","High School"
+#6721,"Support occupations in accommodation, travel and facilities set-up services","Diploma/Certificate Excluding Apprenticeship"
+#6722,"Operators and attendants in amusement, recreation and sport","Diploma/Certificate Excluding Apprenticeship"
+#6731,"Light duty cleaners","High School"
+#6732,"Specialized cleaners","High School"
+#6733,"Janitors, caretakers and building superintendents","High School"
+#6741,"Dry cleaning, laundry and related occupations","High School"
+#6742,"Other service support occupations, n.e.c.","Diploma/Certificate Excluding Apprenticeship"
+#7201,"Contractors and supervisors, machining, metal forming, shaping and erecting trades and related occupations","Apprenticeship Certificate"
+#7202,"Contractors and supervisors, electrical trades and telecommunications occupations","Apprenticeship Certificate"
+#7203,"Contractors and supervisors, pipefitting trades","Apprenticeship Certificate"
+#7204,"Contractors and supervisors, carpentry trades","Apprenticeship Certificate"
+#7205,"Contractors and supervisors, other construction trades, installers, repairers and servicers","Apprenticeship Certificate"
+#7231,"Machinists and machining and tooling inspectors","Apprenticeship Certificate"
+#7232,"Tool and die makers","Apprenticeship Certificate"
+#7233,"Sheet metal workers","Apprenticeship Certificate"
+#7234,Boilermakers,"Apprenticeship Certificate"
+#7235,"Structural metal and platework fabricators and fitters","Apprenticeship Certificate"
+#7236,Ironworkers,"Apprenticeship Certificate"
+#7237,"Welders and related machine operators","Apprenticeship Certificate"
+#7241,"Electricians (except industrial and power system)","Apprenticeship Certificate"
+#7242,"Industrial electricians","Apprenticeship Certificate"
+#7243,"Power system electricians","Apprenticeship Certificate"
+#7244,"Electrical power line and cable workers","Apprenticeship Certificate"
+#7245,"Telecommunications line and cable workers","Diploma/Certificate Excluding Apprenticeship"
+#7246,"Telecommunications installation and repair workers","Diploma/Certificate Excluding Apprenticeship"
+#7247,"Cable television service and maintenance technicians","Diploma/Certificate Excluding Apprenticeship"
+#7251,Plumbers,"Apprenticeship Certificate"
+#7252,"Steamfitters, pipefitters and sprinkler system installers","Apprenticeship Certificate"
+#7253,"Gas fitters","Apprenticeship Certificate"
+#7271,Carpenters,"Apprenticeship Certificate"
+#7272,Cabinetmakers,"Apprenticeship Certificate"
+#7281,Bricklayers,"Apprenticeship Certificate"
+#7282,"Concrete finishers","High School"
+#7283,Tilesetters,"Apprenticeship Certificate"
+#7284,"Plasterers, drywall installers and finishers and lathers","Apprenticeship Certificate"
+#7291,"Roofers and shinglers","High School"
+#7292,Glaziers,"Apprenticeship Certificate"
+#7293,Insulators,"Apprenticeship Certificate"
+#7294,"Painters and decorators (except interior decorators)","High School"
+#7295,"Floor covering installers","High School"
+#7301,"Contractors and supervisors, mechanic trades","Apprenticeship Certificate"
+#7302,"Contractors and supervisors, heavy equipment operator crews","Apprenticeship Certificate"
+#7303,"Supervisors, printing and related occupations","Diploma/Certificate Excluding Apprenticeship"
+#7304,"Supervisors, railway transport operations","High School"
+#7305,"Supervisors, motor transport and other ground transit operators","Diploma/Certificate Excluding Apprenticeship"
+#7311,"Construction millwrights and industrial mechanics","Apprenticeship Certificate"
+#7312,"Heavy-duty equipment mechanics","Apprenticeship Certificate"
+#7313,"Heating, refrigeration and air conditioning mechanics","Apprenticeship Certificate"
+#7314,"Railway carmen/women","Apprenticeship Certificate"
+#7315,"Aircraft mechanics and aircraft inspectors","Apprenticeship Certificate"
+#7316,"Machine fitters","Diploma/Certificate Excluding Apprenticeship"
+#7318,"Elevator constructors and mechanics","Apprenticeship Certificate"
+#7321,"Automotive service technicians, truck and bus mechanics and mechanical repairers","Apprenticeship Certificate"
+#7322,"Motor vehicle body repairers","Apprenticeship Certificate"
+#7331,"Oil and solid fuel heating mechanics","Apprenticeship Certificate"
+#7332,"Appliance servicers and repairers","Apprenticeship Certificate"
+#7333,"Electrical mechanics","Apprenticeship Certificate"
+#7334,"Motorcycle, all-terrain vehicle and other related mechanics","Apprenticeship Certificate"
+#7335,"Other small engine and small equipment repairers","Diploma/Certificate Excluding Apprenticeship"
+#7361,"Railway and yard locomotive engineers","Diploma/Certificate Excluding Apprenticeship"
+#7362,"Railway conductors and brakemen/women","Diploma/Certificate Excluding Apprenticeship"
+#7371,"Crane operators","Apprenticeship Certificate"
+#7372,"Drillers and blasters - surface mining, quarrying and construction","Apprenticeship Certificate"
+#7373,"Water well drillers","Apprenticeship Certificate"
+#7381,"Printing press operators","High School"
+#7384,"Other trades and related occupations, n.e.c.","Apprenticeship Certificate"
+#7441,"Residential and commercial installers and servicers","High School"
+#7442,"Waterworks and gas maintenance workers","Diploma/Certificate Excluding Apprenticeship"
+#7444,"Pest controllers and fumigators","Diploma/Certificate Excluding Apprenticeship"
+#7445,"Other repairers and servicers","Diploma/Certificate Excluding Apprenticeship"
+#7451,"Longshore workers","High School"
+#7452,"Material handlers","High School"
+#7511,"Transport truck drivers","High School"
+#7512,"Bus drivers, subway operators and other transit operators","Diploma/Certificate Excluding Apprenticeship"
+#7513,"Taxi and limousine drivers and chauffeurs","High School"
+#7514,"Delivery and courier service drivers","High School"
+#7521,"Heavy equipment operators (except crane)","Apprenticeship Certificate"
+#7522,"Public works maintenance equipment operators and related workers","High School"
+#7531,"Railway yard and track maintenance workers","High School"
+#7532,"Water transport deck and engine room crew","Diploma/Certificate Excluding Apprenticeship"
+#7533,"Boat and cable ferry operators and related occupations","Diploma/Certificate Excluding Apprenticeship"
+#7534,"Air transport ramp attendants","High School"
+#7535,"Other automotive mechanical installers and servicers","High School"
+#7611,"Construction trades helpers and labourers","High School"
+#7612,"Other trades helpers and labourers","Apprenticeship Certificate"
+#7621,"Public works and maintenance labourers","High School"
+#7622,"Railway and motor transport labourers","High School"
+#8211,"Supervisors, logging and forestry","Diploma/Certificate Excluding Apprenticeship"
+#8221,"Supervisors, mining and quarrying","Diploma/Certificate Excluding Apprenticeship"
+#8222,"Contractors and supervisors, oil and gas drilling and services","Apprenticeship Certificate"
+#8231,"Underground production and development miners","Apprenticeship Certificate"
+#8232,"Oil and gas well drillers, servicers, testers and related workers","High School"
+#8241,"Logging machinery operators","High School"
+#8252,"Agricultural service contractors, farm supervisors and specialized livestock workers","Diploma/Certificate Excluding Apprenticeship"
+#8255,"Contractors and supervisors, landscaping, grounds maintenance and horticulture services","High School"
+#8261,"Fishing masters and officers","Apprenticeship Certificate"
+#8262,Fishermen/women,"High School"
+#8411,"Underground mine service and support workers","Apprenticeship Certificate"
+#8412,"Oil and gas well drilling and related workers and services operators","Apprenticeship Certificate"
+#8421,"Chain saw and skidder operators","High School"
+#8422,"Silviculture and forestry workers","Diploma/Certificate Excluding Apprenticeship"
+#8431,"General farm workers","High School"
+#8432,"Nursery and greenhouse workers","High School"
+#8441,"Fishing vessel deckhands","High School"
+#8442,"Trappers and hunters","Less than High School"
+#8611,"Harvesting labourers","Less than High School"
+#8612,"Landscaping and grounds maintenance labourers","High School"
+#8613,"Aquaculture and marine harvest labourers","High School"
+#8614,"Mine labourers","High School"
+#8615,"Oil and gas drilling, servicing and related labourers","High School"
+#8616,"Logging and forestry labourers","High School"
+#9211,"Supervisors, mineral and metal processing","Diploma/Certificate Excluding Apprenticeship"
+#9212,"Supervisors, petroleum, gas and chemical processing and utilities","Diploma/Certificate Excluding Apprenticeship"
+#9213,"Supervisors, food and beverage processing","Diploma/Certificate Excluding Apprenticeship"
+#9214,"Supervisors, plastic and rubber products manufacturing","High School"
+#9215,"Supervisors, forest products processing","High School"
+#9217,"Supervisors, textile, fabric, fur and leather products processing and manufacturing","High School"
+#9221,"Supervisors, motor vehicle assembling","High School"
+#9222,"Supervisors, electronics manufacturing","Diploma/Certificate Excluding Apprenticeship"
+#9223,"Supervisors, electrical products manufacturing","Diploma/Certificate Excluding Apprenticeship"
+#9224,"Supervisors, furniture and fixtures manufacturing","High School"
+#9226,"Supervisors, other mechanical and metal products manufacturing","Diploma/Certificate Excluding Apprenticeship"
+#9227,"Supervisors, other products manufacturing and assembly","Diploma/Certificate Excluding Apprenticeship"
+#9231,"Central control and process operators, mineral and metal processing","Diploma/Certificate Excluding Apprenticeship"
+#9232,"Central control and process operators, petroleum, gas and chemical processing","Diploma/Certificate Excluding Apprenticeship"
+#9235,"Pulping, papermaking and coating control operators","Diploma/Certificate Excluding Apprenticeship"
+#9241,"Power engineers and power systems operators","Diploma/Certificate Excluding Apprenticeship"
+#9243,"Water and waste treatment plant operators","Diploma/Certificate Excluding Apprenticeship"
+#9411,"Machine operators, mineral and metal processing","Apprenticeship Certificate"
+#9412,"Foundry workers","Apprenticeship Certificate"
+#9413,"Glass forming and finishing machine operators and glass cutters","High School"
+#9414,"Concrete, clay and stone forming operators","High School"
+#9415,"Inspectors and testers, mineral and metal processing","Diploma/Certificate Excluding Apprenticeship"
+#9416,"Metalworking and forging machine operators","High School"
+#9417,"Machining tool operators","Diploma/Certificate Excluding Apprenticeship"
+#9418,"Other metal products machine operators","High School"
+#9421,"Chemical plant machine operators","High School"
+#9422,"Plastics processing machine operators","High School"
+#9423,"Rubber processing machine operators and related workers","High School"
+#9431,"Sawmill machine operators","High School"
+#9432,"Pulp mill machine operators","Apprenticeship Certificate"
+#9433,"Papermaking and finishing machine operators","Diploma/Certificate Excluding Apprenticeship"
+#9434,"Other wood processing machine operators","High School"
+#9435,"Paper converting machine operators","High School"
+#9436,"Lumber graders and other wood processing inspectors and graders","High School"
+#9437,"Woodworking machine operators","High School"
+#9441,"Textile fibre and yarn, hide and pelt processing machine operators and workers","High School"
+#9442,"Weavers, knitters and other fabric making occupations","High School"
+#9445,"Fabric, fur and leather cutters","High School"
+#9446,"Industrial sewing machine operators","High School"
+#9447,"Inspectors and graders, textile, fabric, fur and leather products manufacturing","Diploma/Certificate Excluding Apprenticeship"
+#9461,"Process control and machine operators, food and beverage processing","High School"
+#9462,"Industrial butchers and meat cutters, poultry preparers and related workers","High School"
+#9463,"Fish and seafood plant workers","High School"
+#9465,"Testers and graders, food and beverage processing",Degree
+#9471,"Plateless printing equipment operators","Diploma/Certificate Excluding Apprenticeship"
+#9472,"Camera, platemaking and other prepress occupations","Diploma/Certificate Excluding Apprenticeship"
+#9473,"Binding and finishing machine operators","High School"
+#9474,"Photographic and film processors","Diploma/Certificate Excluding Apprenticeship"
+#9521,"Aircraft assemblers and aircraft assembly inspectors","Apprenticeship Certificate"
+#9522,"Motor vehicle assemblers, inspectors and testers","High School"
+#9523,"Electronics assemblers, fabricators, inspectors and testers","Diploma/Certificate Excluding Apprenticeship"
+#9524,"Assemblers and inspectors, electrical appliance, apparatus and equipment manufacturing","Diploma/Certificate Excluding Apprenticeship"
+#9525,"Assemblers, fabricators and inspectors, industrial electrical motors and transformers","Diploma/Certificate Excluding Apprenticeship"
+#9526,"Mechanical assemblers and inspectors","High School"
+#9527,"Machine operators and inspectors, electrical apparatus manufacturing","Diploma/Certificate Excluding Apprenticeship"
+#9531,"Boat assemblers and inspectors","Diploma/Certificate Excluding Apprenticeship"
+#9532,"Furniture and fixture assemblers and inspectors","High School"
+#9533,"Other wood products assemblers and inspectors","High School"
+#9534,"Furniture finishers and refinishers","High School"
+#9535,"Plastic products assemblers, finishers and inspectors","High School"
+#9536,"Industrial painters, coaters and metal finishing process operators","High School"
+#9537,"Other products assemblers, finishers and inspectors","High School"
+#9611,"Labourers in mineral and metal processing","High School"
+#9612,"Labourers in metal fabrication","High School"
+#9613,"Labourers in chemical products processing and utilities","High School"
+#9614,"Labourers in wood, pulp and paper processing","High School"
+#9615,"Labourers in rubber and plastic products manufacturing","High School"
+#9616,"Labourers in textile processing","High School"
+#9617,"Labourers in food and beverage processing","High School"
+#9618,"Labourers in fish and seafood processing","Less than High School"
+#9619,"Other labourers in processing, manufacturing and utilities","High School"

@@ -21,15 +21,17 @@ ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/Data_
 
 - In some cases, there are multiple tables per sheet. You need to extract each table to its own file for further processing.
 ```
-php csv_split --range 1-20 --output "data/Data_File-Sheet_Name-Table1_Name.csv" --range 23-60 --output "data/Data_File-Sheet_Name-Table1_Name.csv" < "data/Data_File-Sheet_Name.csv"
+php csv_split.php --range 1-20 --output "data/Data_File-Sheet_Name-Table1_Name.csv" --range 23-60 --output "data/Data_File-Sheet_Name-Table1_Name.csv" < "data/Data_File-Sheet_Name.csv"
 ```
 
 - Make sure that your CSV headers do not contain newlines in order for the data transformation to succeed.
 ```
-php csv_header.php < "data/Data_File-Sheet_Name.csv"  > "data/Data_file-Sheet_Name-Transformed.csv"
+php csv_header.php < "data/Data_File-Sheet_Name.csv" > "data/Data_file-Sheet_Name-Transformed.csv"
 ```
 
 - Write a data loading script to transform the CSV file into PostgreSQL data. Follow the [`pgloader` documentation](https://pgloader.readthedocs.io/en/latest/tutorial/tutorial.html#loading-csv-data-with-pgloader) and refer to examples in this present folder. The existing loader scripts are named after the database tables that will receive the data.
+
+- Move the final `Data_file-Sheet_Name-Transformed.csv` file to `load/data_table.csv`.
 
 - Run the loading script and examine the output to ensure there are no errors. Note that the script expects the environment variables `PGUSER`, `PGPASSWORD`, `PGDATABASE`, and `PGHOST` to be set for the PostgreSQL database. These variables are already set in the `docker-compose.yml` file.
 ```
@@ -47,12 +49,12 @@ ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/Updat
 
 - Transform the CSV to another CSV that is suitable for loading, supplying the month and year that correspoknds to the sheet.
 ```
-php monthly_labour_market_update year{YYYY} month{1..12} < "data/Update_File-Sheet_Name.csv" > "data/Update_file-Sheet_Name-Transformed.csv"
+php monthly_labour_market_update.php year{YYYY} month{1..12} < "data/Update_File-Sheet_Name.csv" > "load/updates/monthly_labour_market_updates_{YYYY}_{MM}.csv"
 ```
 
 - Run the existing loading script `load/monthly_labour_market_updates.load`, supplying the transformed CSV above as the `SOURCE` environment variable.
 ```
-SOURCE="data/Update_file-Sheet_Name-Transformed.csv" pgloader load/monthly_labour_market_updates.load
+SOURCE="/app/load/updates/monthly_labour_market_updates_{YYYY}_{MM}.csv" pgloader load/monthly_labour_market_updates.load
 ```
 ## Data Sources
 The `load/sources.csv` file contains provenance metadata for all the migrated data sources, including a source label that can be displayed to end-users. The level of granularity of the metadata is the "Data point", which represents a field or a section of the dataset. If the value is `NULL`, then the provenance covers all data points, except for those that may be specifically mentioned in other records of this table.

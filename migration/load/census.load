@@ -1,5 +1,5 @@
 load csv
-    from '../data/2016 Census-Career Profiles.csv'
+    from 'census.csv'
     (
         noc,
         description,

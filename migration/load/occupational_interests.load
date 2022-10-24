@@ -1,5 +1,5 @@
 load csv
-    from '../data/Occupational Interests_Mar 24 2021-Occ Interest_Stack.csv'
+    from 'occupational_interests.csv'
     (
         noc,
         options,
