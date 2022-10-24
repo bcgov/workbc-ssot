@@ -1,0 +1,36 @@
+load csv
+    from 'openings_by_industry.csv'
+    (
+        industry,
+        noc,
+        description,
+        openings
+    )
+    into postgresql:///ssot
+    target table openings_by_industry
+    with
+        null if 'NA',
+        skip header = 1,
+        fields optionally enclosed by '"',
+        fields terminated by ',',
+        drop indexes
+
+    before load do
+    $$ drop table if exists openings_by_industry; $$,
+    $$ create table if not exists openings_by_industry
+    (
+        industry text,
+        noc text,
+        description text,
+        openings int
+    );
+    $$
+
+    after load do
+    $$ update openings_by_industry set noc = substring(noc, 2); $$,
+    $$ comment on table openings_by_industry is '2022 top_10_careers_by_aggregate_industry'; $$,
+    $$ comment on column openings_by_industry.industry is 'Aggregate Industry'; $$,
+    $$ comment on column openings_by_industry.noc is 'NOC'; $$,
+    $$ comment on column openings_by_industry.description is 'Occupation'; $$,
+    $$ comment on column openings_by_industry.openings is 'Employment-2022'; $$
+;

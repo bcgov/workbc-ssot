@@ -8,8 +8,8 @@ load csv
         employment_first,
         employment_second,
         employment_third,
-        annual_employment_growth_rate_pct_first5,
-        annual_employment_growth_rate_pct_next5
+        annual_employment_growth_rate_pct_first5y,
+        annual_employment_growth_rate_pct_second5y
     )
     into postgresql:///ssot
     target table industry_outlook
@@ -31,8 +31,8 @@ load csv
         employment_first int,
         employment_second int,
         employment_third int,
-        annual_employment_growth_rate_pct_first5 numeric,
-        annual_employment_growth_rate_pct_next5 numeric
+        annual_employment_growth_rate_pct_first5y numeric,
+        annual_employment_growth_rate_pct_second5y numeric
     );
     $$
 
@@ -45,6 +45,6 @@ load csv
     $$ comment on column industry_outlook.employment_first is 'Forecasted employment: 2021'; $$,
     $$ comment on column industry_outlook.employment_second is 'Forecasted employment: 2026'; $$,
     $$ comment on column industry_outlook.employment_third is 'Forecasted employment: 2031'; $$,
-    $$ comment on column industry_outlook.annual_employment_growth_rate_pct_first5 is 'Forecasted average annual employment growth rate (%): 2021-2026'; $$,
-    $$ comment on column industry_outlook.annual_employment_growth_rate_pct_next5 is 'Forecasted average annual employment growth rate (%): 2026-2031'; $$
+    $$ comment on column industry_outlook.annual_employment_growth_rate_pct_first5y is 'Forecasted average annual employment growth rate (%): 2021-2026'; $$,
+    $$ comment on column industry_outlook.annual_employment_growth_rate_pct_second5y is 'Forecasted average annual employment growth rate (%): 2026-2031'; $$
 ;
