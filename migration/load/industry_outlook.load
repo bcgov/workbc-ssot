@@ -25,7 +25,7 @@ load csv
     $$ drop table if exists industry_outlook; $$,
     $$ create table if not exists industry_outlook
     (
-        industry text primary key,
+        industry citext primary key,
         openings int,
         share_total_employment_pct_first numeric,
         share_total_employment_pct_second numeric,

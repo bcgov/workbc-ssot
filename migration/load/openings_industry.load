@@ -19,7 +19,7 @@ load csv
     $$ drop table if exists openings_industry; $$,
     $$ create table if not exists openings_industry
     (
-        industry text,
+        industry citext,
         noc text,
         description text,
         openings int

@@ -70,7 +70,7 @@ load csv
     $$ drop table if exists labour_force_survey_industry; $$,
     $$ create table if not exists labour_force_survey_industry
     (
-        industry text primary key,
+        industry citext primary key,
         yoy_employment_growth_pct numeric,
         yoy_change_employment numeric,
         total_employment numeric,
