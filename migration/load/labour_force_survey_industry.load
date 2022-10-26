@@ -130,6 +130,10 @@ load csv
 
     after load do
     $$ comment on table labour_force_survey_industry is '2020_LFS Data Sheet_final > Industry Profiles'; $$,
+    $$ update labour_force_survey_industry set industry = 'Finance, insurance and real estate' where industry = 'Finance, insurance, real estate, rental and leasing'; $$,
+    $$ update labour_force_survey_industry set industry = 'Forestry, logging and support activities' where industry = 'Forestry and logging and support activities for forestry'; $$,
+    $$ update labour_force_survey_industry set industry = 'Mining and oil and gas extraction' where industry = 'Mining, quarrying, and oil and gas extraction'; $$,
+    $$ update labour_force_survey_industry set industry = 'Repair, personal and non-profit services' where industry = 'Other services (except public administration)'; $$,
     $$ comment on column labour_force_survey_industry.yoy_employment_growth_pct is 'Overview: % yoy employment growth (2019-2020)'; $$,
     $$ comment on column labour_force_survey_industry.yoy_change_employment is 'Overview: yoy change of employment (2019-2020)'; $$,
     $$ comment on column labour_force_survey_industry.total_employment is 'Overview: Total employment (2020)'; $$,
