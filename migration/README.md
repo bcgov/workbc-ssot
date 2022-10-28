@@ -29,7 +29,12 @@ php csv_split.php --range 1-20 --output "data/Data_File-Sheet_Name-Table1_Name.c
 php csv_header.php < "data/Data_File-Sheet_Name.csv" > "data/Data_file-Sheet_Name-Transformed.csv"
 ```
 
-- Write a data loading script to transform the CSV file into PostgreSQL data. Follow the [`pgloader` documentation](https://pgloader.readthedocs.io/en/latest/tutorial/tutorial.html#loading-csv-data-with-pgloader) and refer to examples in this present folder. The existing loader scripts are named after the database tables that will receive the data.
+- Write a data loading script to transform the CSV file into PostgreSQL data. Follow the [`pgloader` documentation](https://pgloader.readthedocs.io/en/latest/tutorial/tutorial.html#loading-csv-data-with-pgloader) and refer to examples in this present folder. Please follow the following conventions when writing a data loading script:
+  - The script filename is named after the database table that will receive the data
+  - The column names don't exceed 64 characters to avoid truncation
+  - The column names are free of dates and date ranges, and instead refer to period increments, e.g. `current`, `first5y`, `next10y`, etc.
+  - The columns include SQL comments that are copies of the spreadsheet column headers
+  - When dates and date ranges are present in the column's comment, they are included within curly braces e.g. `{2022}` to allow parsing by the client
 
 - Move the final `Data_file-Sheet_Name-Transformed.csv` file to `load/data_table.csv`.
 

@@ -74,17 +74,17 @@ load csv
     $$ comment on column openings_careers.description is 'Description'; $$,
     $$ comment on column openings_careers.industry_1_name is 'Industry 1: Name'; $$,
     $$ comment on column openings_careers.industry_1_percent is 'Industry 1: %'; $$,
-    $$ comment on column openings_careers.industry_1_openings is 'Industry 1: Job Openings in 2021'; $$,
+    $$ comment on column openings_careers.industry_1_openings is 'Industry 1: Job Openings in {2021}'; $$,
     $$ comment on column openings_careers.industry_2_name is 'Industry 2: Name'; $$,
     $$ comment on column openings_careers.industry_2_percent is 'Industry 2: %'; $$,
-    $$ comment on column openings_careers.industry_2_openings is 'Industry 2: Job Openings in 2021'; $$,
+    $$ comment on column openings_careers.industry_2_openings is 'Industry 2: Job Openings in {2021}'; $$,
     $$ comment on column openings_careers.industry_3_name is 'Industry 3: Name'; $$,
     $$ comment on column openings_careers.industry_3_percent is 'Industry 3: %'; $$,
-    $$ comment on column openings_careers.industry_3_openings is 'Industry 3: Job Openings in 2021'; $$,
+    $$ comment on column openings_careers.industry_3_openings is 'Industry 3: Job Openings in {2021}'; $$,
     $$ comment on column openings_careers.industry_4_name is 'Industry 4: Name'; $$,
     $$ comment on column openings_careers.industry_4_percent is 'Industry 4: %'; $$,
-    $$ comment on column openings_careers.industry_4_openings is 'Industry 4: Job Openings in 2021'; $$,
+    $$ comment on column openings_careers.industry_4_openings is 'Industry 4: Job Openings in {2021}'; $$,
     $$ comment on column openings_careers.industry_5_name is 'Industry 5: Name'; $$,
     $$ comment on column openings_careers.industry_5_percent is 'Industry 5: %'; $$,
-    $$ comment on column openings_careers.industry_5_openings is 'Industry 5: Job Openings in 2021'; $$
+    $$ comment on column openings_careers.industry_5_openings is 'Industry 5: Job Openings in {2021}'; $$
 ;

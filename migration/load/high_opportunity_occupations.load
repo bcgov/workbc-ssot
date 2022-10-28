@@ -41,12 +41,12 @@ load csv
     $$ create index high_opportunity_occupations_noc_idx on high_opportunity_occupations (noc); $$,
     $$ comment on table high_opportunity_occupations is 'HOO BC and Region for new tool (with Skills and Competencies 2021)'; $$,
     $$ comment on column high_opportunity_occupations.occupation is 'Occupation Title'; $$,
-    $$ comment on column high_opportunity_occupations.openings_forecast is 'Job Openings 2021-2031'; $$,
-    $$ comment on column high_opportunity_occupations.wage_rate_low is 'Wage Rate Low 2020'; $$,
-    $$ comment on column high_opportunity_occupations.wage_rate_median is 'Wage Rate Median 2020'; $$,
-    $$ comment on column high_opportunity_occupations.wage_rate_high is 'Wage Rate High 2020'; $$,
+    $$ comment on column high_opportunity_occupations.openings_forecast is 'Job Openings {2021-2031}'; $$,
+    $$ comment on column high_opportunity_occupations.wage_rate_low is 'Wage Rate Low {2020}'; $$,
+    $$ comment on column high_opportunity_occupations.wage_rate_median is 'Wage Rate Median {2020}'; $$,
+    $$ comment on column high_opportunity_occupations.wage_rate_high is 'Wage Rate High {2020}'; $$,
     $$ comment on column high_opportunity_occupations.occupational_interest is 'Occupational Interest'; $$,
-    $$ comment on column high_opportunity_occupations.skills_and_competencies_top_3 is 'Skills and Competencies (Top 3 together) 2019'; $$,
+    $$ comment on column high_opportunity_occupations.skills_and_competencies_top_3 is 'Skills and Competencies (Top 3 together) {2019}'; $$,
     $$ comment on column high_opportunity_occupations.noc is 'NOC'; $$,
     $$ comment on column high_opportunity_occupations.typical_education_background is 'Typical Education Background'; $$
 ;
