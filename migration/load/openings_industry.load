@@ -8,8 +8,14 @@ load csv
     )
     into postgresql:///ssot
     target table openings_industry
+    target columns
+    (
+        industry,
+        noc text using (trim-hash noc),
+        description,
+        openings int using (not-available-to-null openings)
+    )
     with
-        null if 'NA',
         skip header = 1,
         fields optionally enclosed by '"',
         fields terminated by ',',
@@ -27,7 +33,6 @@ load csv
     $$
 
     after load do
-    $$ update openings_industry set noc = substring(noc, 2); $$,
     $$ comment on table openings_industry is '2022 top_10_careers_by_aggregate_industry'; $$,
     $$ comment on column openings_industry.industry is 'Aggregate Industry'; $$,
     $$ comment on column openings_industry.noc is 'NOC'; $$,

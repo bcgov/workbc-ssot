@@ -11,8 +11,17 @@ load csv
     )
     into postgresql:///ssot
     target table wages
+    target columns
+    (
+        noc text using (trim-hash noc),
+        occupation_title,
+        esdc_wage_rate_low numeric using (not-available-to-null esdc_wage_rate_low),
+        esdc_wage_rate_median numeric using (not-available-to-null esdc_wage_rate_median),
+        esdc_wage_rate_high numeric using (not-available-to-null esdc_wage_rate_high),
+        calculated_median_annual_salary numeric using (not-available-to-null calculated_median_annual_salary),
+        source_information text using (not-available-to-null source_information)
+    )
     with
-        null if 'NA',
         skip header = 1,
         fields optionally enclosed by '"',
         fields terminated by ',',
@@ -24,10 +33,10 @@ load csv
     (
         noc text primary key,
         occupation_title text,
-        esdc_wage_rate_low text,
-        esdc_wage_rate_median text,
-        esdc_wage_rate_high text,
-        calculated_median_annual_salary text,
+        esdc_wage_rate_low numeric,
+        esdc_wage_rate_median numeric,
+        esdc_wage_rate_high numeric,
+        calculated_median_annual_salary numeric,
         source_information text
     );
     $$

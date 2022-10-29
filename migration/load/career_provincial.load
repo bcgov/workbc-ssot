@@ -16,8 +16,22 @@ load csv
     )
     into postgresql:///ssot
     target table career_provincial
+    target columns
+    (
+        noc text using (trim-hash noc),
+        description,
+        forecasted_average_employment_growth_rate_first5y numeric using (not-available-to-null forecasted_average_employment_growth_rate_first5y),
+        forecasted_average_employment_growth_rate_second5y numeric using (not-available-to-null forecasted_average_employment_growth_rate_second5y),
+        job_openings_first int using (not-available-to-null job_openings_first),
+        job_openings_second int using (not-available-to-null job_openings_second),
+        job_openings_third int using (not-available-to-null job_openings_third),
+        expected_job_openings_10y int using (not-available-to-null expected_job_openings_10y),
+        replacement_of_retiring_workers_10y_pct numeric using (not-available-to-null replacement_of_retiring_workers_10y_pct),
+        replacement_of_retiring_workers_10y int using (not-available-to-null replacement_of_retiring_workers_10y),
+        new_jobs_due_to_economic_growth_10y_pct numeric using (not-available-to-null new_jobs_due_to_economic_growth_10y_pct),
+        new_jobs_due_to_economic_growth_10y int using (not-available-to-null new_jobs_due_to_economic_growth_10y)
+    )
     with
-        null if 'NA',
         skip header = 3,
         fields optionally enclosed by '"',
         fields terminated by ',',
@@ -43,7 +57,6 @@ load csv
     $$
 
     after load do
-    $$ update career_provincial set noc = substring(noc, 2); $$,
     $$ comment on table career_provincial is '3.3.1_WorkBC_Career_Profile_Data_2022-2032 > Provincial Outlook'; $$,
     $$ comment on column career_provincial.noc is 'NOC'; $$,
     $$ comment on column career_provincial.description is 'Description'; $$,

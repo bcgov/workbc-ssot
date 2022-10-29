@@ -13,8 +13,19 @@ load csv
     )
     into postgresql:///ssot
     target table high_opportunity_occupations
+    target columns
+    (
+        noc text using (trim-hash noc),
+        occupation,
+        openings_forecast int using (not-available-to-null openings_forecast),
+        wage_rate_low numeric using (not-available-to-null wage_rate_low),
+        wage_rate_median numeric using (not-available-to-null wage_rate_median),
+        wage_rate_high numeric using (not-available-to-null wage_rate_high),
+        occupational_interest,
+        skills_and_competencies_top_3,
+        typical_education_background
+    )
     with
-        null if 'NA',
         skip header = 4,
         fields optionally enclosed by '"',
         fields terminated by ',',
@@ -37,7 +48,6 @@ load csv
     $$
 
     after load do
-    $$ update high_opportunity_occupations set noc = substring(noc, 2); $$,
     $$ create index high_opportunity_occupations_noc_idx on high_opportunity_occupations (noc); $$,
     $$ comment on table high_opportunity_occupations is 'HOO BC and Region for new tool (with Skills and Competencies 2021)'; $$,
     $$ comment on column high_opportunity_occupations.occupation is 'Occupation Title'; $$,

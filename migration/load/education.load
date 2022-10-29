@@ -7,8 +7,13 @@ load csv
     )
     into postgresql:///ssot
     target table education
+    target columns
+    (
+        noc text using (trim-hash noc),
+        description,
+        typical_education_background
+    )
     with
-        null if 'NA',
         skip header = 1,
         fields optionally enclosed by '"',
         fields terminated by ',',
@@ -25,7 +30,6 @@ load csv
     $$
 
     after load do
-    $$ update education set noc = substring(noc, 2); $$,
     $$ comment on table education is 'All Occupation''s Education Background 2021'; $$,
     $$ comment on column education.noc is '4-digit NOC'; $$,
     $$ comment on column education.description is 'Description'; $$,

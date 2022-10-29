@@ -7,8 +7,13 @@ load csv
     )
     into postgresql:///ssot
     target table occupational_interests
+    target columns
+    (
+        noc text using (trim-hash noc),
+        options text using (not-available-to-null options),
+        occupational_interest text using (not-available-to-null occupational_interest)
+    )
     with
-        null if 'NA',
         skip header = 1,
         fields optionally enclosed by '"',
         fields terminated by ',',
@@ -25,8 +30,7 @@ load csv
     $$
 
     after load do
-    $$ update occupational_interests set noc = substring(noc, 2); $$,
-    $$ delete from occupational_interests where trim(occupational_interest) = ''; $$,
+    $$ delete from occupational_interests where occupational_interest is null; $$,
     $$ create index occupational_interests_noc_idx on occupational_interests (noc); $$,
     $$ comment on table occupational_interests is 'Occupational Interests_Mar 24 2021'; $$,
     $$ comment on column occupational_interests.noc is 'NOC'; $$,

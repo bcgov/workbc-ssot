@@ -33,8 +33,33 @@ load csv
     )
     into postgresql:///ssot
     target table career_regional
+    target columns
+    (
+        noc text using (trim-hash noc),
+        description,
+        cariboo_employment_current int using (not-available-to-null cariboo_employment_current),
+        cariboo_average_annual_employment_growth_10y_pct numeric using (not-available-to-null cariboo_average_annual_employment_growth_10y_pct),
+        cariboo_expected_number_of_job_openings_10y int using (not-available-to-null cariboo_expected_number_of_job_openings_10y),
+        kootenay_employment_current int using (not-available-to-null kootenay_employment_current),
+        kootenay_average_annual_employment_growth_10y_pct numeric using (not-available-to-null kootenay_average_annual_employment_growth_10y_pct),
+        kootenay_expected_number_of_job_openings_10y int using (not-available-to-null kootenay_expected_number_of_job_openings_10y),
+        mainland_southwest_employment_current int using (not-available-to-null mainland_southwest_employment_current),
+        mainland_southwest_annual_employment_growth_10y_pct numeric using (not-available-to-null mainland_southwest_annual_employment_growth_10y_pct),
+        mainland_southwest_expected_number_of_job_openings_10y int using (not-available-to-null mainland_southwest_expected_number_of_job_openings_10y),
+        north_coast_and_nechako_employment_current int using (not-available-to-null north_coast_and_nechako_employment_current),
+        north_coast_and_nechako_annual_employment_growth_10y_pct numeric using (not-available-to-null north_coast_and_nechako_annual_employment_growth_10y_pct),
+        north_coast_and_nechako_expected_number_of_job_openings_10y int using (not-available-to-null north_coast_and_nechako_expected_number_of_job_openings_10y),
+        northeast_employment_current int using (not-available-to-null northeast_employment_current),
+        northeast_annual_employment_growth_10y_pct numeric using (not-available-to-null northeast_annual_employment_growth_10y_pct),
+        northeast_expected_number_of_job_openings_10y int using (not-available-to-null northeast_expected_number_of_job_openings_10y),
+        thompson_okanagan_employment_current int using (not-available-to-null thompson_okanagan_employment_current),
+        thompson_okanagan_annual_employment_growth_10y_pct numeric using (not-available-to-null thompson_okanagan_annual_employment_growth_10y_pct),
+        thompson_okanagan_expected_number_of_job_openings_10y int using (not-available-to-null thompson_okanagan_expected_number_of_job_openings_10y),
+        vancouver_island_coast_employment_current int using (not-available-to-null vancouver_island_coast_employment_current),
+        vancouver_island_coast_annual_employment_growth_10y_pct numeric using (not-available-to-null vancouver_island_coast_annual_employment_growth_10y_pct),
+        vancouver_island_coast_expected_number_of_job_openings_10y int using (not-available-to-null vancouver_island_coast_expected_number_of_job_openings_10y)
+    )
     with
-        null if 'NA',
         skip header = 4,
         fields optionally enclosed by '"',
         fields terminated by ',',
@@ -71,7 +96,6 @@ load csv
     $$
 
     after load do
-    $$ update career_regional set noc = substring(noc, 2); $$,
     $$ comment on table career_regional is '3.3.1_WorkBC_Career_Profile_Data_2022-2032 > Regional Outlook'; $$,
     $$ comment on column career_regional.noc is 'NOC'; $$,
     $$ comment on column career_regional.description is 'Occupation'; $$,

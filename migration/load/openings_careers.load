@@ -21,8 +21,27 @@ load csv
     )
     into postgresql:///ssot
     target table openings_careers
+    target columns
+    (
+        noc text using (trim-hash noc),
+        description,
+        industry_1_name text using (not-available-to-null industry_1_name),
+        industry_1_percent numeric using (not-available-to-null industry_1_percent),
+        industry_1_openings int using (not-available-to-null industry_1_openings),
+        industry_2_name text using (not-available-to-null industry_2_name),
+        industry_2_percent numeric using (not-available-to-null industry_2_percent),
+        industry_2_openings int using (not-available-to-null industry_2_openings),
+        industry_3_name text using (not-available-to-null industry_3_name),
+        industry_3_percent numeric using (not-available-to-null industry_3_percent),
+        industry_3_openings int using (not-available-to-null industry_1_openings),
+        industry_4_name text using (not-available-to-null industry_4_name),
+        industry_4_percent numeric using (not-available-to-null industry_4_percent),
+        industry_4_openings int using (not-available-to-null industry_4_openings),
+        industry_5_name text using (not-available-to-null industry_5_name),
+        industry_5_percent numeric using (not-available-to-null industry_5_percent),
+        industry_5_openings int using (not-available-to-null industry_5_openings)
+    )
     with
-        null if 'NA',
         skip header = 4,
         fields optionally enclosed by '"',
         fields terminated by ',',
@@ -35,40 +54,24 @@ load csv
         noc text primary key,
         description text,
         industry_1_name text,
-        industry_1_percent text,
-        industry_1_openings text,
+        industry_1_percent numeric,
+        industry_1_openings int,
         industry_2_name text,
-        industry_2_percent text,
-        industry_2_openings text,
+        industry_2_percent numeric,
+        industry_2_openings int,
         industry_3_name text,
-        industry_3_percent text,
-        industry_3_openings text,
+        industry_3_percent numeric,
+        industry_3_openings int,
         industry_4_name text,
-        industry_4_percent text,
-        industry_4_openings text,
+        industry_4_percent numeric,
+        industry_4_openings int,
         industry_5_name text,
-        industry_5_percent text,
-        industry_5_openings text
+        industry_5_percent numeric,
+        industry_5_openings int
     );
     $$
 
     after load do
-    $$ update openings_careers set noc = substring(noc, 2); $$,
-    $$ update openings_careers set industry_1_name = null where openings_careers.industry_1_name ilike 'n/a'; $$,
-    $$ update openings_careers set industry_1_percent = null where openings_careers.industry_1_percent ilike 'n/a'; $$,
-    $$ update openings_careers set industry_1_openings = null where openings_careers.industry_1_openings ilike 'n/a'; $$,
-    $$ update openings_careers set industry_2_name = null where openings_careers.industry_2_name ilike 'n/a'; $$,
-    $$ update openings_careers set industry_2_percent = null where openings_careers.industry_2_percent ilike 'n/a'; $$,
-    $$ update openings_careers set industry_2_openings = null where openings_careers.industry_2_openings ilike 'n/a'; $$,
-    $$ update openings_careers set industry_3_name = null where openings_careers.industry_3_name ilike 'n/a'; $$,
-    $$ update openings_careers set industry_3_percent = null where openings_careers.industry_3_percent ilike 'n/a'; $$,
-    $$ update openings_careers set industry_3_openings = null where openings_careers.industry_3_openings ilike 'n/a'; $$,
-    $$ update openings_careers set industry_4_name = null where openings_careers.industry_4_name ilike 'n/a'; $$,
-    $$ update openings_careers set industry_4_percent = null where openings_careers.industry_4_percent ilike 'n/a'; $$,
-    $$ update openings_careers set industry_4_openings = null where openings_careers.industry_4_openings ilike 'n/a'; $$,
-    $$ update openings_careers set industry_5_name = null where openings_careers.industry_5_name ilike 'n/a'; $$,
-    $$ update openings_careers set industry_5_percent = null where openings_careers.industry_5_percent ilike 'n/a'; $$,
-    $$ update openings_careers set industry_5_openings = null where openings_careers.industry_5_openings ilike 'n/a'; $$,
     $$ comment on table openings_careers is 'Job Openings by Industry_2016 Census_2021 LMO'; $$,
     $$ comment on column openings_careers.noc is 'NOC'; $$,
     $$ comment on column openings_careers.description is 'Description'; $$,

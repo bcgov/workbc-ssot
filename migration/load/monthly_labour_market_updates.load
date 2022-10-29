@@ -106,8 +106,112 @@ load csv
     )
     into postgresql:///ssot
     target table monthly_labour_market_updates
+    target columns
+    (
+        year,
+        month,
+
+        total_employed int using (not-available-to-null total_employed),
+        total_unemployed int using (not-available-to-null total_unemployed),
+        total_unemployed_previous int using (not-available-to-null total_unemployed_previous),
+
+        employment_by_age_group_15_24 int using (not-available-to-null employment_by_age_group_15_24),
+        employment_by_age_group_25_54 int using (not-available-to-null employment_by_age_group_25_54),
+        employment_by_age_group_55 int using (not-available-to-null employment_by_age_group_55),
+        employment_by_age_group_15_24_previous int using (not-available-to-null employment_by_age_group_15_24_previous),
+        employment_by_age_group_25_54_previous int using (not-available-to-null employment_by_age_group_25_54_previous),
+        employment_by_age_group_55_previous int using (not-available-to-null employment_by_age_group_55_previous),
+
+        employment_by_gender_women int using (not-available-to-null employment_by_gender_women),
+        employment_by_gender_men int using (not-available-to-null employment_by_gender_men),
+        employment_by_gender_women_previous int using (not-available-to-null employment_by_gender_women_previous),
+        employment_by_gender_men_previous int using (not-available-to-null employment_by_gender_men_previous),
+
+        employment_change_pct_total_employment numeric using (not-available-to-null employment_change_pct_total_employment),
+        employment_change_abs_total_employment int using (not-available-to-null employment_change_abs_total_employment),
+        employment_change_pct_full_time_jobs numeric using (not-available-to-null employment_change_pct_full_time_jobs),
+        employment_change_abs_full_time_jobs int using (not-available-to-null employment_change_abs_full_time_jobs),
+        employment_change_pct_part_time_jobs numeric using (not-available-to-null employment_change_pct_part_time_jobs),
+        employment_change_abs_part_time_jobs int using (not-available-to-null employment_change_abs_part_time_jobs),
+
+        employment_rate_change_pct_unemployment numeric using (not-available-to-null employment_rate_change_pct_unemployment),
+        employment_rate_pct_unemployment numeric using (not-available-to-null employment_rate_pct_unemployment),
+        employment_rate_change_pct_participation numeric using (not-available-to-null employment_rate_change_pct_participation),
+        employment_rate_pct_participation numeric using (not-available-to-null employment_rate_pct_participation),
+        employment_rate_change_pct_unemployment_previous numeric using (not-available-to-null employment_rate_change_pct_unemployment_previous),
+        employment_rate_pct_unemployment_previous numeric using (not-available-to-null employment_rate_pct_unemployment_previous),
+        employment_rate_change_pct_participation_previous numeric using (not-available-to-null employment_rate_change_pct_participation_previous),
+        employment_rate_pct_participation_previous numeric using (not-available-to-null employment_rate_pct_participation_previous),
+
+        population_british_columbia int using (not-available-to-null population_british_columbia),
+        population_vancouver_island_and_coast int using (not-available-to-null population_vancouver_island_and_coast),
+        population_lower_mainland_southwest int using (not-available-to-null population_lower_mainland_southwest),
+        population_thompson_okanagan int using (not-available-to-null population_thompson_okanagan),
+        population_kootenay int using (not-available-to-null population_kootenay),
+        population_cariboo int using (not-available-to-null population_cariboo),
+        population_north_coast_and_nechako int using (not-available-to-null population_north_coast_and_nechako),
+        population_northeast int using (not-available-to-null population_northeast),
+
+        unemployment_pct_british_columbia numeric using (not-available-to-null unemployment_pct_british_columbia),
+        unemployment_pct_british_columbia_previous numeric using (not-available-to-null unemployment_pct_british_columbia_previous),
+        total_jobs_british_columbia int using (not-available-to-null total_jobs_british_columbia),
+        unemployment_pct_vancouver_island_coast numeric using (not-available-to-null unemployment_pct_vancouver_island_coast),
+        unemployment_pct_vancouver_island_coast_previous numeric using (not-available-to-null unemployment_pct_vancouver_island_coast_previous),
+        total_jobs_vancouver_island_coast int using (not-available-to-null total_jobs_vancouver_island_coast),
+        unemployment_pct_mainland_southwest numeric using (not-available-to-null unemployment_pct_mainland_southwest),
+        unemployment_pct_mainland_southwest_previous numeric using (not-available-to-null unemployment_pct_mainland_southwest_previous),
+        total_jobs_mainland_southwest int using (not-available-to-null total_jobs_mainland_southwest),
+        unemployment_pct_thompson_okanagan numeric using (not-available-to-null unemployment_pct_thompson_okanagan),
+        unemployment_pct_thompson_okanagan_previous numeric using (not-available-to-null unemployment_pct_thompson_okanagan_previous),
+        total_jobs_thompson_okanagan int using (not-available-to-null total_jobs_thompson_okanagan),
+        unemployment_pct_kootenay numeric using (not-available-to-null unemployment_pct_kootenay),
+        unemployment_pct_kootenay_previous numeric using (not-available-to-null unemployment_pct_kootenay_previous),
+        total_jobs_kootenay int using (not-available-to-null total_jobs_kootenay),
+        unemployment_pct_cariboo numeric using (not-available-to-null unemployment_pct_cariboo),
+        unemployment_pct_cariboo_previous numeric using (not-available-to-null unemployment_pct_cariboo_previous),
+        total_jobs_cariboo int using (not-available-to-null total_jobs_cariboo),
+        unemployment_pct_north_coast_and_nechako numeric using (not-available-to-null unemployment_pct_north_coast_and_nechako),
+        unemployment_pct_north_coast_and_nechako_previous numeric using (not-available-to-null unemployment_pct_north_coast_and_nechako_previous),
+        total_jobs_north_coast_and_nechako int using (not-available-to-null total_jobs_north_coast_and_nechako),
+        unemployment_pct_northeast numeric using (not-available-to-null unemployment_pct_northeast),
+        unemployment_pct_northeast_previous numeric using (not-available-to-null unemployment_pct_northeast_previous),
+        total_jobs_northeast int using (not-available-to-null total_jobs_northeast),
+
+        city_unemployment_pct_kelowna numeric using (not-available-to-null city_unemployment_pct_kelowna),
+        city_unemployment_pct_abbotsford_mission numeric using (not-available-to-null city_unemployment_pct_abbotsford_mission),
+        city_unemployment_pct_vancouver numeric using (not-available-to-null city_unemployment_pct_vancouver),
+        city_unemployment_pct_victoria numeric using (not-available-to-null city_unemployment_pct_victoria),
+
+        industry_pct_accommodation_and_food_services numeric using (not-available-to-null industry_pct_accommodation_and_food_services),
+        industry_abs_accommodation_and_food_services int using (not-available-to-null industry_abs_accommodation_and_food_services),
+        industry_pct_agriculture numeric using (not-available-to-null industry_pct_agriculture),
+        industry_abs_agriculture int using (not-available-to-null industry_abs_agriculture),
+        industry_pct_construction numeric using (not-available-to-null industry_pct_construction),
+        industry_abs_construction int using (not-available-to-null industry_abs_construction),
+        industry_pct_educational_services numeric using (not-available-to-null industry_pct_educational_services),
+        industry_abs_educational_services int using (not-available-to-null industry_abs_educational_services),
+        industry_pct_finance_insurance_real_estate_rental numeric using (not-available-to-null industry_pct_finance_insurance_real_estate_rental),
+        industry_abs_finance_insurance_real_estate_rental int using (not-available-to-null industry_abs_finance_insurance_real_estate_rental),
+        industry_pct_health_care_and_social_assistance numeric using (not-available-to-null industry_pct_health_care_and_social_assistance),
+        industry_abs_health_care_and_social_assistance int using (not-available-to-null industry_abs_health_care_and_social_assistance),
+        industry_pct_manufacturing numeric using (not-available-to-null industry_pct_manufacturing),
+        industry_abs_manufacturing int using (not-available-to-null industry_abs_manufacturing),
+        industry_pct_other_primary numeric using (not-available-to-null industry_pct_other_primary),
+        industry_abs_other_primary int using (not-available-to-null industry_abs_other_primary),
+        industry_pct_other_services numeric using (not-available-to-null industry_pct_other_services),
+        industry_abs_other_services int using (not-available-to-null industry_abs_other_services),
+        industry_pct_professional_scientific_and_technical numeric using (not-available-to-null industry_pct_professional_scientific_and_technical),
+        industry_abs_professional_scientific_and_technical int using (not-available-to-null industry_abs_professional_scientific_and_technical),
+        industry_pct_public_administration numeric using (not-available-to-null industry_pct_public_administration),
+        industry_abs_public_administration int using (not-available-to-null industry_abs_public_administration),
+        industry_pct_transportation_and_warehousing numeric using (not-available-to-null industry_pct_transportation_and_warehousing),
+        industry_abs_transportation_and_warehousing int using (not-available-to-null industry_abs_transportation_and_warehousing),
+        industry_pct_utilities numeric using (not-available-to-null industry_pct_utilities),
+        industry_abs_utilities int using (not-available-to-null industry_abs_utilities),
+        industry_pct_wholesale_and_retail_trade numeric using (not-available-to-null industry_pct_wholesale_and_retail_trade),
+        industry_abs_wholesale_and_retail_trade int using (not-available-to-null industry_abs_wholesale_and_retail_trade)
+    )
     with
-        null if 'NA',
         skip header = 1,
         fields optionally enclosed by '"',
         fields terminated by ','
@@ -216,12 +320,13 @@ load csv
         industry_pct_utilities numeric,
         industry_abs_utilities int,
         industry_pct_wholesale_and_retail_trade numeric,
-        industry_abs_wholesale_and_retail_trade int
+        industry_abs_wholesale_and_retail_trade int,
+
+        primary key(year, month)
     );
     $$
 
     after load do
-    $$ create unique index if not exists monthly_labour_market_updates_date_idx on monthly_labour_market_updates (year, month); $$,
     $$ comment on table monthly_labour_market_updates is 'WorkBC LMS _<YYYY> <MMM>'; $$,
     $$ comment on column monthly_labour_market_updates.year is 'Report Year'; $$,
     $$ comment on column monthly_labour_market_updates.month is 'Report Month'; $$,

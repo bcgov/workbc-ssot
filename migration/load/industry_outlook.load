@@ -14,8 +14,20 @@ load csv
     )
     into postgresql:///ssot
     target table industry_outlook
+    target columns
+    (
+        industry,
+        openings int using (not-available-to-null openings),
+        share_total_employment_pct_first numeric using (not-available-to-null share_total_employment_pct_first),
+        share_total_employment_pct_second numeric using (not-available-to-null share_total_employment_pct_second),
+        share_total_employment_pct_third numeric using (not-available-to-null share_total_employment_pct_third),
+        employment_first int using (not-available-to-null employment_first),
+        employment_second int using (not-available-to-null employment_second),
+        employment_third int using (not-available-to-null employment_third),
+        annual_employment_growth_rate_pct_first5y numeric using (not-available-to-null annual_employment_growth_rate_pct_first5y),
+        annual_employment_growth_rate_pct_second5y numeric using (not-available-to-null annual_employment_growth_rate_pct_second5y)
+    )
     with
-        null if 'NA',
         skip header = 2,
         fields optionally enclosed by '"',
         fields terminated by ',',

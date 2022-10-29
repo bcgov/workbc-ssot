@@ -10,8 +10,16 @@ load csv
     )
     into postgresql:///ssot
     target table skills
+    target columns
+    (
+        noc text using (trim-hash noc),
+        skills_competencies,
+        importance numeric using (not-available-to-null importance),
+        importance_description,
+        proficiency numeric using (not-available-to-null proficiency),
+        proficiency_description
+    )
     with
-        null if 'NA',
         skip header = 1,
         fields optionally enclosed by '"',
         fields terminated by ',',
@@ -23,9 +31,9 @@ load csv
     (
         noc text,
         skills_competencies text,
-        importance text,
+        importance numeric,
         importance_description text,
-        proficiency text,
+        proficiency numeric,
         proficiency_description text
     );
     $$
