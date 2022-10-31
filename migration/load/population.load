@@ -2,7 +2,7 @@ load csv
     from 'population.csv'
     (
         region,
-        year
+        population
     )
     into postgresql:///ssot
     target table population
@@ -17,12 +17,12 @@ load csv
     $$ create table if not exists population
     (
         region citext primary key,
-        year int
+        population int
     );
     $$
 
     after load do
     $$ comment on table population is 'British Columbia Development Region and Regional District Population Estimates'; $$,
     $$ comment on column population.region is 'Region'; $$,
-    $$ comment on column population.year is '{2021}'; $$
+    $$ comment on column population.population is '{2021}'; $$
 ;
