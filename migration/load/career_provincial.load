@@ -66,8 +66,8 @@ load csv
     $$ comment on column career_provincial.job_openings_second is 'Job Openings {2027}'; $$,
     $$ comment on column career_provincial.job_openings_third is 'Job Openings {2032}'; $$,
     $$ comment on column career_provincial.expected_job_openings_10y is '10 year expected job openings {2022-2032}'; $$,
-    $$ comment on column career_provincial.replacement_of_retiring_workers_10y_pct is '10 year Replacement of retiring workers (%)'; $$,
-    $$ comment on column career_provincial.replacement_of_retiring_workers_10y is '10 year Replacement of retiring workers (Number)'; $$,
-    $$ comment on column career_provincial.new_jobs_due_to_economic_growth_10y_pct is '10 year New jobs due to economic growth (%)'; $$,
-    $$ comment on column career_provincial.new_jobs_due_to_economic_growth_10y is '10 year New jobs due to economic growth (Number)'; $$
+    $$ comment on column career_provincial.replacement_of_retiring_workers_10y_pct is '10 year Replacement of retiring workers > %'; $$,
+    $$ comment on column career_provincial.replacement_of_retiring_workers_10y is '10 year Replacement of retiring workers > Number'; $$,
+    $$ comment on column career_provincial.new_jobs_due_to_economic_growth_10y_pct is '10 year New jobs due to economic growth > %'; $$,
+    $$ comment on column career_provincial.new_jobs_due_to_economic_growth_10y is '10 year New jobs due to economic growth > Number'; $$
 ;

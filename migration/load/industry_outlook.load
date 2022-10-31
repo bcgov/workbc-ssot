@@ -53,13 +53,13 @@ load csv
     after load do
     $$ comment on table industry_outlook is '3.3.2_WorkBC_Industry_Profile_2022-2032'; $$,
     $$ comment on column industry_outlook.industry is 'Industry'; $$,
-    $$ comment on column industry_outlook.openings is 'Job Openings: {2023-2032}'; $$,
-    $$ comment on column industry_outlook.share_total_employment_pct_first is 'Forecasted industry share of total employment (%): {2022}'; $$,
-    $$ comment on column industry_outlook.share_total_employment_pct_second is 'Forecasted industry share of total employment (%): {2027}'; $$,
-    $$ comment on column industry_outlook.share_total_employment_pct_third is 'Forecasted industry share of total employment (%): {2032}'; $$,
-    $$ comment on column industry_outlook.employment_first is 'Forecasted employment: {2022}'; $$,
-    $$ comment on column industry_outlook.employment_second is 'Forecasted employment: {2027}'; $$,
-    $$ comment on column industry_outlook.employment_third is 'Forecasted employment: {2032}'; $$,
-    $$ comment on column industry_outlook.annual_employment_growth_rate_pct_first5y is 'Forecasted average annual employment growth rate (%): {2022-2027}'; $$,
-    $$ comment on column industry_outlook.annual_employment_growth_rate_pct_second5y is 'Forecasted average annual employment growth rate (%): {2027-2032}'; $$
+    $$ comment on column industry_outlook.openings is 'Job Openings > {2023-2032}'; $$,
+    $$ comment on column industry_outlook.share_total_employment_pct_first is 'Forecasted industry share of total employment (%) > {2022}'; $$,
+    $$ comment on column industry_outlook.share_total_employment_pct_second is 'Forecasted industry share of total employment (%) > {2027}'; $$,
+    $$ comment on column industry_outlook.share_total_employment_pct_third is 'Forecasted industry share of total employment (%) > {2032}'; $$,
+    $$ comment on column industry_outlook.employment_first is 'Forecasted employment > {2022}'; $$,
+    $$ comment on column industry_outlook.employment_second is 'Forecasted employment > {2027}'; $$,
+    $$ comment on column industry_outlook.employment_third is 'Forecasted employment > {2032}'; $$,
+    $$ comment on column industry_outlook.annual_employment_growth_rate_pct_first5y is 'Forecasted average annual employment growth rate (%) > {2022-2027}'; $$,
+    $$ comment on column industry_outlook.annual_employment_growth_rate_pct_second5y is 'Forecasted average annual employment growth rate (%) > {2027-2032}'; $$
 ;

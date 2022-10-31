@@ -1,0 +1,34 @@
+load csv
+    from 'cities.csv'
+    (
+        region,
+        district [null if blanks, trim both whitespace],
+        district_change,
+        cities [null if blanks, trim both whitespace],
+        cities_change
+    )
+    into postgresql:///ssot
+    target table cities
+    with
+        skip header = 1,
+        fields optionally enclosed by '"',
+        fields terminated by ',',
+        drop indexes
+
+    before load do
+    $$ drop table if exists cities; $$,
+    $$ create table if not exists cities
+    (
+        region citext,
+        district text,
+        cities text
+    );
+    $$
+
+    after load do
+    $$ create index cities_region_idx on cities (region); $$,
+    $$ comment on table cities is 'Key Cities > Regional District & Key Cities'; $$,
+    $$ comment on column cities.region is 'Regions'; $$,
+    $$ comment on column cities.district is 'Regional District'; $$,
+    $$ comment on column cities.cities is 'Key Cities'; $$
+;

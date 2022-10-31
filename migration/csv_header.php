@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Remove newlines from CSV header line.
+ * Remove newlines from CSV header lines.
  *
  * Usage: php csv_header.php [header-lines] < /path/to/input.csv > /path/to/output.csv
  */

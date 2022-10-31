@@ -1,0 +1,35 @@
+load csv
+    from 'regional_top_industries.csv'
+    (
+        industry,
+        openings,
+        forecasted_annual_employment_growth_pct,
+        region
+    )
+    into postgresql:///ssot
+    target table regional_top_industries
+    with
+        skip header = 2,
+        fields optionally enclosed by '"',
+        fields terminated by ',',
+        drop indexes
+
+    before load do
+    $$ drop table if exists regional_top_industries; $$,
+    $$ create table if not exists regional_top_industries
+    (
+        region citext,
+        industry citext,
+        openings int,
+        forecasted_annual_employment_growth_pct numeric,
+        primary key(region, industry)
+    );
+    $$
+
+    after load do
+    $$ comment on table regional_top_industries is 'Top 10 industries by region'; $$,
+    $$ comment on column regional_top_industries.region is 'Region'; $$,
+    $$ comment on column regional_top_industries.industry is 'Industry'; $$,
+    $$ comment on column regional_top_industries.openings is 'Job Openings {2022-2032}'; $$,
+    $$ comment on column regional_top_industries.forecasted_annual_employment_growth_pct is 'Forecasted Average Annual Employment Growth (%) {2022-2032}'; $$
+;

@@ -1,0 +1,28 @@
+load csv
+    from 'population.csv'
+    (
+        region,
+        year
+    )
+    into postgresql:///ssot
+    target table population
+    with
+        skip header = 2,
+        fields optionally enclosed by '"',
+        fields terminated by ',',
+        drop indexes
+
+    before load do
+    $$ drop table if exists population; $$,
+    $$ create table if not exists population
+    (
+        region citext primary key,
+        year int
+    );
+    $$
+
+    after load do
+    $$ comment on table population is 'British Columbia Development Region and Regional District Population Estimates'; $$,
+    $$ comment on column population.region is 'Region'; $$,
+    $$ comment on column population.year is '{2021}'; $$
+;

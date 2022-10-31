@@ -1,0 +1,46 @@
+load csv
+    from 'regional_top_occupations.csv'
+    (
+        noc,
+        occupation,
+        openings,
+        forecasted_annual_employment_growth_pct,
+        region
+    )
+    into postgresql:///ssot
+    target table regional_top_occupations
+    target columns
+    (
+        region,
+        noc text using (trim-hash noc),
+        occupation,
+        openings,
+        forecasted_annual_employment_growth_pct
+    )
+    with
+        skip header = 2,
+        fields optionally enclosed by '"',
+        fields terminated by ',',
+        drop indexes
+
+    before load do
+    $$ drop table if exists regional_top_occupations; $$,
+    $$ create table if not exists regional_top_occupations
+    (
+        region citext,
+        noc text,
+        occupation text,
+        openings int,
+        forecasted_annual_employment_growth_pct numeric,
+        primary key(region, noc)
+    );
+    $$
+
+    after load do
+    $$ comment on table regional_top_occupations is 'Top 10 Occupations by region'; $$,
+    $$ comment on column regional_top_occupations.region is 'Region'; $$,
+    $$ comment on column regional_top_occupations.noc is 'NOC'; $$,
+    $$ comment on column regional_top_occupations.occupation is 'Occupation'; $$,
+    $$ comment on column regional_top_occupations.openings is 'Job Openings {2022-2032}'; $$,
+    $$ comment on column regional_top_occupations.forecasted_annual_employment_growth_pct is 'Forecasted Average Annual Employment Growth (%) {2022-2032}'; $$
+;

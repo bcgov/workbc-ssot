@@ -1,0 +1,114 @@
+load csv
+    from 'labour_force_survey_regional_employment.csv'
+    (
+        region,
+        age_distribution_0_14,
+        age_distribution_15_24,
+        age_distribution_25_54,
+        age_distribution_55_64,
+        age_distribution_65,
+        full_time_employment_pct,
+        full_time_employment_num,
+        unemployment_rate_year_1,
+        unemployment_rate_year_2,
+        unemployment_rate_year_3,
+        unemployment_rate_year_4,
+        unemployment_rate_year_5,
+        unemployment_rate_year_6,
+        unemployment_rate_year_7,
+        unemployment_rate_year_8,
+        unemployment_rate_year_9,
+        unemployment_rate_year_10,
+        unemployment_rate_year_11,
+        unemployment_rate_year_low,
+        unemployment_rate_year_high,
+        unemployment_rate_year_avg
+    )
+    into postgresql:///ssot
+    target table labour_force_survey_regional_employment
+    target columns
+    (
+        region,
+        age_distribution_0_14 numeric using (not-available-to-null age_distribution_0_14),
+        age_distribution_15_24 numeric using (not-available-to-null age_distribution_15_24),
+        age_distribution_25_54 numeric using (not-available-to-null age_distribution_25_54),
+        age_distribution_55_64 numeric using (not-available-to-null age_distribution_55_64),
+        age_distribution_65 numeric using (not-available-to-null age_distribution_65),
+        full_time_employment_pct numeric using (not-available-to-null full_time_employment_pct),
+        full_time_employment_num numeric using (not-available-to-null full_time_employment_num),
+        unemployment_rate_year_1 numeric using (not-available-to-null unemployment_rate_year_1),
+        unemployment_rate_year_2 numeric using (not-available-to-null unemployment_rate_year_2),
+        unemployment_rate_year_3 numeric using (not-available-to-null unemployment_rate_year_3),
+        unemployment_rate_year_4 numeric using (not-available-to-null unemployment_rate_year_4),
+        unemployment_rate_year_5 numeric using (not-available-to-null unemployment_rate_year_5),
+        unemployment_rate_year_6 numeric using (not-available-to-null unemployment_rate_year_6),
+        unemployment_rate_year_7 numeric using (not-available-to-null unemployment_rate_year_7),
+        unemployment_rate_year_8 numeric using (not-available-to-null unemployment_rate_year_8),
+        unemployment_rate_year_9 numeric using (not-available-to-null unemployment_rate_year_9),
+        unemployment_rate_year_10 numeric using (not-available-to-null unemployment_rate_year_10),
+        unemployment_rate_year_11 numeric using (not-available-to-null unemployment_rate_year_11),
+        unemployment_rate_year_low numeric using (not-available-to-null unemployment_rate_year_low),
+        unemployment_rate_year_high numeric using (not-available-to-null unemployment_rate_year_high),
+        unemployment_rate_year_avg numeric using (not-available-to-null unemployment_rate_year_avg)
+    )
+    with
+        skip header = 5,
+        fields optionally enclosed by '"',
+        fields terminated by ',',
+        drop indexes
+
+    before load do
+    $$ drop table if exists labour_force_survey_regional_employment; $$,
+    $$ create table if not exists labour_force_survey_regional_employment
+    (
+        region citext primary key,
+        age_distribution_0_14 numeric,
+        age_distribution_15_24 numeric,
+        age_distribution_25_54 numeric,
+        age_distribution_55_64 numeric,
+        age_distribution_65 numeric,
+        full_time_employment_pct numeric,
+        full_time_employment_num numeric,
+        unemployment_rate_year_1 numeric,
+        unemployment_rate_year_2 numeric,
+        unemployment_rate_year_3 numeric,
+        unemployment_rate_year_4 numeric,
+        unemployment_rate_year_5 numeric,
+        unemployment_rate_year_6 numeric,
+        unemployment_rate_year_7 numeric,
+        unemployment_rate_year_8 numeric,
+        unemployment_rate_year_9 numeric,
+        unemployment_rate_year_10 numeric,
+        unemployment_rate_year_11 numeric,
+        unemployment_rate_year_low numeric,
+        unemployment_rate_year_high numeric,
+        unemployment_rate_year_avg numeric
+    );
+    $$
+
+    after load do
+    $$ update labour_force_survey_regional_employment set full_time_employment_num = trunc(full_time_employment_num); $$,
+    $$ comment on table labour_force_survey_regional_employment is '2020_LFS Data Sheet_final > Regional Profiles > Table 1'; $$,
+    $$ comment on column labour_force_survey_regional_employment.region is 'Region'; $$,
+    $$ comment on column labour_force_survey_regional_employment.age_distribution_0_14 is 'Population Distribution > Age distribution > 0-14'; $$,
+    $$ comment on column labour_force_survey_regional_employment.age_distribution_15_24 is 'Population Distribution > Age distribution > 15-24'; $$,
+    $$ comment on column labour_force_survey_regional_employment.age_distribution_25_54 is 'Population Distribution > Age distribution > 25-54'; $$,
+    $$ comment on column labour_force_survey_regional_employment.age_distribution_55_64 is 'Population Distribution > Age distribution > 55-64'; $$,
+    $$ comment on column labour_force_survey_regional_employment.age_distribution_65 is 'Population Distribution > Age distribution > 65+'; $$,
+    $$ comment on column labour_force_survey_regional_employment.full_time_employment_pct is 'Employment statistics > Regional full-time employment (%)'; $$,
+    $$ comment on column labour_force_survey_regional_employment.full_time_employment_num is 'Employment statistics > Regional full-time employment (Number)'; $$,
+    $$ comment on column labour_force_survey_regional_employment.unemployment_rate_year_1 is 'Employment statistics > Unemployment rate > 10-year unemployment rate (2010-2020) > {2010}'; $$,
+    $$ comment on column labour_force_survey_regional_employment.unemployment_rate_year_2 is 'Employment statistics > Unemployment rate > 10-year unemployment rate (2010-2020) > {2011}'; $$,
+    $$ comment on column labour_force_survey_regional_employment.unemployment_rate_year_3 is 'Employment statistics > Unemployment rate > 10-year unemployment rate (2010-2020) > {2012}'; $$,
+    $$ comment on column labour_force_survey_regional_employment.unemployment_rate_year_4 is 'Employment statistics > Unemployment rate > 10-year unemployment rate (2010-2020) > {2013}'; $$,
+    $$ comment on column labour_force_survey_regional_employment.unemployment_rate_year_5 is 'Employment statistics > Unemployment rate > 10-year unemployment rate (2010-2020) > {2014}'; $$,
+    $$ comment on column labour_force_survey_regional_employment.unemployment_rate_year_6 is 'Employment statistics > Unemployment rate > 10-year unemployment rate (2010-2020) > {2015}'; $$,
+    $$ comment on column labour_force_survey_regional_employment.unemployment_rate_year_7 is 'Employment statistics > Unemployment rate > 10-year unemployment rate (2010-2020) > {2016}'; $$,
+    $$ comment on column labour_force_survey_regional_employment.unemployment_rate_year_8 is 'Employment statistics > Unemployment rate > 10-year unemployment rate (2010-2020) > {2017}'; $$,
+    $$ comment on column labour_force_survey_regional_employment.unemployment_rate_year_9 is 'Employment statistics > Unemployment rate > 10-year unemployment rate (2010-2020) > {2018}'; $$,
+    $$ comment on column labour_force_survey_regional_employment.unemployment_rate_year_10 is 'Employment statistics > Unemployment rate > 10-year unemployment rate (2010-2020) > {2019}'; $$,
+    $$ comment on column labour_force_survey_regional_employment.unemployment_rate_year_11 is 'Employment statistics > Unemployment rate > 10-year unemployment rate (2010-2020) > {2020}'; $$,
+    $$ comment on column labour_force_survey_regional_employment.unemployment_rate_year_low is 'Employment statistics > Unemployment rate > 10-year unemployment rate (2010-2020) > Low'; $$,
+    $$ comment on column labour_force_survey_regional_employment.unemployment_rate_year_high is 'Employment statistics > Unemployment rate > 10-year unemployment rate (2010-2020) > High'; $$,
+    $$ comment on column labour_force_survey_regional_employment.unemployment_rate_year_avg is 'Employment statistics > Unemployment rate > 10-year unemployment rate (2010-2020) > Avg'; $$
+;

@@ -16,13 +16,7 @@ while ($row = fgetcsv(STDIN)) {
     if (!is_array($row)) {
         die("Expecting CSV file in stdin.\n" . $usage . PHP_EOL);
     }
-    // Skip empty rows.
-    foreach ($row as $cell) {
-        if (!empty($cell) || is_numeric($cell)) {
-            $csv[] = $row;
-            break;
-        }
-    }
+    $csv[] = $row;
 }
 $header_map = [
     'year' => $argv[1],

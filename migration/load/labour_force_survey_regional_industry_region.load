@@ -1,0 +1,101 @@
+load csv
+    from 'labour_force_survey_regional_industry_region.csv'
+    (
+        region,
+        accommodation_food_services,
+        agriculture_fishing,
+        business_building_other_support_services,
+        construction,
+        educational_services,
+        finance_insurance_real_estate,
+        forestry_logging_support_activities,
+        health_care_social_assistance,
+        information_culture_recreation,
+        manufacturing,
+        mining_oil_gas_extraction,
+        other_private_services,
+        professional_scientific_technical_services,
+        public_administration,
+        retail_trade,
+        transportation_warehousing,
+        utilities,
+        wholesale_trade
+    )
+    into postgresql:///ssot
+    target table labour_force_survey_regional_industry_region
+    target columns
+    (
+        region,
+        accommodation_food_services numeric using (not-available-to-null accommodation_food_services),
+        agriculture_fishing numeric using (not-available-to-null agriculture_fishing),
+        business_building_other_support_services numeric using (not-available-to-null business_building_other_support_services),
+        construction numeric using (not-available-to-null construction),
+        educational_services numeric using (not-available-to-null educational_services),
+        finance_insurance_real_estate numeric using (not-available-to-null finance_insurance_real_estate),
+        forestry_logging_support_activities numeric using (not-available-to-null forestry_logging_support_activities),
+        health_care_social_assistance numeric using (not-available-to-null health_care_social_assistance),
+        information_culture_recreation numeric using (not-available-to-null information_culture_recreation),
+        manufacturing numeric using (not-available-to-null manufacturing),
+        mining_oil_gas_extraction numeric using (not-available-to-null mining_oil_gas_extraction),
+        other_private_services numeric using (not-available-to-null other_private_services),
+        professional_scientific_technical_services numeric using (not-available-to-null professional_scientific_technical_services),
+        public_administration numeric using (not-available-to-null public_administration),
+        retail_trade numeric using (not-available-to-null retail_trade),
+        transportation_warehousing numeric using (not-available-to-null transportation_warehousing),
+        utilities numeric using (not-available-to-null utilities),
+        wholesale_trade numeric using (not-available-to-null wholesale_trade)
+    )
+    with
+        skip header = 4,
+        fields optionally enclosed by '"',
+        fields terminated by ',',
+        drop indexes
+
+    before load do
+    $$ drop table if exists labour_force_survey_regional_industry_region; $$,
+    $$ create table if not exists labour_force_survey_regional_industry_region
+    (
+        region citext primary key,
+        accommodation_food_services numeric,
+        agriculture_fishing numeric,
+        business_building_other_support_services numeric,
+        construction numeric,
+        educational_services numeric,
+        finance_insurance_real_estate numeric,
+        forestry_logging_support_activities numeric,
+        health_care_social_assistance numeric,
+        information_culture_recreation numeric,
+        manufacturing numeric,
+        mining_oil_gas_extraction numeric,
+        other_private_services numeric,
+        professional_scientific_technical_services numeric,
+        public_administration numeric,
+        retail_trade numeric,
+        transportation_warehousing numeric,
+        utilities numeric,
+        wholesale_trade numeric
+    );
+    $$
+
+    after load do
+    $$ comment on table labour_force_survey_regional_industry_region is '2020_LFS Data Sheet_final > Regional Profiles > Table 2'; $$,
+    $$ comment on column labour_force_survey_regional_industry_region.region is 'Region'; $$,
+    $$ comment on column labour_force_survey_regional_industry_region.accommodation_food_services is 'This region''s industries and sectors > Industry > Share of this region''s employment (%) / Share of Industry Employment within a Region (%) > Accommodation and Food Services'; $$,
+    $$ comment on column labour_force_survey_regional_industry_region.agriculture_fishing is 'This region''s industries and sectors > Industry > Share of this region''s employment (%) / Share of Industry Employment within a Region (%) > Agriculture and Fishing'; $$,
+    $$ comment on column labour_force_survey_regional_industry_region.business_building_other_support_services is 'This region''s industries and sectors > Industry > Share of this region''s employment (%) / Share of Industry Employment within a Region (%) > Business, Building and Other Support Services'; $$,
+    $$ comment on column labour_force_survey_regional_industry_region.construction is 'This region''s industries and sectors > Industry > Share of this region''s employment (%) / Share of Industry Employment within a Region (%) > Construction'; $$,
+    $$ comment on column labour_force_survey_regional_industry_region.educational_services is 'This region''s industries and sectors > Industry > Share of this region''s employment (%) / Share of Industry Employment within a Region (%) > Educational Services'; $$,
+    $$ comment on column labour_force_survey_regional_industry_region.finance_insurance_real_estate is 'This region''s industries and sectors > Industry > Share of this region''s employment (%) / Share of Industry Employment within a Region (%) > Finance, Insurance and Real Estate'; $$,
+    $$ comment on column labour_force_survey_regional_industry_region.forestry_logging_support_activities is 'This region''s industries and sectors > Industry > Share of this region''s employment (%) / Share of Industry Employment within a Region (%) > Forestry and Logging with Support Activities'; $$,
+    $$ comment on column labour_force_survey_regional_industry_region.health_care_social_assistance is 'This region''s industries and sectors > Industry > Share of this region''s employment (%) / Share of Industry Employment within a Region (%) > Health Care and Social Assistance'; $$,
+    $$ comment on column labour_force_survey_regional_industry_region.information_culture_recreation is 'This region''s industries and sectors > Industry > Share of this region''s employment (%) / Share of Industry Employment within a Region (%) > Information, Culture and Recreation'; $$,
+    $$ comment on column labour_force_survey_regional_industry_region.manufacturing is 'This region''s industries and sectors > Industry > Share of this region''s employment (%) / Share of Industry Employment within a Region (%) > Manufacturing'; $$,
+    $$ comment on column labour_force_survey_regional_industry_region.mining_oil_gas_extraction is 'This region''s industries and sectors > Industry > Share of this region''s employment (%) / Share of Industry Employment within a Region (%) > Mining and Oil and Gas Extraction'; $$,
+    $$ comment on column labour_force_survey_regional_industry_region.other_private_services is 'This region''s industries and sectors > Industry > Share of this region''s employment (%) / Share of Industry Employment within a Region (%) > Other Private Services'; $$,
+    $$ comment on column labour_force_survey_regional_industry_region.professional_scientific_technical_services is 'This region''s industries and sectors > Industry > Share of this region''s employment (%) / Share of Industry Employment within a Region (%) > Professional, Scientific, and Technical Services'; $$,
+    $$ comment on column labour_force_survey_regional_industry_region.public_administration is 'This region''s industries and sectors > Industry > Share of this region''s employment (%) / Share of Industry Employment within a Region (%) > Public Administration'; $$,
+    $$ comment on column labour_force_survey_regional_industry_region.retail_trade is 'This region''s industries and sectors > Industry > Share of this region''s employment (%) / Share of Industry Employment within a Region (%) > Retail Trade'; $$,
+    $$ comment on column labour_force_survey_regional_industry_region.transportation_warehousing is 'This region''s industries and sectors > Industry > Share of this region''s employment (%) / Share of Industry Employment within a Region (%) > Transportation and Warehousing'; $$,
+    $$ comment on column labour_force_survey_regional_industry_region.utilities is 'This region''s industries and sectors > Industry > Share of this region''s employment (%) / Share of Industry Employment within a Region (%) > Utilities'; $$,
+    $$ comment on column labour_force_survey_regional_industry_region.wholesale_trade is 'This region''s industries and sectors > Industry > Share of this region''s employment (%) / Share of Industry Employment within a Region (%) > Wholesale Trade'; $$
+;

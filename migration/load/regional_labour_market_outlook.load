@@ -1,0 +1,65 @@
+load csv
+    from 'regional_labour_market_outlook.csv'
+    (
+        region,
+        replacement_of_retiring_workers_openings,
+        replacement_of_retiring_workers_pct,
+        new_jobs_due_to_economic_growth_openings,
+        new_jobs_due_to_economic_growth_pct,
+        employment_outlook_first,
+        employment_outlook_second,
+        employment_outlook_third,
+        forecasted_total_employment_growth_10y,
+        forecasted_annual_employment_growth_rate
+    )
+    into postgresql:///ssot
+    target table regional_labour_market_outlook
+    target columns
+    (
+        region,
+        replacement_of_retiring_workers_openings int using (not-available-to-null replacement_of_retiring_workers_openings),
+        replacement_of_retiring_workers_pct numeric using (not-available-to-null replacement_of_retiring_workers_pct),
+        new_jobs_due_to_economic_growth_openings int using (not-available-to-null new_jobs_due_to_economic_growth_openings),
+        new_jobs_due_to_economic_growth_pct numeric using (not-available-to-null new_jobs_due_to_economic_growth_pct),
+        employment_outlook_first int using (not-available-to-null employment_outlook_first),
+        employment_outlook_second int using (not-available-to-null employment_outlook_second),
+        employment_outlook_third int using (not-available-to-null employment_outlook_third),
+        forecasted_total_employment_growth_10y int using (not-available-to-null forecasted_total_employment_growth_10y),
+        forecasted_annual_employment_growth_rate numeric using (not-available-to-null forecasted_annual_employment_growth_rate)
+    )
+    with
+        skip header = 4,
+        fields optionally enclosed by '"',
+        fields terminated by ',',
+        drop indexes
+
+    before load do
+    $$ drop table if exists regional_labour_market_outlook; $$,
+    $$ create table if not exists regional_labour_market_outlook
+    (
+        region citext primary key,
+        replacement_of_retiring_workers_openings int,
+        replacement_of_retiring_workers_pct numeric,
+        new_jobs_due_to_economic_growth_openings int,
+        new_jobs_due_to_economic_growth_pct numeric,
+        employment_outlook_first int,
+        employment_outlook_second int,
+        employment_outlook_third int,
+        forecasted_total_employment_growth_10y int,
+        forecasted_annual_employment_growth_rate numeric
+    );
+    $$
+
+    after load do
+    $$ comment on table regional_labour_market_outlook is 'B.C. Labour Market Outlook (2022-2032)/for this region'; $$,
+    $$ comment on column regional_labour_market_outlook.region is 'Region'; $$,
+    $$ comment on column regional_labour_market_outlook.replacement_of_retiring_workers_openings is 'Composition of job openings > Replacement of retiring workers > Openings'; $$,
+    $$ comment on column regional_labour_market_outlook.replacement_of_retiring_workers_pct is 'Composition of job openings > Replacement of retiring workers > %'; $$,
+    $$ comment on column regional_labour_market_outlook.new_jobs_due_to_economic_growth_openings is 'Composition of job openings > New jobs due to economic growth > Openings'; $$,
+    $$ comment on column regional_labour_market_outlook.new_jobs_due_to_economic_growth_pct is 'Composition of job openings > New jobs due to economic growth > %'; $$,
+    $$ comment on column regional_labour_market_outlook.employment_outlook_first is 'Employment outlook > {2022}'; $$,
+    $$ comment on column regional_labour_market_outlook.employment_outlook_second is 'Employment outlook > {2027}'; $$,
+    $$ comment on column regional_labour_market_outlook.employment_outlook_third is 'Employment outlook > {2032}'; $$,
+    $$ comment on column regional_labour_market_outlook.forecasted_total_employment_growth_10y is 'Employment outlook > Forecasted 10-year total employment growth'; $$,
+    $$ comment on column regional_labour_market_outlook.forecasted_annual_employment_growth_rate is 'Employment outlook > Forecasted average annual employment growth rate (%)'; $$
+;
