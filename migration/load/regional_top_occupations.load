@@ -37,6 +37,14 @@ load csv
     $$
 
     after load do
+    $$ update regional_top_occupations set region = 'british_columbia' where region = 'British Columbia'; $$,
+    $$ update regional_top_occupations set region = 'cariboo' where region = 'Cariboo'; $$,
+    $$ update regional_top_occupations set region = 'kootenay' where region = 'Kootenay'; $$,
+    $$ update regional_top_occupations set region = 'northeast' where region = 'North East'; $$,
+    $$ update regional_top_occupations set region = 'mainland_southwest' where region = 'Mainland South West'; $$,
+    $$ update regional_top_occupations set region = 'thompson_okanagan' where region = 'Thompson Okanagan'; $$,
+    $$ update regional_top_occupations set region = 'vancouver_island_coast' where region = 'Vancouver Island Coast'; $$,
+    $$ update regional_top_occupations set region = 'north_coast_nechako' where region = 'North Coast & Nechako'; $$,
     $$ comment on table regional_top_occupations is 'Top 10 Occupations by region'; $$,
     $$ comment on column regional_top_occupations.region is 'Region'; $$,
     $$ comment on column regional_top_occupations.noc is 'NOC'; $$,

@@ -22,7 +22,7 @@ load csv
     $$ drop table if exists sources; $$,
     $$ create table if not exists sources
     (
-        endpoint text primary key,
+        endpoint text,
         label text,
         datapoint text,
         filename text,
@@ -34,6 +34,7 @@ load csv
     $$
 
     after load do
+    $$ create index sources_endpoint_idx on sources (endpoint); $$,
     $$ comment on table sources is 'Data sources metadata'; $$,
     $$ comment on column sources.label is 'Source label'; $$,
     $$ comment on column sources.endpoint is 'Database table / API endpoint'; $$,

@@ -58,9 +58,14 @@ ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/Updat
 cat "data/Update_File-Sheet_Name.csv" | php csv_empty.php | php monthly_labour_market_update.php year{YYYY} month{1..12} > "load/updates/monthly_labour_market_updates_{YYYY}_{MM}.csv"
 ```
 
-- Run the existing loading script `load/monthly_labour_market_updates.load`, supplying the transformed CSV above as the `SOURCE` environment variable.
+- Run the loading script `load/monthly_labour_market_updates.load`, supplying the transformed CSV above as the `SOURCE` environment variable.
 ```
-SOURCE="/app/load/updates/monthly_labour_market_updates_{YYYY}_{MM}.csv" pgloader load/monthly_labour_market_updates.load
+SOURCE="/app/load/updates/monthly_labour_market_updates_{YYYY}_{MM}.csv" pgloader -l workbc.lisp load/monthly_labour_market_updates.load
+```
+
+- Run the loading script on all labour market updates.
+```
+for f in load/updates/*.csv; do SOURCE="/app/$f" pgloader -l workbc.lisp load/monthly_labour_market_updates.load; done
 ```
 ## Data Sources
 The `load/sources.csv` file contains provenance metadata for all the migrated data sources, including a source label that can be displayed to end-users. The level of granularity of the metadata is the "Data point", which represents a field or a section of the dataset. If the value is `NULL`, then the provenance covers all data points, except for those that may be specifically mentioned in other records of this table.

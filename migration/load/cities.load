@@ -26,6 +26,13 @@ load csv
     $$
 
     after load do
+    $$ update cities set region = 'cariboo' where region = 'Cariboo'; $$,
+    $$ update cities set region = 'kootenay' where region = 'Kootenay'; $$,
+    $$ update cities set region = 'northeast' where region = 'Northeast'; $$,
+    $$ update cities set region = 'mainland_southwest' where region = 'Mainland / Southwest'; $$,
+    $$ update cities set region = 'thompson_okanagan' where region = 'Thompson-Okanagan'; $$,
+    $$ update cities set region = 'vancouver_island_coast' where region = 'Vancouver Island / Coast'; $$,
+    $$ update cities set region = 'north_coast_nechako' where region = 'North Coast & Nechako'; $$,
     $$ create index cities_region_idx on cities (region); $$,
     $$ comment on table cities is 'Key Cities > Regional District & Key Cities'; $$,
     $$ comment on column cities.region is 'Regions'; $$,

@@ -22,6 +22,19 @@ load csv
     $$
 
     after load do
+    $$ update population set region = 'british_columbia' where region = 'British Columbia'; $$,
+    $$ update population set region = 'cariboo' where region = 'Cariboo'; $$,
+    $$ update population set region = 'kootenay' where region = 'Kootenay'; $$,
+    $$ update population set region = 'northeast' where region = 'Northeast'; $$,
+    $$ update population set region = 'mainland_southwest' where region = 'Mainland/Southwest'; $$,
+    $$ update population set region = 'thompson_okanagan' where region = 'Thompson/Okanagan'; $$,
+    $$ update population set region = 'vancouver_island_coast' where region = 'Vancouver Island/Coast'; $$,
+    $$ update population set
+            region = 'north_coast_nechako',
+            population = population + (select population from population where region = 'Nechako')
+        where region = 'North Coast';
+    $$,
+    $$ delete from population where region = 'Nechako'; $$,
     $$ comment on table population is 'British Columbia Development Region and Regional District Population Estimates'; $$,
     $$ comment on column population.region is 'Region'; $$,
     $$ comment on column population.population is '{2021}'; $$

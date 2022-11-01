@@ -27,6 +27,14 @@ load csv
     $$
 
     after load do
+    $$ update regional_top_industries set region = 'british_columbia' where region = 'British Columbia'; $$,
+    $$ update regional_top_industries set region = 'cariboo' where region = 'Cariboo'; $$,
+    $$ update regional_top_industries set region = 'kootenay' where region = 'Kootenay'; $$,
+    $$ update regional_top_industries set region = 'northeast' where region = 'North East'; $$,
+    $$ update regional_top_industries set region = 'mainland_southwest' where region = 'Mainland South West'; $$,
+    $$ update regional_top_industries set region = 'thompson_okanagan' where region = 'Thompson Okanagan'; $$,
+    $$ update regional_top_industries set region = 'vancouver_island_coast' where region = 'Vancouver Island Coast'; $$,
+    $$ update regional_top_industries set region = 'north_coast_nechako' where region = 'North Coast & Nechako'; $$,
     $$ comment on table regional_top_industries is 'Top 10 industries by region'; $$,
     $$ comment on column regional_top_industries.region is 'Region'; $$,
     $$ comment on column regional_top_industries.industry is 'Industry'; $$,

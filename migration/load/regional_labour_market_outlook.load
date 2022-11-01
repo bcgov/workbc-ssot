@@ -51,6 +51,14 @@ load csv
     $$
 
     after load do
+    $$ update regional_labour_market_outlook set region = 'british_columbia' where region = 'British Columbia'; $$,
+    $$ update regional_labour_market_outlook set region = 'cariboo' where region = 'Cariboo'; $$,
+    $$ update regional_labour_market_outlook set region = 'kootenay' where region = 'Kootenay'; $$,
+    $$ update regional_labour_market_outlook set region = 'northeast' where region = 'North East'; $$,
+    $$ update regional_labour_market_outlook set region = 'mainland_southwest' where region = 'Mainland South West'; $$,
+    $$ update regional_labour_market_outlook set region = 'thompson_okanagan' where region = 'Thompson Okanagan'; $$,
+    $$ update regional_labour_market_outlook set region = 'vancouver_island_coast' where region = 'Vancouver Island Coast'; $$,
+    $$ update regional_labour_market_outlook set region = 'north_coast_nechako' where region = 'North Coast & Nechako'; $$,
     $$ comment on table regional_labour_market_outlook is 'B.C. Labour Market Outlook (2022-2032)/for this region'; $$,
     $$ comment on column regional_labour_market_outlook.region is 'Region'; $$,
     $$ comment on column regional_labour_market_outlook.replacement_of_retiring_workers_openings is 'Composition of job openings > Replacement of retiring workers > Openings'; $$,

@@ -88,6 +88,14 @@ load csv
 
     after load do
     $$ update labour_force_survey_regional_employment set full_time_employment_num = trunc(full_time_employment_num); $$,
+    $$ update labour_force_survey_regional_employment set region = 'british_columbia' where region = 'British Columbia'; $$,
+    $$ update labour_force_survey_regional_employment set region = 'cariboo' where region = 'Cariboo'; $$,
+    $$ update labour_force_survey_regional_employment set region = 'kootenay' where region = 'Kootenay'; $$,
+    $$ update labour_force_survey_regional_employment set region = 'northeast' where region = 'North East'; $$,
+    $$ update labour_force_survey_regional_employment set region = 'mainland_southwest' where region = 'Mainland/SouthWest'; $$,
+    $$ update labour_force_survey_regional_employment set region = 'thompson_okanagan' where region = 'Thompson-Okanagan'; $$,
+    $$ update labour_force_survey_regional_employment set region = 'vancouver_island_coast' where region = 'Vancouver Island/Coast'; $$,
+    $$ update labour_force_survey_regional_employment set region = 'north_coast_nechako' where region = 'North Coast & Nechako'; $$,
     $$ comment on table labour_force_survey_regional_employment is '2020_LFS Data Sheet_final > Regional Profiles > Table 1'; $$,
     $$ comment on column labour_force_survey_regional_employment.region is 'Region'; $$,
     $$ comment on column labour_force_survey_regional_employment.age_distribution_0_14 is 'Population Distribution > Age distribution > 0-14'; $$,
