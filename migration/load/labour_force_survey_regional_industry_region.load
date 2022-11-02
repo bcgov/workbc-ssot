@@ -46,7 +46,6 @@ load csv
         wholesale_trade numeric using (not-available-to-null wholesale_trade)
     )
     with
-        skip header = 4,
         fields optionally enclosed by '"',
         fields terminated by ',',
         drop indexes
@@ -86,7 +85,7 @@ load csv
     $$ update labour_force_survey_regional_industry_region set region = 'thompson_okanagan' where region = 'Thompson-Okanagan'; $$,
     $$ update labour_force_survey_regional_industry_region set region = 'vancouver_island_coast' where region = 'Vancouver Island/Coast'; $$,
     $$ update labour_force_survey_regional_industry_region set region = 'north_coast_nechako' where region = 'North Coast & Nechako'; $$,
-    $$ comment on table labour_force_survey_regional_industry_region is '2020_LFS Data Sheet_final > Regional Profiles > Table 2'; $$,
+    $$ comment on table labour_force_survey_regional_industry_region is '2021_LFS Data Sheet final > Regional Profiles > Table 2'; $$,
     $$ comment on column labour_force_survey_regional_industry_region.region is 'Region'; $$,
     $$ comment on column labour_force_survey_regional_industry_region.accommodation_food_services is 'This region''s industries and sectors > Industry > Share of this region''s employment (%) / Share of Industry Employment within a Region (%) > Accommodation and Food Services'; $$,
     $$ comment on column labour_force_survey_regional_industry_region.agriculture_fishing is 'This region''s industries and sectors > Industry > Share of this region''s employment (%) / Share of Industry Employment within a Region (%) > Agriculture and Fishing'; $$,

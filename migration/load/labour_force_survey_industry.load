@@ -118,7 +118,6 @@ load csv
         location_vancouver_island_coast_employment_all_industries_pct numeric using (not-available-to-null location_vancouver_island_coast_employment_all_industries_pct)
     )
     with
-        skip header = 4,
         fields optionally enclosed by '"',
         fields terminated by ',',
         drop indexes
