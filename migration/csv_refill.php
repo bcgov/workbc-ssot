@@ -8,20 +8,23 @@
 
 $opts = getopt('', [
     'col:',
+    'header::'
 ]);
-$usage = 'Usage: php csv_refill.php --col col1 --col col2 < /path/to/input.csv > /path/to/output.csv';
+$usage = 'Usage: php csv_refill.php [--header=4] --col col1 --col col2 [...] < /path/to/input.csv > /path/to/output.csv';
 if (!array_key_exists('col', $opts)) {
     die("Column specification not found\n" . $usage . PHP_EOL);
 }
 $opts['col'] = (array)$opts['col'];
+$opts['header'] = intval($opts['header'] ?? '1');
 
 $values = [];
+$lines = 0;
 stream_set_blocking(STDIN, 0);
 while (($csv = fgetcsv(STDIN)) !== FALSE) {
-    foreach ($opts['col'] as $col) {
+    if ($lines++ >= $opts['header']) foreach ($opts['col'] as $col) {
         $col--; // 0-based arrays vs. 1-based rows
-        if (empty($csv[$col]) && !is_numeric($csv[$col])) {
-            $csv[$col] = $values[$col];
+        if (trim($csv[$col]) === '-' || (empty($csv[$col]) && !is_numeric($csv[$col]))) {
+            $csv[$col] = $values[$col] ?? null;
         }
         else {
             $values[$col] = $csv[$col];
