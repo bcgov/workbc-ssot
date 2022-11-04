@@ -28,7 +28,6 @@ load csv
         forecasted_annual_employment_growth_rate numeric using (not-available-to-null forecasted_annual_employment_growth_rate)
     )
     with
-        skip header = 4,
         fields optionally enclosed by '"',
         fields terminated by ',',
         drop indexes

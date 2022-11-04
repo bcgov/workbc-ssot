@@ -1,0 +1,38 @@
+load csv
+    from 'titles.csv'
+    (
+        noc_discard,
+        noc,
+        nameenglish,
+        commonjobtitle
+    )
+    into postgresql:///ssot
+    target table titles
+    target columns
+    (
+        noc text using (trim-hash noc),
+        nameenglish,
+        commonjobtitle
+    )
+    with
+        fields optionally enclosed by '"',
+        fields terminated by ',',
+        drop indexes
+
+    before load do
+    $$ drop table if exists titles; $$,
+    $$ create table if not exists titles
+    (
+        noc text,
+        nameenglish text,
+        commonjobtitle text
+    );
+    $$
+
+    after load do
+    $$ create index titles_noc_idx on titles (noc); $$,
+    $$ comment on table titles is 'Common Job Titles revised - July 18 2017 (RA)'; $$,
+    $$ comment on column titles.noc is 'NOC'; $$,
+    $$ comment on column titles.nameenglish is 'NameEnglish'; $$,
+    $$ comment on column titles.commonjobtitle is 'CommonJobTitle'; $$
+;

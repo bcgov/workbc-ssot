@@ -17,7 +17,7 @@ $opts['col'] = (array)$opts['col'];
 
 $values = [];
 $lines = 0;
-stream_set_blocking(STDIN, 0);
+stream_set_blocking(STDIN, TRUE);
 while (($csv = fgetcsv(STDIN)) !== FALSE) {
     foreach ($opts['col'] as $col) {
         $col--; // 0-based arrays vs. 1-based rows

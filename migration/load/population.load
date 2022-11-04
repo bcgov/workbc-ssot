@@ -7,7 +7,6 @@ load csv
     into postgresql:///ssot
     target table population
     with
-        skip header = 2,
         fields optionally enclosed by '"',
         fields terminated by ',',
         drop indexes

@@ -16,7 +16,6 @@ load csv
         openings int using (not-available-to-null openings)
     )
     with
-        skip header = 1,
         fields optionally enclosed by '"',
         fields terminated by ',',
         drop indexes

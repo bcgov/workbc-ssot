@@ -10,7 +10,7 @@ $usage = "Usage: php monthly_labour_market_update year{YYYY} month{1..12} < /pat
 if (count($argv) < 3) {
     die("Expecting 2 arguments.\n" . $usage . PHP_EOL);
 }
-stream_set_blocking(STDIN, 0);
+stream_set_blocking(STDIN, TRUE);
 $csv = [];
 while ($row = fgetcsv(STDIN)) {
     if (!is_array($row)) {

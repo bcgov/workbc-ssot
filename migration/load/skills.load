@@ -20,7 +20,6 @@ load csv
         proficiency_description
     )
     with
-        skip header = 1,
         fields optionally enclosed by '"',
         fields terminated by ',',
         drop indexes

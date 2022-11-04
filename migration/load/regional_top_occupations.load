@@ -18,7 +18,6 @@ load csv
         forecasted_annual_employment_growth_pct
     )
     with
-        skip header = 2,
         fields optionally enclosed by '"',
         fields terminated by ',',
         drop indexes

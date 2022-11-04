@@ -28,7 +28,6 @@ load csv
         annual_employment_growth_rate_pct_second5y numeric using (not-available-to-null annual_employment_growth_rate_pct_second5y)
     )
     with
-        skip header = 2,
         fields optionally enclosed by '"',
         fields terminated by ',',
         drop indexes

@@ -32,7 +32,6 @@ load csv
         new_jobs_due_to_economic_growth_10y int using (not-available-to-null new_jobs_due_to_economic_growth_10y)
     )
     with
-        skip header = 3,
         fields optionally enclosed by '"',
         fields terminated by ',',
         drop indexes

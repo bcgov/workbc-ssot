@@ -3,7 +3,7 @@ load csv
     (
         noc,
         options,
-        occupational_interest
+        occupational_interest [null if blanks, trim both whitespace]
     )
     into postgresql:///ssot
     target table occupational_interests
@@ -14,7 +14,6 @@ load csv
         occupational_interest text using (not-available-to-null occupational_interest)
     )
     with
-        skip header = 1,
         fields optionally enclosed by '"',
         fields terminated by ',',
         drop indexes

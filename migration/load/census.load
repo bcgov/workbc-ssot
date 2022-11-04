@@ -76,7 +76,6 @@ load csv
         industry_5 numeric using (not-available-to-null industry_5)
     )
     with
-        skip header = 4,
         fields optionally enclosed by '"',
         fields terminated by ',',
         drop indexes

@@ -26,9 +26,8 @@ ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/Data_
 | PHP script | Purpose |
 |------------|---------|
 | `csv_empty.php` | Remove empty rows from CSV. |
-| `csv_header.php` | Remove newlines from CSV header lines. |
-| `csv_refill.php` |  Refill empty column cells with previous values in a CSV. |
-| `csv_split.php` | Split CSV into several files based on given ranges. |
+| `csv_refill.php` | Refill empty column cells with previous values in a CSV. |
+| `csv_extract.php` | Extract rows from CSV based on given ranges. |
 
 Refer to these scripts for usage details. Ensure that the final CSV is stored in the `load/` folder and is named after the target database table.
 
@@ -60,12 +59,12 @@ cat "data/Update_File-Sheet_Name.csv" | php csv_empty.php | php monthly_labour_m
 
 - Run the loading script `load/monthly_labour_market_updates.load`, supplying the transformed CSV above as the `SOURCE` environment variable.
 ```
-SOURCE="/app/load/updates/monthly_labour_market_updates_{YYYY}_{MM}.csv" pgloader -l workbc.lisp load/monthly_labour_market_updates.load
+SOURCE="/app/load/updates/monthly_labour_market_updates_{YYYY}_{MM}.csv" pgloader -l workbc.lisp load/updates/monthly_labour_market_updates.load
 ```
 
 - Run the loading script on all labour market updates.
 ```
-for f in load/updates/*.csv; do SOURCE="/app/$f" pgloader -l workbc.lisp load/monthly_labour_market_updates.load; done
+for f in load/updates/*.csv; do SOURCE="/app/$f" pgloader -l workbc.lisp load/updates/monthly_labour_market_updates.load; done
 ```
 ## Data Sources
 The `load/sources.csv` file contains provenance metadata for all the migrated data sources, including a source label that can be displayed to end-users. The level of granularity of the metadata is the "Data point", which represents a field or a section of the dataset. If the value is `NULL`, then the provenance covers all data points, except for those that may be specifically mentioned in other records of this table.
