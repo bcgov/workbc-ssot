@@ -1,10 +1,11 @@
 (in-package #:pgloader.transforms)
 
 (defun not-available-to-null (string)
-    "Transform values 'NA', 'N/A', '-', blank to NULL."
+    "Transform values 'NA', 'N/A', etc. to NULL."
     (cond
         ((equalp "na" string) nil)
         ((equalp "n/a" string) nil)
+        ((equalp "n.a." string) nil)
         ((string= "-" string) nil)
         ((string= "" (string-trim '(#\Space) string)) nil)
         (t string)

@@ -6,10 +6,16 @@ load csv
         wage_rate_low,
         wage_rate_median,
         wage_rate_high,
+        annual_salary_median,
         occupational_interest,
-        skills_and_competencies_top_3,
+        skills,
+        skill_1,
+        skill_2,
+        skill_3,
         noc,
-        typical_education_background
+        hash_noc,
+        typical_education_background,
+        region
     )
     into postgresql:///ssot
     target table high_opportunity_occupations
@@ -21,9 +27,13 @@ load csv
         wage_rate_low numeric using (not-available-to-null wage_rate_low),
         wage_rate_median numeric using (not-available-to-null wage_rate_median),
         wage_rate_high numeric using (not-available-to-null wage_rate_high),
+        annual_salary_median,
         occupational_interest,
-        skills_and_competencies_top_3,
-        typical_education_background
+        skill_1 text using (not-available-to-null skill_1),
+        skill_2 text using (not-available-to-null skill_2),
+        skill_3 text using (not-available-to-null skill_3),
+        typical_education_background,
+        region
     )
     with
         fields optionally enclosed by '"',
@@ -40,22 +50,41 @@ load csv
         wage_rate_low numeric,
         wage_rate_median numeric,
         wage_rate_high numeric,
+        annual_salary_median numeric,
         occupational_interest text,
-        skills_and_competencies_top_3 text,
-        typical_education_background text
+        skill_1 text,
+        skill_2 text,
+        skill_3 text,
+        typical_education_background text,
+        region text
     );
     $$
 
     after load do
-    $$ create index high_opportunity_occupations_noc_idx on high_opportunity_occupations (noc); $$,
-    $$ comment on table high_opportunity_occupations is 'HOO BC and Region for new tool (with Skills and Competencies 2021)'; $$,
+    $$ update high_opportunity_occupations set region = 'british_columbia' where region = 'British Columbia'; $$,
+    $$ update high_opportunity_occupations set region = 'cariboo' where region = 'Cariboo'; $$,
+    $$ update high_opportunity_occupations set region = 'kootenay' where region = 'Kootenay'; $$,
+    $$ update high_opportunity_occupations set region = 'northeast' where region = 'North East'; $$,
+    $$ update high_opportunity_occupations set region = 'mainland_southwest' where region = 'Mainland South West'; $$,
+    $$ update high_opportunity_occupations set region = 'thompson_okanagan' where region = 'Thompson Okanagan'; $$,
+    $$ update high_opportunity_occupations set region = 'vancouver_island_coast' where region = 'Vancouver Island Coast'; $$,
+    $$ update high_opportunity_occupations set region = 'north_coast_nechako' where region = 'North Coast & Nechako'; $$,
+    $$ create index high_opportunity_occupations_region_idx on high_opportunity_occupations (region); $$,
+    $$ create index high_opportunity_occupations_education_idx on high_opportunity_occupations (typical_education_background); $$,
+    $$ create index high_opportunity_occupations_interest_idx on high_opportunity_occupations (occupational_interest); $$,
+    $$ create index high_opportunity_occupations_wage_idx on high_opportunity_occupations (wage_rate_median); $$,
+    $$ comment on table high_opportunity_occupations is '2022 HOO BC and Region for new tool'; $$,
     $$ comment on column high_opportunity_occupations.occupation is 'Occupation Title'; $$,
-    $$ comment on column high_opportunity_occupations.openings_forecast is 'Job Openings {2021-2031}'; $$,
-    $$ comment on column high_opportunity_occupations.wage_rate_low is 'Wage Rate Low {2020}'; $$,
-    $$ comment on column high_opportunity_occupations.wage_rate_median is 'Wage Rate Median {2020}'; $$,
-    $$ comment on column high_opportunity_occupations.wage_rate_high is 'Wage Rate High {2020}'; $$,
-    $$ comment on column high_opportunity_occupations.occupational_interest is 'Occupational Interest'; $$,
-    $$ comment on column high_opportunity_occupations.skills_and_competencies_top_3 is 'Skills and Competencies (Top 3 together) {2019}'; $$,
+    $$ comment on column high_opportunity_occupations.openings_forecast is 'Job Openings {2022-2032}'; $$,
+    $$ comment on column high_opportunity_occupations.wage_rate_low is 'Wage Rate Low {2021}'; $$,
+    $$ comment on column high_opportunity_occupations.wage_rate_median is 'Wage Rate Median {2021}'; $$,
+    $$ comment on column high_opportunity_occupations.wage_rate_high is 'Wage Rate High {2021}'; $$,
+    $$ comment on column high_opportunity_occupations.annual_salary_median is 'Median Annual Salary'; $$,
+    $$ comment on column high_opportunity_occupations.occupational_interest is 'Occupational Interests'; $$,
+    $$ comment on column high_opportunity_occupations.skill_1 is 'Skills and Competencies, Primary {2019}'; $$,
+    $$ comment on column high_opportunity_occupations.skill_2 is 'Skills and Competencies, Secondary {2019}'; $$,
+    $$ comment on column high_opportunity_occupations.skill_3 is 'Skills and Competencies, Tertiary {2019}'; $$,
     $$ comment on column high_opportunity_occupations.noc is 'NOC'; $$,
-    $$ comment on column high_opportunity_occupations.typical_education_background is 'Typical Education Background'; $$
+    $$ comment on column high_opportunity_occupations.typical_education_background is 'Typical Education Background'; $$,
+    $$ comment on column high_opportunity_occupations.region is 'Geography'; $$
 ;
