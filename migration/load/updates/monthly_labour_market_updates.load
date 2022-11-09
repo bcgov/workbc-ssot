@@ -38,7 +38,7 @@ load csv
 
         population_british_columbia,
         population_vancouver_island_coast,
-        population_lower_mainland_southwest,
+        population_mainland_southwest,
         population_thompson_okanagan,
         population_kootenay,
         population_cariboo,
@@ -145,7 +145,7 @@ load csv
 
         population_british_columbia int using (not-available-to-null population_british_columbia),
         population_vancouver_island_coast int using (not-available-to-null population_vancouver_island_coast),
-        population_lower_mainland_southwest int using (not-available-to-null population_lower_mainland_southwest),
+        population_mainland_southwest int using (not-available-to-null population_mainland_southwest),
         population_thompson_okanagan int using (not-available-to-null population_thompson_okanagan),
         population_kootenay int using (not-available-to-null population_kootenay),
         population_cariboo int using (not-available-to-null population_cariboo),
@@ -256,7 +256,7 @@ load csv
 
         population_british_columbia int,
         population_vancouver_island_coast int,
-        population_lower_mainland_southwest int,
+        population_mainland_southwest int,
         population_thompson_okanagan int,
         population_kootenay int,
         population_cariboo int,
@@ -365,7 +365,7 @@ load csv
 
     $$ comment on column monthly_labour_market_updates.population_british_columbia is 'Regional Population > British Columbia'; $$,
     $$ comment on column monthly_labour_market_updates.population_vancouver_island_coast is 'Regional Population > Vancouver Island/Coast'; $$,
-    $$ comment on column monthly_labour_market_updates.population_lower_mainland_southwest is 'Regional Population > Mainland/Southwest'; $$,
+    $$ comment on column monthly_labour_market_updates.population_mainland_southwest is 'Regional Population > Mainland/Southwest'; $$,
     $$ comment on column monthly_labour_market_updates.population_thompson_okanagan is 'Regional Population > Thompson-Okanagan'; $$,
     $$ comment on column monthly_labour_market_updates.population_kootenay is 'Regional Population > Kootenay'; $$,
     $$ comment on column monthly_labour_market_updates.population_cariboo is 'Regional Population > Cariboo'; $$,

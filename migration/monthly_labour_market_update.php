@@ -56,7 +56,7 @@ $header_map = [
 
     'population_british_columbia' => [20,1],
     'population_vancouver_island_coast' => [21,1],
-    'population_lower_mainland_southwest' => [22,1],
+    'population_mainland_southwest' => [22,1],
     'population_thompson_okanagan' => [23,1],
     'population_kootenay' => [24,1],
     'population_cariboo' => [25,1],
