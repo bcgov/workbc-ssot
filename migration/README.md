@@ -66,7 +66,17 @@ SOURCE="/app/load/updates/monthly_labour_market_updates_{YYYY}_{MM}.csv" pgloade
 ```
 for f in load/updates/*.csv; do SOURCE="/app/$f" pgloader -l workbc.lisp load/updates/monthly_labour_market_updates.load; done
 ```
+
 ## Data Sources
 The `load/sources.csv` file contains provenance metadata for all the migrated data sources, including a source label that can be displayed to end-users. The level of granularity of the metadata is the "Data point", which represents a field or a section of the dataset. If the value is `NULL`, then the provenance covers all data points, except for those that may be specifically mentioned in other records of this table.
 
 By examining this metadata, you can determine which source spreadsheets/tabs/ranges are needed to recreate the full dataset.
+
+## Updating SSoT on AWS
+- Update the dataset locally as per above.
+- Export the full dataset:
+```
+docker-compose exec -T postgres pg_dump --clean --username workbc ssot | gzip > ssot-full.sql.gz
+```
+- Open the Restore page on the desired Drupal stage `/admin/config/development/backup_migrate/restore` then select **Restore To > SSoT Database** and upload the file `ssot-full.sql.gz`.
+- Repeat the procedure above with the file `ssot-refresh.sql` included in this repo.
