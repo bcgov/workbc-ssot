@@ -18,5 +18,14 @@ This is the WorkBC Single Source of Truth (SSoT) API service.
 - Backup: `docker-compose exec -T postgres pg_dump --clean --username workbc ssot > ssot.sql`
 - Restore: `docker-compose exec -T postgres psql --username workbc ssot < ssot.sql && docker-compose kill -s SIGUSR1 ssot`
 
-## Migration
+## Data ingestion
 Please refer to [migration/README.md](migration#readme).
+
+## Updating SSoT for WorkbC
+- Update the dataset as described in the "Data ingestion" section.
+- Export the full dataset:
+```
+docker-compose exec -T postgres pg_dump --clean --username workbc ssot | gzip > ssot-full.sql.gz
+```
+- Open the Restore page on the desired WorkBC Drupal stage `/admin/config/development/backup_migrate/restore` then select **Restore To > SSoT Database** and upload the file `ssot-full.sql.gz`.
+- Repeat the procedure above with the file `ssot-refresh.sql` which is included in this repo.

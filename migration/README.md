@@ -25,9 +25,9 @@ ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/Data_
 
 | PHP script | Purpose |
 |------------|---------|
-| `csv_empty.php` | Remove empty rows from CSV. |
-| `csv_refill.php` | Refill empty column cells with previous values in a CSV. |
-| `csv_extract.php` | Extract rows from CSV based on given ranges. |
+| `csv_empty.php` | Remove empty rows. |
+| `csv_extract.php` | Extract rows based on given ranges. |
+| `csv_refill.php` | Fill empty cells with previous values from the same column. |
 
 Refer to these scripts for usage details. Ensure that the final CSV is stored in the `load/` folder and is named after the target database table.
 
@@ -37,6 +37,7 @@ Refer to these scripts for usage details. Ensure that the final CSV is stored in
   - The column names are free of dates and date ranges, and instead refer to period increments, e.g. `current`, `first5y`, `next10y`, etc.
   - The columns include SQL comments that are copies of the spreadsheet column headers.
   - When dates and date ranges are present in the column's comment, they are included within curly braces e.g. `{2022}` to allow parsing by the client.
+  - When numeric non-integer fields are included in the spreadsheet, ensure they are rounded to the desired decimal.
 
 - Run the loading script and examine the output to ensure there are no errors. Note that the script expects the environment variables `PGUSER`, `PGPASSWORD`, `PGDATABASE`, and `PGHOST` to be set for the PostgreSQL database. These variables are already set in the `docker-compose.yml` file.
 ```
@@ -52,7 +53,7 @@ These updates have a slightly different workflow to accommodate their specific s
 ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/Update_File.xlsx" "data/Update_File-%s.csv"
 ```
 
-- Transform the CSV to another CSV that is suitable for loading, supplying the month and year that correspoknds to the sheet.
+- Transform the CSV for loading, supplying the month and year that corresponds to the sheet.
 ```
 cat "data/Update_File-Sheet_Name.csv" | php csv_empty.php | php monthly_labour_market_update.php year{YYYY} month{1..12} > "load/updates/monthly_labour_market_updates_{YYYY}_{MM}.csv"
 ```
@@ -62,21 +63,12 @@ cat "data/Update_File-Sheet_Name.csv" | php csv_empty.php | php monthly_labour_m
 SOURCE="/app/load/updates/monthly_labour_market_updates_{YYYY}_{MM}.csv" pgloader -l workbc.lisp load/updates/monthly_labour_market_updates.load
 ```
 
-- Run the loading script on all labour market updates.
+- Optionally, run the loading script on all labour market updates.
 ```
 for f in load/updates/*.csv; do SOURCE="/app/$f" pgloader -l workbc.lisp load/updates/monthly_labour_market_updates.load; done
 ```
 
-## Data Sources
+## Sources metadata
 The `load/sources.csv` file contains provenance metadata for all the migrated data sources, including a source label that can be displayed to end-users. The level of granularity of the metadata is the "Data point", which represents a field or a section of the dataset. If the value is `NULL`, then the provenance covers all data points, except for those that may be specifically mentioned in other records of this table.
 
 By examining this metadata, you can determine which source spreadsheets/tabs/ranges are needed to recreate the full dataset.
-
-## Updating SSoT on AWS
-- Update the dataset locally as per above.
-- Export the full dataset:
-```
-docker-compose exec -T postgres pg_dump --clean --username workbc ssot | gzip > ssot-full.sql.gz
-```
-- Open the Restore page on the desired Drupal stage `/admin/config/development/backup_migrate/restore` then select **Restore To > SSoT Database** and upload the file `ssot-full.sql.gz`.
-- Repeat the procedure above with the file `ssot-refresh.sql` included in this repo.
