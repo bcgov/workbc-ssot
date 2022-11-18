@@ -21,7 +21,7 @@ This is the WorkBC Single Source of Truth (SSoT) API service.
 ## Data ingestion
 Please refer to [migration/README.md](migration#readme).
 
-## Updating SSoT for WorkbC
+## Updating SSoT for WorkBC
 - Update the dataset as described in the "Data ingestion" section.
 - Export the full dataset:
 ```
