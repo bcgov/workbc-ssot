@@ -37,7 +37,7 @@ Refer to these scripts for usage details. Ensure that the final CSV is stored in
   - The column names are free of dates and date ranges, and instead refer to period increments, e.g. `current`, `first5y`, `next10y`, etc.
   - The columns include SQL comments that are copies of the spreadsheet column headers.
   - When dates and date ranges are present in the column's comment, they are included within curly braces e.g. `{2022}` to allow parsing by the client.
-  - When numeric non-integer fields are included in the spreadsheet, ensure they are rounded to the desired decimal.
+  - Region names are transformed into keys for data normalization purposes.
 
 - Run the loading script and examine the output to ensure there are no errors. Note that the script expects the environment variables `PGUSER`, `PGPASSWORD`, `PGDATABASE`, and `PGHOST` to be set for the PostgreSQL database. These variables are already set in the `docker-compose.yml` file.
 ```

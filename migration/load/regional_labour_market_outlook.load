@@ -10,7 +10,9 @@ load csv
         employment_outlook_second,
         employment_outlook_third,
         forecasted_total_employment_growth_10y,
-        forecasted_annual_employment_growth_rate
+        forecasted_annual_employment_growth_rate,
+        forecasted_employment_growth_rate_first5y,
+        forecasted_employment_growth_rate_second5y
     )
     into postgresql:///ssot
     target table regional_labour_market_outlook
@@ -25,7 +27,9 @@ load csv
         employment_outlook_second int using (not-available-to-null employment_outlook_second),
         employment_outlook_third int using (not-available-to-null employment_outlook_third),
         forecasted_total_employment_growth_10y int using (not-available-to-null forecasted_total_employment_growth_10y),
-        forecasted_annual_employment_growth_rate numeric using (not-available-to-null forecasted_annual_employment_growth_rate)
+        forecasted_annual_employment_growth_rate numeric using (not-available-to-null forecasted_annual_employment_growth_rate),
+        forecasted_employment_growth_rate_first5y numeric using (not-available-to-null forecasted_employment_growth_rate_first5y),
+        forecasted_employment_growth_rate_second5y numeric using (not-available-to-null forecasted_employment_growth_rate_second5y)
     )
     with
         fields optionally enclosed by '"',
@@ -45,7 +49,9 @@ load csv
         employment_outlook_second int,
         employment_outlook_third int,
         forecasted_total_employment_growth_10y int,
-        forecasted_annual_employment_growth_rate numeric
+        forecasted_annual_employment_growth_rate numeric,
+        forecasted_employment_growth_rate_first5y numeric,
+        forecasted_employment_growth_rate_second5y numeric
     );
     $$
 
@@ -68,5 +74,7 @@ load csv
     $$ comment on column regional_labour_market_outlook.employment_outlook_second is 'Employment outlook > {2027}'; $$,
     $$ comment on column regional_labour_market_outlook.employment_outlook_third is 'Employment outlook > {2032}'; $$,
     $$ comment on column regional_labour_market_outlook.forecasted_total_employment_growth_10y is 'Employment outlook > Forecasted 10-year total employment growth'; $$,
-    $$ comment on column regional_labour_market_outlook.forecasted_annual_employment_growth_rate is 'Employment outlook > Forecasted average annual employment growth rate (%)'; $$
+    $$ comment on column regional_labour_market_outlook.forecasted_annual_employment_growth_rate is 'Employment outlook > Forecasted average annual employment growth rate (%)'; $$,
+    $$ comment on column regional_labour_market_outlook.forecasted_employment_growth_rate_first5y is 'Employment outlook > Forecasted Employment Growth {2022-2026}'; $$,
+    $$ comment on column regional_labour_market_outlook.forecasted_employment_growth_rate_second5y is 'Employment outlook > Forecasted Employment Growth {2027-2032}'; $$
 ;
