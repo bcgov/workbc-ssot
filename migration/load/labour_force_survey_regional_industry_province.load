@@ -91,7 +91,7 @@ load csv
     $$ update labour_force_survey_regional_industry_province set region = 'thompson_okanagan' where region = 'Thompson-Okanagan'; $$,
     $$ update labour_force_survey_regional_industry_province set region = 'vancouver_island_coast' where region = 'Vancouver Island/Coast'; $$,
     $$ update labour_force_survey_regional_industry_province set region = 'north_coast_nechako' where region = 'North Coast & Nechako'; $$,
-    $$ comment on table labour_force_survey_regional_industry_province is '2021_LFS Data Sheet final > Regional Profiles > Table 3'; $$,
+    $$ comment on table labour_force_survey_regional_industry_province is '{2021}_LFS Data Sheet final > Regional Profiles > Table 3'; $$,
     $$ comment on column labour_force_survey_regional_industry_province.region is 'Region'; $$,
     $$ comment on column labour_force_survey_regional_industry_province.accommodation_food_services is 'This region''s industries and sectors > Industry > Share of B.C. employment (%) /Regional Share of Industry Employment (%) > Accommodation and Food Services'; $$,
     $$ comment on column labour_force_survey_regional_industry_province.agriculture_fishing is 'This region''s industries and sectors > Industry > Share of B.C. employment (%) /Regional Share of Industry Employment (%) > Agriculture and Fishing'; $$,

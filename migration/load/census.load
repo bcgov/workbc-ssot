@@ -135,7 +135,7 @@ load csv
             vancouver_island_coast_employment_of_all_occupations = s.vancouver_island_coast_employment_of_all_occupations
         from s;
     $$,
-    $$ comment on table census is '2016 Census > Career Profiles'; $$,
+    $$ comment on table census is '{2016} Census > Career Profiles'; $$,
     $$ comment on column census.noc is 'NOC'; $$,
     $$ comment on column census.description is 'Description'; $$,
     $$ comment on column census.workers_employed is 'Workforce characteristics > workers are employed'; $$,

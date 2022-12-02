@@ -73,7 +73,7 @@ load csv
     $$ create index high_opportunity_occupations_education_idx on high_opportunity_occupations (typical_education_background); $$,
     $$ create index high_opportunity_occupations_interest_idx on high_opportunity_occupations (occupational_interest); $$,
     $$ create index high_opportunity_occupations_wage_idx on high_opportunity_occupations (wage_rate_median); $$,
-    $$ comment on table high_opportunity_occupations is '2022 HOO BC and Region for new tool'; $$,
+    $$ comment on table high_opportunity_occupations is '{2022} HOO BC and Region for new tool'; $$,
     $$ comment on column high_opportunity_occupations.occupation is 'Occupation Title'; $$,
     $$ comment on column high_opportunity_occupations.openings_forecast is 'Job Openings {2022-2032}'; $$,
     $$ comment on column high_opportunity_occupations.wage_rate_low is 'Wage Rate Low {2021}'; $$,

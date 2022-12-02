@@ -95,7 +95,7 @@ load csv
     $$
 
     after load do
-    $$ comment on table career_regional is '3.3.1_WorkBC_Career_Profile_Data_2022-2032 > Regional Outlook'; $$,
+    $$ comment on table career_regional is '3.3.1_WorkBC_Career_Profile_Data_{2022-2032} > Regional Outlook'; $$,
     $$ comment on column career_regional.noc is 'NOC'; $$,
     $$ comment on column career_regional.description is 'Occupation'; $$,
     $$ comment on column career_regional.cariboo_employment_current is 'Cariboo > Employment in {2022}'; $$,

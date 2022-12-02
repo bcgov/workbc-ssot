@@ -56,7 +56,7 @@ load csv
     $$
 
     after load do
-    $$ comment on table career_provincial is '3.3.1_WorkBC_Career_Profile_Data_2022-2032 > Provincial Outlook'; $$,
+    $$ comment on table career_provincial is '3.3.1_WorkBC_Career_Profile_Data_{2022-2032} > Provincial Outlook'; $$,
     $$ comment on column career_provincial.noc is 'NOC'; $$,
     $$ comment on column career_provincial.description is 'Description'; $$,
     $$ comment on column career_provincial.forecasted_average_employment_growth_rate_first5y is 'Forecasted average employment growth rate (%) {2022-2027}'; $$,

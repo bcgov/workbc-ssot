@@ -29,7 +29,7 @@ load csv
     $$
 
     after load do
-    $$ comment on table education is 'All Occupation''s Education Background 2021'; $$,
+    $$ comment on table education is 'All Occupation''s Education Background {2021}'; $$,
     $$ comment on column education.noc is '4-digit NOC'; $$,
     $$ comment on column education.description is 'Description'; $$,
     $$ comment on column education.typical_education_background is 'Typical Education Background'; $$,
