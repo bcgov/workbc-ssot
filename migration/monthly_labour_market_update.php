@@ -128,10 +128,10 @@ foreach ($header_map as $header => $location) {
     if (is_array($location)) {
         $value = $csv[$location[0]][$location[1]];
         if (empty($value) && !is_numeric($value)) {
-            fwrite(STDERR, "Empty value found at {$location[0]},{$location[1]}\n");
+            fwrite(STDERR, "Empty value found for {$header} at {$location[0]},{$location[1]}\n");
         }
         if (!is_numeric($value)) {
-            fwrite(STDERR, "Non-numeric value found at {$location[0]},{$location[1]}\n");
+            fwrite(STDERR, "Non-numeric value found for {$header} at {$location[0]},{$location[1]}\n");
             $value = NULL;
         }
         $output[] = $value;
