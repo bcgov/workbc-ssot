@@ -31,6 +31,11 @@ ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/Data_
 
 Refer to these scripts for usage details. Ensure that the final CSV is stored in the `load/` folder and is named after the target database table.
 
+Typically, the pipeline would like something like the following:
+```
+cat "data/Data_File-Sheet_Name.csv" | php csv_extract --range 5-504 > "load/target_table.csv"
+```
+
 - Write a data loading script to transform the final CSV file into PostgreSQL data. Follow the [`pgloader` documentation](https://pgloader.readthedocs.io/en/latest/tutorial/tutorial.html#loading-csv-data-with-pgloader) and refer to examples in this present folder. Please follow the following conventions when writing a data loading script:
   - The loading script filename is named after the target database table, just like the final CSV that it will load.
   - The column names don't exceed 64 characters to avoid truncation.
