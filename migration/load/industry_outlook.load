@@ -10,7 +10,8 @@ load csv
         employment_second,
         employment_third,
         annual_employment_growth_rate_pct_first5y,
-        annual_employment_growth_rate_pct_second5y
+        annual_employment_growth_rate_pct_second5y,
+        annual_employment_growth_rate_pct_10y
     )
     into postgresql:///ssot
     target table industry_outlook
@@ -25,7 +26,8 @@ load csv
         employment_second int using (not-available-to-null employment_second),
         employment_third int using (not-available-to-null employment_third),
         annual_employment_growth_rate_pct_first5y numeric using (not-available-to-null annual_employment_growth_rate_pct_first5y),
-        annual_employment_growth_rate_pct_second5y numeric using (not-available-to-null annual_employment_growth_rate_pct_second5y)
+        annual_employment_growth_rate_pct_second5y numeric using (not-available-to-null annual_employment_growth_rate_pct_second5y),
+        annual_employment_growth_rate_pct_10y numeric using (not-available-to-null annual_employment_growth_rate_pct_10y)
     )
     with
         fields optionally enclosed by '"',
@@ -45,7 +47,8 @@ load csv
         employment_second int,
         employment_third int,
         annual_employment_growth_rate_pct_first5y numeric,
-        annual_employment_growth_rate_pct_second5y numeric
+        annual_employment_growth_rate_pct_second5y numeric,
+        annual_employment_growth_rate_pct_10y numeric
     );
     $$
 
@@ -60,5 +63,6 @@ load csv
     $$ comment on column industry_outlook.employment_second is 'Forecasted employment > {2027}'; $$,
     $$ comment on column industry_outlook.employment_third is 'Forecasted employment > {2032}'; $$,
     $$ comment on column industry_outlook.annual_employment_growth_rate_pct_first5y is 'Forecasted average annual employment growth rate (%) > {2022-2027}'; $$,
-    $$ comment on column industry_outlook.annual_employment_growth_rate_pct_second5y is 'Forecasted average annual employment growth rate (%) > {2027-2032}'; $$
+    $$ comment on column industry_outlook.annual_employment_growth_rate_pct_second5y is 'Forecasted average annual employment growth rate (%) > {2027-2032}'; $$,
+    $$ comment on column industry_outlook.annual_employment_growth_rate_pct_10y is 'Forecasted average annual employment growth rate (%) > {2022-2032}'; $$
 ;

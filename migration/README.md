@@ -3,7 +3,7 @@ SSoT Data Migration
 
 This folder contains a simple migration system from Excel / CSV files to a PostgreSQL database. The idea is to convert Excel sheets to CSV, then apply a series of transformations to the CSV, then import the resulting CSV into PostgreSQL via a loading tool.
 
-As a prerequisite, you need access to the original data files. On your host machine, copy the original data files to the local `data/` folder.
+As a prerequisite, you need to place the LMO data sheets in the local `data/` folder. If you are copying over the data sheets from the legacy WorkBC Kentico project, these would be located in the `src/SSIS` subfolder of that project.
 ```
 find /path/to/WorkBC/src/SSIS -type f -ipath '*Delivered*' -not -iname '*.ivt' -not -iname '*.txt' -exec cp {} migration/data \;
 for f in migration/data/*.zip; do unzip -o "$f" -d migration/data; done
@@ -29,7 +29,7 @@ ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/Data_
 | `csv_extract.php` | Extract rows based on given ranges. |
 | `csv_refill.php` | Fill empty cells with previous values from the same column. |
 
-Refer to these scripts for usage details. Ensure that the final CSV is stored in the `load/` folder and is named after the target database table.
+Refer to the source code of these scripts for usage details. Ensure that the final CSV is stored in the `load/` folder and is named after the target database table.
 
 Typically, the pipeline would like something like the following:
 ```
