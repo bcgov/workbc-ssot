@@ -34,6 +34,26 @@ cat "data/2022 HOO BC and Region for new tool-Sheet1.csv" | php csv_extract.php 
 ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/2021 BC Population Distribution.xlsx" "data/2021 BC Population Distribution-%s.csv"
 cat "data/2021 BC Population Distribution-Region Population Estimates.csv" | php csv_extract.php --range 3-11 > load/population.csv
 
+# TODO WorkBC_2021_Wage_Data
+
+# TODO Common Job Titles revised - July 18 2017 (RA)
+
+# TODO UPDATED FINAL Skills Data for Career Profiles (updated April16 19)
+
+# TODO Job Openings by Industry_2016 Census_2022 LMO_Draft
+
+# TODO All Occupation's Education Background 2021
+
+# TODO 2016 Census
+
+# TODO Occupational Interests_Mar 24 2021
+
+# TODO REFRESH_WorkBC LMS _<YYYY> <MMM> FINAL
+
+# TODO 2022 top_10_careers_by_aggregate_industry
+
+# TODO Key Cities
+
 # Load all data in the database.
 for f in load/*.load; do pgloader -l workbc.lisp "$f"; done
 psql -c 'TRUNCATE monthly_labour_market_updates'

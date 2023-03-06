@@ -9,6 +9,12 @@ find /path/to/WorkBC/src/SSIS -type f -ipath '*Delivered*' -not -iname '*.ivt' -
 for f in migration/data/*.zip; do unzip -o "$f" -d migration/data; done
 ```
 
+Then run the full migration script to full re-populate the `ssot` database:
+```
+docker-compose exec migrator migrate.sh
+```
+
+## Migrating a new data source or updating an existing one
 The steps for the migration are as follows:
 
 - Enter the `migrator` container.
@@ -33,7 +39,7 @@ Refer to the source code of these scripts for usage details. Ensure that the fin
 
 Typically, the pipeline would like something like the following:
 ```
-cat "data/Data_File-Sheet_Name.csv" | php csv_extract --range 5-504 > "load/target_table.csv"
+cat "data/Data_File-Sheet_Name.csv" | php csv_extract.php --range 5-504 > "load/target_table.csv"
 ```
 
 - Write a data loading script to transform the final CSV file into PostgreSQL data. Follow the [`pgloader` documentation](https://pgloader.readthedocs.io/en/latest/tutorial/tutorial.html#loading-csv-data-with-pgloader) and refer to examples in this present folder. Please follow the following conventions when writing a data loading script:
@@ -50,7 +56,9 @@ pgloader -l workbc.lisp load/data_table.load
 ```
 WARNING! The environment variable `PGDATABASE` is currently not used by `pgloader`, so ensure that the connection string includes the database name (`ssot`) in each `.load` file.
 
-## Monthly Labour Updates
+- Add or modify the corresponding entry to the `load/sources.csv` metadata table which is described below, then re-run the `source.load` loading script.
+
+## Migrating monthly labour updates
 These updates have a slightly different workflow to accommodate their specific structure:
 
 - Convert the supplied Excel sheet to CSV.
@@ -68,12 +76,12 @@ cat "data/Update_File-Sheet_Name.csv" | php csv_empty.php | php monthly_labour_m
 SOURCE="/app/load/updates/monthly_labour_market_updates_{YYYY}_{MM}.csv" pgloader -l workbc.lisp load/updates/monthly_labour_market_updates.load
 ```
 
-- Optionally, run the loading script on all labour market updates.
-```
-for f in load/updates/*.csv; do SOURCE="/app/$f" pgloader -l workbc.lisp load/updates/monthly_labour_market_updates.load; done
-```
-
 ## Sources metadata
-The `load/sources.csv` file contains provenance metadata for all the migrated data sources, including a source label that can be displayed to end-users. The level of granularity of the metadata is the "Data point", which represents a field or a section of the dataset. If the value is `NULL`, then the provenance covers all data points, except for those that may be specifically mentioned in other records of this table.
+The `load/sources.csv` file contains provenance metadata for all the migrated data sources, including a source label that can be displayed to end-users. The level of granularity of the metadata is the "Data point", which represents a single field or a section of the dataset. If the data point value is `NULL`, then the provenance covers all data points, except for those that may be specifically mentioned in other records of this table.
 
-By examining this metadata, you can determine which source spreadsheets/tabs/ranges are needed to recreate the full dataset.
+You can refresh the sources metadata using the following line:
+```
+pgloader -l workbc.lisp load/sources.load
+```
+
+By examining this metadata, you can determine which source spreadsheets/tabs/ranges are needed to recreate the full dataset. The contents should correspond to the script `migrate.sh`.
