@@ -33,7 +33,7 @@ load csv
         industry_2_openings int using (not-available-to-null industry_2_openings),
         industry_3_name text using (not-available-to-null industry_3_name),
         industry_3_percent numeric using (not-available-to-null industry_3_percent),
-        industry_3_openings int using (not-available-to-null industry_1_openings),
+        industry_3_openings int using (not-available-to-null industry_3_openings),
         industry_4_name text using (not-available-to-null industry_4_name),
         industry_4_percent numeric using (not-available-to-null industry_4_percent),
         industry_4_openings int using (not-available-to-null industry_4_openings),
