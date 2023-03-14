@@ -20,11 +20,11 @@ cat "data/3.3.1_WorkBC_Career_Profile_Data_2022-2032-Provincial Outlook.csv" | p
 ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/3.3.2_WorkBC_Industry_Profile_2022-2032_revised_Feb24.xlsx" "data/3.3.2_WorkBC_Industry_Profile_2022-2032_revised_Feb24-%s.csv"
 cat "data/3.3.2_WorkBC_Industry_Profile_2022-2032_revised_Feb24-BC.csv" | php csv_extract.php --range 4 > load/industry_outlook.csv
 
-# 3.3.3_WorkBC_Regional_Profile_Data_2022-2032_FINAL_Nov25
-ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/3.3.3_WorkBC_Regional_Profile_Data_2022-2032_FINAL_Nov25.xlsx" "data/3.3.3_WorkBC_Regional_Profile_Data_2022-2032_FINAL_Nov25-%s.csv"
-cat "data/3.3.3_WorkBC_Regional_Profile_Data_2022-2032_FINAL_Nov25-Regional Profiles - LMO.csv" | php csv_extract.php --range 5 > load/regional_labour_market_outlook.csv
-cat "data/3.3.3_WorkBC_Regional_Profile_Data_2022-2032_FINAL_Nov25-Top Industries.csv" | php csv_extract.php --range 5 | php csv_empty.php > load/regional_top_industries.csv
-cat "data/3.3.3_WorkBC_Regional_Profile_Data_2022-2032_FINAL_Nov25-Top Occupation.csv" | php csv_extract.php --range 5 | php csv_empty.php > load/regional_top_occupations.csv
+# 3.3.3_WorkBC_Regional_Profile_Data_2022-2032_Updated_March92022
+ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/3.3.3_WorkBC_Regional_Profile_Data_2022-2032_Updated_March92022.xlsx" "data/3.3.3_WorkBC_Regional_Profile_Data_2022-2032_Updated_March92022-%s.csv"
+cat "data/3.3.3_WorkBC_Regional_Profile_Data_2022-2032_Updated_March92022-Regional Profiles - LMO.csv" | php csv_extract.php --range 5 > load/regional_labour_market_outlook.csv
+cat "data/3.3.3_WorkBC_Regional_Profile_Data_2022-2032_Updated_March92022-Top Industries.csv" | php csv_extract.php --range 5 | php csv_empty.php > load/regional_top_industries.csv
+cat "data/3.3.3_WorkBC_Regional_Profile_Data_2022-2032_Updated_March92022-Top Occupation.csv" | php csv_extract.php --range 5 | php csv_empty.php > load/regional_top_occupations.csv
 
 # 2022 HOO BC and Region for new tool
 ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/2022 HOO BC and Region for new tool.xlsx" "data/2022 HOO BC and Region for new tool-%s.csv"
@@ -55,6 +55,34 @@ cat "data/Job Openings by Industry_2016 Census_2022 LMO_Draft-Career Profiles.cs
 # TODO Key Cities
 
 # TODO REFRESH_WorkBC LMS _<YYYY> <MMM> FINAL
+# REFRESH_WorkBC LMS _2021 Apr FINAL.xlsx
+# REFRESH_WorkBC LMS _2021 Aug FINAL.xlsx
+# REFRESH_WorkBC LMS _2021 Dec FINAL.xlsx
+# REFRESH_WorkBC LMS _2021 Feb FINAL.xlsx
+# REFRESH_WorkBC LMS _2021 Jan FINAL.xlsx
+# REFRESH_WorkBC LMS _2021 July FINAL.xlsx
+# REFRESH_WorkBC LMS _2021 June FINAL.xlsx
+# REFRESH_WorkBC LMS _2021 Mar FINAL.xlsx
+# REFRESH_WorkBC LMS _2021 May FINAL.xlsx
+# REFRESH_WorkBC LMS _2021 Nov FINAL.xlsx
+# REFRESH_WorkBC LMS _2021 Oct FINAL.xlsx
+# REFRESH_WorkBC LMS _2021 Sept FINAL.xlsx
+# REFRESH_WorkBC LMS _2022 Apr FINAL.xlsx
+# REFRESH_WorkBC LMS _2022 Aug FINAL.xlsx
+# REFRESH_WorkBC LMS _2022 Feb FINAL.xlsx
+# REFRESH_WorkBC LMS _2022 Jan FINAL.xlsx
+# REFRESH_WorkBC LMS _2022 July FINAL.xlsx
+# REFRESH_WorkBC LMS _2022 June FINAL.xlsx
+# REFRESH_WorkBC LMS _2022 Mar FINAL.xlsx
+# REFRESH_WorkBC LMS _2022 May FINAL.xlsx
+# REFRESH_WorkBC LMS _2022 Oct.xlsx
+# REFRESH_WorkBC LMS _2022 Sept FINAL.xlsx
+# REFRESH_WorkBC LMS _2022_Dec.xlsx
+# REFRESH_WorkBC LMS _2022_Nov.xlsx
+ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/REFRESH_WorkBC LMS _2023 Jan.xlsx" "data/REFRESH_WorkBC LMS _2023 Jan-%s.csv"
+cat "data/REFRESH_WorkBC LMS _2023 Jan-Sheet3.csv" | php csv_empty.php | php monthly_labour_market_update.php 2023 1 > "load/updates/monthly_labour_market_updates_2023_01.csv"
+ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/REFRESH_WorkBC LMS _2023 Feb.xlsx" "data/REFRESH_WorkBC LMS _2023 Feb-%s.csv"
+cat "data/REFRESH_WorkBC LMS _2023 Feb-Sheet3.csv" | php csv_empty.php | php monthly_labour_market_update.php 2023 2 > "load/updates/monthly_labour_market_updates_2023_02.csv"
 
 # Load all data in the database.
 for f in load/*.load; do pgloader -l workbc.lisp "$f"; done

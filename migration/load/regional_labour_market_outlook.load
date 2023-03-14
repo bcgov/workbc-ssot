@@ -2,6 +2,10 @@ load csv
     from 'regional_labour_market_outlook.csv'
     (
         region,
+        job_openings_first,
+        job_openings_second,
+        job_openings_third,
+        job_openings_10y,
         replacement_of_retiring_workers_openings,
         replacement_of_retiring_workers_pct,
         new_jobs_due_to_economic_growth_openings,
@@ -19,6 +23,10 @@ load csv
     target columns
     (
         region,
+        job_openings_first numeric using (not-available-to-null job_openings_first),
+        job_openings_second numeric using (not-available-to-null job_openings_second),
+        job_openings_third numeric using (not-available-to-null job_openings_third),
+        job_openings_10y numeric using (not-available-to-null job_openings_10y),
         replacement_of_retiring_workers_openings int using (not-available-to-null replacement_of_retiring_workers_openings),
         replacement_of_retiring_workers_pct numeric using (not-available-to-null replacement_of_retiring_workers_pct),
         new_jobs_due_to_economic_growth_openings int using (not-available-to-null new_jobs_due_to_economic_growth_openings),
@@ -41,6 +49,10 @@ load csv
     $$ create table if not exists regional_labour_market_outlook
     (
         region citext primary key,
+        job_openings_first numeric,
+        job_openings_second numeric,
+        job_openings_third numeric,
+        job_openings_10y numeric,
         replacement_of_retiring_workers_openings int,
         replacement_of_retiring_workers_pct numeric,
         new_jobs_due_to_economic_growth_openings int,
@@ -66,6 +78,10 @@ load csv
     $$ update regional_labour_market_outlook set region = 'north_coast_nechako' where region = 'North Coast & Nechako'; $$,
     $$ comment on table regional_labour_market_outlook is 'B.C. Labour Market Outlook (2022-2032)/for this region'; $$,
     $$ comment on column regional_labour_market_outlook.region is 'Region'; $$,
+    $$ comment on column regional_labour_market_outlook.job_openings_first is 'Job Openings > {2023}'; $$,
+    $$ comment on column regional_labour_market_outlook.job_openings_second is 'Job Openings > {2027}'; $$,
+    $$ comment on column regional_labour_market_outlook.job_openings_third is 'Job Openings > {2032}'; $$,
+    $$ comment on column regional_labour_market_outlook.job_openings_10y is 'Job Openings > {2022-2032}'; $$,
     $$ comment on column regional_labour_market_outlook.replacement_of_retiring_workers_openings is 'Composition of job openings > Replacement of retiring workers > Openings'; $$,
     $$ comment on column regional_labour_market_outlook.replacement_of_retiring_workers_pct is 'Composition of job openings > Replacement of retiring workers > %'; $$,
     $$ comment on column regional_labour_market_outlook.new_jobs_due_to_economic_growth_openings is 'Composition of job openings > New jobs due to economic growth > Openings'; $$,
