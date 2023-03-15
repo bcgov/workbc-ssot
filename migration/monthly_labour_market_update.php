@@ -126,7 +126,7 @@ fputcsv(STDOUT, array_keys($header_map));
 $output = [];
 foreach ($header_map as $header => $location) {
     if (is_array($location)) {
-        $value = $csv[$location[0]][$location[1]];
+        $value = str_replace(',', '', trim($csv[$location[0]][$location[1]]));
         if (empty($value) && !is_numeric($value)) {
             fwrite(STDERR, "Empty value found for {$header} at {$location[0]},{$location[1]}\n");
         }

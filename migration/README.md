@@ -75,7 +75,10 @@ cat "data/Update_File-Sheet_Name.csv" | php csv_empty.php | php monthly_labour_m
 ```
 SOURCE="/app/load/updates/monthly_labour_market_updates_{YYYY}_{MM}.csv" pgloader -l workbc.lisp load/updates/monthly_labour_market_updates.load
 ```
-
+WARNING! The monthly labour market update loading script does not offer the capability of updating an existing record - you would have to manually delete the record for a given month if you want to update it. For this, use a SQL instruction like
+```
+DELETE FROM monthly_labour_market_updates WHERE year = YYYY AND month = MM;
+```
 ## Sources metadata
 The `load/sources.csv` file contains provenance metadata for all the migrated data sources, including a source label that can be displayed to end-users. The level of granularity of the metadata is the "Data point", which represents a single field or a section of the dataset. If the data point value is `NULL`, then the provenance covers all data points, except for those that may be specifically mentioned in other records of this table.
 
