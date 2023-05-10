@@ -68,14 +68,15 @@ ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/Updat
 
 - Transform the CSV for loading, supplying the month and year that corresponds to the sheet.
 ```
-cat "data/Update_File-Sheet_Name.csv" | php csv_empty.php | php monthly_labour_market_update.php year{YYYY} month{1..12} > "load/updates/monthly_labour_market_updates_{YYYY}_{MM}.csv"
+cat "data/Update_File-Sheet_Name.csv" | php csv_empty.php | php monthly_labour_market_update_no_city.php year{YYYY} month{1..12} > "load/updates/monthly_labour_market_updates_{YYYY}_{MM}.csv"
 ```
+NOTE! For months earlier than March 2023, use the script `monthly_labour_market_update.php` instead of `monthly_labour_market_update_no_city.php`.
 
 - Run the loading script `load/monthly_labour_market_updates.load`, supplying the transformed CSV above as the `SOURCE` environment variable.
 ```
 SOURCE="/app/load/updates/monthly_labour_market_updates_{YYYY}_{MM}.csv" pgloader -l workbc.lisp load/updates/monthly_labour_market_updates.load
 ```
-WARNING! The monthly labour market update loading script does not offer the capability of updating an existing record - you would have to manually delete the record for a given month if you want to update it. For this, use a SQL instruction like
+WARNING! The monthly labour market update loading script does not offer the capability of updating an existing record - you would have to manually delete the record for a given month if you want to update it. For this, use a SQL instruction like:
 ```
 psql -c 'DELETE FROM monthly_labour_market_updates WHERE year = YYYY AND month = MM;'
 ```

@@ -79,10 +79,14 @@ cat "data/Job Openings by Industry_2016 Census_2022 LMO_Draft-Career Profiles.cs
 # REFRESH_WorkBC LMS _2022 Sept FINAL.xlsx
 # REFRESH_WorkBC LMS _2022_Dec.xlsx
 # REFRESH_WorkBC LMS _2022_Nov.xlsx
-ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/REFRESH_WorkBC LMS _2023 Jan.xlsx" "data/REFRESH_WorkBC LMS _2023 Jan-%s.csv"
+ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/REFRESH_WorkBC LMS _2023_Jan new v2.xlsx" "data/REFRESH_WorkBC LMS _2023 Jan-%s.csv"
 cat "data/REFRESH_WorkBC LMS _2023 Jan-Sheet3.csv" | php csv_empty.php | php monthly_labour_market_update.php 2023 1 > "load/updates/monthly_labour_market_updates_2023_01.csv"
-ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/REFRESH_WorkBC LMS _2023 Feb.xlsx" "data/REFRESH_WorkBC LMS _2023 Feb-%s.csv"
+ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/REFRESH_WorkBC LMS _2023_FEB_updated Mar21 v2.xlsx" "data/REFRESH_WorkBC LMS _2023 Feb-%s.csv"
 cat "data/REFRESH_WorkBC LMS _2023 Feb-Sheet3.csv" | php csv_empty.php | php monthly_labour_market_update.php 2023 2 > "load/updates/monthly_labour_market_updates_2023_02.csv"
+ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/REFRESH_WorkBC LMS _2023_Mar updated Apr14.xlsx" "data/REFRESH_WorkBC LMS _2023 Mar-%s.csv"
+cat "data/REFRESH_WorkBC LMS _2023 Mar-Sheet3.csv" | php csv_empty.php | php monthly_labour_market_update_no_city.php 2023 3 > "load/updates/monthly_labour_market_updates_2023_03.csv"
+ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/REFRESH_WorkBC LMS _2023_Apr.xlsx" "data/REFRESH_WorkBC LMS _2023 Apr-%s.csv"
+cat "data/REFRESH_WorkBC LMS _2023 Apr-Sheet3.csv" | php csv_empty.php | php monthly_labour_market_update_no_city.php 2023 4 > "load/updates/monthly_labour_market_updates_2023_04.csv"
 
 # Load all data in the database.
 for f in load/*.load; do pgloader -l workbc.lisp "$f"; done
