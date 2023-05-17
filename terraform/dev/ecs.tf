@@ -29,7 +29,7 @@ resource "aws_ecs_task_definition" "app" {
 	{
 		essential   = true
 		name        = "postgrest"
-		image       = "${local.app_repo}/postgrest:1.0"
+		image       = "${var.app_repo}/postgrest:1.0"
 		networkMode = "awsvpc"
 		
 		logConfiguration = {
@@ -75,7 +75,7 @@ resource "aws_ecs_task_definition" "app" {
 	{
 		essential   = false
 		name        = "swagger"
-		image       = "${local.app_repo}/swagger:1.0"
+		image       = "${var.app_repo}/swagger:1.0"
 		networkMode = "awsvpc"
 
 		portMappings = [
