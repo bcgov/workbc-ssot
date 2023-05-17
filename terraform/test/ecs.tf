@@ -23,21 +23,13 @@ resource "aws_ecs_task_definition" "app" {
   cpu                      = var.fargate_cpu
   memory                   = var.fargate_memory
   tags                     = var.common_tags
-#  volume {
-#    name = "contents"
-#    efs_volume_configuration  {
-#        file_system_id = aws_efs_file_system.workbc-cc.id
-#    }
-#  }
-#  volume {
-#    name = "app"
-#  }
+
 
   container_definitions = jsonencode([
 	{
 		essential   = true
 		name        = "postgrest"
-		image       = "${var.app_repo}/postgrest:1.0"
+		image       = "${local.app_repo}/postgrest:1.0"
 		networkMode = "awsvpc"
 		
 		logConfiguration = {
@@ -76,23 +68,14 @@ resource "aws_ecs_task_definition" "app" {
 				value = "http://localhost:3000"
 			}
 		]
-#		secrets = [
-#			{
-#				name = "POSTGRES_USER",
-#				valueFrom = "${data.aws_secretsmanager_secret_version.creds.arn}:username::"
-#			},
-#			{
-#				name = "POSTGRES_PASSWORD",
-#				valueFrom = "${data.aws_secretsmanager_secret_version.creds.arn}:password::"
-#			}
-#		]
+
 
 
 	},
 	{
 		essential   = false
 		name        = "swagger"
-		image       = "${var.app_repo}/swagger:1.0"
+		image       = "${local.app_repo}/swagger:1.0"
 		networkMode = "awsvpc"
 
 		portMappings = [
