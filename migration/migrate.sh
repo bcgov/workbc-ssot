@@ -18,7 +18,7 @@ cat "data/3.3.1_WorkBC_Career_Profile_Data_2022-2032-Provincial Outlook.csv" | p
 
 # 3.3.2_WorkBC_Industry_Profile_2022-2032_revised_Feb24
 ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/3.3.2_WorkBC_Industry_Profile_2022-2032_revised_Feb24.xlsx" "data/3.3.2_WorkBC_Industry_Profile_2022-2032_revised_Feb24-%s.csv"
-cat "data/3.3.2_WorkBC_Industry_Profile_2022-2032_revised_Feb24-BC.csv" | php csv_extract.php --range 4 > load/industry_outlook.csv
+cat "data/3.3.2_WorkBC_Industry_Profile_2022-2032_revised_Feb24-BC.csv" | php csv_extract.php --range 3 > load/industry_outlook.csv
 
 # 3.3.3_WorkBC_Regional_Profile_Data_2022-2032_Updated_March92022
 ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/3.3.3_WorkBC_Regional_Profile_Data_2022-2032_Updated_March92022.xlsx" "data/3.3.3_WorkBC_Regional_Profile_Data_2022-2032_Updated_March92022-%s.csv"
