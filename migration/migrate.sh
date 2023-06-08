@@ -38,7 +38,7 @@ cat "data/2021 BC Population Distribution-Region Population Estimates.csv" | php
 ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/Job Openings by Industry_2016 Census_2022 LMO_Draft.xlsx" "data/Job Openings by Industry_2016 Census_2022 LMO_Draft-%s.csv"
 cat "data/Job Openings by Industry_2016 Census_2022 LMO_Draft-Career Profiles.csv" | php csv_extract.php --range 5 > load/openings_careers.csv
 
-# TODO WorkBC_2021_Wage_Data
+# WorkBC_2021_Wage_Data
 ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/WorkBC_2021_Wage_Data.xlsx" "data/WorkBC_2021_Wage_Data-%s.csv"
 cat "data/WorkBC_2021_Wage_Data-Sheet1.csv" | php csv_extract.php --range 2 > load/wages.csv
 
@@ -50,7 +50,9 @@ cat "data/WorkBC_2021_Wage_Data-Sheet1.csv" | php csv_extract.php --range 2 > lo
 
 # TODO 2016 Census
 
-# TODO Occupational Interests_Mar 24 2021
+# Occupational Interests_updated_March_10_2023
+ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/Occupational Interests_updated_March_10_2023.xlsx" "data/Occupational Interests_updated_March_10_2023-%s.csv"
+cat "data/Occupational Interests_updated_March_10_2023-Occ Interest_Stack.csv" | php csv_extract.php --range 2 > load/occupational_interests.csv
 
 # TODO 2022 top_10_careers_by_aggregate_industry
 
