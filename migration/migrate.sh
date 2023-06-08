@@ -39,6 +39,8 @@ ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/Job O
 cat "data/Job Openings by Industry_2016 Census_2022 LMO_Draft-Career Profiles.csv" | php csv_extract.php --range 5 > load/openings_careers.csv
 
 # TODO WorkBC_2021_Wage_Data
+ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/WorkBC_2021_Wage_Data.xlsx" "data/WorkBC_2021_Wage_Data-%s.csv"
+cat "data/WorkBC_2021_Wage_Data-Sheet1.csv" | php csv_extract.php --range 2 > load/wages.csv
 
 # TODO Common Job Titles revised - July 18 2017 (RA)
 

@@ -41,6 +41,9 @@ load csv
     $$
 
     after load do
+    $$ update wages set source_information = '2021 Wage Bank Data (Median employment income from 2016 Census)' where source_information = '2021 Wage Bank Data Median employment income from 2016 Census'; $$,
+    $$ update wages set source_information = '2016 Census (Full-time full year median employment income)' where source_information = 'Full-time, full-year median employment income, 2016 census'; $$,
+    $$ update wages set source_information = '2021 Wage Bank Data (Median employment income from Canadian Institute for Health Information and Canadian Medical Association - custom tabulation)' where source_information = ' 2021 Wage Bank Data Median employment income from Canadian Institute for Health Information and Canadian Medical Association - custom tabulation'; $$,
     $$ comment on table wages is 'WorkBC_2021_Wage_Data'; $$,
     $$ comment on column wages.noc is 'NOC'; $$,
     $$ comment on column wages.esdc_wage_rate_high is 'ESDC Wage Rate High {2021}'; $$,
