@@ -1,64 +1,60 @@
 #! /bin/bash
 
-# 2021_LFS Data Sheet finalv3
+# Labour Force Survey
 ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/2021_LFS Data Sheet finalv3.xlsx" "data/2021_LFS Data Sheet finalv3-%s.csv"
 cat "data/2021_LFS Data Sheet finalv3-Industry Profiles.csv" | php csv_extract.php --range 5-23 | php csv_refill.php --col 7 --col 8 --col 11 --col 14 --col 17 --col 20 --col 23 --col 26 --col 29 --col 32 --col 35 --col 38 --col 41 --col 43 --col 45 --col 47 --col 49 --col 51 --col 53 --col 55 > "load/labour_force_survey_industry.csv"
 cat "data/2021_LFS Data Sheet finalv3-Regional Profiles.csv" | php csv_extract.php --range 6-13 > "load/labour_force_survey_regional_employment.csv"
 cat "data/2021_LFS Data Sheet finalv3-Regional Profiles.csv" | php csv_extract.php --range 20-27 > "load/labour_force_survey_regional_industry_region.csv"
 cat "data/2021_LFS Data Sheet finalv3-Regional Profiles.csv" | php csv_extract.php --range 34-41 > "load/labour_force_survey_regional_industry_province.csv"
 
-# 2022 HOO BC and Region for new tool
+# High Opportunity Occupations
 ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/2022 HOO BC and Region for new tool.xlsx" "data/2022 HOO BC and Region for new tool-%s.csv"
 cat "data/2022 HOO BC and Region for new tool-Sheet1.csv" | php csv_extract.php --range 2 > "load/high_opportunity_occupations.csv"
 
-# 3.3.1_WorkBC_Career_Profile_Data_2022-2032
+# B.C. Labour Market Outlook, Career Profiles
 ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/3.3.1_WorkBC_Career_Profile_Data_2022-2032.xlsx" "data/3.3.1_WorkBC_Career_Profile_Data_2022-2032-%s.csv"
 cat "data/3.3.1_WorkBC_Career_Profile_Data_2022-2032-Regional Outlook.csv" | php csv_extract.php --range 5 > load/career_regional.csv
 cat "data/3.3.1_WorkBC_Career_Profile_Data_2022-2032-Provincial Outlook.csv" | php csv_extract.php --range 4 > load/career_provincial.csv
 
-# 3.3.2_WorkBC_Industry_Profile_2022-2032_revised_Feb24
+# B.C. Labour Market Outlook, Industry Profiles
 ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/3.3.2_WorkBC_Industry_Profile_2022-2032_revised_Feb24.xlsx" "data/3.3.2_WorkBC_Industry_Profile_2022-2032_revised_Feb24-%s.csv"
 cat "data/3.3.2_WorkBC_Industry_Profile_2022-2032_revised_Feb24-BC.csv" | php csv_extract.php --range 3 > load/industry_outlook.csv
 
-# 3.3.3_WorkBC_Regional_Profile_Data_2022-2032_Updated_March92022
+# B.C. Labour Market Outlook, Regional Profiles
 ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/3.3.3_WorkBC_Regional_Profile_Data_2022-2032_Updated_March92022.xlsx" "data/3.3.3_WorkBC_Regional_Profile_Data_2022-2032_Updated_March92022-%s.csv"
 cat "data/3.3.3_WorkBC_Regional_Profile_Data_2022-2032_Updated_March92022-Regional Profiles - LMO.csv" | php csv_extract.php --range 5 > load/regional_labour_market_outlook.csv
 cat "data/3.3.3_WorkBC_Regional_Profile_Data_2022-2032_Updated_March92022-Top Industries.csv" | php csv_extract.php --range 5 | php csv_empty.php > load/regional_top_industries.csv
 cat "data/3.3.3_WorkBC_Regional_Profile_Data_2022-2032_Updated_March92022-Top Occupation.csv" | php csv_extract.php --range 5 | php csv_empty.php > load/regional_top_occupations.csv
 
-# 2022 HOO BC and Region for new tool
-ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/2022 HOO BC and Region for new tool.xlsx" "data/2022 HOO BC and Region for new tool-%s.csv"
-cat "data/2022 HOO BC and Region for new tool-Sheet1.csv" | php csv_extract.php --range 2 > load/high_opportunity_occupations.csv
-
-# 2021 BC Population Distribution
+# B.C. Population Distribution
 ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/2021 BC Population Distribution.xlsx" "data/2021 BC Population Distribution-%s.csv"
 cat "data/2021 BC Population Distribution-Region Population Estimates.csv" | php csv_extract.php --range 3-11 > load/population.csv
 
-# Job Openings by Industry_2016 Census_2022 LMO_Draft
+# B.C. Labour Market Outlook, Job Openings
 ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/Job Openings by Industry_2016 Census_2022 LMO_Draft.xlsx" "data/Job Openings by Industry_2016 Census_2022 LMO_Draft-%s.csv"
 cat "data/Job Openings by Industry_2016 Census_2022 LMO_Draft-Career Profiles.csv" | php csv_extract.php --range 5 > load/openings_careers.csv
 
-# WorkBC_2021_Wage_Data
+# Wage Data
 ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/WorkBC_2021_Wage_Data.xlsx" "data/WorkBC_2021_Wage_Data-%s.csv"
 cat "data/WorkBC_2021_Wage_Data-Sheet1.csv" | php csv_extract.php --range 2 > load/wages.csv
 
-# TODO Common Job Titles revised - July 18 2017 (RA)
-
-# TODO UPDATED FINAL Skills Data for Career Profiles (updated April16 19)
-
-# TODO All Occupation's Education Background 2021
-
-# TODO 2016 Census
-
-# Occupational Interests_updated_March_10_2023
+# Occupational Interests
 ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/Occupational Interests_updated_March_10_2023.xlsx" "data/Occupational Interests_updated_March_10_2023-%s.csv"
 cat "data/Occupational Interests_updated_March_10_2023-Occ Interest_Stack.csv" | php csv_extract.php --range 2 > load/occupational_interests.csv
 
-# TODO 2022 top_10_careers_by_aggregate_industry
+# TODO Common Job Titles for Career Profiles
+
+# TODO Skills for Career Profiles
+
+# TODO Education Backgrounds for Career Profiles
+
+# TODO Census
+
+# TODO Top 10 Careers by Industry
 
 # TODO Key Cities
 
-# TODO REFRESH_WorkBC LMS _<YYYY> <MMM> FINAL
+# TODO Labour Market Monthly Updates
 # REFRESH_WorkBC LMS _2021 Apr FINAL.xlsx
 # REFRESH_WorkBC LMS _2021 Aug FINAL.xlsx
 # REFRESH_WorkBC LMS _2021 Dec FINAL.xlsx
