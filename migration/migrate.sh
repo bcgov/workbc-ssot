@@ -35,8 +35,8 @@ ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/Job O
 cat "data/Job Openings by Industry_2016 Census_2022 LMO_Draft-Career Profiles.csv" | php csv_extract.php --range 5 > load/openings_careers.csv
 
 # Wage Data
-ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/WorkBC_2021_Wage_Data.xlsx" "data/WorkBC_2021_Wage_Data-%s.csv"
-cat "data/WorkBC_2021_Wage_Data-Sheet1.csv" | php csv_extract.php --range 2 > load/wages.csv
+ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/Wage Data Sheet 2023-06-08.xlsx" "data/Wage Data Sheet 2023-06-08-%s.csv"
+cat "data/Wage Data Sheet 2023-06-08-Sheet1.csv" | php csv_extract.php --range 2 > load/wages.csv
 
 # Occupational Interests
 ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/Occupational Interests_updated_March_10_2023.xlsx" "data/Occupational Interests_updated_March_10_2023-%s.csv"
