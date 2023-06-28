@@ -22,6 +22,8 @@ The steps for the migration are as follows:
 docker-compose exec migrator bash
 ```
 
+- Search the script `migrate.sh` for the dataset you are trying to import. If it's mentioned in there already, you're in luck: you only need to replicate the commands, taking care to adjust the source sheet to the newly-received one. Please update the script file accordingly.
+
 - Convert the Excel sheet `Data_File.xlsx` to CSV. Since multiple sheets can exist in an Excel file, we define an output template `Data_File-%s.csv` that `ssconvert` uses to generate each CSV separately with the sheet name appended to the base filename.
 ```
 ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/Data_File.xlsx" "data/Data_File-%s.csv"
@@ -58,6 +60,8 @@ WARNING! The environment variable `PGDATABASE` is currently not used by `pgloade
 
 - Add or modify the corresponding entry to the `load/sources.csv` metadata table which is described below, then re-run the `source.load` loading script.
 
+- Export the full SSoT database by running `docker-compose exec -T postgres pg_dump --clean --username workbc ssot | gzip > ssot.sql.gz` OUTSIDE the container.
+
 ## Migrating monthly labour updates
 These updates have a slightly different workflow to accommodate their specific structure:
 
@@ -81,11 +85,15 @@ WARNING! The monthly labour market update loading script does not offer the capa
 psql -c 'DELETE FROM monthly_labour_market_updates WHERE year = YYYY AND month = MM;'
 ```
 ## Sources metadata
-The `load/sources.csv` file contains provenance metadata for all the migrated data sources, including a source label that can be displayed to end-users. The level of granularity of the metadata is the "Data point", which represents a single field or a section of the dataset. If the data point value is `NULL`, then the provenance covers all data points, except for those that may be specifically mentioned in other records of this table.
+The `load/sources.csv` file contains provenance metadata for all the migrated data sources, including a source label that can be displayed to end-users. It is meant to be manually edited.
 
-You can refresh the sources metadata using the following line:
+The level of granularity of the metadata is the "Data point", which represents a single field or a section of the dataset. If the data point value is `NULL`, then the provenance covers all data points, except for those that may be specifically mentioned in other records of this table.
+
+When you update the sources file, please make sure to update the following columns (when applicable):
+- **Source filename** to reflect the latest datasheet corresponding to the given dataset
+- **Date** of datasheet production (if known) or delivery
+
+You can then refresh the sources metadata table using the following line:
 ```
 pgloader -l workbc.lisp load/sources.load
 ```
-
-By examining this metadata, you can determine which source spreadsheets/tabs/ranges are needed to recreate the full dataset. The contents should correspond to the script `migrate.sh`.
