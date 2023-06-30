@@ -27,7 +27,7 @@ load csv
         wage_rate_low numeric using (not-available-to-null wage_rate_low),
         wage_rate_median numeric using (not-available-to-null wage_rate_median),
         wage_rate_high numeric using (not-available-to-null wage_rate_high),
-        annual_salary_median,
+        annual_salary_median numeric using (not-available-to-null annual_salary_median),
         occupational_interest,
         skill_1 text using (not-available-to-null skill_1),
         skill_2 text using (not-available-to-null skill_2),
