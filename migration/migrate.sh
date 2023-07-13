@@ -8,8 +8,8 @@ cat "data/2021_LFS Data Sheet finalv3-Regional Profiles.csv" | php csv_extract.p
 cat "data/2021_LFS Data Sheet finalv3-Regional Profiles.csv" | php csv_extract.php --range 34-41 > "load/labour_force_survey_regional_industry_province.csv"
 
 # High Opportunity Occupations
-ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/2022 HOO BC and Region for new tool - Wage data UPDATED July 2023.xlsx" "data/2022 HOO BC and Region for new tool - Wage data UPDATED July 2023-%s.csv"
-cat "data/2022 HOO BC and Region for new tool - Wage data UPDATED July 2023-Sheet2.csv" | php csv_extract.php --range 2 --cols 15 > "load/high_opportunity_occupations.csv"
+ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/2022 HOO BC and Region for new tool - Wage data median wage UPDATED July 2023.xlsx" "data/2022 HOO BC and Region for new tool - Wage data median wage UPDATED July 2023-%s.csv"
+cat "data/2022 HOO BC and Region for new tool - Wage data median wage UPDATED July 2023-Sheet2.csv" | php csv_extract.php --range 2 --cols 15 > "load/high_opportunity_occupations.csv"
 
 # B.C. Labour Market Outlook, Career Profiles
 ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/3.3.1_WorkBC_Career_Profile_Data_2022-2032.xlsx" "data/3.3.1_WorkBC_Career_Profile_Data_2022-2032-%s.csv"
