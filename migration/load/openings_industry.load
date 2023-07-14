@@ -36,5 +36,5 @@ load csv
     $$ comment on column openings_industry.industry is 'Aggregate Industry'; $$,
     $$ comment on column openings_industry.noc is 'NOC'; $$,
     $$ comment on column openings_industry.description is 'Occupation'; $$,
-    $$ comment on column openings_industry.openings is 'Employment {2022}'; $$
+    $$ comment on column openings_industry.openings is 'Employment {2022-2032}'; $$
 ;
