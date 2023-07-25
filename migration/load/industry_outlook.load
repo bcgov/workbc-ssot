@@ -55,7 +55,7 @@ load csv
     after load do
     $$ comment on table industry_outlook is '3.3.2_WorkBC_Industry_Profile_{2022-2032}'; $$,
     $$ comment on column industry_outlook.industry is 'Industry'; $$,
-    $$ comment on column industry_outlook.openings is 'Job Openings > {2023-2032}'; $$,
+    $$ comment on column industry_outlook.openings is 'Job Openings > {2022-2032}'; $$,
     $$ comment on column industry_outlook.share_total_employment_pct_first is 'Forecasted industry share of total employment (%) > {2022}'; $$,
     $$ comment on column industry_outlook.share_total_employment_pct_second is 'Forecasted industry share of total employment (%) > {2027}'; $$,
     $$ comment on column industry_outlook.share_total_employment_pct_third is 'Forecasted industry share of total employment (%) > {2032}'; $$,
