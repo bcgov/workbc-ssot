@@ -3,7 +3,7 @@ name: Deploy Test
 on:
   workflow_run:
     workflows:
-      - Tag
+      - "Tag Test"
     branches:
       - "v[0-9]+.[0-9]+-uat*"
     types:
