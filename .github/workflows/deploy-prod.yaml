@@ -3,7 +3,7 @@ name: Deploy Prod
 on:
   workflow_run:
     workflows:
-      - Tag
+      - "Tag Prod"
     branches:
       - "v[0-9]+.[0-9]+-prod*"
     types:
