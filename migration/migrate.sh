@@ -89,6 +89,10 @@ ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/REFRE
 cat "data/REFRESH_WorkBC LMS _2023 Apr-Sheet3.csv" | php csv_empty.php | php monthly_labour_market_update_no_city.php 2023 4 > "load/updates/monthly_labour_market_updates_2023_04.csv"
 ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/REFRESH_WorkBC LMS _2023_May.xlsx" "data/REFRESH_WorkBC LMS _2023_May-%s.csv"
 cat "data/REFRESH_WorkBC LMS _2023_May-Sheet3.csv" | php csv_empty.php | php monthly_labour_market_update_no_city.php 2023 5 > "load/updates/monthly_labour_market_updates_2023_05.csv"
+ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/REFRESH_WorkBC LMS _2023_June.xlsx" "data/REFRESH_WorkBC LMS _2023_Jun-%s.csv"
+cat "data/REFRESH_WorkBC LMS _2023_Jun-Sheet3.csv" | php csv_empty.php | php monthly_labour_market_update_no_city.php 2023 6 > "load/updates/monthly_labour_market_updates_2023_06.csv"
+ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/REFRESH_WorkBC LMS _2023_July.xlsx" "data/REFRESH_WorkBC LMS _2023_Jul-%s.csv"
+cat "data/REFRESH_WorkBC LMS _2023_Jul-Sheet3.csv" | php csv_empty.php | php monthly_labour_market_update_no_city.php 2023 7 > "load/updates/monthly_labour_market_updates_2023_07.csv"
 
 # Load all data in the database.
 for f in load/*.load; do pgloader -l workbc.lisp "$f"; done
