@@ -1,5 +1,5 @@
 "Source label","Database table / API endpoint","Data point","Source filename","Source sheet","Source range","Author","Date"
-"B.C. Labour Market Information Office, derived from 2021 Job Bank Wage data","wages",,"WorkBC_2022_Wage_Data - UPDATED June 28 2023.xlsx","Sheet1","A2-G501",,"2023/06/28"
+"B.C. Labour Market Information Office, derived from 2022 Job Bank Wage data","wages",,"WorkBC_2022_Wage_Data - UPDATED June 28 2023.xlsx","Sheet1","A2-G501",,"2023/06/28"
 ,"titles",,"Common Job Titles revised - July 18 2017 (RA).xlsx","Sheet1","A2-D7490",,
 ,"skills",,"UPDATED FINAL Skills Data for Career Profiles (updated April16 19).xlsx","Sheet1","A2-F17396",,
 "B.C. Labour Market Outlook","openings_careers",,"Job Openings by Industry_2016 Census_2022 LMO_Draft.xlsx","Career Profiles","A5-Q504",,"2023/03/14"
