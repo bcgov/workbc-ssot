@@ -50,7 +50,9 @@ cat "data/Occupational Interests_updated_March_10_2023-Occ Interest_Stack.csv" |
 
 # TODO Census
 
-# TODO Top 10 Careers by Industry
+# Top 10 Careers by Industry
+ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/2022 top_10_careers_by_aggregate_industry_8_29_23.xlsx" "data/2022 top_10_careers_by_aggregate_industry_8_29_23-%s.csv"
+cat "data/2022 top_10_careers_by_aggregate_industry_8_29_23-Sheet1.csv" | php csv_extract.php --range 2 > load/openings_industry.csv
 
 # TODO Key Cities
 

@@ -1,180 +1,180 @@
-"Wholesale Trade",#6411,"Sales And Account Representatives - Wholesale Trade (Non-Technical)",15793
-"Wholesale Trade",#0621,"Retail And Wholesale Trade Managers",8072
-"Wholesale Trade",#7452,"Material Handlers",5016
-"Wholesale Trade",#6221,"Technical Sales Specialists - Wholesale Trade",3746
-"Wholesale Trade",#6421,"Retail Salespersons",2872
-"Wholesale Trade",#1521,"Shippers And Receivers",2660
-"Wholesale Trade",#0015,"Senior Managers - Trade, Broadcasting And Other Services, N.e.c.",2067
-"Wholesale Trade",#6552,"Other Customer And Information Services Representatives",1830
-"Wholesale Trade",#7511,"Transport Truck Drivers",1783
-"Wholesale Trade",#1411,"General Office Support Workers",1581
-Utilities,#7244,"Electrical Power Line And Cable Workers",970
-Utilities,#2133,"Electrical And Electronics Engineers",834
-Utilities,#0912,"Utilities Managers",819
-Utilities,#9241,"Power Engineers And Power Systems Operators",705
-Utilities,#7243,"Power System Electricians",568
-Utilities,#9243,"Water And Waste Treatment Plant Operators",561
-Utilities,#2241,"Electrical And Electronics Engineering Technologists And Technicians",509
-Utilities,#1411,"General Office Support Workers",392
-Utilities,#9212,"Supervisors, Petroleum, Gas And Chemical Processing And Utilities",343
-Utilities,#1221,"Administrative Officers",325
-"Transportation And Warehousing",#7511,"Transport Truck Drivers",24301
-"Transportation And Warehousing",#7512,"Bus Drivers, Subway Operators And Other Transit Operators",8535
-"Transportation And Warehousing",#7452,"Material Handlers",7445
-"Transportation And Warehousing",#7513,"Taxi And Limousine Drivers And Chauffeurs",7041
-"Transportation And Warehousing",#7514,"Delivery And Courier Service Drivers",5338
-"Transportation And Warehousing",#1512,"Letter Carriers",5297
-"Transportation And Warehousing",#0731,"Managers In Transportation",4236
-"Transportation And Warehousing",#1511,"Mail, Postal And Related Workers",4024
-"Transportation And Warehousing",#7451,"Longshore Workers",4008
-"Transportation And Warehousing",#2271,"Air Pilots, Flight Engineers And Flying Instructors",3156
-"Retail Trade",#6421,"Retail Salespersons",72785
-"Retail Trade",#0621,"Retail And Wholesale Trade Managers",41937
-"Retail Trade",#6611,Cashiers,33554
-"Retail Trade",#6211,"Retail Sales Supervisors",29078
-"Retail Trade",#6622,"Store Shelf Stockers, Clerks And Order Fillers",22036
-"Retail Trade",#6552,"Other Customer And Information Services Representatives",5349
-"Retail Trade",#7452,"Material Handlers",5183
-"Retail Trade",#7321,"Automotive Service Technicians, Truck And Bus Mechanics And Mechanical Repairers",4866
-"Retail Trade",#3219,"Other Medical Technologists And Technicians (Except Dental Health)",4394
-"Retail Trade",#1521,"Shippers And Receivers",4318
-"Repair, Personal And Non-Profit Services",#6341,"Hairstylists And Barbers",15755
-"Repair, Personal And Non-Profit Services",#7321,"Automotive Service Technicians, Truck And Bus Mechanics And Mechanical Repairers",9237
-"Repair, Personal And Non-Profit Services",#6562,"Estheticians, Electrologists And Related Occupations",8274
-"Repair, Personal And Non-Profit Services",#4154,"Professional Occupations In Religion",5072
-"Repair, Personal And Non-Profit Services",#4412,"Home Support Workers, Housekeepers And Related Occupations",3843
-"Repair, Personal And Non-Profit Services",#7322,"Motor Vehicle Body Repairers",3780
-"Repair, Personal And Non-Profit Services",#4411,"Home Child Care Providers",3693
-"Repair, Personal And Non-Profit Services",#6563,"Pet Groomers And Animal Care Workers",3464
-"Repair, Personal And Non-Profit Services",#1241,"Administrative Assistants",2610
-"Repair, Personal And Non-Profit Services",#1221,"Administrative Officers",2469
-"Public Administration",#4311,"Police Officers (Except Commissioned)",11417
-"Public Administration",#1411,"General Office Support Workers",5017
-"Public Administration",#4313,"Non-Commissioned Ranks Of The Canadian Forces",4558
-"Public Administration",#4312,Firefighters,4100
-"Public Administration",#1228,"Employment Insurance, Immigration, Border Services And Revenue Officers",4032
-"Public Administration",#1221,"Administrative Officers",3631
-"Public Administration",#4422,"Correctional Service Officers",3428
-"Public Administration",#1241,"Administrative Assistants",3055
-"Public Administration",#1111,"Financial Auditors And Accountants",2847
-"Public Administration",#5254,"Program Leaders And Instructors In Recreation, Sport And Fitness",2404
-"Professional, Scientific And Technical Services",#2174,"Computer Programmers And Interactive Media Developers",15045
-"Professional, Scientific And Technical Services",#1111,"Financial Auditors And Accountants",14009
-"Professional, Scientific And Technical Services",#2171,"Information Systems Analysts And Consultants",13436
-"Professional, Scientific And Technical Services",#4112,"Lawyers And Quebec Notaries",10590
-"Professional, Scientific And Technical Services",#2173,"Software Engineers And Designers",10371
-"Professional, Scientific And Technical Services",#1311,"Accounting Technicians And Bookkeepers",8846
-"Professional, Scientific And Technical Services",#2282,"User Support Technicians",6946
-"Professional, Scientific And Technical Services",#0013,"Senior Managers - Financial, Communications And Other Business Services",6869
-"Professional, Scientific And Technical Services",#2131,"Civil Engineers",6572
-"Professional, Scientific And Technical Services",#1122,"Professional Occupations In Business Management Consulting",6511
-"Mining And Oil And Gas Extraction",#7521,"Heavy Equipment Operators (Except Crane)",2703
-"Mining And Oil And Gas Extraction",#7511,"Transport Truck Drivers",1598
-"Mining And Oil And Gas Extraction",#8231,"Underground Production And Development Miners",1195
-"Mining And Oil And Gas Extraction",#8221,"Supervisors, Mining And Quarrying",1067
-"Mining And Oil And Gas Extraction",#7311,"Construction Millwrights And Industrial Mechanics",1058
-"Mining And Oil And Gas Extraction",#7312,"Heavy-Duty Equipment Mechanics",935
-"Mining And Oil And Gas Extraction",#7242,"Industrial Electricians",926
-"Mining And Oil And Gas Extraction",#9232,"Petroleum, Gas And Chemical Process Operators",859
-"Mining And Oil And Gas Extraction",#0016,"Senior Managers - Construction, Transportation, Production And Utilities",751
-"Mining And Oil And Gas Extraction",#0811,"Managers In Natural Resources Production And Fishing",737
-Manufacturing,#0911,"Manufacturing Managers",9823
-Manufacturing,#9617,"Labourers In Food, Beverage And Associated Products Processing",7167
-Manufacturing,#6411,"Sales And Account Representatives - Wholesale Trade (Non-Technical)",6100
-Manufacturing,#7452,"Material Handlers",5277
-Manufacturing,#9614,"Labourers In Wood, Pulp And Paper Processing",4683
-Manufacturing,#7311,"Construction Millwrights And Industrial Mechanics",4456
-Manufacturing,#9461,"Process Control And Machine Operators, Food, Beverage And Associated Products Processing",4277
-Manufacturing,#7237,"Welders And Related Machine Operators",4161
-Manufacturing,#6332,Bakers,4031
-Manufacturing,#9619,"Other Labourers In Processing, Manufacturing And Utilities",3087
-"Information, Culture And Recreation",#5254,"Program Leaders And Instructors In Recreation, Sport And Fitness",9148
-"Information, Culture And Recreation",#5131,"Producers, Directors, Choreographers And Related Occupations",3924
-"Information, Culture And Recreation",#6552,"Other Customer And Information Services Representatives",3687
-"Information, Culture And Recreation",#5136,"Painters, Sculptors And Other Visual Artists",3362
-"Information, Culture And Recreation",#5226,"Other Technical And Co-Ordinating Occupations In Motion Pictures, Broadcasting And The Performing Arts",3185
-"Information, Culture And Recreation",#5121,"Authors And Writers",3171
-"Information, Culture And Recreation",#5241,"Graphic Designers And Illustrators",3164
-"Information, Culture And Recreation",#6533,"Casino Occupations",3031
-"Information, Culture And Recreation",#6722,"Operators And Attendants In Amusement, Recreation And Sport",2988
-"Information, Culture And Recreation",#5227,"Support Occupations In Motion Pictures, Broadcasting, Photography And The Performing Arts",2957
-"Health Care And Social Assistance",#3012,"Registered Nurses And Registered Psychiatric Nurses",57913
-"Health Care And Social Assistance",#3413,"Nurse Aides, Orderlies And Patient Service Associates",36135
-"Health Care And Social Assistance",#4212,"Social And Community Service Workers",21685
-"Health Care And Social Assistance",#4214,"Early Childhood Educators And Assistants",21329
-"Health Care And Social Assistance",#1414,Receptionists,14261
-"Health Care And Social Assistance",#3233,"Licensed Practical Nurses",11105
-"Health Care And Social Assistance",#1411,"General Office Support Workers",10388
-"Health Care And Social Assistance",#4412,"Home Support Workers, Housekeepers And Related Occupations",10339
-"Health Care And Social Assistance",#3112,"General Practitioners And Family Physicians",8554
-"Health Care And Social Assistance",#3111,"Specialist Physicians",7867
-"Forestry, Logging And Support Activities",#8241,"Logging Machinery Operators",2190
-"Forestry, Logging And Support Activities",#8616,"Logging And Forestry Labourers",1818
-"Forestry, Logging And Support Activities",#8421,"Chain Saw And Skidder Operators",1709
-"Forestry, Logging And Support Activities",#7511,"Transport Truck Drivers",1411
-"Forestry, Logging And Support Activities",#2223,"Forestry Technologists And Technicians",1201
-"Forestry, Logging And Support Activities",#8211,"Supervisors, Logging And Forestry",1077
-"Forestry, Logging And Support Activities",#8422,"Silviculture And Forestry Workers",759
-"Forestry, Logging And Support Activities",#2122,"Forestry Professionals",636
-"Forestry, Logging And Support Activities",#0811,"Managers In Natural Resources Production And Fishing",530
-"Forestry, Logging And Support Activities",#7521,"Heavy Equipment Operators (Except Crane)",492
-"Finance, Insurance And Real Estate",#6232,"Real Estate Agents And Salespersons",17051
-"Finance, Insurance And Real Estate",#1114,"Other Financial Officers",15805
-"Finance, Insurance And Real Estate",#6231,"Insurance Agents And Brokers",12232
-"Finance, Insurance And Real Estate",#6551,"Customer Services Representatives - Financial Institutions",9545
-"Finance, Insurance And Real Estate",#6235,"Financial Sales Representatives",9025
-"Finance, Insurance And Real Estate",#1224,"Property Administrators",7971
-"Finance, Insurance And Real Estate",#0122,"Banking, Credit And Other Investment Managers",7602
-"Finance, Insurance And Real Estate",#0121,"Insurance, Real Estate And Financial Brokerage Managers",7100
-"Finance, Insurance And Real Estate",#1312,"Insurance Adjusters And Claims Examiners",4637
-"Finance, Insurance And Real Estate",#1241,"Administrative Assistants",3975
-"Educational Services",#4032,"Elementary School And Kindergarten Teachers",36122
-"Educational Services",#4031,"Secondary School Teachers",21840
-"Educational Services",#4413,"Elementary And Secondary School Teacher Assistants",18061
-"Educational Services",#4011,"University Professors And Lecturers",11270
-"Educational Services",#4021,"College And Other Vocational Instructors",10134
-"Educational Services",#4012,"Post-Secondary Teaching And Research Assistants",9155
-"Educational Services",#4216,"Other Instructors",5912
-"Educational Services",#5254,"Program Leaders And Instructors In Recreation, Sport And Fitness",5174
-"Educational Services",#1241,"Administrative Assistants",4846
-"Educational Services",#6733,"Janitors, Caretakers And Building Superintendents",4543
-Construction,#0712,"Home Building And Renovation Managers",20886
-Construction,#7611,"Construction Trades Helpers And Labourers",19917
-Construction,#7271,Carpenters,17227
-Construction,#7241,"Electricians (Except Industrial And Power System)",13552
-Construction,#0711,"Construction Managers",13521
-Construction,#7251,Plumbers,9257
-Construction,#7294,"Painters And Decorators (Except Interior Decorators)",8971
-Construction,#7521,"Heavy Equipment Operators (Except Crane)",7562
-Construction,#7205,"Contractors And Supervisors, Other Construction Trades, Installers, Repairers And Servicers",6628
-Construction,#7441,"Residential And Commercial Installers And Servicers",5248
-"Business, Building And Other Support Services",#6731,"Light Duty Cleaners",13441
-"Business, Building And Other Support Services",#8612,"Landscaping And Grounds Maintenance Labourers",11784
-"Business, Building And Other Support Services",#6541,"Security Guards And Related Security Service Occupations",10552
-"Business, Building And Other Support Services",#6733,"Janitors, Caretakers And Building Superintendents",9982
-"Business, Building And Other Support Services",#6521,"Travel Counsellors",6278
-"Business, Building And Other Support Services",#8255,"Contractors And Supervisors, Landscaping, Grounds Maintenance And Horticulture Services",2917
-"Business, Building And Other Support Services",#6552,"Other Customer And Information Services Representatives",2543
-"Business, Building And Other Support Services",#1221,"Administrative Officers",1788
-"Business, Building And Other Support Services",#2225,"Landscape And Horticulture Technicians And Specialists",1783
-"Business, Building And Other Support Services",#1411,"General Office Support Workers",1719
-"Agriculture And Fishing",#0821,"Managers In Agriculture",8950
-"Agriculture And Fishing",#8431,"General Farm Workers",5530
-"Agriculture And Fishing",#8432,"Nursery And Greenhouse Workers",1956
-"Agriculture And Fishing",#8611,"Harvesting Labourers",1158
-"Agriculture And Fishing",#8262,Fishermen/Women,1008
-"Agriculture And Fishing",#0822,"Managers In Horticulture",642
-"Agriculture And Fishing",#8252,"Agricultural Service Contractors, Farm Supervisors And Specialized Livestock Workers",483
-"Agriculture And Fishing",#0823,"Managers In Aquaculture",468
-"Agriculture And Fishing",#6421,"Retail Salespersons",394
-"Agriculture And Fishing",#1311,"Accounting Technicians And Bookkeepers",320
-"Accommodation And Food Services",#6711,"Food Counter Attendants, Kitchen Helpers And Related Support Occupations",42456
-"Accommodation And Food Services",#6513,"Food And Beverage Servers",32839
-"Accommodation And Food Services",#6322,Cooks,29094
-"Accommodation And Food Services",#0631,"Restaurant And Food Service Managers",18814
-"Accommodation And Food Services",#0632,"Accommodation Service Managers",8842
-"Accommodation And Food Services",#6321,Chefs,7512
-"Accommodation And Food Services",#6611,Cashiers,6805
-"Accommodation And Food Services",#6731,"Light Duty Cleaners",6338
-"Accommodation And Food Services",#6311,"Food Service Supervisors",5329
-"Accommodation And Food Services",#6511,"Maîtres D'hôtel And Hosts/Hostesses",4582
+"Accommodation And Food Services",#6322,Cooks,9850
+"Accommodation And Food Services",#6711,"Food counter attendants, kitchen helpers and related support occupations",9220
+"Accommodation And Food Services",#0631,"Restaurant and food service managers",8240
+"Accommodation And Food Services",#6513,"Food and beverage servers",8050
+"Accommodation And Food Services",#0632,"Accommodation service managers",4520
+"Accommodation And Food Services",#6731,"Light duty cleaners",2690
+"Accommodation And Food Services",#6321,Chefs,2240
+"Accommodation And Food Services",#6611,Cashiers,1730
+"Accommodation And Food Services",#6311,"Food service supervisors",1620
+"Accommodation And Food Services",#6525,"Hotel front desk clerks",1260
+"Agriculture And Fishing",#0821,"Managers in agriculture",2820
+"Agriculture And Fishing",#8431,"General farm workers",1020
+"Agriculture And Fishing",#8432,"Nursery and greenhouse workers",480
+"Agriculture And Fishing",#8611,"Harvesting labourers",320
+"Agriculture And Fishing",#0822,"Managers in horticulture",200
+"Agriculture And Fishing",#8262,Fishermen/women,190
+"Agriculture And Fishing",#8252,"Agricultural service contractors, farm supervisors and specialized livestock workers",170
+"Agriculture And Fishing",#0823,"Managers in aquaculture",140
+"Agriculture And Fishing",#1311,"Accounting technicians and bookkeepers",90
+"Agriculture And Fishing",#8613,"Aquaculture and marine harvest labourers",90
+"Business, Building And Other Support Services",#6731,"Light duty cleaners",4710
+"Business, Building And Other Support Services",#6733,"Janitors, caretakers and building superintendents",4060
+"Business, Building And Other Support Services",#8612,"Landscaping and grounds maintenance labourers",3850
+"Business, Building And Other Support Services",#6541,"Security guards and related security service occupations",3260
+"Business, Building And Other Support Services",#6521,"Travel counsellors",2280
+"Business, Building And Other Support Services",#8255,"Contractors and supervisors, landscaping, grounds maintenance and horticulture services",1650
+"Business, Building And Other Support Services",#1221,"Administrative officers",880
+"Business, Building And Other Support Services",#6552,"Other customer and information services representatives",690
+"Business, Building And Other Support Services",#1411,"General office support workers",610
+"Business, Building And Other Support Services",#0125,"Other business services managers",580
+Construction,#0712,"Home building and renovation managers",9670
+Construction,#0711,"Construction managers",6410
+Construction,#7611,"Construction trades helpers and labourers",5150
+Construction,#7271,Carpenters,4790
+Construction,#7294,"Painters and decorators (except interior decorators)",2860
+Construction,#7241,"Electricians (except industrial and power system)",2750
+Construction,#7205,"Contractors and supervisors, other construction trades, installers, repairers and servicers",2520
+Construction,#7251,Plumbers,2240
+Construction,#7521,"Heavy equipment operators (except crane)",2080
+Construction,#7302,"Contractors and supervisors, heavy equipment operator crews",1930
+"Educational Services",#4032,"Elementary school and kindergarten teachers",12210
+"Educational Services",#4031,"Secondary school teachers",7930
+"Educational Services",#4413,"Elementary and secondary school teacher assistants",5460
+"Educational Services",#4021,"College and other vocational instructors",3950
+"Educational Services",#4011,"University professors and lecturers",3400
+"Educational Services",#0422,"School principals and administrators of elementary and secondary education",2020
+"Educational Services",#4216,"Other instructors",1830
+"Educational Services",#1221,"Administrative officers",1720
+"Educational Services",#1241,"Administrative assistants",1630
+"Educational Services",#6733,"Janitors, caretakers and building superintendents",1600
+"Finance, Insurance And Real Estate",#6232,"Real estate agents and salespersons",4840
+"Finance, Insurance And Real Estate",#1114,"Other financial officers",4570
+"Finance, Insurance And Real Estate",#6231,"Insurance agents and brokers",3470
+"Finance, Insurance And Real Estate",#1224,"Property administrators",2900
+"Finance, Insurance And Real Estate",#0122,"Banking, credit and other investment managers",2860
+"Finance, Insurance And Real Estate",#0121,"Insurance, real estate and financial brokerage managers",2850
+"Finance, Insurance And Real Estate",#6235,"Financial sales representatives",2220
+"Finance, Insurance And Real Estate",#6551,"Customer services representatives - financial institutions",2110
+"Finance, Insurance And Real Estate",#1312,"Insurance adjusters and claims examiners",1550
+"Finance, Insurance And Real Estate",#1221,"Administrative officers",1460
+"Forestry, Logging And Support Activities",#8211,"Supervisors, logging and forestry",430
+"Forestry, Logging And Support Activities",#8421,"Chain saw and skidder operators",320
+"Forestry, Logging And Support Activities",#8241,"Logging machinery operators",230
+"Forestry, Logging And Support Activities",#7511,"Transport truck drivers",180
+"Forestry, Logging And Support Activities",#0811,"Managers in natural resources production and fishing",150
+"Forestry, Logging And Support Activities",#8616,"Logging and forestry labourers",80
+"Forestry, Logging And Support Activities",#2223,"Forestry technologists and technicians",80
+"Forestry, Logging And Support Activities",#9431,"Sawmill machine operators",40
+"Forestry, Logging And Support Activities",#1221,"Administrative officers",40
+"Forestry, Logging And Support Activities",#0016,"Senior managers - construction, transportation, production and utilities",40
+"Health Care And Social Assistance",#3012,"Registered nurses and registered psychiatric nurses",21540
+"Health Care And Social Assistance",#3413,"Nurse aides, orderlies and patient service associates",17210
+"Health Care And Social Assistance",#4214,"Early childhood educators and assistants",10950
+"Health Care And Social Assistance",#4212,"Social and community service workers",8640
+"Health Care And Social Assistance",#1414,Receptionists,5030
+"Health Care And Social Assistance",#3233,"Licensed practical nurses",4650
+"Health Care And Social Assistance",#4412,"Home support workers, housekeepers and related occupations",4440
+"Health Care And Social Assistance",#1411,"General office support workers",3930
+"Health Care And Social Assistance",#3112,"General practitioners and family physicians",3310
+"Health Care And Social Assistance",#0311,"Managers in health care",3300
+"Information, Culture And Recreation",#5254,"Program leaders and instructors in recreation, sport and fitness",3870
+"Information, Culture And Recreation",#5131,"Producers, directors, choreographers and related occupations",2240
+"Information, Culture And Recreation",#5226,"Other technical and co-ordinating occupations in motion pictures, broadcasting and the performing arts",1830
+"Information, Culture And Recreation",#6533,"Casino occupations",1670
+"Information, Culture And Recreation",#5227,"Support occupations in motion pictures, broadcasting, photography and the performing arts",1640
+"Information, Culture And Recreation",#5241,"Graphic designers and illustrators",1600
+"Information, Culture And Recreation",#5136,"Painters, sculptors and other visual artists",1350
+"Information, Culture And Recreation",#5121,"Authors and writers",1250
+"Information, Culture And Recreation",#6722,"Operators and attendants in amusement, recreation and sport",1240
+"Information, Culture And Recreation",#5225,"Audio and video recording technicians",1180
+Manufacturing,#0911,"Manufacturing managers",3980
+Manufacturing,#9617,"Labourers in food, beverage and associated products processing",2200
+Manufacturing,#6411,"Sales and account representatives - wholesale trade (non-technical)",1610
+Manufacturing,#6332,Bakers,1240
+Manufacturing,#0016,"Senior managers - construction, transportation, production and utilities",1220
+Manufacturing,#9461,"Process control and machine operators, food, beverage and associated products processing",1160
+Manufacturing,#7311,"Construction millwrights and industrial mechanics",1000
+Manufacturing,#7237,"Welders and related machine operators",970
+Manufacturing,#7452,"Material handlers",770
+Manufacturing,#1221,"Administrative officers",750
+"Mining And Oil And Gas Extraction",#7521,"Heavy equipment operators (except crane)",950
+"Mining And Oil And Gas Extraction",#7511,"Transport truck drivers",620
+"Mining And Oil And Gas Extraction",#8221,"Supervisors, mining and quarrying",570
+"Mining And Oil And Gas Extraction",#8231,"Underground production and development miners",480
+"Mining And Oil And Gas Extraction",#0811,"Managers in natural resources production and fishing",460
+"Mining And Oil And Gas Extraction",#7311,"Construction millwrights and industrial mechanics",450
+"Mining And Oil And Gas Extraction",#0016,"Senior managers - construction, transportation, production and utilities",420
+"Mining And Oil And Gas Extraction",#7242,"Industrial electricians",380
+"Mining And Oil And Gas Extraction",#9232,"Petroleum, gas and chemical process operators",380
+"Mining And Oil And Gas Extraction",#8222,"Contractors and supervisors, oil and gas drilling and services",360
+"Professional, Scientific And Technical Services",#2174,"Computer programmers and interactive media developers",11350
+"Professional, Scientific And Technical Services",#2171,"Information systems analysts and consultants",10490
+"Professional, Scientific And Technical Services",#2173,"Software engineers and designers",8070
+"Professional, Scientific And Technical Services",#0213,"Computer and information systems managers",5940
+"Professional, Scientific And Technical Services",#1111,"Financial auditors and accountants",5910
+"Professional, Scientific And Technical Services",#2282,"User support technicians",5490
+"Professional, Scientific And Technical Services",#0013,"Senior managers - financial, communications and other business services",5190
+"Professional, Scientific And Technical Services",#4112,"Lawyers and Quebec notaries",4240
+"Professional, Scientific And Technical Services",#2175,"Web designers and developers",4010
+"Professional, Scientific And Technical Services",#1311,"Accounting technicians and bookkeepers",3710
+"Public Administration",#4311,"Police officers (except commissioned)",4090
+"Public Administration",#4312,Firefighters,1790
+"Public Administration",#1411,"General office support workers",1770
+"Public Administration",#1221,"Administrative officers",1720
+"Public Administration",#1228,"Employment insurance, immigration, border services and revenue officers",1550
+"Public Administration",#4313,"Non-commissioned ranks of the Canadian Forces",1420
+"Public Administration",#0012,"Senior government managers and officials",1340
+"Public Administration",#4422,"Correctional service officers",1340
+"Public Administration",#1241,"Administrative assistants",1140
+"Public Administration",#1111,"Financial auditors and accountants",1010
+"Repair, Personal And Non-Profit Services",#6341,"Hairstylists and barbers",5670
+"Repair, Personal And Non-Profit Services",#7321,"Automotive service technicians, truck and bus mechanics and mechanical repairers",2880
+"Repair, Personal And Non-Profit Services",#6562,"Estheticians, electrologists and related occupations",2470
+"Repair, Personal And Non-Profit Services",#4154,"Professional occupations in religion",1730
+"Repair, Personal And Non-Profit Services",#4412,"Home support workers, housekeepers and related occupations",1670
+"Repair, Personal And Non-Profit Services",#1221,"Administrative officers",1320
+"Repair, Personal And Non-Profit Services",#4411,"Home child care providers",1190
+"Repair, Personal And Non-Profit Services",#7322,"Motor vehicle body repairers",1150
+"Repair, Personal And Non-Profit Services",#6563,"Pet groomers and animal care workers",1110
+"Repair, Personal And Non-Profit Services",#1241,"Administrative assistants",1050
+"Retail Trade",#6421,"Retail salespersons",21730
+"Retail Trade",#0621,"Retail and wholesale trade managers",17770
+"Retail Trade",#6211,"Retail sales supervisors",12140
+"Retail Trade",#6611,Cashiers,8510
+"Retail Trade",#6622,"Store shelf stockers, clerks and order fillers",6130
+"Retail Trade",#7321,"Automotive service technicians, truck and bus mechanics and mechanical repairers",2050
+"Retail Trade",#7452,"Material handlers",1950
+"Retail Trade",#6552,"Other customer and information services representatives",1860
+"Retail Trade",#1521,"Shippers and receivers",1700
+"Retail Trade",#6411,"Sales and account representatives - wholesale trade (non-technical)",1480
+"Transportation And Warehousing",#7511,"Transport truck drivers",7500
+"Transportation And Warehousing",#7512,"Bus drivers, subway operators and other transit operators",3270
+"Transportation And Warehousing",#7452,"Material handlers",2270
+"Transportation And Warehousing",#7451,"Longshore workers",2100
+"Transportation And Warehousing",#0731,"Managers in transportation",2000
+"Transportation And Warehousing",#7513,"Taxi and limousine drivers and chauffeurs",1980
+"Transportation And Warehousing",#1512,"Letter carriers",1860
+"Transportation And Warehousing",#7514,"Delivery and courier service drivers",1630
+"Transportation And Warehousing",#1511,"Mail, postal and related workers",1390
+"Transportation And Warehousing",#6522,"Pursers and flight attendants",1270
+Utilities,#0912,"Utilities managers",420
+Utilities,#9241,"Power engineers and power systems operators",220
+Utilities,#7244,"Electrical power line and cable workers",210
+Utilities,#7243,"Power system electricians",180
+Utilities,#2133,"Electrical and electronics engineers",150
+Utilities,#9243,"Water and waste treatment plant operators",140
+Utilities,#9212,"Supervisors, petroleum, gas and chemical processing and utilities",140
+Utilities,#1221,"Administrative officers",120
+Utilities,#2241,"Electrical and electronics engineering technologists and technicians",120
+Utilities,#7311,"Construction millwrights and industrial mechanics",90
+"Wholesale Trade",#6411,"Sales and account representatives - wholesale trade (non-technical)",5780
+"Wholesale Trade",#0621,"Retail and wholesale trade managers",3080
+"Wholesale Trade",#6221,"Technical sales specialists - wholesale trade",1600
+"Wholesale Trade",#7452,"Material handlers",1560
+"Wholesale Trade",#0015,"Senior managers - trade, broadcasting and other services, n.e.c.",1070
+"Wholesale Trade",#1521,"Shippers and receivers",860
+"Wholesale Trade",#6421,"Retail salespersons",820
+"Wholesale Trade",#1221,"Administrative officers",730
+"Wholesale Trade",#7511,"Transport truck drivers",690
+"Wholesale Trade",#1431,"Accounting and related clerks",550
