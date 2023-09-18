@@ -45,8 +45,6 @@ cat "data/Occupational Interests_updated_March_10_2023-Occ Interest_Stack.csv" |
 # TODO Common Job Titles for Career Profiles
 
 # TODO Skills for Career Profiles
-ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/UPDATED FINAL Skills Data for Career Profiles (updated Sept 12 23).xlsx" "data/UPDATED FINAL Skills Data for Career Profiles (updated Sept 12 23)-%s.csv"
-cat "data/UPDATED FINAL Skills Data for Career Profiles (updated Sept 12 23)-Sheet1.csv" | php csv_extract.php --range 2 > load/skills.csv
 
 # TODO Education Backgrounds for Career Profiles
 
