@@ -102,7 +102,11 @@ load csv
         industry_pct_utilities,
         industry_abs_utilities,
         industry_pct_wholesale_and_retail_trade,
-        industry_abs_wholesale_and_retail_trade
+        industry_abs_wholesale_and_retail_trade,
+        industry_pct_business_building_other_support_services,
+        industry_abs_business_building_other_support_services,
+        industry_pct_information_culture_recreation,
+        industry_abs_information_culture_recreation
     )
     into postgresql:///ssot
     target table monthly_labour_market_updates
@@ -209,7 +213,11 @@ load csv
         industry_pct_utilities numeric using (not-available-to-null industry_pct_utilities),
         industry_abs_utilities int using (not-available-to-null industry_abs_utilities),
         industry_pct_wholesale_and_retail_trade numeric using (not-available-to-null industry_pct_wholesale_and_retail_trade),
-        industry_abs_wholesale_and_retail_trade int using (not-available-to-null industry_abs_wholesale_and_retail_trade)
+        industry_abs_wholesale_and_retail_trade int using (not-available-to-null industry_abs_wholesale_and_retail_trade),
+        industry_pct_business_building_other_support_services numeric using (not-available-to-null industry_pct_business_building_other_support_services),
+        industry_abs_business_building_other_support_services int using (not-available-to-null industry_abs_business_building_other_support_services),
+        industry_pct_information_culture_recreation numeric using (not-available-to-null industry_pct_information_culture_recreation),
+        industry_abs_information_culture_recreation int using (not-available-to-null industry_abs_information_culture_recreation)
     )
     with
         skip header = 1,
@@ -321,6 +329,10 @@ load csv
         industry_abs_utilities int,
         industry_pct_wholesale_and_retail_trade numeric,
         industry_abs_wholesale_and_retail_trade int,
+        industry_pct_business_building_other_support_services numeric,
+        industry_abs_business_building_other_support_services int,
+        industry_pct_information_culture_recreation numeric,
+        industry_abs_information_culture_recreation int,
 
         primary key(year, month)
     );
@@ -429,5 +441,9 @@ load csv
     $$ comment on column monthly_labour_market_updates.industry_pct_utilities is 'Industry Highlights > Utilities - Change (%)'; $$,
     $$ comment on column monthly_labour_market_updates.industry_abs_utilities is 'Industry Highlights > Utilities - Abs Change'; $$,
     $$ comment on column monthly_labour_market_updates.industry_pct_wholesale_and_retail_trade is 'Industry Highlights > Wholesale and retail trade - Change (%)'; $$,
-    $$ comment on column monthly_labour_market_updates.industry_abs_wholesale_and_retail_trade is 'Industry Highlights > Wholesale and retail trade - Abs Change'; $$
+    $$ comment on column monthly_labour_market_updates.industry_abs_wholesale_and_retail_trade is 'Industry Highlights > Wholesale and retail trade - Abs Change'; $$,
+    $$ comment on column monthly_labour_market_updates.industry_pct_business_building_other_support_services is 'Industry Highlights > Business, Building and Other Support Services - Change (%)'; $$,
+    $$ comment on column monthly_labour_market_updates.industry_abs_business_building_other_support_services is 'Industry Highlights > Business, Building and Other Support Services - Abs Change'; $$,
+    $$ comment on column monthly_labour_market_updates.industry_pct_information_culture_recreation is 'Industry Highlights > Information, Culture and Recreation - Change (%)'; $$,
+    $$ comment on column monthly_labour_market_updates.industry_abs_information_culture_recreation is 'Industry Highlights > Information, Culture and Recreation - Abs Change'; $$
 ;
