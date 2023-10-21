@@ -60,7 +60,7 @@ WARNING! The environment variable `PGDATABASE` is currently not used by `pgloade
 
 - Add or modify the corresponding entry to the `load/sources.csv` metadata table which is described below, then re-run the `source.load` loading script.
 
-- Export the full SSoT database by running `docker-compose exec -T postgres pg_dump --clean --username workbc ssot | gzip > ssot.sql.gz` OUTSIDE the container.
+- Export the full SSoT database by running `docker-compose exec -T postgres pg_dump --clean --username workbc ssot | gzip > ssot-full.sql.gz` OUTSIDE the container.
 
 ## Migrating monthly labour updates
 These updates have a slightly different workflow to accommodate their specific structure:
