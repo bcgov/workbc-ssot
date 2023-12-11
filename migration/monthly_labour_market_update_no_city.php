@@ -121,7 +121,7 @@ $header_map = [
     'industry_pct_utilities' => [55,1],
     'industry_abs_utilities' => [55,2],
     'industry_pct_wholesale_and_retail_trade' => [56,1],
-    'industry_abs_wholesale_and_retail_trade' => [56,2],       
+    'industry_abs_wholesale_and_retail_trade' => [56,2],
 ];
 fputcsv(STDOUT, array_keys($header_map));
 $output = [];
