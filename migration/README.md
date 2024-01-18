@@ -72,10 +72,10 @@ ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/Updat
 
 - Transform the CSV for loading, supplying the month and year that corresponds to the sheet.
 ```
-cat "data/Update_File-Sheet_Name.csv" | php csv_empty.php | php monthly_labour_market_update_new_industries.php year{YYYY} month{1..12} > "load/updates/monthly_labour_market_updates_{YYYY}_{MM}.csv"
+cat "data/Update_File-Sheet_Name.csv" | php csv_empty.php | php monthly_labour_market_update_202308.php year{YYYY} month{1..12} > "load/updates/monthly_labour_market_updates_{YYYY}_{MM}.csv"
 ```
-NOTE! For months earlier than March 2023, use the script `monthly_labour_market_update.php` instead of `monthly_labour_market_update_new_industries.php`.
-For months March 2023 thru August 2023. use the script `monthly_labour_market_update_no_city.php` instead of `monthly_labour_market_update_new_industries.php`.
+NOTE! For months earlier than March 2023, use the script `monthly_labour_market_update_202101.php`.
+For months March 2023 through August 2023, use the script `monthly_labour_market_update_202303.php`.
 
 - Run the loading script `load/monthly_labour_market_updates.load`, supplying the transformed CSV above as the `SOURCE` environment variable.
 ```
