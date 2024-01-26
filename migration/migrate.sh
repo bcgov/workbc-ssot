@@ -39,8 +39,8 @@ ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/WorkB
 cat "data/WorkBC_2022_Wage_Data - UPDATED June 28 2023-Sheet1.csv" | php csv_extract.php --range 2 > load/wages.csv
 
 # Occupational Interests
-ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/Occupational Interests_updated_March_10_2023.xlsx" "data/Occupational Interests_updated_March_10_2023-%s.csv"
-cat "data/Occupational Interests_updated_March_10_2023-Occ Interest_Stack.csv" | php csv_extract.php --range 2 > load/occupational_interests.csv
+ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/Occupational_Interests_2023__Jan22_24.xlsx" "data/Occupational_Interests_2023__Jan22_24-%s.csv"
+cat "data/Occupational_Interests_2023__Jan22_24-Sheet 1.csv" | php csv_extract.php --range 2 > load/occupational_interests.csv
 
 # TODO Common Job Titles for Career Profiles
 
