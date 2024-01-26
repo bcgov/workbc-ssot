@@ -2,6 +2,7 @@ load csv
     from 'skills.csv'
     (
         noc,
+        noc_title,
         skills_competencies,
         importance,
         importance_description,
