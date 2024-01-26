@@ -48,7 +48,9 @@ cat "data/Occupational_Interests_2023__Jan22_24-Sheet 1.csv" | php csv_extract.p
 ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/Top skills by NOC2021 occupations__Jan22_24.xlsx" "data/Top skills by NOC2021 occupations__Jan22_24-%s.csv"
 cat "data/Top skills by NOC2021 occupations__Jan22_24-Top skills NOC2021.csv" | php csv_extract.php --range 2 > load/skills.csv
 
-# TODO Education Backgrounds for Career Profiles
+# Education Backgrounds for Career Profiles
+ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/All_Occupations'_TEERs_2023_Jan22_24.xlsx" "data/All_Occupations'_TEERs_2023_Jan22_24-%s.csv"
+cat "data/All_Occupations'_TEERs_2023_Jan22_24-Sheet 1.csv" | php csv_extract.php --range 2 > load/education.csv
 
 # TODO Census
 

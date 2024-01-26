@@ -2,16 +2,17 @@ load csv
     from 'education.csv'
     (
         noc,
-        description,
-        typical_education_background
+        noc_title,
+        teer,
+        teer_description
     )
     into postgresql:///ssot
     target table education
     target columns
     (
         noc text using (trim-hash noc),
-        description,
-        typical_education_background
+        teer,
+        teer_description
     )
     with
         fields optionally enclosed by '"',
@@ -23,15 +24,15 @@ load csv
     $$ create table if not exists education
     (
         noc text primary key,
-        description text,
-        typical_education_background text
+        teer integer,
+        teer_description text
     );
     $$
 
     after load do
-    $$ comment on table education is 'All Occupation''s Education Background {2021}'; $$,
-    $$ comment on column education.noc is '4-digit NOC'; $$,
-    $$ comment on column education.description is 'Description'; $$,
-    $$ comment on column education.typical_education_background is 'Typical Education Background'; $$,
-    $$ create or replace view education_backgrounds as select distinct(typical_education_background) from education order by typical_education_background asc; $$
+    $$ comment on table education is 'All_Occupations''_TEERs_{2023}_Jan22_24'; $$,
+    $$ comment on column education.noc is 'NOC_2021'; $$,
+    $$ comment on column education.teer is 'TEER'; $$,
+    $$ comment on column education.teer_description is 'TEER_description'; $$,
+    $$ create or replace view education_teers as select distinct teer, teer_description from education order by teer asc; $$
 ;
