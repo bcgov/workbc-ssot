@@ -40,11 +40,11 @@ load csv
 
     after load do
     $$ create index skills_noc_idx on skills (noc); $$,
-    $$ comment on table skills is 'UPDATED FINAL Skills Data for Career Profiles (updated April16 19)'; $$,
-    $$ comment on column skills.noc is 'NOC'; $$,
-    $$ comment on column skills.skills_competencies is 'Skills Competencies'; $$,
-    $$ comment on column skills.importance is 'Importance'; $$,
+    $$ comment on table skills is 'Top skills by NOC2021 occupations__Jan22_24'; $$,
+    $$ comment on column skills.noc is 'NOC2021'; $$,
+    $$ comment on column skills.skills_competencies is 'Skills & Competencies'; $$,
+    $$ comment on column skills.importance is 'Importance Score'; $$,
     $$ comment on column skills.importance_description is 'Importance Description'; $$,
-    $$ comment on column skills.proficiency is 'Proficiency'; $$,
-    $$ comment on column skills.proficiency_description is 'Proficiency Description'; $$
+    $$ comment on column skills.proficiency is 'Level Score'; $$,
+    $$ comment on column skills.proficiency_description is 'Level Description'; $$
 ;
