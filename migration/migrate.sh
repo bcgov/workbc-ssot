@@ -31,8 +31,8 @@ ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/2021 
 cat "data/2021 BC Population Distribution-Region Population Estimates.csv" | php csv_extract.php --range 3-11 > load/population.csv
 
 # B.C. Labour Market Outlook, Job Openings
-ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/Job Openings by Industry_2016 Census_2022 LMO_Draft.xlsx" "data/Job Openings by Industry_2016 Census_2022 LMO_Draft-%s.csv"
-cat "data/Job Openings by Industry_2016 Census_2022 LMO_Draft-Career Profiles.csv" | php csv_extract.php --range 5 > load/openings_careers.csv
+ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/Job_Openings_by_Industry_LMO_2023_Jan22_24.xlsx" "data/Job_Openings_by_Industry_LMO_2023_Jan22_24-%s.csv"
+cat "data/Job_Openings_by_Industry_LMO_2023_Jan22_24-Career Profiles.csv" | php csv_extract.php --range 5 > load/openings_careers.csv
 
 # Wage Data
 ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/WorkBC_2022_Wage_Data - UPDATED June 28 2023.xlsx" "data/WorkBC_2022_Wage_Data - UPDATED June 28 2023-%s.csv"
@@ -48,7 +48,7 @@ cat "data/Occupational_Interests_2023__Jan22_24-Sheet 1.csv" | php csv_extract.p
 ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/Top skills by NOC2021 occupations__Jan22_24.xlsx" "data/Top skills by NOC2021 occupations__Jan22_24-%s.csv"
 cat "data/Top skills by NOC2021 occupations__Jan22_24-Top skills NOC2021.csv" | php csv_extract.php --range 2 > load/skills.csv
 
-# Education Backgrounds for Career Profiles
+# TEERs for Career Profiles
 ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/All_Occupations'_TEERs_2023_Jan22_24.xlsx" "data/All_Occupations'_TEERs_2023_Jan22_24-%s.csv"
 cat "data/All_Occupations'_TEERs_2023_Jan22_24-Sheet 1.csv" | php csv_extract.php --range 2 > load/education.csv
 
