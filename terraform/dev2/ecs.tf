@@ -13,7 +13,6 @@ resource "aws_ecs_cluster" "main" {
 }
 
 resource "aws_ecs_task_definition" "app" {
-#  count                    = local.create_ecs_service
   count                    = 1
   family                   = "workbc-ssot-task2"
   execution_role_arn       = aws_iam_role.ecs_task_execution_role.arn
