@@ -1,5 +1,5 @@
 "Source label","Database table / API endpoint","Data point","Source filename","Source sheet","Source range","Author","Date"
-"B.C. Labour Market Information Office, derived from 2022 Job Bank Wage data","wages",,"WorkBC_2022_Wage_Data - UPDATED June 28 2023","Sheet1","A2-G501",,"2023/06/28"
+"B.C. Labour Market Information Office, derived from 2023 Job Bank Wage data","wages",,"WorkBC_2023_Wage_Data_Jan29_24","Sheet1","A2-G513",,"2024/01/29"
 ,"titles",,"Common Job Titles revised - July 18 2017 (RA)","Sheet1","A2-D7490",,
 ,"skills",,"Top skills by NOC2021 occupations__Jan22_24","Top skills NOC2021","A2-G17711",,"2024/01/22"
 "B.C. Labour Market Outlook","openings_careers",,"Job_Openings_by_Industry_LMO_2023_Jan22_24","Career Profiles","A5-Q515",,"2024/01/22"
@@ -13,15 +13,10 @@
 "Monthly Labour Force Survey, 3-month moving average, seasonally unadjusted","monthly_labour_market_updates","unemployment_pct","REFRESH_WorkBC LMS _<YYYY> <MMM> FINAL","Sheet3",,,"2023/04/14"
 "B.C. Labour Market Outlook","industry_outlook",,"3.3.2_WorkBC_Industry_Profile_2022-2032_revised_Feb24","BC","A4-K21",,"2023/03/06"
 ,"openings_industry",,"2022 top_10_careers_by_aggregate_industry","Sheet 1","A2-D181",,
-,"cities",,"Key Cities","Regional District & Key Cities","A2-E30",,
 "2021 Labour Force Survey","labour_force_survey_industry",,"2021_LFS Data Sheet finalv3","Industry Profiles","A5-BC23","BC Labour Market Information Office","2022/08/09"
 "2021 Labour Force Survey","labour_force_survey_regional_employment",,"2021_LFS Data Sheet finalv3","Regional Profiles","A6-V13","BC Labour Market Information Office","2022/08/22"
 "2021 Labour Force Survey","labour_force_survey_regional_industry_region",,"2021_LFS Data Sheet finalv3","Regional Profiles","A20-S27","BC Labour Market Information Office","2022/08/22"
 "2021 Labour Force Survey","labour_force_survey_regional_industry_province",,"2021_LFS Data Sheet finalv3","Regional Profiles","A34-U41","BC Labour Market Information Office","2022/08/09"
-,"population",,"2021 BC Population Distribution","Region Population Estimates","A3-B11","Statistics Canada
-Demographic Analysis Section, BC Stats
-Ministry of Citizens’ Services
-Government of British Columbia","2023/02/06"
 "B.C. Labour Market Outlook","regional_labour_market_outlook",,"3.3.3_WorkBC_Regional_Profile_Data_2022-2032_Updated_March92022","Regional Profiles - LMO","A5-P12",,"2023/03/09"
 "B.C. Labour Market Outlook","regional_top_industries",,"3.3.3_WorkBC_Regional_Profile_Data_2022-2032_Updated_March92022","Top Industries","A5-D98",,"2023/03/09"
 "B.C. Labour Market Outlook","regional_top_occupations",,"3.3.3_WorkBC_Regional_Profile_Data_2022-2032_Updated_March92022","Top Occupation","A5-E98",,"2023/03/09"

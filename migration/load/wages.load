@@ -41,16 +41,16 @@ load csv
     $$
 
     after load do
-    $$ update wages set source_information = '2022 Wage Bank Data (Median employment income from 2016 Census)' where source_information = '2022 Wage Bank Data Median employment income from 2016 Census'; $$,
-    $$ update wages set source_information = '2016 Census (Full-time full year median employment income)' where source_information = 'Full-time, full-year median employment income, 2016 census'; $$,
-    $$ update wages set source_information = '2022 Wage Bank Data (Median employment income from Canadian Institute for Health Information and Canadian Medical Association - custom tabulation)' where source_information = '2022 Wage Bank Data Median employment income from Canadian Institute for Health Information and Canadian Medical Association - custom tabulation'; $$,
-    $$ update wages set source_information = '2022 Wage Bank Data (Median employment income from Administrative data for judges)' where source_information = '2022 Wage Bank Data Median employment income from Administrative data for judges'; $$,
-    $$ comment on table wages is 'WorkBC_2021_Wage_Data'; $$,
+    $$ update wages set source_information = '2023 Wage Bank Data (Median employment income from 2021 Census)' where source_information = '2023 Wage Bank Data Median employment income from 2021 Census'; $$,
+    $$ update wages set source_information = '2021 Census (Full-time full year median employment income)' where source_information = 'Full-time, full-year median employment income, 2021 census'; $$,
+    $$ update wages set source_information = '2023 Wage Bank Data (Median employment income from Canadian Institute for Health Information and Canadian Medical Association - custom tabulation)' where source_information = '2023 Wage Bank Data Median employment income from Canadian Institute for Health Information and Canadian Medical Association - custom tabulation'; $$,
+    $$ update wages set source_information = '2023 Wage Bank Data (Median employment income from Administrative data for judges)' where source_information = '2023 Wage Bank Data Median employment income from Administrative data for judges'; $$,
+    $$ comment on table wages is 'WorkBC_{2023}_Wage_Data_Jan29_24'; $$,
     $$ comment on column wages.noc is 'NOC'; $$,
-    $$ comment on column wages.esdc_wage_rate_high is 'ESDC Wage Rate High {2022}'; $$,
-    $$ comment on column wages.esdc_wage_rate_low is 'ESDC Wage Rate Low {2022}'; $$,
-    $$ comment on column wages.esdc_wage_rate_median is 'ESDC Wage Rate Median {2022}'; $$,
     $$ comment on column wages.occupation_title is 'Occupation Title'; $$,
-    $$ comment on column wages.source_information is 'Source Information'; $$,
-    $$ comment on column wages.calculated_median_annual_salary is 'Calculated Median Annual Salary {2022}'; $$
+    $$ comment on column wages.esdc_wage_rate_low is 'ESDC Wage Rate Low {2023}'; $$,
+    $$ comment on column wages.esdc_wage_rate_median is 'ESDC Wage Rate Median {2023}'; $$,
+    $$ comment on column wages.esdc_wage_rate_high is 'ESDC Wage Rate High {2023}'; $$,
+    $$ comment on column wages.calculated_median_annual_salary is 'Calculated Median Annual Salary {2023}'; $$,
+    $$ comment on column wages.source_information is 'Source Information'; $$
 ;
