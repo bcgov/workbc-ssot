@@ -26,10 +26,6 @@ cat "data/3.3.3_WorkBC_Regional_Profile_Data_2022-2032_Updated_March92022-Region
 cat "data/3.3.3_WorkBC_Regional_Profile_Data_2022-2032_Updated_March92022-Top Industries.csv" | php csv_extract.php --range 5 | php csv_empty.php > load/regional_top_industries.csv
 cat "data/3.3.3_WorkBC_Regional_Profile_Data_2022-2032_Updated_March92022-Top Occupation.csv" | php csv_extract.php --range 5 | php csv_empty.php > load/regional_top_occupations.csv
 
-# B.C. Population Distribution
-ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/2021 BC Population Distribution.xlsx" "data/2021 BC Population Distribution-%s.csv"
-cat "data/2021 BC Population Distribution-Region Population Estimates.csv" | php csv_extract.php --range 3-11 > load/population.csv
-
 # B.C. Labour Market Outlook, Job Openings
 ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/Job_Openings_by_Industry_LMO_2023_Jan22_24.xlsx" "data/Job_Openings_by_Industry_LMO_2023_Jan22_24-%s.csv"
 cat "data/Job_Openings_by_Industry_LMO_2023_Jan22_24-Career Profiles.csv" | php csv_extract.php --range 5 > load/openings_careers.csv
@@ -52,13 +48,13 @@ cat "data/Top skills by NOC2021 occupations__Jan22_24-Top skills NOC2021.csv" | 
 ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/All_Occupations'_TEERs_2023_Jan22_24.xlsx" "data/All_Occupations'_TEERs_2023_Jan22_24-%s.csv"
 cat "data/All_Occupations'_TEERs_2023_Jan22_24-Sheet 1.csv" | php csv_extract.php --range 2 > load/education.csv
 
-# TODO Census
+# Census
+ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/2021_Census_Jan18_23.xlsx" "data/2021_Census_Jan18_23-%s.csv"
+cat "data/2021_Census_Jan18_23-Career Profiles.csv" | php csv_extract.php --range 5 > load/census.csv
 
 # Top 10 Careers by Industry
 ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/2022 top_10_careers_by_aggregate_industry_8_29_23.xlsx" "data/2022 top_10_careers_by_aggregate_industry_8_29_23-%s.csv"
 cat "data/2022 top_10_careers_by_aggregate_industry_8_29_23-Sheet1.csv" | php csv_extract.php --range 2 > load/openings_industry.csv
-
-# TODO Key Cities
 
 # TODO Labour Market Monthly Updates
 # REFRESH_WorkBC LMS _2021 Jan FINAL.xlsx
