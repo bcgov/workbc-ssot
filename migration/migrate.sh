@@ -17,8 +17,8 @@ cat "data/WorkBC_Career_Profile_Data_2023__Jan22_24-Regional Outlook.csv" | php 
 cat "data/WorkBC_Career_Profile_Data_2023__Jan22_24-Provincial Outlook.csv" | php csv_extract.php --range 4 > load/career_provincial.csv
 
 # B.C. Labour Market Outlook, Industry Profiles
-ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/3.3.2_WorkBC_Industry_Profile_2022-2032_revised_Feb24.xlsx" "data/3.3.2_WorkBC_Industry_Profile_2022-2032_revised_Feb24-%s.csv"
-cat "data/3.3.2_WorkBC_Industry_Profile_2022-2032_revised_Feb24-BC.csv" | php csv_extract.php --range 3 > load/industry_outlook.csv
+ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/WorkBC_Industry_Profile_2023__Jan24_24.xlsx" "data/WorkBC_Industry_Profile_2023__Jan24_24-%s.csv"
+cat "data/WorkBC_Industry_Profile_2023__Jan24_24-Sheet1.csv" | php csv_extract.php --range 3 > load/industry_outlook.csv
 
 # B.C. Labour Market Outlook, Regional Profiles
 ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/WorkBC_Regional_Profile_Data_2023__Jan24_24.xlsx" "data/WorkBC_Regional_Profile_Data_2023__Jan24_24-%s.csv"
