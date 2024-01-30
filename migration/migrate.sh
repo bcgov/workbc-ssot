@@ -52,8 +52,8 @@ ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/2021_
 cat "data/2021_Census_Jan18_23-Career Profiles.csv" | php csv_extract.php --range 5 > load/census.csv
 
 # Top 10 Careers by Industry
-ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/2022 top_10_careers_by_aggregate_industry_8_29_23.xlsx" "data/2022 top_10_careers_by_aggregate_industry_8_29_23-%s.csv"
-cat "data/2022 top_10_careers_by_aggregate_industry_8_29_23-Sheet1.csv" | php csv_extract.php --range 2 > load/openings_industry.csv
+ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/top_10_careers_by_aggregate_industry_2023__Jan22_24.xlsx" "data/top_10_careers_by_aggregate_industry_2023__Jan22_24-%s.csv"
+cat "data/top_10_careers_by_aggregate_industry_2023__Jan22_24-Sheet 1.csv" | php csv_extract.php --range 2 > load/openings_industry.csv
 
 # TODO Labour Market Monthly Updates
 # REFRESH_WorkBC LMS _2021 Jan FINAL.xlsx
