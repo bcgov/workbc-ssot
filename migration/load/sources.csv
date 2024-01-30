@@ -1,6 +1,6 @@
 "Source label","Database table / API endpoint","Data point","Source filename","Source sheet","Source range","Author","Date"
 "B.C. Labour Market Information Office, derived from 2023 Job Bank Wage data","wages",,"WorkBC_2023_Wage_Data_Jan29_24","Sheet1","A2-G513",,"2024/01/29"
-,"titles",,"Common Job Titles revised - July 18 2017 (RA)","Sheet1","A2-D7490",,
+,"titles",,"Common Job Titles revised - July 18 2017 (RA)","Sheet1","A2-D7490",,"2017/07/18"
 ,"skills",,"Top skills by NOC2021 occupations__Jan22_24","Top skills NOC2021","A2-G17711",,"2024/01/22"
 "B.C. Labour Market Outlook","openings_careers",,"Job_Openings_by_Industry_LMO_2023_Jan22_24","Career Profiles","A5-Q515",,"2024/01/22"
 ,"education",,"All_Occupations'_TEERs_2023_Jan22_24","Sheet 1","A2-D513",,"2024/01/22"
@@ -17,6 +17,5 @@
 "2021 Labour Force Survey","labour_force_survey_regional_employment",,"2021_LFS Data Sheet finalv3","Regional Profiles","A6-V13","BC Labour Market Information Office","2022/08/22"
 "2021 Labour Force Survey","labour_force_survey_regional_industry_region",,"2021_LFS Data Sheet finalv3","Regional Profiles","A20-S27","BC Labour Market Information Office","2022/08/22"
 "2021 Labour Force Survey","labour_force_survey_regional_industry_province",,"2021_LFS Data Sheet finalv3","Regional Profiles","A34-U41","BC Labour Market Information Office","2022/08/09"
-"B.C. Labour Market Outlook","regional_labour_market_outlook",,"3.3.3_WorkBC_Regional_Profile_Data_2022-2032_Updated_March92022","Regional Profiles - LMO","A5-P12",,"2023/03/09"
-"B.C. Labour Market Outlook","regional_top_industries",,"3.3.3_WorkBC_Regional_Profile_Data_2022-2032_Updated_March92022","Top Industries","A5-D98",,"2023/03/09"
-"B.C. Labour Market Outlook","regional_top_occupations",,"3.3.3_WorkBC_Regional_Profile_Data_2022-2032_Updated_March92022","Top Occupation","A5-E98",,"2023/03/09"
+"B.C. Labour Market Outlook","regional_labour_market_outlook",,"WorkBC_Regional_Profile_Data_2023__Jan24_24","Regional Profiles - LMO","A5-L12",,"2024/01/24"
+"B.C. Labour Market Outlook","regional_top_occupations",,"WorkBC_Regional_Profile_Data_2023__Jan24_24","Top Occupation","A5-D73",,"2024/01/24"

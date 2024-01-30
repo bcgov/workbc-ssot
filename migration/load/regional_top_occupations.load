@@ -4,7 +4,6 @@ load csv
         noc,
         occupation,
         openings,
-        forecasted_annual_employment_growth_pct,
         region
     )
     into postgresql:///ssot
@@ -14,8 +13,7 @@ load csv
         region,
         noc text using (trim-hash noc),
         occupation,
-        openings,
-        forecasted_annual_employment_growth_pct
+        openings
     )
     with
         fields optionally enclosed by '"',
@@ -30,7 +28,6 @@ load csv
         noc text,
         occupation text,
         openings int,
-        forecasted_annual_employment_growth_pct numeric,
         primary key(region, noc)
     );
     $$
@@ -48,6 +45,5 @@ load csv
     $$ comment on column regional_top_occupations.region is 'Region'; $$,
     $$ comment on column regional_top_occupations.noc is 'NOC'; $$,
     $$ comment on column regional_top_occupations.occupation is 'Occupation'; $$,
-    $$ comment on column regional_top_occupations.openings is 'Job Openings {2022-2032}'; $$,
-    $$ comment on column regional_top_occupations.forecasted_annual_employment_growth_pct is 'Forecasted Average Annual Employment Growth (%) {2022-2032}'; $$
+    $$ comment on column regional_top_occupations.openings is 'Job Openings {2023-2033}'; $$
 ;

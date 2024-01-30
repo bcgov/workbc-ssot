@@ -21,10 +21,9 @@ ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/3.3.2
 cat "data/3.3.2_WorkBC_Industry_Profile_2022-2032_revised_Feb24-BC.csv" | php csv_extract.php --range 3 > load/industry_outlook.csv
 
 # B.C. Labour Market Outlook, Regional Profiles
-ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/3.3.3_WorkBC_Regional_Profile_Data_2022-2032_Updated_March92022.xlsx" "data/3.3.3_WorkBC_Regional_Profile_Data_2022-2032_Updated_March92022-%s.csv"
-cat "data/3.3.3_WorkBC_Regional_Profile_Data_2022-2032_Updated_March92022-Regional Profiles - LMO.csv" | php csv_extract.php --range 5 > load/regional_labour_market_outlook.csv
-cat "data/3.3.3_WorkBC_Regional_Profile_Data_2022-2032_Updated_March92022-Top Industries.csv" | php csv_extract.php --range 5 | php csv_empty.php > load/regional_top_industries.csv
-cat "data/3.3.3_WorkBC_Regional_Profile_Data_2022-2032_Updated_March92022-Top Occupation.csv" | php csv_extract.php --range 5 | php csv_empty.php > load/regional_top_occupations.csv
+ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/WorkBC_Regional_Profile_Data_2023__Jan24_24.xlsx" "data/WorkBC_Regional_Profile_Data_2023__Jan24_24-%s.csv"
+cat "data/WorkBC_Regional_Profile_Data_2023__Jan24_24-Regional Profiles - LMO.csv" | php csv_extract.php --range 5 > load/regional_labour_market_outlook.csv
+cat "data/WorkBC_Regional_Profile_Data_2023__Jan24_24-Top Occupation.csv" | php csv_extract.php --range 4 | php csv_empty.php > load/regional_top_occupations.csv
 
 # B.C. Labour Market Outlook, Job Openings
 ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/Job_Openings_by_Industry_LMO_2023_Jan22_24.xlsx" "data/Job_Openings_by_Industry_LMO_2023_Jan22_24-%s.csv"
