@@ -40,7 +40,7 @@ load csv
 
     after load do
     $$ create index skills_noc_idx on skills (noc); $$,
-    $$ comment on table skills is 'Top skills by NOC2021 occupations__Jan22_24'; $$,
+    $$ comment on table skills is 'Top skills by NOC2021 occupations'; $$,
     $$ comment on column skills.noc is 'NOC2021'; $$,
     $$ comment on column skills.skills_competencies is 'Skills & Competencies'; $$,
     $$ comment on column skills.importance is 'Importance Score'; $$,

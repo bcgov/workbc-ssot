@@ -64,7 +64,7 @@ load csv
     $$ update regional_labour_market_outlook set region = 'thompson_okanagan' where region = 'Thompson Okanagan'; $$,
     $$ update regional_labour_market_outlook set region = 'vancouver_island_coast' where region = 'Vancouver Island Coast'; $$,
     $$ update regional_labour_market_outlook set region = 'north_coast_nechako' where region = 'North Coast & Nechako'; $$,
-    $$ comment on table regional_labour_market_outlook is 'B.C. Labour Market Outlook {2023-2033}/for this region'; $$,
+    $$ comment on table regional_labour_market_outlook is 'WorkBC Regional Profile Data {2023-2033} > B.C. Labour Market Outlook (2023-2033)/for this region'; $$,
     $$ comment on column regional_labour_market_outlook.region is 'Region'; $$,
     $$ comment on column regional_labour_market_outlook.job_openings_first5y is 'Job Openings > {2023-2028}'; $$,
     $$ comment on column regional_labour_market_outlook.job_openings_second5y is 'Job Openings > {2029-2033}'; $$,

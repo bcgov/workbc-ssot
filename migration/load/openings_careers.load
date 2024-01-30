@@ -71,7 +71,7 @@ load csv
     $$
 
     after load do
-    $$ comment on table openings_careers is 'Job_Openings_by_Industry_LMO_{2023}_Jan22_24'; $$,
+    $$ comment on table openings_careers is 'Job Openings by Industry LMO {2023}'; $$,
     $$ comment on column openings_careers.noc is 'NOC'; $$,
     $$ comment on column openings_careers.description is 'Description'; $$,
     $$ comment on column openings_careers.industry_1_name is 'Industry 1 > Name'; $$,

@@ -30,7 +30,7 @@ load csv
     $$
 
     after load do
-    $$ comment on table education is 'All_Occupations''_TEERs_{2023}_Jan22_24'; $$,
+    $$ comment on table education is 'All Occupations'' TEERs {2023}'; $$,
     $$ comment on column education.noc is 'NOC_2021'; $$,
     $$ comment on column education.teer is 'TEER'; $$,
     $$ comment on column education.teer_description is 'TEER_description'; $$,

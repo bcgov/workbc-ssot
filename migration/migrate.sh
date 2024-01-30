@@ -12,9 +12,9 @@ ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/HOO_B
 cat "data/HOO_BC_and_Region_for_new_tool_2023_Jan22_24-Sheet 1.csv" | php csv_extract.php --range 2 --cols 15 > "load/high_opportunity_occupations.csv"
 
 # B.C. Labour Market Outlook, Career Profiles
-ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/3.3.1_WorkBC_Career_Profile_Data_2022-2032.xlsx" "data/3.3.1_WorkBC_Career_Profile_Data_2022-2032-%s.csv"
-cat "data/3.3.1_WorkBC_Career_Profile_Data_2022-2032-Regional Outlook.csv" | php csv_extract.php --range 5 > load/career_regional.csv
-cat "data/3.3.1_WorkBC_Career_Profile_Data_2022-2032-Provincial Outlook.csv" | php csv_extract.php --range 4 > load/career_provincial.csv
+ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/WorkBC_Career_Profile_Data_2023__Jan22_24.xlsx" "data/WorkBC_Career_Profile_Data_2023__Jan22_24-%s.csv"
+cat "data/WorkBC_Career_Profile_Data_2023__Jan22_24-Regional Outlook.csv" | php csv_extract.php --range 5 > load/career_regional.csv
+cat "data/WorkBC_Career_Profile_Data_2023__Jan22_24-Provincial Outlook.csv" | php csv_extract.php --range 4 > load/career_provincial.csv
 
 # B.C. Labour Market Outlook, Industry Profiles
 ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/3.3.2_WorkBC_Industry_Profile_2022-2032_revised_Feb24.xlsx" "data/3.3.2_WorkBC_Industry_Profile_2022-2032_revised_Feb24-%s.csv"

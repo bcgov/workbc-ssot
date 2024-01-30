@@ -73,7 +73,7 @@ load csv
     $$ create index high_opportunity_occupations_teer_idx on high_opportunity_occupations (teer); $$,
     $$ create index high_opportunity_occupations_interest_idx on high_opportunity_occupations (occupational_interest); $$,
     $$ create index high_opportunity_occupations_wage_idx on high_opportunity_occupations (wage_rate_median); $$,
-    $$ comment on table high_opportunity_occupations is 'HOO_BC_and_Region_for_new_tool_{2023}_Jan22_24'; $$,
+    $$ comment on table high_opportunity_occupations is 'HOO BC and Region for new tool {2023}'; $$,
     $$ comment on column high_opportunity_occupations.occupation is 'Occupation Title'; $$,
     $$ comment on column high_opportunity_occupations.openings_forecast is 'Job Openings {2023-2033}'; $$,
     $$ comment on column high_opportunity_occupations.wage_rate_low is 'Wage Rate Low {2023}'; $$,

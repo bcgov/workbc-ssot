@@ -31,7 +31,7 @@ load csv
     after load do
     $$ delete from occupational_interests where occupational_interest is null; $$,
     $$ create index occupational_interests_noc_idx on occupational_interests (noc); $$,
-    $$ comment on table occupational_interests is 'Occupational_Interests_{2023}__Jan22_24'; $$,
+    $$ comment on table occupational_interests is 'Occupational Interests {2023}'; $$,
     $$ comment on column occupational_interests.noc is 'NOC'; $$,
     $$ comment on column occupational_interests.options is 'Options'; $$,
     $$ comment on column occupational_interests.occupational_interest is 'Occupational interest'; $$

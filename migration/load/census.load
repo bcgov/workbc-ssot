@@ -74,7 +74,7 @@ load csv
     $$
 
     after load do
-    $$ comment on table census is '{2021} Census > Career Profiles'; $$,
+    $$ comment on table census is 'Census {2021} > Career Profiles'; $$,
     $$ comment on column census.noc is 'NOC'; $$,
     $$ comment on column census.description is 'Description'; $$,
     $$ comment on column census.workers_employed is 'Workforce characteristics > workers are employed'; $$,
