@@ -109,8 +109,8 @@
 #12202,Primary,Conventional
 #12202,Secondary,
 #12202,Tertiary,
-#12203,Primary,"Conventional, Enterprising"
-#12203,Secondary,
+#12203,Primary,Conventional
+#12203,Secondary,Enterprising
 #12203,Tertiary,
 #13100,Primary,Conventional
 #13100,Secondary,Enterprising
@@ -236,8 +236,8 @@
 #21202,Secondary,
 #21202,Tertiary,
 #21203,Primary,Realistic
-#21203,Secondary,"Conventional, Investigative"
-#21203,Tertiary,
+#21203,Secondary,Conventional
+#21203,Tertiary,Investigative
 #21210,Primary,Investigative
 #21210,Secondary,
 #21210,Tertiary,
@@ -347,8 +347,8 @@
 #22220,Secondary,Investigative
 #22220,Tertiary,Realistic
 #22221,Primary,Realistic
-#22221,Secondary,"Conventional, Investigative"
-#22221,Tertiary,
+#22221,Secondary,Conventional
+#22221,Tertiary,Investigative
 #22222,Primary,Investigative
 #22222,Secondary,Conventional
 #22222,Tertiary,
@@ -373,8 +373,8 @@
 #22302,Primary,Realistic
 #22302,Secondary,Investigative
 #22302,Tertiary,Conventional
-#22303,Primary,"Conventional, Enterprising"
-#22303,Secondary,
+#22303,Primary,Conventional
+#22303,Secondary,Enterprising
 #22303,Tertiary,
 #22310,Primary,Realistic
 #22310,Secondary,
@@ -482,8 +482,8 @@
 #32122,Secondary,Social
 #32122,Tertiary,Realistic
 #32123,Primary,Social
-#32123,Secondary,"Investigative, Realistic"
-#32123,Tertiary,
+#32123,Secondary,Investigative
+#32123,Tertiary,Realistic
 #32124,Primary,Social
 #32124,Secondary,Realistic
 #32124,Tertiary,
@@ -671,8 +671,8 @@
 #51100,Secondary,
 #51100,Tertiary,
 #51101,Primary,Conventional
-#51101,Secondary,"Enterprising, Realistic"
-#51101,Tertiary,
+#51101,Secondary,Enterprising
+#51101,Tertiary,Realistic
 #51102,Primary,Conventional
 #51102,Secondary,
 #51102,Tertiary,
@@ -758,10 +758,10 @@
 #53200,Secondary,
 #53200,Tertiary,
 #53201,Primary,Social
-#53201,Secondary,"Enterprising, Realistic"
-#53201,Tertiary,
-#53202,Primary,"Enterprising, Realistic"
-#53202,Secondary,
+#53201,Secondary,Enterprising
+#53201,Tertiary,Realistic
+#53202,Primary,Enterprising
+#53202,Secondary,Realistic
 #53202,Tertiary,
 #54100,Primary,Social
 #54100,Secondary,
@@ -865,8 +865,8 @@
 #64300,Primary,Enterprising
 #64300,Secondary,
 #64300,Tertiary,
-#64301,Primary,"Conventional, Enterprise"
-#64301,Secondary,
+#64301,Primary,Conventional
+#64301,Secondary,Enterprise
 #64301,Tertiary,
 #64310,Primary,Enterprising
 #64310,Secondary,
@@ -934,8 +934,8 @@
 #65220,Primary,Realistic
 #65220,Secondary,
 #65220,Tertiary,
-#65310,Primary,"Realistic, Social"
-#65310,Secondary,
+#65310,Primary,Realistic
+#65310,Secondary,Social
 #65310,Tertiary,
 #65311,Primary,Realistic
 #65311,Secondary,
