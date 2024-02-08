@@ -1,11 +1,11 @@
 #! /bin/bash
 
 # Labour Force Survey
-ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/2021_LFS Data Sheet finalv3.xlsx" "data/2021_LFS Data Sheet finalv3-%s.csv"
-cat "data/2021_LFS Data Sheet finalv3-Industry Profiles.csv" | php csv_extract.php --range 5-23 | php csv_refill.php --col 7 --col 8 --col 11 --col 14 --col 17 --col 20 --col 23 --col 26 --col 29 --col 32 --col 35 --col 38 --col 41 --col 43 --col 45 --col 47 --col 49 --col 51 --col 53 --col 55 > "load/labour_force_survey_industry.csv"
-cat "data/2021_LFS Data Sheet finalv3-Regional Profiles.csv" | php csv_extract.php --range 6-13 > "load/labour_force_survey_regional_employment.csv"
-cat "data/2021_LFS Data Sheet finalv3-Regional Profiles.csv" | php csv_extract.php --range 20-27 > "load/labour_force_survey_regional_industry_region.csv"
-cat "data/2021_LFS Data Sheet finalv3-Regional Profiles.csv" | php csv_extract.php --range 34-41 > "load/labour_force_survey_regional_industry_province.csv"
+ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/2023_LFS_data_sheet_Feb6_24.xlsx" "data/2023_LFS_data_sheet_Feb6_24-%s.csv"
+cat "data/2023_LFS_data_sheet_Feb6_24-Industry Profiles.csv" | php csv_extract.php --range 5-23 | php csv_refill.php --col 7 --col 8 --col 11 --col 14 --col 17 --col 20 --col 23 --col 26 --col 29 --col 32 --col 35 --col 38 --col 41 --col 43 --col 45 --col 47 --col 49 --col 51 --col 53 --col 55 > "load/labour_force_survey_industry.csv"
+cat "data/2023_LFS_data_sheet_Feb6_24-Regional Profiles.csv" | php csv_extract.php --range 6-13 > "load/labour_force_survey_regional_employment.csv"
+cat "data/2023_LFS_data_sheet_Feb6_24-Regional Profiles.csv" | php csv_extract.php --range 21-28 > "load/labour_force_survey_regional_industry_region.csv"
+cat "data/2023_LFS_data_sheet_Feb6_24-Regional Profiles.csv" | php csv_extract.php --range 35-42 > "load/labour_force_survey_regional_industry_province.csv"
 
 # High Opportunity Occupations
 ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/HOO_BC_and_Region_for_new_tool_2023_Jan22_24.xlsx" "data/HOO_BC_and_Region_for_new_tool_2023_Jan22_24-%s.csv"
