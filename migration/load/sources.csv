@@ -1,7 +1,7 @@
 "Source label","Database table / API endpoint","Data point","Source filename","Source sheet","Source range","Author","Date"
 "B.C. Labour Market Information Office, derived from 2023 Job Bank Wage data","wages",,"WorkBC_2023_Wage_Data_Jan29_24","Sheet1","A2-G513",,"2024/01/29"
 ,"titles",,"Common Job Titles revised - July 18 2017 (RA)","Sheet1","A2-D7490",,"2017/07/18"
-,"skills",,"Top skills by NOC2021 occupations__Jan22_24","Top skills NOC2021","A2-G17711",,"2024/01/22"
+,"skills",,"Top skills by NOC2021 occupations_Feb12_24","Sheet 1","A2-G17921",,"2024/02/12"
 "B.C. Labour Market Outlook","openings_careers",,"Job_Openings_by_Industry_LMO_2023_Jan22_24","Career Profiles","A5-Q515",,"2024/01/22"
 ,"education",,"All_Occupations'_TEERs_2023_Jan22_24","Sheet 1","A2-D513",,"2024/01/22"
 "2021 Census","census",,"2021_Census_Jan18_23","Career Profiles","A5-R516",,"2023/01/18"

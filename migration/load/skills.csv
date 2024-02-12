@@ -1,178 +1,73 @@
-00011,"Senior government managers and officials","Critical Thinking",81.25,"Extremely important",63.3571428571429,"Medium proficiency"
-00011,"Senior government managers and officials","Complex Problem Solving",79.75,"Very important",65.1428571428571,"Medium proficiency"
-00011,"Senior government managers and officials","Judgment and Decision Making",79.75,"Very important",69.6428571428571,"High proficiency"
-00011,"Senior government managers and officials",Speaking,79.75,"Very important",64.2857142857143,"Medium proficiency"
-00011,"Senior government managers and officials","Social Perceptiveness",76.625,"Very important",58.0714285714286,"Medium proficiency"
-00011,"Senior government managers and officials","Active Listening",76.5,"Very important",63.4285714285714,"Medium proficiency"
-00011,"Senior government managers and officials","Reading Comprehension",76.5,"Very important",64.2857142857143,"Medium proficiency"
-00011,"Senior government managers and officials",Writing,76.5,"Very important",61.6428571428571,"Medium proficiency"
-00011,"Senior government managers and officials",Coordination,75,"Very important",64.2857142857143,"Medium proficiency"
-00011,"Senior government managers and officials",Persuasion,75,"Very important",64.2857142857143,"Medium proficiency"
-00011,"Senior government managers and officials","Systems Analysis",75,"Very important",67,"High proficiency"
-00011,"Senior government managers and officials","Systems Evaluation",75,"Very important",65.1428571428571,"Medium proficiency"
-00011,"Senior government managers and officials",Monitoring,73.375,"Very important",67.8571428571429,"High proficiency"
-00011,"Senior government managers and officials","Active Learning",71.875,"Very important",61.6428571428571,"Medium proficiency"
-00011,"Senior government managers and officials","Time Management",67.25,"Very important",61.6428571428571,"Medium proficiency"
-00011,"Senior government managers and officials","Management of Personnel Resources",67.125,"Very important",67,"High proficiency"
-00011,"Senior government managers and officials",Negotiation,65.5,"Very important",56.2142857142857,"Medium proficiency"
-00011,"Senior government managers and officials","Management of Financial Resources",62.5,"Very important",61.5714285714286,"Medium proficiency"
-00011,"Senior government managers and officials","Learning Strategies",56.25,Important,54.5,"Medium proficiency"
-00011,"Senior government managers and officials",Instructing,54.625,Important,51.8571428571429,"Medium proficiency"
-00011,"Senior government managers and officials","Service Orientation",54.625,Important,47.3571428571429,"Medium proficiency"
-00011,"Senior government managers and officials","Management of Material Resources",51.625,Important,52.6428571428571,"Medium proficiency"
-00011,"Senior government managers and officials",Mathematics,51.625,Important,48.1428571428572,"Medium proficiency"
-00011,"Senior government managers and officials","Operations Analysis",50,Important,52.6428571428571,"Medium proficiency"
-00011,"Senior government managers and officials",Science,25,"Less important",21.4285714285714,"Basic proficiency"
-00011,"Senior government managers and officials","Operations Monitoring",23.5,"Less important",25,"Basic proficiency"
-00011,"Senior government managers and officials","Operation and Control",21.875,"Less important",17.8571428571429,"Basic proficiency"
-00011,"Senior government managers and officials","Quality Control Analysis",20.375,"Less important",17.8571428571429,"Basic proficiency"
-00011,"Senior government managers and officials","Technology Design",20.375,"Less important",13.3571428571429,"Basic proficiency"
-00011,"Senior government managers and officials",Programming,18.75,"Less important",12.4285714285714,"Basic proficiency"
-00011,"Senior government managers and officials","Equipment Selection",3,"Less important",6.21428571428571,"Basic proficiency"
-00011,"Senior government managers and officials","Equipment Maintenance",0,"Not required",0,"Not required"
-00011,"Senior government managers and officials",Installation,0,"Not required",0,"Not required"
-00011,"Senior government managers and officials",Repairing,0,"Not required",0,"Not required"
-00011,"Senior government managers and officials",Troubleshooting,0,"Not required",0,"Not required"
-00012,"Senior managers - financial, communications and other business services","Critical Thinking",81.25,"Extremely important",63.3571428571429,"Medium proficiency"
-00012,"Senior managers - financial, communications and other business services","Complex Problem Solving",79.75,"Very important",65.1428571428571,"Medium proficiency"
-00012,"Senior managers - financial, communications and other business services","Judgment and Decision Making",79.75,"Very important",69.6428571428571,"High proficiency"
-00012,"Senior managers - financial, communications and other business services",Speaking,79.75,"Very important",64.2857142857143,"Medium proficiency"
-00012,"Senior managers - financial, communications and other business services","Social Perceptiveness",76.625,"Very important",58.0714285714286,"Medium proficiency"
-00012,"Senior managers - financial, communications and other business services","Active Listening",76.5,"Very important",63.4285714285714,"Medium proficiency"
-00012,"Senior managers - financial, communications and other business services","Reading Comprehension",76.5,"Very important",64.2857142857143,"Medium proficiency"
-00012,"Senior managers - financial, communications and other business services",Writing,76.5,"Very important",61.6428571428571,"Medium proficiency"
-00012,"Senior managers - financial, communications and other business services",Coordination,75,"Very important",64.2857142857143,"Medium proficiency"
-00012,"Senior managers - financial, communications and other business services",Persuasion,75,"Very important",64.2857142857143,"Medium proficiency"
-00012,"Senior managers - financial, communications and other business services","Systems Analysis",75,"Very important",67,"High proficiency"
-00012,"Senior managers - financial, communications and other business services","Systems Evaluation",75,"Very important",65.1428571428571,"Medium proficiency"
-00012,"Senior managers - financial, communications and other business services",Monitoring,73.375,"Very important",67.8571428571429,"High proficiency"
-00012,"Senior managers - financial, communications and other business services","Active Learning",71.875,"Very important",61.6428571428571,"Medium proficiency"
-00012,"Senior managers - financial, communications and other business services","Time Management",67.25,"Very important",61.6428571428571,"Medium proficiency"
-00012,"Senior managers - financial, communications and other business services","Management of Personnel Resources",67.125,"Very important",67,"High proficiency"
-00012,"Senior managers - financial, communications and other business services",Negotiation,65.5,"Very important",56.2142857142857,"Medium proficiency"
-00012,"Senior managers - financial, communications and other business services","Management of Financial Resources",62.5,"Very important",61.5714285714286,"Medium proficiency"
-00012,"Senior managers - financial, communications and other business services","Learning Strategies",56.25,Important,54.5,"Medium proficiency"
-00012,"Senior managers - financial, communications and other business services",Instructing,54.625,Important,51.8571428571429,"Medium proficiency"
-00012,"Senior managers - financial, communications and other business services","Service Orientation",54.625,Important,47.3571428571429,"Medium proficiency"
-00012,"Senior managers - financial, communications and other business services","Management of Material Resources",51.625,Important,52.6428571428571,"Medium proficiency"
-00012,"Senior managers - financial, communications and other business services",Mathematics,51.625,Important,48.1428571428572,"Medium proficiency"
-00012,"Senior managers - financial, communications and other business services","Operations Analysis",50,Important,52.6428571428571,"Medium proficiency"
-00012,"Senior managers - financial, communications and other business services",Science,25,"Less important",21.4285714285714,"Basic proficiency"
-00012,"Senior managers - financial, communications and other business services","Operations Monitoring",23.5,"Less important",25,"Basic proficiency"
-00012,"Senior managers - financial, communications and other business services","Operation and Control",21.875,"Less important",17.8571428571429,"Basic proficiency"
-00012,"Senior managers - financial, communications and other business services","Quality Control Analysis",20.375,"Less important",17.8571428571429,"Basic proficiency"
-00012,"Senior managers - financial, communications and other business services","Technology Design",20.375,"Less important",13.3571428571429,"Basic proficiency"
-00012,"Senior managers - financial, communications and other business services",Programming,18.75,"Less important",12.4285714285714,"Basic proficiency"
-00012,"Senior managers - financial, communications and other business services","Equipment Selection",3,"Less important",6.21428571428571,"Basic proficiency"
-00012,"Senior managers - financial, communications and other business services","Equipment Maintenance",0,"Not required",0,"Not required"
-00012,"Senior managers - financial, communications and other business services",Installation,0,"Not required",0,"Not required"
-00012,"Senior managers - financial, communications and other business services",Repairing,0,"Not required",0,"Not required"
-00012,"Senior managers - financial, communications and other business services",Troubleshooting,0,"Not required",0,"Not required"
-00013,"Senior managers - health, education, social and community services and membership organizations","Critical Thinking",78.125,"Very important",60.6785714285714,"Medium proficiency"
-00013,"Senior managers - health, education, social and community services and membership organizations",Speaking,78.125,"Very important",60.7142857142857,"Medium proficiency"
-00013,"Senior managers - health, education, social and community services and membership organizations","Social Perceptiveness",75.8125,"Very important",57.6071428571429,"Medium proficiency"
-00013,"Senior managers - health, education, social and community services and membership organizations","Active Listening",75.75,"Very important",60.7142857142857,"Medium proficiency"
-00013,"Senior managers - health, education, social and community services and membership organizations","Reading Comprehension",75,"Very important",61.1428571428572,"Medium proficiency"
-00013,"Senior managers - health, education, social and community services and membership organizations","Complex Problem Solving",74.25,"Very important",58.4642857142857,"Medium proficiency"
-00013,"Senior managers - health, education, social and community services and membership organizations",Coordination,74.25,"Very important",60.7142857142857,"Medium proficiency"
-00013,"Senior managers - health, education, social and community services and membership organizations","Judgment and Decision Making",74.25,"Very important",62.5,"Medium proficiency"
-00013,"Senior managers - health, education, social and community services and membership organizations",Monitoring,74.1875,"Very important",62.9285714285714,"Medium proficiency"
-00013,"Senior managers - health, education, social and community services and membership organizations",Writing,71.0625,"Very important",58.9642857142857,"Medium proficiency"
-00013,"Senior managers - health, education, social and community services and membership organizations",Persuasion,70.375,"Very important",58.9285714285714,"Medium proficiency"
-00013,"Senior managers - health, education, social and community services and membership organizations","Active Learning",69.5625,"Very important",57.6071428571429,"Medium proficiency"
-00013,"Senior managers - health, education, social and community services and membership organizations","Time Management",69.5625,"Very important",58.5,"Medium proficiency"
-00013,"Senior managers - health, education, social and community services and membership organizations","Management of Personnel Resources",67.9375,"Very important",62.0714285714286,"Medium proficiency"
-00013,"Senior managers - health, education, social and community services and membership organizations","Systems Evaluation",67.1875,"Very important",57.5714285714286,"Medium proficiency"
-00013,"Senior managers - health, education, social and community services and membership organizations",Negotiation,67.125,"Very important",53.5357142857143,"Medium proficiency"
-00013,"Senior managers - health, education, social and community services and membership organizations","Systems Analysis",66.375,"Very important",56.2857142857143,"Medium proficiency"
-00013,"Senior managers - health, education, social and community services and membership organizations",Instructing,58.5625,Important,51.3928571428571,"Medium proficiency"
-00013,"Senior managers - health, education, social and community services and membership organizations","Management of Financial Resources",58.5625,Important,55.7857142857143,"Medium proficiency"
-00013,"Senior managers - health, education, social and community services and membership organizations","Service Orientation",58.5625,Important,48.2142857142857,"Medium proficiency"
-00013,"Senior managers - health, education, social and community services and membership organizations","Learning Strategies",54.6875,Important,52.7142857142857,"Medium proficiency"
-00013,"Senior managers - health, education, social and community services and membership organizations","Management of Material Resources",53.9375,Important,50.8571428571429,"Medium proficiency"
-00013,"Senior managers - health, education, social and community services and membership organizations","Operations Analysis",52.3125,Important,51.3214285714286,"Medium proficiency"
-00013,"Senior managers - health, education, social and community services and membership organizations",Mathematics,45.375,Important,43.7142857142857,"Medium proficiency"
-00013,"Senior managers - health, education, social and community services and membership organizations","Operations Monitoring",28.9375,"Less important",28.5714285714286,"Basic proficiency"
-00013,"Senior managers - health, education, social and community services and membership organizations",Science,27.375,"Less important",23.6428571428571,"Basic proficiency"
-00013,"Senior managers - health, education, social and community services and membership organizations","Quality Control Analysis",25.8125,"Less important",22.2857142857143,"Basic proficiency"
-00013,"Senior managers - health, education, social and community services and membership organizations","Technology Design",21.9375,"Less important",14.6785714285714,"Basic proficiency"
-00013,"Senior managers - health, education, social and community services and membership organizations",Programming,18.75,"Less important",13.3571428571429,"Basic proficiency"
-00013,"Senior managers - health, education, social and community services and membership organizations","Operation and Control",17.1875,"Less important",15.1785714285714,"Basic proficiency"
-00013,"Senior managers - health, education, social and community services and membership organizations",Troubleshooting,10.125,"Less important",7.14285714285714,"Basic proficiency"
-00013,"Senior managers - health, education, social and community services and membership organizations","Equipment Selection",1.5,"Less important",3.10714285714286,"Basic proficiency"
-00013,"Senior managers - health, education, social and community services and membership organizations","Equipment Maintenance",0,"Not required",0,"Not required"
-00013,"Senior managers - health, education, social and community services and membership organizations",Installation,0,"Not required",0,"Not required"
-00013,"Senior managers - health, education, social and community services and membership organizations",Repairing,0,"Not required",0,"Not required"
-00014,"Senior managers - trade, broadcasting and other services","Critical Thinking",78.1666666666667,"Very important",61.2857142857143,"Medium proficiency"
-00014,"Senior managers - trade, broadcasting and other services",Speaking,78.1666666666667,"Very important",61.9047619047619,"Medium proficiency"
-00014,"Senior managers - trade, broadcasting and other services","Social Perceptiveness",76.0833333333333,"Very important",57.7619047619048,"Medium proficiency"
-00014,"Senior managers - trade, broadcasting and other services","Active Listening",76,"Very important",61.3333333333333,"Medium proficiency"
-00014,"Senior managers - trade, broadcasting and other services",Coordination,75,"Very important",61.3333333333333,"Medium proficiency"
-00014,"Senior managers - trade, broadcasting and other services","Reading Comprehension",75,"Very important",61.9047619047619,"Medium proficiency"
-00014,"Senior managers - trade, broadcasting and other services","Complex Problem Solving",74,"Very important",61.2857142857143,"Medium proficiency"
-00014,"Senior managers - trade, broadcasting and other services","Judgment and Decision Making",74,"Very important",64.2857142857143,"Medium proficiency"
-00014,"Senior managers - trade, broadcasting and other services",Monitoring,73.9166666666667,"Very important",64.2857142857143,"Medium proficiency"
-00014,"Senior managers - trade, broadcasting and other services",Persuasion,69.8333333333333,"Very important",59.5238095238095,"Medium proficiency"
-00014,"Senior managers - trade, broadcasting and other services",Writing,69.75,"Very important",59.5714285714286,"Medium proficiency"
-00014,"Senior managers - trade, broadcasting and other services","Active Learning",68.75,"Very important",58.3333333333333,"Medium proficiency"
-00014,"Senior managers - trade, broadcasting and other services","Time Management",67.75,"Very important",58.952380952381,"Medium proficiency"
-00014,"Senior managers - trade, broadcasting and other services","Systems Analysis",66.6666666666667,"Very important",58.952380952381,"Medium proficiency"
-00014,"Senior managers - trade, broadcasting and other services","Systems Evaluation",66.6666666666667,"Very important",58.2857142857143,"Medium proficiency"
-00014,"Senior managers - trade, broadcasting and other services","Management of Personnel Resources",65.5833333333333,"Very important",63.1428571428572,"Medium proficiency"
-00014,"Senior managers - trade, broadcasting and other services",Negotiation,65.5,"Very important",54.7142857142857,"Medium proficiency"
-00014,"Senior managers - trade, broadcasting and other services","Management of Financial Resources",59.3333333333334,Important,57.1428571428571,"Medium proficiency"
-00014,"Senior managers - trade, broadcasting and other services","Service Orientation",55.1666666666667,Important,46.4285714285714,"Medium proficiency"
-00014,"Senior managers - trade, broadcasting and other services","Learning Strategies",54.1666666666667,Important,51.8095238095238,"Medium proficiency"
-00014,"Senior managers - trade, broadcasting and other services",Instructing,54.0833333333334,Important,50.0476190476191,"Medium proficiency"
-00014,"Senior managers - trade, broadcasting and other services","Management of Material Resources",53.1666666666666,Important,50.5714285714286,"Medium proficiency"
-00014,"Senior managers - trade, broadcasting and other services","Operations Analysis",47.9166666666667,Important,49.952380952381,"Medium proficiency"
-00014,"Senior managers - trade, broadcasting and other services",Mathematics,45.9166666666667,Important,44,"Medium proficiency"
-00014,"Senior managers - trade, broadcasting and other services","Operations Monitoring",30.25,"Less important",29.1428571428571,"Basic proficiency"
-00014,"Senior managers - trade, broadcasting and other services","Quality Control Analysis",25.0833333333333,"Less important",22,"Basic proficiency"
-00014,"Senior managers - trade, broadcasting and other services",Science,24,"Less important",19.6190476190476,"Basic proficiency"
-00014,"Senior managers - trade, broadcasting and other services","Operation and Control",22.9166666666667,"Less important",20.2380952380952,"Basic proficiency"
-00014,"Senior managers - trade, broadcasting and other services","Technology Design",20.9166666666667,"Less important",14.2380952380952,"Basic proficiency"
-00014,"Senior managers - trade, broadcasting and other services",Programming,16.6666666666667,"Less important",11.2380952380952,"Basic proficiency"
-00014,"Senior managers - trade, broadcasting and other services",Troubleshooting,8.33333333333333,"Less important",6.57142857142857,"Basic proficiency"
-00014,"Senior managers - trade, broadcasting and other services","Equipment Selection",2,"Less important",4.14285714285714,"Basic proficiency"
-00014,"Senior managers - trade, broadcasting and other services","Equipment Maintenance",0,"Not required",0,"Not required"
-00014,"Senior managers - trade, broadcasting and other services",Installation,0,"Not required",0,"Not required"
-00014,"Senior managers - trade, broadcasting and other services",Repairing,0,"Not required",0,"Not required"
-00015,"Senior managers - construction, transportation, production and utilities","Critical Thinking",81.25,"Extremely important",63.3571428571429,"Medium proficiency"
-00015,"Senior managers - construction, transportation, production and utilities","Complex Problem Solving",79.75,"Very important",65.1428571428571,"Medium proficiency"
-00015,"Senior managers - construction, transportation, production and utilities","Judgment and Decision Making",79.75,"Very important",69.6428571428571,"High proficiency"
-00015,"Senior managers - construction, transportation, production and utilities",Speaking,79.75,"Very important",64.2857142857143,"Medium proficiency"
-00015,"Senior managers - construction, transportation, production and utilities","Social Perceptiveness",76.625,"Very important",58.0714285714286,"Medium proficiency"
-00015,"Senior managers - construction, transportation, production and utilities","Active Listening",76.5,"Very important",63.4285714285714,"Medium proficiency"
-00015,"Senior managers - construction, transportation, production and utilities","Reading Comprehension",76.5,"Very important",64.2857142857143,"Medium proficiency"
-00015,"Senior managers - construction, transportation, production and utilities",Writing,76.5,"Very important",61.6428571428571,"Medium proficiency"
-00015,"Senior managers - construction, transportation, production and utilities",Coordination,75,"Very important",64.2857142857143,"Medium proficiency"
-00015,"Senior managers - construction, transportation, production and utilities",Persuasion,75,"Very important",64.2857142857143,"Medium proficiency"
-00015,"Senior managers - construction, transportation, production and utilities","Systems Analysis",75,"Very important",67,"High proficiency"
-00015,"Senior managers - construction, transportation, production and utilities","Systems Evaluation",75,"Very important",65.1428571428571,"Medium proficiency"
-00015,"Senior managers - construction, transportation, production and utilities",Monitoring,73.375,"Very important",67.8571428571429,"High proficiency"
-00015,"Senior managers - construction, transportation, production and utilities","Active Learning",71.875,"Very important",61.6428571428571,"Medium proficiency"
-00015,"Senior managers - construction, transportation, production and utilities","Time Management",67.25,"Very important",61.6428571428571,"Medium proficiency"
-00015,"Senior managers - construction, transportation, production and utilities","Management of Personnel Resources",67.125,"Very important",67,"High proficiency"
-00015,"Senior managers - construction, transportation, production and utilities",Negotiation,65.5,"Very important",56.2142857142857,"Medium proficiency"
-00015,"Senior managers - construction, transportation, production and utilities","Management of Financial Resources",62.5,"Very important",61.5714285714286,"Medium proficiency"
-00015,"Senior managers - construction, transportation, production and utilities","Learning Strategies",56.25,Important,54.5,"Medium proficiency"
-00015,"Senior managers - construction, transportation, production and utilities",Instructing,54.625,Important,51.8571428571429,"Medium proficiency"
-00015,"Senior managers - construction, transportation, production and utilities","Service Orientation",54.625,Important,47.3571428571429,"Medium proficiency"
-00015,"Senior managers - construction, transportation, production and utilities","Management of Material Resources",51.625,Important,52.6428571428571,"Medium proficiency"
-00015,"Senior managers - construction, transportation, production and utilities",Mathematics,51.625,Important,48.1428571428572,"Medium proficiency"
-00015,"Senior managers - construction, transportation, production and utilities","Operations Analysis",50,Important,52.6428571428571,"Medium proficiency"
-00015,"Senior managers - construction, transportation, production and utilities",Science,25,"Less important",21.4285714285714,"Basic proficiency"
-00015,"Senior managers - construction, transportation, production and utilities","Operations Monitoring",23.5,"Less important",25,"Basic proficiency"
-00015,"Senior managers - construction, transportation, production and utilities","Operation and Control",21.875,"Less important",17.8571428571429,"Basic proficiency"
-00015,"Senior managers - construction, transportation, production and utilities","Quality Control Analysis",20.375,"Less important",17.8571428571429,"Basic proficiency"
-00015,"Senior managers - construction, transportation, production and utilities","Technology Design",20.375,"Less important",13.3571428571429,"Basic proficiency"
-00015,"Senior managers - construction, transportation, production and utilities",Programming,18.75,"Less important",12.4285714285714,"Basic proficiency"
-00015,"Senior managers - construction, transportation, production and utilities","Equipment Selection",3,"Less important",6.21428571428571,"Basic proficiency"
-00015,"Senior managers - construction, transportation, production and utilities","Equipment Maintenance",0,"Not required",0,"Not required"
-00015,"Senior managers - construction, transportation, production and utilities",Installation,0,"Not required",0,"Not required"
-00015,"Senior managers - construction, transportation, production and utilities",Repairing,0,"Not required",0,"Not required"
-00015,"Senior managers - construction, transportation, production and utilities",Troubleshooting,0,"Not required",0,"Not required"
+00010,Legislators,"Critical Thinking",,,,
+00010,Legislators,"Complex Problem Solving",,,,
+00010,Legislators,"Judgment and Decision Making",,,,
+00010,Legislators,Speaking,,,,
+00010,Legislators,"Social Perceptiveness",,,,
+00010,Legislators,"Active Listening",,,,
+00010,Legislators,"Reading Comprehension",,,,
+00010,Legislators,Writing,,,,
+00010,Legislators,Coordination,,,,
+00010,Legislators,Persuasion,,,,
+00010,Legislators,"Systems Analysis",,,,
+00010,Legislators,"Systems Evaluation",,,,
+00010,Legislators,Monitoring,,,,
+00010,Legislators,"Active Learning",,,,
+00010,Legislators,"Time Management",,,,
+00010,Legislators,"Management of Personnel Resources",,,,
+00010,Legislators,Negotiation,,,,
+00010,Legislators,"Management of Financial Resources",,,,
+00010,Legislators,"Learning Strategies",,,,
+00010,Legislators,Instructing,,,,
+00010,Legislators,"Service Orientation",,,,
+00010,Legislators,"Management of Material Resources",,,,
+00010,Legislators,Mathematics,,,,
+00010,Legislators,"Operations Analysis",,,,
+00010,Legislators,Science,,,,
+00010,Legislators,"Operations Monitoring",,,,
+00010,Legislators,"Operation and Control",,,,
+00010,Legislators,"Quality Control Analysis",,,,
+00010,Legislators,"Technology Design",,,,
+00010,Legislators,Programming,,,,
+00010,Legislators,"Equipment Selection",,,,
+00010,Legislators,"Equipment Maintenance",,,,
+00010,Legislators,Installation,,,,
+00010,Legislators,Repairing,,,,
+00010,Legislators,Troubleshooting,,,,
+00018,"Senior managers - public and private sector","Critical Thinking",,,,
+00018,"Senior managers - public and private sector","Complex Problem Solving",,,,
+00018,"Senior managers - public and private sector","Judgment and Decision Making",,,,
+00018,"Senior managers - public and private sector",Speaking,,,,
+00018,"Senior managers - public and private sector","Social Perceptiveness",,,,
+00018,"Senior managers - public and private sector","Active Listening",,,,
+00018,"Senior managers - public and private sector","Reading Comprehension",,,,
+00018,"Senior managers - public and private sector",Writing,,,,
+00018,"Senior managers - public and private sector",Coordination,,,,
+00018,"Senior managers - public and private sector",Persuasion,,,,
+00018,"Senior managers - public and private sector","Systems Analysis",,,,
+00018,"Senior managers - public and private sector","Systems Evaluation",,,,
+00018,"Senior managers - public and private sector",Monitoring,,,,
+00018,"Senior managers - public and private sector","Active Learning",,,,
+00018,"Senior managers - public and private sector","Time Management",,,,
+00018,"Senior managers - public and private sector","Management of Personnel Resources",,,,
+00018,"Senior managers - public and private sector",Negotiation,,,,
+00018,"Senior managers - public and private sector","Management of Financial Resources",,,,
+00018,"Senior managers - public and private sector","Learning Strategies",,,,
+00018,"Senior managers - public and private sector",Instructing,,,,
+00018,"Senior managers - public and private sector","Service Orientation",,,,
+00018,"Senior managers - public and private sector","Management of Material Resources",,,,
+00018,"Senior managers - public and private sector",Mathematics,,,,
+00018,"Senior managers - public and private sector","Operations Analysis",,,,
+00018,"Senior managers - public and private sector",Science,,,,
+00018,"Senior managers - public and private sector","Operations Monitoring",,,,
+00018,"Senior managers - public and private sector","Operation and Control",,,,
+00018,"Senior managers - public and private sector","Quality Control Analysis",,,,
+00018,"Senior managers - public and private sector","Technology Design",,,,
+00018,"Senior managers - public and private sector",Programming,,,,
+00018,"Senior managers - public and private sector","Equipment Selection",,,,
+00018,"Senior managers - public and private sector","Equipment Maintenance",,,,
+00018,"Senior managers - public and private sector",Installation,,,,
+00018,"Senior managers - public and private sector",Repairing,,,,
+00018,"Senior managers - public and private sector",Troubleshooting,,,,
 10010,"Financial managers","Critical Thinking",76,"Very important",61.9047619047619,"Medium proficiency"
 10010,"Financial managers","Reading Comprehension",76,"Very important",61.3333333333333,"Medium proficiency"
 10010,"Financial managers","Active Listening",74,"Very important",60.7142857142857,"Medium proficiency"
@@ -523,6 +418,41 @@
 11100,"Financial auditors and accountants","Equipment Maintenance",0,"Not required",0,"Not required"
 11100,"Financial auditors and accountants",Installation,0,"Not required",0,"Not required"
 11100,"Financial auditors and accountants",Repairing,0,"Not required",0,"Not required"
+11101,"Financial and investment analysts","Critical Thinking",,,,
+11101,"Financial and investment analysts","Complex Problem Solving",,,,
+11101,"Financial and investment analysts","Judgment and Decision Making",,,,
+11101,"Financial and investment analysts",Speaking,,,,
+11101,"Financial and investment analysts","Social Perceptiveness",,,,
+11101,"Financial and investment analysts","Active Listening",,,,
+11101,"Financial and investment analysts","Reading Comprehension",,,,
+11101,"Financial and investment analysts",Writing,,,,
+11101,"Financial and investment analysts",Coordination,,,,
+11101,"Financial and investment analysts",Persuasion,,,,
+11101,"Financial and investment analysts","Systems Analysis",,,,
+11101,"Financial and investment analysts","Systems Evaluation",,,,
+11101,"Financial and investment analysts",Monitoring,,,,
+11101,"Financial and investment analysts","Active Learning",,,,
+11101,"Financial and investment analysts","Time Management",,,,
+11101,"Financial and investment analysts","Management of Personnel Resources",,,,
+11101,"Financial and investment analysts",Negotiation,,,,
+11101,"Financial and investment analysts","Management of Financial Resources",,,,
+11101,"Financial and investment analysts","Learning Strategies",,,,
+11101,"Financial and investment analysts",Instructing,,,,
+11101,"Financial and investment analysts","Service Orientation",,,,
+11101,"Financial and investment analysts","Management of Material Resources",,,,
+11101,"Financial and investment analysts",Mathematics,,,,
+11101,"Financial and investment analysts","Operations Analysis",,,,
+11101,"Financial and investment analysts",Science,,,,
+11101,"Financial and investment analysts","Operations Monitoring",,,,
+11101,"Financial and investment analysts","Operation and Control",,,,
+11101,"Financial and investment analysts","Quality Control Analysis",,,,
+11101,"Financial and investment analysts","Technology Design",,,,
+11101,"Financial and investment analysts",Programming,,,,
+11101,"Financial and investment analysts","Equipment Selection",,,,
+11101,"Financial and investment analysts","Equipment Maintenance",,,,
+11101,"Financial and investment analysts",Installation,,,,
+11101,"Financial and investment analysts",Repairing,,,,
+11101,"Financial and investment analysts",Troubleshooting,,,,
 11102,"Financial advisors","Reading Comprehension",75,"Very important",60,"Medium proficiency"
 11102,"Financial advisors","Critical Thinking",74.35,"Very important",61.0285714285714,"Medium proficiency"
 11102,"Financial advisors","Active Listening",73.75,"Very important",57.8285714285714,"Medium proficiency"
@@ -4478,6 +4408,41 @@
 22311,"Electronic service technicians (household and business equipment)","Operations Analysis",20.6,"Less important",19.4714285714286,"Basic proficiency"
 22311,"Electronic service technicians (household and business equipment)","Technology Design",20.375,"Less important",18.4142857142857,"Basic proficiency"
 22311,"Electronic service technicians (household and business equipment)",Programming,17.475,"Less important",12.5,"Basic proficiency"
+22312,"Industrial instrument technicians and mechanics","Critical Thinking",,,,
+22312,"Industrial instrument technicians and mechanics","Complex Problem Solving",,,,
+22312,"Industrial instrument technicians and mechanics","Judgment and Decision Making",,,,
+22312,"Industrial instrument technicians and mechanics",Speaking,,,,
+22312,"Industrial instrument technicians and mechanics","Social Perceptiveness",,,,
+22312,"Industrial instrument technicians and mechanics","Active Listening",,,,
+22312,"Industrial instrument technicians and mechanics","Reading Comprehension",,,,
+22312,"Industrial instrument technicians and mechanics",Writing,,,,
+22312,"Industrial instrument technicians and mechanics",Coordination,,,,
+22312,"Industrial instrument technicians and mechanics",Persuasion,,,,
+22312,"Industrial instrument technicians and mechanics","Systems Analysis",,,,
+22312,"Industrial instrument technicians and mechanics","Systems Evaluation",,,,
+22312,"Industrial instrument technicians and mechanics",Monitoring,,,,
+22312,"Industrial instrument technicians and mechanics","Active Learning",,,,
+22312,"Industrial instrument technicians and mechanics","Time Management",,,,
+22312,"Industrial instrument technicians and mechanics","Management of Personnel Resources",,,,
+22312,"Industrial instrument technicians and mechanics",Negotiation,,,,
+22312,"Industrial instrument technicians and mechanics","Management of Financial Resources",,,,
+22312,"Industrial instrument technicians and mechanics","Learning Strategies",,,,
+22312,"Industrial instrument technicians and mechanics",Instructing,,,,
+22312,"Industrial instrument technicians and mechanics","Service Orientation",,,,
+22312,"Industrial instrument technicians and mechanics","Management of Material Resources",,,,
+22312,"Industrial instrument technicians and mechanics",Mathematics,,,,
+22312,"Industrial instrument technicians and mechanics","Operations Analysis",,,,
+22312,"Industrial instrument technicians and mechanics",Science,,,,
+22312,"Industrial instrument technicians and mechanics","Operations Monitoring",,,,
+22312,"Industrial instrument technicians and mechanics","Operation and Control",,,,
+22312,"Industrial instrument technicians and mechanics","Quality Control Analysis",,,,
+22312,"Industrial instrument technicians and mechanics","Technology Design",,,,
+22312,"Industrial instrument technicians and mechanics",Programming,,,,
+22312,"Industrial instrument technicians and mechanics","Equipment Selection",,,,
+22312,"Industrial instrument technicians and mechanics","Equipment Maintenance",,,,
+22312,"Industrial instrument technicians and mechanics",Installation,,,,
+22312,"Industrial instrument technicians and mechanics",Repairing,,,,
+22312,"Industrial instrument technicians and mechanics",Troubleshooting,,,,
 22313,"Aircraft instrument, electrical and avionics mechanics, technicians and inspectors","Equipment Maintenance",72,"Very important",57.1428571428571,"Medium proficiency"
 22313,"Aircraft instrument, electrical and avionics mechanics, technicians and inspectors",Repairing,72,"Very important",57.1428571428571,"Medium proficiency"
 22313,"Aircraft instrument, electrical and avionics mechanics, technicians and inspectors",Troubleshooting,72,"Very important",57.1428571428571,"Medium proficiency"
@@ -7243,6 +7208,41 @@
 42101,Firefighters,"Operations Analysis",16.75,"Less important",17.8571428571429,"Basic proficiency"
 42101,Firefighters,Programming,15.5833333333333,"Less important",11.3333333333333,"Basic proficiency"
 42101,Firefighters,Installation,5.25,"Less important",4.19047619047619,"Basic proficiency"
+42102,"Specialized members of the Canadian Armed Forces","Critical Thinking",,,,
+42102,"Specialized members of the Canadian Armed Forces","Complex Problem Solving",,,,
+42102,"Specialized members of the Canadian Armed Forces","Judgment and Decision Making",,,,
+42102,"Specialized members of the Canadian Armed Forces",Speaking,,,,
+42102,"Specialized members of the Canadian Armed Forces","Social Perceptiveness",,,,
+42102,"Specialized members of the Canadian Armed Forces","Active Listening",,,,
+42102,"Specialized members of the Canadian Armed Forces","Reading Comprehension",,,,
+42102,"Specialized members of the Canadian Armed Forces",Writing,,,,
+42102,"Specialized members of the Canadian Armed Forces",Coordination,,,,
+42102,"Specialized members of the Canadian Armed Forces",Persuasion,,,,
+42102,"Specialized members of the Canadian Armed Forces","Systems Analysis",,,,
+42102,"Specialized members of the Canadian Armed Forces","Systems Evaluation",,,,
+42102,"Specialized members of the Canadian Armed Forces",Monitoring,,,,
+42102,"Specialized members of the Canadian Armed Forces","Active Learning",,,,
+42102,"Specialized members of the Canadian Armed Forces","Time Management",,,,
+42102,"Specialized members of the Canadian Armed Forces","Management of Personnel Resources",,,,
+42102,"Specialized members of the Canadian Armed Forces",Negotiation,,,,
+42102,"Specialized members of the Canadian Armed Forces","Management of Financial Resources",,,,
+42102,"Specialized members of the Canadian Armed Forces","Learning Strategies",,,,
+42102,"Specialized members of the Canadian Armed Forces",Instructing,,,,
+42102,"Specialized members of the Canadian Armed Forces","Service Orientation",,,,
+42102,"Specialized members of the Canadian Armed Forces","Management of Material Resources",,,,
+42102,"Specialized members of the Canadian Armed Forces",Mathematics,,,,
+42102,"Specialized members of the Canadian Armed Forces","Operations Analysis",,,,
+42102,"Specialized members of the Canadian Armed Forces",Science,,,,
+42102,"Specialized members of the Canadian Armed Forces","Operations Monitoring",,,,
+42102,"Specialized members of the Canadian Armed Forces","Operation and Control",,,,
+42102,"Specialized members of the Canadian Armed Forces","Quality Control Analysis",,,,
+42102,"Specialized members of the Canadian Armed Forces","Technology Design",,,,
+42102,"Specialized members of the Canadian Armed Forces",Programming,,,,
+42102,"Specialized members of the Canadian Armed Forces","Equipment Selection",,,,
+42102,"Specialized members of the Canadian Armed Forces","Equipment Maintenance",,,,
+42102,"Specialized members of the Canadian Armed Forces",Installation,,,,
+42102,"Specialized members of the Canadian Armed Forces",Repairing,,,,
+42102,"Specialized members of the Canadian Armed Forces",Troubleshooting,,,,
 42200,"Paralegals and related occupations","Reading Comprehension",73.4375,"Very important",58.0357142857143,"Medium proficiency"
 42200,"Paralegals and related occupations","Active Listening",71.875,"Very important",59.7857142857143,"Medium proficiency"
 42200,"Paralegals and related occupations",Speaking,68.6875,"Very important",55.7857142857143,"Medium proficiency"
@@ -7418,6 +7418,41 @@
 42204,"Religion workers",Installation,0,"Not required",0,"Not required"
 42204,"Religion workers",Repairing,0,"Not required",0,"Not required"
 42204,"Religion workers",Troubleshooting,0,"Not required",0,"Not required"
+43100,"Elementary and secondary school teacher assistants","Critical Thinking",,,,
+43100,"Elementary and secondary school teacher assistants","Complex Problem Solving",,,,
+43100,"Elementary and secondary school teacher assistants","Judgment and Decision Making",,,,
+43100,"Elementary and secondary school teacher assistants",Speaking,,,,
+43100,"Elementary and secondary school teacher assistants","Social Perceptiveness",,,,
+43100,"Elementary and secondary school teacher assistants","Active Listening",,,,
+43100,"Elementary and secondary school teacher assistants","Reading Comprehension",,,,
+43100,"Elementary and secondary school teacher assistants",Writing,,,,
+43100,"Elementary and secondary school teacher assistants",Coordination,,,,
+43100,"Elementary and secondary school teacher assistants",Persuasion,,,,
+43100,"Elementary and secondary school teacher assistants","Systems Analysis",,,,
+43100,"Elementary and secondary school teacher assistants","Systems Evaluation",,,,
+43100,"Elementary and secondary school teacher assistants",Monitoring,,,,
+43100,"Elementary and secondary school teacher assistants","Active Learning",,,,
+43100,"Elementary and secondary school teacher assistants","Time Management",,,,
+43100,"Elementary and secondary school teacher assistants","Management of Personnel Resources",,,,
+43100,"Elementary and secondary school teacher assistants",Negotiation,,,,
+43100,"Elementary and secondary school teacher assistants","Management of Financial Resources",,,,
+43100,"Elementary and secondary school teacher assistants","Learning Strategies",,,,
+43100,"Elementary and secondary school teacher assistants",Instructing,,,,
+43100,"Elementary and secondary school teacher assistants","Service Orientation",,,,
+43100,"Elementary and secondary school teacher assistants","Management of Material Resources",,,,
+43100,"Elementary and secondary school teacher assistants",Mathematics,,,,
+43100,"Elementary and secondary school teacher assistants","Operations Analysis",,,,
+43100,"Elementary and secondary school teacher assistants",Science,,,,
+43100,"Elementary and secondary school teacher assistants","Operations Monitoring",,,,
+43100,"Elementary and secondary school teacher assistants","Operation and Control",,,,
+43100,"Elementary and secondary school teacher assistants","Quality Control Analysis",,,,
+43100,"Elementary and secondary school teacher assistants","Technology Design",,,,
+43100,"Elementary and secondary school teacher assistants",Programming,,,,
+43100,"Elementary and secondary school teacher assistants","Equipment Selection",,,,
+43100,"Elementary and secondary school teacher assistants","Equipment Maintenance",,,,
+43100,"Elementary and secondary school teacher assistants",Installation,,,,
+43100,"Elementary and secondary school teacher assistants",Repairing,,,,
+43100,"Elementary and secondary school teacher assistants",Troubleshooting,,,,
 43109,"Other instructors","Active Listening",73.6388888888889,"Very important",57.3174603174603,"Medium proficiency"
 43109,"Other instructors",Speaking,72.5833333333333,"Very important",57.7142857142857,"Medium proficiency"
 43109,"Other instructors","Reading Comprehension",72.2222222222222,"Very important",61.1111111111111,"Medium proficiency"
@@ -7593,6 +7628,41 @@
 43203,"Border services, customs, and immigration officers","Equipment Maintenance",0.600000000000001,"Less important",0.714285714285714,"Basic proficiency"
 43203,"Border services, customs, and immigration officers",Installation,0.600000000000001,"Less important",0.342857142857143,"Basic proficiency"
 43203,"Border services, customs, and immigration officers",Repairing,0,"Not required",0,"Not required"
+43204,"Operations members of the Canadian Armed Forces","Critical Thinking",,,,
+43204,"Operations members of the Canadian Armed Forces","Complex Problem Solving",,,,
+43204,"Operations members of the Canadian Armed Forces","Judgment and Decision Making",,,,
+43204,"Operations members of the Canadian Armed Forces",Speaking,,,,
+43204,"Operations members of the Canadian Armed Forces","Social Perceptiveness",,,,
+43204,"Operations members of the Canadian Armed Forces","Active Listening",,,,
+43204,"Operations members of the Canadian Armed Forces","Reading Comprehension",,,,
+43204,"Operations members of the Canadian Armed Forces",Writing,,,,
+43204,"Operations members of the Canadian Armed Forces",Coordination,,,,
+43204,"Operations members of the Canadian Armed Forces",Persuasion,,,,
+43204,"Operations members of the Canadian Armed Forces","Systems Analysis",,,,
+43204,"Operations members of the Canadian Armed Forces","Systems Evaluation",,,,
+43204,"Operations members of the Canadian Armed Forces",Monitoring,,,,
+43204,"Operations members of the Canadian Armed Forces","Active Learning",,,,
+43204,"Operations members of the Canadian Armed Forces","Time Management",,,,
+43204,"Operations members of the Canadian Armed Forces","Management of Personnel Resources",,,,
+43204,"Operations members of the Canadian Armed Forces",Negotiation,,,,
+43204,"Operations members of the Canadian Armed Forces","Management of Financial Resources",,,,
+43204,"Operations members of the Canadian Armed Forces","Learning Strategies",,,,
+43204,"Operations members of the Canadian Armed Forces",Instructing,,,,
+43204,"Operations members of the Canadian Armed Forces","Service Orientation",,,,
+43204,"Operations members of the Canadian Armed Forces","Management of Material Resources",,,,
+43204,"Operations members of the Canadian Armed Forces",Mathematics,,,,
+43204,"Operations members of the Canadian Armed Forces","Operations Analysis",,,,
+43204,"Operations members of the Canadian Armed Forces",Science,,,,
+43204,"Operations members of the Canadian Armed Forces","Operations Monitoring",,,,
+43204,"Operations members of the Canadian Armed Forces","Operation and Control",,,,
+43204,"Operations members of the Canadian Armed Forces","Quality Control Analysis",,,,
+43204,"Operations members of the Canadian Armed Forces","Technology Design",,,,
+43204,"Operations members of the Canadian Armed Forces",Programming,,,,
+43204,"Operations members of the Canadian Armed Forces","Equipment Selection",,,,
+43204,"Operations members of the Canadian Armed Forces","Equipment Maintenance",,,,
+43204,"Operations members of the Canadian Armed Forces",Installation,,,,
+43204,"Operations members of the Canadian Armed Forces",Repairing,,,,
+43204,"Operations members of the Canadian Armed Forces",Troubleshooting,,,,
 44100,"Home child care providers",Monitoring,68.75,"Very important",50,"Medium proficiency"
 44100,"Home child care providers","Social Perceptiveness",65.625,"Very important",50.9285714285714,"Medium proficiency"
 44100,"Home child care providers","Service Orientation",64.125,"Very important",48.2142857142857,"Medium proficiency"
@@ -7663,6 +7733,41 @@
 44101,"Home support workers, caregivers and related occupations",Installation,0,"Not required",0,"Not required"
 44101,"Home support workers, caregivers and related occupations",Programming,0,"Not required",0,"Not required"
 44101,"Home support workers, caregivers and related occupations",Repairing,0,"Not required",0,"Not required"
+44200,"Primary combat members of the Canadian Armed Forces","Critical Thinking",,,,
+44200,"Primary combat members of the Canadian Armed Forces","Complex Problem Solving",,,,
+44200,"Primary combat members of the Canadian Armed Forces","Judgment and Decision Making",,,,
+44200,"Primary combat members of the Canadian Armed Forces",Speaking,,,,
+44200,"Primary combat members of the Canadian Armed Forces","Social Perceptiveness",,,,
+44200,"Primary combat members of the Canadian Armed Forces","Active Listening",,,,
+44200,"Primary combat members of the Canadian Armed Forces","Reading Comprehension",,,,
+44200,"Primary combat members of the Canadian Armed Forces",Writing,,,,
+44200,"Primary combat members of the Canadian Armed Forces",Coordination,,,,
+44200,"Primary combat members of the Canadian Armed Forces",Persuasion,,,,
+44200,"Primary combat members of the Canadian Armed Forces","Systems Analysis",,,,
+44200,"Primary combat members of the Canadian Armed Forces","Systems Evaluation",,,,
+44200,"Primary combat members of the Canadian Armed Forces",Monitoring,,,,
+44200,"Primary combat members of the Canadian Armed Forces","Active Learning",,,,
+44200,"Primary combat members of the Canadian Armed Forces","Time Management",,,,
+44200,"Primary combat members of the Canadian Armed Forces","Management of Personnel Resources",,,,
+44200,"Primary combat members of the Canadian Armed Forces",Negotiation,,,,
+44200,"Primary combat members of the Canadian Armed Forces","Management of Financial Resources",,,,
+44200,"Primary combat members of the Canadian Armed Forces","Learning Strategies",,,,
+44200,"Primary combat members of the Canadian Armed Forces",Instructing,,,,
+44200,"Primary combat members of the Canadian Armed Forces","Service Orientation",,,,
+44200,"Primary combat members of the Canadian Armed Forces","Management of Material Resources",,,,
+44200,"Primary combat members of the Canadian Armed Forces",Mathematics,,,,
+44200,"Primary combat members of the Canadian Armed Forces","Operations Analysis",,,,
+44200,"Primary combat members of the Canadian Armed Forces",Science,,,,
+44200,"Primary combat members of the Canadian Armed Forces","Operations Monitoring",,,,
+44200,"Primary combat members of the Canadian Armed Forces","Operation and Control",,,,
+44200,"Primary combat members of the Canadian Armed Forces","Quality Control Analysis",,,,
+44200,"Primary combat members of the Canadian Armed Forces","Technology Design",,,,
+44200,"Primary combat members of the Canadian Armed Forces",Programming,,,,
+44200,"Primary combat members of the Canadian Armed Forces","Equipment Selection",,,,
+44200,"Primary combat members of the Canadian Armed Forces","Equipment Maintenance",,,,
+44200,"Primary combat members of the Canadian Armed Forces",Installation,,,,
+44200,"Primary combat members of the Canadian Armed Forces",Repairing,,,,
+44200,"Primary combat members of the Canadian Armed Forces",Troubleshooting,,,,
 45100,"Student monitors, crossing guards and related occupations",Speaking,63.6136363636364,"Very important",49.3376623376623,"Medium proficiency"
 45100,"Student monitors, crossing guards and related occupations","Critical Thinking",63.0909090909091,"Very important",52.2727272727273,"Medium proficiency"
 45100,"Student monitors, crossing guards and related occupations","Active Listening",62.25,"Very important",50.3246753246753,"Medium proficiency"
@@ -10918,6 +11023,41 @@
 65220,"Pet groomers and animal care workers",Programming,4.625,"Less important",2.64285714285714,"Basic proficiency"
 65220,"Pet groomers and animal care workers",Repairing,3.125,"Less important",1.78571428571429,"Basic proficiency"
 65220,"Pet groomers and animal care workers",Installation,1.5,"Less important",0.857142857142857,"Basic proficiency"
+65229,"Other support occupations in personal services","Critical Thinking",,,,
+65229,"Other support occupations in personal services","Complex Problem Solving",,,,
+65229,"Other support occupations in personal services","Judgment and Decision Making",,,,
+65229,"Other support occupations in personal services",Speaking,,,,
+65229,"Other support occupations in personal services","Social Perceptiveness",,,,
+65229,"Other support occupations in personal services","Active Listening",,,,
+65229,"Other support occupations in personal services","Reading Comprehension",,,,
+65229,"Other support occupations in personal services",Writing,,,,
+65229,"Other support occupations in personal services",Coordination,,,,
+65229,"Other support occupations in personal services",Persuasion,,,,
+65229,"Other support occupations in personal services","Systems Analysis",,,,
+65229,"Other support occupations in personal services","Systems Evaluation",,,,
+65229,"Other support occupations in personal services",Monitoring,,,,
+65229,"Other support occupations in personal services","Active Learning",,,,
+65229,"Other support occupations in personal services","Time Management",,,,
+65229,"Other support occupations in personal services","Management of Personnel Resources",,,,
+65229,"Other support occupations in personal services",Negotiation,,,,
+65229,"Other support occupations in personal services","Management of Financial Resources",,,,
+65229,"Other support occupations in personal services","Learning Strategies",,,,
+65229,"Other support occupations in personal services",Instructing,,,,
+65229,"Other support occupations in personal services","Service Orientation",,,,
+65229,"Other support occupations in personal services","Management of Material Resources",,,,
+65229,"Other support occupations in personal services",Mathematics,,,,
+65229,"Other support occupations in personal services","Operations Analysis",,,,
+65229,"Other support occupations in personal services",Science,,,,
+65229,"Other support occupations in personal services","Operations Monitoring",,,,
+65229,"Other support occupations in personal services","Operation and Control",,,,
+65229,"Other support occupations in personal services","Quality Control Analysis",,,,
+65229,"Other support occupations in personal services","Technology Design",,,,
+65229,"Other support occupations in personal services",Programming,,,,
+65229,"Other support occupations in personal services","Equipment Selection",,,,
+65229,"Other support occupations in personal services","Equipment Maintenance",,,,
+65229,"Other support occupations in personal services",Installation,,,,
+65229,"Other support occupations in personal services",Repairing,,,,
+65229,"Other support occupations in personal services",Troubleshooting,,,,
 65310,"Light duty cleaners","Service Orientation",63.5,"Very important",46.4285714285714,"Medium proficiency"
 65310,"Light duty cleaners","Active Listening",58.3333333333333,Important,41.0476190476191,"Medium proficiency"
 65310,"Light duty cleaners","Social Perceptiveness",58.3333333333333,Important,40.4285714285714,"Medium proficiency"
@@ -14208,6 +14348,41 @@
 75119,"Other trades helpers and labourers",Science,11.3333333333333,"Less important",7.71428571428572,"Basic proficiency"
 75119,"Other trades helpers and labourers",Programming,8.33333333333333,"Less important",5.38095238095238,"Basic proficiency"
 75119,"Other trades helpers and labourers","Management of Financial Resources",8.25,"Less important",5.95238095238095,"Basic proficiency"
+75200,"Taxi and limousine drivers and chauffeurs","Critical Thinking",,,,
+75200,"Taxi and limousine drivers and chauffeurs","Complex Problem Solving",,,,
+75200,"Taxi and limousine drivers and chauffeurs","Judgment and Decision Making",,,,
+75200,"Taxi and limousine drivers and chauffeurs",Speaking,,,,
+75200,"Taxi and limousine drivers and chauffeurs","Social Perceptiveness",,,,
+75200,"Taxi and limousine drivers and chauffeurs","Active Listening",,,,
+75200,"Taxi and limousine drivers and chauffeurs","Reading Comprehension",,,,
+75200,"Taxi and limousine drivers and chauffeurs",Writing,,,,
+75200,"Taxi and limousine drivers and chauffeurs",Coordination,,,,
+75200,"Taxi and limousine drivers and chauffeurs",Persuasion,,,,
+75200,"Taxi and limousine drivers and chauffeurs","Systems Analysis",,,,
+75200,"Taxi and limousine drivers and chauffeurs","Systems Evaluation",,,,
+75200,"Taxi and limousine drivers and chauffeurs",Monitoring,,,,
+75200,"Taxi and limousine drivers and chauffeurs","Active Learning",,,,
+75200,"Taxi and limousine drivers and chauffeurs","Time Management",,,,
+75200,"Taxi and limousine drivers and chauffeurs","Management of Personnel Resources",,,,
+75200,"Taxi and limousine drivers and chauffeurs",Negotiation,,,,
+75200,"Taxi and limousine drivers and chauffeurs","Management of Financial Resources",,,,
+75200,"Taxi and limousine drivers and chauffeurs","Learning Strategies",,,,
+75200,"Taxi and limousine drivers and chauffeurs",Instructing,,,,
+75200,"Taxi and limousine drivers and chauffeurs","Service Orientation",,,,
+75200,"Taxi and limousine drivers and chauffeurs","Management of Material Resources",,,,
+75200,"Taxi and limousine drivers and chauffeurs",Mathematics,,,,
+75200,"Taxi and limousine drivers and chauffeurs","Operations Analysis",,,,
+75200,"Taxi and limousine drivers and chauffeurs",Science,,,,
+75200,"Taxi and limousine drivers and chauffeurs","Operations Monitoring",,,,
+75200,"Taxi and limousine drivers and chauffeurs","Operation and Control",,,,
+75200,"Taxi and limousine drivers and chauffeurs","Quality Control Analysis",,,,
+75200,"Taxi and limousine drivers and chauffeurs","Technology Design",,,,
+75200,"Taxi and limousine drivers and chauffeurs",Programming,,,,
+75200,"Taxi and limousine drivers and chauffeurs","Equipment Selection",,,,
+75200,"Taxi and limousine drivers and chauffeurs","Equipment Maintenance",,,,
+75200,"Taxi and limousine drivers and chauffeurs",Installation,,,,
+75200,"Taxi and limousine drivers and chauffeurs",Repairing,,,,
+75200,"Taxi and limousine drivers and chauffeurs",Troubleshooting,,,,
 75201,"Delivery service drivers and door-to-door distributors",Speaking,62.4375,"Very important",41.5357142857143,"Medium proficiency"
 75201,"Delivery service drivers and door-to-door distributors","Active Listening",59.375,Important,42.4285714285714,"Medium proficiency"
 75201,"Delivery service drivers and door-to-door distributors","Service Orientation",53.875,Important,39.7142857142857,"Medium proficiency"
@@ -15293,6 +15468,41 @@
 85111,"Oil and gas drilling, servicing and related labourers",Science,6.25,"Less important",3.57142857142857,"Basic proficiency"
 85111,"Oil and gas drilling, servicing and related labourers","Operations Analysis",3,"Less important",1.71428571428571,"Basic proficiency"
 85111,"Oil and gas drilling, servicing and related labourers",Programming,0,"Not required",0,"Not required"
+85120,"Logging and forestry labourers","Critical Thinking",,,,
+85120,"Logging and forestry labourers","Complex Problem Solving",,,,
+85120,"Logging and forestry labourers","Judgment and Decision Making",,,,
+85120,"Logging and forestry labourers",Speaking,,,,
+85120,"Logging and forestry labourers","Social Perceptiveness",,,,
+85120,"Logging and forestry labourers","Active Listening",,,,
+85120,"Logging and forestry labourers","Reading Comprehension",,,,
+85120,"Logging and forestry labourers",Writing,,,,
+85120,"Logging and forestry labourers",Coordination,,,,
+85120,"Logging and forestry labourers",Persuasion,,,,
+85120,"Logging and forestry labourers","Systems Analysis",,,,
+85120,"Logging and forestry labourers","Systems Evaluation",,,,
+85120,"Logging and forestry labourers",Monitoring,,,,
+85120,"Logging and forestry labourers","Active Learning",,,,
+85120,"Logging and forestry labourers","Time Management",,,,
+85120,"Logging and forestry labourers","Management of Personnel Resources",,,,
+85120,"Logging and forestry labourers",Negotiation,,,,
+85120,"Logging and forestry labourers","Management of Financial Resources",,,,
+85120,"Logging and forestry labourers","Learning Strategies",,,,
+85120,"Logging and forestry labourers",Instructing,,,,
+85120,"Logging and forestry labourers","Service Orientation",,,,
+85120,"Logging and forestry labourers","Management of Material Resources",,,,
+85120,"Logging and forestry labourers",Mathematics,,,,
+85120,"Logging and forestry labourers","Operations Analysis",,,,
+85120,"Logging and forestry labourers",Science,,,,
+85120,"Logging and forestry labourers","Operations Monitoring",,,,
+85120,"Logging and forestry labourers","Operation and Control",,,,
+85120,"Logging and forestry labourers","Quality Control Analysis",,,,
+85120,"Logging and forestry labourers","Technology Design",,,,
+85120,"Logging and forestry labourers",Programming,,,,
+85120,"Logging and forestry labourers","Equipment Selection",,,,
+85120,"Logging and forestry labourers","Equipment Maintenance",,,,
+85120,"Logging and forestry labourers",Installation,,,,
+85120,"Logging and forestry labourers",Repairing,,,,
+85120,"Logging and forestry labourers",Troubleshooting,,,,
 85121,"Landscaping and grounds maintenance labourers","Operation and Control",53,Important,37.4285714285714,"Medium proficiency"
 85121,"Landscaping and grounds maintenance labourers","Critical Thinking",47,Important,26.8571428571429,"Basic proficiency"
 85121,"Landscaping and grounds maintenance labourers",Speaking,47,Important,26.8571428571429,"Basic proficiency"
