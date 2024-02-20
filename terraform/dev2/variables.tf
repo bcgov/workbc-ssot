@@ -64,9 +64,9 @@ variable "common_tags" {
   }
 }
 
-variable "service_names" {
+variable "service_names2" {
   description = "List of service names to use as subdomains"
-  default     = ["panda"]
+  default     = ["ssot"]
   type        = list(string)
 }
 
