@@ -19,7 +19,8 @@ resource "aws_lb_listener_rule" "host_based_weighted_routing" {
 
   condition {
     host_header {
-      values = [for sn in var.service_names : "${sn}.*"]
+      #values = [for sn in var.service_names : "${sn}.*"]
+      values = ["testing"]
     }
   }
     
