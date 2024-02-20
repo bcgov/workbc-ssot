@@ -1,16 +1,16 @@
 # alb.tf
 
-data "aws_alb" "main2" {
+data "aws_alb" "main" {
   name = var.alb_name
 }
 
-data "aws_alb_listener" "front_end2" {
-  load_balancer_arn = data.aws_alb.main2.id
+data "aws_alb_listener" "front_end" {
+  load_balancer_arn = data.aws_alb.main.id
   port              = 443
 }
 
 resource "aws_lb_listener_rule" "host_based_weighted_routing" {
-  listener_arn = data.aws_alb_listener.front_end2.arn
+  listener_arn = data.aws_alb_listener.front_end.arn
 
   action {
     type             = "forward"
