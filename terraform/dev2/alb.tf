@@ -1,5 +1,30 @@
 # alb.tf
 
+data "aws_alb" "main2" {
+  name = var.alb_name
+}
+
+data "aws_alb_listener" "front_end2" {
+  load_balancer_arn = data.aws_alb.main2.id
+  port              = 443
+}
+
+resource "aws_lb_listener_rule" "host_based_weighted_routing" {
+  listener_arn = data.aws_alb_listener.front_end2.arn
+
+  action {
+    type             = "forward"
+    target_group_arn = aws_alb_target_group.app.arn
+  }
+
+  condition {
+    host_header {
+      values = [for sn in var.service_names : "${sn}.*"]
+    }
+  }
+    
+}
+
 # Internal Load Balancer
 resource "aws_alb" "main" {
   name = "ssot-lb2"
