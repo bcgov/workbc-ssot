@@ -164,19 +164,31 @@ function output_unit_groups() {
         }
         else {
             // Done with previous NOC: flush it.
-            fputcsv(STDOUT, $current_noc);
+            if (!empty($current_noc)) fputcsv(STDOUT, $current_noc);
 
             // Start a new NOC.
+            // Special cases: 00011 -> 00018, ignore 00012-00015
             $noc2021 = str_pad($row_en[COLUMN_UNIT_GROUPS_NOC_2021], 5, '0', STR_PAD_LEFT);
-            $current_noc = [
-                $noc2021,
-                $row_en[COLUMN_UNIT_GROUPS_NOC_2021_LABEL],
-                $row_fr[COLUMN_UNIT_GROUPS_NOC_2021_LABEL],
-                NOC_TYPE_UNIT_GROUP,
-                $row_en[COLUMN_UNIT_GROUPS_NOC_2021_TEER],
-                substr($noc2021, 0, 2),
-                $noc2016
-            ];
+            if ($noc2021 === '00011') {
+                $noc2021 = '00018';
+                $row_en[COLUMN_UNIT_GROUPS_NOC_2021_LABEL] = 'Senior managers - public and private sector';
+                $row_fr[COLUMN_UNIT_GROUPS_NOC_2021_LABEL] = 'Cadres supérieurs / cadres supérieures - secteurs publique et privé';
+            }
+            if (in_array($noc2021, [
+                '00012', '00013', '00014', '00015'
+            ])) {
+                $current_noc = [];
+            } else {
+                $current_noc = [
+                    $noc2021,
+                    $row_en[COLUMN_UNIT_GROUPS_NOC_2021_LABEL],
+                    $row_fr[COLUMN_UNIT_GROUPS_NOC_2021_LABEL],
+                    NOC_TYPE_UNIT_GROUP,
+                    $row_en[COLUMN_UNIT_GROUPS_NOC_2021_TEER],
+                    substr($noc2021, 0, 3),
+                    $noc2016
+                ];
+            }
         }
         $row++;
     }

@@ -41,5 +41,12 @@ load csv
     $$
 
     after load do
-    $$ comment on table occupational_interests is 'NOC 2021'; $$
+    $$ comment on table nocs is 'NOC 2021 Hierarchy'; $$,
+    $$ comment on column nocs.noc2021 is 'NOC 2021'; $$,
+    $$ comment on column nocs.label_en is 'English label'; $$,
+    $$ comment on column nocs.label_fr is 'French label'; $$,
+    $$ comment on column nocs.type is 'Type: 1 (Broad category), 2 (Major group), 3 (Minor group), 4 (Unit group)'; $$,
+    $$ comment on column nocs.teer_level is 'TEER level'; $$,
+    $$ comment on column nocs.parent_noc is 'Parent NOC'; $$,
+    $$ comment on column nocs.noc2016 is 'Equivalent NOC 2016 codes (comma-separated)'; $$
 ;
