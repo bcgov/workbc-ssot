@@ -375,7 +375,7 @@
 9414,"Machine operators and related workers in food, beverage and associated products processing","Opérateurs / opératrices de machines et personnel assimilé dans la transformation des aliments et boissons et produits connexes",3,,94,961
 9510,"Labourers in processing, manufacturing and utilities","Manoeuvres dans la transformation, la fabrication et les services d'utilité publique",3,,95,
 00010,Legislators,"Membres des corps législatifs",4,0,000,0011
-00018,"Senior managers - public and private sector","Cadres supérieurs / cadres supérieures - secteurs publique et privé",4,0,000,0012
+00018,"Senior managers - public and private sector","Cadres supérieurs / cadres supérieures - secteur public et privé",4,0,000,0012
 10010,"Financial managers","Directeurs financiers / directrices financières",4,0,100,0111
 10011,"Human resources managers","Directeurs / directrices des ressources humaines",4,0,100,0112
 10012,"Purchasing managers","Directeurs / directrices des achats",4,0,100,0113
@@ -885,3 +885,4 @@
 95105,"Labourers in textile processing and cutting","Manoeuvres dans la fabrication et la coupe des produits du textile",4,5,951,"9616,9441,9445"
 95106,"Labourers in food and beverage processing","Manoeuvres dans la transformation des aliments et des boissons",4,5,951,9617
 95107,"Labourers in fish and seafood processing","Manoeuvres dans la transformation du poisson et des fruits de mer",4,5,951,9618
+95109,"Other labourers in processing, manufacturing and utilities","Autres manoeuvres des services de transformation, de fabrication et d'utilité publique",4,5,951,9619

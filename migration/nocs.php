@@ -193,10 +193,8 @@ function output_unit_groups() {
         $row++;
     }
 
-    // Check if we need to flush last NOC.
-    if (str_contains($current_noc[COLUMN_OUTPUT_NOC_2016], ',')) {
-        fputcsv(STDOUT, $current_noc);
-    }
+    // Flush last NOC.
+    if (!empty($current_noc)) fputcsv(STDOUT, $current_noc);
 }
 
 function fopen_or_die($filename) {
