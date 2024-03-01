@@ -172,7 +172,7 @@ function output_unit_groups() {
             if ($noc2021 === '00011') {
                 $noc2021 = '00018';
                 $row_en[COLUMN_UNIT_GROUPS_NOC_2021_LABEL] = 'Senior managers - public and private sector';
-                $row_fr[COLUMN_UNIT_GROUPS_NOC_2021_LABEL] = 'Cadres supérieurs / cadres supérieures - secteurs publique et privé';
+                $row_fr[COLUMN_UNIT_GROUPS_NOC_2021_LABEL] = 'Cadres supérieurs / cadres supérieures - secteur public et privé';
             }
             if (in_array($noc2021, [
                 '00012', '00013', '00014', '00015'
