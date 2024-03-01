@@ -49,15 +49,6 @@ const COLUMN_UNIT_GROUPS_NOC_2021_LABEL = 1;
 const COLUMN_UNIT_GROUPS_NOC_2021_TEER = 2;
 
 // Start output.
-fputcsv(STDOUT, [
-    'NOC 2021',
-    'English label',
-    'French label',
-    'Type',
-    'TEER level',
-    'Parent NOC',
-    'NOC 2016'
-]);
 output_broad_categories();
 output_major_groups();
 output_minor_groups();
