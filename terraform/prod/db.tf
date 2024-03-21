@@ -1,7 +1,7 @@
 # rds
 
 data "aws_rds_cluster" "postgres" {
-  cluster_identifier      = "ceu-postgres-cluster"
+  cluster_identifier      = "workbc-postgres-cluster"
 }
 
 data "aws_secretsmanager_secret_version" "creds" {
