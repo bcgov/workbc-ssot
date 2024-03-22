@@ -1,0 +1,21 @@
+"NAICS_ID","Sector","SectorType","Enabled"
+0,All Industries,,1
+1,Accommodation and Food Services,Services,1
+2,Agriculture and Fishing,Goods,1
+3,"Business, Building and Other Support Services",Services,1
+4,Construction,Goods,1
+5,Educational Services,Services,1
+6,"Finance, Insurance and Real Estate",Services,1
+7,"Fishing, Hunting and Trapping",Goods,0
+8,Forestry and Logging with Support Activities,Goods,1
+9,Health Care and Social Assistance,Services,1
+10,"Information, Culture and Recreation",Services,1
+11,Manufacturing,Goods,1
+12,Utilities,Goods,1
+13,Mining and Oil and Gas Extraction,Goods,1
+14,"Repair, Personal and Non-Profit Services",Services,1
+15,"Professional, Scientific, and Technical Services",Services,1
+16,Public Administration,Services,1
+17,Transportation and Warehousing,Services,1
+18,Wholesale Trade,Services,1
+19,Retail Trade,Services,1

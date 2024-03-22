@@ -4,7 +4,6 @@ load csv
         noc,
         occupation,
         openings,
-        forecasted_annual_employment_growth_pct,
         region
     )
     into postgresql:///ssot
@@ -14,8 +13,7 @@ load csv
         region,
         noc text using (trim-hash noc),
         occupation,
-        openings,
-        forecasted_annual_employment_growth_pct
+        openings
     )
     with
         fields optionally enclosed by '"',
@@ -30,7 +28,6 @@ load csv
         noc text,
         occupation text,
         openings int,
-        forecasted_annual_employment_growth_pct numeric,
         primary key(region, noc)
     );
     $$
@@ -44,10 +41,9 @@ load csv
     $$ update regional_top_occupations set region = 'thompson_okanagan' where region = 'Thompson Okanagan'; $$,
     $$ update regional_top_occupations set region = 'vancouver_island_coast' where region = 'Vancouver Island Coast'; $$,
     $$ update regional_top_occupations set region = 'north_coast_nechako' where region = 'North Coast & Nechako'; $$,
-    $$ comment on table regional_top_occupations is 'Top 10 Occupations by region'; $$,
+    $$ comment on table regional_top_occupations is 'WorkBC Regional Profile Data {2023-2033} > Top 10 Occupations by region'; $$,
     $$ comment on column regional_top_occupations.region is 'Region'; $$,
     $$ comment on column regional_top_occupations.noc is 'NOC'; $$,
     $$ comment on column regional_top_occupations.occupation is 'Occupation'; $$,
-    $$ comment on column regional_top_occupations.openings is 'Job Openings {2022-2032}'; $$,
-    $$ comment on column regional_top_occupations.forecasted_annual_employment_growth_pct is 'Forecasted Average Annual Employment Growth (%) {2022-2032}'; $$
+    $$ comment on column regional_top_occupations.openings is 'Job Openings {2023-2033}'; $$
 ;

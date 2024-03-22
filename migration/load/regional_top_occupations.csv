@@ -1,80 +1,70 @@
-#6421,"Retail Salespersons",25860,1.3,"British Columbia"
-#3012,"Registered Nurses And Registered Psychiatric Nurses",22100,1.4,"British Columbia"
-#0621,"Retail And Wholesale Trade Managers",21810,1.4,"British Columbia"
-#1221,"Administrative Officers",19550,1.3,"British Columbia"
-#3413,"Nurse Aides, Orderlies And Patient Service Associates",18330,2,"British Columbia"
-#6211,"Retail Sales Supervisors",14690,1.2,"British Columbia"
-#1411,"General Office Support Workers",14680,1.2,"British Columbia"
-#2171,"Information Systems Analysts And Consultants",13660,2.9,"British Columbia"
-#2174,"Computer Programmers And Interactive Media Developers",13480,3.6,"British Columbia"
-#6711,"Food Counter Attendants, Kitchen Helpers And Related Support Occupations",12980,1.3,"British Columbia"
-#3012,"Registered Nurses And Registered Psychiatric Nurses",500,0.6,Cariboo
-#7511,"Transport Truck Drivers",490,0.2,Cariboo
-#0621,"Retail And Wholesale Trade Managers",410,0.2,Cariboo
-#4212,"Social And Community Service Workers",410,0.3,Cariboo
-#6421,"Retail Salespersons",400,0.2,Cariboo
-#6322,Cooks,390,1.1,Cariboo
-#1221,"Administrative Officers",380,0.3,Cariboo
-#6211,"Retail Sales Supervisors",360,0.3,Cariboo
-#6733,"Janitors, Caretakers And Building Superintendents",350,0.3,Cariboo
-#6731,"Light Duty Cleaners",340,0.6,Cariboo
-#0621,"Retail And Wholesale Trade Managers",690,0.6,Kootenay
-#6421,"Retail Salespersons",560,0.5,Kootenay
-#3413,"Nurse Aides, Orderlies And Patient Service Associates",470,1.2,Kootenay
-#1221,"Administrative Officers",460,0.3,Kootenay
-#7521,"Heavy Equipment Operators (Except Crane)",430,0,Kootenay
-#4032,"Elementary School And Kindergarten Teachers",410,-0.1,Kootenay
-#7511,"Transport Truck Drivers",410,-0.3,Kootenay
-#0712,"Home Building And Renovation Managers",400,-0.1,Kootenay
-#6733,"Janitors, Caretakers And Building Superintendents",400,0.7,Kootenay
-#3012,"Registered Nurses And Registered Psychiatric Nurses",370,0.5,Kootenay
-#6421,"Retail Salespersons",16830,1.3,"Mainland South West"
-#3012,"Registered Nurses And Registered Psychiatric Nurses",13930,1.3,"Mainland South West"
-#0621,"Retail And Wholesale Trade Managers",13830,1.5,"Mainland South West"
-#1221,"Administrative Officers",11680,1.3,"Mainland South West"
-#2174,"Computer Programmers And Interactive Media Developers",10780,3.5,"Mainland South West"
-#2171,"Information Systems Analysts And Consultants",10360,2.9,"Mainland South West"
-#3413,"Nurse Aides, Orderlies And Patient Service Associates",10020,1.8,"Mainland South West"
-#1411,"General Office Support Workers",9630,1.2,"Mainland South West"
-#6411,"Sales And Account Representatives - Wholesale Trade (Non-Technical)",9310,1,"Mainland South West"
-#6211,"Retail Sales Supervisors",9160,1.3,"Mainland South West"
-#7511,"Transport Truck Drivers",680,2.5,"North Coast & Nechako"
-#7451,"Longshore Workers",310,4,"North Coast & Nechako"
-#6322,Cooks,290,1.7,"North Coast & Nechako"
-#6733,"Janitors, Caretakers And Building Superintendents",290,1.2,"North Coast & Nechako"
-#0621,"Retail And Wholesale Trade Managers",260,0.8,"North Coast & Nechako"
-#6421,"Retail Salespersons",260,0.8,"North Coast & Nechako"
-#7311,"Construction Millwrights And Industrial Mechanics",250,1.3,"North Coast & Nechako"
-#1221,"Administrative Officers",240,1.3,"North Coast & Nechako"
-#1311,"Accounting Technicians And Bookkeepers",230,0.9,"North Coast & Nechako"
-#1411,"General Office Support Workers",220,1.2,"North Coast & Nechako"
-#7511,"Transport Truck Drivers",440,0.7,"North East"
-#9232,"Petroleum, Gas And Chemical Process Operators",230,1.3,"North East"
-#1221,"Administrative Officers",220,0.5,"North East"
-#0621,"Retail And Wholesale Trade Managers",200,0.1,"North East"
-#7521,"Heavy Equipment Operators (Except Crane)",200,0.6,"North East"
-#1311,"Accounting Technicians And Bookkeepers",190,0.6,"North East"
-#6733,"Janitors, Caretakers And Building Superintendents",190,0.2,"North East"
-#3413,"Nurse Aides, Orderlies And Patient Service Associates",180,2.8,"North East"
-#6421,"Retail Salespersons",170,0,"North East"
-#1411,"General Office Support Workers",160,0.3,"North East"
-#6421,"Retail Salespersons",3470,1.6,"Thompson Okanagan"
-#3413,"Nurse Aides, Orderlies And Patient Service Associates",3100,2.4,"Thompson Okanagan"
-#0621,"Retail And Wholesale Trade Managers",2740,1.6,"Thompson Okanagan"
-#3012,"Registered Nurses And Registered Psychiatric Nurses",2710,2,"Thompson Okanagan"
-#1221,"Administrative Officers",2670,1.3,"Thompson Okanagan"
-#7511,"Transport Truck Drivers",2360,1.2,"Thompson Okanagan"
-#6711,"Food Counter Attendants, Kitchen Helpers And Related Support Occupations",2250,1.9,"Thompson Okanagan"
-#6322,Cooks,1850,2.1,"Thompson Okanagan"
-#6611,Cashiers,1810,1.6,"Thompson Okanagan"
-#6731,"Light Duty Cleaners",1800,2.3,"Thompson Okanagan"
-#3012,"Registered Nurses And Registered Psychiatric Nurses",4320,1.4,"Vancouver Island Coast"
-#6421,"Retail Salespersons",4180,1.3,"Vancouver Island Coast"
-#3413,"Nurse Aides, Orderlies And Patient Service Associates",4130,2.3,"Vancouver Island Coast"
-#1221,"Administrative Officers",3870,1.5,"Vancouver Island Coast"
-#0621,"Retail And Wholesale Trade Managers",3680,1.4,"Vancouver Island Coast"
-#6211,"Retail Sales Supervisors",2940,1.3,"Vancouver Island Coast"
-#6733,"Janitors, Caretakers And Building Superintendents",2830,1.8,"Vancouver Island Coast"
-#6731,"Light Duty Cleaners",2750,2.1,"Vancouver Island Coast"
-#6711,"Food Counter Attendants, Kitchen Helpers And Related Support Occupations",2650,1.4,"Vancouver Island Coast"
-#6322,Cooks,2610,1.7,"Vancouver Island Coast"
+#60020,"Retail and wholesale trade managers",980,Cariboo
+#64100,"Retail salespersons and visual merchandisers",920,Cariboo
+#31301,"Registered nurses and registered psychiatric nurses",630,Cariboo
+#73300,"Transport truck drivers",530,Cariboo
+#42201,"Social and community service workers",530,Cariboo
+#13100,"Administrative officers",510,Cariboo
+#33102,"Nurse aides, orderlies and patient service associates",490,Cariboo
+#65100,Cashiers,470,Cariboo
+#65310,"Light duty cleaners",340,Cariboo
+#72310,Carpenters,330,Cariboo
+#60020,"Retail and wholesale trade managers",1050,Kootenay
+#73300,"Transport truck drivers",980,Kootenay
+#13100,"Administrative officers",680,Kootenay
+#73400,"Heavy equipment operators",650,Kootenay
+#33102,"Nurse aides, orderlies and patient service associates",630,Kootenay
+#64100,"Retail salespersons and visual merchandisers",620,Kootenay
+#31301,"Registered nurses and registered psychiatric nurses",490,Kootenay
+#42201,"Social and community service workers",400,Kootenay
+#41221,"Elementary school and kindergarten teachers",380,Kootenay
+#65201,"Food counter attendants, kitchen helpers and related support occupations",370,Kootenay
+#64100,"Retail salespersons and visual merchandisers",16940,"Mainland South West"
+#60020,"Retail and wholesale trade managers",16930,"Mainland South West"
+#31301,"Registered nurses and registered psychiatric nurses",15840,"Mainland South West"
+#00018,"Senior managers - public and private sector",13630,"Mainland South West"
+#33102,"Nurse aides, orderlies and patient service associates",12690,"Mainland South West"
+#65201,"Food counter attendants, kitchen helpers and related support occupations",10890,"Mainland South West"
+#21231,"Software engineers and designers",10740,"Mainland South West"
+#13100,"Administrative officers",10220,"Mainland South West"
+#75101,"Material handlers",8120,"Mainland South West"
+#42201,"Social and community service workers",8060,"Mainland South West"
+#73300,"Transport truck drivers",950,"North Coast & Nechako"
+#60020,"Retail and wholesale trade managers",500,"North Coast & Nechako"
+#73400,"Heavy equipment operators",350,"North Coast & Nechako"
+#64100,"Retail salespersons and visual merchandisers",350,"North Coast & Nechako"
+#75100,"Longshore workers",320,"North Coast & Nechako"
+#75110,"Construction trades helpers and labourers",320,"North Coast & Nechako"
+#72310,Carpenters,290,"North Coast & Nechako"
+#13100,"Administrative officers",270,"North Coast & Nechako"
+#75101,"Material handlers",270,"North Coast & Nechako"
+#73310,"Railway and yard locomotive engineers",260,"North Coast & Nechako"
+#73300,"Transport truck drivers",570,"North East"
+#60020,"Retail and wholesale trade managers",400,"North East"
+#64100,"Retail salespersons and visual merchandisers",340,"North East"
+#13100,"Administrative officers",270,"North East"
+#93101,"Central control and process operators, petroleum, gas and chemical processing",270,"North East"
+#12200,"Accounting technicians and bookkeepers",220,"North East"
+#65201,"Food counter attendants, kitchen helpers and related support occupations",210,"North East"
+#65310,"Light duty cleaners",210,"North East"
+#13110,"Administrative assistants",210,"North East"
+#73400,"Heavy equipment operators",190,"North East"
+#60020,"Retail and wholesale trade managers",4610,"Thompson Okanagan"
+#33102,"Nurse aides, orderlies and patient service associates",3570,"Thompson Okanagan"
+#64100,"Retail salespersons and visual merchandisers",3400,"Thompson Okanagan"
+#31301,"Registered nurses and registered psychiatric nurses",3040,"Thompson Okanagan"
+#13100,"Administrative officers",2820,"Thompson Okanagan"
+#73300,"Transport truck drivers",2550,"Thompson Okanagan"
+#00018,"Senior managers - public and private sector",2240,"Thompson Okanagan"
+#42201,"Social and community service workers",2140,"Thompson Okanagan"
+#41221,"Elementary school and kindergarten teachers",1870,"Thompson Okanagan"
+#65310,"Light duty cleaners",1790,"Thompson Okanagan"
+#60020,"Retail and wholesale trade managers",5570,"Vancouver Island Coast"
+#64100,"Retail salespersons and visual merchandisers",5420,"Vancouver Island Coast"
+#33102,"Nurse aides, orderlies and patient service associates",4780,"Vancouver Island Coast"
+#31301,"Registered nurses and registered psychiatric nurses",4460,"Vancouver Island Coast"
+#13100,"Administrative officers",3760,"Vancouver Island Coast"
+#42201,"Social and community service workers",3430,"Vancouver Island Coast"
+#00018,"Senior managers - public and private sector",3340,"Vancouver Island Coast"
+#65310,"Light duty cleaners",2700,"Vancouver Island Coast"
+#42202,"Early childhood educators and assistants",2310,"Vancouver Island Coast"
+#65201,"Food counter attendants, kitchen helpers and related support occupations",2290,"Vancouver Island Coast"
