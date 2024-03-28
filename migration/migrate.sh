@@ -58,8 +58,8 @@ ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/top_1
 cat "data/top_10_careers_by_aggregate_industry_2023__Jan22_24-Sheet 1.csv" | php csv_extract.php --range 2 > load/openings_industry.csv
 
 # Career Trek
-ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/WorkBC_Career_Trek_2023__Feb15_24.xlsx" "data/WorkBC_Career_Trek_2023__Feb15_24-%s.csv"
-cat "data/WorkBC_Career_Trek_2023__Feb15_24-LMO.csv" | php csv_extract.php --range 2 > load/career_trek.csv
+ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/WorkBC_Career_Trek_2023__Mar27_24.xlsx" "data/WorkBC_Career_Trek_2023__Mar27_24-%s.csv"
+cat "data/WorkBC_Career_Trek_2023__Mar27_24-LMO.csv" | php csv_extract.php --range 2 > load/career_trek.csv
 
 # NOC 2021 Concordance
 php nocs.php "data/NOC2021/" > load/nocs.csv
