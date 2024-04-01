@@ -1,1500 +1,1536 @@
-#0011,Primary,"Enterprising (persuaders)"
-#0011,Secondary," "
-#0011,Tertiary," "
-#0012,Primary,"Enterprising (persuaders)"
-#0012,Secondary," "
-#0012,Tertiary," "
-#0013,Primary,"Enterprising (persuaders)"
-#0013,Secondary," "
-#0013,Tertiary," "
-#0014,Primary,"Enterprising (persuaders)"
-#0014,Secondary," "
-#0014,Tertiary," "
-#0015,Primary,"Enterprising (persuaders)"
-#0015,Secondary," "
-#0015,Tertiary," "
-#0016,Primary,"Enterprising (persuaders)"
-#0016,Secondary," "
-#0016,Tertiary," "
-#0111,Primary,"Enterprising (persuaders)"
-#0111,Secondary,"Conventional (organizers)"
-#0111,Tertiary," "
-#0112,Primary,"Enterprising (persuaders)"
-#0112,Secondary," "
-#0112,Tertiary," "
-#0113,Primary,"Enterprising (persuaders)"
-#0113,Secondary," "
-#0113,Tertiary," "
-#0114,Primary,"Enterprising (persuaders)"
-#0114,Secondary," "
-#0114,Tertiary," "
-#0121,Primary,"Enterprising (persuaders)"
-#0121,Secondary," "
-#0121,Tertiary," "
-#0122,Primary,"Enterprising (persuaders)"
-#0122,Secondary," "
-#0122,Tertiary," "
-#0124,Primary,"Enterprising (persuaders)"
-#0124,Secondary," "
-#0124,Tertiary," "
-#0125,Primary,"Enterprising (persuaders)"
-#0125,Secondary," "
-#0125,Tertiary," "
-#0131,Primary,"Enterprising (persuaders)"
-#0131,Secondary," "
-#0131,Tertiary," "
-#0132,Primary,"Enterprising (persuaders)"
-#0132,Secondary," "
-#0132,Tertiary," "
-#0211,Primary,"Enterprising (persuaders)"
-#0211,Secondary," "
-#0211,Tertiary," "
-#0212,Primary,"Enterprising (persuaders)"
-#0212,Secondary," "
-#0212,Tertiary," "
-#0213,Primary,"Enterprising (persuaders)"
-#0213,Secondary," "
-#0213,Tertiary," "
-#0311,Primary,"Enterprising (persuaders)"
-#0311,Secondary," "
-#0311,Tertiary," "
-#0411,Primary,"Enterprising (persuaders)"
-#0411,Secondary," "
-#0411,Tertiary," "
-#0412,Primary,"Enterprising (persuaders)"
-#0412,Secondary," "
-#0412,Tertiary," "
-#0413,Primary,"Enterprising (persuaders)"
-#0413,Secondary," "
-#0413,Tertiary," "
-#0414,Primary,"Enterprising (persuaders)"
-#0414,Secondary," "
-#0414,Tertiary," "
-#0421,Primary,"Enterprising (persuaders)"
-#0421,Secondary," "
-#0421,Tertiary," "
-#0422,Primary,"Enterprising (persuaders)"
-#0422,Secondary," "
-#0422,Tertiary," "
-#0423,Primary,"Enterprising (persuaders)"
-#0423,Secondary," "
-#0423,Tertiary," "
-#0431,Primary,"Enterprising (persuaders)"
-#0431,Secondary," "
-#0431,Tertiary," "
-#0432,Primary,"Enterprising (persuaders)"
-#0432,Secondary," "
-#0432,Tertiary," "
-#0433,Primary,"Conventional (organizers)"
-#0433,Secondary,"Realistic (doers)"
-#0434,Tertiary,
-#0511,Primary,"Enterprising (persuaders)"
-#0511,Secondary," "
-#0511,Tertiary," "
-#0512,Primary,"Enterprising (persuaders)"
-#0512,Secondary," "
-#0512,Tertiary," "
-#0513,Primary,"Enterprising (persuaders)"
-#0513,Secondary," "
-#0513,Tertiary," "
-#0601,Primary,"Enterprising (persuaders)"
-#0601,Secondary," "
-#0601,Tertiary," "
-#0621,Primary,"Enterprising (persuaders)"
-#0621,Secondary," "
-#0621,Tertiary," "
-#0631,Primary,"Enterprising (persuaders)"
-#0631,Secondary," "
-#0631,Tertiary," "
-#0632,Primary,"Enterprising (persuaders)"
-#0632,Secondary," "
-#0632,Tertiary," "
-#0651,Primary,"Enterprising (persuaders)"
-#0651,Secondary," "
-#0651,Tertiary," "
-#0711,Primary,"Enterprising (persuaders)"
-#0711,Secondary," "
-#0711,Tertiary," "
-#0712,Primary,"Enterprising (persuaders)"
-#0712,Secondary," "
-#0712,Tertiary," "
-#0714,Primary,"Enterprising (persuaders)"
-#0714,Secondary," "
-#0714,Tertiary," "
-#0731,Primary,"Enterprising (persuaders)"
-#0731,Secondary," "
-#0731,Tertiary," "
-#0811,Primary,"Enterprising (persuaders)"
-#0811,Secondary," "
-#0811,Tertiary," "
-#0821,Primary,"Realistic (doers)"
-#0821,Secondary," "
-#0821,Tertiary," "
-#0822,Primary,"Realistic (doers)"
-#0822,Secondary," "
-#0822,Tertiary," "
-#0823,Primary,"Realistic (doers)"
-#0823,Secondary,"Enterprising (persuaders)"
-#0823,Tertiary," "
-#0911,Primary,"Enterprising (persuaders)"
-#0911,Secondary,"Conventional (organizers)"
-#0911,Tertiary," "
-#0912,Primary,"Enterprising (persuaders)"
-#0912,Secondary," "
-#0912,Tertiary," "
-#1111,Primary,"Conventional (organizers)"
-#1111,Secondary," "
-#1111,Tertiary," "
-#1112,Primary,"Conventional (organizers)"
-#1112,Secondary,"Enterprising (persuaders)"
-#1112,Tertiary," "
-#1113,Primary,"Enterprising (persuaders)"
-#1113,Secondary," "
-#1113,Tertiary," "
-#1114,Primary,"Enterprising (persuaders)"
-#1114,Secondary,"Conventional (organizers)"
-#1114,Tertiary," "
-#1121,Primary,"Social (helpers)"
-#1121,Secondary,"Enterprising (persuaders)"
-#1121,Tertiary,"Conventional (organizers)"
-#1122,Primary,"Conventional (organizers)"
-#1122,Secondary,"Investigative (thinkers)"
-#1122,Tertiary,"Enterprising (persuaders)"
-#1123,Primary,"Enterprising (persuaders)"
-#1123,Secondary," "
-#1123,Tertiary," "
-#1211,Primary,"Conventional (organizers)"
-#1211,Secondary,"Enterprising (persuaders)"
-#1211,Tertiary," "
-#1212,Primary,"Enterprising (persuaders)"
-#1212,Secondary,"Conventional (organizers)"
-#1212,Tertiary," "
-#1213,Primary,"Conventional (organizers)"
-#1213,Secondary," "
-#1213,Tertiary," "
-#1214,Primary,"Enterprising (persuaders)"
-#1214,Secondary,"Conventional (organizers)"
-#1214,Tertiary," "
-#1215,Primary,"Conventional (organizers)"
-#1215,Secondary,"Enterprising (persuaders)"
-#1215,Tertiary," "
-#1221,Primary,"Conventional (organizers)"
-#1221,Secondary," "
-#1221,Tertiary," "
-#1222,Primary,"Conventional (organizers)"
-#1222,Secondary," "
-#1222,Tertiary," "
-#1223,Primary,"Enterprising (persuaders)"
-#1223,Secondary," "
-#1223,Tertiary," "
-#1224,Primary,"Enterprising (persuaders)"
-#1224,Secondary," "
-#1224,Tertiary," "
-#1225,Primary,"Enterprising (persuaders)"
-#1225,Secondary,"Conventional (organizers)"
-#1225,Tertiary," "
-#1226,Primary,"Enterprising (persuaders)"
-#1226,Secondary," "
-#1226,Tertiary," "
-#1227,Primary,"Conventional (organizers)"
-#1227,Secondary,"Enterprising (persuaders)"
-#1227,Tertiary," "
-#1228,Primary,"Conventional (organizers)"
-#1228,Secondary,"Enterprising (persuaders)"
-#1228,Tertiary," "
-#1241,Primary,"Conventional (organizers)"
-#1241,Secondary," "
-#1241,Tertiary," "
-#1242,Primary,"Conventional (organizers)"
-#1242,Secondary," "
-#1242,Tertiary," "
-#1243,Primary,"Conventional (organizers)"
-#1243,Secondary," "
-#1243,Tertiary," "
-#1251,Primary,"Conventional (organizers)"
-#1251,Secondary," "
-#1251,Tertiary," "
-#1252,Primary,"Conventional (organizers)"
-#1252,Secondary," "
-#1252,Tertiary," "
-#1253,Primary,"Conventional (organizers)"
-#1253,Secondary,"Realistic (doers)"
-#1253,Tertiary," "
-#1254,Primary,"Conventional (organizers)"
-#1254,Secondary,"Investigative (thinkers)"
-#1254,Tertiary," "
-#1311,Primary,"Conventional (organizers)"
-#1311,Secondary," "
-#1311,Tertiary," "
-#1312,Primary,"Conventional (organizers)"
-#1312,Secondary," "
-#1312,Tertiary," "
-#1313,Primary,"Enterprising (persuaders)"
-#1313,Secondary,"Conventional (organizers)"
-#1313,Tertiary," "
-#1314,Primary,"Conventional (organizers)"
-#1314,Secondary," "
-#1314,Tertiary," "
-#1315,Primary,"Conventional (organizers)"
-#1315,Secondary,"Enterprising (persuaders)"
-#1315,Tertiary," "
-#1411,Primary,"Conventional (organizers)"
-#1411,Secondary," "
-#1411,Tertiary," "
-#1414,Primary,"Conventional (organizers)"
-#1414,Secondary," "
-#1414,Tertiary," "
-#1415,Primary,"Conventional (organizers)"
-#1415,Secondary," "
-#1415,Tertiary," "
-#1416,Primary,"Conventional (organizers)"
-#1416,Secondary,"Enterprising (persuaders)"
-#1416,Tertiary," "
-#1422,Primary,"Conventional (organizers)"
-#1422,Secondary," "
-#1422,Tertiary," "
-#1423,Primary,"Realistic (doers)"
-#1423,Secondary,"Conventional (organizers)"
-#1423,Tertiary,"Artistic (creators)"
-#1431,Primary,"Conventional (organizers)"
-#1431,Secondary," "
-#1431,Tertiary," "
-#1432,Primary,"Conventional (organizers)"
-#1432,Secondary," "
-#1432,Tertiary," "
-#1434,Primary,"Conventional (organizers)"
-#1434,Secondary," "
-#1434,Tertiary," "
-#1435,Primary,"Enterprising (persuaders)"
-#1435,Secondary,"Conventional (organizers)"
-#1435,Tertiary," "
-#1451,Primary,"Conventional (organizers)"
-#1451,Secondary," "
-#1451,Tertiary," "
-#1452,Primary,"Conventional (organizers)"
-#1452,Secondary," "
-#1452,Tertiary," "
-#1454,Primary,"Conventional (organizers)"
-#1454,Secondary," "
-#1454,Tertiary," "
-#1511,Primary,"Conventional (organizers)"
-#1511,Secondary," "
-#1511,Tertiary," "
-#1512,Primary,"Conventional (organizers)"
-#1512,Secondary,"Realistic (doers)"
-#1512,Tertiary," "
-#1513,Primary,"Realistic (doers)"
-#1513,Secondary," "
-#1513,Tertiary," "
-#1521,Primary,"Conventional (organizers)"
-#1521,Secondary," "
-#1521,Tertiary," "
-#1522,Primary,"Conventional (organizers)"
-#1522,Secondary," "
-#1522,Tertiary," "
-#1523,Primary,"Conventional (organizers)"
-#1523,Secondary," "
-#1523,Tertiary," "
-#1524,Primary,"Conventional (organizers)"
-#1524,Secondary," "
-#1524,Tertiary," "
-#1525,Primary,"Conventional (organizers)"
-#1525,Secondary," "
-#1525,Tertiary," "
-#1526,Primary,"Conventional (organizers)"
-#1526,Secondary," "
-#1526,Tertiary," "
-#2111,Primary,"Investigative (thinkers)"
-#2111,Secondary," "
-#2111,Tertiary," "
-#2112,Primary,"Investigative (thinkers)"
-#2112,Secondary," "
-#2112,Tertiary," "
-#2113,Primary,"Investigative (thinkers)"
-#2113,Secondary," "
-#2113,Tertiary," "
-#2114,Primary,"Investigative (thinkers)"
-#2114,Secondary," "
-#2114,Tertiary," "
-#2115,Primary,"Investigative (thinkers)"
-#2115,Secondary,"Realistic (doers)"
-#2115,Tertiary," "
-#2121,Primary,"Investigative (thinkers)"
-#2121,Secondary," "
-#2121,Tertiary," "
-#2122,Primary,"Realistic (doers)"
-#2122,Secondary,"Investigative (thinkers)"
-#2122,Tertiary," "
-#2123,Primary,"Realistic (doers)"
-#2123,Secondary,"Investigative (thinkers)"
-#2123,Tertiary," "
-#2131,Primary,"Investigative (thinkers)"
-#2131,Secondary,"Realistic (doers)"
-#2131,Tertiary," "
-#2132,Primary,"Investigative (thinkers)"
-#2132,Secondary,"Realistic (doers)"
-#2132,Tertiary," "
-#2133,Primary,"Investigative (thinkers)"
-#2133,Secondary,"Realistic (doers)"
-#2133,Tertiary," "
-#2134,Primary,"Investigative (thinkers)"
-#2134,Secondary,"Realistic (doers)"
-#2134,Tertiary," "
-#2141,Primary,"Investigative (thinkers)"
-#2141,Secondary," "
-#2141,Tertiary," "
-#2142,Primary,"Investigative (thinkers)"
-#2142,Secondary," "
-#2142,Tertiary," "
-#2143,Primary,"Investigative (thinkers)"
-#2143,Secondary," "
-#2143,Tertiary," "
-#2144,Primary,"Realistic (doers)"
-#2144,Secondary,"Investigative (thinkers)"
-#2144,Tertiary," "
-#2145,Primary,"Investigative (thinkers)"
-#2145,Secondary," "
-#2145,Tertiary," "
-#2146,Primary,"Investigative (thinkers)"
-#2146,Secondary,"Realistic (doers)"
-#2146,Tertiary," "
-#2147,Primary,"Realistic (doers)"
-#2147,Secondary,"Investigative (thinkers)"
-#2147,Tertiary," "
-#2148,Primary,"Investigative (thinkers)"
-#2148,Secondary,"Realistic (doers)"
-#2148,Tertiary," "
-#2151,Primary,"Artistic (creators)"
-#2151,Secondary," "
-#2151,Tertiary," "
-#2152,Primary,"Artistic (creators)"
-#2152,Secondary,"Investigative (thinkers)"
-#2152,Tertiary," "
-#2153,Primary,"Investigative (thinkers)"
-#2153,Secondary," "
-#2153,Tertiary," "
-#2154,Primary,"Realistic (doers)"
-#2154,Secondary,"Conventional (organizers)"
-#2154,Tertiary,"Investigative (thinkers)"
-#2161,Primary,"Investigative (thinkers)"
-#2161,Secondary,"Conventional (organizers)"
-#2161,Tertiary," "
-#2171,Primary,"Investigative (thinkers)"
-#2171,Secondary,"Conventional (organizers)"
-#2171,Tertiary," "
-#2172,Primary,"Conventional (organizers)"
-#2172,Secondary," "
-#2172,Tertiary," "
-#2173,Primary,"Investigative (thinkers)"
-#2173,Secondary," "
-#2173,Tertiary," "
-#2174,Primary,"Investigative (thinkers)"
-#2174,Secondary,"Conventional (organizers)"
-#2174,Tertiary," "
-#2175,Primary,"Artistic (creators)"
-#2175,Secondary,"Investigative (thinkers)"
-#2175,Tertiary,"Conventional (organizers)"
-#2211,Primary,"Realistic (doers)"
-#2211,Secondary,"Investigative (thinkers)"
-#2211,Tertiary," "
-#2212,Primary,"Realistic (doers)"
-#2212,Secondary,"Investigative (thinkers)"
-#2212,Tertiary," "
-#2221,Primary,"Realistic (doers)"
-#2221,Secondary," "
-#2221,Tertiary," "
-#2222,Primary,"Realistic (doers)"
-#2222,Secondary," "
-#2222,Tertiary," "
-#2223,Primary,"Realistic (doers)"
-#2223,Secondary," "
-#2223,Tertiary," "
-#2224,Primary,"Realistic (doers)"
-#2224,Secondary,"Investigative (thinkers)"
-#2224,Tertiary," "
-#2225,Primary,"Realistic (doers)"
-#2225,Secondary," "
-#2225,Tertiary," "
-#2231,Primary,"Realistic (doers)"
-#2231,Secondary,"Conventional (organizers)"
-#2231,Tertiary," "
-#2232,Primary,"Realistic (doers)"
-#2232,Secondary," "
-#2232,Tertiary," "
-#2233,Primary,"Realistic (doers)"
-#2233,Secondary," "
-#2233,Tertiary," "
-#2234,Primary,"Realistic (doers)"
-#2234,Secondary,"Conventional (organizers)"
-#2234,Tertiary," "
-#2241,Primary,"Realistic (doers)"
-#2241,Secondary," "
-#2241,Tertiary," "
-#2242,Primary,"Realistic (doers)"
-#2242,Secondary," "
-#2242,Tertiary," "
-#2243,Primary,"Realistic (doers)"
-#2243,Secondary," "
-#2243,Tertiary," "
-#2244,Primary,"Realistic (doers)"
-#2244,Secondary," "
-#2244,Tertiary," "
-#2251,Primary,"Realistic (doers)"
-#2251,Secondary," "
-#2251,Tertiary," "
-#2252,Primary,"Artistic (creators)"
-#2252,Secondary," "
-#2252,Tertiary," "
-#2253,Primary,"Realistic (doers)"
-#2253,Secondary," "
-#2253,Tertiary," "
-#2254,Primary,"Realistic (doers)"
-#2254,Secondary," "
-#2254,Tertiary," "
-#2255,Primary,"Realistic (doers)"
-#2255,Secondary,"Investigative (thinkers)"
-#2255,Tertiary,"Conventional (organizers)"
-#2261,Primary,"Realistic (doers)"
-#2261,Secondary," "
-#2261,Tertiary," "
-#2262,Primary,"Realistic (doers)"
-#2262,Secondary," "
-#2262,Tertiary," "
-#2263,Primary,"Realistic (doers)"
-#2263,Secondary,"Conventional (organizers)"
-#2263,Tertiary," "
-#2264,Primary,"Realistic (doers)"
-#2264,Secondary,"Conventional (organizers)"
-#2264,Tertiary," "
-#2271,Primary,"Realistic (doers)"
-#2271,Secondary," "
-#2271,Tertiary," "
-#2272,Primary,"Enterprising (persuaders)"
-#2272,Secondary,"Conventional (organizers)"
-#2272,Tertiary," "
-#2273,Primary,"Enterprising (persuaders)"
-#2273,Secondary,"Realistic (doers)"
-#2273,Tertiary," "
-#2274,Primary,"Enterprising (persuaders)"
-#2274,Secondary,"Realistic (doers)"
-#2274,Tertiary,"Conventional (organizers)"
-#2275,Primary,"Conventional (organizers)"
-#2275,Secondary," "
-#2275,Tertiary," "
-#2281,Primary,"Realistic (doers)"
-#2281,Secondary,"Conventional (organizers)"
-#2281,Tertiary," "
-#2282,Primary,"Realistic (doers)"
-#2282,Secondary,"Conventional (organizers)"
-#2282,Tertiary,"Investigative (thinkers)"
-#2283,Primary,"Investigative (thinkers)"
-#2283,Secondary,"Conventional (organizers)"
-#2283,Tertiary," "
-#3011,Primary,"Investigative (thinkers)"
-#3011,Secondary,"Social (helpers)"
-#3011,Tertiary," "
-#3012,Primary,"Investigative (thinkers)"
-#3012,Secondary,"Social (helpers)"
-#3012,Tertiary," "
-#3111,Primary,"Investigative (thinkers)"
-#3111,Secondary," "
-#3111,Tertiary," "
-#3112,Primary,"Investigative (thinkers)"
-#3112,Secondary," "
-#3112,Tertiary," "
-#3113,Primary,"Investigative (thinkers)"
-#3113,Secondary,"Realistic (doers)"
-#3113,Tertiary," "
-#3114,Primary,"Investigative (thinkers)"
-#3114,Secondary," "
-#3114,Tertiary," "
-#3121,Primary,"Investigative (thinkers)"
-#3121,Secondary,"Social (helpers)"
-#3121,Tertiary,"Realistic (doers)"
-#3122,Primary,"Social (helpers)"
-#3122,Secondary," "
-#3122,Tertiary," "
-#3124,Primary,"Social (helpers)"
-#3124,Secondary," "
-#3124,Tertiary," "
-#3125,Primary,"Social (helpers)"
-#3125,Secondary,"Investigative (thinkers)"
-#3125,Tertiary," "
-#3131,Primary,"Investigative (thinkers)"
-#3131,Secondary," "
-#3131,Tertiary," "
-#3132,Primary,"Investigative (thinkers)"
-#3132,Secondary,"Social (helpers)"
-#3132,Tertiary," "
-#3141,Primary,"Social (helpers)"
-#3141,Secondary,"Investigative (thinkers)"
-#3141,Tertiary," "
-#3142,Primary,"Social (helpers)"
-#3142,Secondary," "
-#3142,Tertiary," "
-#3143,Primary,"Social (helpers)"
-#3143,Secondary,"Investigative (thinkers)"
-#3143,Tertiary," "
-#3144,Primary,"Social (helpers)"
-#3144,Secondary,"Investigative (thinkers)"
-#3144,Tertiary," "
-#3211,Primary,"Investigative (thinkers)"
-#3211,Secondary,"Realistic (doers)"
-#3211,Tertiary," "
-#3212,Primary,"Realistic (doers)"
-#3212,Secondary,"Conventional (organizers)"
-#3212,Tertiary," "
-#3213,Primary,"Realistic (doers)"
-#3213,Secondary," "
-#3213,Tertiary," "
-#3214,Primary,"Social (helpers)"
-#3214,Secondary," "
-#3214,Tertiary," "
-#3215,Primary,"Realistic (doers)"
-#3215,Secondary,"Social (helpers)"
-#3215,Tertiary," "
-#3216,Primary,"Realistic (doers)"
-#3216,Secondary,"Social (helpers)"
-#3216,Tertiary," "
-#3217,Primary,"Realistic (doers)"
-#3217,Secondary,"Social (helpers)"
-#3217,Tertiary," "
-#3219,Primary,"Realistic (doers)"
-#3219,Secondary,"Conventional (organizers)"
-#3219,Tertiary," "
-#3221,Primary,"Realistic (doers)"
-#3221,Secondary,"Investigative (thinkers)"
-#3221,Tertiary,"Social (helpers)"
-#3222,Primary,"Realistic (doers)"
-#3222,Secondary,"Social (helpers)"
-#3222,Tertiary,"Conventional (organizers)"
-#3223,Primary,"Realistic (doers)"
-#3223,Secondary,"Investigative (thinkers)"
-#3223,Tertiary,"Social (helpers)"
-#3231,Primary,"Enterprising (persuaders)"
-#3231,Secondary,"Conventional (organizers)"
-#3231,Tertiary," "
-#3232,Primary,"Social (helpers)"
-#3232,Secondary," "
-#3232,Tertiary," "
-#3233,Primary,"Social (helpers)"
-#3233,Secondary," "
-#3233,Tertiary," "
-#3234,Primary,"Social (helpers)"
-#3234,Secondary," "
-#3234,Tertiary," "
-#3236,Primary,"Social (helpers)"
-#3236,Secondary," "
-#3236,Tertiary," "
-#3237,Primary,"Social (helpers)"
-#3237,Secondary,"Realistic (doers)"
-#3237,Tertiary," "
-#3411,Primary,"Realistic (doers)"
-#3411,Secondary,"Conventional (organizers)"
-#3411,Tertiary,"Social (helpers)"
-#3413,Primary,"Social (helpers)"
-#3413,Secondary," "
-#3413,Tertiary," "
-#3414,Primary,"Realistic (doers)"
-#3414,Secondary,"Conventional (organizers)"
-#3414,Tertiary," "
-#4011,Primary,"Social (helpers)"
-#4011,Secondary," "
-#4011,Tertiary," "
-#4012,Primary,"Social (helpers)"
-#4012,Secondary," "
-#4012,Tertiary," "
-#4021,Primary,"Social (helpers)"
-#4021,Secondary," "
-#4021,Tertiary," "
-#4031,Primary,"Social (helpers)"
-#4031,Secondary," "
-#4031,Tertiary," "
-#4032,Primary,"Social (helpers)"
-#4032,Secondary," "
-#4032,Tertiary," "
-#4033,Primary,"Social (helpers)"
-#4033,Secondary," "
-#4033,Tertiary," "
-#4111,Primary,"Enterprising (persuaders)"
-#4111,Secondary," "
-#4111,Tertiary," "
-#4112,Primary,"Enterprising (persuaders)"
-#4112,Secondary," "
-#4112,Tertiary," "
-#4151,Primary,"Investigative (thinkers)"
-#4151,Secondary," "
-#4151,Tertiary," "
-#4152,Primary,"Social (helpers)"
-#4152,Secondary," "
-#4152,Tertiary," "
-#4153,Primary,"Social (helpers)"
-#4153,Secondary," "
-#4153,Tertiary," "
-#4154,Primary,"Social (helpers)"
-#4154,Secondary,"Enterprising (persuaders)"
-#4154,Tertiary," "
-#4155,Primary,"Social (helpers)"
-#4155,Secondary," "
-#4155,Tertiary," "
-#4156,Primary,"Enterprising (persuaders)"
-#4156,Secondary,"Conventional (organizers)"
-#4156,Tertiary," "
-#4161,Primary,"Investigative (thinkers)"
-#4161,Secondary,"Enterprising (persuaders)"
-#4161,Tertiary,"Realistic (doers)"
-#4162,Primary,"Investigative (thinkers)"
-#4162,Secondary,"Enterprising (persuaders)"
-#4162,Tertiary,"Conventional (organizers)"
-#4163,Primary,"Enterprising (persuaders)"
-#4163,Secondary," "
-#4163,Tertiary," "
-#4164,Primary,"Enterprising (persuaders)"
-#4164,Secondary,"Conventional (organizers)"
-#4164,Tertiary," "
-#4165,Primary,"Enterprising (persuaders)"
-#4165,Secondary," "
-#4165,Tertiary," "
-#4166,Primary,"Enterprising (persuaders)"
-#4166,Secondary," "
-#4166,Tertiary," "
-#4167,Primary,"Enterprising (persuaders)"
-#4167,Secondary,"Conventional (organizers)"
-#4167,Tertiary," "
-#4168,Primary,"Enterprising (persuaders)"
-#4168,Secondary,"Conventional (organizers)"
-#4168,Tertiary," "
-#4169,Primary,"Investigative (thinkers)"
-#4169,Secondary," "
-#4169,Tertiary," "
-#4211,Primary,"Conventional (organizers)"
-#4211,Secondary,"Enterprising (persuaders)"
-#4211,Tertiary," "
-#4212,Primary,"Social (helpers)"
-#4212,Secondary,"Conventional (organizers)"
-#4212,Tertiary," "
-#4214,Primary,"Social (helpers)"
-#4214,Secondary," "
-#4214,Tertiary," "
-#4215,Primary,"Social (helpers)"
-#4215,Secondary," "
-#4215,Tertiary," "
-#4216,Primary,"Social (helpers)"
-#4216,Secondary," "
-#4216,Tertiary," "
-#4217,Primary,"Conventional (organizers)"
-#4217,Secondary,"Realistic (doers)"
-#4218,Tertiary,
-#4311,Primary,"Enterprising (persuaders)"
-#4311,Secondary," "
-#4311,Tertiary," "
-#4312,Primary,"Realistic (doers)"
-#4312,Secondary," "
-#4312,Tertiary," "
-#4313,Primary,"Conventional (organizers)"
-#4313,Secondary,"Realistic (doers)"
-#4314,Tertiary,
-#4411,Primary,"Social (helpers)"
-#4411,Secondary,"Enterprising (persuaders)"
-#4411,Tertiary," "
-#4412,Primary,"Enterprising (persuaders)"
-#4412,Secondary,"Realistic (doers)"
-#4412,Tertiary,"Conventional (organizers)"
-#4413,Primary,"Social (helpers)"
-#4413,Secondary," "
-#4413,Tertiary," "
-#4421,Primary,"Conventional (organizers)"
-#4421,Secondary,"Enterprising (persuaders)"
-#4421,Tertiary," "
-#4422,Primary,"Enterprising (persuaders)"
-#4422,Secondary,"Realistic (doers)"
-#4422,Tertiary," "
-#4423,Primary,"Realistic (doers)"
-#4423,Secondary," "
-#4423,Tertiary," "
-#5111,Primary,"Conventional (organizers)"
-#5111,Secondary," "
-#5111,Tertiary," "
-#5112,Primary,"Conventional (organizers)"
-#5112,Secondary," "
-#5112,Tertiary," "
-#5113,Primary,"Conventional (organizers)"
-#5113,Secondary," "
-#5113,Tertiary," "
-#5121,Primary,"Artistic (creators)"
-#5121,Secondary,"Investigative (thinkers)"
-#5121,Tertiary," "
-#5122,Primary,"Artistic (creators)"
-#5122,Secondary," "
-#5122,Tertiary," "
-#5123,Primary,"Artistic (creators)"
-#5123,Secondary," "
-#5123,Tertiary," "
-#5125,Primary,"Investigative (thinkers)"
-#5125,Secondary,"Artistic (creators)"
-#5125,Tertiary,"Conventional (organizers)"
-#5131,Primary,"Artistic (creators)"
-#5131,Secondary," "
-#5131,Tertiary," "
-#5132,Primary,"Artistic (creators)"
-#5132,Secondary," "
-#5132,Tertiary," "
-#5133,Primary,"Artistic (creators)"
-#5133,Secondary," "
-#5133,Tertiary," "
-#5134,Primary,"Artistic (creators)"
-#5134,Secondary,"Social (helpers)"
-#5134,Tertiary," "
-#5135,Primary,"Artistic (creators)"
-#5135,Secondary,"Social (helpers)"
-#5135,Tertiary," "
-#5136,Primary,"Realistic (doers)"
-#5136,Secondary,"Artistic (creators)"
-#5136,Tertiary," "
-#5211,Primary,"Realistic (doers)"
-#5211,Secondary,"Artistic (creators)"
-#5211,Tertiary,"Conventional (organizers)"
-#5212,Primary,"Enterprising (persuaders)"
-#5212,Secondary,"Conventional (organizers)"
-#5212,Tertiary," "
-#5221,Primary,"Artistic (creators)"
-#5221,Secondary," "
-#5221,Tertiary," "
-#5222,Primary,"Realistic (doers)"
-#5222,Secondary," "
-#5222,Tertiary," "
-#5223,Primary,"Realistic (doers)"
-#5223,Secondary,"Artistic (creators)"
-#5223,Tertiary," "
-#5224,Primary,"Realistic (doers)"
-#5224,Secondary," "
-#5224,Tertiary," "
-#5225,Primary,"Realistic (doers)"
-#5225,Secondary," "
-#5225,Tertiary," "
-#5226,Primary,"Conventional (organizers)"
-#5226,Secondary," "
-#5226,Tertiary," "
-#5227,Primary,"Realistic (doers)"
-#5227,Secondary,"Conventional (organizers)"
-#5227,Tertiary," "
-#5231,Primary,"Artistic (creators)"
-#5231,Secondary,"Enterprising (persuaders)"
-#5231,Tertiary,"Social (helpers)"
-#5232,Primary,"Artistic (creators)"
-#5232,Secondary," "
-#5232,Tertiary," "
-#5241,Primary,"Artistic (creators)"
-#5241,Secondary," "
-#5241,Tertiary," "
-#5242,Primary,"Artistic (creators)"
-#5242,Secondary," "
-#5242,Tertiary," "
-#5243,Primary,"Artistic (creators)"
-#5243,Secondary," "
-#5243,Tertiary," "
-#5244,Primary,"Realistic (doers)"
-#5244,Secondary," "
-#5244,Tertiary," "
-#5245,Primary,"Realistic (doers)"
-#5245,Secondary," "
-#5245,Tertiary," "
-#5251,Primary,"Realistic (doers)"
-#5251,Secondary," "
-#5251,Tertiary," "
-#5252,Primary,"Social (helpers)"
-#5252,Secondary,"Enterprising (persuaders)"
-#5252,Tertiary,"Realistic (doers)"
-#5253,Primary,"Social (helpers)"
-#5253,Secondary,"Enterprising (persuaders)"
-#5253,Tertiary,"Realistic (doers)"
-#5254,Primary,"Social (helpers)"
-#5254,Secondary,"Realistic (doers)"
-#5254,Tertiary,"Enterprising (persuaders)"
-#6211,Primary,"Enterprising (persuaders)"
-#6211,Secondary," "
-#6211,Tertiary," "
-#6221,Primary,"Enterprising (persuaders)"
-#6221,Secondary," "
-#6221,Tertiary," "
-#6222,Primary,"Enterprising (persuaders)"
-#6222,Secondary,"Conventional (organizers)"
-#6222,Tertiary," "
-#6231,Primary,"Enterprising (persuaders)"
-#6231,Secondary,"Conventional (organizers)"
-#6231,Tertiary," "
-#6232,Primary,"Enterprising (persuaders)"
-#6232,Secondary," "
-#6232,Tertiary," "
-#6235,Primary,"Enterprising (persuaders)"
-#6235,Secondary,"Conventional (organizers)"
-#6235,Tertiary," "
-#6311,Primary,"Realistic (doers)"
-#6311,Secondary,"Conventional (organizers)"
-#6311,Tertiary," "
-#6312,Primary,"Enterprising (persuaders)"
-#6312,Secondary," "
-#6312,Tertiary," "
-#6313,Primary,"Enterprising (persuaders)"
-#6313,Secondary,"Conventional (organizers)"
-#6313,Tertiary," "
-#6314,Primary,"Enterprising (persuaders)"
-#6314,Secondary,"Conventional (organizers)"
-#6314,Tertiary," "
-#6315,Primary,"Realistic (doers)"
-#6315,Secondary," "
-#6315,Tertiary," "
-#6316,Primary,"Realistic (doers)"
-#6316,Secondary," "
-#6316,Tertiary," "
-#6321,Primary,"Enterprising (persuaders)"
-#6321,Secondary," "
-#6321,Tertiary," "
-#6322,Primary,"Realistic (doers)"
-#6322,Secondary," "
-#6322,Tertiary," "
-#6331,Primary,"Realistic (doers)"
-#6331,Secondary," "
-#6331,Tertiary," "
-#6332,Primary,"Realistic (doers)"
-#6332,Secondary," "
-#6332,Tertiary," "
-#6341,Primary,"Enterprising (persuaders)"
-#6341,Secondary," "
-#6341,Tertiary," "
-#6342,Primary,"Realistic (doers)"
-#6342,Secondary," "
-#6342,Tertiary," "
-#6343,Primary,"Realistic (doers)"
-#6343,Secondary," "
-#6343,Tertiary," "
-#6344,Primary,"Realistic (doers)"
-#6344,Secondary," "
-#6344,Tertiary," "
-#6345,Primary,"Realistic (doers)"
-#6345,Secondary," "
-#6345,Tertiary," "
-#6346,Primary,"Enterprising (persuaders)"
-#6346,Secondary,"Social (helpers)"
-#6346,Tertiary,"Realistic (doers)"
-#6411,Primary,"Enterprising (persuaders)"
-#6411,Secondary,
-#6411,Tertiary," "
-#6421,Primary,"Enterprising (persuaders)"
-#6421,Secondary,
-#6421,Tertiary," "
-#6511,Primary,"Social (helpers)"
-#6511,Secondary,
-#6511,Tertiary," "
-#6512,Primary,"Conventional (organizers)"
-#6512,Secondary,"Enterprising (persuaders)"
-#6512,Tertiary," "
-#6513,Primary,"Social (helpers)"
-#6513,Secondary," "
-#6513,Tertiary," "
-#6521,Primary,"Enterprising (persuaders)"
-#6521,Secondary,"Conventional (organizers)"
-#6521,Tertiary," "
-#6522,Primary,"Enterprising (persuaders)"
-#6522,Secondary,"Conventional (organizers)"
-#6522,Tertiary," "
-#6523,Primary,"Enterprising (persuaders)"
-#6523,Secondary,"Conventional (organizers)"
-#6523,Tertiary," "
-#6524,Primary,"Enterprising (persuaders)"
-#6524,Secondary,"Conventional (organizers)"
-#6524,Tertiary," "
-#6525,Primary,"Enterprising (persuaders)"
-#6525,Secondary,"Social (helpers)"
-#6525,Tertiary,"Conventional (organizers)"
-#6531,Primary,"Enterprising (persuaders)"
-#6531,Secondary,"Social (helpers)"
-#6531,Tertiary," "
-#6532,Primary,"Enterprising (persuaders)"
-#6532,Secondary,"Social (helpers)"
-#6532,Tertiary," "
-#6533,Primary,"Conventional (organizers)"
-#6533,Secondary,"Enterprising (persuaders)"
-#6533,Tertiary," "
-#6541,Primary,"Realistic (doers)"
-#6541,Secondary,"Conventional (organizers)"
-#6541,Tertiary,"Enterprising (persuaders)"
-#6551,Primary,"Conventional (organizers)"
-#6551,Secondary," "
-#6551,Tertiary," "
-#6552,Primary,"Conventional (organizers)"
-#6552,Secondary,"Enterprising (persuaders)"
-#6552,Tertiary," "
-#6561,Primary,"Enterprising (persuaders)"
-#6561,Secondary,"Realistic (doers)"
-#6561,Tertiary,"Social (helpers)"
-#6562,Primary,"Conventional (organizers)"
-#6562,Secondary,"Realistic (doers)"
-#6562,Tertiary," "
-#6563,Primary,"Realistic (doers)"
-#6563,Secondary," "
-#6563,Tertiary," "
-#6564,Primary,"Enterprising (persuaders)"
-#6564,Secondary,"Social (helpers)"
-#6564,Tertiary," "
-#6611,Primary,"Conventional (organizers)"
-#6611,Secondary," "
-#6611,Tertiary," "
-#6621,Primary,"Realistic (doers)"
-#6621,Secondary,"Conventional (organizers)"
-#6621,Tertiary," "
-#6622,Primary,"Conventional (organizers)"
-#6622,Secondary,"Realistic (doers)"
-#6622,Tertiary," "
-#6623,Primary,"Enterprising (persuaders)"
-#6623,Secondary," "
-#6623,Tertiary," "
-#6711,Primary,"Realistic (doers)"
-#6711,Secondary," "
-#6711,Tertiary," "
-#6721,Primary,"Realistic (doers)"
-#6721,Secondary,"Conventional (organizers)"
-#6721,Tertiary," "
-#6722,Primary,"Realistic (doers)"
-#6722,Secondary," "
-#6722,Tertiary," "
-#6731,Primary,"Realistic (doers)"
-#6731,Secondary," "
-#6731,Tertiary," "
-#6732,Primary,"Realistic (doers)"
-#6732,Secondary," "
-#6732,Tertiary," "
-#6733,Primary,"Realistic (doers)"
-#6733,Secondary," "
-#6733,Tertiary," "
-#6741,Primary,"Realistic (doers)"
-#6741,Secondary," "
-#6741,Tertiary," "
-#6742,Primary,"Realistic (doers)"
-#6742,Secondary,"Enterprising (persuaders)"
-#6742,Tertiary,"Conventional (organizers)"
-#7201,Primary,"Realistic (doers)"
-#7201,Secondary," "
-#7201,Tertiary," "
-#7202,Primary,"Realistic (doers)"
-#7202,Secondary," "
-#7202,Tertiary," "
-#7203,Primary,"Enterprising (persuaders)"
-#7203,Secondary," "
-#7203,Tertiary," "
-#7204,Primary,"Realistic (doers)"
-#7204,Secondary," "
-#7204,Tertiary," "
-#7205,Primary,"Realistic (doers)"
-#7205,Secondary," "
-#7205,Tertiary," "
-#7231,Primary,"Realistic (doers)"
-#7231,Secondary," "
-#7231,Tertiary," "
-#7232,Primary,"Realistic (doers)"
-#7232,Secondary," "
-#7232,Tertiary," "
-#7233,Primary,"Realistic (doers)"
-#7233,Secondary," "
-#7233,Tertiary," "
-#7234,Primary,"Realistic (doers)"
-#7234,Secondary," "
-#7234,Tertiary," "
-#7235,Primary,"Realistic (doers)"
-#7235,Secondary," "
-#7235,Tertiary," "
-#7236,Primary,"Realistic (doers)"
-#7236,Secondary," "
-#7236,Tertiary," "
-#7237,Primary,"Realistic (doers)"
-#7237,Secondary," "
-#7237,Tertiary," "
-#7241,Primary,"Realistic (doers)"
-#7241,Secondary," "
-#7241,Tertiary," "
-#7242,Primary,"Realistic (doers)"
-#7242,Secondary," "
-#7242,Tertiary," "
-#7243,Primary,"Realistic (doers)"
-#7243,Secondary," "
-#7243,Tertiary," "
-#7244,Primary,"Realistic (doers)"
-#7244,Secondary,"Conventional (organizers)"
-#7244,Tertiary," "
-#7245,Primary,"Realistic (doers)"
-#7245,Secondary," "
-#7245,Tertiary," "
-#7246,Primary,"Realistic (doers)"
-#7246,Secondary," "
-#7246,Tertiary," "
-#7247,Primary,"Realistic (doers)"
-#7247,Secondary," "
-#7247,Tertiary," "
-#7251,Primary,"Realistic (doers)"
-#7251,Secondary," "
-#7251,Tertiary," "
-#7252,Primary,"Realistic (doers)"
-#7252,Secondary," "
-#7252,Tertiary," "
-#7253,Primary,"Realistic (doers)"
-#7253,Secondary," "
-#7253,Tertiary," "
-#7271,Primary,"Realistic (doers)"
-#7271,Secondary," "
-#7271,Tertiary," "
-#7272,Primary,"Realistic (doers)"
-#7272,Secondary," "
-#7272,Tertiary," "
-#7281,Primary,"Realistic (doers)"
-#7281,Secondary," "
-#7281,Tertiary," "
-#7282,Primary,"Realistic (doers)"
-#7282,Secondary," "
-#7282,Tertiary," "
-#7283,Primary,"Realistic (doers)"
-#7283,Secondary," "
-#7283,Tertiary," "
-#7284,Primary,"Realistic (doers)"
-#7284,Secondary," "
-#7284,Tertiary," "
-#7291,Primary,"Realistic (doers)"
-#7291,Secondary," "
-#7291,Tertiary," "
-#7292,Primary,"Realistic (doers)"
-#7292,Secondary," "
-#7292,Tertiary," "
-#7293,Primary,"Realistic (doers)"
-#7293,Secondary," "
-#7293,Tertiary," "
-#7294,Primary,"Realistic (doers)"
-#7294,Secondary," "
-#7294,Tertiary," "
-#7295,Primary,"Realistic (doers)"
-#7295,Secondary," "
-#7295,Tertiary," "
-#7301,Primary,"Realistic (doers)"
-#7301,Secondary," "
-#7301,Tertiary," "
-#7302,Primary,"Realistic (doers)"
-#7302,Secondary," "
-#7302,Tertiary," "
-#7303,Primary,"Realistic (doers)"
-#7303,Secondary,"Conventional (organizers)"
-#7303,Tertiary," "
-#7304,Primary,"Enterprising (persuaders)"
-#7304,Secondary,"Conventional (organizers)"
-#7304,Tertiary,"Realistic (doers)"
-#7305,Primary,"Conventional (organizers)"
-#7305,Secondary,"Realistic (doers)"
-#7305,Tertiary," "
-#7311,Primary,"Realistic (doers)"
-#7311,Secondary," "
-#7311,Tertiary," "
-#7312,Primary,"Realistic (doers)"
-#7312,Secondary," "
-#7312,Tertiary," "
-#7313,Primary,"Realistic (doers)"
-#7313,Secondary,"Enterprising (persuaders)"
-#7313,Tertiary," "
-#7314,Primary,"Realistic (doers)"
-#7314,Secondary," "
-#7314,Tertiary," "
-#7315,Primary,"Realistic (doers)"
-#7315,Secondary,"Conventional (organizers)"
-#7315,Tertiary," "
-#7316,Primary,"Realistic (doers)"
-#7316,Secondary," "
-#7316,Tertiary," "
-#7318,Primary,"Realistic (doers)"
-#7318,Secondary," "
-#7318,Tertiary," "
-#7321,Primary,"Realistic (doers)"
-#7321,Secondary," "
-#7321,Tertiary," "
-#7322,Primary,"Realistic (doers)"
-#7322,Secondary," "
-#7322,Tertiary," "
-#7331,Primary,"Realistic (doers)"
-#7331,Secondary,"Enterprising (persuaders)"
-#7331,Tertiary," "
-#7332,Primary,"Realistic (doers)"
-#7332,Secondary," "
-#7332,Tertiary," "
-#7333,Primary,"Realistic (doers)"
-#7333,Secondary," "
-#7333,Tertiary," "
-#7334,Primary,"Realistic (doers)"
-#7334,Secondary," "
-#7334,Tertiary," "
-#7335,Primary,"Realistic (doers)"
-#7335,Secondary," "
-#7335,Tertiary," "
-#7361,Primary,"Realistic (doers)"
-#7361,Secondary," "
-#7361,Tertiary," "
-#7362,Primary,"Enterprising (persuaders)"
-#7362,Secondary,"Realistic (doers)"
-#7362,Tertiary,"Conventional (organizers)"
-#7371,Primary,"Realistic (doers)"
-#7371,Secondary," "
-#7371,Tertiary," "
-#7372,Primary,"Realistic (doers)"
-#7372,Secondary," "
-#7372,Tertiary," "
-#7373,Primary,"Realistic (doers)"
-#7373,Secondary," "
-#7373,Tertiary," "
-#7381,Primary,"Realistic (doers)"
-#7381,Secondary," "
-#7381,Tertiary," "
-#7384,Primary,"Realistic (doers)"
-#7384,Secondary," "
-#7384,Tertiary," "
-#7441,Primary,"Realistic (doers)"
-#7441,Secondary," "
-#7441,Tertiary," "
-#7442,Primary,"Realistic (doers)"
-#7442,Secondary," "
-#7442,Tertiary," "
-#7444,Primary,"Realistic (doers)"
-#7444,Secondary," "
-#7444,Tertiary," "
-#7445,Primary,"Realistic (doers)"
-#7445,Secondary," "
-#7445,Tertiary," "
-#7451,Primary,"Realistic (doers)"
-#7451,Secondary," "
-#7451,Tertiary," "
-#7452,Primary,"Realistic (doers)"
-#7452,Secondary," "
-#7452,Tertiary," "
-#7511,Primary,"Realistic (doers)"
-#7511,Secondary,"Conventional (organizers)"
-#7511,Tertiary," "
-#7512,Primary,"Realistic (doers)"
-#7512,Secondary," "
-#7512,Tertiary," "
-#7513,Primary,"Realistic (doers)"
-#7513,Secondary," "
-#7513,Tertiary," "
-#7514,Primary,"Realistic (doers)"
-#7514,Secondary," "
-#7514,Tertiary," "
-#7521,Primary,"Realistic (doers)"
-#7521,Secondary," "
-#7521,Tertiary," "
-#7522,Primary,"Realistic (doers)"
-#7522,Secondary," "
-#7522,Tertiary," "
-#7531,Primary,"Realistic (doers)"
-#7531,Secondary," "
-#7531,Tertiary," "
-#7532,Primary,"Realistic (doers)"
-#7532,Secondary," "
-#7532,Tertiary," "
-#7533,Primary,"Realistic (doers)"
-#7533,Secondary," "
-#7533,Tertiary," "
-#7534,Primary,"Realistic (doers)"
-#7534,Secondary," "
-#7534,Tertiary," "
-#7535,Primary,"Realistic (doers)"
-#7535,Secondary," "
-#7535,Tertiary," "
-#7611,Primary,"Realistic (doers)"
-#7611,Secondary," "
-#7611,Tertiary," "
-#7612,Primary,"Conventional (organizers)"
-#7612,Secondary,"Realistic (doers)"
-#7612,Tertiary,"Enterprising (persuaders)"
-#7621,Primary,"Realistic (doers)"
-#7621,Secondary,
-#7621,Tertiary," "
-#7622,Primary,"Conventional (organizers)"
-#7622,Secondary,"Realistic (doers)"
-#7622,Tertiary,"Enterprising (persuaders)"
-#8211,Primary,"Realistic (doers)"
-#8211,Secondary," "
-#8211,Tertiary," "
-#8221,Primary,"Enterprising (persuaders)"
-#8221,Secondary," "
-#8221,Tertiary," "
-#8222,Primary,"Enterprising (persuaders)"
-#8222,Secondary," "
-#8222,Tertiary," "
-#8231,Primary,"Realistic (doers)"
-#8231,Secondary," "
-#8231,Tertiary," "
-#8232,Primary,"Realistic (doers)"
-#8232,Secondary," "
-#8232,Tertiary," "
-#8241,Primary,"Realistic (doers)"
-#8241,Secondary," "
-#8241,Tertiary," "
-#8252,Primary,"Realistic (doers)"
-#8252,Secondary," "
-#8252,Tertiary," "
-#8255,Primary,"Realistic (doers)"
-#8255,Secondary," "
-#8255,Tertiary," "
-#8261,Primary,"Realistic (doers)"
-#8261,Secondary," "
-#8261,Tertiary," "
-#8262,Primary,"Realistic (doers)"
-#8262,Secondary," "
-#8262,Tertiary," "
-#8411,Primary,"Realistic (doers)"
-#8411,Secondary," "
-#8411,Tertiary," "
-#8412,Primary,"Realistic (doers)"
-#8412,Secondary," "
-#8412,Tertiary," "
-#8421,Primary,"Realistic (doers)"
-#8421,Secondary," "
-#8421,Tertiary," "
-#8422,Primary,"Realistic (doers)"
-#8422,Secondary," "
-#8422,Tertiary," "
-#8431,Primary,"Realistic (doers)"
-#8431,Secondary," "
-#8431,Tertiary," "
-#8432,Primary,"Realistic (doers)"
-#8432,Secondary," "
-#8432,Tertiary," "
-#8441,Primary,"Realistic (doers)"
-#8441,Secondary," "
-#8441,Tertiary," "
-#8442,Primary,"Realistic (doers)"
-#8442,Secondary," "
-#8442,Tertiary," "
-#8611,Primary,"Realistic (doers)"
-#8611,Secondary," "
-#8611,Tertiary," "
-#8612,Primary,"Realistic (doers)"
-#8612,Secondary," "
-#8612,Tertiary," "
-#8613,Primary,"Realistic (doers)"
-#8613,Secondary," "
-#8613,Tertiary," "
-#8614,Primary,"Realistic (doers)"
-#8614,Secondary," "
-#8614,Tertiary," "
-#8615,Primary,"Realistic (doers)"
-#8615,Secondary," "
-#8615,Tertiary," "
-#8616,Primary,"Realistic (doers)"
-#8616,Secondary," "
-#8616,Tertiary," "
-#9211,Primary,"Enterprising (persuaders)"
-#9211,Secondary," "
-#9211,Tertiary," "
-#9212,Primary,"Enterprising (persuaders)"
-#9212,Secondary," "
-#9212,Tertiary," "
-#9213,Primary,"Enterprising (persuaders)"
-#9213,Secondary," "
-#9213,Tertiary," "
-#9214,Primary,"Enterprising (persuaders)"
-#9214,Secondary," "
-#9214,Tertiary," "
-#9215,Primary,"Enterprising (persuaders)"
-#9215,Secondary," "
-#9215,Tertiary," "
-#9217,Primary,"Enterprising (persuaders)"
-#9217,Secondary," "
-#9217,Tertiary," "
-#9221,Primary,"Enterprising (persuaders)"
-#9221,Secondary," "
-#9221,Tertiary," "
-#9222,Primary,"Enterprising (persuaders)"
-#9222,Secondary," "
-#9222,Tertiary," "
-#9223,Primary,"Enterprising (persuaders)"
-#9223,Secondary," "
-#9223,Tertiary," "
-#9224,Primary,"Enterprising (persuaders)"
-#9224,Secondary," "
-#9224,Tertiary," "
-#9226,Primary,"Enterprising (persuaders)"
-#9226,Secondary," "
-#9226,Tertiary," "
-#9227,Primary,"Enterprising (persuaders)"
-#9227,Secondary," "
-#9227,Tertiary," "
-#9231,Primary,"Realistic (doers)"
-#9231,Secondary,"Investigative (thinkers)"
-#9231,Tertiary,"Conventional (organizers)"
-#9232,Primary,"Realistic (doers)"
-#9232,Secondary," "
-#9232,Tertiary," "
-#9235,Primary,"Conventional (organizers)"
-#9235,Secondary,"Investigative (thinkers)"
-#9235,Tertiary,"Realistic (doers)"
-#9241,Primary,"Realistic (doers)"
-#9241,Secondary," "
-#9241,Tertiary," "
-#9243,Primary,"Realistic (doers)"
-#9243,Secondary," "
-#9243,Tertiary," "
-#9411,Primary,"Realistic (doers)"
-#9411,Secondary," "
-#9411,Tertiary," "
-#9412,Primary,"Realistic (doers)"
-#9412,Secondary," "
-#9412,Tertiary," "
-#9413,Primary,"Realistic (doers)"
-#9413,Secondary," "
-#9413,Tertiary," "
-#9414,Primary,"Realistic (doers)"
-#9414,Secondary," "
-#9414,Tertiary," "
-#9415,Primary,"Conventional (organizers)"
-#9415,Secondary,"Realistic (doers)"
-#9415,Tertiary," "
-#9416,Primary,"Realistic (doers)"
-#9416,Secondary," "
-#9416,Tertiary," "
-#9417,Primary,"Realistic (doers)"
-#9417,Secondary," "
-#9417,Tertiary," "
-#9418,Primary,"Realistic (doers)"
-#9418,Secondary," "
-#9418,Tertiary," "
-#9421,Primary,"Realistic (doers)"
-#9421,Secondary," "
-#9421,Tertiary," "
-#9422,Primary,"Realistic (doers)"
-#9422,Secondary," "
-#9422,Tertiary," "
-#9423,Primary,"Realistic (doers)"
-#9423,Secondary," "
-#9423,Tertiary," "
-#9431,Primary,"Realistic (doers)"
-#9431,Secondary," "
-#9431,Tertiary," "
-#9432,Primary,"Realistic (doers)"
-#9432,Secondary," "
-#9432,Tertiary," "
-#9433,Primary,"Realistic (doers)"
-#9433,Secondary," "
-#9433,Tertiary," "
-#9434,Primary,"Realistic (doers)"
-#9434,Secondary," "
-#9434,Tertiary," "
-#9435,Primary,"Realistic (doers)"
-#9435,Secondary," "
-#9435,Tertiary," "
-#9436,Primary,"Conventional (organizers)"
-#9436,Secondary,"Realistic (doers)"
-#9436,Tertiary," "
-#9437,Primary,"Realistic (doers)"
-#9437,Secondary," "
-#9437,Tertiary," "
-#9441,Primary,"Realistic (doers)"
-#9441,Secondary," "
-#9441,Tertiary," "
-#9442,Primary,"Realistic (doers)"
-#9442,Secondary," "
-#9442,Tertiary," "
-#9445,Primary,"Realistic (doers)"
-#9445,Secondary," "
-#9445,Tertiary," "
-#9446,Primary,"Realistic (doers)"
-#9446,Secondary," "
-#9446,Tertiary," "
-#9447,Primary,"Realistic (doers)"
-#9447,Secondary," "
-#9447,Tertiary," "
-#9461,Primary,"Realistic (doers)"
-#9461,Secondary," "
-#9461,Tertiary," "
-#9462,Primary,"Realistic (doers)"
-#9462,Secondary," "
-#9462,Tertiary," "
-#9463,Primary,"Realistic (doers)"
-#9463,Secondary," "
-#9463,Tertiary," "
-#9465,Primary,"Realistic (doers)"
-#9465,Secondary," "
-#9465,Tertiary," "
-#9471,Primary,"Realistic (doers)"
-#9471,Secondary," "
-#9471,Tertiary," "
-#9472,Primary,"Realistic (doers)"
-#9472,Secondary,"Conventional (organizers)"
-#9472,Tertiary,"Artistic (creators)"
-#9473,Primary,"Realistic (doers)"
-#9473,Secondary," "
-#9473,Tertiary," "
-#9474,Primary,"Conventional (organizers)"
-#9474,Secondary," "
-#9474,Tertiary," "
-#9521,Primary,"Realistic (doers)"
-#9521,Secondary," "
-#9521,Tertiary," "
-#9522,Primary,"Realistic (doers)"
-#9522,Secondary," "
-#9522,Tertiary," "
-#9523,Primary,"Realistic (doers)"
-#9523,Secondary," "
-#9523,Tertiary," "
-#9524,Primary,"Realistic (doers)"
-#9524,Secondary," "
-#9524,Tertiary," "
-#9525,Primary,"Realistic (doers)"
-#9525,Secondary," "
-#9525,Tertiary," "
-#9526,Primary,"Realistic (doers)"
-#9526,Secondary," "
-#9526,Tertiary," "
-#9527,Primary,"Realistic (doers)"
-#9527,Secondary," "
-#9527,Tertiary," "
-#9531,Primary,"Realistic (doers)"
-#9531,Secondary,"Conventional (organizers)"
-#9531,Tertiary," "
-#9532,Primary,"Realistic (doers)"
-#9532,Secondary," "
-#9532,Tertiary," "
-#9533,Primary,"Realistic (doers)"
-#9533,Secondary,"Conventional (organizers)"
-#9533,Tertiary," "
-#9534,Primary,"Realistic (doers)"
-#9534,Secondary," "
-#9534,Tertiary," "
-#9535,Primary,"Realistic (doers)"
-#9535,Secondary,"Conventional (organizers)"
-#9535,Tertiary," "
-#9536,Primary,"Realistic (doers)"
-#9536,Secondary," "
-#9536,Tertiary," "
-#9537,Primary,"Realistic (doers)"
-#9537,Secondary," "
-#9537,Tertiary," "
-#9611,Primary,"Realistic (doers)"
-#9611,Secondary," "
-#9611,Tertiary," "
-#9612,Primary,"Realistic (doers)"
-#9612,Secondary," "
-#9612,Tertiary," "
-#9613,Primary,"Realistic (doers)"
-#9613,Secondary," "
-#9613,Tertiary," "
-#9614,Primary,"Realistic (doers)"
-#9614,Secondary," "
-#9614,Tertiary," "
-#9615,Primary,"Realistic (doers)"
-#9615,Secondary," "
-#9615,Tertiary," "
-#9616,Primary,"Realistic (doers)"
-#9616,Secondary," "
-#9616,Tertiary," "
-#9617,Primary,"Realistic (doers)"
-#9617,Secondary," "
-#9617,Tertiary," "
-#9618,Primary,"Realistic (doers)"
-#9618,Secondary," "
-#9618,Tertiary," "
-#9619,Primary,"Realistic (doers)"
-#9619,Secondary," "
-#9619,Tertiary," "
+#00010,Primary,
+#00010,Secondary,
+#00010,Tertiary,
+#00018,Primary,
+#00018,Secondary,
+#00018,Tertiary,
+#10010,Primary,Enterprising
+#10010,Secondary,
+#10010,Tertiary,
+#10011,Primary,Enterprising
+#10011,Secondary,
+#10011,Tertiary,
+#10012,Primary,Enterprising
+#10012,Secondary,
+#10012,Tertiary,
+#10019,Primary,Enterprising
+#10019,Secondary,
+#10019,Tertiary,
+#10020,Primary,Enterprising
+#10020,Secondary,
+#10020,Tertiary,
+#10021,Primary,Enterprising
+#10021,Secondary,
+#10021,Tertiary,
+#10022,Primary,Enterprising
+#10022,Secondary,
+#10022,Tertiary,
+#10029,Primary,Enterprising
+#10029,Secondary,
+#10029,Tertiary,
+#10030,Primary,Enterprising
+#10030,Secondary,
+#10030,Tertiary,
+#11100,Primary,Conventional
+#11100,Secondary,Enterprising
+#11100,Tertiary,
+#11101,Primary,
+#11101,Secondary,
+#11101,Tertiary,
+#11102,Primary,Enterprising
+#11102,Secondary,Conventional
+#11102,Tertiary,
+#11103,Primary,Enterprising
+#11103,Secondary,
+#11103,Tertiary,
+#11109,Primary,Enterprising
+#11109,Secondary,Conventional
+#11109,Tertiary,
+#11200,Primary,Enterprising
+#11200,Secondary,Conventional
+#11200,Tertiary,
+#11201,Primary,Investigative
+#11201,Secondary,Enterprising
+#11201,Tertiary,
+#11202,Primary,Enterprising
+#11202,Secondary,
+#11202,Tertiary,
+#12010,Primary,Enterprising
+#12010,Secondary,Conventional
+#12010,Tertiary,
+#12011,Primary,Enterprising
+#12011,Secondary,Conventional
+#12011,Tertiary,
+#12012,Primary,Enterprising
+#12012,Secondary,Conventional
+#12012,Tertiary,
+#12013,Primary,Enterprising
+#12013,Secondary,
+#12013,Tertiary,
+#12100,Primary,Conventional
+#12100,Secondary,
+#12100,Tertiary,
+#12101,Primary,Enterprising
+#12101,Secondary,
+#12101,Tertiary,
+#12102,Primary,Conventional
+#12102,Secondary,Enterprising
+#12102,Tertiary,
+#12103,Primary,Enterprising
+#12103,Secondary,
+#12103,Tertiary,
+#12104,Primary,Enterprising
+#12104,Secondary,Conventional
+#12104,Tertiary,
+#12110,Primary,Conventional
+#12110,Secondary,
+#12110,Tertiary,
+#12111,Primary,Conventional
+#12111,Secondary,
+#12111,Tertiary,
+#12112,Primary,Conventional
+#12112,Secondary,
+#12112,Tertiary,
+#12113,Primary,Conventional
+#12113,Secondary,
+#12113,Tertiary,
+#12200,Primary,Conventional
+#12200,Secondary,
+#12200,Tertiary,
+#12201,Primary,Conventional
+#12201,Secondary,
+#12201,Tertiary,
+#12202,Primary,Conventional
+#12202,Secondary,
+#12202,Tertiary,
+#12203,Primary,Conventional
+#12203,Secondary,Enterprising
+#12203,Tertiary,
+#13100,Primary,Conventional
+#13100,Secondary,Enterprising
+#13100,Tertiary,
+#13101,Primary,Enterprising
+#13101,Secondary,
+#13101,Tertiary,
+#13102,Primary,Conventional
+#13102,Secondary,
+#13102,Tertiary,
+#13110,Primary,Enterprising
+#13110,Secondary,
+#13110,Tertiary,
+#13111,Primary,Conventional
+#13111,Secondary,
+#13111,Tertiary,
+#13112,Primary,Conventional
+#13112,Secondary,
+#13112,Tertiary,
+#13200,Primary,Enterprising
+#13200,Secondary,
+#13200,Tertiary,
+#13201,Primary,Enterprising
+#13201,Secondary,Conventional
+#13201,Tertiary,
+#14100,Primary,Conventional
+#14100,Secondary,
+#14100,Tertiary,
+#14101,Primary,Conventional
+#14101,Secondary,
+#14101,Tertiary,
+#14102,Primary,Conventional
+#14102,Secondary,
+#14102,Tertiary,
+#14103,Primary,Conventional
+#14103,Secondary,Enterprising
+#14103,Tertiary,
+#14110,Primary,Conventional
+#14110,Secondary,
+#14110,Tertiary,
+#14111,Primary,Conventional
+#14111,Secondary,
+#14111,Tertiary,
+#14112,Primary,Realistic
+#14112,Secondary,Conventional
+#14112,Tertiary,Artistic
+#14200,Primary,Conventional
+#14200,Secondary,
+#14200,Tertiary,
+#14201,Primary,Conventional
+#14201,Secondary,
+#14201,Tertiary,
+#14202,Primary,Conventional
+#14202,Secondary,Enterprising
+#14202,Tertiary,
+#14300,Primary,Conventional
+#14300,Secondary,
+#14300,Tertiary,
+#14301,Primary,Conventional
+#14301,Secondary,
+#14301,Tertiary,
+#14400,Primary,Conventional
+#14400,Secondary,
+#14400,Tertiary,
+#14401,Primary,Conventional
+#14401,Secondary,
+#14401,Tertiary,
+#14402,Primary,Conventional
+#14402,Secondary,
+#14402,Tertiary,
+#14403,Primary,Conventional
+#14403,Secondary,
+#14403,Tertiary,
+#14404,Primary,Conventional
+#14404,Secondary,
+#14404,Tertiary,
+#14405,Primary,Conventional
+#14405,Secondary,
+#14405,Tertiary,
+#20010,Primary,Enterprising
+#20010,Secondary,
+#20010,Tertiary,
+#20011,Primary,Enterprising
+#20011,Secondary,Investigative
+#20011,Tertiary,
+#20012,Primary,Enterprising
+#20012,Secondary,
+#20012,Tertiary,
+#21100,Primary,Investigative
+#21100,Secondary,
+#21100,Tertiary,
+#21101,Primary,Investigative
+#21101,Secondary,
+#21101,Tertiary,
+#21102,Primary,Investigative
+#21102,Secondary,
+#21102,Tertiary,
+#21103,Primary,Investigative
+#21103,Secondary,
+#21103,Tertiary,
+#21109,Primary,Investigative
+#21109,Secondary,Realistic
+#21109,Tertiary,
+#21110,Primary,Investigative
+#21110,Secondary,
+#21110,Tertiary,
+#21111,Primary,Realistic
+#21111,Secondary,Investigative
+#21111,Tertiary,
+#21112,Primary,Realistic
+#21112,Secondary,Investigative
+#21112,Tertiary,Enterprising
+#21120,Primary,Conventional
+#21120,Secondary,Investigative
+#21120,Tertiary,
+#21200,Primary,Artistic
+#21200,Secondary,
+#21200,Tertiary,
+#21201,Primary,Artistic
+#21201,Secondary,Investigative
+#21201,Tertiary,
+#21202,Primary,Investigative
+#21202,Secondary,
+#21202,Tertiary,
+#21203,Primary,Realistic
+#21203,Secondary,Conventional
+#21203,Tertiary,Investigative
+#21210,Primary,Investigative
+#21210,Secondary,
+#21210,Tertiary,
+#21211,Primary,Investigative
+#21211,Secondary,Conventional
+#21211,Tertiary,
+#21220,Primary,Investigative
+#21220,Secondary,Conventional
+#21220,Tertiary,
+#21221,Primary,Investigative
+#21221,Secondary,Conventional
+#21221,Tertiary,
+#21222,Primary,Investigative
+#21222,Secondary,Conventional
+#21222,Tertiary,
+#21223,Primary,Investigative
+#21223,Secondary,Conventional
+#21223,Tertiary,
+#21230,Primary,Investigative
+#21230,Secondary,
+#21230,Tertiary,
+#21231,Primary,Investigative
+#21231,Secondary,
+#21231,Tertiary,
+#21232,Primary,Investigative
+#21232,Secondary,
+#21232,Tertiary,
+#21233,Primary,Investigative
+#21233,Secondary,Conventional
+#21233,Tertiary,
+#21234,Primary,Investigative
+#21234,Secondary,Conventional
+#21234,Tertiary,Artistic
+#21300,Primary,Investigative
+#21300,Secondary,Realistic
+#21300,Tertiary,
+#21301,Primary,Investigative
+#21301,Secondary,Realistic
+#21301,Tertiary,
+#21310,Primary,Investigative
+#21310,Secondary,Realistic
+#21310,Tertiary,
+#21311,Primary,Realistic
+#21311,Secondary,Investigative
+#21311,Tertiary,
+#21320,Primary,Investigative
+#21320,Secondary,Realistic
+#21320,Tertiary,
+#21321,Primary,Investigative
+#21321,Secondary,Realistic
+#21321,Tertiary,
+#21322,Primary,Investigative
+#21322,Secondary,Realistic
+#21322,Tertiary,
+#21330,Primary,Investigative
+#21330,Secondary,Realistic
+#21330,Tertiary,
+#21331,Primary,Investigative
+#21331,Secondary,Realistic
+#21331,Tertiary,
+#21332,Primary,Investigative
+#21332,Secondary,
+#21332,Tertiary,
+#21390,Primary,Investigative
+#21390,Secondary,
+#21390,Tertiary,
+#21399,Primary,Investigative
+#21399,Secondary,Realistic
+#21399,Tertiary,
+#22100,Primary,Realistic
+#22100,Secondary,Investigative
+#22100,Tertiary,
+#22101,Primary,Realistic
+#22101,Secondary,Investigative
+#22101,Tertiary,Conventional
+#22110,Primary,Realistic
+#22110,Secondary,Investigative
+#22110,Tertiary,
+#22111,Primary,Realistic
+#22111,Secondary,
+#22111,Tertiary,
+#22112,Primary,Realistic
+#22112,Secondary,
+#22112,Tertiary,
+#22113,Primary,Realistic
+#22113,Secondary,
+#22113,Tertiary,
+#22114,Primary,Realistic
+#22114,Secondary,
+#22114,Tertiary,
+#22210,Primary,Realistic
+#22210,Secondary,Conventional
+#22210,Tertiary,
+#22211,Primary,Artistic
+#22211,Secondary,
+#22211,Tertiary,
+#22212,Primary,Realistic
+#22212,Secondary,
+#22212,Tertiary,
+#22213,Primary,Conventional
+#22213,Secondary,
+#22213,Tertiary,
+#22214,Primary,Conventional
+#22214,Secondary,Realistic
+#22214,Tertiary,Investigative
+#22220,Primary,Conventional
+#22220,Secondary,Investigative
+#22220,Tertiary,Realistic
+#22221,Primary,Realistic
+#22221,Secondary,Conventional
+#22221,Tertiary,Investigative
+#22222,Primary,Investigative
+#22222,Secondary,Conventional
+#22222,Tertiary,
+#22230,Primary,Realistic
+#22230,Secondary,
+#22230,Tertiary,
+#22231,Primary,Conventional
+#22231,Secondary,
+#22231,Tertiary,
+#22232,Primary,Enterprising
+#22232,Secondary,Conventional
+#22232,Tertiary,Social
+#22233,Primary,Conventional
+#22233,Secondary,
+#22233,Tertiary,
+#22300,Primary,Realistic
+#22300,Secondary,Investigative
+#22300,Tertiary,
+#22301,Primary,Realistic
+#22301,Secondary,
+#22301,Tertiary,
+#22302,Primary,Realistic
+#22302,Secondary,Investigative
+#22302,Tertiary,Conventional
+#22303,Primary,Conventional
+#22303,Secondary,Enterprising
+#22303,Tertiary,
+#22310,Primary,Realistic
+#22310,Secondary,
+#22310,Tertiary,
+#22311,Primary,Realistic
+#22311,Secondary,
+#22311,Tertiary,
+#22312,Primary,
+#22312,Secondary,
+#22312,Tertiary,
+#22313,Primary,Realistic
+#22313,Secondary,
+#22313,Tertiary,
+#30010,Primary,Enterprising
+#30010,Secondary,
+#30010,Tertiary,
+#31100,Primary,Investigative
+#31100,Secondary,
+#31100,Tertiary,
+#31101,Primary,Investigative
+#31101,Secondary,
+#31101,Tertiary,
+#31102,Primary,Investigative
+#31102,Secondary,Social
+#31102,Tertiary,
+#31103,Primary,Investigative
+#31103,Secondary,
+#31103,Tertiary,
+#31110,Primary,Investigative
+#31110,Secondary,Realistic
+#31110,Tertiary,
+#31111,Primary,Investigative
+#31111,Secondary,Social
+#31111,Tertiary,Realistic
+#31112,Primary,Social
+#31112,Secondary,Investigative
+#31112,Tertiary,
+#31120,Primary,Investigative
+#31120,Secondary,
+#31120,Tertiary,
+#31121,Primary,Investigative
+#31121,Secondary,Social
+#31121,Tertiary,
+#31200,Primary,Investigative
+#31200,Secondary,
+#31200,Tertiary,
+#31201,Primary,Social
+#31201,Secondary,Investigative
+#31201,Tertiary,Realistic
+#31202,Primary,Social
+#31202,Secondary,
+#31202,Tertiary,
+#31203,Primary,Social
+#31203,Secondary,
+#31203,Tertiary,
+#31204,Primary,Social
+#31204,Secondary,
+#31204,Tertiary,
+#31209,Primary,Investigative
+#31209,Secondary,Social
+#31209,Tertiary,
+#31300,Primary,Social
+#31300,Secondary,
+#31300,Tertiary,
+#31301,Primary,Social
+#31301,Secondary,
+#31301,Tertiary,
+#31302,Primary,Social
+#31302,Secondary,Investigative
+#31302,Tertiary,
+#31303,Primary,Social
+#31303,Secondary,Investigative
+#31303,Tertiary,
+#32100,Primary,Enterprising
+#32100,Secondary,Conventional
+#32100,Tertiary,
+#32101,Primary,Social
+#32101,Secondary,Realistic
+#32101,Tertiary,
+#32102,Primary,Realistic
+#32102,Secondary,
+#32102,Tertiary,
+#32103,Primary,Social
+#32103,Secondary,Investigative
+#32103,Tertiary,
+#32104,Primary,Realistic
+#32104,Secondary,
+#32104,Tertiary,
+#32109,Primary,Social
+#32109,Secondary,Realistic
+#32109,Tertiary,Conventional
+#32110,Primary,Realistic
+#32110,Secondary,
+#32110,Tertiary,
+#32111,Primary,Social
+#32111,Secondary,Realistic
+#32111,Tertiary,
+#32112,Primary,Realistic
+#32112,Secondary,
+#32112,Tertiary,
+#32120,Primary,Investigative
+#32120,Secondary,Realistic
+#32120,Tertiary,
+#32121,Primary,Realistic
+#32121,Secondary,
+#32121,Tertiary,
+#32122,Primary,Investigative
+#32122,Secondary,Social
+#32122,Tertiary,Realistic
+#32123,Primary,Social
+#32123,Secondary,Investigative
+#32123,Tertiary,Realistic
+#32124,Primary,Social
+#32124,Secondary,Realistic
+#32124,Tertiary,
+#32129,Primary,Social
+#32129,Secondary,Realistic
+#32129,Tertiary,
+#32200,Primary,Social
+#32200,Secondary,
+#32200,Tertiary,
+#32201,Primary,Social
+#32201,Secondary,Realistic
+#32201,Tertiary,
+#32209,Primary,Social
+#32209,Secondary,
+#32209,Tertiary,
+#33100,Primary,Realistic
+#33100,Secondary,Conventional
+#33100,Tertiary,
+#33101,Primary,Realistic
+#33101,Secondary,Conventional
+#33101,Tertiary,Investigative
+#33102,Primary,Social
+#33102,Secondary,Conventional
+#33102,Tertiary,
+#33103,Primary,Realistic
+#33103,Secondary,Social
+#33103,Tertiary,Conventional
+#33109,Primary,Social
+#33109,Secondary,Realistic
+#33109,Tertiary,Conventional
+#40010,Primary,Enterprising
+#40010,Secondary,
+#40010,Tertiary,
+#40011,Primary,Enterprising
+#40011,Secondary,
+#40011,Tertiary,
+#40012,Primary,Enterprising
+#40012,Secondary,
+#40012,Tertiary,
+#40019,Primary,Enterprising
+#40019,Secondary,
+#40019,Tertiary,
+#40020,Primary,Enterprising
+#40020,Secondary,
+#40020,Tertiary,
+#40021,Primary,Enterprising
+#40021,Secondary,
+#40021,Tertiary,
+#40030,Primary,Enterprising
+#40030,Secondary,Social
+#40030,Tertiary,
+#40040,Primary,Enterprising
+#40040,Secondary,
+#40040,Tertiary,
+#40041,Primary,Enterprising
+#40041,Secondary,Conventional
+#40041,Tertiary,
+#40042,Primary,Enterprising
+#40042,Secondary,
+#40042,Tertiary,
+#41100,Primary,Enterprising
+#41100,Secondary,
+#41100,Tertiary,
+#41101,Primary,Enterprising
+#41101,Secondary,
+#41101,Tertiary,
+#41200,Primary,Social
+#41200,Secondary,
+#41200,Tertiary,
+#41201,Primary,Social
+#41201,Secondary,Conventional
+#41201,Tertiary,
+#41210,Primary,Social
+#41210,Secondary,
+#41210,Tertiary,
+#41220,Primary,Social
+#41220,Secondary,
+#41220,Tertiary,
+#41221,Primary,Social
+#41221,Secondary,
+#41221,Tertiary,
+#41300,Primary,Social
+#41300,Secondary,
+#41300,Tertiary,
+#41301,Primary,Social
+#41301,Secondary,
+#41301,Tertiary,
+#41302,Primary,Social
+#41302,Secondary,
+#41302,Tertiary,
+#41310,Primary,Investigative
+#41310,Secondary,Social
+#41310,Tertiary,
+#41311,Primary,Social
+#41311,Secondary,
+#41311,Tertiary,
+#41320,Primary,Social
+#41320,Secondary,
+#41320,Tertiary,
+#41321,Primary,Social
+#41321,Secondary,
+#41321,Tertiary,
+#41400,Primary,Enterprising
+#41400,Secondary,Conventional
+#41400,Tertiary,Investigative
+#41401,Primary,Investigative
+#41401,Secondary,
+#41401,Tertiary,
+#41402,Primary,Investigative
+#41402,Secondary,Enterprising
+#41402,Tertiary,
+#41403,Primary,Investigative
+#41403,Secondary,
+#41403,Tertiary,
+#41404,Primary,Conventional
+#41404,Secondary,Enterprising
+#41404,Tertiary,
+#41405,Primary,Social
+#41405,Secondary,
+#41405,Tertiary,
+#41406,Primary,Enterprising
+#41406,Secondary,
+#41406,Tertiary,
+#41407,Primary,Investigative
+#41407,Secondary,
+#41407,Tertiary,
+#41409,Primary,Investigative
+#41409,Secondary,
+#41409,Tertiary,
+#42100,Primary,Enterprising
+#42100,Secondary,Realistic
+#42100,Tertiary,Conventional
+#42101,Primary,Realistic
+#42101,Secondary,
+#42101,Tertiary,
+#42102,Primary,
+#42102,Secondary,
+#42102,Tertiary,
+#42200,Primary,Conventional
+#42200,Secondary,Enterprising
+#42200,Tertiary,
+#42201,Primary,Social
+#42201,Secondary,Conventional
+#42201,Tertiary,
+#42202,Primary,Social
+#42202,Secondary,
+#42202,Tertiary,
+#42203,Primary,Social
+#42203,Secondary,
+#42203,Tertiary,
+#42204,Primary,Social
+#42204,Secondary,Enterprising
+#42204,Tertiary,
+#43100,Primary,
+#43100,Secondary,
+#43100,Tertiary,
+#43109,Primary,Conventional
+#43109,Secondary,Enterprising
+#43109,Tertiary,
+#43200,Primary,Enterprising
+#43200,Secondary,Conventional
+#43200,Tertiary,Realistic
+#43201,Primary,Enterprising
+#43201,Secondary,Realistic
+#43201,Tertiary,
+#43202,Primary,Conventional
+#43202,Secondary,
+#43202,Tertiary,
+#43203,Primary,Enterprising
+#43203,Secondary,Conventional
+#43203,Tertiary,
+#43204,Primary,
+#43204,Secondary,
+#43204,Tertiary,
+#44100,Primary,Social
+#44100,Secondary,
+#44100,Tertiary,
+#44101,Primary,Social
+#44101,Secondary,
+#44101,Tertiary,
+#44200,Primary,
+#44200,Secondary,
+#44200,Tertiary,
+#45100,Primary,Enterprising
+#45100,Secondary,Conventional
+#45100,Tertiary,Realistic
+#50010,Primary,Enterprising
+#50010,Secondary,
+#50010,Tertiary,
+#50011,Primary,Enterprising
+#50011,Secondary,
+#50011,Tertiary,
+#50012,Primary,Enterprising
+#50012,Secondary,
+#50012,Tertiary,
+#51100,Primary,Conventional
+#51100,Secondary,
+#51100,Tertiary,
+#51101,Primary,Conventional
+#51101,Secondary,Enterprising
+#51101,Tertiary,Realistic
+#51102,Primary,Conventional
+#51102,Secondary,
+#51102,Tertiary,
+#51110,Primary,Artistic
+#51110,Secondary,Enterprising
+#51110,Tertiary,
+#51111,Primary,Artistic
+#51111,Secondary,
+#51111,Tertiary,
+#51112,Primary,Artistic
+#51112,Secondary,
+#51112,Tertiary,
+#51113,Primary,Artistic
+#51113,Secondary,
+#51113,Tertiary,
+#51114,Primary,Artistic
+#51114,Secondary,Social
+#51114,Tertiary,
+#51120,Primary,Enterprising
+#51120,Secondary,Artistic
+#51120,Tertiary,
+#51121,Primary,Artistic
+#51121,Secondary,
+#51121,Tertiary,
+#51122,Primary,Artistic
+#51122,Secondary,
+#51122,Tertiary,
+#52100,Primary,Conventional
+#52100,Secondary,
+#52100,Tertiary,
+#52110,Primary,Realistic
+#52110,Secondary,Artistic
+#52110,Tertiary,
+#52111,Primary,Artistic
+#52111,Secondary,Realistic
+#52111,Tertiary,
+#52112,Primary,Realistic
+#52112,Secondary,
+#52112,Tertiary,
+#52113,Primary,Realistic
+#52113,Secondary,
+#52113,Tertiary,
+#52114,Primary,Artistic
+#52114,Secondary,
+#52114,Tertiary,
+#52119,Primary,Artistic
+#52119,Secondary,Enterprising
+#52119,Tertiary,
+#52120,Primary,Artistic
+#52120,Secondary,
+#52120,Tertiary,
+#52121,Primary,Artistic
+#52121,Secondary,
+#52121,Tertiary,
+#53100,Primary,Realistic
+#53100,Secondary,Social
+#53100,Tertiary,Enterprising
+#53110,Primary,Artistic
+#53110,Secondary,
+#53110,Tertiary,
+#53111,Primary,Realistic
+#53111,Secondary,Conventional
+#53111,Tertiary,
+#53120,Primary,Artistic
+#53120,Secondary,
+#53120,Tertiary,
+#53121,Primary,Artistic
+#53121,Secondary,
+#53121,Tertiary,
+#53122,Primary,Artistic
+#53122,Secondary,
+#53122,Tertiary,
+#53123,Primary,Artistic
+#53123,Secondary,
+#53123,Tertiary,
+#53124,Primary,Artistic
+#53124,Secondary,
+#53124,Tertiary,
+#53125,Primary,Realistic
+#53125,Secondary,Artistic
+#53125,Tertiary,
+#53200,Primary,Realistic
+#53200,Secondary,
+#53200,Tertiary,
+#53201,Primary,Social
+#53201,Secondary,Enterprising
+#53201,Tertiary,Realistic
+#53202,Primary,Enterprising
+#53202,Secondary,Realistic
+#53202,Tertiary,
+#54100,Primary,Social
+#54100,Secondary,
+#54100,Tertiary,
+#55109,Primary,Artistic
+#55109,Secondary,Enterprising
+#55109,Tertiary,
+#60010,Primary,Enterprising
+#60010,Secondary,
+#60010,Tertiary,
+#60020,Primary,Enterprising
+#60020,Secondary,
+#60020,Tertiary,
+#60030,Primary,Enterprising
+#60030,Secondary,
+#60030,Tertiary,
+#60031,Primary,Enterprising
+#60031,Secondary,
+#60031,Tertiary,
+#60040,Primary,Enterprising
+#60040,Secondary,
+#60040,Tertiary,
+#62010,Primary,Artistic
+#62010,Secondary,Enterprising
+#62010,Tertiary,
+#62020,Primary,Enterprising
+#62020,Secondary,Conventional
+#62020,Tertiary,
+#62021,Primary,Enterprising
+#62021,Secondary,
+#62021,Tertiary,
+#62022,Primary,Enterprising
+#62022,Secondary,
+#62022,Tertiary,
+#62023,Primary,Enterprising
+#62023,Secondary,Conventional
+#62023,Tertiary,
+#62024,Primary,Enterprising
+#62024,Secondary,
+#62024,Tertiary,
+#62029,Primary,Enterprising
+#62029,Secondary,
+#62029,Tertiary,
+#62100,Primary,Enterprising
+#62100,Secondary,
+#62100,Tertiary,
+#62101,Primary,Enterprising
+#62101,Secondary,Conventional
+#62101,Tertiary,
+#62200,Primary,Enterprising
+#62200,Secondary,
+#62200,Tertiary,
+#62201,Primary,Enterprising
+#62201,Secondary,
+#62201,Tertiary,
+#62202,Primary,Realistic
+#62202,Secondary,
+#62202,Tertiary,
+#63100,Primary,Enterprising
+#63100,Secondary,
+#63100,Tertiary,
+#63101,Primary,Enterprising
+#63101,Secondary,
+#63101,Tertiary,
+#63102,Primary,Conventional
+#63102,Secondary,
+#63102,Tertiary,
+#63200,Primary,Realistic
+#63200,Secondary,
+#63200,Tertiary,
+#63201,Primary,Realistic
+#63201,Secondary,
+#63201,Tertiary,
+#63202,Primary,Realistic
+#63202,Secondary,
+#63202,Tertiary,
+#63210,Primary,Realistic
+#63210,Secondary,Enterprising
+#63210,Tertiary,Artistic
+#63211,Primary,Enterprising
+#63211,Secondary,Realistic
+#63211,Tertiary,Social
+#63220,Primary,Realistic
+#63220,Secondary,
+#63220,Tertiary,
+#63221,Primary,Realistic
+#63221,Secondary,
+#63221,Tertiary,
+#64100,Primary,Enterprising
+#64100,Secondary,Artistic
+#64100,Tertiary,Realistic
+#64101,Primary,Enterprising
+#64101,Secondary,Conventional
+#64101,Tertiary,
+#64200,Primary,Realistic
+#64200,Secondary,
+#64200,Tertiary,
+#64201,Primary,Social
+#64201,Secondary,Enterprising
+#64201,Tertiary,
+#64300,Primary,Enterprising
+#64300,Secondary,
+#64300,Tertiary,
+#64301,Primary,Conventional
+#64301,Secondary,Enterprise
+#64301,Tertiary,
+#64310,Primary,Enterprising
+#64310,Secondary,
+#64310,Tertiary,
+#64311,Primary,Enterprising
+#64311,Secondary,
+#64311,Tertiary,
+#64312,Primary,Conventional
+#64312,Secondary,
+#64312,Tertiary,
+#64313,Primary,Conventional
+#64313,Secondary,
+#64313,Tertiary,
+#64314,Primary,Enterprising
+#64314,Secondary,Social
+#64314,Tertiary,Conventional
+#64320,Primary,Enterprising
+#64320,Secondary,Social
+#64320,Tertiary,
+#64321,Primary,Conventional
+#64321,Secondary,
+#64321,Tertiary,
+#64322,Primary,Enterprising
+#64322,Secondary,Social
+#64322,Tertiary,
+#64400,Primary,Conventional
+#64400,Secondary,
+#64400,Tertiary,
+#64401,Primary,Conventional
+#64401,Secondary,
+#64401,Tertiary,
+#64409,Primary,Enterprising
+#64409,Secondary,
+#64409,Tertiary,
+#64410,Primary,Enterprising
+#64410,Secondary,Conventional
+#64410,Tertiary,Realistic
+#65100,Primary,Conventional
+#65100,Secondary,
+#65100,Tertiary,
+#65101,Primary,Realistic
+#65101,Secondary,
+#65101,Tertiary,
+#65102,Primary,Realistic
+#65102,Secondary,
+#65102,Tertiary,
+#65109,Primary,Enterprising
+#65109,Secondary,
+#65109,Tertiary,
+#65200,Primary,Social
+#65200,Secondary,
+#65200,Tertiary,
+#65201,Primary,Realistic
+#65201,Secondary,
+#65201,Tertiary,
+#65202,Primary,Realistic
+#65202,Secondary,
+#65202,Tertiary,
+#65210,Primary,Realistic
+#65210,Secondary,
+#65210,Tertiary,
+#65211,Primary,Enterprising
+#65211,Secondary,
+#65211,Tertiary,
+#65220,Primary,Realistic
+#65220,Secondary,
+#65220,Tertiary,
+#65229,Primary,
+#65229,Secondary,
+#65229,Tertiary,
+#65310,Primary,Realistic
+#65310,Secondary,Social
+#65310,Tertiary,
+#65311,Primary,Realistic
+#65311,Secondary,
+#65311,Tertiary,
+#65312,Primary,Realistic
+#65312,Secondary,
+#65312,Tertiary,
+#65320,Primary,Realistic
+#65320,Secondary,
+#65320,Tertiary,
+#65329,Primary,Enterprising
+#65329,Secondary,Conventional
+#65329,Tertiary,Realistic
+#70010,Primary,Enterprising
+#70010,Secondary,
+#70010,Tertiary,
+#70011,Primary,Enterprising
+#70011,Secondary,
+#70011,Tertiary,
+#70012,Primary,Enterprising
+#70012,Secondary,
+#70012,Tertiary,
+#70020,Primary,Enterprising
+#70020,Secondary,
+#70020,Tertiary,
+#70021,Primary,Enterprising
+#70021,Secondary,
+#70021,Tertiary,
+#72010,Primary,Enterprising
+#72010,Secondary,
+#72010,Tertiary,
+#72011,Primary,Enterprising
+#72011,Secondary,
+#72011,Tertiary,
+#72012,Primary,Enterprising
+#72012,Secondary,
+#72012,Tertiary,
+#72013,Primary,Enterprising
+#72013,Secondary,
+#72013,Tertiary,
+#72014,Primary,Enterprising
+#72014,Secondary,
+#72014,Tertiary,
+#72020,Primary,Enterprising
+#72020,Secondary,
+#72020,Tertiary,
+#72021,Primary,Enterprising
+#72021,Secondary,
+#72021,Tertiary,
+#72022,Primary,Enterprising
+#72022,Secondary,
+#72022,Tertiary,
+#72023,Primary,Enterprising
+#72023,Secondary,
+#72023,Tertiary,
+#72024,Primary,Conventional
+#72024,Secondary,Enterprising
+#72024,Tertiary,
+#72025,Primary,Enterprising
+#72025,Secondary,Conventional
+#72025,Tertiary,
+#72100,Primary,Realistic
+#72100,Secondary,
+#72100,Tertiary,
+#72101,Primary,Realistic
+#72101,Secondary,
+#72101,Tertiary,
+#72102,Primary,Realistic
+#72102,Secondary,
+#72102,Tertiary,
+#72103,Primary,Realistic
+#72103,Secondary,
+#72103,Tertiary,
+#72104,Primary,Realistic
+#72104,Secondary,
+#72104,Tertiary,
+#72105,Primary,Realistic
+#72105,Secondary,
+#72105,Tertiary,
+#72106,Primary,Realistic
+#72106,Secondary,
+#72106,Tertiary,
+#72200,Primary,Realistic
+#72200,Secondary,
+#72200,Tertiary,
+#72201,Primary,Realistic
+#72201,Secondary,
+#72201,Tertiary,
+#72202,Primary,Realistic
+#72202,Secondary,
+#72202,Tertiary,
+#72203,Primary,Realistic
+#72203,Secondary,
+#72203,Tertiary,
+#72204,Primary,Realistic
+#72204,Secondary,
+#72204,Tertiary,
+#72205,Primary,Realistic
+#72205,Secondary,
+#72205,Tertiary,
+#72300,Primary,Realistic
+#72300,Secondary,
+#72300,Tertiary,
+#72301,Primary,Realistic
+#72301,Secondary,
+#72301,Tertiary,
+#72302,Primary,Realistic
+#72302,Secondary,
+#72302,Tertiary,
+#72310,Primary,Realistic
+#72310,Secondary,
+#72310,Tertiary,
+#72311,Primary,Realistic
+#72311,Secondary,
+#72311,Tertiary,
+#72320,Primary,Realistic
+#72320,Secondary,
+#72320,Tertiary,
+#72321,Primary,Realistic
+#72321,Secondary,
+#72321,Tertiary,
+#72400,Primary,Realistic
+#72400,Secondary,
+#72400,Tertiary,
+#72401,Primary,Realistic
+#72401,Secondary,
+#72401,Tertiary,
+#72402,Primary,Realistic
+#72402,Secondary,
+#72402,Tertiary,
+#72403,Primary,Realistic
+#72403,Secondary,
+#72403,Tertiary,
+#72404,Primary,Realistic
+#72404,Secondary,
+#72404,Tertiary,
+#72405,Primary,Realistic
+#72405,Secondary,
+#72405,Tertiary,
+#72406,Primary,Realistic
+#72406,Secondary,
+#72406,Tertiary,
+#72410,Primary,Realistic
+#72410,Secondary,
+#72410,Tertiary,
+#72411,Primary,Realistic
+#72411,Secondary,
+#72411,Tertiary,
+#72420,Primary,Realistic
+#72420,Secondary,
+#72420,Tertiary,
+#72421,Primary,Realistic
+#72421,Secondary,
+#72421,Tertiary,
+#72422,Primary,Realistic
+#72422,Secondary,
+#72422,Tertiary,
+#72423,Primary,Realistic
+#72423,Secondary,
+#72423,Tertiary,
+#72429,Primary,Realistic
+#72429,Secondary,
+#72429,Tertiary,
+#72500,Primary,Realistic
+#72500,Secondary,
+#72500,Tertiary,
+#72501,Primary,Realistic
+#72501,Secondary,
+#72501,Tertiary,
+#72600,Primary,Realistic
+#72600,Secondary,
+#72600,Tertiary,
+#72601,Primary,Enterprising
+#72601,Secondary,Conventional
+#72601,Tertiary,
+#72602,Primary,Realistic
+#72602,Secondary,Enterprising
+#72602,Tertiary,
+#72603,Primary,Realistic
+#72603,Secondary,
+#72603,Tertiary,
+#72604,Primary,Conventional
+#72604,Secondary,
+#72604,Tertiary,
+#72999,Primary,Realistic
+#72999,Secondary,
+#72999,Tertiary,
+#73100,Primary,Realistic
+#73100,Secondary,
+#73100,Tertiary,
+#73101,Primary,Realistic
+#73101,Secondary,
+#73101,Tertiary,
+#73102,Primary,Realistic
+#73102,Secondary,
+#73102,Tertiary,
+#73110,Primary,Realistic
+#73110,Secondary,
+#73110,Tertiary,
+#73111,Primary,Realistic
+#73111,Secondary,
+#73111,Tertiary,
+#73112,Primary,Realistic
+#73112,Secondary,
+#73112,Tertiary,
+#73113,Primary,Realistic
+#73113,Secondary,
+#73113,Tertiary,
+#73200,Primary,Realistic
+#73200,Secondary,
+#73200,Tertiary,
+#73201,Primary,Realistic
+#73201,Secondary,
+#73201,Tertiary,
+#73202,Primary,Realistic
+#73202,Secondary,
+#73202,Tertiary,
+#73209,Primary,Realistic
+#73209,Secondary,
+#73209,Tertiary,
+#73300,Primary,Realistic
+#73300,Secondary,
+#73300,Tertiary,
+#73301,Primary,Realistic
+#73301,Secondary,
+#73301,Tertiary,
+#73310,Primary,Realistic
+#73310,Secondary,
+#73310,Tertiary,
+#73311,Primary,Realistic
+#73311,Secondary,
+#73311,Tertiary,
+#73400,Primary,Realistic
+#73400,Secondary,
+#73400,Tertiary,
+#73401,Primary,Realistic
+#73401,Secondary,
+#73401,Tertiary,
+#73402,Primary,Realistic
+#73402,Secondary,
+#73402,Tertiary,
+#74100,Primary,Conventional
+#74100,Secondary,
+#74100,Tertiary,
+#74101,Primary,Conventional
+#74101,Secondary,Realistic
+#74101,Tertiary,
+#74102,Primary,Realistic
+#74102,Secondary,
+#74102,Tertiary,
+#74200,Primary,Realistic
+#74200,Secondary,
+#74200,Tertiary,
+#74201,Primary,Realistic
+#74201,Secondary,
+#74201,Tertiary,
+#74202,Primary,Enterprising
+#74202,Secondary,
+#74202,Tertiary,
+#74203,Primary,Realistic
+#74203,Secondary,
+#74203,Tertiary,
+#74204,Primary,Realistic
+#74204,Secondary,
+#74204,Tertiary,
+#74205,Primary,Realistic
+#74205,Secondary,
+#74205,Tertiary,
+#75100,Primary,Realistic
+#75100,Secondary,
+#75100,Tertiary,
+#75101,Primary,Realistic
+#75101,Secondary,
+#75101,Tertiary,
+#75110,Primary,Realistic
+#75110,Secondary,
+#75110,Tertiary,
+#75119,Primary,Realistic
+#75119,Secondary,
+#75119,Tertiary,
+#75200,Primary,
+#75200,Secondary,
+#75200,Tertiary,
+#75201,Primary,Realistic
+#75201,Secondary,
+#75201,Tertiary,
+#75210,Primary,Realistic
+#75210,Secondary,
+#75210,Tertiary,
+#75211,Primary,Realistic
+#75211,Secondary,
+#75211,Tertiary,
+#75212,Primary,Realistic
+#75212,Secondary,
+#75212,Tertiary,
+#80010,Primary,Enterprising
+#80010,Secondary,
+#80010,Tertiary,
+#80020,Primary,Realistic
+#80020,Secondary,
+#80020,Tertiary,
+#80021,Primary,Enterprising
+#80021,Secondary,Realistic
+#80021,Tertiary,
+#80022,Primary,Enterprising
+#80022,Secondary,Realistic
+#80022,Tertiary,
+#82010,Primary,Enterprising
+#82010,Secondary,Realistic
+#82010,Tertiary,
+#82020,Primary,Enterprising
+#82020,Secondary,
+#82020,Tertiary,
+#82021,Primary,Enterprising
+#82021,Secondary,
+#82021,Tertiary,
+#82030,Primary,Realistic
+#82030,Secondary,
+#82030,Tertiary,
+#82031,Primary,Enterprising
+#82031,Secondary,
+#82031,Tertiary,
+#83100,Primary,Realistic
+#83100,Secondary,
+#83100,Tertiary,
+#83101,Primary,Realistic
+#83101,Secondary,
+#83101,Tertiary,
+#83110,Primary,Realistic
+#83110,Secondary,
+#83110,Tertiary,
+#83120,Primary,Realistic
+#83120,Secondary,
+#83120,Tertiary,
+#83121,Primary,Realistic
+#83121,Secondary,
+#83121,Tertiary,
+#84100,Primary,Realistic
+#84100,Secondary,
+#84100,Tertiary,
+#84101,Primary,Realistic
+#84101,Secondary,
+#84101,Tertiary,
+#84110,Primary,Realistic
+#84110,Secondary,
+#84110,Tertiary,
+#84111,Primary,Realistic
+#84111,Secondary,
+#84111,Tertiary,
+#84120,Primary,Realistic
+#84120,Secondary,
+#84120,Tertiary,
+#84121,Primary,Realistic
+#84121,Secondary,
+#84121,Tertiary,
+#85100,Primary,Realistic
+#85100,Secondary,
+#85100,Tertiary,
+#85101,Primary,Realistic
+#85101,Secondary,
+#85101,Tertiary,
+#85102,Primary,Realistic
+#85102,Secondary,
+#85102,Tertiary,
+#85103,Primary,Realistic
+#85103,Secondary,
+#85103,Tertiary,
+#85104,Primary,Realistic
+#85104,Secondary,
+#85104,Tertiary,
+#85110,Primary,Realistic
+#85110,Secondary,
+#85110,Tertiary,
+#85111,Primary,Realistic
+#85111,Secondary,
+#85111,Tertiary,
+#85120,Primary,
+#85120,Secondary,
+#85120,Tertiary,
+#85121,Primary,Realistic
+#85121,Secondary,
+#85121,Tertiary,
+#90010,Primary,Enterprising
+#90010,Secondary,Conventional
+#90010,Tertiary,
+#90011,Primary,Enterprising
+#90011,Secondary,
+#90011,Tertiary,
+#92010,Primary,Enterprising
+#92010,Secondary,
+#92010,Tertiary,
+#92011,Primary,Enterprising
+#92011,Secondary,
+#92011,Tertiary,
+#92012,Primary,Enterprising
+#92012,Secondary,
+#92012,Tertiary,
+#92013,Primary,Enterprising
+#92013,Secondary,
+#92013,Tertiary,
+#92014,Primary,Enterprising
+#92014,Secondary,
+#92014,Tertiary,
+#92015,Primary,Enterprising
+#92015,Secondary,
+#92015,Tertiary,
+#92020,Primary,Enterprising
+#92020,Secondary,
+#92020,Tertiary,
+#92021,Primary,Enterprising
+#92021,Secondary,
+#92021,Tertiary,
+#92022,Primary,Enterprising
+#92022,Secondary,
+#92022,Tertiary,
+#92023,Primary,Enterprising
+#92023,Secondary,
+#92023,Tertiary,
+#92024,Primary,Enterprising
+#92024,Secondary,
+#92024,Tertiary,
+#92100,Primary,Realistic
+#92100,Secondary,
+#92100,Tertiary,
+#92101,Primary,Realistic
+#92101,Secondary,
+#92101,Tertiary,
+#93100,Primary,Realistic
+#93100,Secondary,
+#93100,Tertiary,
+#93101,Primary,Realistic
+#93101,Secondary,
+#93101,Tertiary,
+#93102,Primary,Realistic
+#93102,Secondary,
+#93102,Tertiary,
+#93200,Primary,Realistic
+#93200,Secondary,
+#93200,Tertiary,
+#94100,Primary,Realistic
+#94100,Secondary,
+#94100,Tertiary,
+#94101,Primary,Realistic
+#94101,Secondary,
+#94101,Tertiary,
+#94102,Primary,Realistic
+#94102,Secondary,
+#94102,Tertiary,
+#94103,Primary,Realistic
+#94103,Secondary,
+#94103,Tertiary,
+#94104,Primary,Conventional
+#94104,Secondary,Realistic
+#94104,Tertiary,
+#94105,Primary,Realistic
+#94105,Secondary,
+#94105,Tertiary,
+#94106,Primary,Realistic
+#94106,Secondary,
+#94106,Tertiary,
+#94107,Primary,Realistic
+#94107,Secondary,
+#94107,Tertiary,
+#94110,Primary,Realistic
+#94110,Secondary,
+#94110,Tertiary,
+#94111,Primary,Realistic
+#94111,Secondary,
+#94111,Tertiary,
+#94112,Primary,Realistic
+#94112,Secondary,
+#94112,Tertiary,
+#94120,Primary,Realistic
+#94120,Secondary,
+#94120,Tertiary,
+#94121,Primary,Realistic
+#94121,Secondary,
+#94121,Tertiary,
+#94122,Primary,Realistic
+#94122,Secondary,
+#94122,Tertiary,
+#94123,Primary,Realistic
+#94123,Secondary,Conventional
+#94123,Tertiary,
+#94124,Primary,Realistic
+#94124,Secondary,
+#94124,Tertiary,
+#94129,Primary,Realistic
+#94129,Secondary,
+#94129,Tertiary,
+#94130,Primary,Realistic
+#94130,Secondary,
+#94130,Tertiary,
+#94131,Primary,Realistic
+#94131,Secondary,
+#94131,Tertiary,
+#94132,Primary,Realistic
+#94132,Secondary,
+#94132,Tertiary,
+#94133,Primary,Conventional
+#94133,Secondary,Realistic
+#94133,Tertiary,
+#94140,Primary,Realistic
+#94140,Secondary,
+#94140,Tertiary,
+#94141,Primary,Realistic
+#94141,Secondary,
+#94141,Tertiary,
+#94142,Primary,Realistic
+#94142,Secondary,
+#94142,Tertiary,
+#94143,Primary,Realistic
+#94143,Secondary,Conventional
+#94143,Tertiary,
+#94150,Primary,Realistic
+#94150,Secondary,
+#94150,Tertiary,
+#94151,Primary,Conventional
+#94151,Secondary,Realistic
+#94151,Tertiary,
+#94152,Primary,Realistic
+#94152,Secondary,
+#94152,Tertiary,
+#94153,Primary,Conventional
+#94153,Secondary,
+#94153,Tertiary,
+#94200,Primary,Realistic
+#94200,Secondary,
+#94200,Tertiary,
+#94201,Primary,Realistic
+#94201,Secondary,
+#94201,Tertiary,
+#94202,Primary,Realistic
+#94202,Secondary,
+#94202,Tertiary,
+#94203,Primary,Realistic
+#94203,Secondary,
+#94203,Tertiary,
+#94204,Primary,Realistic
+#94204,Secondary,
+#94204,Tertiary,
+#94205,Primary,Realistic
+#94205,Secondary,
+#94205,Tertiary,
+#94210,Primary,Realistic
+#94210,Secondary,
+#94210,Tertiary,
+#94211,Primary,Conventional
+#94211,Secondary,Realistic
+#94211,Tertiary,
+#94212,Primary,Realistic
+#94212,Secondary,Conventional
+#94212,Tertiary,
+#94213,Primary,Realistic
+#94213,Secondary,
+#94213,Tertiary,
+#94219,Primary,Realistic
+#94219,Secondary,
+#94219,Tertiary,
+#95100,Primary,Realistic
+#95100,Secondary,
+#95100,Tertiary,
+#95101,Primary,Realistic
+#95101,Secondary,
+#95101,Tertiary,
+#95102,Primary,Realistic
+#95102,Secondary,
+#95102,Tertiary,
+#95103,Primary,Realistic
+#95103,Secondary,
+#95103,Tertiary,
+#95104,Primary,Realistic
+#95104,Secondary,
+#95104,Tertiary,
+#95105,Primary,Realistic
+#95105,Secondary,
+#95105,Tertiary,
+#95106,Primary,Realistic
+#95106,Secondary,
+#95106,Tertiary,
+#95107,Primary,Realistic
+#95107,Secondary,
+#95107,Tertiary,
+#95109,Primary,Realistic
+#95109,Secondary,
+#95109,Tertiary,

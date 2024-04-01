@@ -1,6 +1,32 @@
 # alb.tf
 
+data "aws_alb" "main" {
+  name = var.alb_name
+}
+
+data "aws_alb_listener" "front_end" {
+  load_balancer_arn = data.aws_alb.main.id
+  port              = 443
+}
+
+resource "aws_lb_listener_rule" "host_based_weighted_routing" {
+  listener_arn = data.aws_alb_listener.front_end.arn
+
+  action {
+    type             = "forward"
+    target_group_arn = aws_alb_target_group.app.arn
+  }
+
+  condition {
+    host_header {
+      values = [for sn in var.service_names : "${sn}.*"]
+    }
+  }
+    
+}
+
 # Internal Load Balancer
+/*
 resource "aws_alb" "main" {
   name = "ssot-lb2"
   internal           = true
@@ -10,9 +36,10 @@ resource "aws_alb" "main" {
   subnets            = module.network.aws_subnet_ids.web.ids 
 
   tags = var.common_tags
-}
+}*/
 
 # Redirect all traffic from the ALB to the target group
+/*
 resource "aws_alb_listener" "front_end" {
   load_balancer_arn = aws_alb.main.arn
   port              = "3000"
@@ -22,7 +49,7 @@ resource "aws_alb_listener" "front_end" {
     type             = "forward"
     target_group_arn = aws_alb_target_group.app.arn
   }
-}
+}*/
 
 resource "aws_alb_target_group" "app" {
   name                 = "workbc-ssot2-target-group-${substr(uuid(), 0, 3)}"
