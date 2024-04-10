@@ -44,6 +44,15 @@ load csv
     $$
 
     after load do
+    $$
+    update industry_outlook tbl set industry = coalesce (
+    (
+        select name
+        from industries
+        where regexp_replace(name, 'with|and|,|\s*', '', 1, 0, 'i') ilike
+            regexp_replace(tbl.industry, 'with|and|,|\s*', '', 1, 0, 'i')
+    ), tbl.industry)
+    $$,
     $$ comment on table industry_outlook is 'WorkBC Industry Profile {2023-2033}'; $$,
     $$ comment on column industry_outlook.industry is 'Industry'; $$,
     $$ comment on column industry_outlook.openings is 'Job Openings > {2023-2033}'; $$,
