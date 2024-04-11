@@ -1,0 +1,53 @@
+load csv
+    from 'career_trek.csv'
+    (
+        noc_2016,
+        noc_2021,
+        episode_num,
+        title_2016 [trim both whitespace],
+        title_2021 [trim both whitespace],
+        episode_title [trim both whitespace],
+        youtube_link [trim both whitespace]
+    )
+    into postgresql:///ssot
+    target table career_trek
+    target columns
+    (
+        episode_num,
+        episode_title,
+        noc_2021 text using (trim-hash noc_2021),
+        title_2021,
+        noc_2016 text using (trim-hash noc_2016),
+        title_2016,
+        youtube_link
+    )
+    with
+        fields optionally enclosed by '"',
+        fields terminated by ',',
+        drop indexes
+
+    before load do
+    $$ drop table if exists career_trek; $$,
+    $$ create table if not exists career_trek
+    (
+        episode_num int primary key,
+        episode_title text,
+        noc_2021 text,
+        title_2021 text,
+        noc_2016 text,
+        title_2016 text,
+        youtube_link text
+    );
+    $$
+
+    after load do
+    $$ create index career_trek_noc_2021_idx on career_trek (noc_2021); $$,
+    $$ comment on table career_trek is 'WorkBC Career Trek Data {2023}'; $$,
+    $$ comment on column career_trek.episode_num is 'Sr No'; $$,
+    $$ comment on column career_trek.noc_2021 is 'NOC 2021'; $$,
+    $$ comment on column career_trek.noc_2016 is 'NOC 2016'; $$,
+    $$ comment on column career_trek.title_2021 is 'NOC Title (2021) Updates'; $$,
+    $$ comment on column career_trek.title_2016 is 'NOC Title (2016)'; $$,
+    $$ comment on column career_trek.episode_title is 'Occupation (Career Trek job title)'; $$,
+    $$ comment on column career_trek.youtube_link is 'YouTube video link/URL'; $$
+;

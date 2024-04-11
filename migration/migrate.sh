@@ -12,9 +12,9 @@ ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/HOO_B
 cat "data/HOO_BC_and_Region_for_new_tool_2023_Jan22_24-Sheet 1.csv" | php csv_extract.php --range 2 --cols 15 > "load/high_opportunity_occupations.csv"
 
 # B.C. Labour Market Outlook, Career Profiles
-ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/WorkBC_Career_Profile_Data_2023__Jan22_24.xlsx" "data/WorkBC_Career_Profile_Data_2023__Jan22_24-%s.csv"
-cat "data/WorkBC_Career_Profile_Data_2023__Jan22_24-Regional Outlook.csv" | php csv_extract.php --range 5 > load/career_regional.csv
-cat "data/WorkBC_Career_Profile_Data_2023__Jan22_24-Provincial Outlook.csv" | php csv_extract.php --range 4 > load/career_provincial.csv
+ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/WorkBC_Career_Profile_Data_2023_Apr5_24.xlsx" "data/WorkBC_Career_Profile_Data_2023_Apr5_24-%s.csv"
+cat "data/WorkBC_Career_Profile_Data_2023_Apr5_24-Regional Outlook.csv" | php csv_extract.php --range 5 > load/career_regional.csv
+cat "data/WorkBC_Career_Profile_Data_2023_Apr5_24-Provincial Outlook.csv" | php csv_extract.php --range 4 > load/career_provincial.csv
 
 # B.C. Labour Market Outlook, Industry Profiles
 ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/WorkBC_Industry_Profile_2023__Jan24_24.xlsx" "data/WorkBC_Industry_Profile_2023__Jan24_24-%s.csv"
@@ -58,8 +58,8 @@ ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/top_1
 cat "data/top_10_careers_by_aggregate_industry_2023__Jan22_24-Sheet 1.csv" | php csv_extract.php --range 2 > load/openings_industry.csv
 
 # Career Trek
-ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/WorkBC_Career_Trek_2023__Mar27_24.xlsx" "data/WorkBC_Career_Trek_2023__Mar27_24-%s.csv"
-cat "data/WorkBC_Career_Trek_2023__Mar27_24-LMO.csv" | php csv_extract.php --range 2 > load/career_trek.csv
+ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/WorkBC_Career_Trek_2023__Apr10_24.xlsx" "data/WorkBC_Career_Trek_2023__Apr10_24-%s.csv"
+cat "data/WorkBC_Career_Trek_2023__Apr10_24-LMO.csv" | php csv_extract.php --range 2 > load/career_trek.csv
 
 # NOC 2021 Concordance
 php nocs.php "data/NOC2021/" > load/nocs.csv
