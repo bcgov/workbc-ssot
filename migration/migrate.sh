@@ -12,9 +12,9 @@ ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/HOO_B
 cat "data/HOO_BC_and_Region_for_new_tool_2023_Jan22_24-Sheet 1.csv" | php csv_extract.php --range 2 --cols 15 > "load/high_opportunity_occupations.csv"
 
 # B.C. Labour Market Outlook, Career Profiles
-ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/WorkBC_Career_Profile_Data_2023__Jan22_24.xlsx" "data/WorkBC_Career_Profile_Data_2023__Jan22_24-%s.csv"
-cat "data/WorkBC_Career_Profile_Data_2023__Jan22_24-Regional Outlook.csv" | php csv_extract.php --range 5 > load/career_regional.csv
-cat "data/WorkBC_Career_Profile_Data_2023__Jan22_24-Provincial Outlook.csv" | php csv_extract.php --range 4 > load/career_provincial.csv
+ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/WorkBC_Career_Profile_Data_2023_Apr5_24.xlsx" "data/WorkBC_Career_Profile_Data_2023_Apr5_24-%s.csv"
+cat "data/WorkBC_Career_Profile_Data_2023_Apr5_24-Regional Outlook.csv" | php csv_extract.php --range 5 > load/career_regional.csv
+cat "data/WorkBC_Career_Profile_Data_2023_Apr5_24-Provincial Outlook.csv" | php csv_extract.php --range 4 > load/career_provincial.csv
 
 # B.C. Labour Market Outlook, Industry Profiles
 ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/WorkBC_Industry_Profile_2023__Jan24_24.xlsx" "data/WorkBC_Industry_Profile_2023__Jan24_24-%s.csv"
@@ -34,8 +34,8 @@ ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/WorkB
 cat "data/WorkBC_2023_Wage_Data_Jan29_24-Sheet1.csv" | php csv_extract.php --range 2 > load/wages.csv
 
 # Occupational Interests
-ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/Occupational_Interests_2023_Feb23_24.xlsx" "data/Occupational_Interests_2023_Feb23_24-%s.csv"
-cat "data/Occupational_Interests_2023_Feb23_24-Sheet 1.csv" | php csv_extract.php --range 2 > load/occupational_interests.csv
+ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/Occupational_Interests_2023_Apr5_24.xlsx" "data/Occupational_Interests_2023_Apr5_24-%s.csv"
+cat "data/Occupational_Interests_2023_Apr5_24-Sheet 1.csv" | php csv_extract.php --range 2 > load/occupational_interests.csv
 
 # TODO Common Job Titles for Career Profiles
 ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/2021NOC_CommonJobTitles_IllustrativeListing_Feb16_2024.xlsx" "data/2021NOC_CommonJobTitles_IllustrativeListing_Feb16_2024-%s.csv"
@@ -58,8 +58,8 @@ ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/top_1
 cat "data/top_10_careers_by_aggregate_industry_2023__Jan22_24-Sheet 1.csv" | php csv_extract.php --range 2 > load/openings_industry.csv
 
 # Career Trek
-ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/WorkBC_Career_Trek_2023__Mar27_24.xlsx" "data/WorkBC_Career_Trek_2023__Mar27_24-%s.csv"
-cat "data/WorkBC_Career_Trek_2023__Mar27_24-LMO.csv" | php csv_extract.php --range 2 > load/career_trek.csv
+ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/WorkBC_Career_Trek_2023__Apr10_24.xlsx" "data/WorkBC_Career_Trek_2023__Apr10_24-%s.csv"
+cat "data/WorkBC_Career_Trek_2023__Apr10_24-LMO.csv" | php csv_extract.php --range 2 > load/career_trek.csv
 
 # NOC 2021 Concordance
 php nocs.php "data/NOC2021/" > load/nocs.csv
@@ -120,8 +120,10 @@ ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/WorkB
 cat "data/WorkBC LMS _JAN_2024-Sheet3.csv" | php csv_empty.php | php monthly_labour_market_update_v3.php 2024 01 > "load/updates/monthly_labour_market_updates_2024_01.csv"
 ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/WorkBC LMS _FEB_2024.xlsx" "data/WorkBC LMS _FEB_2024-%s.csv"
 cat "data/WorkBC LMS _FEB_2024-Sheet3.csv" | php csv_empty.php | php monthly_labour_market_update_v3.php 2024 02 > "load/updates/monthly_labour_market_updates_2024_02.csv"
+ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/WorkBC LMS Mar_2024 - FIXED.xlsx" "data/WorkBC LMS Mar_2024 - FIXED-%s.csv"
+cat "data/WorkBC LMS Mar_2024 - FIXED-Sheet3.csv" | php csv_empty.php | php monthly_labour_market_update_v3.php 2024 03 > "load/updates/monthly_labour_market_updates_2024_03.csv"
 
 # Load all data in the database.
 for f in load/*.load; do pgloader -l workbc.lisp "$f"; done
 psql -c 'TRUNCATE monthly_labour_market_updates'
-for f in load/updates/*.csv; do SOURCE="/app/$f" pgloader -l workbc.lisp load/updates/monthly_labour_market_updates.load; done
+for f in load/updates/*.csv; do SOURCE="/app/$f" pgloader -l workbc.lisp load/monthly_labour_market_updates.load; done

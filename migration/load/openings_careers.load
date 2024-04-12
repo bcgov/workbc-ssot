@@ -71,6 +71,51 @@ load csv
     $$
 
     after load do
+    $$
+    update openings_careers tbl set industry_1_name = coalesce (
+    (
+        select name
+        from industries
+        where regexp_replace(name, 'with|and|,|\s*', '', 1, 0, 'i') ilike
+            regexp_replace(tbl.industry_1_name, 'with|and|,|\s*', '', 1, 0, 'i')
+    ), tbl.industry_1_name)
+    $$,
+    $$
+    update openings_careers tbl set industry_2_name = coalesce (
+    (
+        select name
+        from industries
+        where regexp_replace(name, 'with|and|,|\s*', '', 1, 0, 'i') ilike
+            regexp_replace(tbl.industry_2_name, 'with|and|,|\s*', '', 1, 0, 'i')
+    ), tbl.industry_2_name)
+    $$,
+    $$
+    update openings_careers tbl set industry_3_name = coalesce (
+    (
+        select name
+        from industries
+        where regexp_replace(name, 'with|and|,|\s*', '', 1, 0, 'i') ilike
+            regexp_replace(tbl.industry_3_name, 'with|and|,|\s*', '', 1, 0, 'i')
+    ), tbl.industry_3_name)
+    $$,
+    $$
+    update openings_careers tbl set industry_4_name = coalesce (
+    (
+        select name
+        from industries
+        where regexp_replace(name, 'with|and|,|\s*', '', 1, 0, 'i') ilike
+            regexp_replace(tbl.industry_4_name, 'with|and|,|\s*', '', 1, 0, 'i')
+    ), tbl.industry_4_name)
+    $$,
+    $$
+    update openings_careers tbl set industry_5_name = coalesce (
+    (
+        select name
+        from industries
+        where regexp_replace(name, 'with|and|,|\s*', '', 1, 0, 'i') ilike
+            regexp_replace(tbl.industry_5_name, 'with|and|,|\s*', '', 1, 0, 'i')
+    ), tbl.industry_5_name)
+    $$,
     $$ comment on table openings_careers is 'Job Openings by Industry LMO {2023}'; $$,
     $$ comment on column openings_careers.noc is 'NOC'; $$,
     $$ comment on column openings_careers.description is 'Description'; $$,

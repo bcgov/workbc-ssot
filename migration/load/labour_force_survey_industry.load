@@ -185,6 +185,15 @@ load csv
     $$
 
     after load do
+    $$
+    update labour_force_survey_industry tbl set industry = coalesce (
+    (
+        select name
+        from industries
+        where regexp_replace(name, 'with|and|,|\s*', '', 1, 0, 'i') ilike
+            regexp_replace(tbl.industry, 'with|and|,|\s*', '', 1, 0, 'i')
+    ), tbl.industry)
+    $$,
     $$ comment on table labour_force_survey_industry is 'LFS Data Sheet {2023} > Industry Profiles'; $$,
     $$ comment on column labour_force_survey_industry.industry is 'Industry'; $$,
     $$ comment on column labour_force_survey_industry.yoy_employment_growth_pct is 'Overview > % yoy employment growth {2022-2023}'; $$,

@@ -1,4 +1,4 @@
-#00010,Primary,
+#00010,Primary,Enterprising
 #00010,Secondary,
 #00010,Tertiary,
 #00018,Primary,
@@ -34,9 +34,9 @@
 #11100,Primary,Conventional
 #11100,Secondary,Enterprising
 #11100,Tertiary,
-#11101,Primary,
-#11101,Secondary,
-#11101,Tertiary,
+#11101,Primary,Conventional
+#11101,Secondary,Investigative
+#11101,Tertiary,Enterprising
 #11102,Primary,Enterprising
 #11102,Secondary,Conventional
 #11102,Tertiary,
@@ -376,8 +376,8 @@
 #22311,Primary,Realistic
 #22311,Secondary,
 #22311,Tertiary,
-#22312,Primary,
-#22312,Secondary,
+#22312,Primary,Realistic
+#22312,Secondary,Conventional
 #22312,Tertiary,
 #22313,Primary,Realistic
 #22313,Secondary,
@@ -634,7 +634,7 @@
 #42204,Primary,Social
 #42204,Secondary,Enterprising
 #42204,Tertiary,
-#43100,Primary,
+#43100,Primary,Social
 #43100,Secondary,
 #43100,Tertiary,
 #43109,Primary,Conventional
@@ -875,7 +875,7 @@
 #64300,Secondary,
 #64300,Tertiary,
 #64301,Primary,Conventional
-#64301,Secondary,Enterprise
+#64301,Secondary,Enterprising
 #64301,Tertiary,
 #64310,Primary,Enterprising
 #64310,Secondary,
@@ -1228,7 +1228,7 @@
 #75119,Primary,Realistic
 #75119,Secondary,
 #75119,Tertiary,
-#75200,Primary,
+#75200,Primary,Realistic
 #75200,Secondary,
 #75200,Tertiary,
 #75201,Primary,Realistic
