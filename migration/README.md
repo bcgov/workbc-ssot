@@ -79,7 +79,7 @@ For months March 2023 through August 2023, use the script `monthly_labour_market
 
 - Run the loading script `load/monthly_labour_market_updates.load`, supplying the transformed CSV above as the `SOURCE` environment variable.
 ```
-SOURCE="/app/load/updates/monthly_labour_market_updates_{YYYY}_{MM}.csv" pgloader -l workbc.lisp load/updates/monthly_labour_market_updates.load
+SOURCE="/app/load/updates/monthly_labour_market_updates_{YYYY}_{MM}.csv" pgloader -l workbc.lisp load/monthly_labour_market_updates.load
 ```
 WARNING! The monthly labour market update loading script does not offer the capability of updating an existing record - you would have to manually delete the record for a given month if you want to update it. For this, use a SQL instruction like:
 ```
