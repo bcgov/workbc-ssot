@@ -7,7 +7,10 @@ load csv
         title_2016 [trim both whitespace],
         title_2021 [trim both whitespace],
         episode_title [trim both whitespace],
-        youtube_link [trim both whitespace]
+        youtube_link [trim both whitespace],
+        location [trim both whitespace],
+        region [trim both whitespace],
+        description [trim both whitespace]
     )
     into postgresql:///ssot
     target table career_trek
@@ -19,7 +22,10 @@ load csv
         title_2021,
         noc_2016 text using (trim-hash noc_2016),
         title_2016,
-        youtube_link
+        youtube_link,
+        location,
+        region,
+        description
     )
     with
         fields optionally enclosed by '"',
@@ -36,7 +42,10 @@ load csv
         title_2021 text,
         noc_2016 text,
         title_2016 text,
-        youtube_link text
+        youtube_link text,
+        location text,
+        region text,
+        description text
     );
     $$
 
@@ -49,5 +58,8 @@ load csv
     $$ comment on column career_trek.title_2021 is 'NOC Title (2021) Updates'; $$,
     $$ comment on column career_trek.title_2016 is 'NOC Title (2016)'; $$,
     $$ comment on column career_trek.episode_title is 'Occupation (Career Trek job title)'; $$,
-    $$ comment on column career_trek.youtube_link is 'YouTube video link/URL'; $$
+    $$ comment on column career_trek.youtube_link is 'YouTube video link/URL'; $$,
+    $$ comment on column career_trek.location is 'Location'; $$,
+    $$ comment on column career_trek.region is 'Region'; $$,
+    $$ comment on column career_trek.description is 'Description'; $$
 ;
