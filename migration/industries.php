@@ -29,14 +29,14 @@ const INDUSTRY_MAP = [
     'educational services' => 'educational_services',
     'finance, insurance and real estate' => 'finance_insurance_real_estate',
     'fishing, hunting and trapping' => 'fishing_hunting_trapping',
-    'forestry and logging with support activities' => 'forestry_logging_support_activities',
+    'forestry, logging and support activities' => 'forestry_logging_support_activities',
     'health care and social assistance' => 'health_care_social_assistance',
     'information, culture and recreation' => 'information_culture_recreation',
     'manufacturing' => 'manufacturing',
     'utilities' => 'utilities',
     'mining and oil and gas extraction' => 'mining_oil_gas_extraction',
     'repair, personal and non-profit services' => 'other_private_services',
-    'professional, scientific, and technical services' => 'professional_scientific_technical_services',
+    'professional, scientific and technical services' => 'professional_scientific_technical_services',
     'public administration' => 'public_administration',
     'transportation and warehousing' => 'transportation_warehousing',
     'wholesale trade' => 'wholesale_trade',
@@ -64,7 +64,8 @@ while (FALSE !== ($row = fgetcsv($naics))) {
     $naics_id = $row[COLUMN_NAICS_ID];
     $industry_entry = strtolower($row[COLUMN_NAICS_SECTOR]);
     if (!array_key_exists($industry_entry, INDUSTRY_MAP)) {
-        die("Unexpected industry entry " . $row[COLUMN_NAICS_SECTOR] . ". Aborting.\n");
+        fwrite(STDERR, "Unexpected industry entry \"" . $row[COLUMN_NAICS_SECTOR] . "\". Aborting.\n");
+        exit(1);
     }
     fputcsv(STDOUT, [
         INDUSTRY_MAP[$industry_entry],
@@ -78,6 +79,9 @@ function fopen_or_die($filename) {
     global $dirname;
     $path = $dirname . $filename;
     $fh = fopen($path, 'r');
-    if (!$fh) die("File $path not found. Aborting.\n");
+    if (!$fh) {
+        fwrite(STDERR, "File $path not found. Aborting.\n");
+        exit(1);
+    }
     return $fh;
 }

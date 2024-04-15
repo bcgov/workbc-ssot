@@ -41,6 +41,7 @@ load csv
     $$
 
     after load do
+    $$ create index nocs_noc_level_idx on nocs (noc_level); $$,
     $$ comment on table nocs is 'NOC 2021 Hierarchy'; $$,
     $$ comment on column nocs.noc_2021 is 'NOC 2021'; $$,
     $$ comment on column nocs.label_en is 'English label'; $$,

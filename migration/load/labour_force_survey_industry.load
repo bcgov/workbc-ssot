@@ -188,7 +188,7 @@ load csv
     $$
     update labour_force_survey_industry tbl set industry = coalesce (
     (
-        select name
+        select key
         from industries
         where regexp_replace(name, 'with|and|,|\s*', '', 1, 0, 'i') ilike
             regexp_replace(tbl.industry, 'with|and|,|\s*', '', 1, 0, 'i')
