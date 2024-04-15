@@ -74,7 +74,7 @@ load csv
     $$
     update openings_careers tbl set industry_1_name = coalesce (
     (
-        select name
+        select key
         from industries
         where regexp_replace(name, 'with|and|,|\s*', '', 1, 0, 'i') ilike
             regexp_replace(tbl.industry_1_name, 'with|and|,|\s*', '', 1, 0, 'i')
@@ -83,7 +83,7 @@ load csv
     $$
     update openings_careers tbl set industry_2_name = coalesce (
     (
-        select name
+        select key
         from industries
         where regexp_replace(name, 'with|and|,|\s*', '', 1, 0, 'i') ilike
             regexp_replace(tbl.industry_2_name, 'with|and|,|\s*', '', 1, 0, 'i')
@@ -92,7 +92,7 @@ load csv
     $$
     update openings_careers tbl set industry_3_name = coalesce (
     (
-        select name
+        select key
         from industries
         where regexp_replace(name, 'with|and|,|\s*', '', 1, 0, 'i') ilike
             regexp_replace(tbl.industry_3_name, 'with|and|,|\s*', '', 1, 0, 'i')
@@ -101,7 +101,7 @@ load csv
     $$
     update openings_careers tbl set industry_4_name = coalesce (
     (
-        select name
+        select key
         from industries
         where regexp_replace(name, 'with|and|,|\s*', '', 1, 0, 'i') ilike
             regexp_replace(tbl.industry_4_name, 'with|and|,|\s*', '', 1, 0, 'i')
@@ -110,7 +110,7 @@ load csv
     $$
     update openings_careers tbl set industry_5_name = coalesce (
     (
-        select name
+        select key
         from industries
         where regexp_replace(name, 'with|and|,|\s*', '', 1, 0, 'i') ilike
             regexp_replace(tbl.industry_5_name, 'with|and|,|\s*', '', 1, 0, 'i')

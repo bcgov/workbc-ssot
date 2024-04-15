@@ -9,7 +9,7 @@
 
 $usage = "Usage: php nocs.php /path/to/concordance/files/ > /path/to/output.csv";
 if (count($argv) < 2) {
-    die("Expecting 1 argument.\n" . $usage . PHP_EOL);
+    fwrite(STDERR, "Expecting 1 argument.\n" . $usage . PHP_EOL);
 }
 $dirname = rtrim($argv[1], DIRECTORY_SEPARATOR) . DIRECTORY_SEPARATOR;
 
@@ -64,7 +64,8 @@ function output_broad_categories() {
             FALSE === $row_fr ||
             $row_fr[COLUMN_BROAD_CATEGORIES_NOC_2021] !== $row_en[COLUMN_BROAD_CATEGORIES_NOC_2021]
         ) {
-            die("Unexpected mismatch between English and French concordances at " . CSV_BROAD_CATEGORIES_FRENCH . " row $row. Aborting.\n");
+            fwrite(STDERR, "Unexpected mismatch between English and French concordances at " . CSV_BROAD_CATEGORIES_FRENCH . " row $row. Aborting.\n");
+            exit(1);
         }
         fputcsv(STDOUT, [
             $row_en[COLUMN_BROAD_CATEGORIES_NOC_2021],
@@ -89,7 +90,8 @@ function output_major_groups() {
             FALSE === $row_fr ||
             $row_fr[COLUMN_MAJOR_GROUPS_NOC_2021] !== $row_en[COLUMN_MAJOR_GROUPS_NOC_2021]
         ) {
-            die("Unexpected mismatch between English and French concordances at " . CSV_MAJOR_GROUPS_FRENCH . " row $row. Aborting.\n");
+            fwrite(STDERR, "Unexpected mismatch between English and French concordances at " . CSV_MAJOR_GROUPS_FRENCH . " row $row. Aborting.\n");
+            exit(1);
         }
         $noc2021 = str_pad($row_en[COLUMN_MAJOR_GROUPS_NOC_2021], 2, '0', STR_PAD_LEFT);
         $noc2016 = empty($row_en[COLUMN_MAJOR_GROUPS_NOC_2016]) ? NULL : str_pad($row_en[COLUMN_MAJOR_GROUPS_NOC_2016], 2, '0', STR_PAD_LEFT);
@@ -116,7 +118,8 @@ function output_minor_groups() {
             FALSE === $row_fr ||
             $row_fr[COLUMN_MINOR_GROUPS_NOC_2021] !== $row_en[COLUMN_MINOR_GROUPS_NOC_2021]
         ) {
-            die("Unexpected mismatch between English and French concordances at " . CSV_MINOR_GROUPS_FRENCH . " row $row. Aborting.\n");
+            fwrite(STDERR, "Unexpected mismatch between English and French concordances at " . CSV_MINOR_GROUPS_FRENCH . " row $row. Aborting.\n");
+            exit(1);
         }
         $noc2021 = str_pad($row_en[COLUMN_MINOR_GROUPS_NOC_2021], 4, '0', STR_PAD_LEFT);
         $noc2016 = empty($row_en[COLUMN_MINOR_GROUPS_NOC_2016]) ? NULL : str_pad($row_en[COLUMN_MINOR_GROUPS_NOC_2016], 3, '0', STR_PAD_LEFT);
@@ -144,7 +147,8 @@ function output_unit_groups() {
             FALSE === $row_fr ||
             $row_fr[COLUMN_UNIT_GROUPS_NOC_2021] !== $row_en[COLUMN_UNIT_GROUPS_NOC_2021]
         ) {
-            die("Unexpected mismatch between English and French concordances at " . CSV_UNIT_GROUPS_FRENCH . " row $row. Aborting.\n");
+            fwrite(STDERR, "Unexpected mismatch between English and French concordances at " . CSV_UNIT_GROUPS_FRENCH . " row $row. Aborting.\n");
+            exit(1);
         }
 
         $noc2016 = empty($row_en[COLUMN_UNIT_GROUPS_NOC_2016]) ? NULL : str_pad($row_en[COLUMN_UNIT_GROUPS_NOC_2016], 4, '0', STR_PAD_LEFT);
@@ -192,6 +196,9 @@ function fopen_or_die($filename) {
     global $dirname;
     $path = $dirname . $filename;
     $fh = fopen($path, 'r');
-    if (!$fh) die("File $path not found. Aborting.\n");
+    if (!$fh) {
+        fwrite(STDERR, "File $path not found. Aborting.\n");
+        exit(1);
+    }
     return $fh;
 }
