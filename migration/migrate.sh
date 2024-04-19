@@ -62,12 +62,12 @@ ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/WorkB
 cat "data/WorkBC_Career_Trek_2023__Apr17_24-LMO.csv" | php csv_extract.php --range 2 > load/career_trek.csv
 
 # Career Search Tool Job Openings
-ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/Career_Search_Tool_Job_Openings_2023_Jan22_24.xlsx" "data/Career_Search_Tool_Job_Openings_2023_Jan22_24-%s.csv"
-cat "data/Career_Search_Tool_Job_Openings_2023_Jan22_24-Sheet 1.csv" | php csv_extract.php --range 2 > load/career_search_openings.csv
+ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/Career_Search_Tool_Job_Openings_2023_Apr19_24.xlsx" "data/Career_Search_Tool_Job_Openings_2023_Apr19_24-%s.csv"
+cat "data/Career_Search_Tool_Job_Openings_2023_Apr19_24-Sheet 1.csv" | php csv_extract.php --range 2 > load/career_search_openings.csv
 
 # Career Search Tool Occupation Groups
-ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/career_search_tool_occupation_groups_manual_update_2023_Jan22_24.xlsx" "data/career_search_tool_occupation_groups_manual_update_2023_Jan22_24-%s.csv"
-cat "data/career_search_tool_occupation_groups_manual_update_2023_Jan22_24-Sheet 1.csv" | php csv_extract.php --range 2 > load/career_search_groups.csv
+ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/career_search_tool_occupation_groups_manual_update_2023_Apr19_24.xlsx" "data/career_search_tool_occupation_groups_manual_update_2023_Apr19_24-%s.csv"
+cat "data/career_search_tool_occupation_groups_manual_update_2023_Apr19_24-Sheet 1.csv" | php csv_extract.php --range 2 > load/career_search_groups.csv
 
 # NOC 2021 Concordance
 php nocs.php "data/NOC2021/" > load/nocs.csv
