@@ -3,7 +3,9 @@ load csv
     (
         noc_2021,
         label_en [trim both whitespace],
+        definition_en [trim both whitespace],
         label_fr [trim both whitespace],
+        definition_fr [trim both whitespace],
         noc_level,
         teer_level,
         parent_noc,
@@ -15,7 +17,9 @@ load csv
     (
         noc_2021,
         label_en,
+        definition_en,
         label_fr,
+        definition_fr,
         noc_level,
         teer_level,
         parent_noc,
@@ -32,7 +36,9 @@ load csv
     (
         noc_2021 text primary key,
         label_en text,
+        definition_en text,
         label_fr text,
+        definition_fr text,
         noc_level int,
         teer_level int,
         parent_noc text,
@@ -45,11 +51,13 @@ load csv
     $$ comment on table nocs is 'NOC 2021 Hierarchy'; $$,
     $$ comment on column nocs.noc_2021 is 'NOC 2021'; $$,
     $$ comment on column nocs.label_en is 'English label'; $$,
+    $$ comment on column nocs.definition_en is 'English definition'; $$,
     $$ comment on column nocs.label_fr is 'French label'; $$,
-    $$ comment on column nocs.noc_level is 'NOC level: 1 (Broad category), 2 (Major group), 3 (Minor group), 4 (Unit group)'; $$,
+    $$ comment on column nocs.definition_fr is 'French definition'; $$,
+    $$ comment on column nocs.noc_level is 'NOC level: 1 (Broad category), 2 (Major group), 3 (Sub-major group), 4, (Minor group), 5 (Unit group)'; $$,
     $$ comment on column nocs.teer_level is 'TEER level (0-5)'; $$,
     $$ comment on column nocs.parent_noc is 'Parent NOC'; $$,
     $$ comment on column nocs.noc_2016 is 'Equivalent NOC 2016 codes (comma-separated)'; $$,
-    $$ create view nocs_nocs as select noc_2021, label_en as label, label_fr, noc_2016 from nocs where noc_level = 4; $$,
-    $$ create view nocs_categories as select noc_2021, label_en as label, noc_level as level from nocs where noc_level < 4; $$
+    $$ create view nocs_nocs as select noc_2021, label_en as label, label_fr, noc_2016 from nocs where noc_level = 5; $$,
+    $$ create view nocs_categories as select noc_2021, label_en as label, noc_level as level from nocs where noc_level < 5; $$
 ;
