@@ -128,8 +128,8 @@ ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/WorkB
 cat "data/WorkBC LMS _JAN_2024-Sheet3.csv" | php csv_empty.php | php monthly_labour_market_update_v3.php 2024 01 > "load/updates/monthly_labour_market_updates_2024_01.csv"
 ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/WorkBC LMS _FEB_2024.xlsx" "data/WorkBC LMS _FEB_2024-%s.csv"
 cat "data/WorkBC LMS _FEB_2024-Sheet3.csv" | php csv_empty.php | php monthly_labour_market_update_v3.php 2024 02 > "load/updates/monthly_labour_market_updates_2024_02.csv"
-ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/WorkBC LMS Mar_2024 - FIXED.xlsx" "data/WorkBC LMS Mar_2024 - FIXED-%s.csv"
-cat "data/WorkBC LMS Mar_2024 - FIXED-Sheet3.csv" | php csv_empty.php | php monthly_labour_market_update_v3.php 2024 03 > "load/updates/monthly_labour_market_updates_2024_03.csv"
+ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/WorkBC LMS Mar_2024- FINAL.xlsx" "data/WorkBC LMS Mar_2024- FINAL-%s.csv"
+cat "data/WorkBC LMS Mar_2024- FINAL-Sheet3.csv" | php csv_empty.php | php monthly_labour_market_update_v3.php 2024 03 > "load/updates/monthly_labour_market_updates_2024_03.csv"
 
 # Load all data in the database.
 for f in load/*.load; do pgloader -l workbc.lisp "$f"; done
