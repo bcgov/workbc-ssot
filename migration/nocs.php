@@ -262,7 +262,6 @@ function output_unit_groups() {
             if (!empty($current_noc)) fputcsv(STDOUT, $current_noc);
 
             // Start a new NOC.
-            // Special cases: 00011 -> 00018, ignore 00012-00015
             $noc2021 = str_pad($row_en[COLUMN_UNIT_GROUPS_NOC_2021], 5, '0', STR_PAD_LEFT);
             if (!array_key_exists($noc2021, $structure_en)) {
                 fwrite(STDERR, "NOC " . $noc2021 . " not found at " . CSV_STRUCTURE_ENGLISH . ". Ignoring definitions.\n");
@@ -273,10 +272,18 @@ function output_unit_groups() {
                 $definition_en = $structure_en[$noc2021][COLUMN_STRUCTURE_DEFINITION];
                 $definition_fr = $structure_fr[$noc2021][COLUMN_STRUCTURE_DEFINITION];
             }
+            // Special cases: 00011 -> 00018, ignore 00012-00015
             if ($noc2021 === '00011') {
                 $noc2021 = '00018';
                 $row_en[COLUMN_UNIT_GROUPS_NOC_2021_LABEL] = 'Senior managers - public and private sector';
                 $row_fr[COLUMN_UNIT_GROUPS_NOC_2021_LABEL] = 'Cadres supérieurs / cadres supérieures - secteur public et privé';
+                $definition_en = <<<EOT
+Senior managers in the public sector oversee operations in government departments and work with their middle managers to develop goals and policies according to legislation. Senior managers in the private sector work in industries such as telecommunications, finance, insurance, real estate, data processing and business services. They work with their middle managers to develop goals and policies and sometimes work with a board of directors.
+EOT;
+                $definition_fr = <<<EOT
+Les cadres supérieurs du secteur public supervisent les opérations des ministères et travaillent avec leurs cadres intermédiaires pour élaborer des objectifs et des politiques conformément à la législation. Les cadres supérieurs du secteur privé travaillent dans des secteurs tels que les télécommunications, la finance, les assurances, l'immobilier, le traitement des données et les services aux entreprises. Ils travaillent avec leurs cadres intermédiaires pour élaborer des objectifs et des politiques et travaillent parfois avec un conseil d'administration.
+EOT;
+                $noc2016 = '0012,0013,0014,0015,0016';
             }
             if (in_array($noc2021, [
                 '00012', '00013', '00014', '00015'
