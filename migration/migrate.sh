@@ -133,5 +133,5 @@ cat "data/WorkBC LMS Mar_2024- FINAL-Sheet3.csv" | php csv_empty.php | php month
 
 # Load all data in the database.
 for f in load/*.load; do pgloader -l workbc.lisp "$f"; done
-psql -c 'TRUNCATE monthly_labour_market_updates'
+psql -c 'DROP TABLE monthly_labour_market_updates'
 for f in load/updates/*.csv; do SOURCE="/app/$f" pgloader -l workbc.lisp load/monthly_labour_market_updates.load; done
