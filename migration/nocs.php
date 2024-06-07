@@ -64,6 +64,10 @@ const COLUMN_UNIT_GROUPS_NOC_2021 = 0;
 const COLUMN_UNIT_GROUPS_NOC_2021_LABEL = 1;
 const COLUMN_UNIT_GROUPS_NOC_2021_TEER = 2;
 
+const CSV_CONCORDANCE_2006_2011 = 'noc2011_unit_groups.csv';
+const COLUMN_CONCORDANCE_NOC_2006 = 0;
+const COLUMN_CONCORDANCE_NOC_2011 = 2;
+
 // Read overall structure.
 $en = fopen_or_die(CSV_STRUCTURE_ENGLISH); fgetcsv($en);
 $fr = fopen_or_die(CSV_STRUCTURE_FRENCH); fgetcsv($fr);
@@ -83,12 +87,46 @@ while (FALSE !== ($row_en = fgetcsv($en))) {
     $structure_fr[$row_fr[COLUMN_STRUCTURE_CODE]] = $row_fr;
 }
 
+// Build 2006-2011 concordance.
+// During output of unit groups, we will insert all concording NOC 2006 for each incoming NOC 2016/2011.
+// To build the concordance:
+// - Map each NOC 2006 to all its NOC 2011
+// - Remove any entry where NOC 2006 == NOC 2011
+// - Invert the dictionary to map NOC 2011 to all its NOC 2006
+$en = fopen_or_die(CSV_CONCORDANCE_2006_2011); fgetcsv($en);
+$concordance_2006_2011 = [];
+while (FALSE !== ($row_en = fgetcsv($en))) {
+    if (empty($row_en[COLUMN_CONCORDANCE_NOC_2006])) continue;
+    $noc2011 = str_pad($row_en[COLUMN_CONCORDANCE_NOC_2011], 4, '0', STR_PAD_LEFT);
+    $noc2006 = str_pad($row_en[COLUMN_CONCORDANCE_NOC_2006], 4, '0', STR_PAD_LEFT);
+    if (!array_key_exists($noc2006, $concordance_2006_2011)) {
+        $concordance_2006_2011[$noc2006] = [$noc2011];
+    }
+    else {
+        $concordance_2006_2011[$noc2006][] = $noc2011;
+    }
+}
+$concordance_2006_2011 = array_filter($concordance_2006_2011, function($noc2011s, $noc2006) {
+    return array_search($noc2006, $noc2011s) === false;
+}, ARRAY_FILTER_USE_BOTH);
+$concordance_2011_2006 = array_reduce(array_keys($concordance_2006_2011), function($concordance_2011_2006, $noc2006) use($concordance_2006_2011) {
+    foreach ($concordance_2006_2011[$noc2006] as $noc2011) {
+        if (!array_key_exists($noc2011, $concordance_2011_2006)) {
+            $concordance_2011_2006[$noc2011] = [$noc2006];
+        }
+        else {
+            $concordance_2011_2006[$noc2011][] = $noc2006;
+        }
+    }
+    return $concordance_2011_2006;
+}, []);
+
 // Start output.
 output_broad_categories();
 output_major_groups();
 output_submajor_groups();
 output_minor_groups();
-output_unit_groups();
+output_unit_groups($concordance_2011_2006);
 
 function output_broad_categories() {
     global $structure_en;
@@ -234,7 +272,7 @@ function output_minor_groups() {
     }
 }
 
-function output_unit_groups() {
+function output_unit_groups($concordance_2011_2006) {
     global $structure_en;
     global $structure_fr;
     $en = fopen_or_die(CSV_UNIT_GROUPS_ENGLISH); fgetcsv($en);
@@ -252,6 +290,11 @@ function output_unit_groups() {
         }
 
         $noc2016 = empty($row_en[COLUMN_UNIT_GROUPS_NOC_2016]) ? NULL : str_pad($row_en[COLUMN_UNIT_GROUPS_NOC_2016], 4, '0', STR_PAD_LEFT);
+
+        // Add NOC 2006 concordance to NOC 2016.
+        if (array_key_exists($noc2016, $concordance_2011_2006)) {
+            $noc2016 .= ',' . join(',', $concordance_2011_2006[$noc2016]);
+        }
 
         // If NOC 2021 is empty, add the incoming NOC 2016 to the current NOC.
         if (empty($row_en[COLUMN_UNIT_GROUPS_NOC_2021])) {
