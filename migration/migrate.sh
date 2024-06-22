@@ -79,6 +79,10 @@ php nocs.php "data/NOC2021/" > load/nocs.csv
 # EDM NAICS / Industry Profiles
 php industries.php "data/EDM/" > load/industries.csv
 
+# O*NET <> NOC Concordance
+ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/onet2019_soc2018_noc2016_noc2021_crosswalk.xlsx" "data/onet2019_soc2018_noc2016_noc2021_crosswalk-%s.csv"
+cat "data/onet2019_soc2018_noc2016_noc2021_crosswalk-Sheet1.csv" | php csv_extract.php --range 2 | php csv_pad.php --column 1:L:5:0  --column 3:L:4:0 > load/onet_nocs.csv
+
 # TODO Labour Market Monthly Updates
 # REFRESH_WorkBC LMS _2021 Jan FINAL.xlsx
 # REFRESH_WorkBC LMS _2021 Feb FINAL.xlsx
