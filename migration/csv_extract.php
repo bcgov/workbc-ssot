@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Extract given range(s) from CSV.
+ * Extract CSV rows based on given ranges.
  *
  * Usage: php csv_extract.php --range start1-end1 [--cols length] [--range start2-end2] ... < /path/to/input.csv > /path/to/output.csv
  */
