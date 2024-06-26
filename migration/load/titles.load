@@ -1,9 +1,7 @@
 load csv
     from 'titles.csv'
     (
-        noc_discard,
         noc,
-        nameenglish,
         commonjobtitle
     )
     into postgresql:///ssot
@@ -11,7 +9,6 @@ load csv
     target columns
     (
         noc text using (trim-hash noc),
-        nameenglish,
         commonjobtitle
     )
     with
@@ -24,15 +21,13 @@ load csv
     $$ create table if not exists titles
     (
         noc text,
-        nameenglish text,
         commonjobtitle text
     );
     $$
 
     after load do
     $$ create index titles_noc_idx on titles (noc); $$,
-    $$ comment on table titles is 'Common Job Titles revised - July 18 2017 (RA)'; $$,
-    $$ comment on column titles.noc is 'NOC'; $$,
-    $$ comment on column titles.nameenglish is 'NameEnglish'; $$,
-    $$ comment on column titles.commonjobtitle is 'CommonJobTitle'; $$
+    $$ comment on table titles is '2021 NOC - Common Job Titles - Illustrative Listing'; $$,
+    $$ comment on column titles.noc is 'Code - NOC 2021 V1.0'; $$,
+    $$ comment on column titles.commonjobtitle is 'Element Description English'; $$
 ;

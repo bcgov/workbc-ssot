@@ -1,0 +1,372 @@
+NOC 2006 Code,NOC 2006 Label,NOC 2011 Code,NOC 2011 Label,Description
+11,Legislators,11,Legislators,Except territorial commissioners
+11,Legislators,12,Senior government managers and officials,Territorial commissioners moved to 0012
+12,Senior Government Managers and Officials,12,Senior government managers and officials,Includes territorial commissioners from 0011
+14,"Senior Managers - Health, Education, Social and Community Services and Membership Organizations",14,"Senior managers - health, education, social and community services and membership organizations",Includes automobile association executive directors and hockey association general managers from 0015
+15,"Senior Managers - Trade, Broadcasting and Other Services, n.e.c.",14,"Senior managers - health, education, social and community services and membership organizations",Automobile association executive directors and hockey association general managers moved to 0014
+15,"Senior Managers - Trade, Broadcasting and Other Services, n.e.c.",15,"Senior managers - trade, broadcasting and other services, n.e.c.",Except automobile association executive directors and hockey association general managers
+16,"Senior Managers - Goods Production, Utilities, Transportation and Construction",16,"Senior managers - construction, transportation, production and utilities",Modified label
+123,Other Business Services Managers,124,"Advertising, marketing and public relations managers","New code - includes advertising agency managers from former 0123. Also includes advertising, marketing and public relations managers from former 0611."
+123,Other Business Services Managers,125,Other business services managers,New code - except advertising agency managers
+312,Administrators - Post-Secondary Education and Vocational Training,421,Administrators - post-secondary education and vocational training,New code
+313,School Principals and Administrators of Elementary and Secondary Education,422,School principals and administrators of elementary and secondary education,New code
+314,"Managers in Social, Community and Correctional Services",423,"Managers in social, community and correctional services",New code
+,,421,Administrators - post-secondary education and vocational training,New code - former 0312
+,,422,School principals and administrators of elementary and secondary education,New code - former 0313
+,,423,"Managers in social, community and correctional services",New code - former 0314
+,,431,Commissioned police officers,New code - former 0641
+,,432,Fire chiefs and senior firefighting officers,New code - former 0642
+,,433,Commissioned officers of the Canadian Forces,New code - former 0643
+,,601,Corporate sales managers,New code - includes corporate sales managers from former 0611
+611,"Sales, Marketing and Advertising Managers",124,"Advertising, marketing and public relations managers","Advertising, marketing and public relations managers moved to new code 0124"
+611,"Sales, Marketing and Advertising Managers",601,Corporate sales managers,Corporate sales managers moved to new code 0601
+611,"Sales, Marketing and Advertising Managers",621,Retail and wholesale trade managers,Wholesale trade managers moved to 0621
+611,"Sales, Marketing and Advertising Managers",1123,"Professional occupations in advertising, marketing and public relations",Advertising account managers moved to new code 1123
+621,Retail Trade Managers,124,"Advertising, marketing and public relations managers",Advertising and marketing managers in retail trade moved to new code 0124
+621,Retail Trade Managers,601,Corporate sales managers,Corporate sales managers in retail trade moved to new code 0601
+621,Retail Trade Managers,621,Retail and wholesale trade managers,"Modified label - includes wholesale trade managers from former 0611 and certain food store section managers, e.g. meat managers and deli managers in food stores from 6211."
+641,Commissioned Police Officers,431,Commissioned police officers,New code – former 0641
+642,Fire Chiefs and Senior Firefighting Officers,432,Fire chiefs and senior firefighting officers,New code – former 0642
+643,"Commissioned Officers, Armed Forces",433,Commissioned officers of the Canadian Forces,New code and modified label - former 0643
+651,Other Services Managers,651,"Managers in customer and personal services, n.e.c.",Modified label
+712,Residential Home Builders and Renovators,712,Home building and renovation managers,Modified label
+713,Transportation Managers,731,Managers in transportation,New code and modified label - includes distribution and warehousing managers from former 0721
+721,Facility Operation and Maintenance Managers,714,Facility operation and maintenance managers,New code - except distribution and warehousing managers
+721,Facility Operation and Maintenance Managers,731,Managers in transportation,Distribution and warehousing managers moved to new code 0731
+811,Primary Production Managers (Except Agriculture),811,Managers in natural resources production and fishing,Modified label
+,,821,Managers in agriculture,New code and modified label - relocated from former 8251
+,,822,Managers in horticulture,New code and modified label - relocated from former 8254
+,,823,Managers in aquaculture,New code and modified label - relocated from former 8257
+1121,Specialists in Human Resources,1121,Human resources professionals,Modified label
+1122,Professional Occupations in Business Services to Management,1122,Professional occupations in business management consulting,Modified label - except advertising and marketing professionals
+1122,Professional Occupations in Business Services to Management,1123,"Professional occupations in advertising, marketing and public relations","New code - includes advertising and marketing professionals from 1122. Also includes advertising account managers from former 0611, marketing consultants – advertising from 4163, and former unit group 5124."
+1211,"Supervisors, General Office and Administrative Support Clerks",1211,"Supervisors, general office and administrative support workers",Modified label - except regulatory clerks supervisors and medical records supervisors
+1211,"Supervisors, General Office and Administrative Support Clerks",1213,"Supervisors, library, correspondence and related information workers",Regulatory clerks supervisors moved to 1213
+1211,"Supervisors, General Office and Administrative Support Clerks",1252,Health information management occupations,Medical records supervisors moved to new code 1252
+1212,"Supervisors, Finance and Insurance Clerks",1212,"Supervisors, finance and insurance office workers",Modified label - except customer service representatives supervisors - financial services
+1212,"Supervisors, Finance and Insurance Clerks",6314,Customer and information services supervisors,Customer service representatives supervisors - financial services moved to new code 6314
+1213,"Supervisors, Library, Correspondence and Related Information Clerks",1213,"Supervisors, library, correspondence and related information workers",Modified label - except customer service representatives supervisors (except financial services). Includes regulatory clerks supervisors from 1211.
+1213,"Supervisors, Library, Correspondence and Related Information Clerks",6314,Customer and information services supervisors,Customer service representatives supervisors (except financial services) moved to new code 6314
+1215,"Supervisors, Recording, Distributing and Scheduling Occupations",1215,"Supervisors, supply chain, tracking and scheduling co-ordination occupations",Modified label
+1223,Personnel and Recruitment Officers,1223,Human resources and recruitment officers,Modified label
+1228,"Immigration, Employment Insurance and Revenue Officers",1228,"Employment insurance, immigration, border services and revenue officers",Modified label
+,,1251,"Court reporters, medical transcriptionists and related occupations",New code and modified label - former 1244
+,,1252,Health information management occupations,New code - includes medical records supervisors from 1211 and medical records technicians from former 1413
+,,1253,Records management technicians,New code - includes records management from former 1413
+,,1254,Statistical officers and related research support occupations,New code - includes statistical officers and technicians from 2161 and social science research assistants (except university) from 4164
+1231,Bookkeepers,1311,Accounting technicians and bookkeepers,New code and modified label
+1232,Loan Officers,6235,Financial sales representatives,Relocated to new code 6235 and modified label
+1233,Insurance Adjusters and Claims Examiners,1312,Insurance adjusters and claims examiners,New code
+1234,Insurance Underwriters,1313,Insurance underwriters,New code
+1235,"Assessors, Valuators and Appraisers",1314,"Assessors, valuators and appraisers",New code
+1236,"Customs, Ship and Other Brokers",1315,"Customs, ship and other brokers",New code
+1241,Secretaries (Except Legal and Medical),1241,Administrative assistants,Modified label - includes administrative assistants from 1411
+1242,Legal Secretaries,1242,Legal administrative assistants,Modified label - includes legal assistants from 4211
+1243,Medical Secretaries,1243,Medical administrative assistants,Modified label
+1244,Court Recorders and Medical Transcriptionists,1251,"Court reporters, medical transcriptionists and related occupations",New code and modified label
+1411,General Office Clerks,1241,Administrative assistants,Administrative assistants moved to 1241
+1411,General Office Clerks,1411,General office support workers,Modified label - except administrative assistants and meter readers. Includes filing clerks from former 1413 and administrative clerks from former 1441.
+1411,General Office Clerks,1454,Survey interviewers and statistical clerks,Meter readers moved to 1454
+1413,Records Management and Filing Clerks,1252,Health information management occupations,Medical records technicians moved to new code 1252
+1413,Records Management and Filing Clerks,1253,Records management technicians,Records management moved to new code 1253
+1413,Records Management and Filing Clerks,1411,General office support workers,Filing clerks moved to 1411
+1414,Receptionists and Switchboard Operators,1414,Receptionists,Modified label - includes former unit group 1424
+,,1415,Personnel clerks,New code - former unit group 1442
+,,1416,Court clerks,New code - former unit group 1443
+1424,Telephone Operators,1414,Receptionists,Merged with 1414
+1433,Customer Service Representatives - Financial Services,6551,Customer services representatives - financial institutions,Relocated to new code 6551 and modified label
+1441,Administrative Clerks,1411,General office support workers,Administrative clerks moved to 1411
+1441,Administrative Clerks,1452,"Correspondence, publication and regulatory clerks",Regulatory clerks moved to 1452
+1442,Personnel Clerks,1415,Personnel clerks,New code
+1443,Court Clerks,1416,Court clerks,New code
+1451,Library Clerks,1451,Library assistants and clerks,Modified label - includes library assistants from 5211
+1452,"Correspondence, Publication and Related Clerks",1452,"Correspondence, publication and regulatory clerks",Modified label - includes regulatory clerks from former 1441
+1453,"Customer Service, Information and Related Clerks",6552,Other customer and information services representatives,Relocated to new code 6552 and modified label
+1454,Survey Interviewers and Statistical Clerks,1454,Survey interviewers and statistical clerks,Includes meter readers from 1411
+1461,"Mail, Postal and Related Clerks",1511,"Mail, postal and related workers",New code and modified label
+1462,Letter Carriers,1512,Letter carriers,New code
+1463,"Couriers, Messengers and Door-to-Door Distributors",1513,"Couriers, messengers and door-to-door distributors",New code
+1471,Shippers and Receivers,1521,Shippers and receivers,New code
+1472,Storekeepers and Parts Clerks,1522,Storekeepers and partspersons,New code and modified label
+1473,Production Clerks,1523,Production logistics co-ordinators,New code and modified label
+1474,Purchasing and Inventory Clerks,1524,Purchasing and inventory control workers,New code and modified label
+1475,Dispatchers and Radio Operators,1525,Dispatchers,New code and modified label
+1476,Transportation Route and Crew Schedulers,1526,Transportation route and crew schedulers,New code
+2111,Physicists and Astronomers,2111,Physicists and astronomers,Includes atmospheric physicists from 2114
+2113,"Geologists, Geochemists and Geophysicists",2113,Geoscientists and oceanographers,Modified label
+2114,Meteorologists,2111,Physicists and astronomers,Atmospheric physicists moved to 2111
+2114,Meteorologists,2114,Meteorologists and climatologists,Modified label - except atmospheric physicists
+2161,"Mathematicians, Statisticians and Actuaries",1254,Statistical officers and related research support occupations,Statistical officers and technicians moved to new code 1254
+2161,"Mathematicians, Statisticians and Actuaries",2161,"Mathematicians, statisticians and actuaries",Except statistical officers and technicians
+2213,Meteorological Technicians,2255,Technical occupations in geomatics and meteorology,Merged with 2255
+2255,Mapping and Related Technologists and Technicians,2255,Technical occupations in geomatics and meteorology,Modified label - includes former unit group 2213
+2261,Non-Destructive Testers and Inspectors,2261,Non-destructive testers and inspection technicians,Modified label
+2272,Air Traffic Control and Related Occupations,2272,Air traffic controllers and related occupations,Modified label
+2283,Systems Testing Technicians,2283,Information systems testing technicians,Modified label
+,,3011,Nursing co-ordinators and supervisors,New code and modified label - former 3151
+,,3012,Registered nurses and registered psychiatric nurses,New code and modified label - former 3152 except nurse practitioners
+,,3124,Allied primary health practitioners,New code - includes nurse practitioners from former 3152 and midwives from 3232
+3123,Other Professional Occupations in Health Diagnosing and Treating,3125,Other professional occupations in health diagnosing and treating,New code
+3144,Other Professional Occupations in Therapy and Assessment,3144,Other professional occupations in therapy and assessment,Includes kinesiologists and exercise physiologists and therapists from 4167
+3151,Head Nurses and Supervisors,3011,Nursing co-ordinators and supervisors,New code and modified label
+3152,Registered Nurses,3012,Registered nurses and registered psychiatric nurses,New code and modified label - except nurse practitioners
+3152,Registered Nurses,3124,Allied primary health practitioners,Nurse practitioners moved to new code 3124
+3211,Medical Laboratory Technologists and Pathologists' Assistants,3211,Medical laboratory technologists,Modified label - except pathology assistants and morgue attendant supervisors
+3211,Medical Laboratory Technologists and Pathologists' Assistants,3212,Medical laboratory technicians and pathologists' assistants,Pathology assistants and morgue attendant supervisors moved to 3212
+3212,Medical Laboratory Technicians,3212,Medical laboratory technicians and pathologists' assistants,Modified label - includes pathology assistants and morgue attendant supervisors from 3211
+3213,Veterinary and Animal Health Technologists and Technicians,3213,Animal health technologists and veterinary technicians,Modified label
+3217,Cardiology Technologists,3217,"Cardiology technologists and electrophysiological diagnostic technologists, n.e.c.",Modified label - includes former unit group 3218
+3218,"Electroencephalographic and Other Diagnostic Technologists, n.e.c.",3217,"Cardiology technologists and electrophysiological diagnostic technologists, n.e.c.",Merged with 3217
+3219,Other Medical Technologists and Technicians (Except Dental Health),3219,Other medical technologists and technicians (except dental health),Includes pharmacy technicians from 3414
+3223,"Dental Technologists, Technicians and Laboratory Bench Workers",3223,"Dental technologists, technicians and laboratory assistants",Modified label
+3232,Midwives and Practitioners of Natural Healing,3124,Allied primary health practitioners,Midwives moved to new code 3124
+3232,Midwives and Practitioners of Natural Healing,3232,Practitioners of natural healing,Modified label - except midwives
+3234,Ambulance Attendants and Other Paramedical Occupations,3234,Paramedical occupations,Modified label - except emergency medical care assistants
+3234,Ambulance Attendants and Other Paramedical Occupations,3413,"Nurse aides, orderlies and patient service associates",Emergency medical care assistants moved to 3413
+3235,Other Technical Occupations in Therapy and Assessment,3236,Massage therapists,New code - includes massage therapists from former 3235
+3235,Other Technical Occupations in Therapy and Assessment,3237,Other technical occupations in therapy and assessment,New code - except massage therapists. Includes physiotherapy and occupational therapy assistants and technicians from 3414.
+3413,"Nurse Aides, Orderlies and Patient Service Associates",3413,"Nurse aides, orderlies and patient service associates",Includes emergency medical care assistants from 3234
+3414,Other Assisting Occupations in Support of Health Services,3219,Other medical technologists and technicians (except dental health),Pharmacy technicians moved to 3219
+3414,Other Assisting Occupations in Support of Health Services,3237,Other technical occupations in therapy and assessment,Physiotherapy and occupational therapy assistants and technicians moved to new code 3237
+3414,Other Assisting Occupations in Support of Health Services,3414,Other assisting occupations in support of health services,Except pharmacy technicians and physiotherapy and occupational therapy assistants and technicians
+4121,University Professors,4011,University professors and lecturers,New code and modified label - includes postdoctoral fellows from former 4122
+4122,Post-Secondary Teaching and Research Assistants,4011,University professors and lecturers,Postdoctoral fellows moved to new code 4011
+4122,Post-Secondary Teaching and Research Assistants,4012,Post-secondary teaching and research assistants,New code - except postdoctoral fellows
+4131,College and Other Vocational Instructors,4021,College and other vocational instructors,New code
+4141,Secondary School Teachers,4031,Secondary school teachers,New code - except secondary school librarians
+4141,Secondary School Teachers,5211,Library and public archive technicians,Secondary school librarians moved to 5211
+4142,Elementary School and Kindergarten Teachers,4032,Elementary school and kindergarten teachers,New code - except elementary school librarians
+4142,Elementary School and Kindergarten Teachers,5211,Library and public archive technicians,Elementary school librarians moved to 5211
+4143,Educational Counsellors,4033,Educational counsellors,New code
+4154,Ministers of Religion,4154,Professional occupations in religion,Modified label
+,,4156,Employment counsellors,New code - relocated from former 4213
+4163,Business Development Officers and Marketing Researchers and Consultants,1123,"Professional occupations in advertising, marketing and public relations",Marketing consultants – advertising moved to new code 1123
+4163,Business Development Officers and Marketing Researchers and Consultants,4163,Business development officers and marketing researchers and consultants,Except marketing consultants – advertising
+4164,"Social Policy Researchers, Consultants and Program Officers",1254,Statistical officers and related research support occupations,Social science research assistants (except university) moved to new code 1254
+4164,"Social Policy Researchers, Consultants and Program Officers",4164,"Social policy researchers, consultants and program officers",Except social science research assistants (except university)
+4167,"Recreation, Sports and Fitness Program Supervisors and Consultants",3144,Other professional occupations in therapy and assessment,Kinesiologists and exercise physiologists and therapists moved to 3144
+4167,"Recreation, Sports and Fitness Program Supervisors and Consultants",4167,"Recreation, sports and fitness policy researchers, consultants and program officers","Modified label - except kinesiologists, exercise physiologists and therapists, fitness supervisors, fitness appraisers and camp co-ordinators and pool co-ordinators"
+4167,"Recreation, Sports and Fitness Program Supervisors and Consultants",5254,"Program leaders and instructors in recreation, sport and fitness","Fitness supervisors, fitness appraisers and camp co-ordinators and pool co-ordinators moved to 5254"
+4211,Paralegal and Related Occupations,1242,Legal administrative assistants,Legal assistants moved to 1242
+4211,Paralegal and Related Occupations,4211,Paralegal and related occupations,Except legal assistants
+4212,Community and Social Service Workers,4212,Social and community service workers,Modified label
+4213,Employment Counsellors,4156,Employment counsellors,Relocated to new code 4156
+4215,Instructors and Teachers of Persons with Disabilities,4215,Instructors of persons with disabilities,Modified label
+,,4311,Police officers (except commissioned),New code - relocated from former 6261
+,,4312,Firefighters,New code - relocated from former 6262
+,,4313,Non-commissioned ranks of the Canadian Forces,New code and modified label - relocated from former 6464
+,,4411,Home child care providers,New code and modified label - relocated from former 6474 and includes foster parents from former 6471
+,,4412,"Home support workers, housekeepers and related occupations",New code and modified label - relocated from former 6471 except foster parents
+,,4413,Elementary and secondary school teacher assistants,New code - relocated from former 6472
+,,4421,Sheriffs and bailiffs,New code - relocated from former 6461
+,,4422,Correctional service officers,New code - relocated from former 6462
+,,4423,"By-law enforcement and other regulatory officers, n.e.c.",New code - relocated from former 6463
+5124,Professional Occupations in Public Relations and Communications,1123,"Professional occupations in advertising, marketing and public relations",Relocated to new code 1123 and modified label
+5211,Library and Archive Technicians and Assistants,1451,Library assistants and clerks,Library assistants moved to 1451
+5211,Library and Archive Technicians and Assistants,5211,Library and public archive technicians,Modified label - except library assistants. Includes secondary and elementary school librarians moved from former 4141 and 4142.
+5227,"Support Occupations in Motion Pictures, Broadcasting and the Performing Arts",5227,"Support occupations in motion pictures, broadcasting, photography and the performing arts",Modified label
+5232,Other Performers,5232,"Other performers, n.e.c.",Modified label
+5242,Interior Designers,5242,Interior designers and interior decorators,Modified label - includes interior decorators from 6421
+5254,"Program Leaders and Instructors in Recreation, Sport and Fitness",5254,"Program leaders and instructors in recreation, sport and fitness","Includes fitness supervisors, fitness appraisers and camp co-ordinators and pool co-ordinators from 4167"
+6211,Retail Trade Supervisors,621,Retail and wholesale trade managers,"Certain food store section managers, e.g. meat managers and deli managers in food stores moved to 0621"
+6211,Retail Trade Supervisors,6211,Retail sales supervisors,"Modified label - except certain food store section managers, e.g. meat managers and deli managers in food stores"
+6212,Food Service Supervisors,6311,Food service supervisors,New code
+6213,Executive Housekeepers,6312,Executive housekeepers,New code
+6214,Dry Cleaning and Laundry Supervisors,6316,Other services supervisors,Merged with former unit group 6216 and moved to new code 6316
+6215,Cleaning Supervisors,6315,Cleaning supervisors,New code
+6216,Other Service Supervisors,6313,"Accommodation, travel, tourism and related services supervisors","New code - includes accommodation, travel, tourism and related supervisors from former 6216. Also includes casino occupations supervisors from former 6443."
+6216,Other Service Supervisors,6316,Other services supervisors,"New code and modified label - except accommodation, travel, tourism and related supervisors. Includes former unit group 6214."
+6221,Technical Sales Specialists - Wholesale Trade,6221,Technical sales specialists - wholesale trade,Includes former unit group 6234
+,,6222,Retail and wholesale buyers,New code - former 6233
+6233,Retail and Wholesale Buyers,6222,Retail and wholesale buyers,New code
+6234,Grain Elevator Operators,6221,Technical sales specialists - wholesale trade,Merged with 6221
+,,6235,Financial sales representatives,New code and modified label - relocated from former 1232
+,,6311,Food service supervisors,New code - former 6212
+,,6312,Executive housekeepers,New code - former 6213
+,,6313,"Accommodation, travel, tourism and related services supervisors","New code - includes accommodation, travel, tourism and related supervisors from former 6216 and casino occupations supervisors from former 6443"
+,,6314,Customer and information services supervisors,New code - includes customer service representatives supervisors - financial services from former 1212 and customer service representatives supervisors (except financial services) from former 1213
+,,6315,Cleaning supervisors,New code - former 6215
+,,6316,Other services supervisors,"New code and modified label - includes former unit groups 6214 and 6216 except accommodation, travel, tourism and related supervisors"
+6241,Chefs,6321,Chefs,New code
+6242,Cooks,6322,Cooks,New code
+6251,"Butchers, Meat Cutters and Fishmongers - Retail and Wholesale",6331,"Butchers, meat cutters and fishmongers - retail and wholesale",New code
+6252,Bakers,6332,Bakers,New code
+6261,Police Officers (Except Commissioned),4311,Police officers (except commissioned),Relocated to new code 4311
+6262,Firefighters,4312,Firefighters,Relocated to new code 4312
+6271,Hairstylists and Barbers,6341,Hairstylists and barbers,New code
+,,6342,"Tailors, dressmakers, furriers and milliners",New code - relocated from former 7342
+,,6343,Shoe repairers and shoemakers,New code - relocated from former 7343
+,,6344,"Jewellers, jewellery and watch repairers and related occupations",New code and modified label - relocated from former 7344
+,,6345,Upholsterers,New code - relocated from former 7341
+6272,Funeral Directors and Embalmers,6346,Funeral directors and embalmers,New code
+6411,Sales Representatives - Wholesale Trade (Non-Technical),6411,Sales and account representatives - wholesale trade (non-technical),Modified label
+6421,Retail Salespersons and Sales Clerks,5242,Interior designers and interior decorators,Interior decorators moved to 5242
+6421,Retail Salespersons and Sales Clerks,6421,Retail salespersons,Modified label - except interior decorators
+,,6511,Maîtres d'hôtel and hosts/hostesses,New code - former 6451
+,,6512,Bartenders,New code - former 6452
+,,6513,Food and beverage servers,New code - former 6453
+6431,Travel Counsellors,6521,Travel counsellors,New code
+6432,Pursers and Flight Attendants,6522,Pursers and flight attendants,New code
+6433,Airline Sales and Service Agents,6523,Airline ticket and service agents,New code and modified label
+6434,"Ticket Agents, Cargo Service Representatives and Related Clerks (Except Airline)",6524,"Ground and water transport ticket agents, cargo service representatives and related clerks",New code and modified label
+6435,Hotel Front Desk Clerks,6525,Hotel front desk clerks,New code
+6441,Tour and Travel Guides,6531,Tour and travel guides,New code
+6442,Outdoor Sport and Recreational Guides,6532,Outdoor sport and recreational guides,New code
+6443,Casino Occupations,6313,"Accommodation, travel, tourism and related services supervisors",Casino occupations supervisors moved to new code 6313
+6443,Casino Occupations,6533,Casino occupations,New code - except casino occupations supervisors
+6451,Maîtres d'hôtel and Hosts/Hostesses,6511,Maîtres d'hôtel and hosts/hostesses,New code
+6452,Bartenders,6512,Bartenders,New code
+6453,Food and Beverage Servers,6513,Food and beverage servers,New code
+6461,Sheriffs and Bailiffs,4421,Sheriffs and bailiffs,Relocated to new code 4421
+6462,Correctional Service Officers,4422,Correctional service officers,Relocated to new code 4422
+6463,"By-Law Enforcement and Other Regulatory Officers, n.e.c.",4423,"By-law enforcement and other regulatory officers, n.e.c.",Relocated to new code 4423
+6464,Occupations Unique to the Armed Forces,4313,Non-commissioned ranks of the Canadian Forces,Relocated to new code 4313 and modified label
+6465,Other Protective Service Occupations,6541,Security guards and related security service occupations,New code and modified label - includes former unit group 6651
+6471,"Visiting Homemakers, Housekeepers and Related Occupations",4411,Home child care providers,Foster parents moved to 4411
+6471,"Visiting Homemakers, Housekeepers and Related Occupations",4412,"Home support workers, housekeepers and related occupations",Relocated to new code 4412 and modified label - except foster parents
+6472,Elementary and Secondary School Teacher Assistants,4413,Elementary and secondary school teacher assistants,Relocated to new code 4413
+6474,"Babysitters, Nannies and Parents' Helpers",4411,Home child care providers,Relocated to new code 4411 and modified label - includes foster parents from former 6471
+,,6551,Customer services representatives - financial institutions,New code and modified label - relocated from former 1433
+,,6552,Other customer and information services representatives,New code and modified label - relocated from former 1453
+6481,"Image, Social and Other Personal Consultants",6561,"Image, social and other personal consultants",New code
+6482,"Estheticians, Electrologists and Related Occupations",6562,"Estheticians, electrologists and related occupations",New code
+6483,Pet Groomers and Animal Care Workers,6563,Pet groomers and animal care workers,New code
+6484,Other Personal Service Occupations,6564,Other personal service occupations,New code
+6622,Grocery Clerks and Store Shelf Stockers,6622,"Store shelf stockers, clerks and order fillers",Modified label
+6623,Other Elemental Sales Occupations,6623,Other sales related occupations,"Modified label - except ice cream, popcorn and hot dog vendors"
+6623,Other Elemental Sales Occupations,6711,"Food counter attendants, kitchen helpers and related support occupations","Ice cream, popcorn and hot-dog vendors moved to new code 6711"
+6641,"Food Counter Attendants, Kitchen Helpers and Related Occupations",6711,"Food counter attendants, kitchen helpers and related support occupations","New code and modified label - includes ice cream, popcorn and hot-dog vendors from former 6623"
+6651,Security Guards and Related Occupations,6541,Security guards and related security service occupations,Merged with former 6465 and relocated to new code 6541
+,,6721,"Support occupations in accommodation, travel and facilities set-up services",New code and modified label - former 6672 and includes facilities porters from 7452
+,,6722,"Operators and attendants in amusement, recreation and sport",New code - former 6671
+6661,Light Duty Cleaners,6731,Light duty cleaners,New code
+6662,Specialized Cleaners,6732,Specialized cleaners,New code
+6663,"Janitors, Caretakers and Building Superintendents",6733,"Janitors, caretakers and building superintendents",New code
+6671,"Operators and Attendants in Amusement, Recreation and Sport",6722,"Operators and attendants in amusement, recreation and sport",New code
+6672,Other Attendants in Accommodation and Travel,6721,"Support occupations in accommodation, travel and facilities set-up services",Includes facilities porters from 7452
+6681,Dry Cleaning and Laundry Occupations,6741,"Dry cleaning, laundry and related occupations",New code and modified label - includes former unit group 6682
+6682,"Ironing, Pressing and Finishing Occupations",6741,"Dry cleaning, laundry and related occupations",Merged with former 6681 and moved to new code 6741
+6683,Other Elemental Service Occupations,6742,"Other service support occupations, n.e.c.",New code and modified label
+7211,"Supervisors, Machinists and Related Occupations",7201,"Contractors and supervisors, machining, metal forming, shaping and erecting trades and related occupations",New code and modified label - includes former unit group 7214
+7212,"Contractors and Supervisors, Electrical Trades and Telecommunications Occupations",7202,"Contractors and supervisors, electrical trades and telecommunications occupations",New code
+7213,"Contractors and Supervisors, Pipefitting Trades",7203,"Contractors and supervisors, pipefitting trades",New code
+7214,"Contractors and Supervisors, Metal Forming, Shaping and Erecting Trades",7201,"Contractors and supervisors, machining, metal forming, shaping and erecting trades and related occupations",Merged with former 7211 and moved to new code 7201
+7215,"Contractors and Supervisors, Carpentry Trades",7204,"Contractors and supervisors, carpentry trades",New code
+7216,"Contractors and Supervisors, Mechanic Trades",7301,"Contractors and supervisors, mechanic trades",New code
+7217,"Contractors and Supervisors, Heavy Construction Equipment Crews",7302,"Contractors and supervisors, heavy equipment operator crews",New code and modified label
+7218,"Supervisors, Printing and Related Occupations",7303,"Supervisors, printing and related occupations",New code
+7219,"Contractors and Supervisors, Other Construction Trades, Installers, Repairers and Servicers",7205,"Contractors and supervisors, other construction trades, installers, repairers and servicers",New code
+7221,"Supervisors, Railway Transport Operations",7304,"Supervisors, railway transport operations",New code
+7222,"Supervisors, Motor Transport and Other Ground Transit Operators",7305,"Supervisors, motor transport and other ground transit operators",New code
+,,7233,Sheet metal workers,New code - former 7261
+,,7234,Boilermakers,New code - former 7262
+,,7235,Structural metal and platework fabricators and fitters,New code - former 7263
+,,7236,Ironworkers,New code - former 7264
+,,7237,Welders and related machine operators,New code - former 7265
+7261,Sheet Metal Workers,7233,Sheet metal workers,New code
+7262,Boilermakers,7234,Boilermakers,New code
+7263,Structural Metal and Platework Fabricators and Fitters,7235,Structural metal and platework fabricators and fitters,New code
+7264,Ironworkers,7236,Ironworkers,New code
+7265,Welders and Related Machine Operators,7237,Welders and related machine operators,New code
+7266,Blacksmiths and Die Setters,7384,"Other trades and related occupations, n.e.c.",Merged with former 7383 and moved to new code 7384
+7294,Painters and Decorators,7294,Painters and decorators (except interior decorators),Modified label
+,,7301,"Contractors and supervisors, mechanic trades",New code - former 7216
+,,7302,"Contractors and supervisors, heavy equipment operator crews",New code and modified label - former 7217
+,,7303,"Supervisors, printing and related occupations",New code - former 7218
+,,7304,"Supervisors, railway transport operations",New code - former 7221
+,,7305,"Supervisors, motor transport and other ground transit operators",New code - former 7222
+7311,Construction Millwrights and Industrial Mechanics (Except Textile),7311,Construction millwrights and industrial mechanics,Modified label - includes former unit group 7317
+7317,Textile Machinery Mechanics and Repairers,7311,Construction millwrights and industrial mechanics,Merged with 7311
+7332,Electric Appliance Servicers and Repairers,7332,Appliance servicers and repairers,Modified label
+7334,Motorcycle and Other Related Mechanics,7334,"Motorcycle, all-terrain vehicle and other related mechanics",Modified label - includes motor boat mechanics from 7335
+7335,Other Small Engine and Equipment Mechanics,7334,"Motorcycle, all-terrain vehicle and other related mechanics",Motor boat mechanics moved to 7334
+7335,Other Small Engine and Equipment Mechanics,7335,Other small engine and small equipment repairers,Modified label - except motor boat mechanics
+7341,Upholsterers,6345,Upholsterers,Relocated to new code 6345
+7342,"Tailors, Dressmakers, Furriers and Milliners",6342,"Tailors, dressmakers, furriers and milliners",Relocated to new code 6342
+7343,Shoe Repairers and Shoemakers,6343,Shoe repairers and shoemakers,Relocated to new code 6343
+7344,"Jewellers, Watch Repairers and Related Occupations",6344,"Jewellers, jewellery and watch repairers and related occupations",Relocated to new code 6344 and modified label
+7351,Stationary Engineers and Auxiliary Equipment Operators,9241,Power engineers and power systems operators,Includes former unit group 7352 and relocated to new code 9241
+7352,Power Systems and Power Station Operators,9241,Power engineers and power systems operators,Merged with former 7351 and relocated to new code 9241
+7382,Commercial Divers,7384,"Other trades and related occupations, n.e.c.",Merged with former 7383 and moved to new code 7384
+7383,Other Trades and Related Occupations,7384,"Other trades and related occupations, n.e.c.",New code and modified label - includes former unit groups 7266 and 7382
+7411,Truck Drivers,7511,Transport truck drivers,New code and modified label
+7412,"Bus Drivers, Subway Operators and Other Transit Operators",7512,"Bus drivers, subway operators and other transit operators",New code
+7413,Taxi and Limousine Drivers and Chauffeurs,7513,Taxi and limousine drivers and chauffeurs,New code
+7414,Delivery and Courier Service Drivers,7514,Delivery and courier service drivers,New code
+7421,Heavy Equipment Operators (Except Crane),7521,Heavy equipment operators (except crane),New code
+7422,Public Works Maintenance Equipment Operators,7522,Public works maintenance equipment operators and related workers,New code and modified label - includes utility arborists from 7612
+7431,Railway Yard Workers,7531,Railway yard and track maintenance workers,New code and modified label - includes former unit group 7432
+7432,Railway Track Maintenance Workers,7531,Railway yard and track maintenance workers,Merged with former 7431 and moved to new code 7531
+7433,"Deck Crew, Water Transport",7532,Water transport deck and engine room crew,New code and modified label - includes former unit group 7434
+7434,"Engine Room Crew, Water Transport",7532,Water transport deck and engine room crew,Merged with former 7433 and moved to new code 7532
+7435,Lock and Cable Ferry Operators and Related Occupations,7533,Boat and cable ferry operators and related occupations,New code and modified label - includes former unit group 7436
+7436,Boat Operators,7533,Boat and cable ferry operators and related occupations,Merged with former 7435 and moved to new code 7533
+7437,Air Transport Ramp Attendants,7534,Air transport ramp attendants,New code
+,,7535,Other automotive mechanical installers and servicers,New code and modified label - former 7443
+7443,Automotive Mechanical Installers and Servicers,7535,Other automotive mechanical installers and servicers,New code and modified label
+7452,Material Handlers,6721,"Support occupations in accommodation, travel and facilities set-up services",Facilities porters moved to new code 6721
+7452,Material Handlers,7452,Material handlers,Except facilities porters
+7612,Other Trades Helpers and Labourers,7522,Public works maintenance equipment operators and related workers,Utility arborists moved to new code 7522
+7612,Other Trades Helpers and Labourers,7612,Other trades helpers and labourers,Except utility arborists
+8222,"Supervisors, Oil and Gas Drilling and Service",8222,"Contractors and supervisors, oil and gas drilling and services",Modified label
+8251,Farmers and Farm Managers,821,Managers in agriculture,Relocated to new code 0821 and modified label
+8252,Agricultural and Related Service Contractors and Managers,8252,"Agricultural service contractors, farm supervisors and specialized livestock workers",Modified label - includes former unit group 8253
+8253,Farm Supervisors and Specialized Livestock Workers,8252,"Agricultural service contractors, farm supervisors and specialized livestock workers",Merged with 8252
+8254,Nursery and Greenhouse Operators and Managers,822,Managers in horticulture,Relocated to new code 0822 and modified label
+8255,Landscaping and Grounds Maintenance Contractors and Managers,8255,"Contractors and supervisors, landscaping, grounds maintenance and horticulture services",Modified label - includes former unit group 8256
+8256,"Supervisors, Landscape and Horticulture",8255,"Contractors and supervisors, landscaping, grounds maintenance and horticulture services",Merged with 8255
+8257,Aquaculture Operators and Managers,823,Managers in aquaculture,Relocated to new code 0823 and modified label
+8262,Fishing Vessel Skippers and Fishermen/women,8262,Fishermen/women,Modified label
+8412,Oil and Gas Well Drilling Workers and Services Operators,8412,Oil and gas well drilling and related workers and services operators,Modified label
+9213,"Supervisors, Food, Beverage and Tobacco Processing",9213,"Supervisors, food, beverage and associated products processing",Modified label
+9216,"Supervisors, Textile Processing",9217,"Supervisors, textile, fabric, fur and leather products processing and manufacturing",New code and modified label - includes former unit group 9225
+9225,"Supervisors, Fabric, Fur and Leather Products Manufacturing",9217,"Supervisors, textile, fabric, fur and leather products processing and manufacturing",Merged with former 9216 and moved to new code 9217
+9233,Pulping Control Operators,9235,"Pulping, papermaking and coating control operators",Pulping technicians and control operators from former 9233 moved to new code 9235
+9233,Pulping Control Operators,9432,Pulp mill machine operators,Pulp and paper digester and related machine operators moved to 9432
+9234,Papermaking and Coating Control Operators,9235,"Pulping, papermaking and coating control operators",Papermaking and coating control operators from former 9234 moved to new code 9235
+9234,Papermaking and Coating Control Operators,9433,Papermaking and finishing machine operators,Paper coating and related machine operators moved to 9433
+,,9235,"Pulping, papermaking and coating control operators","New code and modified label - includes former 9233, except pulp and paper digester and related machine operators. Also includes former 9234, except paper coating and related machine operators."
+,,9241,Power engineers and power systems operators,New code and modified label - former 7351 and 7352 merged and relocated
+,,9243,Water and waste treatment plant operators,New code and modified label - relocated from former 9424
+,,9416,Metalworking and forging machine operators,New code and modified label - includes merge of former unit groups 9512 and 9514
+,,9417,Machining tool operators,New code - former 9511
+,,9418,Other metal products machine operators,New code - former 9516
+9424,Water and Waste Plant Operators,9243,Water and waste treatment plant operators,Relocated to new code 9243 and modified label
+9432,Pulp Mill Machine Operators,9432,Pulp mill machine operators,Includes pulp and paper digester and related machine operators from former 9233
+9433,Papermaking and Finishing Machine Operators,9433,Papermaking and finishing machine operators,Includes paper coating and related machine operators from former 9234
+,,9437,Woodworking machine operators,New code - former 9513
+9441,Textile Fibre and Yarn Preparation Machine Operators,9441,"Textile fibre and yarn, hide and pelt processing machine operators and workers",Modified label - includes former unit groups 9443 and 9453
+9443,Textile Dyeing and Finishing Machine Operators,9441,"Textile fibre and yarn, hide and pelt processing machine operators and workers",Merged with 9441
+9444,"Textile Inspectors, Graders and Samplers",9447,"Inspectors and graders, textile, fabric, fur and leather products manufacturing",Merged with former 9454 and moved to new code 9447
+9451,Sewing Machine Operators,9446,Industrial sewing machine operators,New code and modified label
+9452,"Fabric, Fur and Leather Cutters",9445,"Fabric, fur and leather cutters",New code
+9453,Hide and Pelt Processing Workers,9441,"Textile fibre and yarn, hide and pelt processing machine operators and workers",Merged with 9441
+9454,"Inspectors and Testers, Fabric, Fur and Leather Products Manufacturing",9447,"Inspectors and graders, textile, fabric, fur and leather products manufacturing",New code and modified label - includes merge of former unit groups 9444 and 9454
+9461,"Process Control and Machine Operators, Food and Beverage Processing",9461,"Process control and machine operators, food, beverage and associated products processing",Modified label - includes former unit group 9464
+9463,Fish Plant Workers,9463,Fish and seafood plant workers,Modified label
+9464,Tobacco Processing Machine Operators,9461,"Process control and machine operators, food, beverage and associated products processing",Merged with 9461
+9465,"Testers and Graders, Food and Beverage Processing",9465,"Testers and graders, food, beverage and associated products processing",Modified label
+9471,Printing Machine Operators,9471,Plateless printing equipment operators,Modified label
+9481,Aircraft Assemblers and Aircraft Assembly Inspectors,9521,Aircraft assemblers and aircraft assembly inspectors,New code
+9482,"Motor Vehicle Assemblers, Inspectors and Testers",9522,"Motor vehicle assemblers, inspectors and testers",New code
+9483,"Electronics Assemblers, Fabricators, Inspectors and Testers",9523,"Electronics assemblers, fabricators, inspectors and testers",New code
+9484,"Assemblers and Inspectors, Electrical Appliance, Apparatus and Equipment Manufacturing",9524,"Assemblers and inspectors, electrical appliance, apparatus and equipment manufacturing",New code
+9485,"Assemblers, Fabricators and Inspectors, Industrial Electrical Motors and Transformers",9525,"Assemblers, fabricators and inspectors, industrial electrical motors and transformers",New code
+9486,Mechanical Assemblers and Inspectors,9526,Mechanical assemblers and inspectors,New code
+9487,"Machine Operators and Inspectors, Electrical Apparatus Manufacturing",9527,"Machine operators and inspectors, electrical apparatus manufacturing",New code
+9491,Boat Assemblers and Inspectors,9531,Boat assemblers and inspectors,New code
+9492,Furniture and Fixture Assemblers and Inspectors,9532,Furniture and fixture assemblers and inspectors,New code
+9493,Other Wood Products Assemblers and Inspectors,9533,Other wood products assemblers and inspectors,New code
+9494,Furniture Finishers and Refinishers,9534,Furniture finishers and refinishers,New code
+9495,"Plastic Products Assemblers, Finishers and Inspectors",9535,"Plastic products assemblers, finishers and inspectors",New code
+9496,Painters and Coaters - Industrial,9536,"Industrial painters, coaters and metal finishing process operators",New code and modified label - includes merge of former unit groups 9496 and 9497
+9497,"Plating, Metal Spraying and Related Operators",9536,"Industrial painters, coaters and metal finishing process operators",Merged with former 9496 and moved to new code 9536
+9498,Other Assemblers and Inspectors,9537,"Other products assemblers, finishers and inspectors",New code and modified label - includes merge of former unit groups 9498 and 9517
+9511,Machining Tool Operators,9417,Machining tool operators,New code
+9512,Forging Machine Operators,9416,Metalworking and forging machine operators,Merged with 9514 and recoded as 9416
+9513,Woodworking Machine Operators,9437,Woodworking machine operators,New code
+9514,Metalworking Machine Operators,9416,Metalworking and forging machine operators,Merged with former 9512 and moved to new code 9416
+9516,Other Metal Products Machine Operators,9418,Other Metal Products Machine Operators,New code
+9517,Other Products Machine Operators,9537,"Other products assemblers, finishers and inspectors",Merged with former 9498 and moved to new code 9537
+9617,"Labourers in Food, Beverage and Tobacco Processing",9617,"Labourers in food, beverage and associated products processing",Modified label
+9618,Labourers in Fish Processing,9618,Labourers in fish and seafood processing,Modified label

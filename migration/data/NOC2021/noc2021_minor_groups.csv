@@ -1,0 +1,249 @@
+NOC 2016 Code (3-digit),NOC 2016 Label,NOC 2016 Skill level,NOC 2021 Code (4-digit),NOC 2021 Label,NOC 2021 TEER,Description
+1,Legislators and senior management,Management / A,1,Legislators and senior management,0,N/A
+11,Administrative services managers,Management / A,1001,Administrative services managers,0,"Unit groups 0111 (now 10010), 0112 (now 10011), 0113 (now 10012) and 0114 (now 10019) moved from minor group 011 to 1001."
+,,,1120,Human resources and business service professionals,1,"Job title ""Staff training coordinator"" moved from minor group 011 to 1120."
+,,,1311,"Office administrative assistants - general, legal and medical",3,"Job title ""Human resources administrator"" moved from minor group 011 to 1311."
+,,,2112,Public and environmental health and safety professionals,1,Job titles related to public and environmental health and safety coordinators moved from minor group 011 to 2112.
+,,,2223,Technical inspectors and regulatory officers,2,Job titles related to occupational health and safety specialists moved from minor group 2223.
+12,Managers in financial and business services,Management / A,1002,Managers in financial and business services,0,N/A
+13,Managers in communication (except broadcasting),Management / A,1003,Managers in communication (except broadcasting),0,Minor group 013 was split. Unit group 0131 (now 10030) moved from minor group 013 to 1003.
+,,,7002,Managers in transportation and postal courier services,0,Minor group 013 was split. Unit group 0132 (now 70021) moved from minor group 013 to 7002.
+21,"Managers in engineering, architecture, science and information systems",Management / A,2001,"Managers in engineering, architecture, science and information systems",0,N/A
+31,Managers in health care,Management / A,3001,Managers in health care,0,N/A
+41,Managers in public administration,Management / A,4001,Managers in public administration,0,N/A
+42,Managers in education and social and community services,Management / A,4002,Managers in education,0,Minor group 042 was split. Unit groups 0421 (now 40020) and 0422 (now 40021) moved from minor group 042 to 4002.
+,,,4003,"Managers in social, community and correctional services",0,Minor group 042 was split. Unit group 0423 (now 40030) moved from minor group 042 to 4003.
+43,Managers in public protection services,Management / A,4004,Managers in public protection services,0,"Unit groups 0431 (now 40040), 0432 (now 40041) and 0433 (now 40042) moved from minor group 043 to 4004."
+,,,4131,Police investigators and probation officers,1,Job titles related to police investigator moved from minor group 043 to 4131.
+51,"Managers in art, culture, recreation and sport",Management / A,5001,"Managers in art, culture, recreation and sport",0,N/A
+60,Corporate sales managers,Management / A,6001,Corporate sales managers,0,N/A
+62,Retail and wholesale trade managers,Management / A,6002,Retail and wholesale trade managers,0,N/A
+63,Managers in food service and accommodation,Management / A,6003,Managers in food service and accommodation,0,N/A
+65,"Managers in customer and personal services, n.e.c",Management / A,6004,Managers in customer and personal services,0,Label modified.
+71,Managers in construction and facility operation and maintenance,Management / A,7001,Managers in construction and facility operation and maintenance,0,N/A
+73,Managers in transportation,Management / A,7002,Managers in transportation and postal courier services,0,Label modified.
+81,Managers in natural resources production and fishing,Management / A,8001,Managers in natural resources production and fishing,0,N/A
+82,"Managers in agriculture, horticulture and aquaculture",Management / A,8002,"Managers in agriculture, horticulture and aquaculture",0,N/A
+91,Managers in manufacturing and utilities,Management / A,9001,Managers in manufacturing and utilities,0,N/A
+111,"Auditors, accountants and investment professionals",A,1110,"Auditors, accountants and investment professionals",1,N/A
+112,Human resources and business service professionals,A,1002,Managers in financial and business services,0,"Job title ""social media community manager"" updated to ""social media manager"" moved from minor group 112 to 1002."
+,,,1120,Human resources and business service professionals,1,"Unit groups 1121 (now 11200), 1122 (now 11201) and 1123 (now 11202) moved from minor group 112 to 1120."
+,,,6440,Customer and information services representatives,4,"Job titles ""tourism information officer"" and ""tourism information technician"" moved from minor group 112 to 6440."
+121,Administrative services supervisors,B,1201,Administrative and financial supervisors,2,"Minor group 121 was split. Unit groups 1211 (now 12010), 1212 (now 12011), 1213 (now 12012) and 1215 (now 12013) moved from minor group 121 to 1201."
+,,,7202,"Contractors and supervisors, technical maintenance trades and heavy equipment and transport operators",2,Minor group 121 was split. Unit group 1214 (now 72025) moved from minor group 121 to 7202.
+,,,1320,Transportation and production logistics coordinators and customs and related broker occupations,3,"Minor group 121 was split. Job titles related to non-supervisor logistics, freight, transportation positions moved from minor group 121 to 1320."
+,,,7420,"Transport equipment operators, utility maintenance and related maintenance workers",4,"Minor group 121 was split. job title ""Ramp services supervisor - airport"" moved from minor group 121 to 7420."
+122,Administrative and regulatory occupations,B,1001,Administrative services managers,0,"Minor group 122 was split. Job title ""Court registrar"" moved from minor group 122 to 1001."
+,,,1210,Administrative and regulatory occupations,2,"Minor group 122 was split. Unit groups 1222 (now 12100), 1223 (now 12101), 1225 (now 12102) and 1226 (now 12103) moved from minor group 122 to 1210. Job titles related to employment insurance and revenue officers moved from minor group 122 to 1210."
+,,,1310,"Administrative, property and payroll officers",3,Minor group 122 was split. Unit groups 1221 (now 13100) and 1224 (now 131001) moved from minor group 122 to 1310.
+,,,1410,Office support and court services occupations,4,Minor group 122 was split. Job titles related to court officers and administrators moved from minor group 122 to 1410.
+,,,4220,"Paraprofessional occupations in legal, social, community and education services",2,Minor group 122 was split. Job titles related to justice of the peace moved minor group from 122 to 4220.
+,,,4320,Assisting occupations in legal and public protection,3,Minor group 122 was split. Job titles related to immigration and border services moved to minor group 4320.
+124,"Office administrative assistants - general, legal and medical",B,1311,"Office administrative assistants - general, legal and medical",3,N/A
+125,"Court reporters, transcriptionists, records management technicians and statistical officers",B,1211,"Court reporters, transcriptionists, records management technicians and statistical officers",2,N/A
+131,"Finance, insurance and related business administrative occupations",B,1220,"Accounting, insurance and related business administrative occupations",2,"Minor group 131 was split. Unit groups 1311 (now 12200), 1312 (no 12201), 1313 (now 12202) and 1314 (now 12203) moved from minor group 131 to 1220."
+,,,1320,Transportation and production logistics coordinators and customs and related broker occupations,3,Minor group 131 was split. Unit group 1315 (now 13200) moved from minor group 131 to 13200.
+141,General office workers,C,1410,Office support and court services occupations,4,Label modified.
+142,Office equipment operators,C,1411,"Survey, statistical and data entry occupations",4,Label modified.
+143,"Financial, insurance and related administrative support workers",C,1310,"Administrative, property and payroll officers",3,Minor group 143 was split. Unit group 1432 (now 13102) moved from minor group 143 to 1310.
+,,,1420,"Financial, insurance and related administrative support workers",4,"Minor group 143 was split. Unit groups 1431 (now 14200), 1434 (now 14201) and 1435 (now 14202) moved from minor group 143 to 1420."
+145,"Library, correspondence and the clerks",C,1411,"Survey, statistical and data entry occupations",4,Minor group 145 was split. Unit group 1454 (now 14110) moved from minor group 145 to 1411.
+,,,1430,"Library, correspondence and other clerks",4,Minor group 145 was split. Unit groups 1451 (now 14300) and 1452 (now 14301) moved from minor group 145 to 1430.
+151,Mail and message distribution occupations,C,6440,Customer and information services representatives,4,Minor group 151 was split. Job titles related to postal clerks and workers moved from minor group 151 to 6440.
+,,,7410,Mail and message distribution occupations,4,Minor group 151 was split. Unit group 1512 (now 74101) moved from minor group 151 to 7410. Job titles related to mail and parcel sorter moved from minor group 151 to 7410. Job titles related to couriers and messengers moved from 151 to 7410.
+,,,7520,Taxi and personal service and delivery service drivers,5,Minor group 151 was split. Job titles related to door-to-door distributors moved from minor group 151 to 7520.
+152,"Supply chain logistics, tracking and scheduling co-ordination occupations",C,1320,Transportation and production logistics coordinators and customs and related broker occupations,3,Job titles related to production logistic coordination moved from minor group 152 to 1320.
+,,,1440,"Supply chain logistics, tracking and scheduling coordination occupations",4,"Unit groups 1512 (now 14400), 1522 (now 14401), 1523 (now 14402), 1524 (now 14403), 1525 (now 14404) and 1526 (now 14405) moved from minor group 152 to 1440."
+211,Physical science professionals,A,2110,Physical science professionals,1,N/A
+212,Life science professionals,A,2111,Life science professionals,1,N/A
+213,"Civil, mechanical, electrical and chemical engineers",A,2130,Civil and mechanical engineers,1,Minor group 213 was split. Unit groups 2131 (now 21300) and 2132 (now 21301) moved from minor group 213 to 2130.
+,,,2131,"Electrical, electronics and computer engineers",1,Minor group 213 was split. Unit group 2133 (now 21310) moved from minor group 213 to 2131.
+,,,2132,Manufacturing and processing engineers,1,Minor group 213 was split. Unit group 2134 (now 21320) moved from minor group 213 to 2132.
+214,Other engineers,A,2131,"Electrical, electronics and computer engineers",1,Minor group 214 was split. Unit group 2147 (now 21311) moved from minor group 214 to 2131.
+,,,2132,Manufacturing and processing engineers,1,Minor group 214 was split. Unit groups 2141 (now 21321) and 2142 (now 21322) moved from minor group to 2132.
+,,,2133,Natural resources engineers,1,"Minor group 214 was split. Unit groups 2143 (now 21330), 2144 (now 21331) and 2145 (now 21332) moved from minor group 214 to 2133."
+,,,2139,Other engineers,1,Minor group 214 was split. Unit groups 2146 (now 21390) and 2148 (now 21399) moved from minor group 214 to 2139.
+215,"Architects, urban planners and land surveyors",A,2120,"Architects, urban planners and land surveyors",1,N/A
+216,"Mathematicians, statisticians and actuaries",A,2121,"Mathematicians, statisticians, actuaries and data scientists",1,Label modified.
+217,Computer and information systems professionals,A,2121,"Mathematicians, statisticians, actuaries and data scientists",1,"Minor group 217 was split. Job titles related to AI analysis and consulting, data scientist, data miner, and artificial intelligence (AI) designer moved from minor group 217 to 2121."
+,,,2122,Computer and information systems professionals,1,"Minor group 217 was split. Unit groups 2171 (now 21220, 21221 and 21222) and 2172 (now 21223) moved from minor group 217 to 2122."
+,,,2123,"Computer, software and Web designers and developers",1,"Minor group 217 was split. Unit groups 2173 (now 21231), 2174 (now 21230 and 21232), and 2175 (now 21233 and 21234) moved from minor group 217 to 2123."
+221,Technical occupations in physical sciences,B,2210,Technical occupations in physical sciences,2,N/A
+222,Technical occupations in life sciences,B,2211,Technical occupations in life sciences,2,N/A
+223,"Technical occupations in civil, mechanical and industrial engineering",B,2230,"Technical occupations in civil, mechanical and industrial engineering",2,N/A
+224,Technical occupations in electronics and electrical engineering,B,2231,Technical occupations in electronics and electrical engineering,2,N/A
+225,"Technical occupations in architecture, drafting, surveying, geomatics and meteorology",B,2221,"Technical occupations in architecture, drafting, surveying, geomatics and meteorology",2,N/A
+226,Other technical inspectors and regulatory officers,B,2112,Public and environmental health and safety professionals,1,Job titles related to public and environmental health and safety moved from minor group 226 to 2112.
+,,,2223,Technical inspectors and regulatory officers,2,"Unit groups 2261 (now 22230), 2262 (now 22231), 2263 (now 22232) and 2264 (now 22233) moved from minor group 226 to 2223."
+227,Transportation officers and controllers,B,7260,Transportation officers and controllers,2,"Minor group moved to BOC 7 - Trades, transport and equipment operators and related occupations."
+228,Technical occupations in computer and information systems,B,2222,Technical occupations in computer and information systems,2,French label of this minor group has been modified.
+301,Professional occupations in nursing,A,3130,Nursing and allied health professionals,1,Label modified.
+311,"Physicians, dentists and veterinarians",A,3110,Physicians and veterinarians,1,"Minor group 311 was split. Unit groups 3111 (now 31100 and 31101), 3112 (now 31102) and 3114 (now 31103) moved from minor group 311 to 3110."
+,,,3111,"Dentists, optometrists and audiologists",1,Minor group 311 was split. Unit group 3113 (now 31110) moved from minor group 311 to 3111.
+312,"Optometrists, chiropractors and other health diagnosing and treating professionals",A,3111,"Dentists, optometrists and audiologists",1,Minor group 312 was split. Unit group 3121 (now 31111) moved from minor group 312 to 3111.
+,,,3120,Therapy and assessment professionals,1,Minor group 312 was split. Unit group 3122 (now 31201) and job titles related to professional occupations in health diagnosing and treating moved from minor group 312 to 3120.
+,,,3130,Nursing and allied health professionals,1,Minor group 312 was split. Unit group  3124 (now 31302 and 31303) moved from minor group 312 to 3130.
+,,,3210,Technical occupations in therapy and assessment,2,Minor group 312 was split. Job title anesthesia assistant moved from minor group 312 to 3210.
+313,"Pharmacists, dietitians and nutritionists",A,3112,Pharmacists and dietitians,1,Label modified.
+314,Therapy and assessment professionals,A,3111,"Dentists, optometrists and audiologists",1,Minor group 314 was split. Unit group 3141 (now 31112) moved from minor group 314 to 3111.
+,,,3120,Therapy and assessment professionals,1,"Minor group 314 was split. Unit groups 3142 (now 31202), 3143 (now 31203) and 3144 (now 31204) moved from minor group 314 to 3120."
+,,,3210,Technical occupations in therapy and assessment,2,"Minor group 314 was split. Job title ""Physical rehabilitation therapist"" moved from minor group 314 to 3210."
+,,,4130,Social and community service professionals,1,Minor group 314 was split. Job titles related to art therapy moved from minor group 314 to 4130.
+321,Medical technologists and technicians (except dental health),B,3130,Nursing and allied health professionals,1,Minor group 321 was split. Job titles related to pathologist assistant moved from minor group 321 to 3130.
+,,,3210,Technical occupations in therapy and assessment,2,Minor group 321 was split. Unit groups 3213 (now 32104) and 3214 (now 32103) moved from minor group 321 to 3210.
+,,,3212,Medical technologist and technicians,2,"Minor group 321 was split. Unit groups 3211 (now 32120), 3215 (now 32121), 3216 (now 32122), 3217 (now 32123) and 3219 (now 32124 and 32129) moved from minor group 321 to 3212."
+,,,3310,Assisting occupations in support of health services,3,Minor group 321 was split. Job titles related to medical laboratory assistants and related technical occupations and pharmacy technical assistant moved from minor group 321 to 3310.
+322,Technical occupations in dental health care,B,3211,Technical occupations in dental health care,2,"Unit groups 3221 (now 32110), 3222 (now 32111) and 32112 (now 3223) moved from minor group 322 to 3211."
+,,,3310,Assisting occupations in support of health services,3,Job titles related to dental assistant and dental laboratory assistant moved from minor group 322 to 3310.
+323,Other technical occupations in health care,B,3210,Technical occupations in therapy and assessment,2,"Minor group 323 was split. Unit groups 3231 (now 32100), 3233 (now 32101), 3234 (now 32102) and 3237 (now 32109) moved from minor group 323 to 3210."
+,,,3220,Practitioners of natural healing,2,Minor group 323 was split. Unit groups 3232 (now 32200 and 32209) and 3236 (now 32201) moved from minor group 323 to 3220.
+,,,3310,Assisting occupations in support of health services,3,Minor group 323 was split. Job titles related to ophthalmic assistant and audiometric technician moved from minor group 323 to 3310.
+341,Assisting occupations in support of health services,C,3210,Technical occupations in therapy and assessment,2,Job titles related to rehabilitation and therapy assistants moved from minor group 341 to 3210.
+,,,3310,Assisting occupations in support of health services,3,"Unit groups 3411 (now 33100), 3413 (now 33102) and 3414 (now 33109) moved from minor group 341 to 3310."
+401,University professors and post-secondary assistants,A,4120,University professors and post-secondary assistants,1,N/A
+402,College and other vocational instructors,A,4121,College and other vocational instructors,1,N/A
+403,Secondary and elementary school teachers and educational counsellors,A,4122,"Secondary, elementary and kindergarten school teachers",1,Minor group 403 was split. Unit groups 4031 (now 41220) and 4032 (now 41221) moved from minor 403 to 4122.
+,,,4132,Educational and employment counsellors,1,Minor group 403 was split. Unit group 4033 (now 41320) moved from minor group 403 to 4132.
+411,"Judges, lawyers and Quebec notaries",A,4110,"Judges, lawyers and Quebec notaries",1,
+415,Social and community service professionals,A,3120,Therapy and assessment professionals,1,Minor group 415 was split. Unit group 4151 (now 31200) moved from minor group 415 to 3120.
+,,,3130,Nursing and allied health professionals,1,"Minor group 415 was split. Job title ""Genetic counsellor"" moved from minor group 415 to 3130."
+,,,4130,Social and community service professionals,1,"Minor group 415 was split. Unit groups 4152 (now 41300), 4153 (now 41301) and 4154 (now 413002) moved from minor group 415 to 4130."
+,,,4131,Police investigators and probation officers,1,Minor group 415 was split. Unit group 4155 (now 41311) moved from minor group 415 to 4131.
+,,,4132,Educational and employment counsellors,1,"Minor group 415 was split. Job title ""vocational counsellors"" moved from minor group 415 and 4132."
+,,,4220,"Paraprofessional occupations in legal, social, community and education services",2,Minor group 415 was split. Job titles related to correctional case worker and manager moved from minor group 415 to 4220.
+416,"Policy and program researchers, consultants and officers",A,1120,Human resources and business service professionals,1,"Job title ""Marketing consultant"" moved from minor group 416 to 1120."
+,,,2111,Life science professionals,1,Job titles related to clinical research moved from minor group 416 to 2111.
+,,,4131,Police investigators and probation officers,1,"Job title ""coroner"" moved from minor group 416 to 4131."
+,,,4140,"Policy and program researchers, consultants and officers",1,"Unit groups 4161 (now 41400), 4162 (now 41401), 4163 (now 41402), 4164 (now 41403), 4165 (now 41404), 4166 (now 41405), 4167 (now 41406), 4168 (now 41407) and 4169 (now 41409) moved from minor group 416 to 4140."
+421,"Paraprofessional occupations in legal, social, community and education services",B,4220,"Paraprofessional occupations in legal, social, community and education services",2,"Minor group 421 was split. Unit groups 4211 (now 42200), 4212 (now 42201), 4214 (now 42202), 4215 (now 42203) and 4217 (now 42204) moved from minor group 421 to 4220."
+,,,4310,Assisting occupations in education,3,Minor group 421 was split. Unit group 4216 (now 43109) moved from minor group 421 to 4310.
+431,Occupations in front-line public protection services,B,4131,Police investigators and probation officers,1,Minor group 431 was split. Job titles related to police investigator moved from minor group 431 to 4131.
+,,,4210,Occupations in front-line public protection services,2,Minor group 431 was split. Unit groups 4311 (now 42100) and 4312 (now 42101) and job titles for military occupations requiring college education or apprenticeship or 2 years or more moved from minor group 431 to 4210.
+,,,4320,Assisting occupations in legal and public protection,3,Minor group 431 was split. Job titles for military occupations requiring a college certificate or apprenticeship of less than 2 years moved from minor group 431 to 4320.
+,,,4420,Primary combat members of the Canadian Armed Forces,3,Minor group 431 was split. Job titles for military occupations NOT requiring college education or apprenticeship moved from minor group 431 to 4420.
+441,Home care providers and educational support occupations,C,4310,Assisting occupations in education,3,Minor group 441 was split. Unit group 4413 (now 43100) moved from minor group 441 to 4310.
+,,,4410,Home care provider occupations,4,Minor group 441 was split. Unit groups 4411 (now 44100) and 4412 (now 44101) moved from minor group 441 to 4410.
+,,,4510,"Students monitors, crossing guards and related occupations",5,Minor group 441 was split. Job titles related to student monitors moved from minor group 441 to 4510.
+,,,6531,Cleaners,5,"Minor group 441 was split. Job titles ""Housekeepers"" and ""Domestic housekeepers"" moved from minor group 441 to 6531."
+442,Legal and public protection support occupations,C,4320,Assisting occupations in legal and public protection,3,Label modified.
+511,"Librarians, archivists, conservators and curators",A,5110,"Librarians, archivists, conservators and curators",1,N/A
+512,"Writing, translating and related communications professionals",A,5111,"Writing, translating and related communications professionals",1,N/A
+513,Creative and performing artists,A,5112,Creative and performing artists,1,"Minor group 513 was split. Unit groups 5131 (now 51120), 5132 (now 51121) and 5133 (now 51122) moved from minor group 513 to 5112."
+,,,5312,Occupations in creative and performing art,3,"Minor group 513 was split. Unit groups 5134 (now 51320), 5135 (now 51321) and 5136 (now 53122) moved from minor group 513 to 5312."
+521,"Technical occupations in libraries, public archives, museums and art galleries",B,5210,Technical occupations in libraries and public archives,2,Minor group 521 was split. Unit group 5211 (now 52100) moved from minor group 521 to 5210.
+,,,5310,Occupations related to museums and art galleries,3,Minor group 521 was split. Unit group 5212 (now 53100) moved from minor group 521 to 5310.
+522,"Photographers, graphic art technicians and technical and co-ordinating occupations in motion pictures, broadcasting and the performing arts",B,5211,"Technical occupations in motion pictures, broadcasting and the performing arts",2,"Minor group 522 was split. Unit groups 5222 (now 52110), 5223 (now 52111), 5224 (now 52112), 5225 (now 52113) and 5226 (now 52119) moved from minor group 522 to 5211."
+,,,5311,Photographers and support occupations in arts and culture,3,Minor group 522 was split. Unit groups 5221 (now 53110) and 5227 (now 53111) moved from minor group 522 to 5311.
+523,"Announcers and other performers, n.e.c.",B,5211,"Technical occupations in motion pictures, broadcasting and the performing arts",2,Minor group 523 was split. Unit group 5231 (now 52114) moved from minor group 523 to 5211.
+,,,5312,Occupations in creative and performing art,3,Minor group 523 was split. Job titles related to circus performance moved from minor group 523 to 5132.
+,,,5510,Support occupations in art and culture,5,Minor group 523 was split. Unit group 5232 (now 55109) moved from minor group 523 to 5510.
+524,Creative designers and craftspersons,B,5212,Graphic and interior designers,2,Minor group 524 was split. Unit groups 5241 (now 52120) and  5242 (now 52121) moved from minor group 524 to 5212.
+,,,6201,Retail sales supervisors,2,"Minor group 524 was split. Job titles ""display designer supervisor"" and ""display design supervisor"" moved from minor group 524 to 6201."
+,,,5312,Occupations in creative and performing art,3,"Minor group 524 was split. Unit groups 5243 (now 53123), 5244 (now 53124) and 5245 (now 53125) moved from minor group 524 to 5312."
+,,,6410,Retail salespersons and non-technical wholesale trade sales and account representatives,4,"Minor group 524 was split. Job titles related to display design, styling, and visual merchandising moved from minor group 524 to 6410."
+525,"Athletes, coaches, referees and related occupations",B,5320,"Athletes, coaches, referees and related occupations",3,"Minor group 525 was split. Unit groups 5251 (now 53200), 5252 (now 53201), and 5253 (now 53202) moved from minor group 525 to 5320."
+,,,5410,"Program leaders and instructors in recreation, sport and fitness",4,Minor group 525 was split. Unit group 5254 (now 54100) moved from minor group 525 to 5410.
+621,Retail sales supervisors,B,6201,Retail sales supervisors,2,N/A
+622,Technical sales specialists in wholesale trade and retail and wholesale buyers,B,7001,Managers in construction and facility operation and maintenance,0,"Job titles ""Grain elevator district manager"", ""grain elevator manager"", and ""assistant grain elevator manager"" moved from minor group 622 to 7001."
+,,,6210,Technical sales specialists in wholesale trade and retail and wholesale buyers,,Unit groups 6221 (now 62100) and 6222 (now 62101) moved from minor group 622 to 6210.
+,,,7510,Longshore workers and material handlers,5,"Job title ""grain elevator operator"" moved from minor group 622 to 7510."
+623,"Insurance, real estate and financial sales occupations",B,6310,"Insurance, real estate and financial sales occupations",3,N/A
+631,Service supervisors,B,6202,Service supervisors,2,"Unit groups 6311 (now 62020), 6312 (now 62021), 6313 (now 62022), 6314 (now 62023), 6315 (now 62024) and 6316 (now 62029) moved from minor group 631 to 6202."
+,,,6521,"Support occupations in accommodation, travel, tourism and amusement services",5,"Job titles ""Park supervisor"", ""Rink supervisor"", and ""Campground supervisor"" moved from minor group 631 to 6521."
+632,Chefs and cooks,B,6220,Specialized occupations in services,2,Minor group 632 was split. Unit group 6321 (now 62200) moved from minor group 632 to 6220.
+,,,6320,"Cooks, butchers and bakers",3,Minor group 632 was split. Unit group 6322 (now 63200) moved from minor group 632 to 6320.
+633,Butchers and bakers,B,6320,"Cooks, butchers and bakers",3,Minor group 633 was split. Unit group 6332 (now 63202) and job titles related to butchers moved from minor group 633 to 6320.
+,,,6520,Food support occupations,5,Minor group 633 was split. Job titles related to meat cutters and fishmongers moved from minor group 633 to 6520.
+634,Specialized occupations in personal and customer service,B,6220,Specialized occupations in services,2,Minor group 634 was split. Unit groups 6344 (now 62202) and 6346 (now 62201) moved from minor group 634 to 6220.
+,,,6321,Hairstylists and estheticians,3,Minor group 634 was split. Unit group 6341 (now 63210) moved from minor group 634 to 6321.
+,,,6322,"Shoe repairers, shoemakers and upholsterers",3,Minor groups 634 was split. Unit groups 6343 (now 63220) and 6345 (now 63221) move from minor group 634 to 6322.
+,,,6420,Occupations in personal service,4,Minor group 634 was split. Unit group 6342 (now 64200) moved from minor group 634 to 6420.
+641,Sales and account representatives - wholesaletrade (non-technical),C,6210,Technical sales specialists in wholesale trade and retail and wholesale buyers,2,"Job titles ""grain merchandiser"" and ""livestock sales representative – wholesale"" moved from minor group 641 to 6210."
+,,,6410,Retail salespersons and non-technical wholesale trade sales and account representatives,4,Unit group 6411 (now 64101) moved from minor group 641 to 6410.
+642,Retail salespersons,C,6410,Retail salespersons and non-technical wholesale trade sales and account representatives,4,Label modified.
+651,Occupations in food and beverage service,C,6430,Occupations in food and beverage service,4,Minor group 651 was split. Unit groups 6511 (now 6430) and 6512 (now 6430) moved from minor group 651 to 6430.
+,,,6520,Food support occupations,5,Minor group 651 was split. Unit group 6513 (now 65200) moved from minor group 651 to 6520.
+652,Occupations in travel and accommodation,C,6431,Occupations in travel and accommodation,5,N/A
+653,Tourism and amusement services occupations,C,6432,Tourism and amusement services occupations,4,N/A
+654,Security guards and related security service occupations,C,6441,Security guards and related security service occupations,4,Unit group 6541 (now 64410) moved from 654 to 6441.
+,,,4510,"Students monitors, crossing guards and related occupations",5,"Job titles ""School crossing guard"", and ""crossing guard"" moved from minor group 654 to 4510."
+,,,6532,Service support and related occupations,5,"Job title ""mystery shopper"" moved minor group from minor group 654 to 6532."
+655,Customer and information services representatives,C,6440,Customer and information services representatives,4,N/A
+656,Other occupations in personal service,C,6321,Hairstylists and estheticians,3,Minor group 656 was split. Unit group 6562 (now 63211) moved from minor group 656 to 6321.
+,,,6420,Occupations in personal service,4,Minor group 656 was split. Unit group 6561 (now 64201) moved from minor group 656 to 6420.
+,,,6522,Support occupations in personal services,5,Minor group 656 was split. Unit group 6563 (now 65220) and 6564 (now 65229) moved from minor group 656 to 6522.
+661,Cashiers,D,6510,Cashiers and other sales support occupations,5,Label modified.
+662,Other sales support and related occupations,D,6510,Cashiers and other sales support occupations,5,Label modified.
+671,"Food counter attendants, kitchen helpers and related support occupations",D,6520,Food support occupations,5,Label modified.
+672,"Support occupations in accommodation, travel and amusement services",D,6521,"Support occupations in accommodation, travel, tourism and amusement services",5,N/A
+673,Cleaners,D,7320,"Building maintenance installers, services and repairers",3,Job titles related to building superintendent and maintenance work moved from minor group 673 to 7320.
+,,,6531,Cleaners,5,"Unit groups 6731 (now 65310), 6732 (now 65311) and 6733 (now 65312) moved from minor group 673 to 6531."
+674,"Other service support and related occupations, n.e.c.",D,6532,Service support and related occupations,5,Label modified.
+720,"Contractors and supervisors, industrial, electrical and construction trades and related workers",B,7201,"Contractors and supervisors, technical industrial, electrical and construction trades and related workers",2,English label of this minor group has been modified.
+723,"Machining, metal forming, shaping and erecting trades",B,7210,"Machining, technical metal forming, shaping and erecting trades",2,English label of this minor group has been modified.
+724,Electrical trades and electrical power line and telecommunications workers,B,7220,Electrical trades and technical electrical power line and telecommunications workers,2,English label of this minor group has been modified.
+725,"Plumbers, pipefitters and gas fitters",B,7230,"Plumbers, pipefitters and gas fitters",2,N/A
+727,Carpenters and cabinetmakers,B,7231,Carpenters and cabinetmakers,2,N/A
+728,Masonry and plastering trade,B,7232,Bricklayers and Insulators,2,Minor group 728 was split. Unit group 7281 (now 72320) moved from minor group 728 to 7232.
+,,,7310,"Concrete finishers, tilesetters and plasterers",3,"Minor group 728 was split. Unit groups 7282 (now 73100), 7283 (now 73101) and 7284 (now 73102) moved from minor group 728 to 7310."
+729,Other construction trades,B,7232,Bricklayers and Insulators,2,Minor group 729 was split. Unit group 7293 (now 72321) moved from minor group 729 to 7232.
+,,,7311,"Roofers, glaziers, painters, decorators and floor covering installers",3,"Minor group 729 was split. Unit group 7291 (now 73110), 7292 (now 73111), 7294 (now 73112) and 7295 (now 73113) moved from minor group 729 to 7311."
+730,"Contractors and supervisors, maintenance trades and heavy equipment and transport operators",B,7202,"Contractors and supervisors, technical maintenance trades and heavy equipment and transport operators",2,English label of this minor group has been modified.
+731,Machinery and transportation equipment mechanics (except motor vehicles),B,7240,Machinery and transportation equipment mechanics (except motor vehicles),2,N/A
+732,Automotive service technicians,B,7241,Automotive service technicians,2,N/A
+733,Other mechanics and related repairers,B,7242,Small engine and equipment mechanics and related repairers (including electrical components),2,Label modified.
+736,Train crew operating occupations,B,7331,Train crew operating occupations,3,N/A
+737,"Crane operators, drillers and blasters",B,7250,Crane operators and water well drillers,2,Minor group 737 was split. Unit groups 7371 (now 72500) and 7373 (now 72501) moved from minor group 737 to 7250.
+,,,7340,"Operators, drillers and blasters",3,Minor group 737 was split. Unit group 7372 (now 73402) moved from minor group 737 to 7340.
+,,,7511,Trades helpers and labourers,5,Minor group 737 was split. Job titles related to rigging moved from minor group 737 to 7511.
+738,"Printing press operators and other trades and related occupations, n.e.c.",B,7242,Small engine and equipment mechanics and related repairers (including electrical components),2,"Minor group 738 was split. Job titles related to recreation and vehicle mechanic, repairer, and service technician moved from minor group 738 to 7242."
+,,,7299,Other technical trades,2,Minor group 738 was split. Unit group 7384 (now 72999) moved from minor group 738 to 7299.
+,,,7340,"Operators, drillers and blasters",3,Minor group 738 was split. Unit group 7381 (now 73401) moved from minor group 738 to 7340.
+744,"Other installers, repairers and servicers",C,2231,Technical occupations in electronics and electrical engineering,2,"Minor group 744 was split. Job title ""Security systems technician"" moved from minor group 744 to 2231."
+,,,7320,"Building maintenance installers, services and repairers",3,"Minor group 744 was split. Unit groups 7441 (now 73200), 7444 (now 73202) and 7445 (now 73209) moved from minor group 744 to 7320."
+,,,7420,"Transport equipment operators, utility maintenance and related maintenance workers",4,Minor group 744 was split. Unit group 7442 (now 74202) moved from minor group 744 to 7420.
+745,Longshore workers and material handlers,C,7510,Longshore workers and material handlers,5,N/A
+751,Motor vehicle and transit drivers,C,7330,Transport truck and transit drivers,3,Minor group 751 was split. Unit groups 7511 (now 73300) and 7512 (now 73301) moved from minor group 751 to 7330.
+,,,7410,Mail and message distribution occupations,4,Minor group 751 was split. Job titles related to courier service drivers moved from minor group 751 to 7410.
+,,,7520,Taxi and personal service and delivery service drivers,5,Minor group 751 was split. Unit group 7513 (now 75200) and job titles related to delivery service drivers and door-to-door distributors moved from minor group 751 to 7520.
+752,Heavy equipment operators,C,7340,"Operators, drillers and blasters",3,Minor group 752 was split. Unit group 7521 (now 73400) moved from minor group 752 to 7340.
+,,,7420,"Transport equipment operators, utility maintenance and related maintenance workers",4,Minor group 752 was split. Unit group 7522 (now 74204) moved from minor group 752 to 7420.
+753,Other transport equipment operators and related maintenance workers,C,7420,"Transport equipment operators, utility maintenance and related maintenance workers",4,"Minor group 753 was split. Unit groups 7531 (now 74200), 7532 (now 74201), 7534 (now 74202) and 7535 (now 74203) moved from minor group 753 to 7420."
+,,,7521,Water and rail transport operators and labourers and related occupations,5,Minor group 753 was split. Unit group 7533 (now 75210) moved from minor group 753 to 7521.
+761,Trades helpers and labourers,D,7511,Trades helpers and labourers,5,N/A
+762,"Public works and other labourers, n.e.c.",D,7521,Water and rail transport operators and labourers and related occupations,5,Label modified.
+821,"Supervisors, logging and forestry",B,8201,"Supervisors, logging and forestry",2,N/A
+822,"Contractors and supervisors, mining, oil and gas",B,8202,"Contractors and supervisors, mining, oil and gas",2,N/A
+823,"Underground miners, oil and gas drillers and related occupations",B,8310,"Underground miners, oil and gas drillers and related occupations",3,N/A
+824,Logging machinery operators,B,8311,Logging machinery operators,3,N/A
+825,"Contractors and supervisors, agriculture, horticulture and related operations and services",B,7260,Transportation officers and controllers,2,"Job title ""Aerial crop dusting service contractor"" moved from minor group 825 to 7260."
+,,,8203,"Contractors and supervisors, agriculture, horticulture and related operations and services",2,Unit groups 8252 (now 82030) and 8255 (now 82031) moved from minor group 825 to 8203.
+,,,8412,Workers in agriculture and fishing occupations,4,Job titles related to specialized livestock work moved from minor group 825 to 8412.
+,,,8510,"Agriculture, horticulture and harvesting labourers and related occupations",5,"Job title ""Feedlot herd attendant"" moved from minor group 825 to 8510."
+826,Fishing vessel masters and fishermen / women,B,8312,Fishing vessel masters and fishermen / women,3,French label of this minor group has been modified.
+841,Mine service workers and operators in oil and gas drilling,C,8410,Mine service workers and operators in oil and gas drilling,4,French label of this minor group has been modified.
+842,Logging and forestry workers,C,8411,Logging and forestry workers,4,N/A
+843,Agriculture and horticulture workers,C,8412,Workers in agriculture and fishing occupations,4,Job titles related to farm machinery operation moved from minor group 843 to 8412.
+,,,8510,"Agriculture, horticulture and harvesting labourers and related occupations",5,Unit groups 8431 (now 85100 and 85101) and 8432 (now 85103) moved from minor group 843 to 8510.
+844,Other workers in fishing and trapping and hunting occupations,C,8412,Workers in agriculture and fishing occupations,4,Minor group 844 was split. Unit group 8441 (now 84121) moved from minor group 844 to 8412.
+,,,8510,"Agriculture, horticulture and harvesting labourers and related occupations",5,Minor group 844 was split. Unit group 8442 (now 85104) moved from minor group 844 to 8510.
+861,"Harvesting, landscaping and natural resources labourers",D,8510,"Agriculture, horticulture and harvesting labourers and related occupations",5,Minor group 861 was split. Unit groups 8611 (now 85101) and 8613 (now 85102) moved from minor group 861 to 8510.
+,,,8511,"Mine and oil and gas drilling, services and related labourers",5,Minor group 861 was split. Unit groups 8614 (now 85110) and 8615 (now 85111) moved from minor group 861 to 8511.
+,,,8512,"Logging, forestry, landscaping and other related labourers",5,Minor group 861 was split. Unit groups 5612 (now 85121) and 5616 (now 5120) moved from minor group 861 to 8512.
+921,"Supervisors, processing and manufacturing occupations",B,9201,"Supervisors, processing and manufacturing occupations",,N/A
+922,"Supervisors, assembly and fabrication",B,9202,"Supervisors, assembly and fabrication",,N/A
+923,Central control and process operators in processing and manufacturing,B,9310,Central control and process operators in processing and manufacturing,,N/A
+924,Utilities equipment operators and controllers,B,9210,Utilities equipment operators and controllers,,N/A
+941,Machine operators and related workers in mineral and metal products processing and manufacturing,C,9410,Machine operators and related workers in mineral and metal products processing and manufacturing,,N/A
+942,"Machine operators and related workers in chemical, plastic and rubber processing",C,9411,"Machine operators and related workers in chemical, plastic and rubber processing",,"Unit groups 9421 (now 94110), 9422 (now 94111) and 9423 (now 94112) moved from minor group 942 to 9411."
+,,,9510,"Labourers in processing, manufacturing and utilities",,"Job title ""Ring furnace operator helper"" moved from minor group 942 to 9510."
+943,Machine operators and related workers in pulp and paper production and wood processing and manufacturing,C,9412,Machine operators and related workers in pulp and paper production and wood processing and manufacturing,,N/A
+944,"Machine operators and related workers in textile, fabric, fur and leather products processing and manufacturing",C,9413,"Machine operators and related workers in textile, fabric, fur and leather products processing and manufacturing",,"Minor group 944 was split. Unit groups 9441 (now 94130), 9442 (now 94131), 9446 (now 94132) and 9447 (now 94133) moved from minor group 944 to 9413."
+,,,9510,"Labourers in processing, manufacturing and utilities",,"Minor group 944 was split. Unit group 9445 (now 95105) and job title ""Cloth-printing machine helper"" moved from minor group 944 to 9510."
+946,"Machine operators and related workers in food, beverage and associated products processing",C,9414,"Machine operators and related workers in food, beverage and associated products processing",,N/A
+947,Printing equipment operators and related occupations,C,9415,Printing equipment operators and related occupations,,N/A
+952,"Mechanical, electrical and electronics assemblers",C,9320,Aircraft assemblers and aircraft assembly inspectors,,Minor group 952 was split. Unit group 9521 (now 93200) moved from minor group 952 to 9320.
+,,,9420,"Mechanical, electrical and electronics assemblers and inspectors",,"Minor group 952 was split. Unit groups 9522 (now 94200), 9523 (now 94201), 9524 (now 94202), 9525 (now 94203), 9526 (now 94204) and 9527 (now 94205) moved from minor group 952 to 9420."
+953,Other assembly and related occupations,C,9421,"Furniture, wood, plastic and other products assemblers, finishers and inspectors",,Label modified.
+961,"Labourers in processing, manufacturing and utilities",B,9414,"Machine operators and related workers in food, beverage and associated products processing",,"Job title ""fish flaker - fish processing"" moved from minor group 961 to 9414."
+,,,9510,"Labourers in processing, manufacturing and utilities",,"Unit groups 9611 (now 95100), 9612 (now 95101), 9613 (now 95102), 9614 (now 95103), 9615 (now 95104), 9616 (now 95105), 9617 (now 95106), 9618 (now 95107) and 9619 (now 95109) moved from minor group 961 to 9510."

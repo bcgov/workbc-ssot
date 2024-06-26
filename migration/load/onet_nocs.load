@@ -1,0 +1,47 @@
+load csv
+    from 'onet_nocs.csv'
+    (
+        noc2021,
+        noc2021_title,
+        noc2016,
+        soc2018,
+        soc2018_title,
+        soc2019
+    )
+    into postgresql:///ssot
+    target table onet_nocs
+    target columns
+    (
+        noc2021,
+        noc2016,
+        soc2018,
+        soc2018_title,
+        soc2019
+    )
+    with
+        fields optionally enclosed by '"',
+        fields terminated by ',',
+        drop indexes
+
+    before load do
+    $$ drop table if exists onet_nocs; $$,
+    $$ create table if not exists onet_nocs
+    (
+        noc2021 text,
+        noc2016 text,
+        soc2018 text,
+        soc2018_title text,
+        soc2019 text
+    );
+    $$
+
+    after load do
+    $$ create index onet_nocs_noc2021_idx on onet_nocs (noc2021); $$,
+    $$ create index onet_nocs_soc2019_idx on onet_nocs (soc2019); $$,
+    $$ comment on table onet_nocs is 'O*NET-SOC 2019/2018 Concordance with NOC 2021/2016'; $$,
+    $$ comment on column onet_nocs.noc2021 is 'NOC 2021'; $$,
+    $$ comment on column onet_nocs.noc2016 is 'NOC 2016'; $$,
+    $$ comment on column onet_nocs.soc2018 is 'O*NET-SOC 2018'; $$,
+    $$ comment on column onet_nocs.soc2018_title is 'O*NET-SOC 2018 Title'; $$,
+    $$ comment on column onet_nocs.soc2019 is 'O*NET-SOC 2019'; $$
+;

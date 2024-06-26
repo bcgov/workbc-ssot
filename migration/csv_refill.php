@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Refill empty column cells with previous values in a CSV.
+ * Fill empty column cells with previous values in a CSV.
  *
  * Usage: php csv_refill.php --col col1 --col col2 < /path/to/input.csv > /path/to/output.csv
  */
