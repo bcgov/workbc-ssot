@@ -58,6 +58,8 @@ load csv
     $$ comment on column nocs.teer_level is 'TEER level (0-5)'; $$,
     $$ comment on column nocs.parent_noc is 'Parent NOC'; $$,
     $$ comment on column nocs.noc_2016 is 'Equivalent NOC 2016 codes (comma-separated)'; $$,
+    $$ drop view if exists nocs_nocs; $$,
     $$ create view nocs_nocs as select noc_2021, label_en as label, label_fr, noc_2016 from nocs where noc_level = 5; $$,
+    $$ drop view if exists nocs_categories; $$,
     $$ create view nocs_categories as select noc_2021, label_en as label, noc_level as level from nocs where noc_level < 5; $$
 ;

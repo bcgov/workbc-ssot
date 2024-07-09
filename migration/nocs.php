@@ -31,11 +31,11 @@ const COLUMN_STRUCTURE_CODE = 2;
 const COLUMN_STRUCTURE_TITLE = 3;
 const COLUMN_STRUCTURE_DEFINITION = 4;
 
-const NOC_TYPE_BROAD_CATEGORY = 1;
-const NOC_TYPE_MAJOR_GROUP = 2;
-const NOC_TYPE_SUBMAJOR_GROUP = 3;
-const NOC_TYPE_MINOR_GROUP = 4;
-const NOC_TYPE_UNIT_GROUP = 5;
+const NOC_LEVEL_BROAD_CATEGORY = 1;
+const NOC_LEVEL_MAJOR_GROUP = 2;
+const NOC_LEVEL_SUBMAJOR_GROUP = 3;
+const NOC_LEVEL_MINOR_GROUP = 4;
+const NOC_LEVEL_UNIT_GROUP = 5;
 
 const CSV_BROAD_CATEGORIES_ENGLISH = 'noc2021_broad_occupational_categories.csv';
 const CSV_BROAD_CATEGORIES_FRENCH = 'noc2021_broad_occupational_categories.fr.csv';
@@ -131,80 +131,70 @@ output_unit_groups($concordance_2011_2006);
 function output_broad_categories() {
     global $structure_en;
     global $structure_fr;
-    $en = fopen_or_die(CSV_BROAD_CATEGORIES_ENGLISH); fgetcsv($en);
-    $fr = fopen_or_die(CSV_BROAD_CATEGORIES_FRENCH); fgetcsv($fr);
-    $row = 2;
-    while (FALSE !== ($row_en = fgetcsv($en))) {
-        $row_fr = fgetcsv($fr);
-        if (
-            FALSE === $row_fr ||
-            $row_fr[COLUMN_BROAD_CATEGORIES_NOC_2021] !== $row_en[COLUMN_BROAD_CATEGORIES_NOC_2021]
-        ) {
-            fwrite(STDERR, "Unexpected mismatch between English and French concordances at " . CSV_BROAD_CATEGORIES_FRENCH . " row $row. Aborting.\n");
-            exit(1);
-        }
-        if (!array_key_exists($row_en[COLUMN_BROAD_CATEGORIES_NOC_2021], $structure_en)) {
-            fwrite(STDERR, "NOC " . $row_en[COLUMN_BROAD_CATEGORIES_NOC_2021] . " not found at " . CSV_STRUCTURE_ENGLISH . ". Ignoring definitions.\n");
-            $definition_en = NULL;
-            $definition_fr = NULL;
-        }
-        else {
-            $definition_en = $structure_en[$row_en[COLUMN_BROAD_CATEGORIES_NOC_2021]][COLUMN_STRUCTURE_DEFINITION];
-            $definition_fr = $structure_fr[$row_en[COLUMN_BROAD_CATEGORIES_NOC_2021]][COLUMN_STRUCTURE_DEFINITION];
-        }
+    $concordance_en = array_map('str_getcsv', file_or_die(CSV_BROAD_CATEGORIES_ENGLISH)); array_shift($concordance_en);
+    foreach ($structure_en as $row_en) {
+        if ($row_en[COLUMN_STRUCTURE_LEVEL] != NOC_LEVEL_BROAD_CATEGORY) continue;
+        $row_fr = $structure_fr[$row_en[COLUMN_STRUCTURE_CODE]];
+        $noc2021 = str_pad($row_en[COLUMN_STRUCTURE_CODE], NOC_LEVEL_BROAD_CATEGORY, '0', STR_PAD_LEFT);
+
+        // Find all NOC 2016 codes and TEER relating to this one in the concordance table.
+        $noc2016 = join(',', array_reduce($concordance_en, function($noc2016, $entry_en) use($row_en) {
+            if ($row_en[COLUMN_STRUCTURE_CODE] == $entry_en[COLUMN_BROAD_CATEGORIES_NOC_2021]) {
+                if (strlen($entry_en[COLUMN_BROAD_CATEGORIES_NOC_2016])) {
+                    $noc2016[] = str_pad($entry_en[COLUMN_BROAD_CATEGORIES_NOC_2016], NOC_LEVEL_BROAD_CATEGORY, '0', STR_PAD_LEFT);
+                }
+            }
+            return $noc2016;
+        }, []));
+
+        // Write out the record.
         fputcsv(STDOUT, [
-            $row_en[COLUMN_BROAD_CATEGORIES_NOC_2021],
-            $row_en[COLUMN_BROAD_CATEGORIES_NOC_2021_LABEL],
-            $definition_en,
-            $row_fr[COLUMN_BROAD_CATEGORIES_NOC_2021_LABEL],
-            $definition_fr,
-            NOC_TYPE_BROAD_CATEGORY,
+            $noc2021,
+            $row_en[COLUMN_STRUCTURE_TITLE],
+            $row_en[COLUMN_STRUCTURE_DEFINITION],
+            $row_fr[COLUMN_STRUCTURE_TITLE],
+            $row_fr[COLUMN_STRUCTURE_DEFINITION],
+            NOC_LEVEL_BROAD_CATEGORY,
             NULL,
             NULL,
-            $row_en[COLUMN_BROAD_CATEGORIES_NOC_2016],
+            $noc2016,
         ]);
-        $row++;
     }
 }
 
 function output_major_groups() {
     global $structure_en;
     global $structure_fr;
-    $en = fopen_or_die(CSV_MAJOR_GROUPS_ENGLISH); fgetcsv($en);
-    $fr = fopen_or_die(CSV_MAJOR_GROUPS_FRENCH); fgetcsv($fr);
-    $row = 2;
-    while (FALSE !== ($row_en = fgetcsv($en))) {
-        $row_fr = fgetcsv($fr);
-        if (
-            FALSE === $row_fr ||
-            $row_fr[COLUMN_MAJOR_GROUPS_NOC_2021] !== $row_en[COLUMN_MAJOR_GROUPS_NOC_2021]
-        ) {
-            fwrite(STDERR, "Unexpected mismatch between English and French concordances at " . CSV_MAJOR_GROUPS_FRENCH . " row $row. Aborting.\n");
-            exit(1);
-        }
-        $noc2021 = str_pad($row_en[COLUMN_MAJOR_GROUPS_NOC_2021], 2, '0', STR_PAD_LEFT);
-        if (!array_key_exists($noc2021, $structure_en)) {
-            fwrite(STDERR, "NOC " . $noc2021 . " not found at " . CSV_STRUCTURE_ENGLISH . ". Ignoring definitions.\n");
-            $definition_en = NULL;
-            $definition_fr = NULL;
-        }
-        else {
-            $definition_en = $structure_en[$noc2021][COLUMN_STRUCTURE_DEFINITION];
-            $definition_fr = $structure_fr[$noc2021][COLUMN_STRUCTURE_DEFINITION];
-        }
-        $noc2016 = empty($row_en[COLUMN_MAJOR_GROUPS_NOC_2016]) && $row_en[COLUMN_MAJOR_GROUPS_NOC_2016] !== '0' ? NULL : str_pad($row_en[COLUMN_MAJOR_GROUPS_NOC_2016], 2, '0', STR_PAD_LEFT);
+    $concordance_en = array_map('str_getcsv', file_or_die(CSV_MAJOR_GROUPS_ENGLISH)); array_shift($concordance_en);
+    foreach ($structure_en as $row_en) {
+        if ($row_en[COLUMN_STRUCTURE_LEVEL] != NOC_LEVEL_MAJOR_GROUP) continue;
+        $row_fr = $structure_fr[$row_en[COLUMN_STRUCTURE_CODE]];
+        $noc2021 = str_pad($row_en[COLUMN_STRUCTURE_CODE], NOC_LEVEL_MAJOR_GROUP, '0', STR_PAD_LEFT);
+
+        // Find all NOC 2016 codes and TEER relating to this one in the concordance table.
+        $teer = NULL;
+        $noc2016 = join(',', array_reduce($concordance_en, function($noc2016, $entry_en) use($row_en, &$teer) {
+            if ($row_en[COLUMN_STRUCTURE_CODE] == $entry_en[COLUMN_MAJOR_GROUPS_NOC_2021]) {
+                if (strlen($entry_en[COLUMN_MAJOR_GROUPS_NOC_2016])) {
+                    $noc2016[] = str_pad($entry_en[COLUMN_MAJOR_GROUPS_NOC_2016], NOC_LEVEL_MAJOR_GROUP, '0', STR_PAD_LEFT);
+                }
+                $teer = $entry_en[COLUMN_MAJOR_GROUPS_NOC_2021_TEER];
+            }
+            return $noc2016;
+        }, []));
+
+        // Write out the record.
         fputcsv(STDOUT, [
             $noc2021,
-            $row_en[COLUMN_MAJOR_GROUPS_NOC_2021_LABEL],
-            $definition_en,
-            $row_fr[COLUMN_MAJOR_GROUPS_NOC_2021_LABEL],
-            $definition_fr,
-            NOC_TYPE_MAJOR_GROUP,
-            $row_en[COLUMN_MAJOR_GROUPS_NOC_2021_TEER],
-            substr($noc2021, 0, 1),
-            $noc2016
+            $row_en[COLUMN_STRUCTURE_TITLE],
+            $row_en[COLUMN_STRUCTURE_DEFINITION],
+            $row_fr[COLUMN_STRUCTURE_TITLE],
+            $row_fr[COLUMN_STRUCTURE_DEFINITION],
+            NOC_LEVEL_MAJOR_GROUP,
+            $teer,
+            substr($noc2021, 0, NOC_LEVEL_MAJOR_GROUP-1),
+            $noc2016,
         ]);
-        $row++;
     }
 }
 
@@ -214,18 +204,18 @@ function output_submajor_groups() {
 
     // There's no concordance for this level - read everything from the structure.
     foreach ($structure_en as $row_en) {
-        if ($row_en[COLUMN_STRUCTURE_LEVEL] != NOC_TYPE_SUBMAJOR_GROUP) continue;
-        $noc2021 = $row_en[COLUMN_STRUCTURE_CODE];
-        $row_fr = $structure_fr[$noc2021];
+        if ($row_en[COLUMN_STRUCTURE_LEVEL] != NOC_LEVEL_SUBMAJOR_GROUP) continue;
+        $row_fr = $structure_fr[$row_en[COLUMN_STRUCTURE_CODE]];
+        $noc2021 = str_pad($row_en[COLUMN_STRUCTURE_CODE], NOC_LEVEL_SUBMAJOR_GROUP, '0', STR_PAD_LEFT);
         fputcsv(STDOUT, [
             $noc2021,
             $row_en[COLUMN_STRUCTURE_TITLE],
             $row_en[COLUMN_STRUCTURE_DEFINITION],
             $row_fr[COLUMN_STRUCTURE_TITLE],
             $row_fr[COLUMN_STRUCTURE_DEFINITION],
-            NOC_TYPE_SUBMAJOR_GROUP,
+            NOC_LEVEL_SUBMAJOR_GROUP,
             NULL,
-            substr($noc2021, 0, 2),
+            substr($noc2021, 0, NOC_LEVEL_SUBMAJOR_GROUP-1),
             NULL
         ]);
     }
@@ -234,123 +224,93 @@ function output_submajor_groups() {
 function output_minor_groups() {
     global $structure_en;
     global $structure_fr;
-    $en = fopen_or_die(CSV_MINOR_GROUPS_ENGLISH); fgetcsv($en);
-    $fr = fopen_or_die(CSV_MINOR_GROUPS_FRENCH); fgetcsv($fr);
-    $row = 2;
-    while (FALSE !== ($row_en = fgetcsv($en))) {
-        $row_fr = fgetcsv($fr);
-        if (
-            FALSE === $row_fr ||
-            $row_fr[COLUMN_MINOR_GROUPS_NOC_2021] !== $row_en[COLUMN_MINOR_GROUPS_NOC_2021]
-        ) {
-            fwrite(STDERR, "Unexpected mismatch between English and French concordances at " . CSV_MINOR_GROUPS_FRENCH . " row $row. Aborting.\n");
-            exit(1);
-        }
-        $noc2021 = str_pad($row_en[COLUMN_MINOR_GROUPS_NOC_2021], 4, '0', STR_PAD_LEFT);
-        if (!array_key_exists($noc2021, $structure_en)) {
-            fwrite(STDERR, "NOC " . $noc2021 . " not found at " . CSV_STRUCTURE_ENGLISH . ". Ignoring definitions.\n");
-            $definition_en = NULL;
-            $definition_fr = NULL;
-        }
-        else {
-            $definition_en = $structure_en[$noc2021][COLUMN_STRUCTURE_DEFINITION];
-            $definition_fr = $structure_fr[$noc2021][COLUMN_STRUCTURE_DEFINITION];
-        }
-        $noc2016 = empty($row_en[COLUMN_MINOR_GROUPS_NOC_2016]) ? NULL : str_pad($row_en[COLUMN_MINOR_GROUPS_NOC_2016], 3, '0', STR_PAD_LEFT);
+    $concordance_en = array_map('str_getcsv', file_or_die(CSV_MINOR_GROUPS_ENGLISH)); array_shift($concordance_en);
+    foreach ($structure_en as $row_en) {
+        if ($row_en[COLUMN_STRUCTURE_LEVEL] != NOC_LEVEL_MINOR_GROUP) continue;
+        $row_fr = $structure_fr[$row_en[COLUMN_STRUCTURE_CODE]];
+        $noc2021 = str_pad($row_en[COLUMN_STRUCTURE_CODE], NOC_LEVEL_MINOR_GROUP, '0', STR_PAD_LEFT);
+
+        // Find all NOC 2016 codes and TEER relating to this one in the concordance table.
+        $teer = NULL;
+        $noc2016 = join(',', array_reduce($concordance_en, function($noc2016, $entry_en) use($row_en, &$teer) {
+            if ($row_en[COLUMN_STRUCTURE_CODE] == $entry_en[COLUMN_MINOR_GROUPS_NOC_2021]) {
+                if (strlen($entry_en[COLUMN_MINOR_GROUPS_NOC_2016])) {
+                    $noc2016[] = str_pad($entry_en[COLUMN_MINOR_GROUPS_NOC_2016], NOC_LEVEL_MINOR_GROUP-1, '0', STR_PAD_LEFT);
+                }
+                $teer = $entry_en[COLUMN_MINOR_GROUPS_NOC_2021_TEER];
+            }
+            return $noc2016;
+        }, []));
+
+        // Write out the record.
         fputcsv(STDOUT, [
             $noc2021,
-            $row_en[COLUMN_MINOR_GROUPS_NOC_2021_LABEL],
-            $definition_en,
-            $row_fr[COLUMN_MINOR_GROUPS_NOC_2021_LABEL],
-            $definition_fr,
-            NOC_TYPE_MINOR_GROUP,
-            $row_en[COLUMN_MINOR_GROUPS_NOC_2021_TEER],
-            substr($noc2021, 0, 3),
-            $noc2016
+            $row_en[COLUMN_STRUCTURE_TITLE],
+            $row_en[COLUMN_STRUCTURE_DEFINITION],
+            $row_fr[COLUMN_STRUCTURE_TITLE],
+            $row_fr[COLUMN_STRUCTURE_DEFINITION],
+            NOC_LEVEL_MINOR_GROUP,
+            $teer,
+            substr($noc2021, 0, NOC_LEVEL_MINOR_GROUP-1),
+            $noc2016,
         ]);
-        $row++;
     }
 }
 
 function output_unit_groups($concordance_2011_2006) {
     global $structure_en;
     global $structure_fr;
-    $en = fopen_or_die(CSV_UNIT_GROUPS_ENGLISH); fgetcsv($en);
-    $fr = fopen_or_die(CSV_UNIT_GROUPS_FRENCH); fgetcsv($fr);
-    $row = 2;
-    $current_noc = [];
-    while (FALSE !== ($row_en = fgetcsv($en))) {
-        $row_fr = fgetcsv($fr);
-        if (
-            FALSE === $row_fr ||
-            $row_fr[COLUMN_UNIT_GROUPS_NOC_2021] !== $row_en[COLUMN_UNIT_GROUPS_NOC_2021]
-        ) {
-            fwrite(STDERR, "Unexpected mismatch between English and French concordances at " . CSV_UNIT_GROUPS_FRENCH . " row $row. Aborting.\n");
-            exit(1);
-        }
+    $concordance_en = array_map('str_getcsv', file_or_die(CSV_UNIT_GROUPS_ENGLISH)); array_shift($concordance_en);
+    foreach ($structure_en as $row_en) {
+        if ($row_en[COLUMN_STRUCTURE_LEVEL] != NOC_LEVEL_UNIT_GROUP) continue;
+        $row_fr = $structure_fr[$row_en[COLUMN_STRUCTURE_CODE]];
+        $noc2021 = str_pad($row_en[COLUMN_STRUCTURE_CODE], NOC_LEVEL_UNIT_GROUP, '0', STR_PAD_LEFT);
 
-        $noc2016 = empty($row_en[COLUMN_UNIT_GROUPS_NOC_2016]) ? NULL : str_pad($row_en[COLUMN_UNIT_GROUPS_NOC_2016], 4, '0', STR_PAD_LEFT);
-
-        // Add NOC 2006 concordance to NOC 2016.
-        if (array_key_exists($noc2016, $concordance_2011_2006)) {
-            $noc2016 .= ',' . join(',', $concordance_2011_2006[$noc2016]);
-        }
-
-        // If NOC 2021 is empty, add the incoming NOC 2016 to the current NOC.
-        if (empty($row_en[COLUMN_UNIT_GROUPS_NOC_2021])) {
-            $current_noc[COLUMN_OUTPUT_NOC_2016] .= ',' . $noc2016;
-        }
-        else {
-            // Done with previous NOC: flush it.
-            if (!empty($current_noc)) fputcsv(STDOUT, $current_noc);
-
-            // Start a new NOC.
-            $noc2021 = str_pad($row_en[COLUMN_UNIT_GROUPS_NOC_2021], 5, '0', STR_PAD_LEFT);
-            if (!array_key_exists($noc2021, $structure_en)) {
-                fwrite(STDERR, "NOC " . $noc2021 . " not found at " . CSV_STRUCTURE_ENGLISH . ". Ignoring definitions.\n");
-                $definition_en = NULL;
-                $definition_fr = NULL;
-            }
-            else {
-                $definition_en = $structure_en[$noc2021][COLUMN_STRUCTURE_DEFINITION];
-                $definition_fr = $structure_fr[$noc2021][COLUMN_STRUCTURE_DEFINITION];
-            }
-            // Special cases: 00011 -> 00018, ignore 00012-00015
-            if ($noc2021 === '00011') {
-                $noc2021 = '00018';
-                $row_en[COLUMN_UNIT_GROUPS_NOC_2021_LABEL] = 'Senior managers - public and private sector';
-                $row_fr[COLUMN_UNIT_GROUPS_NOC_2021_LABEL] = 'Cadres supérieurs / cadres supérieures - secteur public et privé';
-                $definition_en = <<<EOT
+        // Special cases: 00011 -> 00018, ignore 00012-00015
+        if ($noc2021 === '00011') {
+            $noc2021 = '00018';
+            $row_en[COLUMN_STRUCTURE_TITLE] = 'Senior managers - public and private sector';
+            $row_fr[COLUMN_STRUCTURE_TITLE] = 'Cadres supérieurs / cadres supérieures - secteur public et privé';
+            $row_en[COLUMN_STRUCTURE_DEFINITION] = <<<EOT
 Senior managers in the public sector oversee operations in government departments and work with their middle managers to develop goals and policies according to legislation. Senior managers in the private sector work in industries such as telecommunications, finance, insurance, real estate, data processing and business services. They work with their middle managers to develop goals and policies and sometimes work with a board of directors.
 EOT;
-                $definition_fr = <<<EOT
+            $row_fr[COLUMN_STRUCTURE_DEFINITION] = <<<EOT
 Les cadres supérieurs du secteur public supervisent les opérations des ministères et travaillent avec leurs cadres intermédiaires pour élaborer des objectifs et des politiques conformément à la législation. Les cadres supérieurs du secteur privé travaillent dans des secteurs tels que les télécommunications, la finance, les assurances, l'immobilier, le traitement des données et les services aux entreprises. Ils travaillent avec leurs cadres intermédiaires pour élaborer des objectifs et des politiques et travaillent parfois avec un conseil d'administration.
 EOT;
-                $noc2016 = '0012,0013,0014,0015,0016';
-            }
-            if (in_array($noc2021, [
-                '00012', '00013', '00014', '00015'
-            ])) {
-                $current_noc = [];
-            } else {
-                $current_noc = [
-                    $noc2021,
-                    $row_en[COLUMN_UNIT_GROUPS_NOC_2021_LABEL],
-                    $definition_en,
-                    $row_fr[COLUMN_UNIT_GROUPS_NOC_2021_LABEL],
-                    $definition_fr,
-                    NOC_TYPE_UNIT_GROUP,
-                    $row_en[COLUMN_UNIT_GROUPS_NOC_2021_TEER],
-                    substr($noc2021, 0, 4),
-                    $noc2016
-                ];
-            }
+            $noc2016 = '0012,0013,0014,0015,0016';
+            $teer = 0;
         }
-        $row++;
-    }
+        else {
+            // Find all NOC 2016 codes and TEER relating to this one in the concordance table.
+            $teer = NULL;
+            $noc2016 = join(',', array_reduce($concordance_en, function($noc2016, $entry_en) use($row_en, &$teer) {
+                if ($row_en[COLUMN_STRUCTURE_CODE] == $entry_en[COLUMN_UNIT_GROUPS_NOC_2021]) {
+                    if (strlen($entry_en[COLUMN_UNIT_GROUPS_NOC_2016])) {
+                        $noc2016[] = str_pad($entry_en[COLUMN_UNIT_GROUPS_NOC_2016], NOC_LEVEL_UNIT_GROUP-1, '0', STR_PAD_LEFT);
+                    }
+                    $teer = $entry_en[COLUMN_UNIT_GROUPS_NOC_2021_TEER];
+                }
+                return $noc2016;
+            }, []));
+        }
 
-    // Flush last NOC.
-    if (!empty($current_noc)) fputcsv(STDOUT, $current_noc);
+        // Write out the record.
+        if (!in_array($noc2021, [
+            '00012', '00013', '00014', '00015'
+        ])) {
+            fputcsv(STDOUT, [
+                $noc2021,
+                $row_en[COLUMN_STRUCTURE_TITLE],
+                $row_en[COLUMN_STRUCTURE_DEFINITION],
+                $row_fr[COLUMN_STRUCTURE_TITLE],
+                $row_fr[COLUMN_STRUCTURE_DEFINITION],
+                NOC_LEVEL_UNIT_GROUP,
+                $teer,
+                substr($noc2021, 0, NOC_LEVEL_UNIT_GROUP-1),
+                $noc2016,
+            ]);
+        }
+    }
 }
 
 function fopen_or_die($filename) {
@@ -362,4 +322,15 @@ function fopen_or_die($filename) {
         exit(1);
     }
     return $fh;
+}
+
+function file_or_die($filename) {
+    global $dirname;
+    $path = $dirname . $filename;
+    $file = file($path);
+    if (!$file) {
+        fwrite(STDERR, "File $path not found. Aborting.\n");
+        exit(1);
+    }
+    return $file;
 }
