@@ -83,31 +83,55 @@ php industries.php "data/EDM/" > load/industries.csv
 ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/onet2019_soc2018_noc2016_noc2021_crosswalk.xlsx" "data/onet2019_soc2018_noc2016_noc2021_crosswalk-%s.csv"
 cat "data/onet2019_soc2018_noc2016_noc2021_crosswalk-Sheet1.csv" | php csv_extract.php --range 2 | php csv_pad.php --column 1:L:5:0  --column 3:L:4:0 > load/onet_nocs.csv
 
-# TODO Labour Market Monthly Updates
-# REFRESH_WorkBC LMS _2021 Jan FINAL.xlsx
-# REFRESH_WorkBC LMS _2021 Feb FINAL.xlsx
-# REFRESH_WorkBC LMS _2021 Mar FINAL.xlsx
-# REFRESH_WorkBC LMS _2021 Apr FINAL.xlsx
-# REFRESH_WorkBC LMS _2021 May FINAL.xlsx
-# REFRESH_WorkBC LMS _2021 June FINAL.xlsx
-# REFRESH_WorkBC LMS _2021 July FINAL.xlsx
-# REFRESH_WorkBC LMS _2021 Aug FINAL.xlsx
-# REFRESH_WorkBC LMS _2021 Sept FINAL.xlsx
-# REFRESH_WorkBC LMS _2021 Oct FINAL.xlsx
-# REFRESH_WorkBC LMS _2021 Nov FINAL.xlsx
-# REFRESH_WorkBC LMS _2021 Dec FINAL.xlsx
-# REFRESH_WorkBC LMS _2022 Jan FINAL.xlsx
-# REFRESH_WorkBC LMS _2022 Feb FINAL.xlsx
-# REFRESH_WorkBC LMS _2022 Mar FINAL.xlsx
-# REFRESH_WorkBC LMS _2022 Apr FINAL.xlsx
-# REFRESH_WorkBC LMS _2022 May FINAL.xlsx
-# REFRESH_WorkBC LMS _2022 June FINAL.xlsx
-# REFRESH_WorkBC LMS _2022 July FINAL.xlsx
-# REFRESH_WorkBC LMS _2022 Aug FINAL.xlsx
-# REFRESH_WorkBC LMS _2022 Sept FINAL.xlsx
-# REFRESH_WorkBC LMS _2022 Oct.xlsx
-# REFRESH_WorkBC LMS _2022_Nov.xlsx
-# REFRESH_WorkBC LMS _2022_Dec.xlsx
+# Labour Market Monthly Updates
+ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/REFRESH_WorkBC LMS _2021 Jan FINAL.xlsx" "data/REFRESH_WorkBC LMS _2021 Jan FINAL-%s.csv"
+cat "data/REFRESH_WorkBC LMS _2021 Jan FINAL-Sheet3.csv" | php csv_empty.php | php monthly_labour_market_update.php 2021 1 > "load/updates/monthly_labour_market_updates_2021_01.csv"
+ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/REFRESH_WorkBC LMS _2021 Feb FINAL.xlsx" "data/REFRESH_WorkBC LMS _2021 Feb FINAL-%s.csv"
+cat "data/REFRESH_WorkBC LMS _2021 Feb FINAL-Sheet3.csv" | php csv_empty.php | php monthly_labour_market_update.php 2021 2 > "load/updates/monthly_labour_market_updates_2021_02.csv"
+ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/REFRESH_WorkBC LMS _2021 Mar FINAL.xlsx" "data/REFRESH_WorkBC LMS _2021 Mar FINAL-%s.csv"
+cat "data/REFRESH_WorkBC LMS _2021 Mar FINAL-Sheet3.csv" | php csv_empty.php | php monthly_labour_market_update.php 2021 3 > "load/updates/monthly_labour_market_updates_2021_03.csv"
+ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/REFRESH_WorkBC LMS _2021 Apr FINAL.xlsx" "data/REFRESH_WorkBC LMS _2021 Apr FINAL-%s.csv"
+cat "data/REFRESH_WorkBC LMS _2021 Apr FINAL-Sheet3.csv" | php csv_empty.php | php monthly_labour_market_update.php 2021 4 > "load/updates/monthly_labour_market_updates_2021_04.csv"
+ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/REFRESH_WorkBC LMS _2021 May FINAL.xlsx" "data/REFRESH_WorkBC LMS _2021 May FINAL-%s.csv"
+cat "data/REFRESH_WorkBC LMS _2021 May FINAL-Sheet3.csv" | php csv_empty.php | php monthly_labour_market_update.php 2021 5 > "load/updates/monthly_labour_market_updates_2021_05.csv"
+ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/REFRESH_WorkBC LMS _2021 June FINAL.xlsx" "data/REFRESH_WorkBC LMS _2021 June FINAL-%s.csv"
+cat "data/REFRESH_WorkBC LMS _2021 June FINAL-Sheet3.csv" | php csv_empty.php | php monthly_labour_market_update.php 2021 6 > "load/updates/monthly_labour_market_updates_2021_06.csv"
+ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/REFRESH_WorkBC LMS _2021 July FINAL.xlsx" "data/REFRESH_WorkBC LMS _2021 July FINAL-%s.csv"
+cat "data/REFRESH_WorkBC LMS _2021 July FINAL-Sheet3.csv" | php csv_empty.php | php monthly_labour_market_update.php 2021 7 > "load/updates/monthly_labour_market_updates_2021_07.csv"
+ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/REFRESH_WorkBC LMS _2021 Aug FINAL.xlsx" "data/REFRESH_WorkBC LMS _2021 Aug FINAL-%s.csv"
+cat "data/REFRESH_WorkBC LMS _2021 Aug FINAL-Sheet3.csv" | php csv_empty.php | php monthly_labour_market_update.php 2021 8 > "load/updates/monthly_labour_market_updates_2021_08.csv"
+ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/REFRESH_WorkBC LMS _2021 Sept FINAL.xlsx" "data/REFRESH_WorkBC LMS _2021 Sept FINAL-%s.csv"
+cat "data/REFRESH_WorkBC LMS _2021 Sept FINAL-Sheet3.csv" | php csv_empty.php | php monthly_labour_market_update.php 2021 9 > "load/updates/monthly_labour_market_updates_2021_09.csv"
+ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/REFRESH_WorkBC LMS _2021 Oct FINAL.xlsx" "data/REFRESH_WorkBC LMS _2021 Oct FINAL-%s.csv"
+cat "data/REFRESH_WorkBC LMS _2021 Oct FINAL-Sheet3.csv" | php csv_empty.php | php monthly_labour_market_update.php 2021 10 > "load/updates/monthly_labour_market_updates_2021_10.csv"
+ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/REFRESH_WorkBC LMS _2021 Nov FINAL.xlsx" "data/REFRESH_WorkBC LMS _2021 Nov FINAL-%s.csv"
+cat "data/REFRESH_WorkBC LMS _2021 Nov FINAL-Sheet3.csv" | php csv_empty.php | php monthly_labour_market_update.php 2021 11 > "load/updates/monthly_labour_market_updates_2021_11.csv"
+ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/REFRESH_WorkBC LMS _2021 Dec FINAL.xlsx" "data/REFRESH_WorkBC LMS _2021 Dec FINAL-%s.csv"
+cat "data/REFRESH_WorkBC LMS _2021 Dec FINAL-Sheet3.csv" | php csv_empty.php | php monthly_labour_market_update.php 2021 12 > "load/updates/monthly_labour_market_updates_2021_12.csv"
+ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/REFRESH_WorkBC LMS _2022 Jan FINAL.xlsx" "data/REFRESH_WorkBC LMS _2022 Jan FINAL-%s.csv"
+cat "data/REFRESH_WorkBC LMS _2022 Jan FINAL-Sheet3.csv" | php csv_empty.php | php monthly_labour_market_update.php 2022 1 > "load/updates/monthly_labour_market_updates_2022_01.csv"
+ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/REFRESH_WorkBC LMS _2022 Feb FINAL.xlsx" "data/REFRESH_WorkBC LMS _2022 Feb FINAL-%s.csv"
+cat "data/REFRESH_WorkBC LMS _2022 Feb FINAL-Sheet3.csv" | php csv_empty.php | php monthly_labour_market_update.php 2022 2 > "load/updates/monthly_labour_market_updates_2022_02.csv"
+ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/REFRESH_WorkBC LMS _2022 Mar FINAL.xlsx" "data/REFRESH_WorkBC LMS _2022 Mar FINAL-%s.csv"
+cat "data/REFRESH_WorkBC LMS _2022 Mar FINAL-Sheet3.csv" | php csv_empty.php | php monthly_labour_market_update.php 2022 3 > "load/updates/monthly_labour_market_updates_2022_03.csv"
+ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/REFRESH_WorkBC LMS _2022 Apr FINAL.xlsx" "data/REFRESH_WorkBC LMS _2022 Apr FINAL-%s.csv"
+cat "data/REFRESH_WorkBC LMS _2022 Apr FINAL-Sheet3.csv" | php csv_empty.php | php monthly_labour_market_update.php 2022 4 > "load/updates/monthly_labour_market_updates_2022_04.csv"
+ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/REFRESH_WorkBC LMS _2022 May FINAL.xlsx" "data/REFRESH_WorkBC LMS _2022 May FINAL-%s.csv"
+cat "data/REFRESH_WorkBC LMS _2022 May FINAL-Sheet3.csv" | php csv_empty.php | php monthly_labour_market_update.php 2022 5 > "load/updates/monthly_labour_market_updates_2022_05.csv"
+ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/REFRESH_WorkBC LMS _2022 June FINAL.xlsx" "data/REFRESH_WorkBC LMS _2022 June FINAL-%s.csv"
+cat "data/REFRESH_WorkBC LMS _2022 June FINAL-Sheet3.csv" | php csv_empty.php | php monthly_labour_market_update.php 2022 6 > "load/updates/monthly_labour_market_updates_2022_06.csv"
+ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/REFRESH_WorkBC LMS _2022 July FINAL.xlsx" "data/REFRESH_WorkBC LMS _2022 July FINAL-%s.csv"
+cat "data/REFRESH_WorkBC LMS _2022 July FINAL-Sheet3.csv" | php csv_empty.php | php monthly_labour_market_update.php 2022 7 > "load/updates/monthly_labour_market_updates_2022_07.csv"
+ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/REFRESH_WorkBC LMS _2022 Aug FINAL.xlsx" "data/REFRESH_WorkBC LMS _2022 Aug FINAL-%s.csv"
+cat "data/REFRESH_WorkBC LMS _2022 Aug FINAL-Sheet3.csv" | php csv_empty.php | php monthly_labour_market_update.php 2022 8 > "load/updates/monthly_labour_market_updates_2022_08.csv"
+ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/REFRESH_WorkBC LMS _2022 Sept FINAL.xlsx" "data/REFRESH_WorkBC LMS _2022 Sept FINAL-%s.csv"
+cat "data/REFRESH_WorkBC LMS _2022 Sept FINAL-Sheet3.csv" | php csv_empty.php | php monthly_labour_market_update.php 2022 9 > "load/updates/monthly_labour_market_updates_2022_09.csv"
+ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/REFRESH_WorkBC LMS _2022 Oct.xlsx" "data/REFRESH_WorkBC LMS _2022 Oct-%s.csv"
+cat "data/REFRESH_WorkBC LMS _2022 Oct-Sheet3.csv" | php csv_empty.php | php monthly_labour_market_update.php 2022 10 > "load/updates/monthly_labour_market_updates_2022_10.csv"
+ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/REFRESH_WorkBC LMS _2022_Nov.xlsx" "data/REFRESH_WorkBC LMS _2022_Nov-%s.csv"
+cat "data/REFRESH_WorkBC LMS _2022_Nov-Sheet3.csv" | php csv_empty.php | php monthly_labour_market_update.php 2022 11 > "load/updates/monthly_labour_market_updates_2022_11.csv"
+ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/REFRESH_WorkBC LMS _2022_Dec.xlsx" "data/REFRESH_WorkBC LMS _2022_Dec-%s.csv"
+cat "data/REFRESH_WorkBC LMS _2022_Dec-Sheet3.csv" | php csv_empty.php | php monthly_labour_market_update.php 2022 12 > "load/updates/monthly_labour_market_updates_2022_12.csv"
 ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/REFRESH_WorkBC LMS _2023_Jan new v2.xlsx" "data/REFRESH_WorkBC LMS _2023 Jan-%s.csv"
 cat "data/REFRESH_WorkBC LMS _2023 Jan-Sheet3.csv" | php csv_empty.php | php monthly_labour_market_update.php 2023 1 > "load/updates/monthly_labour_market_updates_2023_01.csv"
 ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/REFRESH_WorkBC LMS _2023_FEB_updated Mar21 v2.xlsx" "data/REFRESH_WorkBC LMS _2023 Feb-%s.csv"
@@ -146,6 +170,6 @@ ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/WorkB
 cat "data/WorkBC LMS June_2024-Sheet3.csv" | php csv_empty.php | php monthly_labour_market_update.php 2024 06 > "load/updates/monthly_labour_market_updates_2024_06.csv"
 
 # Load all data in the database.
-for f in load/*.load; do pgloader -l workbc.lisp "$f"; done
+for f in load/*.load; do echo "$f"; pgloader -l workbc.lisp "$f"; done
 psql -c 'DROP TABLE monthly_labour_market_updates'
-for f in load/updates/*.csv; do SOURCE="/app/$f" pgloader -l workbc.lisp load/monthly_labour_market_updates.load; done
+for f in load/updates/*.csv; do echo "$f"; SOURCE="/app/$f" pgloader -l workbc.lisp load/updates/monthly_labour_market_updates.load; done

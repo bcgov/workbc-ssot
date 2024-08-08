@@ -49,10 +49,6 @@ $header_map = [
     'employment_rate_pct_unemployment' => [17,2],
     'employment_rate_change_pct_participation' => [18,1],
     'employment_rate_pct_participation' => [18,2],
-    'employment_rate_change_pct_unemployment_previous' => [17,4],
-    'employment_rate_pct_unemployment_previous' => [17,5],
-    'employment_rate_change_pct_participation_previous' => [18,4],
-    'employment_rate_pct_participation_previous' => [18,5],
 
     'population_british_columbia' => [20,1],
     'population_vancouver_island_coast' => [21,1],
@@ -87,11 +83,6 @@ $header_map = [
     'unemployment_pct_northeast' => [40,1],
     'unemployment_pct_northeast_previous' => [40,4],
     'total_jobs_northeast' => [40,2],
-
-    'city_unemployment_pct_kelowna' => [42,1],
-    'city_unemployment_pct_abbotsford_mission' => [43,1],
-    'city_unemployment_pct_vancouver' => [44,1],
-    'city_unemployment_pct_victoria' => [45,1],
 
     'industry_pct_accommodation_food_services' => [48,1],
     'industry_abs_accommodation_food_services' => [48,2],
