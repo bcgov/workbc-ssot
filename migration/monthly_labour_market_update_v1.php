@@ -49,6 +49,10 @@ $header_map = [
     'employment_rate_pct_unemployment' => [17,2],
     'employment_rate_change_pct_participation' => [18,1],
     'employment_rate_pct_participation' => [18,2],
+    'employment_rate_change_pct_unemployment_previous' => [17,4],
+    'employment_rate_pct_unemployment_previous' => [17,5],
+    'employment_rate_change_pct_participation_previous' => [18,4],
+    'employment_rate_pct_participation_previous' => [18,5],
 
     'population_british_columbia' => [20,1],
     'population_vancouver_island_coast' => [21,1],

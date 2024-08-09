@@ -31,6 +31,10 @@ load csv
         employment_rate_pct_unemployment,
         employment_rate_change_pct_participation,
         employment_rate_pct_participation,
+        employment_rate_change_pct_unemployment_previous,
+        employment_rate_pct_unemployment_previous,
+        employment_rate_change_pct_participation_previous,
+        employment_rate_pct_participation_previous,
 
         population_british_columbia,
         population_vancouver_island_coast,
@@ -133,6 +137,10 @@ load csv
         employment_rate_pct_unemployment numeric using (not-available-to-null employment_rate_pct_unemployment),
         employment_rate_change_pct_participation numeric using (not-available-to-null employment_rate_change_pct_participation),
         employment_rate_pct_participation numeric using (not-available-to-null employment_rate_pct_participation),
+        employment_rate_change_pct_unemployment_previous numeric using (not-available-to-null employment_rate_change_pct_unemployment_previous),
+        employment_rate_pct_unemployment_previous numeric using (not-available-to-null employment_rate_pct_unemployment_previous),
+        employment_rate_change_pct_participation_previous numeric using (not-available-to-null employment_rate_change_pct_participation_previous),
+        employment_rate_pct_participation_previous numeric using (not-available-to-null employment_rate_pct_participation_previous),
 
         population_british_columbia int using (not-available-to-null population_british_columbia),
         population_vancouver_island_coast int using (not-available-to-null population_vancouver_island_coast),
@@ -239,6 +247,10 @@ load csv
         employment_rate_pct_unemployment numeric,
         employment_rate_change_pct_participation numeric,
         employment_rate_pct_participation numeric,
+        employment_rate_change_pct_unemployment_previous numeric,
+        employment_rate_pct_unemployment_previous numeric,
+        employment_rate_change_pct_participation_previous numeric,
+        employment_rate_pct_participation_previous numeric,
 
         population_british_columbia int,
         population_vancouver_island_coast int,
@@ -343,6 +355,10 @@ load csv
     $$ comment on column monthly_labour_market_updates.employment_rate_pct_unemployment is 'BC Employment Trends > Unemployment Rate - Rate (%)'; $$,
     $$ comment on column monthly_labour_market_updates.employment_rate_change_pct_participation is 'BC Employment Trends > Participation Rate - Change (pct points)'; $$,
     $$ comment on column monthly_labour_market_updates.employment_rate_pct_participation is 'BC Employment Trends > Participation Rate - Rate (%)'; $$,
+    $$ comment on column monthly_labour_market_updates.employment_rate_change_pct_unemployment_previous is 'BC Employment Trends > Unemployment Rate - Change (pct points) (previous month)'; $$,
+    $$ comment on column monthly_labour_market_updates.employment_rate_pct_unemployment_previous is 'BC Employment Trends > Unemployment Rate - Rate (%) (previous month)'; $$,
+    $$ comment on column monthly_labour_market_updates.employment_rate_change_pct_participation_previous is 'BC Employment Trends > Participation Rate - Change (pct points) (previous month)'; $$,
+    $$ comment on column monthly_labour_market_updates.employment_rate_pct_participation_previous is 'BC Employment Trends > Participation Rate - Rate (%) (previous month)'; $$,
 
     $$ comment on column monthly_labour_market_updates.population_british_columbia is 'Regional Population > British Columbia'; $$,
     $$ comment on column monthly_labour_market_updates.population_vancouver_island_coast is 'Regional Population > Vancouver Island/Coast'; $$,

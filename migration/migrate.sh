@@ -37,7 +37,7 @@ cat "data/WorkBC_2023_Wage_Data_Jan29_24-Sheet1.csv" | php csv_extract.php --ran
 ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/Occupational_Interests_2023_Apr5_24.xlsx" "data/Occupational_Interests_2023_Apr5_24-%s.csv"
 cat "data/Occupational_Interests_2023_Apr5_24-Sheet 1.csv" | php csv_extract.php --range 2 > load/occupational_interests.csv
 
-# TODO Common Job Titles for Career Profiles
+# Common Job Titles for Career Profiles
 ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/2021NOC_CommonJobTitles_IllustrativeListing_Feb16_2024.xlsx" "data/2021NOC_CommonJobTitles_IllustrativeListing_Feb16_2024-%s.csv"
 cat "data/2021NOC_CommonJobTitles_IllustrativeListing_Feb16_2024-CommonJobTitles_NOC2021_fina.csv" | php csv_extract.php --range 2 > load/titles.csv
 
