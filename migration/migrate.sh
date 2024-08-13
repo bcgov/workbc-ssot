@@ -168,6 +168,8 @@ ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/WorkB
 cat "data/WorkBC LMS May_2024-Sheet3.csv" | php csv_empty.php | php monthly_labour_market_update.php 2024 05 > "load/updates/monthly_labour_market_updates_2024_05.csv"
 ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/WorkBC LMS June_2024.xlsx" "data/WorkBC LMS June_2024-%s.csv"
 cat "data/WorkBC LMS June_2024-Sheet3.csv" | php csv_empty.php | php monthly_labour_market_update.php 2024 06 > "load/updates/monthly_labour_market_updates_2024_06.csv"
+ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/WorkBC LMS July_2024.xlsx" "data/WorkBC LMS July_2024-%s.csv"
+cat "data/WorkBC LMS July_2024-Sheet3.csv" | php csv_empty.php | php monthly_labour_market_update.php 2024 07 > "load/updates/monthly_labour_market_updates_2024_07.csv"
 
 # Load all data in the database.
 for f in load/*.load; do echo "$f"; pgloader -l workbc.lisp "$f"; done
