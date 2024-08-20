@@ -1,0 +1,67 @@
+load csv
+    from 'career_search_openings.csv'
+    (
+        noc_2021,
+        title_2021 [trim both whitespace],
+        industry_sub [trim both whitespace],
+        region [trim both whitespace],
+        job_openings,
+        teer_level,
+        teer_description [trim both whitespace],
+        calculated_median_annual_salary,
+        workbc_url,
+        jobboard_url,
+        industry_agg [trim both whitespace],
+        part_full_time [trim both whitespace]
+    )
+    into postgresql:///ssot
+    target table career_search_openings
+    target columns
+    (
+        noc_2021 text using (trim-hash noc_2021),
+        title_2021,
+        teer_level,
+        teer_description,
+        region,
+        job_openings int using (not-available-to-null job_openings),
+        calculated_median_annual_salary numeric using (not-available-to-null calculated_median_annual_salary),
+        industry_agg,
+        industry_sub,
+        part_full_time
+    )
+    with
+        fields optionally enclosed by '"',
+        fields terminated by ',',
+        drop indexes
+
+    before load do
+    $$ drop table if exists career_search_openings; $$,
+    $$ create table if not exists career_search_openings
+    (
+        noc_2021 text,
+        title_2021 text,
+        teer_level int,
+        teer_description text,
+        region text,
+        job_openings int,
+        calculated_median_annual_salary numeric,
+        industry_agg text,
+        industry_sub text,
+        part_full_time text
+    );
+    $$
+
+    after load do
+    $$ create index career_search_openings_noc_2021_idx on career_search_openings (noc_2021); $$,
+    $$ comment on table career_search_openings is 'WorkBC Career Search Tool Job Openings {2023}'; $$,
+    $$ comment on column career_search_openings.noc_2021 is 'NOC 2021'; $$,
+    $$ comment on column career_search_openings.title_2021 is 'NOC 2021 Description'; $$,
+    $$ comment on column career_search_openings.teer_level is 'TEER'; $$,
+    $$ comment on column career_search_openings.teer_description is 'TEER Description'; $$,
+    $$ comment on column career_search_openings.region is 'Region'; $$,
+    $$ comment on column career_search_openings.job_openings is 'Job Openings {2023-2033}'; $$,
+    $$ comment on column career_search_openings.calculated_median_annual_salary is 'Salary (calculated median salary)'; $$,
+    $$ comment on column career_search_openings.industry_agg is 'Industry (aggregate)'; $$,
+    $$ comment on column career_search_openings.industry_sub is 'Industry (sub-industry)'; $$,
+    $$ comment on column career_search_openings.part_full_time is 'Part-time/full-time'; $$
+;

@@ -1,0 +1,58 @@
+load csv
+    from 'career_transition_opportunities.csv'
+    (
+        noc,
+        title [trim both whitespace],
+        long_title,
+        teer [trim both whitespace],
+        option_noc,
+        option_title [trim both whitespace],
+        option_teer [trim both whitespace],
+        similarity [trim both whitespace],
+        distance
+    )
+    into postgresql:///ssot
+    target table career_transition_opportunities
+    target columns
+    (
+        noc text using (trim-hash noc),
+        title,
+        teer,
+        option_noc text using (trim-hash option_noc),
+        option_title,
+        option_teer,
+        similarity,
+        distance
+    )
+    with
+        fields optionally enclosed by '"',
+        fields terminated by ',',
+        drop indexes
+
+    before load do
+    $$ drop table if exists career_transition_opportunities; $$,
+    $$ create table if not exists career_transition_opportunities
+    (
+        noc text,
+        title text,
+        teer text,
+        option_noc text,
+        option_title text,
+        option_teer text,
+        similarity text,
+        distance numeric
+    );
+    $$
+
+    after load do
+    $$ create index career_transition_opportunities_noc_idx on career_transition_opportunities (noc); $$,
+    $$ comment on table career_transition_opportunities is 'WorkBC Career Transition Tool Opportunities'; $$,
+    $$ comment on column career_transition_opportunities.noc is 'Current Occupation (NOC)'; $$,
+    $$ comment on column career_transition_opportunities.title is 'Current Occupation Title'; $$,
+    $$ comment on column career_transition_opportunities.teer is 'Current Occupation TEER'; $$,
+    $$ comment on column career_transition_opportunities.option_noc is 'Career Option (NOC)'; $$,
+    $$ comment on column career_transition_opportunities.option_title is 'Career Option Title'; $$,
+    $$ comment on column career_transition_opportunities.option_teer is 'Career Option TEER'; $$,
+    $$ comment on column career_transition_opportunities.similarity is 'Similarity'; $$,
+    $$ comment on column career_transition_opportunities.distance is 'Distance'; $$
+;

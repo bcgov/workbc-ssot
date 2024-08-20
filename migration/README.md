@@ -33,9 +33,10 @@ ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/Data_
 
 | PHP script | Purpose |
 |------------|---------|
-| `csv_empty.php` | Remove empty rows. |
-| `csv_extract.php` | Extract rows based on given ranges. |
-| `csv_refill.php` | Fill empty cells with previous values from the same column. |
+| `csv_empty.php` | Remove empty rows from CSV. |
+| `csv_extract.php` | Extract CSV rows based on given ranges. |
+| `csv_refill.php` | Fill empty column cells with previous values in a CSV. |
+| `csv_pad.php` | Pad CSV columns. |
 
 Refer to the source code of these scripts for usage details. Ensure that the final CSV is stored in the `load/` folder and is named after the target database table.
 
@@ -72,14 +73,12 @@ ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/Updat
 
 - Transform the CSV for loading, supplying the month and year that corresponds to the sheet.
 ```
-cat "data/Update_File-Sheet_Name.csv" | php csv_empty.php | php monthly_labour_market_update_202308.php year{YYYY} month{1..12} > "load/updates/monthly_labour_market_updates_{YYYY}_{MM}.csv"
+cat "data/Update_File-Sheet_Name.csv" | php csv_empty.php | php monthly_labour_market_update.php year{YYYY} month{1..12} > "load/updates/monthly_labour_market_updates_{YYYY}_{MM}.csv"
 ```
-NOTE! For months earlier than March 2023, use the script `monthly_labour_market_update_202101.php`.
-For months March 2023 through August 2023, use the script `monthly_labour_market_update_202303.php`.
 
 - Run the loading script `load/monthly_labour_market_updates.load`, supplying the transformed CSV above as the `SOURCE` environment variable.
 ```
-SOURCE="/app/load/updates/monthly_labour_market_updates_{YYYY}_{MM}.csv" pgloader -l workbc.lisp load/updates/monthly_labour_market_updates.load
+SOURCE="/app/load/updates/monthly_labour_market_updates_{YYYY}_{MM}.csv" pgloader -l workbc.lisp load/monthly_labour_market_updates.load
 ```
 WARNING! The monthly labour market update loading script does not offer the capability of updating an existing record - you would have to manually delete the record for a given month if you want to update it. For this, use a SQL instruction like:
 ```
