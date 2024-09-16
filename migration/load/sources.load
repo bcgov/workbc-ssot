@@ -29,7 +29,7 @@ load csv
         sheet text,
         range text,
         author text,
-        date text
+        date timestamptz
     );
     $$
 
@@ -37,11 +37,11 @@ load csv
     $$ create index sources_endpoint_idx on sources (endpoint); $$,
     $$ comment on table sources is 'Data sources metadata'; $$,
     $$ comment on column sources.label is 'Source label'; $$,
-    $$ comment on column sources.endpoint is 'Database table / API endpoint'; $$,
+    $$ comment on column sources.endpoint is 'Dataset name / Database table / API endpoint'; $$,
     $$ comment on column sources.datapoint is 'Data point'; $$,
     $$ comment on column sources.filename is 'Source filename'; $$,
     $$ comment on column sources.sheet is 'Source sheet'; $$,
     $$ comment on column sources.range is 'Source range'; $$,
     $$ comment on column sources.author is 'Author'; $$,
-    $$ comment on column sources.date is 'Date'; $$
+    $$ comment on column sources.date is 'Date/time of last update'; $$
 ;
