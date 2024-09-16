@@ -88,11 +88,6 @@ $header_map = [
     'unemployment_pct_northeast_previous' => [40,4],
     'total_jobs_northeast' => [40,2],
 
-    'city_unemployment_pct_kelowna' => [42,1],
-    'city_unemployment_pct_abbotsford_mission' => [43,1],
-    'city_unemployment_pct_vancouver' => [44,1],
-    'city_unemployment_pct_victoria' => [45,1],
-
     'industry_pct_accommodation_food_services' => [48,1],
     'industry_abs_accommodation_food_services' => [48,2],
     'industry_pct_agriculture_fishing' => [49,1],
