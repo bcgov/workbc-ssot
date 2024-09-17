@@ -36,6 +36,7 @@ load csv
     $$
 
     after load do
+    $$ update onet_nocs set noc2021 = '00018' where noc2021 in ('00011', '00012', '00013', '00014', '00015'); $$,
     $$ create index onet_nocs_noc2021_idx on onet_nocs (noc2021); $$,
     $$ create index onet_nocs_soc2019_idx on onet_nocs (soc2019); $$,
     $$ comment on table onet_nocs is 'O*NET-SOC 2019/2018 Concordance with NOC 2021/2016'; $$,
