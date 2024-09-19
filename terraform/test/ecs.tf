@@ -61,7 +61,7 @@ resource "aws_ecs_task_definition" "app" {
 			},
 			{
 				name = "PGRST_DB_ANON_ROLE",
-				value = "ssot_readonly"
+				value = "ssot_lmmu"
 			},
 			{
 				name = "PGRST_OPENAPI_SERVER_PROXY_URI",
