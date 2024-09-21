@@ -1,0 +1,39 @@
+name: Labour Market Monthly Update
+
+on:
+  repository_dispatch:
+    types: [monthly_labour_market_update]
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        ref: ${{ github.event.client_payload.branch }}
+
+    - name: Run docker-compose
+      uses: hoverkraft-tech/compose-action@v2.0.2
+      with:
+        compose-file: "./docker-compose.yml"
+
+    - name: Load SSoT snapshot
+      run: |
+        docker-compose exec -T postgres psql --username workbc ssot < ssot-full.sql
+
+    - name: Convert and load the LMMU file
+      run: |
+        docker-compose exec -T migrator bash -c "./monthly_labour_market_update.sh \"${{ github.event.client_payload.filename }}\" ${{ github.event.client_payload.year }} ${{ github.event.client_payload.month }}"
+
+    - name: Export SSoT snapshot
+      run: |
+        docker-compose exec -T postgres pg_dump --clean --username workbc ssot | gzip > ssot-full.sql.gz && gunzip -k -c ssot-full.sql.gz > ssot-full.sql
+
+    - name: Commit and push the changes
+      uses: devops-infra/action-commit-push@master
+      with:
+        github_token: "${{ secrets.GITHUB_TOKEN }}"
+        commit_prefix: "[AUTO]"
+        commit_message: "${{ github.event.client_payload.notes }}"
+        target_branch: ${{ github.event.client_payload.branch }}
