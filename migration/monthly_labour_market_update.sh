@@ -32,3 +32,4 @@ psql -c "DELETE FROM monthly_labour_market_updates WHERE year = ${year} AND mont
 SOURCE="/app/load/updates/monthly_labour_market_updates_${year}_${month}.csv" pgloader -l workbc.lisp load/updates/monthly_labour_market_updates.load
 
 # Update sources.csv and load it into database.
+pgloader -l workbc.lisp load/sources.load
