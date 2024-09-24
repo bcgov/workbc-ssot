@@ -90,14 +90,12 @@ ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/onet2
 cat "data/onet2019_soc2018_noc2016_noc2021_crosswalk-Sheet1.csv" | php csv_extract.php --range 2 | php csv_pad.php --column 1:L:5:0  --column 3:L:4:0 > load/onet_nocs.csv
 
 # Labour Market Monthly Updates
-csvq -r load -f csv  -t "%Y/%m/%d %H:%i" \
-"select filename, year(datetime(period)) as year, month(datetime(period)) as month from sources where endpoint='monthly_labour_market_updates' and filename <> ''" \
+csvq --repository load --without-header --format csv --datetime-format "%Y/%m/%d %H:%i" \
+"SELECT filename, YEAR(DATETIME(period)) AS year, MONTH(DATETIME(period)) AS month FROM sources WHERE endpoint='monthly_labour_market_updates' AND filename <> ''" \
 | while IFS=, read -r filename year month; do
-  if [[ ! $filename = 'filename' ]]; then
     ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/$filename.xlsx" "data/$filename-%s.csv"
     cat "data/$filename-Sheet3.csv" | php csv_empty.php | php monthly_labour_market_update.php $year $month > "load/updates/monthly_labour_market_updates_${year}_$(printf '%02d' $month).csv"
-  fi
-done
+  done
 
 # Load all data in the database.
 for f in load/*.load; do echo "$f"; pgloader -l workbc.lisp "$f"; done

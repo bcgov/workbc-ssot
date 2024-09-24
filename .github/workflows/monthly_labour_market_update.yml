@@ -24,7 +24,7 @@ jobs:
 
     - name: Convert and load the LMMU file
       run: |
-        docker-compose exec -T migrator bash -c "./monthly_labour_market_update.sh \"${{ github.event.client_payload.filename }}\" ${{ github.event.client_payload.year }} ${{ github.event.client_payload.month }}"
+        docker-compose exec -T migrator bash -c "./monthly_labour_market_update.sh \"${{ github.event.client_payload.filename }}\" ${{ github.event.client_payload.year }} ${{ github.event.client_payload.month }}" \"${{ github.event.client_payload.date }}\"
 
     - name: Export SSoT snapshot
       run: |
