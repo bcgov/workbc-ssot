@@ -1,17 +1,22 @@
-name: Labour Market Monthly Update
+name: SSoT Update
 
 on:
   repository_dispatch:
     types: [monthly_labour_market_update]
 
 jobs:
-  rebuild:
+  update:
     runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v3
       with:
         ref: ${{ github.event.client_payload.branch }}
+
+    - name: Install docker-compose
+      run: |
+        sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+        sudo chmod +x /usr/local/bin/docker-compose
 
     - name: Run docker-compose
       uses: hoverkraft-tech/compose-action@v2.0.2
@@ -24,7 +29,8 @@ jobs:
 
     - name: Convert and load the LMMU file
       run: |
-        docker-compose exec -T migrator bash -c "./monthly_labour_market_update.sh \"${{ github.event.client_payload.filename }}\" ${{ github.event.client_payload.year }} ${{ github.event.client_payload.month }}" \"${{ github.event.client_payload.date }}\"
+        docker-compose exec -T migrator bash -c "./monthly_labour_market_update.sh \"${{ github.event.client_payload.filename }}\" ${{ github.event.client_payload.year }} ${{ github.event.client_payload.month }} \"${{ github.event.client_payload.date }}\"" \
+        && sudo chown runner:docker migration/load/sources.csv
 
     - name: Export SSoT snapshot
       run: |
@@ -36,4 +42,3 @@ jobs:
         github_token: "${{ secrets.GITHUB_TOKEN }}"
         commit_prefix: "[AUTO]"
         commit_message: "${{ github.event.client_payload.notes }}"
-        target_branch: ${{ github.event.client_payload.branch }}
