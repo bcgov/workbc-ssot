@@ -12,7 +12,7 @@ services:
       POSTGRES_USER: workbc
       POSTGRES_PASSWORD: workbc
     healthcheck:
-      test: "pg_isready --username=workbc && psql --username=workbc --list"
+      test: "pg_isready --dbname=ssot --username=workbc && psql --username=workbc --list ssot"
       timeout: 5s
       retries: 20
     volumes:

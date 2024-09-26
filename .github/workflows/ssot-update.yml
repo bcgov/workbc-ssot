@@ -5,7 +5,7 @@ on:
     types: [monthly_labour_market_update]
 
 jobs:
-  update:
+  monthly_labour_market_update:
     runs-on: ubuntu-latest
 
     steps:
@@ -29,16 +29,18 @@ jobs:
 
     - name: Convert and load the LMMU file
       run: |
-        docker-compose exec -T migrator bash -c "./monthly_labour_market_update.sh \"${{ github.event.client_payload.filename }}\" ${{ github.event.client_payload.year }} ${{ github.event.client_payload.month }} \"${{ github.event.client_payload.date }}\"" \
-        && sudo chown runner:docker migration/load/sources.csv
+        docker-compose exec -T migrator bash -c "./monthly_labour_market_update.sh \"${{ github.event.client_payload.filename }}\" ${{ github.event.client_payload.year }} ${{ github.event.client_payload.month }} \"${{ github.event.client_payload.date }}\""
+        sudo chown runner:docker migration/load/sources.csv
 
     - name: Export SSoT snapshot
       run: |
-        docker-compose exec -T postgres pg_dump --clean --username workbc ssot | gzip > ssot-full.sql.gz && gunzip -k -c ssot-full.sql.gz > ssot-full.sql
+        docker-compose exec -T postgres psql --username workbc ssot < ssot-grants.sql \
+        && docker-compose exec -T postgres pg_dump --clean --username workbc ssot | gzip > ssot-full.sql.gz \
+        && gunzip -k -c ssot-full.sql.gz > ssot-full.sql
 
     - name: Commit and push the changes
       uses: devops-infra/action-commit-push@master
       with:
         github_token: "${{ secrets.GITHUB_TOKEN }}"
-        commit_prefix: "[AUTO]"
+        commit_prefix: "[AUTO] "
         commit_message: "${{ github.event.client_payload.notes }}"

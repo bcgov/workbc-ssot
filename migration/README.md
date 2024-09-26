@@ -59,7 +59,12 @@ WARNING! The environment variable `PGDATABASE` is currently not used by `pgloade
 
 - Add or modify the corresponding entry to the `load/sources.csv` metadata table which is described below, then re-run the `source.load` loading script.
 
-- Export the full SSoT database by running `docker-compose exec -T postgres pg_dump --clean --username workbc ssot | gzip > ssot-full.sql.gz` OUTSIDE the container.
+- Export the full SSoT database by running the following OUTSIDE the container:
+```bash
+docker-compose exec -T postgres psql --username workbc ssot < ssot-grants.sql \
+&& docker-compose exec -T postgres pg_dump --clean --username workbc ssot | gzip > ssot-full.sql.gz \
+&& gunzip -k -c ssot-full.sql.gz > ssot-full.sql
+```
 
 ## Ingesting monthly labour market updates
 These updates have a specialized script to simplify the process and allow it to be called from outside the container.
@@ -71,7 +76,12 @@ These updates have a specialized script to simplify the process and allow it to 
 ./monthly_labour_market_updates.sh Monthly_File.xlsx Year Month
 ```
 
-- Export the full SSoT database by running `docker-compose exec -T postgres pg_dump --clean --username workbc ssot | gzip > ssot-full.sql.gz` OUTSIDE the container.
+- Export the full SSoT database by running the following OUTSIDE the container:
+```bash
+docker-compose exec -T postgres psql --username workbc ssot < ssot-grants.sql \
+&& docker-compose exec -T postgres pg_dump --clean --username workbc ssot | gzip > ssot-full.sql.gz \
+&& gunzip -k -c ssot-full.sql.gz > ssot-full.sql
+```
 
 ## Sources metadata
 The `load/sources.csv` file contains provenance metadata for all the migrated data sheets, including a source label that can be displayed to end-users. It is meant to be manually edited.
