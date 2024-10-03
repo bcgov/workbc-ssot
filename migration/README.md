@@ -1,30 +1,28 @@
-SSoT Data Migration
+SSoT Data Ingestion
 ===================
 
 This folder contains a simple migration system from Excel / CSV files to a PostgreSQL database. The idea is to convert Excel sheets to CSV, then apply a series of transformations to the CSV, then import the resulting CSV into PostgreSQL via a loading tool.
 
-As a prerequisite, you need to place the LMO data sheets in the local `data/` folder. If you are copying over the data sheets from the legacy WorkBC Kentico project, these would be located in the `src/SSIS` subfolder of that project.
+## Building SSoT from scratch
+Run the `ssot-full` script to rebuild the full database:
 ```
-find /path/to/WorkBC/src/SSIS -type f -ipath '*Delivered*' -not -iname '*.ivt' -not -iname '*.txt' -exec cp {} migration/data \;
-for f in migration/data/*.zip; do unzip -o "$f" -d migration/data; done
-```
-
-Then run the full migration script to full re-populate the `ssot` database:
-```
-docker-compose exec migrator migrate.sh
+docker-compose exec -T postgres psql --username workbc ssot < ssot-reset.sql
+docker-compose exec migrator ssot-full.sh
 ```
 
-## Migrating a new data source or updating an existing one
-The steps for the migration are as follows:
+## Ingesting a new data source or updating an existing one
+The steps for the ingestion are as follows:
 
-- Enter the `migrator` container.
+- Place the new source sheet in the `data/` folder, e.g. `data/Data_File.xlsx`.
+
+- Enter the `migrator` container:
 ```
 docker-compose exec migrator bash
 ```
 
-- Search the script `migrate.sh` for the dataset you are trying to import. If it's mentioned in there already, you're in luck: you only need to replicate the commands, taking care to adjust the source sheet to the newly-received one. Please update the script file accordingly.
+- Search the script `ssot-full.sh` for the dataset you are trying to import. If it's mentioned in there already, you're in luck: you only need to replicate the commands, taking care to adjust the source sheet to the newly-received one. Please update the script file accordingly.
 
-- Convert the Excel sheet `Data_File.xlsx` to CSV. Since multiple sheets can exist in an Excel file, we define an output template `Data_File-%s.csv` that `ssconvert` uses to generate each CSV separately with the sheet name appended to the base filename.
+- Convert the Excel sheet `data/Data_File.xlsx` to CSV. Since multiple sheets can exist in an Excel file, we define an output template `data/Data_File-%s.csv` that `ssconvert` uses to generate each CSV separately with the sheet name appended to the base filename.
 ```
 ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/Data_File.xlsx" "data/Data_File-%s.csv"
 ```
@@ -61,37 +59,39 @@ WARNING! The environment variable `PGDATABASE` is currently not used by `pgloade
 
 - Add or modify the corresponding entry to the `load/sources.csv` metadata table which is described below, then re-run the `source.load` loading script.
 
-- Export the full SSoT database by running `docker-compose exec -T postgres pg_dump --clean --username workbc ssot | gzip > ssot-full.sql.gz` OUTSIDE the container.
-
-## Migrating monthly labour updates
-These updates have a slightly different workflow to accommodate their specific structure:
-
-- Convert the supplied Excel sheet to CSV.
-```
-ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/Update_File.xlsx" "data/Update_File-%s.csv"
+- Export the full SSoT database by running the following OUTSIDE the container:
+```bash
+docker-compose exec -T postgres psql --username workbc ssot < ssot-grants.sql \
+&& docker-compose exec -T postgres pg_dump --clean --username workbc ssot | gzip > ssot-full.sql.gz \
+&& gunzip -k -c ssot-full.sql.gz > ssot-full.sql
 ```
 
-- Transform the CSV for loading, supplying the month and year that corresponds to the sheet.
+## Ingesting monthly labour market updates
+These updates have a specialized script to simplify the process and allow it to be called from outside the container.
+
+- Place the new source sheet in the `data/` folder, e.g. `data/Monthly_File.xlsx`.
+
+- Run the specialized script:
 ```
-cat "data/Update_File-Sheet_Name.csv" | php csv_empty.php | php monthly_labour_market_update.php year{YYYY} month{1..12} > "load/updates/monthly_labour_market_updates_{YYYY}_{MM}.csv"
+./monthly_labour_market_updates.sh Monthly_File.xlsx Year Month
 ```
 
-- Run the loading script `load/monthly_labour_market_updates.load`, supplying the transformed CSV above as the `SOURCE` environment variable.
+- Export the full SSoT database by running the following OUTSIDE the container:
+```bash
+docker-compose exec -T postgres psql --username workbc ssot < ssot-grants.sql \
+&& docker-compose exec -T postgres pg_dump --clean --username workbc ssot | gzip > ssot-full.sql.gz \
+&& gunzip -k -c ssot-full.sql.gz > ssot-full.sql
 ```
-SOURCE="/app/load/updates/monthly_labour_market_updates_{YYYY}_{MM}.csv" pgloader -l workbc.lisp load/monthly_labour_market_updates.load
-```
-WARNING! The monthly labour market update loading script does not offer the capability of updating an existing record - you would have to manually delete the record for a given month if you want to update it. For this, use a SQL instruction like:
-```
-psql -c 'DELETE FROM monthly_labour_market_updates WHERE year = YYYY AND month = MM;'
-```
+
 ## Sources metadata
-The `load/sources.csv` file contains provenance metadata for all the migrated data sources, including a source label that can be displayed to end-users. It is meant to be manually edited.
+The `load/sources.csv` file contains provenance metadata for all the migrated data sheets, including a source label that can be displayed to end-users. It is meant to be manually edited.
 
 The level of granularity of the metadata is the "Data point", which represents a single field or a section of the dataset. If the data point value is `NULL`, then the provenance covers all data points, except for those that may be specifically mentioned in other records of this table.
 
 When you update the sources file, please make sure to update the following columns (when applicable):
-- **Source filename** to reflect the latest datasheet corresponding to the given dataset
-- **Date** of datasheet production (if known) or delivery
+- **filename** to reflect the latest data sheet corresponding to the given dataset
+- **period** to reflect the date at which the given data sheet is valid (e.g. Jan 1st, 2024)
+- **date** of datasheet production or delivery
 
 You can then refresh the sources metadata table using the following line:
 ```
