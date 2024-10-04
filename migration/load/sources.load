@@ -8,7 +8,8 @@ load csv
         sheet,
         range,
         author,
-        date
+        date,
+        period
     )
     into postgresql:///ssot
     target table sources
@@ -24,12 +25,15 @@ load csv
     (
         endpoint text,
         label text,
+        period timestamptz,
         datapoint text,
         filename text,
         sheet text,
         range text,
         author text,
-        date timestamptz
+        date timestamptz,
+
+        primary key(endpoint, period)
     );
     $$
 
@@ -38,6 +42,7 @@ load csv
     $$ comment on table sources is 'Data sources metadata'; $$,
     $$ comment on column sources.label is 'Source label'; $$,
     $$ comment on column sources.endpoint is 'Dataset name / Database table / API endpoint'; $$,
+    $$ comment on column sources.period is 'Dataset validity period start'; $$,
     $$ comment on column sources.datapoint is 'Data point'; $$,
     $$ comment on column sources.filename is 'Source filename'; $$,
     $$ comment on column sources.sheet is 'Source sheet'; $$,
