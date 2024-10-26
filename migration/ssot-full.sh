@@ -97,6 +97,13 @@ csvq --repository load --without-header --format csv --datetime-format "%Y/%m/%d
     cat "data/$filename-Sheet3.csv" | php csv_empty.php | php monthly_labour_market_update.php $year $month > "load/updates/monthly_labour_market_updates_${year}_$(printf '%02d' $month).csv"
   done
 
+# LMO 2024 Report
+ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/LMO 2024E Charts and Tables 2024 09 05.xlsx" "data/LMO 2024E Charts and Tables 2024 09 05-%s.csv"
+cat "data/LMO 2024E Charts and Tables 2024 09 05-Figure 1.1-1.csv" | php csv_extract.php --range 4-6 --range 8-12 --range 16-17 --cols 3 | php csv_rowkeys.php --col 1 > load/lmo_report_2024_job_openings_10y.csv
+cat "data/LMO 2024E Charts and Tables 2024 09 05-Figure 1.2-1.csv" | php csv_extract.php --range 5-7 --range 10-12 --range 15-17 | php csv_rowkeys.php --col 1 > load/lmo_report_2024_job_openings_annual.csv
+cat "data/LMO 2024E Charts and Tables 2024 09 05-Figure 1.2-2.csv" | php csv_extract.php --range 5-10 --range 13-18 --range 21-26 | php csv_rowkeys.php --col 1 > load/lmo_report_2024_new_supply_annual.csv
+cat "data/LMO 2024E Charts and Tables 2024 09 05-Figure 1.2-3.csv" | php csv_extract.php --range 5-7 --range 10-12 --range 15-17 | php csv_rowkeys.php --col 1 > load/lmo_report_2024_new_supply_job_openings_annual.csv
+
 # Load all data in the database.
 for f in load/*.load; do echo "$f"; pgloader -l workbc.lisp "$f"; done
 psql -c 'DROP TABLE monthly_labour_market_updates'

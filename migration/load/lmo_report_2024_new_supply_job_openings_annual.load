@@ -1,0 +1,76 @@
+load csv
+    from 'lmo_report_2024_new_supply_job_openings_annual.csv'
+    (
+      key,
+      variable,
+      amount_2025,
+      amount_2026,
+      amount_2027,
+      amount_2028,
+      amount_2029,
+      amount_2030,
+      amount_2031,
+      amount_2032,
+      amount_2033,
+      amount_2034,
+      amount_2024_2034
+    )
+    into postgresql:///ssot
+    target table lmo_report_2024_new_supply_job_openings_annual
+    target columns
+    (
+      key,
+      variable,
+      amount_2025,
+      amount_2026,
+      amount_2027,
+      amount_2028,
+      amount_2029,
+      amount_2030,
+      amount_2031,
+      amount_2032,
+      amount_2033,
+      amount_2034,
+      amount_2024_2034
+    )
+    with
+        fields optionally enclosed by '"',
+        fields terminated by ',',
+        drop indexes
+
+    before load do
+    $$ drop table if exists lmo_report_2024_new_supply_job_openings_annual; $$,
+    $$ create table if not exists lmo_report_2024_new_supply_job_openings_annual
+    (
+        key text,
+        variable text,
+        amount_2025 numeric,
+        amount_2026 numeric,
+        amount_2027 numeric,
+        amount_2028 numeric,
+        amount_2029 numeric,
+        amount_2030 numeric,
+        amount_2031 numeric,
+        amount_2032 numeric,
+        amount_2033 numeric,
+        amount_2034 numeric,
+        amount_2024_2034 numeric
+    );
+    $$
+
+    after load do
+    $$ comment on table lmo_report_2024_new_supply_job_openings_annual is 'Labour Market Outlook {2024-2034} > Figure 1.2-3. Young People Starting Work and Immigrants vs. Job Openings, B.C., 2024-2034, Annual'; $$,
+    $$ comment on column lmo_report_2024_new_supply_job_openings_annual.key is 'Key'; $$,
+    $$ comment on column lmo_report_2024_new_supply_job_openings_annual.variable is 'Variable'; $$,
+    $$ comment on column lmo_report_2024_new_supply_job_openings_annual.amount_2025 is '{2025}'; $$,
+    $$ comment on column lmo_report_2024_new_supply_job_openings_annual.amount_2026 is '{2026}'; $$,
+    $$ comment on column lmo_report_2024_new_supply_job_openings_annual.amount_2027 is '{2027}'; $$,
+    $$ comment on column lmo_report_2024_new_supply_job_openings_annual.amount_2028 is '{2028}'; $$,
+    $$ comment on column lmo_report_2024_new_supply_job_openings_annual.amount_2029 is '{2029}'; $$,
+    $$ comment on column lmo_report_2024_new_supply_job_openings_annual.amount_2030 is '{2030}'; $$,
+    $$ comment on column lmo_report_2024_new_supply_job_openings_annual.amount_2031 is '{2031}'; $$,
+    $$ comment on column lmo_report_2024_new_supply_job_openings_annual.amount_2032 is '{2032}'; $$,
+    $$ comment on column lmo_report_2024_new_supply_job_openings_annual.amount_2033 is '{2033}'; $$,
+    $$ comment on column lmo_report_2024_new_supply_job_openings_annual.amount_2034 is '{2034}'; $$,
+    $$ comment on column lmo_report_2024_new_supply_job_openings_annual.amount_2024_2034 is '{2024-2034}'; $$
+;
