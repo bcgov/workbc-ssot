@@ -3,14 +3,15 @@
 /**
 * Extract CSV rows based on given ranges.
 *
-* Usage: php csv_extract.php --range start1-end1 [--cols length --range start2-end2 ...] < /path/to/input.csv > /path/to/output.csv
+* Usage: php csv_extract.php --range start1-end1 [--cols length] [--header] [--range start2-end2 ...] < /path/to/input.csv > /path/to/output.csv
 */
 
 $opts = getopt('', [
   'range:',
-  'cols:'
+  'cols:',
+  'header'
 ]);
-$usage = 'Usage: php csv_extract.php --range start1-end1 [--cols length --range start2-end2 ...] < /path/to/input.csv > /path/to/output.csv';
+$usage = 'Usage: php csv_extract.php --range start1-end1 [--cols length] [--header] [--range start2-end2 ...] < /path/to/input.csv > /path/to/output.csv';
 if (!array_key_exists('range', $opts)) {
   die("No ranges found\n" . $usage . PHP_EOL);
 }
@@ -30,13 +31,17 @@ $row = 0;
 while (($csv = fgetcsv(STDIN)) !== FALSE) {
   foreach ($ranges as $range) {
     if ($row >= $range['start'] && $row <= $range['end']) {
+      if (array_key_exists('header', $opts)) {
+        array_unshift($csv, $header);
+      }
       if (empty($cols)) {
         fputcsv(STDOUT, $csv);
       }
       else {
-        fputcsv(STDOUT, array_slice($csv, 0, $cols));
+        fputcsv(STDOUT, array_slice($csv, 0, $cols + (array_key_exists('header', $opts) ? 1 : 0)));
       }
     }
   }
+  $header = array_shift($csv);
   $row++;
 }

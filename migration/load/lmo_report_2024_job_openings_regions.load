@@ -1,0 +1,37 @@
+load csv
+    from 'lmo_report_2024_job_openings_regions.csv'
+    (
+      d1,d2,d3,d4,d5,d6,
+      region,
+      name,
+      openings
+    )
+    into postgresql:///ssot
+    target table lmo_report_2024_job_openings_regions
+    target columns
+    (
+      region,
+      name,
+      openings
+    )
+    with
+        fields optionally enclosed by '"',
+        fields terminated by ',',
+        drop indexes
+
+    before load do
+    $$ drop table if exists lmo_report_2024_job_openings_regions; $$,
+    $$ create table if not exists lmo_report_2024_job_openings_regions
+    (
+      region text primary key,
+      name text,
+      openings int
+    );
+    $$
+
+    after load do
+    $$ comment on table lmo_report_2024_job_openings_regions is 'Labour Market Outlook {2024-2034} > Figure 5-1: Total Job Openings by Development Region, B.C., 2024-2034'; $$,
+    $$ comment on column lmo_report_2024_job_openings_regions.region is 'Region key'; $$,
+    $$ comment on column lmo_report_2024_job_openings_regions.name is 'Region name'; $$,
+    $$ comment on column lmo_report_2024_job_openings_regions.openings is 'Total Job Openings'; $$
+;

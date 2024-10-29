@@ -99,10 +99,15 @@ csvq --repository load --without-header --format csv --datetime-format "%Y/%m/%d
 
 # LMO 2024 Report
 ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/LMO 2024E Charts and Tables 2024 09 05.xlsx" "data/LMO 2024E Charts and Tables 2024 09 05-%s.csv"
-cat "data/LMO 2024E Charts and Tables 2024 09 05-Figure 1.1-1.csv" | php csv_extract.php --range 4-6 --range 8-12 --range 16-17 --cols 3 | php csv_rowkeys.php --col 1 > load/lmo_report_2024_job_openings_10y.csv
-cat "data/LMO 2024E Charts and Tables 2024 09 05-Figure 1.2-1.csv" | php csv_extract.php --range 5-7 --range 10-12 --range 15-17 | php csv_rowkeys.php --col 1 > load/lmo_report_2024_job_openings_annual.csv
-cat "data/LMO 2024E Charts and Tables 2024 09 05-Figure 1.2-2.csv" | php csv_extract.php --range 5-10 --range 13-18 --range 21-26 | php csv_rowkeys.php --col 1 > load/lmo_report_2024_new_supply_annual.csv
-cat "data/LMO 2024E Charts and Tables 2024 09 05-Figure 1.2-3.csv" | php csv_extract.php --range 5-7 --range 10-12 --range 15-17 | php csv_rowkeys.php --col 1 > load/lmo_report_2024_new_supply_job_openings_annual.csv
+cat "data/LMO 2024E Charts and Tables 2024 09 05-Figure 1.1-1.csv" | php csv_extract.php --range 4-6 --range 8-12 --range 16-17 --cols 3 | php csv_colkey.php --column 1 > load/lmo_report_2024_job_openings_10y.csv
+cat "data/LMO 2024E Charts and Tables 2024 09 05-Figure 1.2-1.csv" | php csv_extract.php --range 5-7 --range 10-12 --range 15-17 | php csv_colkey.php --column 1 > load/lmo_report_2024_job_openings_annual.csv
+cat "data/LMO 2024E Charts and Tables 2024 09 05-Figure 1.2-2.csv" | php csv_extract.php --range 5-10 --range 13-18 --range 21-26 | php csv_colkey.php --column 1 > load/lmo_report_2024_new_supply_annual.csv
+cat "data/LMO 2024E Charts and Tables 2024 09 05-Figure 1.2-3.csv" | php csv_extract.php --range 5-7 --range 10-12 --range 15-17 | php csv_colkey.php --column 1 > load/lmo_report_2024_job_openings_new_supply_annual.csv
+cat "data/LMO 2024E Charts and Tables 2024 09 05-Figure 2-1.csv" | php csv_extract.php --range 5-11 > load/lmo_report_2024_job_openings_teers.csv
+cat "data/LMO 2024E Charts and Tables 2024 09 05-Figure 3-1.csv" | php csv_extract.php --range 3-23 | php csv_colkey.php --column 15 --industries > load/lmo_report_2024_job_openings_industries.csv
+cat "data/LMO 2024E Charts and Tables 2024 09 05-Figure 4.1-1.csv" | php csv_extract.php --range 5-17 > load/lmo_report_2024_job_openings_occupation_groups.csv
+cat "data/LMO 2024E Charts and Tables 2024 09 05-Figure 5-1.csv" | php csv_extract.php --range 20-27 | php csv_colkey.php --column 7 --regions > load/lmo_report_2024_job_openings_regions.csv
+cat "data/LMO 2024E Charts and Tables 2024 09 05-Table 4.1-1.csv" | php csv_extract.php --header --cols=7 --range=6-10 --range=13-17 --range=20-24 --range=27-31 | php csv_pad.php --column="2:L:5:0:#" > load/lmo_report_2024_job_openings_occupations.csv
 
 # Load all data in the database.
 for f in load/*.load; do echo "$f"; pgloader -l workbc.lisp "$f"; done
