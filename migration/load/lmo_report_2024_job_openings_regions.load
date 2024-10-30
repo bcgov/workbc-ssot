@@ -1,9 +1,12 @@
 load csv
     from 'lmo_report_2024_job_openings_regions.csv'
     (
-      d1,d2,d3,d4,d5,d6,
       region,
       name,
+      employment,
+      growth_rate,
+      expansion,
+      replacement,
       openings
     )
     into postgresql:///ssot
@@ -12,7 +15,11 @@ load csv
     (
       region,
       name,
-      openings
+      employment,
+      openings,
+      expansion,
+      replacement,
+      growth_rate
     )
     with
         fields optionally enclosed by '"',
@@ -25,13 +32,21 @@ load csv
     (
       region text primary key,
       name text,
-      openings int
+      employment int,
+      openings int,
+      expansion int,
+      replacement int,
+      growth_rate numeric
     );
     $$
 
     after load do
-    $$ comment on table lmo_report_2024_job_openings_regions is 'Labour Market Outlook {2024-2034} > Figure 5-1: Total Job Openings by Development Region, B.C., 2024-2034'; $$,
+    $$ comment on table lmo_report_2024_job_openings_regions is 'Labour Market Outlook {2024-2034} > Table 5-1: Employment and Job Openings by Development Region, 2024-2034'; $$,
     $$ comment on column lmo_report_2024_job_openings_regions.region is 'Region key'; $$,
     $$ comment on column lmo_report_2024_job_openings_regions.name is 'Region name'; $$,
-    $$ comment on column lmo_report_2024_job_openings_regions.openings is 'Total Job Openings'; $$
+    $$ comment on column lmo_report_2024_job_openings_regions.employment is 'Employment {2024}'; $$,
+    $$ comment on column lmo_report_2024_job_openings_regions.openings is 'Job Openings {2024-2034} > Total'; $$,
+    $$ comment on column lmo_report_2024_job_openings_regions.expansion is 'Job Openings {2024-2034} > Expansion'; $$,
+    $$ comment on column lmo_report_2024_job_openings_regions.replacement is 'Job Openings {2024-2034} > Replacement'; $$,
+    $$ comment on column lmo_report_2024_job_openings_regions.growth_rate is 'Annual employment growth rate (%) {2024-2034}'; $$
 ;

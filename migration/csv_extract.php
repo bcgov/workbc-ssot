@@ -3,13 +3,13 @@
 /**
 * Extract CSV rows based on given ranges.
 *
-* Usage: php csv_extract.php --range start1-end1 [--cols length] [--header] [--range start2-end2 ...] < /path/to/input.csv > /path/to/output.csv
+* Usage: php csv_extract.php --range start1-end1 [--cols length] [--header[:offset]] [--range start2-end2 ...] < /path/to/input.csv > /path/to/output.csv
 */
 
 $opts = getopt('', [
   'range:',
   'cols:',
-  'header'
+  'header::'
 ]);
 $usage = 'Usage: php csv_extract.php --range start1-end1 [--cols length] [--header] [--range start2-end2 ...] < /path/to/input.csv > /path/to/output.csv';
 if (!array_key_exists('range', $opts)) {
@@ -24,7 +24,9 @@ foreach ($opts['range'] as $i => $range) {
     'end' => empty($r[1]) ? PHP_INT_MAX : intval($r[1])-1,
   ];
 }
-$cols = empty($opts['cols']) ? 0 : intval($opts['cols']);
+$cols = array_key_exists('cols', $opts) ? intval($opts['cols']) : 0;
+$header_offset = array_key_exists('header', $opts) && $opts['header'] !== false ? intval($opts['header']) : 1;
+$headers = [];
 
 stream_set_blocking(STDIN, TRUE);
 $row = 0;
@@ -32,7 +34,7 @@ while (($csv = fgetcsv(STDIN)) !== FALSE) {
   foreach ($ranges as $range) {
     if ($row >= $range['start'] && $row <= $range['end']) {
       if (array_key_exists('header', $opts)) {
-        array_unshift($csv, $header);
+        array_unshift($csv, $headers[$range['start']-$header_offset]);
       }
       if (empty($cols)) {
         fputcsv(STDOUT, $csv);
@@ -42,6 +44,6 @@ while (($csv = fgetcsv(STDIN)) !== FALSE) {
       }
     }
   }
-  $header = array_shift($csv);
+  $headers[$row] = array_shift($csv);
   $row++;
 }
