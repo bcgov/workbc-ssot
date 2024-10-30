@@ -1,0 +1,52 @@
+load csv
+    from 'lmo_report_2024_job_openings_occupations_full.csv'
+    (
+      noc,
+      description,
+      employment,
+      openings,
+      expansion,
+      replacement,
+      teer
+    )
+    into postgresql:///ssot
+    target table lmo_report_2024_job_openings_occupations_full
+    target columns
+    (
+      noc,
+      description,
+      employment,
+      openings,
+      expansion,
+      replacement,
+      teer
+    )
+    with
+        fields optionally enclosed by '"',
+        fields terminated by ',',
+        drop indexes
+
+    before load do
+    $$ drop table if exists lmo_report_2024_job_openings_occupations_full; $$,
+    $$ create table if not exists lmo_report_2024_job_openings_occupations_full
+    (
+      noc text primary key,
+      description text,
+      employment int,
+      openings int,
+      expansion int,
+      replacement int,
+      teer int
+    );
+    $$
+
+    after load do
+    $$ comment on table lmo_report_2024_job_openings_occupations_full is 'Labour Market Outlook {2024-2034} > Appendix 4: Job Openings, Employment and Training, Education, Experience and Responsibilities (TEER) for All Occupations, B.C.'; $$,
+    $$ comment on column lmo_report_2024_job_openings_occupations_full.noc is 'NOC'; $$,
+    $$ comment on column lmo_report_2024_job_openings_occupations_full.description is 'Description'; $$,
+    $$ comment on column lmo_report_2024_job_openings_occupations_full.employment is 'Employment {2024}'; $$,
+    $$ comment on column lmo_report_2024_job_openings_occupations_full.openings is 'Job Openings {2024-2034}'; $$,
+    $$ comment on column lmo_report_2024_job_openings_occupations_full.expansion is 'Expansion {2024-2034}'; $$,
+    $$ comment on column lmo_report_2024_job_openings_occupations_full.replacement is 'Replacement {2024-2034}'; $$,
+    $$ comment on column lmo_report_2024_job_openings_occupations_full.teer is 'TEER'; $$
+;
