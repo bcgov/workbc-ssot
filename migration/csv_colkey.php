@@ -1,10 +1,10 @@
 <?php
 
 /**
- * Inject CSV column that can be used as a unique key based on the value of another column. Also supports B.C. Industry / Region keys.
- *
- * Usage: php csv_colkey --column N [--industries | --regions] < /path/to/input.csv > /path/to/output.csv
- */
+* Inject CSV column that can be used as a unique key based on the value of another column. Also supports B.C. Industry / Region keys.
+*
+* Usage: php csv_colkey --column N [--industries | --regions] < /path/to/input.csv > /path/to/output.csv
+*/
 
 $opts = getopt('', [
   'column:',
