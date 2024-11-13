@@ -3,13 +3,13 @@
 /**
 * Pad CSV columns.
 *
-* Usage: php csv_pad.php --column col:dir{RLB}:len:str[:trim]  ... < /path/to/input.csv > /path/to/output.csv
+* Usage: php csv_trimpad.php --column col:dir{RLB}:len:str[:trim]  ... < /path/to/input.csv > /path/to/output.csv
 */
 
 $opts = getopt('', [
   'column:',
 ]);
-$usage = 'Usage: php csv_pad.php --column col:dir{RLB}:len:str[:trim]  ... < /path/to/input.csv > /path/to/output.csv';
+$usage = 'Usage: php csv_trimpad.php --column col:dir{RLB}:len:str[:trim]  ... < /path/to/input.csv > /path/to/output.csv';
 if (!array_key_exists('column', $opts)) {
   die("No column specification found\n" . $usage . PHP_EOL);
 }

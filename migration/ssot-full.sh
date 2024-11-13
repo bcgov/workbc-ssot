@@ -87,7 +87,7 @@ php industries.php "data/EDM/" > load/industries.csv
 
 # O*NET <> NOC Concordance
 ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/onet2019_soc2018_noc2016_noc2021_crosswalk.xlsx" "data/onet2019_soc2018_noc2016_noc2021_crosswalk-%s.csv"
-cat "data/onet2019_soc2018_noc2016_noc2021_crosswalk-Sheet1.csv" | php csv_extract.php --range 2 | php csv_pad.php --column 1:L:5:0  --column 3:L:4:0 > load/onet_nocs.csv
+cat "data/onet2019_soc2018_noc2016_noc2021_crosswalk-Sheet1.csv" | php csv_extract.php --range 2 | php csv_trimpad.php --column 1:L:5:0  --column 3:L:4:0 > load/onet_nocs.csv
 
 # Labour Market Monthly Updates
 csvq --repository load --without-header --format csv --datetime-format "%Y/%m/%d %H:%i" \
@@ -105,8 +105,8 @@ cat "data/LMO 2024E Charts and Tables 2024 09 05-Figure 1.2-2.csv" | php csv_ext
 cat "data/LMO 2024E Charts and Tables 2024 09 05-Figure 1.2-3.csv" | php csv_extract.php --range 5-7 --range 10-12 --range 15-17 | php csv_colkey.php --column 1 > load/lmo_report_2024_job_openings_new_supply_annual.csv
 cat "data/LMO 2024E Charts and Tables 2024 09 05-Figure 2-1.csv" | php csv_extract.php --range 5-11 > load/lmo_report_2024_job_openings_teers.csv
 cat "data/LMO 2024E Charts and Tables 2024 09 05-Figure 3-1.csv" | php csv_extract.php --range 3-23 | php csv_colkey.php --column 15 --industries > load/lmo_report_2024_job_openings_industries.csv
-cat "data/LMO 2024E Charts and Tables 2024 09 05-Figure 4.1-1.csv" | php csv_extract.php --range 5-17 | php csv_pad.php --column="1:L:0:0:#" > load/lmo_report_2024_job_openings_broad_categories.csv
-cat "data/LMO 2024E Charts and Tables 2024 09 05-Table 4.1-1.csv" | php csv_extract.php --header --cols=7 --range=6-10 --range=13-17 --range=20-24 --range=27-31 | php csv_pad.php --column="2:L:5:0:#" > load/lmo_report_2024_job_openings_occupations.csv
+cat "data/LMO 2024E Charts and Tables 2024 09 05-Figure 4.1-1.csv" | php csv_extract.php --range 5-17 | php csv_trimpad.php --column="1:L:0:0:#" > load/lmo_report_2024_job_openings_broad_categories.csv
+cat "data/LMO 2024E Charts and Tables 2024 09 05-Table 4.1-1.csv" | php csv_extract.php --header --cols=7 --range=6-10 --range=13-17 --range=20-24 --range=27-31 | php csv_trimpad.php --column="2:L:5:0:#" > load/lmo_report_2024_job_openings_occupations.csv
 cat "data/LMO 2024E Charts and Tables 2024 09 05-Table 5-1.csv" | php csv_extract.php --range 5-12 | php csv_colkey.php --column 1 --regions > load/lmo_report_2024_job_openings_regions.csv
 cat "data/LMO 2024E Charts and Tables 2024 09 05-Table 5.1-1.csv" | php csv_extract.php --range 5-10 > load/lmo_report_2024_job_openings_vancouver_island_coast.csv
 cat "data/LMO 2024E Charts and Tables 2024 09 05-Table 5.2-1.csv" | php csv_extract.php --range 5-10 > load/lmo_report_2024_job_openings_mainland_southwest.csv
@@ -116,9 +116,9 @@ cat "data/LMO 2024E Charts and Tables 2024 09 05-Table 5.5-1.csv" | php csv_extr
 cat "data/LMO 2024E Charts and Tables 2024 09 05-Table 5.6-1.csv" | php csv_extract.php --range 5-10 > load/lmo_report_2024_job_openings_north_coast_nechako.csv
 cat "data/LMO 2024E Charts and Tables 2024 09 05-Table 5.7-1.csv" | php csv_extract.php --range 5-10 > load/lmo_report_2024_job_openings_northeast.csv
 cat "data/LMO 2024E Charts and Tables 2024 09 05-Appendix 3.csv" | php csv_extract.php --cols=8 --range 5-84 | php csv_colkey.php --column 1 --industries > load/lmo_report_2024_job_openings_industries_full.csv
-cat "data/LMO 2024E Charts and Tables 2024 09 05-Appendix 4.csv" | php csv_extract.php --cols=7 --range 5-516 | php csv_pad.php --column="1:L:5:0:#" > load/lmo_report_2024_job_openings_occupations_full.csv
-cat "data/LMO 2024E Charts and Tables 2024 09 05-Appendix 5.csv" | php csv_extract.php --cols=7 --header=2 --range 5-39 --range 44-53 --range 58-125 --range 130-192 | php csv_pad.php --column="1:L:5:0:#" > load/lmo_report_2024_job_openings_occupations_altgrp.csv
-cat "data/LMO 2024E Charts and Tables 2024 09 05-Appendix 6.csv" | php csv_extract.php --cols=7 --range 5-129 | php csv_pad.php --column="1:L:5:0:#" > load/lmo_report_2024_job_openings_occupations_high.csv
+cat "data/LMO 2024E Charts and Tables 2024 09 05-Appendix 4.csv" | php csv_extract.php --cols=7 --range 5-516 | php csv_trimpad.php --column="1:L:5:0:#" > load/lmo_report_2024_job_openings_occupations_full.csv
+cat "data/LMO 2024E Charts and Tables 2024 09 05-Appendix 5.csv" | php csv_extract.php --cols=7 --header=2 --range 5-39 --range 44-53 --range 58-125 --range 130-192 | php csv_trimpad.php --column="1:L:5:0:#" > load/lmo_report_2024_job_openings_occupations_altgrp.csv
+cat "data/LMO 2024E Charts and Tables 2024 09 05-Appendix 6.csv" | php csv_extract.php --cols=7 --range 5-129 | php csv_trimpad.php --column="1:L:5:0:#" > load/lmo_report_2024_job_openings_occupations_high.csv
 
 # Load all data in the database.
 for f in load/*.load; do echo "$f"; pgloader -l workbc.lisp "$f"; done

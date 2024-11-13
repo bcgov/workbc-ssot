@@ -34,7 +34,7 @@ ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/Data_
 | `csv_empty.php` | Remove empty rows from CSV. |
 | `csv_extract.php` | Extract CSV rows based on given ranges. |
 | `csv_refill.php` | Fill empty column cells with previous values in a CSV. |
-| `csv_pad.php` | Trim and pad CSV columns. |
+| `csv_trimpad.php` | Trim and pad CSV columns. |
 | `csv_colkey.php` | Convert a column to a unique key. |
 
 Refer to the source code of these scripts for usage details. Ensure that the final CSV is stored in the `load/` folder and is named after the target database table.
