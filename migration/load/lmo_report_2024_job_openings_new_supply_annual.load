@@ -59,7 +59,7 @@ load csv
     $$
 
     after load do
-    $$ comment on table lmo_report_2024_job_openings_new_supply_annual is 'Labour Market Outlook {2024-2034} > Figure 1.2-3. Young People Starting Work and Immigrants vs. Job Openings, B.C., 2024-2034, Annual'; $$,
+    $$ comment on table lmo_report_2024_job_openings_new_supply_annual is 'Labour Market Outlook {2024-2034} > Figure 1.2-2. Sources of New Supply, B.C., 2024-2034, Annual'; $$,
     $$ comment on column lmo_report_2024_job_openings_new_supply_annual.key is 'Key'; $$,
     $$ comment on column lmo_report_2024_job_openings_new_supply_annual.variable is 'Variable'; $$,
     $$ comment on column lmo_report_2024_job_openings_new_supply_annual.amount_2025 is '{2025}'; $$,
