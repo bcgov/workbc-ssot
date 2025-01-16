@@ -53,13 +53,13 @@ load csv
 
     after load do
     $$ create index career_search_openings_noc_2021_idx on career_search_openings (noc_2021); $$,
-    $$ comment on table career_search_openings is 'WorkBC Career Search Tool Job Openings {2023}'; $$,
+    $$ comment on table career_search_openings is 'WorkBC Career Search Tool Job Openings {2024}'; $$,
     $$ comment on column career_search_openings.noc_2021 is 'NOC 2021'; $$,
     $$ comment on column career_search_openings.title_2021 is 'NOC 2021 Description'; $$,
     $$ comment on column career_search_openings.teer_level is 'TEER'; $$,
     $$ comment on column career_search_openings.teer_description is 'TEER Description'; $$,
     $$ comment on column career_search_openings.region is 'Region'; $$,
-    $$ comment on column career_search_openings.job_openings is 'Job Openings {2023-2033}'; $$,
+    $$ comment on column career_search_openings.job_openings is 'Job Openings {2024-2034}'; $$,
     $$ comment on column career_search_openings.calculated_median_annual_salary is 'Salary (calculated median salary)'; $$,
     $$ comment on column career_search_openings.industry_agg is 'Industry (aggregate)'; $$,
     $$ comment on column career_search_openings.industry_sub is 'Industry (sub-industry)'; $$,
