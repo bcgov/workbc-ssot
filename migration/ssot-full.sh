@@ -119,6 +119,10 @@ cat "data/LMO 2024E Charts and Tables 2024 09 05-Appendix 4.csv" | php csv_extra
 cat "data/LMO 2024E Charts and Tables 2024 09 05-Appendix 5.csv" | php csv_extract.php --cols=7 --header=2 --range 5-39 --range 44-53 --range 58-125 --range 130-192 | php csv_trimpad.php --column="1:L:5:0:#" > load/lmo_report_2024_job_openings_occupations_altgrp.csv
 cat "data/LMO 2024E Charts and Tables 2024 09 05-Appendix 6.csv" | php csv_extract.php --cols=7 --range 5-129 | php csv_trimpad.php --column="1:L:5:0:#" > load/lmo_report_2024_job_openings_occupations_high.csv
 
+# FYP Categories & Areas of Interest.
+ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/FYP - Categories, Areas of interest, and NOCs 2025-02.xlsx" "data/FYP - Categories, Areas of interest, and NOCs 2025-02-%s.csv"
+cat "data/FYP - Categories, Areas of interest, and NOCs 2025-02-CONSOLIDATED LIST.csv" | php csv_extract.php --range 2 | php csv_trimpad.php --column="3:L:5:0:#" > load/fyp_categories_interests.csv
+
 # Load all data in the database.
 for f in load/*.load; do echo "$f"; pgloader -l workbc.lisp "$f"; done
 psql -c 'DROP TABLE monthly_labour_market_updates'
