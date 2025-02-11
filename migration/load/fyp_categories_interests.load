@@ -12,8 +12,7 @@ load csv
     (
         category,
         interest,
-        noc_2021,
-        label_en
+        noc_2021
     )
     with
         fields optionally enclosed by '"',
@@ -26,8 +25,7 @@ load csv
     (
         category text,
         interest text,
-        noc_2021 text,
-        label_en text
+        noc_2021 text
     );
     $$
 
@@ -38,6 +36,5 @@ load csv
     $$ comment on table fyp_categories_interests is 'EducationPlannerBC Find Your Path'; $$,
     $$ comment on column fyp_categories_interests.category is 'Category'; $$,
     $$ comment on column fyp_categories_interests.interest is 'Area of Interest'; $$,
-    $$ comment on column fyp_categories_interests.noc_2021 is 'NOC 2021'; $$,
-    $$ comment on column fyp_categories_interests.label_en is 'NOC 2021 Title'; $$
+    $$ comment on column fyp_categories_interests.noc_2021 is 'NOC 2021'; $$
 ;
