@@ -27,7 +27,7 @@ load csv
 
     after load do
     $$ create index titles_noc_idx on titles (noc); $$,
-    $$ comment on table titles is '2021 NOC - Common Job Titles - Illustrative Listing'; $$,
+    $$ comment on table titles is 'National Occupational Classification (NOC) 2021 Version 1.0'; $$,
     $$ comment on column titles.noc is 'Code - NOC 2021 V1.0'; $$,
     $$ comment on column titles.commonjobtitle is 'Element Description English'; $$
 ;

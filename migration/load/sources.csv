@@ -1,6 +1,6 @@
 "label","endpoint","datapoint","filename","sheet","range","author","date","period"
 "B.C. Labour Market Information Office, derived from 2024 Job Bank Wage data","wages",,"WorkBC_2024_Wage_Data_Jan_13_2025","Sheet1","A2-G513",,"2025/01/13 08:00","2024/01/01 08:00"
-,"titles",,"2021NOC_CommonJobTitles_IllustrativeListing_Feb16_2024","CommonJobTitles_NOC2021_fina","A2-D4768",,"2024/02/16 08:00","2021/01/01 08:00"
+,"titles",,"NOC2021/noc_2021_version_1.0_-_elements.csv",,,,"2025/02/10 08:00","2021/01/01 08:00"
 ,"skills",,"Top skills by NOC2021 occupations_Feb12_24","Sheet 1","A2-G17921",,"2024/02/12 08:00","2021/01/01 08:00"
 "B.C. Labour Market Outlook","openings_careers",,"Job_Openings_by_Industry_LMO_2024_Jan_13_2025","Career Profiles","A5-Q515",,"2025/01/13 08:00","2024/01/01 08:00"
 ,"education",,"All_Occupations'_TEERs_2023_Jan22_24","Sheet 1","A2-D513",,"2024/01/22 08:00","2023/01/01 08:00"
