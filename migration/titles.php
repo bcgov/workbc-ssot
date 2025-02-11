@@ -28,8 +28,7 @@ while (FALSE !== ($element = fgetcsv($elements))) {
     ]) ? '00018' : $element[COLUMN_STRUCTURE_NOC];
     fputcsv(STDOUT, [
       $noc,
-      preg_match('/^\p{Lu}/u', $element[COLUMN_STRUCTURE_JOBTITLE]) ? $element[COLUMN_STRUCTURE_JOBTITLE] :
-        mb_convert_case(trim($element[COLUMN_STRUCTURE_JOBTITLE]), MB_CASE_TITLE)
+      ucfirst(trim($element[COLUMN_STRUCTURE_JOBTITLE]))
     ]);
   }
 }

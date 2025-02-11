@@ -8,7 +8,6 @@ RUN apt-get update && apt-get install -y \
   gnumeric \
   pgloader \
   php-cli \
-  php-mbstring \
   postgresql-client \
   && add-apt-repository -y ppa:mithrandie/csvq \
   && apt-get install -y csvq \
