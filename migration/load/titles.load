@@ -21,7 +21,8 @@ load csv
     $$ create table if not exists titles
     (
         noc text,
-        commonjobtitle text
+        commonjobtitle text,
+        constraint titles_noc_fk foreign key (noc) references nocs (noc_2021)
     );
     $$
 

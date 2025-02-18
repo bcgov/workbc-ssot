@@ -25,7 +25,8 @@ load csv
     (
         category text,
         interest text,
-        noc_2021 text
+        noc_2021 text,
+        constraint fyp_categories_interests_noc_fk foreign key (noc_2021) references nocs (noc_2021)
     );
     $$
 
