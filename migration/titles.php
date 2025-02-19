@@ -21,14 +21,20 @@ const COLUMN_STRUCTURE_JOBTITLE = 4;
 
 $elements = fopen_or_die($filename); fgetcsv($elements);
 $row = 2;
+$illustrative = [];
 while (FALSE !== ($element = fgetcsv($elements))) {
-  if (strcasecmp($element[COLUMN_STRUCTURE_TYPE], 'all examples') === 0) {
-    $noc = in_array($element[COLUMN_STRUCTURE_NOC], [
-      '00011', '00012', '00013', '00014', '00015'
-    ]) ? '00018' : $element[COLUMN_STRUCTURE_NOC];
+  $noc = in_array($element[COLUMN_STRUCTURE_NOC], [
+    '00011', '00012', '00013', '00014', '00015'
+  ]) ? '00018' : $element[COLUMN_STRUCTURE_NOC];
+  $title = ucfirst(trim($element[COLUMN_STRUCTURE_JOBTITLE]));
+  if (strcasecmp($element[COLUMN_STRUCTURE_TYPE], 'illustrative example(s)') === 0) {
+    $illustrative[$noc . $title] = TRUE;
+  }
+  else if (strcasecmp($element[COLUMN_STRUCTURE_TYPE], 'all examples') === 0) {
     fputcsv(STDOUT, [
       $noc,
-      ucfirst(trim($element[COLUMN_STRUCTURE_JOBTITLE]))
+      $title,
+      array_key_exists($noc . $title, $illustrative) ? 1 : 0,
     ]);
   }
 }
