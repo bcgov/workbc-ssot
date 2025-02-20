@@ -37,5 +37,6 @@ load csv
     $$ comment on table fyp_categories_interests is 'EducationPlannerBC Find Your Path'; $$,
     $$ comment on column fyp_categories_interests.category is 'Category'; $$,
     $$ comment on column fyp_categories_interests.interest is 'Area of Interest'; $$,
-    $$ comment on column fyp_categories_interests.noc_2021 is 'NOC 2021'; $$
+    $$ comment on column fyp_categories_interests.noc_2021 is 'NOC 2021'; $$,
+    $$ create or replace view fyp_categories_interests_listing as select distinct category, interest from fyp_categories_interests order by category asc, interest asc; $$
 ;
