@@ -43,9 +43,8 @@ cat "data/WorkBC_2024_Wage_Data_Jan_13_2025-Sheet1.csv" | php csv_extract.php --
 ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/Occupational_Interests_2023_Apr5_24.xlsx" "data/Occupational_Interests_2023_Apr5_24-%s.csv"
 cat "data/Occupational_Interests_2023_Apr5_24-Sheet 1.csv" | php csv_extract.php --range 2 > load/occupational_interests.csv
 
-# Common Job Titles for Career Profiles
-ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/2021NOC_CommonJobTitles_IllustrativeListing_Feb16_2024.xlsx" "data/2021NOC_CommonJobTitles_IllustrativeListing_Feb16_2024-%s.csv"
-cat "data/2021NOC_CommonJobTitles_IllustrativeListing_Feb16_2024-CommonJobTitles_NOC2021_fina.csv" | php csv_extract.php --range 2 > load/titles.csv
+# Job Titles for Career Profiles
+php titles.php "data/NOC2021/noc_2021_version_1.0_-_elements.csv" > load/titles.csv
 
 # Skills for Career Profiles
 ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/Top skills by NOC2021 occupations_Feb12_24.xlsx" "data/Top skills by NOC2021 occupations_Feb12_24-%s.csv"
@@ -118,6 +117,10 @@ cat "data/LMO 2024E Charts and Tables 2025 02 12-Appendix 3.csv" | php csv_extra
 cat "data/LMO 2024E Charts and Tables 2025 02 12-Appendix 4.csv" | php csv_extract.php --cols=7 --range 5-516 | php csv_trimpad.php --column="1:L:5:0:#" > load/lmo_report_2024_job_openings_occupations_full.csv
 cat "data/LMO 2024E Charts and Tables 2025 02 12-Appendix 5.csv" | php csv_extract.php --cols=7 --header=2 --range 5-39 --range 44-53 --range 58-125 --range 130-192 | php csv_trimpad.php --column="1:L:5:0:#" > load/lmo_report_2024_job_openings_occupations_altgrp.csv
 cat "data/LMO 2024E Charts and Tables 2025 02 12-Appendix 6.csv" | php csv_extract.php --cols=7 --range 5-129 | php csv_trimpad.php --column="1:L:5:0:#" > load/lmo_report_2024_job_openings_occupations_high.csv
+
+# FYP Categories & Areas of Interest.
+ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/FYP - Categories, Areas of interest, and NOCs 2025-03.xlsx" "data/FYP - Categories, Areas of interest, and NOCs 2025-03-%s.csv"
+cat "data/FYP - Categories, Areas of interest, and NOCs 2025-03-CONSOLIDATED LIST.csv" | php csv_extract.php --range 2 | php csv_trimpad.php --column="3:L:5:0:#" > load/fyp_categories_interests.csv
 
 # Load all data in the database.
 for f in load/*.load; do echo "$f"; pgloader -l workbc.lisp "$f"; done
