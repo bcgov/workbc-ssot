@@ -1,0 +1,56 @@
+load csv
+    from 'lmo_report_2024_job_openings_occupations_altgrp.csv'
+    (
+      occupation_group,
+      noc,
+      description,
+      employment,
+      openings,
+      expansion,
+      replacement,
+      teer
+    )
+    into postgresql:///ssot
+    target table lmo_report_2024_job_openings_occupations_altgrp
+    target columns
+    (
+      occupation_group,
+      noc,
+      description,
+      employment,
+      openings,
+      expansion,
+      replacement,
+      teer
+    )
+    with
+        fields optionally enclosed by '"',
+        fields terminated by ',',
+        drop indexes
+
+    before load do
+    $$ drop table if exists lmo_report_2024_job_openings_occupations_altgrp; $$,
+    $$ create table if not exists lmo_report_2024_job_openings_occupations_altgrp
+    (
+      occupation_group text,
+      noc text,
+      description text,
+      employment int,
+      openings int,
+      expansion int,
+      replacement int,
+      teer int
+    );
+    $$
+
+    after load do
+    $$ comment on table lmo_report_2024_job_openings_occupations_altgrp is 'Labour Market Outlook {2024-2034} > Table 4.1-1: Top Five Occupations by Job Openings for Alternative Occupational Groupings, B.C., 2024-2034'; $$,
+    $$ comment on column lmo_report_2024_job_openings_occupations_altgrp.occupation_group is 'Occupational grouping'; $$,
+    $$ comment on column lmo_report_2024_job_openings_occupations_altgrp.noc is 'NOC'; $$,
+    $$ comment on column lmo_report_2024_job_openings_occupations_altgrp.description is 'Description'; $$,
+    $$ comment on column lmo_report_2024_job_openings_occupations_altgrp.employment is 'Employment {2024}'; $$,
+    $$ comment on column lmo_report_2024_job_openings_occupations_altgrp.openings is 'Job Openings {2024-2034}'; $$,
+    $$ comment on column lmo_report_2024_job_openings_occupations_altgrp.expansion is 'Expansion {2024-2034}'; $$,
+    $$ comment on column lmo_report_2024_job_openings_occupations_altgrp.replacement is 'Replacement {2024-2034}'; $$,
+    $$ comment on column lmo_report_2024_job_openings_occupations_altgrp.teer is 'TEER'; $$
+;

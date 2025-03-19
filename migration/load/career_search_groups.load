@@ -32,7 +32,7 @@ load csv
     $$ create index career_search_groups_noc_idx on career_search_groups (noc); $$,
     $$ create index career_search_groups_occupation_idx on career_search_groups (occupational_category); $$,
     $$ create index career_search_groups_region_idx on career_search_groups (region); $$,
-    $$ comment on table career_search_groups is 'WorkBC Career Search Tool Occupation Groups {2023}'; $$,
+    $$ comment on table career_search_groups is 'WorkBC Career Search Tool Occupation Groups {2024}'; $$,
     $$ comment on column career_search_groups.noc is 'NOC'; $$,
     $$ comment on column career_search_groups.occupational_category is 'Occupational category'; $$,
     $$ comment on column career_search_groups.region is 'Region'; $$
