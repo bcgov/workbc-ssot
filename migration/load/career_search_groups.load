@@ -19,7 +19,7 @@ load csv
         drop indexes
 
     before load do
-    $$ drop table if exists career_search_groups; $$,
+    $$ drop table if exists career_search_groups cascade; $$,
     $$ create table if not exists career_search_groups
     (
         noc text,
