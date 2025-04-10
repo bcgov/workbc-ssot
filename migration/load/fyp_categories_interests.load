@@ -31,6 +31,10 @@ load csv
     $$
 
     after load do
+    $$ update fyp_categories_interests set
+        category = upper(substring(category, 1, 1)) || lower(substring(category from 2)),
+        interest = upper(substring(interest, 1, 1)) || lower(substring(interest from 2));
+    $$,
     $$ create index fyp_categories_interests_noc_idx on fyp_categories_interests (noc_2021); $$,
     $$ create index fyp_categories_interests_category_idx on fyp_categories_interests (category); $$,
     $$ create index fyp_categories_interests_category_interest_idx on fyp_categories_interests (category, interest); $$,
