@@ -4,7 +4,9 @@ load csv
         category,
         interest,
         noc_2021,
-        label_en
+        label_en,
+        sub_noc,
+        sub_noc_label_en
     )
     into postgresql:///ssot
     target table fyp_categories_interests
@@ -12,7 +14,9 @@ load csv
     (
         category,
         interest,
-        noc_2021
+        noc_2021,
+        sub_noc,
+        sub_noc_label_en
     )
     with
         fields optionally enclosed by '"',
@@ -26,15 +30,13 @@ load csv
         category text,
         interest text,
         noc_2021 text,
+        sub_noc text,
+        sub_noc_label_en text,
         constraint fyp_categories_interests_noc_fk foreign key (noc_2021) references nocs (noc_2021)
     );
     $$
 
     after load do
-    $$ update fyp_categories_interests set
-        category = upper(substring(category, 1, 1)) || lower(substring(category from 2)),
-        interest = upper(substring(interest, 1, 1)) || lower(substring(interest from 2));
-    $$,
     $$ create index fyp_categories_interests_noc_idx on fyp_categories_interests (noc_2021); $$,
     $$ create index fyp_categories_interests_category_idx on fyp_categories_interests (category); $$,
     $$ create index fyp_categories_interests_category_interest_idx on fyp_categories_interests (category, interest); $$,
@@ -42,5 +44,8 @@ load csv
     $$ comment on column fyp_categories_interests.category is 'Category'; $$,
     $$ comment on column fyp_categories_interests.interest is 'Area of Interest'; $$,
     $$ comment on column fyp_categories_interests.noc_2021 is 'NOC 2021'; $$,
-    $$ create or replace view fyp_categories_interests_taxonomy as select distinct category, interest from fyp_categories_interests order by category asc, interest asc; $$
+    $$ comment on column fyp_categories_interests.sub_noc is 'EPBC Sub-NOC'; $$,
+    $$ comment on column fyp_categories_interests.sub_noc_label_en is 'EPBC Sub-NOC Title'; $$,
+    $$ create or replace view fyp_categories_interests_taxonomy as select distinct category, interest from fyp_categories_interests order by category asc, interest asc; $$,
+    $$ create or replace view fyp_categories_interests_nocs as select distinct noc_2021, category, interest from fyp_categories_interests order by noc_2021 asc, category asc, interest asc; $$
 ;

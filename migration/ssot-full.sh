@@ -119,8 +119,8 @@ cat "data/LMO 2024E Charts and Tables 2025 02 12-Appendix 5.csv" | php csv_extra
 cat "data/LMO 2024E Charts and Tables 2025 02 12-Appendix 6.csv" | php csv_extract.php --cols=7 --range 5-129 | php csv_trimpad.php --column="1:L:5:0:#" > load/lmo_report_2024_job_openings_occupations_high.csv
 
 # FYP Categories & Areas of Interest.
-ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/FYP - Categories, Areas of interest, and NOCs 2025-03.xlsx" "data/FYP - Categories, Areas of interest, and NOCs 2025-03-%s.csv"
-cat "data/FYP - Categories, Areas of interest, and NOCs 2025-03-CONSOLIDATED LIST.csv" | php csv_extract.php --range 2 | php csv_trimpad.php --column="3:L:5:0:#" > load/fyp_categories_interests.csv
+ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/FYP - Categories, Areas of interest, and NOCs 2025-04.xlsx" "data/FYP - Categories, Areas of interest, and NOCs 2025-04-%s.csv"
+cat "data/FYP - Categories, Areas of interest, and NOCs 2025-04-CONSOLIDATED LIST.csv" | php csv_extract.php --range 2 | php csv_trimpad.php --column="3:L:5:0:#" > load/fyp_categories_interests.csv
 
 # Load all data in the database.
 for f in load/*.load; do echo "$f"; pgloader -l workbc.lisp "$f"; done
