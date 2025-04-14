@@ -15,6 +15,7 @@ load csv
         category,
         interest,
         noc_2021,
+        label_en,
         sub_noc,
         sub_noc_label_en
     )
@@ -30,6 +31,7 @@ load csv
         category text,
         interest text,
         noc_2021 text,
+        label_en text,
         sub_noc text,
         sub_noc_label_en text,
         constraint fyp_categories_interests_noc_fk foreign key (noc_2021) references nocs (noc_2021)
@@ -44,8 +46,10 @@ load csv
     $$ comment on column fyp_categories_interests.category is 'Category'; $$,
     $$ comment on column fyp_categories_interests.interest is 'Area of Interest'; $$,
     $$ comment on column fyp_categories_interests.noc_2021 is 'NOC 2021'; $$,
+    $$ comment on column fyp_categories_interests.label_en is 'EPBC NOC Title'; $$,
     $$ comment on column fyp_categories_interests.sub_noc is 'EPBC Sub-NOC'; $$,
     $$ comment on column fyp_categories_interests.sub_noc_label_en is 'EPBC Sub-NOC Title'; $$,
     $$ create or replace view fyp_categories_interests_taxonomy as select distinct category, interest from fyp_categories_interests order by category asc, interest asc; $$,
-    $$ create or replace view fyp_categories_interests_nocs as select distinct noc_2021, category, interest from fyp_categories_interests order by noc_2021 asc, category asc, interest asc; $$
+    $$ create or replace view fyp_categories_interests_nocs as select distinct noc_2021, category, interest from fyp_categories_interests order by noc_2021 asc, category asc, interest asc; $$,
+    $$ create or replace view fyp_categories_interests_sub_nocs as select distinct sub_noc, sub_noc_label_en, noc_2021, label_en from fyp_categories_interests order by sub_noc asc; $$
 ;
