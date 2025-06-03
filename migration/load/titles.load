@@ -2,14 +2,16 @@ load csv
     from 'titles.csv'
     (
         noc,
-        commonjobtitle
+        commonjobtitle,
+        illustrative
     )
     into postgresql:///ssot
     target table titles
     target columns
     (
         noc text using (trim-hash noc),
-        commonjobtitle
+        commonjobtitle,
+        illustrative
     )
     with
         fields optionally enclosed by '"',
@@ -21,13 +23,16 @@ load csv
     $$ create table if not exists titles
     (
         noc text,
-        commonjobtitle text
+        commonjobtitle text,
+        illustrative int,
+        constraint titles_noc_fk foreign key (noc) references nocs (noc_2021)
     );
     $$
 
     after load do
     $$ create index titles_noc_idx on titles (noc); $$,
-    $$ comment on table titles is '2021 NOC - Common Job Titles - Illustrative Listing'; $$,
+    $$ comment on table titles is 'National Occupational Classification (NOC) 2021 Version 1.0'; $$,
     $$ comment on column titles.noc is 'Code - NOC 2021 V1.0'; $$,
-    $$ comment on column titles.commonjobtitle is 'Element Description English'; $$
+    $$ comment on column titles.commonjobtitle is 'Element Description English'; $$,
+    $$ comment on column titles.illustrative is 'Illustrative example?'; $$
 ;

@@ -34,7 +34,8 @@ ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/Data_
 | `csv_empty.php` | Remove empty rows from CSV. |
 | `csv_extract.php` | Extract CSV rows based on given ranges. |
 | `csv_refill.php` | Fill empty column cells with previous values in a CSV. |
-| `csv_pad.php` | Pad CSV columns. |
+| `csv_trimpad.php` | Trim and pad CSV columns. |
+| `csv_colkey.php` | Convert a column to a unique key. |
 
 Refer to the source code of these scripts for usage details. Ensure that the final CSV is stored in the `load/` folder and is named after the target database table.
 
@@ -73,7 +74,7 @@ These updates have a specialized script to simplify the process and allow it to 
 
 - Run the specialized script:
 ```
-./monthly_labour_market_updates.sh Monthly_File.xlsx Year Month
+./monthly_labour_market_updates.sh Monthly_File.xlsx "Year as YYYY" "Month as M or MM" "Updated date as YYYY/MM/DD HH:MM"
 ```
 
 - Export the full SSoT database by running the following OUTSIDE the container:

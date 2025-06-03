@@ -1,0 +1,48 @@
+load csv
+    from 'lmo_report_2024_job_openings_northeast.csv'
+    (
+      industry,
+      employment,
+      growth_rate,
+      expansion,
+      replacement,
+      openings
+    )
+    into postgresql:///ssot
+    target table lmo_report_2024_job_openings_northeast
+    target columns
+    (
+      industry,
+      employment,
+      openings,
+      expansion,
+      replacement,
+      growth_rate
+    )
+    with
+        fields optionally enclosed by '"',
+        fields terminated by ',',
+        drop indexes
+
+    before load do
+    $$ drop table if exists lmo_report_2024_job_openings_northeast; $$,
+    $$ create table if not exists lmo_report_2024_job_openings_northeast
+    (
+      industry text,
+      employment int,
+      openings int,
+      expansion int,
+      replacement int,
+      growth_rate numeric
+    );
+    $$
+
+    after load do
+    $$ comment on table lmo_report_2024_job_openings_northeast is 'Labour Market Outlook {2024-2034} > Table 5.7-1 Top five industries by total job openings, 2024-2034 - Northeast'; $$,
+    $$ comment on column lmo_report_2024_job_openings_northeast.industry is 'Industry'; $$,
+    $$ comment on column lmo_report_2024_job_openings_northeast.employment is 'Employment {2024}'; $$,
+    $$ comment on column lmo_report_2024_job_openings_northeast.openings is 'Job Openings {2024-2034} > Total'; $$,
+    $$ comment on column lmo_report_2024_job_openings_northeast.expansion is 'Job Openings {2024-2034} > Expansion'; $$,
+    $$ comment on column lmo_report_2024_job_openings_northeast.replacement is 'Job Openings {2024-2034} > Replacement'; $$,
+    $$ comment on column lmo_report_2024_job_openings_northeast.growth_rate is 'Annual employment growth rate (%) {2024-2034}'; $$
+;

@@ -1,0 +1,48 @@
+load csv
+    from 'lmo_report_2024_job_openings_north_coast_nechako.csv'
+    (
+      industry,
+      employment,
+      growth_rate,
+      expansion,
+      replacement,
+      openings
+    )
+    into postgresql:///ssot
+    target table lmo_report_2024_job_openings_north_coast_nechako
+    target columns
+    (
+      industry,
+      employment,
+      openings,
+      expansion,
+      replacement,
+      growth_rate
+    )
+    with
+        fields optionally enclosed by '"',
+        fields terminated by ',',
+        drop indexes
+
+    before load do
+    $$ drop table if exists lmo_report_2024_job_openings_north_coast_nechako; $$,
+    $$ create table if not exists lmo_report_2024_job_openings_north_coast_nechako
+    (
+      industry text,
+      employment int,
+      openings int,
+      expansion int,
+      replacement int,
+      growth_rate numeric
+    );
+    $$
+
+    after load do
+    $$ comment on table lmo_report_2024_job_openings_north_coast_nechako is 'Labour Market Outlook {2024-2034} > Table 5.6-1 Top five industries by total job openings, 2024-2034 - North Coast and Nechako'; $$,
+    $$ comment on column lmo_report_2024_job_openings_north_coast_nechako.industry is 'Industry'; $$,
+    $$ comment on column lmo_report_2024_job_openings_north_coast_nechako.employment is 'Employment {2024}'; $$,
+    $$ comment on column lmo_report_2024_job_openings_north_coast_nechako.openings is 'Job Openings {2024-2034} > Total'; $$,
+    $$ comment on column lmo_report_2024_job_openings_north_coast_nechako.expansion is 'Job Openings {2024-2034} > Expansion'; $$,
+    $$ comment on column lmo_report_2024_job_openings_north_coast_nechako.replacement is 'Job Openings {2024-2034} > Replacement'; $$,
+    $$ comment on column lmo_report_2024_job_openings_north_coast_nechako.growth_rate is 'Annual employment growth rate (%) {2024-2034}'; $$
+;

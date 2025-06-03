@@ -9,7 +9,7 @@
 
 $usage = "Usage: php nocs.php /path/to/concordance/files/ > /path/to/output.csv";
 if (count($argv) < 2) {
-    fwrite(STDERR, "Expecting 1 argument.\n" . $usage . PHP_EOL);
+    die("Expecting 1 argument.\n" . $usage . PHP_EOL);
 }
 $dirname = rtrim($argv[1], DIRECTORY_SEPARATOR) . DIRECTORY_SEPARATOR;
 

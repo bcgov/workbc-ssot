@@ -39,7 +39,7 @@ SOURCE="/app/load/updates/monthly_labour_market_updates_${year}_${month_with_zer
 
 # Update sources.csv and load it into database.
 csvq --repository load --datetime-format "%Y/%m/%d %H:%i" \
-"REPLACE INTO sources (filename, date, endpoint, period) USING (endpoint, period) VALUES('${filename%.xlsx}', '${date}', 'monthly_labour_market_updates', '${year}/${month_with_zero}/01 08:00')"
+"REPLACE INTO sources (filename, date, endpoint, period, sheet, label) USING (endpoint, period) VALUES('${filename%.xlsx}', '${date}', 'monthly_labour_market_updates', '${year}/${month_with_zero}/01 08:00', 'Sheet3', 'Labour Force Survey (monthly, seasonally adjusted)')"
 pgloader -l workbc.lisp load/sources.load
 
 # If we reach this line, the whole script ran successfully.

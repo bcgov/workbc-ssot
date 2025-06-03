@@ -1,0 +1,57 @@
+load csv
+    from 'lmo_report_2024_job_openings_industries.csv'
+    (
+      d1,d2,d3,d4,d5,d6,d7,d8,d9,d10,d11,d12,d13,d14,
+      industry,
+      name,
+      expansion,
+      replacement,
+      openings,
+      expansion_fraction,
+      replacement_fraction,
+      share_fraction
+    )
+    into postgresql:///ssot
+    target table lmo_report_2024_job_openings_industries
+    target columns
+    (
+      industry,
+      name,
+      expansion,
+      replacement,
+      openings,
+      expansion_fraction,
+      replacement_fraction,
+      share_fraction
+    )
+    with
+        fields optionally enclosed by '"',
+        fields terminated by ',',
+        drop indexes
+
+    before load do
+    $$ drop table if exists lmo_report_2024_job_openings_industries; $$,
+    $$ create table if not exists lmo_report_2024_job_openings_industries
+    (
+      industry text primary key,
+      name text,
+      expansion int,
+      replacement int,
+      openings int,
+      expansion_fraction numeric,
+      replacement_fraction numeric,
+      share_fraction numeric
+    );
+    $$
+
+    after load do
+    $$ comment on table lmo_report_2024_job_openings_industries is 'Labour Market Outlook {2024-2034} > Figure 3-1: Top Ten Major Industry Groups by Job Openings, B.C., 2024-34'; $$,
+    $$ comment on column lmo_report_2024_job_openings_industries.industry is 'Industry key'; $$,
+    $$ comment on column lmo_report_2024_job_openings_industries.name is 'Industry name'; $$,
+    $$ comment on column lmo_report_2024_job_openings_industries.expansion is 'Expansion'; $$,
+    $$ comment on column lmo_report_2024_job_openings_industries.replacement is 'Replacement'; $$,
+    $$ comment on column lmo_report_2024_job_openings_industries.openings is 'Job Openings'; $$,
+    $$ comment on column lmo_report_2024_job_openings_industries.expansion_fraction is 'Expansion (%)'; $$,
+    $$ comment on column lmo_report_2024_job_openings_industries.replacement_fraction is 'Replacement (%)'; $$,
+    $$ comment on column lmo_report_2024_job_openings_industries.share_fraction is 'Share'; $$
+;
