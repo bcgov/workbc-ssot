@@ -36,14 +36,14 @@ load csv
     $$ update regional_top_occupations set region = 'british_columbia' where region = 'British Columbia'; $$,
     $$ update regional_top_occupations set region = 'cariboo' where region = 'Cariboo'; $$,
     $$ update regional_top_occupations set region = 'kootenay' where region = 'Kootenay'; $$,
-    $$ update regional_top_occupations set region = 'northeast' where region = 'North East'; $$,
-    $$ update regional_top_occupations set region = 'mainland_southwest' where region = 'Mainland South West'; $$,
-    $$ update regional_top_occupations set region = 'thompson_okanagan' where region = 'Thompson Okanagan'; $$,
-    $$ update regional_top_occupations set region = 'vancouver_island_coast' where region = 'Vancouver Island Coast'; $$,
-    $$ update regional_top_occupations set region = 'north_coast_nechako' where region = 'North Coast & Nechako'; $$,
-    $$ comment on table regional_top_occupations is 'WorkBC Regional Profile Data {2023-2033} > Top 10 Occupations by region'; $$,
+    $$ update regional_top_occupations set region = 'northeast' where region = 'Northeast'; $$,
+    $$ update regional_top_occupations set region = 'mainland_southwest' where region = 'Mainland/Southwest'; $$,
+    $$ update regional_top_occupations set region = 'thompson_okanagan' where region = 'Thompson-Okanagan'; $$,
+    $$ update regional_top_occupations set region = 'vancouver_island_coast' where region = 'Vancouver Island/Coast'; $$,
+    $$ update regional_top_occupations set region = 'north_coast_nechako' where region = 'North Coast and Nechako'; $$,
+    $$ comment on table regional_top_occupations is 'WorkBC Regional Profile Data {2024-2034} > Top 10 Occupations by region'; $$,
     $$ comment on column regional_top_occupations.region is 'Region'; $$,
     $$ comment on column regional_top_occupations.noc is 'NOC'; $$,
     $$ comment on column regional_top_occupations.occupation is 'Occupation'; $$,
-    $$ comment on column regional_top_occupations.openings is 'Job Openings {2023-2033}'; $$
+    $$ comment on column regional_top_occupations.openings is 'Job Openings {2024-2034}'; $$
 ;
