@@ -47,8 +47,8 @@ cat "data/Occupational_Interests_2023_Apr5_24-Sheet 1.csv" | php csv_extract.php
 php titles.php "data/NOC2021/noc_2021_version_1.0_-_elements.csv" > load/titles.csv
 
 # Skills for Career Profiles
-ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/Top skills by NOC2021 occupations_Feb12_24.xlsx" "data/Top skills by NOC2021 occupations_Feb12_24-%s.csv"
-cat "data/Top skills by NOC2021 occupations_Feb12_24-Sheet 1.csv" | php csv_extract.php --range 2 > load/skills.csv
+ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/skills_data_for_career_profiles_2025-06-09.xlsx" "data/skills_data_for_career_profiles_2025-06-09-%s.csv"
+cat "data/skills_data_for_career_profiles_2025-06-09-Sheet 1.csv" | php csv_extract.php --range 2 | php csv_trimpad.php --column 1:L:5:0 > load/skills.csv
 
 # TEERs for Career Profiles
 ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/All_Occupations'_TEERs_2023_Jan22_24.xlsx" "data/All_Occupations'_TEERs_2023_Jan22_24-%s.csv"
