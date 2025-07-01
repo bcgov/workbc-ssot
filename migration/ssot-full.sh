@@ -88,6 +88,9 @@ php industries.php "data/EDM/" > load/industries.csv
 ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/onet2019_soc2018_noc2016_noc2021_crosswalk.xlsx" "data/onet2019_soc2018_noc2016_noc2021_crosswalk-%s.csv"
 cat "data/onet2019_soc2018_noc2016_noc2021_crosswalk-Sheet1.csv" | php csv_extract.php --range 2 | php csv_trimpad.php --column 1:L:5:0  --column 3:L:4:0 > load/onet_nocs.csv
 
+# Related NOCs
+php related.php "data/NOC2021/noc_2021_version_1.0_-_elements.csv" > load/career_related.csv
+
 # Labour Market Monthly Updates
 csvq --repository load --without-header --format csv --datetime-format "%Y/%m/%d %H:%i" \
 "SELECT filename, YEAR(DATETIME(period)) AS year, MONTH(DATETIME(period)) AS month FROM sources WHERE endpoint='monthly_labour_market_updates' AND filename <> ''" \

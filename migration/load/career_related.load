@@ -1,0 +1,36 @@
+load csv
+    from 'career_related.csv'
+    (
+        noc,
+        noc_related
+    )
+    into postgresql:///ssot
+    target table career_related
+    target columns
+    (
+        noc text using (trim-hash noc),
+        noc_related
+    )
+    with
+        fields optionally enclosed by '"',
+        fields terminated by ',',
+        drop indexes
+
+    before load do
+    $$ drop table if exists career_related; $$,
+    $$ create table if not exists career_related
+    (
+        noc text,
+        noc_related text,
+        constraint career_related_noc_fk foreign key (noc) references nocs (noc_2021),
+        constraint career_related_noc_related_fk foreign key (noc_related) references nocs (noc_2021)
+    );
+    $$
+
+    after load do
+    $$ create index career_related_noc_idx on career_related (noc); $$,
+    $$ create index career_related_noc_related_idx on career_related (noc_related); $$,
+    $$ comment on table career_related is 'National Occupational Classification (NOC) 2021 Version 1.0 > Related NOCs'; $$,
+    $$ comment on column career_related.noc is 'NOC'; $$,
+    $$ comment on column career_related.noc_related is 'Related NOC'; $$
+;
