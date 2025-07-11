@@ -22,13 +22,13 @@ fabricated_metal_product_manufacturing,"Fabricated metal product manufacturing",
 machinery_manufacturing,"Machinery manufacturing",11600,1.9,2.3,2.1,2800,3100,5900
 ship_and_boat_building,"Ship and boat building",4900,1,0.6,0.8,400,1200,1700
 transportation_equipment_manufacturing_excluding_shipbuilding,"Transportation equipment manufacturing (excluding shipbuilding)",7400,1.7,1.2,1.4,1200,2000,3100
-other_manufacturing_1,"Other manufacturing (1)",60500,0.2,0.6,0.4,2600,14700,17400
+other_manufacturing,"Other manufacturing (1)",60500,0.2,0.6,0.4,2600,14700,17400
 wholesale_trade,"Wholesale trade",93000,1.4,0.9,1.2,11600,24000,35600
 retail_trade,"Retail trade",344400,1.3,1.3,1.3,49100,74700,123700
 motor_vehicle_and_parts_dealers,"Motor vehicle and parts dealers",39200,1.1,1,1,4300,9300,13600
 health_and_personal_care_stores,"Health and personal care stores",37000,1.9,1.4,1.7,6900,7900,14800
 online_shopping,"Online shopping",12000,2.6,1.7,2.1,2900,2900,5800
-other_retail_trade_excluding_cars_online_shopping_and_personal_care_2,"Other retail trade (excluding cars, online shopping and personal care) (2)",256100,1.2,1.3,1.3,35000,54600,89600
+other_retail_trade_excluding_cars_online_shopping_and_personal_care,"Other retail trade (excluding cars, online shopping and personal care) (2)",256100,1.2,1.3,1.3,35000,54600,89600
 transportation_warehousing,"Transportation and warehousing",144400,1.4,1.1,1.2,19200,37700,56900
 air_transportation_and_support_activities,"Air transportation and support activities",22600,1.2,1.1,1.1,2800,6200,9000
 rail_transportation_and_support_activities,"Rail transportation and support activities",5600,-0.3,1,0.3,200,1600,1800
