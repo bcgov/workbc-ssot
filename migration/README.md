@@ -74,7 +74,7 @@ These updates have a specialized script to simplify the process and allow it to 
 
 - Run the specialized script:
 ```
-./monthly_labour_market_updates.sh Monthly_File.xlsx "Year as YYYY" "Month as M or MM" "Updated date as YYYY/MM/DD HH:MM"
+./monthly_labour_market_update.sh Monthly_File.xlsx "Year as YYYY" "Month as M or MM" "Updated date as YYYY/MM/DD HH:MM"
 ```
 
 - Export the full SSoT database by running the following OUTSIDE the container:
