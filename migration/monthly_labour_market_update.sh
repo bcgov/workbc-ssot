@@ -7,19 +7,19 @@
 set -xeuo pipefail
 
 # Arguments validation.
-if [[ -z "$1" ]] ; then
+if [[ -z "${1:-}" ]] ; then
     echo 'Error: Missing sheet filename.'
     exit 1
 fi
-if [[ -z "$2" ]] ; then
+if [[ -z "${2:-}" ]] ; then
     echo 'Error: Missing year.'
     exit 1
 fi
-if [[ -z "$3" ]] ; then
+if [[ -z "${3:-}" ]] ; then
     echo 'Error: Missing month.'
     exit 1
 fi
-if [[ -z "$4" ]] ; then
+if [[ -z "${4:-}" ]] ; then
     echo 'Error: Missing update date.'
     exit 1
 fi
