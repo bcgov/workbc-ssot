@@ -41,9 +41,9 @@ load csv
     $$ update regional_top_occupations set region = 'thompson_okanagan' where region = 'Thompson-Okanagan'; $$,
     $$ update regional_top_occupations set region = 'vancouver_island_coast' where region = 'Vancouver Island/Coast'; $$,
     $$ update regional_top_occupations set region = 'north_coast_nechako' where region = 'North Coast and Nechako'; $$,
-    $$ comment on table regional_top_occupations is 'WorkBC Regional Profile Data {2024-2034} > Top 10 Occupations by region'; $$,
+    $$ comment on table regional_top_occupations is 'WorkBC Regional Profile Data {2025-2035} > Top 10 Occupations by region'; $$,
     $$ comment on column regional_top_occupations.region is 'Region'; $$,
     $$ comment on column regional_top_occupations.noc is 'NOC'; $$,
     $$ comment on column regional_top_occupations.occupation is 'Occupation'; $$,
-    $$ comment on column regional_top_occupations.openings is 'Job Openings {2024-2034}'; $$
+    $$ comment on column regional_top_occupations.openings is 'Job Openings {2025-2035}'; $$
 ;

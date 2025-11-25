@@ -56,15 +56,15 @@ load csv
     $$
 
     after load do
-    $$ comment on table career_provincial is 'WorkBC Career Profile Data {2024-2034} > Provincial Outlook'; $$,
+    $$ comment on table career_provincial is 'WorkBC Career Profile Data {2025-2035} > Provincial Outlook'; $$,
     $$ comment on column career_provincial.noc is 'NOC'; $$,
     $$ comment on column career_provincial.description is 'Description'; $$,
-    $$ comment on column career_provincial.forecasted_average_employment_growth_rate_first5y is 'Forecasted average employment growth rate (%) {2024-2029}'; $$,
-    $$ comment on column career_provincial.forecasted_average_employment_growth_rate_second5y is 'Forecasted average employment growth rate (%) {2029-2034}'; $$,
-    $$ comment on column career_provincial.forecasted_average_employment_growth_rate_10y is 'Forecasted average employment growth rate (%) {2024-2034}'; $$,
-    $$ comment on column career_provincial.job_openings_first5y is 'Job Openings {2024-2029}'; $$,
-    $$ comment on column career_provincial.job_openings_second5y is 'Job Openings {2030-2034}'; $$,
-    $$ comment on column career_provincial.expected_job_openings_10y is '10 year expected job openings {2024-2034}'; $$,
+    $$ comment on column career_provincial.forecasted_average_employment_growth_rate_first5y is 'Forecasted average employment growth rate (%) {2025-2030}'; $$,
+    $$ comment on column career_provincial.forecasted_average_employment_growth_rate_second5y is 'Forecasted average employment growth rate (%) {2030-2035}'; $$,
+    $$ comment on column career_provincial.forecasted_average_employment_growth_rate_10y is 'Forecasted average employment growth rate (%) {2025-2035}'; $$,
+    $$ comment on column career_provincial.job_openings_first5y is 'Job Openings {2025-2030}'; $$,
+    $$ comment on column career_provincial.job_openings_second5y is 'Job Openings {2031-2035}'; $$,
+    $$ comment on column career_provincial.expected_job_openings_10y is '10 year expected job openings {2025-2035}'; $$,
     $$ comment on column career_provincial.replacement_of_retiring_workers_10y_pct is '10 year Replacement of retiring workers > %'; $$,
     $$ comment on column career_provincial.replacement_of_retiring_workers_10y is '10 year Replacement of retiring workers > Number'; $$,
     $$ comment on column career_provincial.new_jobs_due_to_economic_growth_10y_pct is '10 year New jobs due to economic growth > %'; $$,
