@@ -1,0 +1,58 @@
+load csv
+    from 'lmo_report_2025_job_openings_industries.csv'
+    (
+      year,
+      order,
+      industry,
+      name,
+      expansion,
+      replacement,
+      openings,
+      expansion_fraction,
+      replacement_fraction,
+      openings_fraction
+    )
+    into postgresql:///ssot
+    target table lmo_report_2025_job_openings_industries
+    target columns
+    (
+      industry,
+      name,
+      expansion,
+      replacement,
+      openings,
+      expansion_fraction,
+      replacement_fraction,
+      openings_fraction
+    )
+    with
+        fields optionally enclosed by '"',
+        fields terminated by ',',
+        drop indexes
+
+    before load do
+    $$ drop table if exists lmo_report_2025_job_openings_industries; $$,
+    $$ create table if not exists lmo_report_2025_job_openings_industries
+    (
+      industry text primary key,
+      name text,
+      expansion int,
+      replacement int,
+      openings int,
+      expansion_fraction numeric,
+      replacement_fraction numeric,
+      openings_fraction numeric
+    );
+    $$
+
+    after load do
+    $$ comment on table lmo_report_2025_job_openings_industries is 'Labour Market Outlook {2025-2035} > Figure 3-1: Top Ten Major Industry Groups by Job Openings, B.C., 2025-34'; $$,
+    $$ comment on column lmo_report_2025_job_openings_industries.industry is 'Industry key'; $$,
+    $$ comment on column lmo_report_2025_job_openings_industries.name is 'Industry name'; $$,
+    $$ comment on column lmo_report_2025_job_openings_industries.expansion is 'Expansion'; $$,
+    $$ comment on column lmo_report_2025_job_openings_industries.replacement is 'Replacement'; $$,
+    $$ comment on column lmo_report_2025_job_openings_industries.openings is 'Job Openings'; $$,
+    $$ comment on column lmo_report_2025_job_openings_industries.expansion_fraction is 'Expansion (%)'; $$,
+    $$ comment on column lmo_report_2025_job_openings_industries.replacement_fraction is 'Replacement (%)'; $$,
+    $$ comment on column lmo_report_2025_job_openings_industries.openings_fraction is 'Job Openings (%)'; $$
+;

@@ -1,0 +1,47 @@
+load csv
+    from 'lmo_report_2025_job_openings_teers.csv'
+    (
+      year,
+      order,
+      variable,
+      teer,
+      openings,
+      openings_rounded,
+      fraction,
+      nocs
+    )
+    into postgresql:///ssot
+    target table lmo_report_2025_job_openings_teers
+    target columns
+    (
+      teer,
+      openings,
+      openings_rounded,
+      fraction,
+      nocs
+    )
+    with
+        fields optionally enclosed by '"',
+        fields terminated by ',',
+        drop indexes
+
+    before load do
+    $$ drop table if exists lmo_report_2025_job_openings_teers; $$,
+    $$ create table if not exists lmo_report_2025_job_openings_teers
+    (
+      teer text,
+      openings numeric,
+      openings_rounded int,
+      fraction numeric,
+      nocs int
+    );
+    $$
+
+    after load do
+    $$ comment on table lmo_report_2025_job_openings_teers is 'Labour Market Outlook {2025-2035} > Figure 2-1: Job Openings by TEER, B.C., 2025-2035'; $$,
+    $$ comment on column lmo_report_2025_job_openings_teers.teer is 'TEER'; $$,
+    $$ comment on column lmo_report_2025_job_openings_teers.openings is 'Job Openings'; $$,
+    $$ comment on column lmo_report_2025_job_openings_teers.openings_rounded is 'Job Openings (Rounded)'; $$,
+    $$ comment on column lmo_report_2025_job_openings_teers.fraction is '% of Total'; $$,
+    $$ comment on column lmo_report_2025_job_openings_teers.nocs is '# of NOCs'; $$
+;

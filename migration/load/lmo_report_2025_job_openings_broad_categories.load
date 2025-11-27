@@ -1,0 +1,58 @@
+load csv
+    from 'lmo_report_2025_job_openings_broad_categories.csv'
+    (
+      year,
+      order,
+      category,
+      name,
+      replacement,
+      expansion,
+      openings,
+      replacement_fraction,
+      expansion_fraction,
+      openings_fraction
+    )
+    into postgresql:///ssot
+    target table lmo_report_2025_job_openings_broad_categories
+    target columns
+    (
+      category,
+      name,
+      expansion,
+      replacement,
+      openings,
+      expansion_fraction,
+      replacement_fraction,
+      openings_fraction
+    )
+    with
+        fields optionally enclosed by '"',
+        fields terminated by ',',
+        drop indexes
+
+    before load do
+    $$ drop table if exists lmo_report_2025_job_openings_broad_categories; $$,
+    $$ create table if not exists lmo_report_2025_job_openings_broad_categories
+    (
+      category text,
+      name text,
+      expansion int,
+      replacement int,
+      openings int,
+      expansion_fraction numeric,
+      replacement_fraction numeric,
+      openings_fraction numeric
+    );
+    $$
+
+    after load do
+    $$ comment on table lmo_report_2025_job_openings_broad_categories is 'Labour Market Outlook {2025-2035} > Figure 4.1-1: Job Openings by Main Occupational Group, B.C., 2025-2035'; $$,
+    $$ comment on column lmo_report_2025_job_openings_broad_categories.category is 'NOC'; $$,
+    $$ comment on column lmo_report_2025_job_openings_broad_categories.name is 'Description'; $$,
+    $$ comment on column lmo_report_2025_job_openings_broad_categories.expansion is 'Expansion'; $$,
+    $$ comment on column lmo_report_2025_job_openings_broad_categories.replacement is 'Replacement'; $$,
+    $$ comment on column lmo_report_2025_job_openings_broad_categories.openings is 'Job Openings'; $$,
+    $$ comment on column lmo_report_2025_job_openings_broad_categories.expansion_fraction is 'Expansion (%)'; $$,
+    $$ comment on column lmo_report_2025_job_openings_broad_categories.replacement_fraction is 'Replacement (%)'; $$,
+    $$ comment on column lmo_report_2025_job_openings_broad_categories.openings_fraction is 'Job Openings (%)'; $$
+;

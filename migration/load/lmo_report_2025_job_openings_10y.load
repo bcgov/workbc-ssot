@@ -1,0 +1,42 @@
+load csv
+    from 'lmo_report_2025_job_openings_10y.csv'
+    (
+      year,
+      order,
+      key,
+      variable,
+      amount,
+      fraction
+    )
+    into postgresql:///ssot
+    target table lmo_report_2025_job_openings_10y
+    target columns
+    (
+      key,
+      variable,
+      amount,
+      fraction
+    )
+    with
+        fields optionally enclosed by '"',
+        fields terminated by ',',
+        drop indexes
+
+    before load do
+    $$ drop table if exists lmo_report_2025_job_openings_10y; $$,
+    $$ create table if not exists lmo_report_2025_job_openings_10y
+    (
+        key text,
+        variable text,
+        amount int,
+        fraction numeric
+    );
+    $$
+
+    after load do
+    $$ comment on table lmo_report_2025_job_openings_10y is 'Labour Market Outlook {2025-2035} > Figure 1.1-1. Job Openings, B.C., 2025-2035'; $$,
+    $$ comment on column lmo_report_2025_job_openings_10y.key is 'Key'; $$,
+    $$ comment on column lmo_report_2025_job_openings_10y.variable is 'Variable'; $$,
+    $$ comment on column lmo_report_2025_job_openings_10y.amount is 'Amount (Rounded)'; $$,
+    $$ comment on column lmo_report_2025_job_openings_10y.fraction is 'Fraction'; $$
+;
