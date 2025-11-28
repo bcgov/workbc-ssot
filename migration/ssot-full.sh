@@ -135,5 +135,5 @@ cat "data/FYP - Categories, Areas of interest, and NOCs 2025-04-23-CONSOLIDATED 
 
 # Load all data in the database.
 for f in load/*.load; do echo "$f"; pgloader -l workbc.lisp "$f"; done
-psql -c 'DROP TABLE monthly_labour_market_updates'
+psql -c 'DROP TABLE IF EXISTS monthly_labour_market_updates'
 for f in load/updates/*.csv; do echo "$f"; SOURCE="/app/$f" pgloader -l workbc.lisp load/updates/monthly_labour_market_updates.load; done
