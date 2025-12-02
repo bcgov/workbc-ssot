@@ -1,0 +1,60 @@
+load csv
+    from 'lmo_report_2024_job_openings_industries_full.csv'
+    (
+      industry,
+      name,
+      employment,
+      growth_rate_first5y,
+      growth_rate_second5y,
+      growth_rate_10y,
+      expansion,
+      replacement,
+      openings
+    )
+    into postgresql:///ssot
+    target table lmo_report_2024_job_openings_industries_full
+    target columns
+    (
+      industry,
+      name,
+      employment,
+      growth_rate_first5y,
+      growth_rate_second5y,
+      growth_rate_10y,
+      expansion,
+      replacement,
+      openings
+    )
+    with
+        fields optionally enclosed by '"',
+        fields terminated by ',',
+        drop indexes
+
+    before load do
+    $$ drop table if exists lmo_report_2024_job_openings_industries_full; $$,
+    $$ create table if not exists lmo_report_2024_job_openings_industries_full
+    (
+      industry text primary key,
+      name text,
+      employment int,
+      growth_rate_first5y numeric,
+      growth_rate_second5y numeric,
+      growth_rate_10y numeric,
+      expansion int,
+      replacement int,
+      openings int
+    );
+    $$
+
+    after load do
+    $$ comment on table lmo_report_2024_job_openings_industries_full is 'Labour Market Outlook {2024-2034} > Appendix 3: Detailed Industry Outlook, B.C., 2024-2034'; $$,
+    $$ comment on column lmo_report_2024_job_openings_industries_full.industry is 'Industry key'; $$,
+    $$ comment on column lmo_report_2024_job_openings_industries_full.name is 'Industry name'; $$,
+    $$ comment on column lmo_report_2024_job_openings_industries_full.employment is 'Employment {2024}'; $$,
+    $$ comment on column lmo_report_2024_job_openings_industries_full.growth_rate_first5y is 'Annual employment growth rate (%) > {2024-2029}'; $$,
+    $$ comment on column lmo_report_2024_job_openings_industries_full.growth_rate_second5y is 'Annual employment growth rate (%) > {2029-2034}'; $$,
+    $$ comment on column lmo_report_2024_job_openings_industries_full.growth_rate_10y is 'Annual employment growth rate (%) > {2024-2034}'; $$,
+    $$ comment on column lmo_report_2024_job_openings_industries_full.expansion is 'Job Openings {2024-2034} > Expansion'; $$,
+    $$ comment on column lmo_report_2024_job_openings_industries_full.replacement is 'Job Openings {2024-2034} > Replacement'; $$,
+    $$ comment on column lmo_report_2024_job_openings_industries_full.openings is 'Job Openings {2024-2034} > Total'; $$
+;
