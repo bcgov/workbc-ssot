@@ -75,8 +75,8 @@ ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/caree
 cat "data/career_search_tool_occupation_groups_manual_update_2024_Jan_15_2025-Sheet 1.csv" | php csv_extract.php --range 2 > load/career_search_groups.csv
 
 # Career Transition Tool Opportunities
-ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/FINAL_Career Transition Tool_Opportunities_05_2024.xlsx" "data/FINAL_Career Transition Tool_Opportunities_05_2024-%s.csv"
-cat "data/FINAL_Career Transition Tool_Opportunities_05_2024-Sheet 1.csv" | php csv_extract.php --range 2 > load/career_transition_opportunities.csv
+ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/career_transition_tool_opportunities_2025 V2.xlsx" "data/career_transition_tool_opportunities_2025 V2-%s.csv"
+cat "data/career_transition_tool_opportunities_2025 V2-Sheet 1.csv" | php csv_extract.php --range 2 > load/career_transition_opportunities.csv
 
 # NOC 2021 Concordance
 php nocs.php "data/NOC2021/" > load/nocs.csv
