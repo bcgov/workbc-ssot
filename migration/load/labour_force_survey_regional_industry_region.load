@@ -139,7 +139,7 @@ load csv
     $$ update labour_force_survey_regional_industry_region set region = 'thompson_okanagan' where region = 'Thompson Okanagan'; $$,
     $$ update labour_force_survey_regional_industry_region set region = 'vancouver_island_coast' where region = 'Vancouver Island And Coast'; $$,
     $$ update labour_force_survey_regional_industry_region set region = 'north_coast_nechako' where region = 'North Coast And Nechako'; $$,
-    $$ comment on table labour_force_survey_regional_industry_region is 'LFS Data Sheet {2023} > Regional Profiles > Table 2'; $$,
+    $$ comment on table labour_force_survey_regional_industry_region is 'LFS Data Sheet {2024} > Regional Profiles > Table 2'; $$,
     $$ comment on column labour_force_survey_regional_industry_region.region is 'Region'; $$,
     $$ comment on column labour_force_survey_regional_industry_region.accommodation_food_services is 'This region''s industries and sectors > Industry > Share of this region''s employment (%) / Share of Industry Employment within a Region (%) > Accommodation and Food Services > %'; $$,
     $$ comment on column labour_force_survey_regional_industry_region.accommodation_food_services_num is 'This region''s industries and sectors > Industry > Share of this region''s employment (%) / Share of Industry Employment within a Region (%) > Accommodation and Food Services > #'; $$,

@@ -64,17 +64,17 @@ load csv
     $$ update regional_labour_market_outlook set region = 'thompson_okanagan' where region = 'Thompson-Okanagan'; $$,
     $$ update regional_labour_market_outlook set region = 'vancouver_island_coast' where region = 'Vancouver Island/Coast'; $$,
     $$ update regional_labour_market_outlook set region = 'north_coast_nechako' where region = 'North Coast and Nechako'; $$,
-    $$ comment on table regional_labour_market_outlook is 'WorkBC Regional Profile Data {2024-2034} > B.C. Labour Market Outlook (2024-2034)/for this region'; $$,
+    $$ comment on table regional_labour_market_outlook is 'WorkBC Regional Profile Data {2025-2035} > B.C. Labour Market Outlook (2025-2035)/for this region'; $$,
     $$ comment on column regional_labour_market_outlook.region is 'Region'; $$,
-    $$ comment on column regional_labour_market_outlook.job_openings_first5y is 'Job Openings > {2024-2029}'; $$,
-    $$ comment on column regional_labour_market_outlook.job_openings_second5y is 'Job Openings > {2030-2034}'; $$,
-    $$ comment on column regional_labour_market_outlook.job_openings_10y is 'Job Openings > {2024-2034}'; $$,
+    $$ comment on column regional_labour_market_outlook.job_openings_first5y is 'Job Openings > {2025-2030}'; $$,
+    $$ comment on column regional_labour_market_outlook.job_openings_second5y is 'Job Openings > {2031-2035}'; $$,
+    $$ comment on column regional_labour_market_outlook.job_openings_10y is 'Job Openings > {2025-2035}'; $$,
     $$ comment on column regional_labour_market_outlook.replacement_of_retiring_workers_openings is 'Composition of job openings > Replacement of retiring workers > Openings'; $$,
     $$ comment on column regional_labour_market_outlook.replacement_of_retiring_workers_pct is 'Composition of job openings > Replacement of retiring workers > %'; $$,
     $$ comment on column regional_labour_market_outlook.new_jobs_due_to_economic_growth_openings is 'Composition of job openings > New jobs due to economic growth > Openings'; $$,
     $$ comment on column regional_labour_market_outlook.new_jobs_due_to_economic_growth_pct is 'Composition of job openings > New jobs due to economic growth > %'; $$,
     $$ comment on column regional_labour_market_outlook.forecasted_total_employment_growth_10y is 'Employment outlook > Forecasted 10-year total employment growth'; $$,
     $$ comment on column regional_labour_market_outlook.forecasted_annual_employment_growth_rate is 'Employment outlook > Forecasted average annual employment growth rate (%)'; $$,
-    $$ comment on column regional_labour_market_outlook.forecasted_employment_growth_rate_first5y is 'Employment outlook > Forecasted Employment Growth {2024-2029}'; $$,
-    $$ comment on column regional_labour_market_outlook.forecasted_employment_growth_rate_second5y is 'Employment outlook > Forecasted Employment Growth {2029-2034}'; $$
+    $$ comment on column regional_labour_market_outlook.forecasted_employment_growth_rate_first5y is 'Employment outlook > Forecasted Employment Growth {2025-2030}'; $$,
+    $$ comment on column regional_labour_market_outlook.forecasted_employment_growth_rate_second5y is 'Employment outlook > Forecasted Employment Growth {2030-2035}'; $$
 ;

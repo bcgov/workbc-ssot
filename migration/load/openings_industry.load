@@ -41,9 +41,9 @@ load csv
             regexp_replace(tbl.industry, 'with|and|,|\s*', '', 1, 0, 'i')
     ), tbl.industry)
     $$,
-    $$ comment on table openings_industry is 'Top 10 careers by aggregate industry {2024}'; $$,
+    $$ comment on table openings_industry is 'Top 10 careers by aggregate industry {2025}'; $$,
     $$ comment on column openings_industry.industry is 'Aggregate Industry'; $$,
     $$ comment on column openings_industry.noc is 'NOC'; $$,
     $$ comment on column openings_industry.description is 'Occupation'; $$,
-    $$ comment on column openings_industry.openings is 'Job Openings {2024-2034}'; $$
+    $$ comment on column openings_industry.openings is 'Job Openings {2025-2035}'; $$
 ;
