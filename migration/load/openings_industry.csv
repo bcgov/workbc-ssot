@@ -13,7 +13,7 @@
 "Agriculture And Fishing",#80021,"Managers in horticulture",90
 "Agriculture And Fishing",#80022,"Managers in aquaculture",80
 "Agriculture And Fishing",#84121,"Fishing vessel deckhands",80
-"Agriculture And Fishing",#00018,"Seniors managers - public and private sector",50
+"Agriculture And Fishing",#00018,"Senior managers - public and private sector",50
 "Agriculture And Fishing",#83120,"Fishing masters and officers",50
 "Agriculture And Fishing",#94142,"Fish and seafood plant workers",40
 "Agriculture And Fishing",#95107,"Labourers in fish and seafood processing",40
@@ -26,7 +26,7 @@
 "Business, Building And Other Support Services",#64310,"Travel counsellors",910
 "Business, Building And Other Support Services",#73201,"General building maintenance workers and building superintendents",830
 "Business, Building And Other Support Services",#64409,"Other customer and information services representatives",770
-"Business, Building And Other Support Services",#00018,"Seniors managers - public and private sector",710
+"Business, Building And Other Support Services",#00018,"Senior managers - public and private sector",710
 "Business, Building And Other Support Services",#22114,"Landscape and horticulture technicians and specialists",690
 Construction,#72310,Carpenters,9260
 Construction,#75110,"Construction trades helpers and labourers",8530
@@ -57,7 +57,7 @@ Construction,#73400,"Heavy equipment operators",2050
 "Finance, Insurance And Real Estate",#63102,"Financial sales representatives",2690
 "Finance, Insurance And Real Estate",#70012,"Facility operation and maintenance managers",2250
 "Finance, Insurance And Real Estate",#64400,"Customer services representatives - financial institutions",2110
-"Finance, Insurance And Real Estate",#00018,"Seniors managers - public and private sector",2040
+"Finance, Insurance And Real Estate",#00018,"Senior managers - public and private sector",2040
 "Forestry, Logging And Support Activities",#83110,"Logging machinery operators",470
 "Forestry, Logging And Support Activities",#73300,"Transport truck drivers",420
 "Forestry, Logging And Support Activities",#84110,"Chain saw and skidder operators",370
@@ -93,7 +93,7 @@ Manufacturing,#95106,"Labourers in food and beverage processing",3570
 Manufacturing,#94140,"Process control and machine operators, food and beverage processing",1420
 Manufacturing,#75101,"Material handlers",1420
 Manufacturing,#63202,Bakers,1330
-Manufacturing,#00018,"Seniors managers - public and private sector",1290
+Manufacturing,#00018,"Senior managers - public and private sector",1290
 Manufacturing,#72106,"Welders and related machine operators",1220
 Manufacturing,#72400,"Construction millwrights and industrial mechanics",1100
 Manufacturing,#95109,"Other labourers in processing, manufacturing and utilities",930
@@ -105,14 +105,14 @@ Manufacturing,#72100,"Machinists and machining and tooling inspectors",860
 "Mining And Oil And Gas Extraction",#83100,"Underground production and development miners",610
 "Mining And Oil And Gas Extraction",#93101,"Central control and process operators, petroleum, gas and chemical processing",500
 "Mining And Oil And Gas Extraction",#72400,"Construction millwrights and industrial mechanics",470
-"Mining And Oil And Gas Extraction",#00018,"Seniors managers - public and private sector",460
+"Mining And Oil And Gas Extraction",#00018,"Senior managers - public and private sector",460
 "Mining And Oil And Gas Extraction",#72401,"Heavy-duty equipment mechanics",460
 "Mining And Oil And Gas Extraction",#82021,"Contractors and supervisors, oil and gas drilling and services",360
 "Professional, Scientific And Technical Services",#21231,"Software engineers and designers",11680
 "Professional, Scientific And Technical Services",#21232,"Software developers and programmers",9980
 "Professional, Scientific And Technical Services",#21222,"Information systems specialists",7990
 "Professional, Scientific And Technical Services",#20012,"Computer and information systems managers",7350
-"Professional, Scientific And Technical Services",#00018,"Seniors managers - public and private sector",6570
+"Professional, Scientific And Technical Services",#00018,"Senior managers - public and private sector",6570
 "Professional, Scientific And Technical Services",#11100,"Financial auditors and accountants",6190
 "Professional, Scientific And Technical Services",#21234,"Web developers and programmers",5510
 "Professional, Scientific And Technical Services",#12200,"Accounting technicians and bookkeepers",4890
@@ -126,13 +126,13 @@ Manufacturing,#72100,"Machinists and machining and tooling inspectors",860
 "Public Administration",#14100,"General office support workers",1520
 "Public Administration",#13110,"Administrative assistants",1320
 "Public Administration",#42200,"Paralegals and related occupations",1300
-"Public Administration",#00018,"Seniors managers - public and private sector",1200
+"Public Administration",#00018,"Senior managers - public and private sector",1200
 "Public Administration",#43201,"Correctional service officers",1070
 "Repair, Personal And Non-Profit Services",#63210,"Hairstylists and barbers",5230
 "Repair, Personal And Non-Profit Services",#63211,"Estheticians, electrologists and related occupations",3110
 "Repair, Personal And Non-Profit Services",#72410,"Automotive service technicians, truck and bus mechanics and mechanical repairers",2500
 "Repair, Personal And Non-Profit Services",#41302,"Religious leaders",1740
-"Repair, Personal And Non-Profit Services",#00018,"Seniors managers - public and private sector",1320
+"Repair, Personal And Non-Profit Services",#00018,"Senior managers - public and private sector",1320
 "Repair, Personal And Non-Profit Services",#13100,"Administrative officers",1240
 "Repair, Personal And Non-Profit Services",#65310,"Light duty cleaners",1190
 "Repair, Personal And Non-Profit Services",#65220,"Pet groomers and animal care workers",1180
@@ -174,7 +174,7 @@ Utilities,#64409,"Other customer and information services representatives",140
 "Wholesale Trade",#64100,"Retail salespersons and visual merchandisers",1510
 "Wholesale Trade",#75101,"Material handlers",1510
 "Wholesale Trade",#60010,"Corporate sales managers",1210
-"Wholesale Trade",#00018,"Seniors managers - public and private sector",1190
+"Wholesale Trade",#00018,"Senior managers - public and private sector",1190
 "Wholesale Trade",#14400,"Shippers and receivers",1010
 "Wholesale Trade",#73300,"Transport truck drivers",810
 "Wholesale Trade",#13100,"Administrative officers",690
