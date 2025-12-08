@@ -51,7 +51,7 @@ load csv
 
     after load do
     $$ create index career_trek_noc_2021_idx on career_trek (noc_2021); $$,
-    $$ comment on table career_trek is 'WorkBC Career Trek Data {2023}'; $$,
+    $$ comment on table career_trek is 'WorkBC Career Trek Data {2025}'; $$,
     $$ comment on column career_trek.episode_num is 'Sr No'; $$,
     $$ comment on column career_trek.noc_2021 is 'NOC 2021'; $$,
     $$ comment on column career_trek.noc_2016 is 'NOC 2016'; $$,
