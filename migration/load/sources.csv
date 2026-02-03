@@ -1,5 +1,5 @@
 "label","endpoint","datapoint","filename","sheet","range","author","date","period"
-"B.C. Labour Market Information Office, derived from 2024 Job Bank Wage data","wages",,"WorkBC_2024_Wage_Data_Jan_13_2025","Sheet1","A2-G513",,"2025/01/13 08:00","2024/01/01 08:00"
+"B.C. Labour Market Information Office, derived from 2025 Job Bank Wage data","wages",,"WorkBC_2025_Wage_Data","Data Table","A2-G513",,"2026/02/02 08:00","2025/01/01 08:00"
 ,"titles",,"NOC2021/noc_2021_version_1.0_-_elements.csv",,,,"2025/02/18 08:00","2021/01/01 08:00"
 ,"skills",,"skills_data_for_career_profiles_2025-08-21","Sheet 1","A2-G17641",,"2025/11/24 08:00","2021/01/01 08:00"
 "B.C. Labour Market Outlook","openings_careers",,"Job_Openings_by_Industry_LMO_2025","Career Profiles","A5-Q515",,"2025/11/24 08:00","2025/01/01 08:00"
@@ -109,3 +109,5 @@
 "Labour Force Survey (monthly, seasonally adjusted)","monthly_labour_market_updates",,"WorkBC LMS August_2025 (7)","Sheet3",,,"2025/09/08 17:40","2025/08/01 08:00"
 "Labour Force Survey (monthly, seasonally adjusted)","monthly_labour_market_updates",,"WorkBC LMS September_2025","Sheet3",,,"2025/11/17 20:03","2025/09/01 08:00"
 "Labour Force Survey (monthly, seasonally adjusted)","monthly_labour_market_updates",,"WorkBC LMS October_2025","Sheet3",,,"2025/11/10 17:19","2025/10/01 08:00"
+"Labour Force Survey (monthly, seasonally adjusted)","monthly_labour_market_updates",,"WorkBC LMS November_2025","Sheet3",,,"2026/01/22 17:11","2025/11/01 08:00"
+"Labour Force Survey (monthly, seasonally adjusted)","monthly_labour_market_updates",,"WorkBC LMS December_2025","Sheet3",,,"2026/01/22 17:52","2025/12/01 08:00"
