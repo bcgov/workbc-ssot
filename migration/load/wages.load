@@ -6,6 +6,8 @@ load csv
         esdc_wage_rate_low,
         esdc_wage_rate_median,
         esdc_wage_rate_high,
+        hours_week,
+        calculated_median_annual_salary_old,
         calculated_median_annual_salary,
         source_information
     )
@@ -18,6 +20,8 @@ load csv
         esdc_wage_rate_low numeric using (not-available-to-null esdc_wage_rate_low),
         esdc_wage_rate_median numeric using (not-available-to-null esdc_wage_rate_median),
         esdc_wage_rate_high numeric using (not-available-to-null esdc_wage_rate_high),
+        hours_week numeric using (not-available-to-null hours_week),
+        calculated_median_annual_salary_old numeric using (not-available-to-null calculated_median_annual_salary_old),
         calculated_median_annual_salary numeric using (not-available-to-null calculated_median_annual_salary),
         source_information text using (not-available-to-null source_information)
     )
@@ -35,22 +39,22 @@ load csv
         esdc_wage_rate_low numeric,
         esdc_wage_rate_median numeric,
         esdc_wage_rate_high numeric,
+        hours_week numeric,
+        calculated_median_annual_salary_old numeric,
         calculated_median_annual_salary numeric,
         source_information text
     );
     $$
 
     after load do
-    $$ update wages set source_information = '2024 Wage Bank Data (Median employment income from 2021 Census)' where source_information ilike '2024 Wage Bank Data Median employment income from 2021 Census'; $$,
-    $$ update wages set source_information = '2021 Census (Full-time full year median employment income)' where source_information ilike 'Full-time, full-year median employment income, 2021 Census'; $$,
-    $$ update wages set source_information = '2024 Wage Bank Data (Median employment income from Canadian Institute for Health Information and Canadian Medical Association - custom tabulation)' where source_information ilike '2024 Wage Bank Data Median employment income from Canadian Institute for Health Information and Canadian Medical Association - custom tabulation'; $$,
-    $$ update wages set source_information = '2024 Wage Bank Data (Median employment income from Administrative data for judges)' where source_information ilike '2024 Wage Bank Data Median employment income from Administrative data for judges'; $$,
-    $$ comment on table wages is 'WorkBC {2024} Wage Data'; $$,
+    $$ comment on table wages is 'WorkBC {2025} Wage Data'; $$,
     $$ comment on column wages.noc is 'NOC'; $$,
     $$ comment on column wages.occupation_title is 'Occupation Title'; $$,
-    $$ comment on column wages.esdc_wage_rate_low is 'ESDC Wage Rate Low {2024}'; $$,
-    $$ comment on column wages.esdc_wage_rate_median is 'ESDC Wage Rate Median {2024}'; $$,
-    $$ comment on column wages.esdc_wage_rate_high is 'ESDC Wage Rate High {2024}'; $$,
-    $$ comment on column wages.calculated_median_annual_salary is 'Calculated Median Annual Salary {2024}'; $$,
+    $$ comment on column wages.esdc_wage_rate_low is 'ESDC Wage Rate Low {2025}'; $$,
+    $$ comment on column wages.esdc_wage_rate_median is 'ESDC Wage Rate Median {2025}'; $$,
+    $$ comment on column wages.esdc_wage_rate_high is 'ESDC Wage Rate High {2025}'; $$,
+    $$ comment on column wages.hours_week is 'Usual Hours Worked Per Week {2024-2025}'; $$,
+    $$ comment on column wages.calculated_median_annual_salary_old is 'Calculated Median Annual Salary {2025} (Old Method)'; $$,
+    $$ comment on column wages.calculated_median_annual_salary is 'Calculated Median Annual Salary {2025} (New Method)'; $$,
     $$ comment on column wages.source_information is 'Source Information'; $$
 ;
