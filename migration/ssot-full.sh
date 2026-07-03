@@ -63,8 +63,8 @@ ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/top_1
 cat "data/top_10_careers_by_aggregate_industry_2025-Sheet 1.csv" | php csv_extract.php --range 2 > load/openings_industry.csv
 
 # Career Trek
-ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/SSOT_WorkBC_Career_Trek_2025_26__Aprl24.xlsx" "data/SSOT_WorkBC_Career_Trek_2025_26__Aprl24-%s.csv"
-cat "data/SSOT_WorkBC_Career_Trek_2025_26__Aprl24-LMO.csv" | php csv_extract.php --range 2 > load/career_trek.csv
+ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/SSOT_WorkBC_Career_Trek_2025_26__Apr24.xlsx" "data/SSOT_WorkBC_Career_Trek_2025_26__Apr24-%s.csv"
+cat "data/SSOT_WorkBC_Career_Trek_2025_26__Apr24-LMO.csv" | php csv_extract.php --range 2 > load/career_trek.csv
 
 # Career Search Tool Job Openings
 ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/Career_Search_Tool_Job_Openings_2024_Jan_13_2025.xlsx" "data/Career_Search_Tool_Job_Openings_2024_Jan_13_2025-%s.csv"

@@ -90920,7 +90920,7 @@ labour_force_survey_regional_industry_region	2024 Labour Force Survey	2024-01-01
 labour_force_survey_regional_industry_province	2024 Labour Force Survey	2024-01-01 08:00:00+00	\N	2024_LFS_data_sheet(2025-02-26)	Regional Profiles	A35-U42	BC Labour Market Information Office	2025-11-24 08:00:00+00
 regional_labour_market_outlook	B.C. Labour Market Outlook	2025-01-01 08:00:00+00	\N	WorkBC_Regional_Profile_Data_2025	Regional Profiles - LMO	A5-L12	\N	2025-11-24 08:00:00+00
 regional_top_occupations	B.C. Labour Market Outlook	2025-01-01 08:00:00+00	\N	WorkBC_Regional_Profile_Data_2025	Top Occupation	A4-D73	\N	2026-01-12 08:00:00+00
-career_trek	\N	2026-01-01 08:00:00+00	\N	WorkBC_Career_Trek_2025__July07_25	LMO	A2-J195	\N	2026-04-24 08:00:00+00
+career_trek	\N	2026-01-01 08:00:00+00	\N	SSOT_WorkBC_Career_Trek_2025_26__Apr24	LMO	A2-J195	\N	2026-04-24 08:00:00+00
 career_search_openings	\N	2024-01-01 08:00:00+00	\N	Career_Search_Tool_Job_Openings_2024_Jan_13_2025	Sheet 1	A2-L35617	\N	2025-01-13 08:00:00+00
 career_search_groups	\N	2024-01-01 08:00:00+00	\N	career_search_tool_occupation_groups_manual_update_2024_Jan_15_2025	Sheet 1	A2-C10492	\N	2025-01-15 08:00:00+00
 career_transition_opportunities	\N	2025-01-01 08:00:00+00	\N	career_transition_tool_opportunities_2025 V2	Sheet 1	A2-I10041	\N	2024-12-01 08:00:00+00
