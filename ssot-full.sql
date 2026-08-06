@@ -6992,10 +6992,14 @@ COPY public.career_related (noc, noc_related) FROM stdin;
 12104	41403
 12110	13111
 12110	13112
+12111	12110
+12111	21223
 12111	11201
 12111	10019
 12111	14100
+12111	14101
 12111	12112
+12111	12010
 12112	12111
 12112	14100
 12112	52100
@@ -7148,6 +7152,8 @@ COPY public.career_related (noc, noc_related) FROM stdin;
 21102	21101
 21102	21331
 21102	80010
+21102	21330
+21102	41400
 21102	21100
 21103	52114
 21109	72600
@@ -7156,6 +7162,11 @@ COPY public.career_related (noc, noc_related) FROM stdin;
 21109	21322
 21110	20011
 21110	21101
+21110	22110
+21110	22113
+21110	22112
+21110	41400
+21110	21109
 21110	31100
 21111	41401
 21111	80010
@@ -7174,6 +7185,7 @@ COPY public.career_related (noc, noc_related) FROM stdin;
 21120	22232
 21200	20011
 21200	21223
+21200	40010
 21200	21201
 21200	21399
 21200	21231
@@ -7545,10 +7557,15 @@ COPY public.career_related (noc, noc_related) FROM stdin;
 31200	41409
 31200	41301
 31201	33109
+31201	31302
+31201	31301
 31202	30010
 31202	32109
 31203	30010
+31203	31204
 31203	42203
+31203	32109
+31203	31202
 31204	32109
 31204	31203
 31204	31202
@@ -7556,11 +7573,15 @@ COPY public.career_related (noc, noc_related) FROM stdin;
 31204	41301
 31209	31201
 31209	31102
+31209	31302
 31209	31303
 31209	32209
 31209	31100
 31209	31101
+31300	32101
 31300	30010
+31300	31302
+31300	31301
 31301	31302
 31301	31300
 31301	30010
@@ -7586,12 +7607,17 @@ COPY public.career_related (noc, noc_related) FROM stdin;
 32100	31101
 32100	33109
 32100	31111
+32100	32109
 32101	44101
 32101	33102
 32102	33102
+32102	44101
+32102	32101
+32102	31302
 32102	33109
+32102	31301
 32103	32129
-32103	32109
+32103	31209
 32104	65220
 32109	32101
 32109	33101
@@ -8245,6 +8271,12 @@ COPY public.career_related (noc, noc_related) FROM stdin;
 72010	92020
 72010	92023
 72011	72020
+72011	72203
+72011	72200
+72011	72201
+72011	72202
+72011	72205
+72011	72204
 72012	72014
 72013	70010
 72013	70011
@@ -8389,9 +8421,14 @@ COPY public.career_related (noc, noc_related) FROM stdin;
 72429	72421
 72429	72020
 72429	72423
+72500	72400
 72500	72021
 72500	73400
+72500	72401
+72500	72201
+72500	72105
 72500	83100
+72500	72106
 72501	72021
 72501	83100
 72501	73402
@@ -8423,6 +8460,7 @@ COPY public.career_related (noc, noc_related) FROM stdin;
 73101	72014
 73102	72014
 73110	72014
+73110	72102
 73111	94102
 73111	72014
 73112	72411
@@ -67596,7 +67634,6 @@ COPY public.high_opportunity_occupations (noc, occupation, openings_forecast, wa
 33109	Other assisting occupations in support of health services	2850	18	24.99	30	52119.144	Social, Realistic, Conventional	Active Listening	Speaking	Reading Comprehension	3	british_columbia
 40010	Government managers - health and social policy development and program administration	580	43.08	54	80	112622.4	Enterprising	Active Listening	Reading Comprehension	Time Management	0	british_columbia
 40011	Government managers - economic analysis, policy development and program administration	850	43.75	60	75	125136	Enterprising	Active Listening	Reading Comprehension	Time Management	0	british_columbia
-00018	Senior managers - public and private sector	120	\N	\N	\N	125000	\N	\N	\N	\N	0	northeast
 40019	Other managers in public administration	280	35.9	54.95	75	114603.72	Enterprising	Active Listening	Reading Comprehension	Speaking	0	british_columbia
 40020	Administrators - post-secondary education and vocational training	1510	39.56	57.69	78.5699999999999	120318.264	Enterprising	Reading Comprehension	Active Listening	Time Management	0	british_columbia
 40021	School principals and administrators of elementary and secondary education	2290	36.86	56.73	76.92	118316.088	Enterprising	Critical Thinking	Judgment and Decision Making	Speaking	0	british_columbia
@@ -67849,6 +67886,7 @@ COPY public.high_opportunity_occupations (noc, occupation, openings_forecast, wa
 92014	Supervisors, forest products processing	30	28	39.5	57.69	82381.2	Enterprising	Active Listening	Management of Personnel Resources	Speaking	2	kootenay
 92100	Power engineers and power systems operators	260	31.07	40.7	60	84883.92	Realistic	Operations Monitoring	Operation and Control	Critical Thinking	2	kootenay
 93100	Central control and process operators, mineral and metal processing	140	38	40.65	48.3	84779.64	Realistic	Operations Monitoring	Operation and Control	Monitoring	3	kootenay
+00018	Senior managers - public and private sector	120	\N	\N	\N	125000	\N	\N	\N	\N	0	northeast
 10011	Human resources managers	40	31.25	56.5	79.33	117836.4	Enterprising	Active Listening	Speaking	Reading Comprehension	0	northeast
 10021	Banking, credit and other investment managers	40	35.1	52.88	104.4	110286.528	Enterprising	Critical Thinking	Reading Comprehension	Active Listening	0	northeast
 11100	Financial auditors and accountants	30	24.04	37.86	62.37	78960.816	Conventional, Enterprising	Reading Comprehension	Active Listening	Critical Thinking	1	northeast
@@ -68091,7 +68129,6 @@ COPY public.high_opportunity_occupations (noc, occupation, openings_forecast, wa
 31204	Kinesiologists and other professional occupations in therapy and assessment	120	20	30	45.92	62568	Social	Active Listening	Social Perceptiveness	Speaking	1	thompson_okanagan
 31209	Other professional occupations in health diagnosing and treating	70	36973	71500	124000	71500	Investigative, Social	Active Listening	Critical Thinking	Speaking	1	thompson_okanagan
 31300	Nursing coordinators and supervisors	130	27	47.58	57.13	99232.848	Social	Active Listening	Social Perceptiveness	Critical Thinking	1	thompson_okanagan
-42101	Firefighters	240	34	48.7	61.81	101568.72	Realistic	Critical Thinking	Active Listening	Speaking	2	thompson_okanagan
 31301	Registered nurses and registered psychiatric nurses	3070	32.5	45	52	93852	Social	Active Listening	Social Perceptiveness	Critical Thinking	1	thompson_okanagan
 31302	Nurse practitioners	50	39.2	55	73	114708	Social, Investigative	Active Listening	Reading Comprehension	Critical Thinking	1	thompson_okanagan
 32100	Opticians	90	21	27	32	56311.2	Enterprising, Conventional	Speaking	Active Listening	Reading Comprehension	2	thompson_okanagan
@@ -68131,6 +68168,7 @@ COPY public.high_opportunity_occupations (noc, occupation, openings_forecast, wa
 41404	Health policy researchers, consultants and program officers	180	27.4	40	52.88	83424	Conventional, Enterprising	Active Listening	Speaking	Reading Comprehension	1	thompson_okanagan
 41406	Recreation, sports and fitness policy researchers, consultants and program officers	90	25.64	30	37.17	62568	Enterprising	Speaking	Active Listening	Coordination	1	thompson_okanagan
 42100	Police officers (except commissioned)	380	35.95	50.96	62.5	106282.176	Enterprising, Realistic, Conventional	Active Listening	Speaking	Critical Thinking	2	thompson_okanagan
+42101	Firefighters	240	34	48.7	61.81	101568.72	Realistic	Critical Thinking	Active Listening	Speaking	2	thompson_okanagan
 43201	Correctional service officers	90	32	36	48.35	75081.6	Enterprising, Realistic	Active Listening	Monitoring	Social Perceptiveness	3	thompson_okanagan
 43202	By-law enforcement and other regulatory officers	60	27	38.01	46	79273.656	Conventional	Active Listening	Speaking	Critical Thinking	3	thompson_okanagan
 51111	Authors and writers (except technical)	190	22	35.67	50	74393.352	Artistic	Writing	Reading Comprehension	Speaking	1	thompson_okanagan
@@ -68939,11 +68977,11 @@ COPY public.monthly_labour_market_updates (year, month, total_employed, total_un
 2025	7	2952600	184100	177500	356400	1987400	608700	356900	1997700	614200	1388600	1564000	1409000	1559900	-0.6	-16300	-1.2	-29300	2.2	13000	0.3	5.9	-0.2	64.8	-0.8	5.6	-0.6	65	4837200	806500	3063200	552100	150300	141500	69700	54200	6.2	5.6	2982400	5.9	4	477400	6.4	6	1947900	5.4	5.6	314400	5.9	6	85400	5.4	4.8	77800	5.6	5.9	42200	7	6.3	37400	0	0	12.7	1600	-2.9	-7600	-1.8	-4200	-1.5	-2800	-0.8	-3200	-0.4	-800	-5.4	-2500	4.6	5200	-0.8	-2700	-1.8	-2900	-0.6	-1000	12.4	1500	0.7	3000	1.9	1800	-1.2	-1700
 2025	8	2936900	195600	184100	349200	1973700	614000	356400	1987400	608700	1378600	1558300	1388600	1564000	-0.5	-15700	-0.4	-9300	-1.1	-6400	0.3	6.2	-0.2	64.6	0.3	5.9	-0.2	64.8	4842000	807000	3067100	552000	150400	141600	69700	54100	6.3	5.8	2968500	6	4	473500	6.6	6.3	1928100	5.1	5.8	322900	5.8	7	89100	7.2	4.9	76500	5.9	7.6	41400	8.2	6.2	36800	0.4	700	9.2	1300	4.4	11400	-4.7	-10500	2.6	4900	-2.5	-10400	3.1	5700	-1.6	-700	-1.8	-2100	0.6	1800	-0.6	-1000	-5.3	-8400	2.2	300	1.7	7600	0.1	100	-11.9	-16500
 2025	9	2944700	201900	195600	348100	1991500	605200	349200	1973700	614000	1394300	1550400	1378600	1558300	0.3	7800	0.1	2200	0.9	5700	0.2	6.4	0.3	64.9	0.3	6.2	-0.2	64.6	4845600	807500	3070000	552100	150500	141600	69600	54200	6.5	6	2949000	5.6	4.5	472500	6.7	6.5	1907900	6	5.2	325900	6	5.7	89100	8.7	5.2	76600	6.7	7.9	40500	8.1	5.7	36500	6.5	12200	18.7	2900	-0.3	-800	5	10700	1.6	3100	-0.1	-500	1.6	3000	-3.5	-1500	1.4	1600	-2.8	-8800	-0.5	-800	-0.4	-600	-2.9	-400	-3.7	-16700	-4.2	-4100	7	8600
+2025	10	2941800	207300	201900	343100	1995700	603000	348100	1991500	605200	1394800	1546900	1394300	1550400	-0.1	-2900	0	100	-0.5	-3200	0.2	6.6	0	64.9	0.1	6.1	0.1	65	4847700	807900	3071600	552000	150600	141600	69700	54200	6.5	5.8	2942000	5.3	4.6	472200	6.6	6.3	1902800	7.3	4.6	325500	6.3	5.2	87300	9.3	5.3	77500	6.7	7.5	40300	7.6	4.9	36400	-3.1	-6100	6	1100	-1.8	-4700	1.9	4200	-0.2	-300	0.3	1400	-0.6	-1100	-9.1	-3800	-5	-5800	-0.3	-900	1.5	2400	4.7	7000	3.7	500	0.6	2800	-1.2	-1100	0.9	1200
 2025	11	2948000	203000	207300	358800	1973100	616100	343100	1995700	603000	1395300	1552700	1394800	1546900	0.2	6200	0.1	2700	0.6	3600	-0.2	6.4	0.1	65	0.2	6.6	0	64.9	4848400	808200	3072200	551900	150700	141600	69600	54200	6.1	5.5	2942200	4.5	4.4	473300	6	6	1911000	8.1	4.3	320600	6.8	3.6	82000	8.3	5.8	78800	7.4	5.4	39900	6.4	5	36700	0.3	500	7.7	1500	0	0	-0.9	-2000	-3.5	-6800	1.3	5200	-1	-1900	0.5	200	3.3	3700	3	9400	0.4	700	-2.1	-3300	10	1400	-0.6	-2800	0.7	600	0.1	100
 2025	12	2944700	200600	203000	342300	1990500	611800	358800	1973100	616100	1406400	1538200	1395300	1552700	-0.1	-3300	0.1	1300	-0.8	-4600	0	6.4	-0.1	64.9	0.1	6.1	0.1	65	4848000	808200	3072100	551600	150800	141600	69600	54200	6	5.3	2938100	4.5	4.3	469600	5.9	5.4	1911500	7.4	5.8	318900	6.3	6.3	81800	8.1	5.5	81200	8.3	6.4	39000	7.4	7	36200	2.3	4500	6.2	1300	3.5	9100	1.1	2600	0.2	400	1.5	6000	-5.2	-9800	9.1	3500	1	1100	-1.5	-4900	0.4	700	-2.9	-4400	0	0	-1.1	-4800	1.1	1000	-7.5	-9900
-2025	10	2941800	207300	201900	343100	1995700	603000	348100	1991500	605200	1394800	1546900	1394300	1550400	-0.1	-2900	0	100	-0.5	-3200	0.2	6.6	0	64.9	0.1	6.1	0.1	65	4847700	807900	3071600	552000	150600	141600	69700	54200	6.5	5.8	2942000	5.3	4.6	472200	6.6	6.3	1902800	7.3	4.6	325500	6.3	5.2	87300	9.3	5.3	77500	6.7	7.5	40300	7.6	4.9	36400	-3.1	-6100	6	1100	-1.8	-4700	1.9	4200	-0.2	-300	0.3	1400	-0.6	-1100	-9.1	-3800	-5	-5800	-0.3	-900	1.5	2400	4.7	7000	3.7	500	0.6	2800	-1.2	-1100	0.9	1200
-2026	2	2927400	190700	190400	331800	1970000	625600	343500	1983200	620900	1408900	1518500	1413700	1534000	-0.7	-20200	-1.4	-32500	2.2	12300	0	6.1	-0.4	64.4	0.1	6.1	0.1	65	4844200	808100	3068600	551200	150900	141600	69700	54200	6	5.9	2912400	5.2	4.3	457700	6	6.3	1906100	6.5	5.7	311700	6.4	4.4	82200	6.7	7.3	82300	9.5	4.3	37200	8.8	6.2	35200	3.8	7200	9.2	2000	-2.5	-6900	-0.7	-1600	-2.8	-5400	-1.2	-4900	-2	-3600	-2.4	-1000	-2.9	-3400	1.7	5300	-0.1	-100	-1.6	-2400	0.6	100	0.6	2400	-3.9	-3800	-3.4	-4500
 2026	1	2947600	190400	199600	343500	1983200	620900	342000	1991100	611000	1413700	1534000	1405900	1538200	0.1	3500	1.6	36400	-5.5	-33000	-0.2	6.1	-0.1	64.8	-0.10000000000000053	6.3	-0.09999999999999432	64.9	4846400	808100	3070800	551300	150800	141500	69600	54200	6	5.7	2924800	4.5	4.3	463500	6	6.2	1907500	6.8	5.2	316800	5.9	3.8	82200	7.5	7.2	81400	9.6	4	37700	7.8	6.3	35700	-2.784810126582282	-5500	-3.111111111111109	-700	0.1474926253687281	400	-3.520208604954367	-8100	0.9554140127388644	1800	1.4775977121067596	6200	0.9024252679074918	1600	-1.9093078758949833	-800	-0.2581755593803803	-300	-0.44800000000000395	-1400	-1.9435736677115956	-3100	2.779661016949153	4100	3.2467532467532534	500	-1.282948448798693	-5500	5.5734190782422255	5200	7.585644371941269	9300
+2026	2	2927400	190700	190400	331800	1970000	625600	343500	1983200	620900	1408900	1518500	1413700	1534000	-0.7	-20200	-1.4	-32500	2.2	12300	0	6.1	-0.4	64.4	0.1	6.1	0.1	65	4844200	808100	3068600	551200	150900	141600	69700	54200	6	5.9	2912400	5.2	4.3	457700	6	6.3	1906100	6.5	5.7	311700	6.4	4.4	82200	6.7	7.3	82300	9.5	4.3	37200	8.8	6.2	35200	3.8	7200	9.2	2000	-2.5	-6900	-0.7	-1600	-2.8	-5400	-1.2	-4900	-2	-3600	-2.4	-1000	-2.9	-3400	1.7	5300	-0.1	-100	-1.6	-2400	0.6	100	0.6	2400	-3.9	-3800	-3.4	-4500
 2026	3	2908200	209800	190700	327600	1955000	625600	331800	1970000	625600	1396100	1512100	1408900	1518500	-0.7	-19200	-1	-23700	0.8	4600	0.6	6.7	0	64.4	0.1	6.1	0.1	65	4842000	808200	3065800	551300	150900	141700	69800	54300	6.6	5.3	2898200	5.7	4.3	455500	6.5	5.4	1899800	7.8	5.8	306100	7.1	6.3	82200	6.3	5.5	82900	9.5	6.4	37100	8.7	7	34600	3.8	7200	9.2	2000	-2.5	-6900	-0.7	-1600	-2.8	-5400	-1.2	-4900	-2	-3600	-2.4	-1000	-2.9	-3400	1.7	5300	-0.1	-100	-1.6	-2400	0.6	100	0.6	2400	-3.9	-3800	-3.4	-4500
 2026	4	2903900	210700	209800	331600	1947400	624900	327600	1955000	625600	1390200	1513700	1396100	1512100	-0.1	-4300	-0.5	-11700	1.2	7300	0.1	6.8	0	64.4	0.6	6.7	0	64.4	4840200	808500	3063200	551600	151000	141800	69900	54300	6.7	5.3	2898300	5.8	4.3	455700	6.7	5.4	1898400	8.1	5.8	302200	6.5	6.3	83300	5.8	5.5	86200	8.8	6.4	38200	9	7	34300	-3.3	-6400	-6.4	-1400	0.5	1400	1.5	3300	0.9	1600	0.5	1900	2.2	3900	-2.9	-1200	-5.3	-6200	0.4	1200	1.9	2900	-2.6	-3800	-3.4	-600	-1.9	-7700	7.3	6600	0.2	200
 \.
@@ -70895,7 +70933,6 @@ COPY public.onet_nocs (noc2021, noc2016, soc2018, soc2018_title, soc2019) FROM s
 22300	2231	17-3029	Engineering Technologists and Technicians, Except Drafters, All Other	17-3029.08
 22300	2231	19-4042	Environmental Science and Protection Technicians, Including Health	19-4042.00
 22300	2231	53-6041	Traffic Technicians	53-6041.00
-31103	3114	29-1131	Veterinarians	29-1131.00
 22301	2232	17-3021	Aerospace Engineering and Operations Technologists and Technicians	17-3021.00
 22301	2232	17-3024	Electro-Mechanical and Mechatronics Technologists and Technicians	17-3024.00
 22301	2232	17-3024	Electro-Mechanical and Mechatronics Technologists and Technicians	17-3024.01
@@ -70982,6 +71019,7 @@ COPY public.onet_nocs (noc2021, noc2016, soc2018, soc2018_title, soc2019) FROM s
 31101	3111	29-1249	Surgeons, All Other	29-1249.00
 31102	3112	29-1215	Family Medicine Physicians	29-1215.00
 31103	3114	19-1041	Epidemiologists	19-1041.00
+31103	3114	29-1131	Veterinarians	29-1131.00
 31110	3113	29-1021	Dentists, General	29-1021.00
 31110	3113	29-1022	Oral and Maxillofacial Surgeons	29-1022.00
 31110	3113	29-1023	Orthodontists	29-1023.00
@@ -71241,7 +71279,6 @@ COPY public.onet_nocs (noc2021, noc2016, soc2018, soc2018_title, soc2019) FROM s
 41200	4011	25-1111	Criminal Justice and Law Enforcement Teachers, Postsecondary	25-1111.00
 41200	4011	25-1112	Law Teachers, Postsecondary	25-1112.00
 41200	4011	25-1113	Social Work Teachers, Postsecondary	25-1113.00
-41302	4154	21-2011	Clergy	21-2011.00
 41200	4011	25-1121	Art, Drama, and Music Teachers, Postsecondary	25-1121.00
 41200	4011	25-1122	Communications Teachers, Postsecondary	25-1122.00
 41200	4011	25-1123	English Language and Literature Teachers, Postsecondary	25-1123.00
@@ -71322,6 +71359,7 @@ COPY public.onet_nocs (noc2021, noc2016, soc2018, soc2018_title, soc2019) FROM s
 41301	3144	29-1129	Therapists, All Other	29-1129.02
 41301	3144	29-9091	Athletic Trainers	29-9091.00
 41301	4153	29-9092	Genetic Counselors	29-9092.00
+41302	4154	21-2011	Clergy	21-2011.00
 41310	0431	11-1021	General and Operations Managers	11-1021.00
 41310	4165	13-1041	Compliance Officers	13-1041.00
 41310	4165	13-1041	Compliance Officers	13-1041.01
@@ -72762,7 +72800,6 @@ COPY public.openings_careers (noc, description, industry_1_name, industry_1_perc
 63220	Shoe repairers and shoemakers	other_private_services	64	50	retail_trade	26	20	manufacturing	10	10	\N	\N	\N	\N	\N	\N
 63221	Upholsterers	other_private_services	71	100	manufacturing	12	20	transportation_warehousing	9	10	retail_trade	5	10	construction	3	0
 73209	Other repairers and servicers	retail_trade	63	320	other_private_services	22	110	wholesale_trade	8	40	information_culture_recreation	4	20	public_administration	3	10
-72320	Bricklayers	construction	95	470	business_building_other_support_services	3	20	professional_scientific_technical_services	1	0	retail_trade	1	0	educational_services	1	0
 64100	Retail salespersons and visual merchandisers	retail_trade	85	20990	wholesale_trade	6	1510	manufacturing	3	810	information_culture_recreation	3	730	professional_scientific_technical_services	3	710
 64101	Sales and account representatives - wholesale trade (non-technical)	wholesale_trade	56.99999999999999	1730	manufacturing	18	540	professional_scientific_technical_services	10	300	retail_trade	9	280	information_culture_recreation	5	170
 64200	Tailors, dressmakers, furriers and milliners	other_private_services	45	360	retail_trade	25	200	manufacturing	17	140	professional_scientific_technical_services	7.000000000000001	60	information_culture_recreation	5	40
@@ -72829,6 +72866,7 @@ COPY public.openings_careers (noc, description, industry_1_name, industry_1_perc
 72301	Steamfitters, pipefitters and sprinkler system installers	construction	70	600	manufacturing	15	120	mining_oil_gas_extraction	9	80	other_private_services	5	40	utilities	2	20
 72310	Carpenters	construction	94	9260	manufacturing	2	200	information_culture_recreation	1	140	public_administration	1	110	business_building_other_support_services	1	100
 72311	Cabinetmakers	manufacturing	54	370	construction	39	270	professional_scientific_technical_services	3	20	educational_services	2	10	retail_trade	1	10
+72320	Bricklayers	construction	95	470	business_building_other_support_services	3	20	professional_scientific_technical_services	1	0	retail_trade	1	0	educational_services	1	0
 72321	Insulators	construction	96	360	manufacturing	2	10	retail_trade	1	0	wholesale_trade	1	0	business_building_other_support_services	1	0
 72400	Construction millwrights and industrial mechanics	manufacturing	50	1100	mining_oil_gas_extraction	21	470	construction	12	260	other_private_services	9	210	wholesale_trade	7.000000000000001	160
 72401	Heavy-duty equipment mechanics	other_private_services	31	580	mining_oil_gas_extraction	24	460	wholesale_trade	20	380	construction	13	250	transportation_warehousing	12	220
@@ -90900,14 +90938,14 @@ COPY public.skills (noc, skills_competencies, importance, importance_description
 
 COPY public.sources (endpoint, label, period, datapoint, filename, sheet, range, author, date) FROM stdin;
 wages	B.C. Labour Market Information Office, derived from 2025 Job Bank Wage data	2025-01-01 08:00:00+00	\N	WorkBC_2025_Wage_Data	Data Table	A2-G513	\N	2026-02-02 08:00:00+00
-titles	\N	2021-01-01 08:00:00+00	\N	NOC2021/noc_2021_version_1.0_-_elements.csv	\N	\N	\N	2025-02-18 08:00:00+00
+titles	\N	2021-01-01 08:00:00+00	\N	NOC2021/noc_2021_version_1.0_-_elements.csv	\N	\N	\N	2026-08-06 08:00:00+00
 skills	\N	2021-01-01 08:00:00+00	\N	skills_data_for_career_profiles_2025-08-21	Sheet 1	A2-G17641	\N	2025-11-24 08:00:00+00
 openings_careers	B.C. Labour Market Outlook	2025-01-01 08:00:00+00	\N	Job_Openings_by_Industry_LMO_2025	Career Profiles	A5-Q515	\N	2025-11-24 08:00:00+00
 education	\N	2023-01-01 08:00:00+00	\N	All_Occupations'_TEERs_2023_Jan22_24	Sheet 1	A2-D513	\N	2024-01-22 08:00:00+00
 census	2021 Census	2021-01-01 08:00:00+00	\N	2021_Census_Jan18_23	Career Profiles	A5-R516	\N	2023-01-18 08:00:00+00
 career_regional	B.C. Labour Market Outlook	2025-01-01 08:00:00+00	\N	WorkBC_Career_Profile_Data_2025	Regional Outlook	A5-AC516	\N	2025-11-24 08:00:00+00
 career_provincial	B.C. Labour Market Outlook	2025-01-01 08:00:00+00	\N	WorkBC_Career_Profile_Data_2025	Provincial Outlook	A4-L515	\N	2025-11-24 08:00:00+00
-career_related	\N	2021-01-01 08:00:00+00	\N	NOC2021/noc_2021_version_1.0_-_elements.csv	\N	\N	\N	2025-07-02 08:00:00+00
+career_related	\N	2021-01-01 08:00:00+00	\N	NOC2021/noc_2021_version_1.0_-_elements.csv	\N	\N	\N	2026-08-06 08:00:00+00
 high_opportunity_occupations	\N	2025-01-01 08:00:00+00	\N	HOO_BC_and_Region_for_new_tool_(corrected)2025	Sheet1	A2-O851	B.C. Labour Market Information Office	2025-11-24 08:00:00+00
 occupational_interests	\N	2023-01-01 08:00:00+00	\N	Occupational_Interests_2023_Apr5_24	Sheet1	A2-C1537	\N	2024-04-05 08:00:00+00
 fyp_categories_interests	\N	2025-01-01 08:00:00+00	\N	FYP - Categories, Areas of interest, and NOCs 2025-04-23	CONSOLIDATED LIST	A2-F909	\N	2025-04-23 08:00:00+00
@@ -91014,7 +91052,7 @@ monthly_labour_market_updates	Labour Force Survey (monthly, seasonally adjusted)
 monthly_labour_market_updates	Labour Force Survey (monthly, seasonally adjusted)	2026-02-01 08:00:00+00	\N	WorkBC LMS February_2026	Sheet3	\N	\N	2026-04-14 11:00:00+00
 monthly_labour_market_updates	Labour Force Survey (monthly, seasonally adjusted)	2026-01-01 08:00:00+00	\N	WorkBC LMS January_2026 (Updated)	Sheet3	\N	\N	2026-04-29 14:06:00+00
 monthly_labour_market_updates	Labour Force Survey (monthly, seasonally adjusted)	2026-03-01 08:00:00+00	\N	WorkBC LMS March_2026	Sheet3	\N	\N	2026-05-05 10:39:00+00
-monthly_labour_market_updates	Labour Force Survey (monthly, seasonally adjusted)	2026-04-01 08:00:00+00	\N	WorkBC LMS April_2026_1	Sheet3	\N	\N	2026-05-15 08:24:00+00
+monthly_labour_market_updates	Labour Force Survey (monthly, seasonally adjusted)	2026-04-01 08:00:00+00	\N	WorkBC LMS April_2026	Sheet3	\N	\N	2026-05-15 08:24:00+00
 \.
 
 
@@ -93988,6 +94026,7 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 21102	Exploration geologist	1
 21102	Exploration geophysicist	0
 21102	Fisheries oceanographer	0
+21102	Forensic geologist	0
 21102	Geochemist	1
 21102	Geodesist	0
 21102	Geological oceanographer	0
@@ -94080,6 +94119,7 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 21110	Biologist	1
 21110	Biology systematist	0
 21110	Biology taxonomist	0
+21110	Biology technologist	0
 21110	Biomedical nanotechnology research scientist	0
 21110	Botanist	1
 21110	Bryologist	0
@@ -94103,11 +94143,13 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 21110	Domestic animal scientist	0
 21110	Ecobiologist	0
 21110	Ecologist	1
-21110	Economic botanist	0
+21110	Professional biologist	0
 21110	Embryologist	1
 21110	Entomologist	0
 21110	Environmental and occupational toxicologist	0
 21110	Environmental biologist	0
+21110	Environmental coordinator	0
+21110	Environmental planner	0
 21110	Environmental toxicologist	0
 21110	Enzymologist	0
 21110	Enzymology biologist	0
@@ -94177,6 +94219,8 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 21110	Protozoologist	1
 21110	Protozoology biologist	0
 21110	Public health bacteriologist	0
+21110	Registered biological technologist (RBTech)	0
+21110	Registered professional biologist (RPBio)	0
 21110	Regulatory toxicologist	0
 21110	Research biologist	0
 21110	Rural ecologist	0
@@ -94460,6 +94504,7 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 21222	Enterprise architect - information technology (IT)	0
 21222	Informatics applications analyst	0
 21222	Informatics consultant	1
+21311	Microwave systems engineer	0
 21222	Informatics quality assurance (QA) analyst	0
 21222	Information systems analyst - computer systems	0
 21222	Information systems contingency planner	0
@@ -94805,7 +94850,6 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 21311	Information technology (IT) solutions engineer	0
 21311	Infrastructure architect - information technology (IT)	0
 21311	Microprocessor designer and application engineer	0
-21311	Microwave systems engineer	0
 21311	Microwave transmission systems engineer	0
 21311	Network architect - computer systems	0
 21311	Network capacity planner	0
@@ -96404,7 +96448,6 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 31100	Skin specialist	0
 31100	Specialist doctor	0
 31100	Specialist in cardiology	0
-31103	Veterinary pharmacologist	0
 31100	Specialist in community medicine	0
 31100	Specialist in critical care medicine	0
 31100	Specialist in emergency medicine	0
@@ -96528,6 +96571,7 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 31103	Veterinary ophthalmologist	0
 31103	Veterinary parasitologist	0
 31103	Veterinary pathologist	1
+31103	Veterinary pharmacologist	0
 31103	Veterinary physiologist	1
 31103	Veterinary radiologist	0
 31103	Veterinary surgeon	1
@@ -96701,7 +96745,6 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 31209	Osteopathic physician	1
 31209	Podiatrist	1
 31300	Acute care coordinator - nursing	0
-31300	Assistant head nurse	0
 31300	Birthing room nursing supervisor	0
 31300	Burn unit nursing coordinator	0
 31300	Burn unit nursing supervisor	0
@@ -96709,10 +96752,10 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 31300	Critical care nursing supervisor	0
 31300	Delivery room nursing supervisor	0
 31300	Geriatric nursing supervisor	0
-31300	Head nurse	0
 31300	Nurse - team leader	0
 31300	Nursing care coordinator	1
 31300	Nursing coordinator	0
+31300	Nursing manager	0
 31300	Nursing officer - Canadian Armed Forces	0
 31300	Nursing services coordinator	1
 31300	Nursing supervisor	1
@@ -96727,9 +96770,7 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 31300	Rehabilitation nursing supervisor	0
 31300	Surgical coordinator - nursing	0
 31300	Surgical ward supervisor - nursing	0
-31300	Ward supervisor - nursing	0
 31301	Ambulatory care nurse	0
-31301	Bedside nurse	0
 31301	Birthing room nurse	0
 31301	Burn patient care nurse	0
 31301	Burn victim care nurse	0
@@ -96751,6 +96792,8 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 31301	Doctor's office nurse	0
 31301	Emergency care nurse	1
 31301	Emergency nurse	0
+31301	Employed student nurse (ESN)	0
+31301	Employed student psychiatric nurse (ESPN)	0
 31301	First aid nurse	0
 31301	Float nurse	0
 31301	Foot care nurse	0
@@ -96759,7 +96802,6 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 31301	Geriatric care nurse	0
 31301	Geriatric nurse	0
 31301	Gerontology nurse	0
-31301	Graduate nurse	0
 31301	Graduate nurse - occupational health	0
 31301	Graduate nurse - physician's office	0
 31301	Graduate private duty nurse	0
@@ -96768,7 +96810,6 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 31301	Home care nurse	0
 31301	Hospital hygiene nurse	0
 31301	Hospital hygienist - nursing	0
-31301	Hospital nurse	0
 31301	Industrial nurse	0
 31301	Infection control coordinator - hospital	0
 31301	Infection control nurse	0
@@ -96776,6 +96817,7 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 31301	Intensive care nurse	1
 31301	Intensive care unit (ICU) nurse	0
 31301	Liaison nurse	0
+31301	Licensed graduate nurse (LGN)	0
 31301	Medical intensive care nurse	0
 31301	Mental health nurse	0
 31301	Nephrology and kidney transplantation nurse	0
@@ -96797,8 +96839,6 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 31301	Occupational health nurse	1
 31301	Occupational health nurse consultant	0
 31301	Occupational medicine nurse	0
-31301	Office nurse	0
-31301	On-call nurse	0
 31301	Oncology nurse	0
 31301	Operating room (OR) nurse	0
 31301	Out-patient clinic nurse	0
@@ -96828,6 +96868,9 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 31301	Registered nurse - public and community health	0
 31301	Registered nurse - telehealth	0
 31301	Registered nurse (R.N.)	1
+31301	Registered nurse with certified practice (RN-C), first call	0
+31301	Registered nurse with certified practice (RN-C), remote nursing	0
+31301	Registered nurse with certified practice (RN-C), reproductive health	0
 31301	Registered psychiatric nurse (R.P.N.)	1
 31301	Registered public health nurse	0
 31301	Respiratory care nurse	0
@@ -96835,13 +96878,10 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 31301	School health nurse	0
 31301	School nurse	0
 31301	Scrub nurse	0
-31301	Staff nurse	0
 31301	Surgical intensive care nurse	0
 31301	Telehealth registered nurse	0
 31301	Tele-nurse	0
 31301	Triage nurse	0
-31301	Victoria Order nurse	0
-31301	Victorian Order of Nurses (VON) nurse	0
 31301	Visiting nurse	0
 31301	Ward nurse	0
 31301	Youth centre nurse	0
@@ -96951,23 +96991,16 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 32103	Cardiopulmonary technologist	1
 32103	Cardiopulmonary technology instructor	0
 32103	Cardiopulmonary technology supervisor	0
-32103	Cardiovascular perfusion clinical instructor	0
 32103	Cardiovascular perfusion instructor	0
 32103	Cardiovascular perfusion supervisor	1
-32103	Cardiovascular perfusion technologist	0
 32103	Cardiovascular perfusionist	1
 32103	Certified clinical perfusionist (CCP)	1
 32103	Chief perfusionist	0
 32103	Chief respiratory technologist	1
-32103	Clinical perfusion clinical instructor	0
 32103	Clinical perfusion supervisor	0
 32103	Clinical perfusionist	1
-32103	Extracorporal circulation technologist	0
-32103	Extracorporal technician	0
-32103	Extracorporal technologist	0
 32103	Inhalation technologist	0
 32103	Oxygen therapy technician	0
-32103	Perfusion technologist	0
 32103	Perfusionist	1
 32103	Polysomnographic technologist	0
 32103	Pulmonary function technologist	0
@@ -96997,7 +97030,12 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 32104	Veterinary technician	1
 32104	Veterinary technician supervisor	0
 32104	Veterinary technologist	1
+32109	Activity aide	0
+32109	Activity coordinator	0
+32109	Activity worker	0
 32109	Assistive listening device technician	0
+32109	Recreation support worker	0
+32109	Therapeutic therapy assistant	0
 32109	Audiological technician	0
 32109	Audiology technician	1
 32109	Audiometrician	0
@@ -97041,6 +97079,10 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 32109	Physiotherapy aide	0
 32109	Physiotherapy assistant	1
 32109	Physiotherapy technician	1
+32109	Recreation assistant	0
+32109	Recreation coordinator	0
+32109	Recreation program assistant	0
+32109	Recreation programmer	0
 32109	Recreation therapy assistant	0
 32109	Rehabilitation assistant	1
 32109	Speech aide	1
@@ -97683,10 +97725,10 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 40010	Rural and Aboriginal housing regional manager - government services	0
 40010	Rural and Aboriginal housing services district director - government services	0
 40010	Rural and Native housing regional manager - government services	0
+40042	Admiral	1
 40010	Rural and Native housing services district director - government services	0
 40010	Rural housing programs director - government services	0
 40010	Settlement programs director - government services	0
-40030	Director of counselling	0
 40010	Social development programs chief - government services	0
 40010	Social planning director - government services	0
 40010	Social programs administrator - government services	0
@@ -97780,7 +97822,6 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 40012	Education curriculum development director	1
 40012	Education curriculum development director - public administration	0
 40012	Education director	1
-40030	Director of guidance services	0
 40012	Education policy analysis and research director	1
 40012	Education policy and research director - public administration	0
 40012	Education policy development manager	0
@@ -97881,6 +97922,7 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 40020	Dean of science	0
 40020	Dean of student activities	0
 40020	Dean of technical and technological programs	0
+40042	Air combat systems officer	0
 40020	Director of admissions - post-secondary education	0
 40020	Director of research - university or college	0
 40020	Director of student affairs	0
@@ -97996,6 +98038,8 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 40030	Counselling services director	0
 40030	Counselling services manager	0
 40030	Detention centre director	1
+40030	Director of counselling	0
+40030	Director of guidance services	0
 40030	Director of operations - housing department	0
 40030	Director of public welfare	0
 40030	Environmental group director	1
@@ -98107,8 +98151,6 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 40041	Sawmill fire chief	0
 40041	Senior firefighting officer	0
 40042	Acting sub-lieutenant	0
-40042	Admiral	1
-40042	Air combat systems officer	0
 40042	Armour officer	0
 40042	Artillery officer	1
 40042	Brigadier general	1
@@ -98353,7 +98395,6 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 41200	Religion professor - university	0
 41200	Research professor - university	0
 41200	Sculpture professor - university	0
-41302	Assistant minister - religion	0
 41200	Social sciences professor - university	0
 41200	Social work professor - university	0
 41200	Sociology professor - university	0
@@ -98460,7 +98501,6 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 41210	Drafting teacher - college level	0
 41210	Drafting teacher	0
 41210	Early childhood education instructor - college level	0
-41302	Bishop	1
 41210	Early childhood education teacher - college level	0
 41210	Economics teacher - college level	0
 41210	Electrolysis instructor - vocational institute	0
@@ -98566,7 +98606,6 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 41210	Vocational trainer	0
 41210	Welding teacher - technical institute	0
 41210	Workplace trainer	0
-41302	Cardinal	1
 41220	Aboriginal school community teacher - secondary school	0
 41220	Academic subjects high school teacher	0
 41220	Academic subjects secondary school teacher	0
@@ -98787,6 +98826,9 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 41301	Zootherapist	0
 41302	Archbishop	1
 41302	Archdeacon	0
+41302	Assistant minister - religion	0
+41302	Bishop	1
+41302	Cardinal	1
 41302	Chancellor - religion	0
 41302	Chaplain	1
 41302	Chaplain - Canadian Armed Forces	0
@@ -98906,7 +98948,6 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 41400	Bioscience officer - Canadian Armed Forces	0
 41400	Certified ergonomist	1
 41400	Certified industrial hygienist	0
-41405	Curriculum developer	1
 41400	Communications policy researcher	0
 41400	Disaster emergency response planner	0
 41400	Emergency management analyst	1
@@ -99247,6 +99288,7 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 41405	Course coordinator - secondary school	0
 41405	Course coordinator - university	0
 41405	Curriculum consultant	0
+41405	Curriculum developer	1
 41405	Curriculum planner	1
 41405	Distance education program coordinator	0
 41405	Distance education project officer	0
@@ -99359,7 +99401,6 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 41406	Sports, recreational and leisure programs supervisor	0
 41406	Teen club programs coordinator	0
 41406	Youth recreational and leisure activities consultant	0
-42100	Constable	1
 41406	Youth recreational and leisure activities counsellor	0
 41406	Youth recreational and leisure activities program coordinator	0
 41407	Aboriginal land claims liaison officer	0
@@ -99483,6 +99524,7 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 42100	Community police officer	0
 42100	Community relations officer - police	1
 42100	Community services officer - police	0
+42100	Constable	1
 42100	Crime prevention constable	1
 42100	Crime scene technician - police	0
 42100	Desk officer - police	0
@@ -99831,7 +99873,6 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 42204	Faith healer	0
 42204	Gospel worker	0
 42204	Hazzan	0
-43202	Right of way inspector	0
 42204	Home mission worker - religion	0
 42204	Missionary	1
 42204	Mohel	0
@@ -99954,6 +99995,7 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 43202	Pound officer	0
 43202	Property standards inspector	1
 43202	Property use inspector	0
+43202	Right of way inspector	0
 43202	Road transport inspector	0
 43202	Service station inspector	0
 43202	Sign inspector	0
@@ -101711,7 +101753,6 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 53201	Luge coach	0
 53201	Luge instructor	0
 53201	National team coach	1
-60031	Hotel director	1
 53201	Professional athletes team coach	0
 53201	Professional sports scout	0
 53201	Professional sports team coach	0
@@ -102082,11 +102123,13 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 60031	Country inn operator	0
 60031	Fishing camp operator	0
 60031	Front desk hotel manager	0
+62029	Security guard supervisor	1
 60031	Front desk manager - accommodation services	1
 60031	Guest services manager	0
 60031	Guest-house operator	1
 60031	Hostel manager	0
 60031	Hotel assistant manager	1
+60031	Hotel director	1
 60031	Hotel front desk manager	0
 60031	Hotel front office manager	0
 60031	Hotel manager	1
@@ -102319,7 +102362,6 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 62029	Racetrack betting supervisor	0
 62029	Racetrack clerk supervisor	0
 62029	Rug cleaning foreman/woman - dry cleaning	0
-62029	Security guard supervisor	1
 62029	Ski area supervisor	0
 62029	Ski lift attendants supervisor	1
 62029	Spa supervisor	1
@@ -103510,6 +103552,7 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 64409	Tourism information technician	0
 64409	Tourist booth attendant	0
 64409	Tourist information clerk	1
+65102	Produce clerk	1
 64409	Tourist information office attendant	0
 64409	Tourist information officer	0
 64410	Air courier guard	0
@@ -103636,7 +103679,6 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 65102	Price checker - grocery store	0
 65102	Price clerk - retail	1
 65102	Price marker - supermarket	0
-65102	Produce clerk	1
 65102	Retail shelf stocker	0
 65102	Shelf stocker - retail	1
 65102	Shelf stocker - supermarket	0
@@ -104492,7 +104534,6 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 72010	Machinists and machine tool set-up operators foreman/woman	0
 72010	Machinists foreman/woman	1
 72010	Machinists supervisor	1
-72100	Computer-assisted machinist	0
 72010	Maintenance machine shop foreman/woman	1
 72010	Metal fabricator foreman/woman	0
 72010	Metal fitters foreman/woman	0
@@ -104915,7 +104956,6 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 72020	Machine builders foreman/woman	0
 72020	Machine fitters foreman/woman	0
 72020	Machine fitters supervisor	0
-72100	Diesel engine machinist	0
 72020	Machine maintenance foreman/woman - manufacturing	0
 72020	Machinery assembly foreman/woman	0
 72020	Machinery manufacturing foreman/woman	0
@@ -105123,6 +105163,7 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 72022	Hot composition foreman/woman - printing	0
 72022	Letterpress foreman/woman - printing	0
 72022	Letterpress room foreman/woman	0
+72102	Sheet metal lay-out worker	0
 72022	Mechanical composition foreman/woman - printing	0
 72022	Offset lithography foreman/woman - printing	0
 72022	Offset press foreman/woman - printing	0
@@ -105236,6 +105277,8 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 72100	Ballistic laboratory machinist	0
 72100	Bench machinist	0
 72100	Computer numerical control (CNC) machinist	0
+72100	Computer-assisted machinist	0
+72100	Diesel engine machinist	0
 72100	Differential gear testing machinist	0
 72100	Dimensional inspector - machine shop	0
 72100	Electrical machinist	0
@@ -105357,7 +105400,6 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 72102	Residential (low rise) sheet metal installer	0
 72102	Sheet metal fabricator	1
 72102	Sheet metal installer	0
-72102	Sheet metal lay-out worker	0
 72102	Sheet metal mechanic	1
 72102	Sheet metal mechanic apprentice	0
 72102	Sheet metal mechanic bench hand	0
@@ -105602,6 +105644,7 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 72200	Apprentice electrician	1
 72200	Building construction electrician	0
 72200	Building electrician	0
+72300	Plumber apprentice	1
 72200	Construction and maintenance electrician	0
 72200	Construction electrician	1
 72200	Construction electrician apprentice	1
@@ -105704,11 +105747,11 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 72203	Meter installer - electric power systems	0
 72203	Power line maintainer - electric power systems	0
 72203	Power line patroller	1
+72400	Factory maintenance mechanic	0
 72203	Power line repairer - electric power systems	0
 72203	Power lineman/woman	1
 72203	Power lineman/woman - electricity production and transmission	0
 72203	Powerline technician	1
-72205	Frame wirer - telephone	0
 72203	Repair lineman/woman - electric power systems	0
 72203	Service lineman/woman - electric power systems	0
 72203	Streetlight repairer	0
@@ -105807,6 +105850,7 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 72205	Facilities man/woman - telecommunications	0
 72205	Facilities wirer - telecommunications	0
 72205	Facsimile equipment installer	0
+72205	Frame wirer - telephone	0
 72205	Frameman/woman - telecommunications	0
 72205	Head end technician - cable television	0
 72205	Installation and repair technician - telecommunications	0
@@ -105902,7 +105946,6 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 72300	Marine plumber	0
 72300	Plumber	1
 72300	Plumber - pipefitting	0
-72300	Plumber apprentice	1
 72300	Plumbing heat technician - Canadian Armed Forces	0
 72300	Plumbing installer	0
 72300	Plumbing mechanic	1
@@ -106147,7 +106190,6 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 72400	Fabric-shearing machine fixer - textile manufacturing	0
 72400	Fabric-shearing machine setter - textile manufacturing	0
 72400	Fabric-shearing machine setter-fixer - textile manufacturing	0
-72400	Factory maintenance mechanic	0
 72400	Fibreglass-forming machine repairer	0
 72400	Flyer repairer - textile manufacturing	0
 72400	Forge equipment repairer	0
@@ -106258,6 +106300,7 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 72400	Quilting machine fixer - textile manufacturing	0
 72400	Quilting machine mechanic - textile manufacturing	0
 72400	Quilting machine setter-fixer - textile manufacturing	0
+72999	Loftsman/woman - shipbuilding	0
 72400	Reed fixer - textile manufacturing	0
 72400	Reed setter - textile manufacturing	0
 72400	Ride mechanical technician	0
@@ -106697,6 +106740,7 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 72411	Used car renovator	0
 72420	Coal furnace installer	0
 72420	Coal furnace installer-mechanic	0
+72999	Model and mock-up maker	0
 72420	Forced air furnace installer (except gas)	0
 72420	Furnace installer and repairer (except gas)	1
 72420	Furnace maintenance mechanic (except gas)	0
@@ -106966,7 +107010,6 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 72600	Experimental test pilot	0
 72600	Fire patrol pilot	0
 72600	First officer - air transport	0
-72600	Flight engineer	1
 72600	Flight instructor	0
 72600	Flight simulator instructor	0
 72600	Flying instructor	1
@@ -107169,8 +107212,6 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 72999	Locksmith	1
 72999	Locksmithing expert	0
 72999	Loftsman/woman - aircraft manufacturing	0
-72999	Loftsman/woman - shipbuilding	0
-72999	Model and mock-up maker	0
 72999	Model and mock-up maker - aeronautics	0
 72999	Model and mould maker - concrete products	0
 72999	Model maker	0
@@ -107916,7 +107957,6 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 73400	Shovel operator - heavy equipment	0
 73400	Side boom operator - pipeline construction	0
 73400	Side boom tractor operator	1
-73402	Quarry driller	0
 73400	Snow removal equipment operator - private home	0
 73400	Snow-grooming machine operator	0
 73400	Spreader operator - heavy equipment	0
@@ -108029,6 +108069,7 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 73402	Foundation drill operator - construction	0
 73402	Open-pit blaster	1
 73402	Open-pit driller	0
+73402	Quarry driller	0
 73402	Rotary drilling machine operator	1
 73402	Rotary drilling machine operator - surface mining and quarrying	0
 73402	Seismic prospecting driller	0
@@ -108495,6 +108536,7 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 75101	Stock-keeper helper	0
 75101	Stockpiler	1
 75101	Storage man/woman	0
+75110	Grade tamper - construction	0
 75101	Storage worker - material handling	1
 75101	Straddle carrier operator	0
 75101	Straddle truck operator	0
@@ -108618,7 +108660,6 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 75110	Glass setter helper	0
 75110	Glass worker helper - construction	0
 75110	Glazier helper	1
-75110	Grade tamper - construction	0
 75110	Grout machine operator	0
 75110	Grout pump operator	0
 75110	Grouter	0
@@ -109697,6 +109738,7 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 84100	Rotary driller helper - raise mining	0
 84100	Rotary raise driller helper	0
 84100	Sand fill man/woman	0
+84111	Silviculture worker	1
 84100	Sand fill man/woman - hydraulic stowing	0
 84100	Service crew worker - underground mining	0
 84100	Shaft conveyance operator	0
@@ -109812,7 +109854,6 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 84111	Scarifier operator - silviculture	0
 84111	Seed cone collector	0
 84111	Seed cone picker	0
-84111	Silviculture worker	1
 84111	Spacing saw operator	0
 84111	Spacing saw operator - forestry	0
 84111	Thinning saw operator	1
