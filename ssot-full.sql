@@ -6992,10 +6992,14 @@ COPY public.career_related (noc, noc_related) FROM stdin;
 12104	41403
 12110	13111
 12110	13112
+12111	12110
+12111	21223
 12111	11201
 12111	10019
 12111	14100
+12111	14101
 12111	12112
+12111	12010
 12112	12111
 12112	14100
 12112	52100
@@ -7148,6 +7152,8 @@ COPY public.career_related (noc, noc_related) FROM stdin;
 21102	21101
 21102	21331
 21102	80010
+21102	21330
+21102	41400
 21102	21100
 21103	52114
 21109	72600
@@ -7156,6 +7162,11 @@ COPY public.career_related (noc, noc_related) FROM stdin;
 21109	21322
 21110	20011
 21110	21101
+21110	22110
+21110	22113
+21110	22112
+21110	41400
+21110	21109
 21110	31100
 21111	41401
 21111	80010
@@ -7174,6 +7185,7 @@ COPY public.career_related (noc, noc_related) FROM stdin;
 21120	22232
 21200	20011
 21200	21223
+21200	40010
 21200	21201
 21200	21399
 21200	21231
@@ -7545,10 +7557,15 @@ COPY public.career_related (noc, noc_related) FROM stdin;
 31200	41409
 31200	41301
 31201	33109
+31201	31302
+31201	31301
 31202	30010
 31202	32109
 31203	30010
+31203	31204
 31203	42203
+31203	32109
+31203	31202
 31204	32109
 31204	31203
 31204	31202
@@ -7556,11 +7573,15 @@ COPY public.career_related (noc, noc_related) FROM stdin;
 31204	41301
 31209	31201
 31209	31102
+31209	31302
 31209	31303
 31209	32209
 31209	31100
 31209	31101
+31300	32101
 31300	30010
+31300	31302
+31300	31301
 31301	31302
 31301	31300
 31301	30010
@@ -7586,12 +7607,17 @@ COPY public.career_related (noc, noc_related) FROM stdin;
 32100	31101
 32100	33109
 32100	31111
+32100	32109
 32101	44101
 32101	33102
 32102	33102
+32102	44101
+32102	32101
+32102	31302
 32102	33109
+32102	31301
 32103	32129
-32103	32109
+32103	31209
 32104	65220
 32109	32101
 32109	33101
@@ -8245,6 +8271,12 @@ COPY public.career_related (noc, noc_related) FROM stdin;
 72010	92020
 72010	92023
 72011	72020
+72011	72203
+72011	72200
+72011	72201
+72011	72202
+72011	72205
+72011	72204
 72012	72014
 72013	70010
 72013	70011
@@ -8389,9 +8421,14 @@ COPY public.career_related (noc, noc_related) FROM stdin;
 72429	72421
 72429	72020
 72429	72423
+72500	72400
 72500	72021
 72500	73400
+72500	72401
+72500	72201
+72500	72105
 72500	83100
+72500	72106
 72501	72021
 72501	83100
 72501	73402
@@ -8423,6 +8460,7 @@ COPY public.career_related (noc, noc_related) FROM stdin;
 73101	72014
 73102	72014
 73110	72014
+73110	72102
 73111	94102
 73111	72014
 73112	72411
@@ -65349,200 +65387,209 @@ COPY public.career_transition_opportunities (noc, title, teer, option_noc, optio
 --
 
 COPY public.career_trek (episode_num, episode_title, noc_2021, title_2021, noc_2016, title_2016, youtube_link, location, region, description) FROM stdin;
-194	Hydrogeology engineer	21331	Geological engineers	2144	Geological engineers	https://youtu.be/0euKFwZLAhw	Vancouver	Mainland/Southwest	As a hydrogeological engineer, Emily’s goal is to prevent water contamination by studying ground water problems and designing solutions. As part of her work, she spends time in the field collecting data and inspecting damage to ground water systems such as wells. Emily is passionate about environmental and social issues and finds her career is the perfect blend of addressing both.
-193	Radiation therapist	32121	Medical radiation technologists	3215	Medical radiation technologists	https://youtu.be/OXS0lSll2nI	Prince George	Cariboo	Kaitlyn, a radiation therapist, plans and delivers radiation treatments to cancer patients. She counsels patients on side effects and supports them through their treatment process. Kaitlyn finds getting to know each patient, supporting them through treatment and celebrating their milestones the most rewarding aspects of her job.
-192	Business data analyst	21221	Business systems specialist	2171	Information Systems Analysts and Consultants	https://youtu.be/zKr1YIi5f6A	Prince George	Cariboo	Ruby, a member of the Wet'suwet'en Nation, is a business data analyst for Northern Health in the Lheidli T'enneh territory. She uses her math and problem-solving skills to tell a story with data. Ruby finds her work meaningful because she can use data to make a positive impact in her community. She encourages Indigenous people to pursue a career in data analytics so they can have a say in how data is collected, used and seen.
-191	Secondary school art teacher	41220	Secondary school teacher	4031	Secondary school teachers	https://youtu.be/oUyNDMdus5U	Smithers	North Coast & Nechako	Perry helps students succeed academically and personally through his work as a secondary school art teacher. He cultivates hands-on creative experiences for his students in his classroom that he operates like an open studio. Perry expresses how much teachers, including himself, care about their students and want to make school a positive environment for them to learn, grow and prepare for their future.
-190	Machine learning engineer	21211	Data scientists	2173	Software engineers and designers	https://youtu.be/2BackbDu2aY	Vancouver	Mainland/Southwest	Suro, a machine learning engineer, spends his days building credit models and doing credit risk assessments for small businesses. Through his work, Suro helps small businesses receive the funding they need to stay competitive and grow. He says people entering this career should commit to life-long learning and absorbing knowledge from others in the industry.
-189	Marine technician and remotely operated vehicle (ROV) pilot	22310	Electrical and electronic engineering technologists and technicians	2241	Electrical and electronic engineering technologists and technicians	https://youtu.be/e5CBflHUPDs	Prince Rupert	North Coast & Nechako	Hamza, a marine technician and remote vehicle pilot, uses his math skills, curiosity and patience to maintain the fleet of tugboats at SAAM Towage in Prince Rupert. He uses tools such as remotely operated vehicles for underwater inspections, ensuring that the boats are in safe working condition.
-188	Pharmacy assistant	33103	Pharmacy technical assistants and pharmacy assistants	3219	Other medical technologists and technicians (except dental health)	https://youtu.be/t9Ir5Mb-HwY	Terrace	North Coast & Nechako	As a pharmacy assistant, Tish works in a retail environment and prepares prescriptions for patients, ensuring they receive the correct medications and dosages. Tish also recommends over-the-counter medications to those who come into the pharmacy seeking advice. Tish enjoys working in a team where everyone’s roles and responsibilities complement one another to achieve the same goal of helping people feel better.
-187	Painter	73112	Painter and decorators (except interior decorators)	7294	Painter and decorators (except interior decorators)	https://youtu.be/dJBJZVyMnVQ	Dawson Creek	Northeast	Karla runs her own painting business and uses her skills to help people feel happier in their workplace or home. She pays careful attention to detail, ensuring her customers get a high-quality result. Karla’s favourite part of her job is meeting people and getting to brighten their day by going above and beyond their expectations.
-186	Marine ecosystems biologist	21110	Biologists and related scientists	2121	Biologists and related scientists	https://youtu.be/Y-5nEOk69lY	Prince George	Cariboo	Aaron’s work as an aquatic ecosystems biologist involves field work like collecting and observing environmental samples and in-office work such as data analysis and report writing. A career as a biologist is a great choice for those that love being outdoors, are passionate about the environment and don’t mind getting their hands dirty.
-185	Cybersecurity analyst	21220	Cybersecurity specialists	2171	\nInformation systems analysts and consultants	https://youtu.be/aAVrYtZyo50	Prince George	Cariboo	As a cybersecurity analyst for the College of New Caledonia, Hawkeye monitors, prevents and responds to cyberattacks, ensuring the safety of data and systems. His work involves investigation and problem solving, which make Hawkeye feel like a detective. He also regularly researches to stay up to date on evolving cyber threats. His job isn’t always easy, but he enjoys solving problems and having positive interactions with the people he is helping and his colleagues in the field.
-184	Electrician	72200	Electricians (except industrial and power system)	7241	Electricians (Except Industrial and Power System)	https://youtu.be/Iphb6H8B9W4	Kelowna	Thompson-Okanagan	Chad, a master electrician in Kelowna, answers service calls to fix electrical issues in residences. He also completes renovations and new building projects for clients. Chad gives Mariam an overview of the tools he needs to do his job and explains the process of becoming a certified Red Seal electrician.
-183	Early childhood educator	42202	Early childhood educators and assistants	4214	Early childhood educators and assistants	https://youtu.be/Itg5PS29BKU	Kelowna	Thompson-Okanagan	Brenna, early childhood educator and manager of Kelowna’s Aboriginal Head Start program, works with three- to five-year-old children of First Nations, Métis and Inuit heritage to teach them language, social skills and cultural identity. Giving children the opportunity to be proud of who they are and where they come from is the most fulfilling aspect of Brenna’s work.
-182	Computer and information systems manager	20012	Computer and information systems managers	0213	Computer and information Systems Managers	https://youtu.be/GYV76mxDL4Q	Vancouver	Mainland/Southwest	Osner, a computer and information systems manager in Vancouver, translates human language into code, bringing client ideas into reality, usually with the goal of simplifying tasks via software. Osner emphasizes the importance of ongoing learning in this career field as technology is always changing and evolving.
-181	Virtual reality software developer	21232	Software developers and programmers	2174	Computer programmers and interactive media developers	https://youtu.be/8OoS_PLEMm0	Vancouver	Mainland/Southwest	Aamrah, a virtual reality software developer in Vancouver, walks Mariam through the process of developing a virtual reality game. Problem-solving through creativity, logic, math and coding makes Aamrah feel like she’s a wizard doing magic!
-180	Social worker	41300	Social workers	4152	Social workers	https://youtu.be/vtgOv5ap5IA	Nelson	Kootenay	Malorie works as the service accessibility manager at the Kootenay Career Development Society in Nelson to develop programs and provide services to help people facing barriers to employment. The most rewarding part of Malorie’s career in social work is feeling like she’s helping to make the world a better place.
-179	Kindergarten teacher	41221	Elementary school and kindergarten teachers	4032	Elementary school and Kindergarten Teachers	https://youtu.be/D6QlqkQu5mU	Victoria	Vancouver Island/Coast	Carolyn, a kindergarten teacher in Victoria, guides her students to becoming mindful individuals. The most rewarding part of her job is watching her students grow and gain the language needed to express themselves.
-178	Civil engineer	21300	Civil engineers	2131	Civil Engineers	https://youtu.be/SmOXVn0NRjk	Victoria	Vancouver Island/Coast	Corey, civil engineer and owner of Gwaii Engineering in Victoria, works with land surveyors and architects to plan, design and develop infrastructure. Corey’s clients are often private land developers but also First Nations communities. The most rewarding part of his job is servicing his community.
-177	Barber	63210	Hairstylists and barbers	6341	Hairstylist and Barber	https://youtu.be/P_qh9m4lkcY	Victoria	Vancouver Island/Coast	Troy, owner of Status Barber Shop in Victoria, shows Mariam the tools and processes barbers use to give their customers great haircuts and styles. Troy feels passionately about helping people look and feel their best.
-176	Heavy equipment operator	73400	Heavy equipment operators	7521	Heavy Equipment Operators (Except Crane)	https://youtu.be/8oj2YxsdmQM	Nelson	Kootenay	Matt, owner of Kays Contracting in Nelson, describes the daily tasks and responsibilities of heavy equipment operators, emphasizing the amount of planning and attention to detail required. Matt has learned through experience that a career in trades is rewarding and there are always new and exciting projects to work on.
-175	Electric vehicle mechanic	72410	Automotive service technicians, truck and bus mechanics and mechanical repairers	7321	Automotive Service Technicians, Truck and Bus Mechanics and Mechanical Repairers	https://youtu.be/k8klzO8Jaco	Nelson	Kootenay	Doug, automotive service technician and owner of Downtown Automotive in Nelson, solves his customers’ car problems and educates them on how to take care of their vehicles. He demonstrates hands-on how to access the computer system of an electric vehicle. Doug stresses the importance of specializing in a particular area of the trade due to the different types of automotive transportation. Solving problems is the most rewarding part of his career.
-174	Veterinarian	31103	Veterinarians	3114	Veterinarian	https://youtu.be/mI2Swv-T610	Burnaby	Mainland/Southwest	Being a veterinarian involves the care and well being of animals. Mariam watches as Caitlin performs a physical exam on a dog named Miss Piglet. Caitlin shares that working in animal medicine is like solving a mystery, looking at pattern recognition and trying to put the pieces together.
-173	Water treatment plant supervisor	92101	Water and waste treatment plant operators	9243	Water and Waste Treatment Plant Operators	https://youtu.be/7ZXRvtCZvZI	Kamloops	Thompson-Okanagan	Darrell, a water treatment plant supervisor, takes Mariam on a tour of the Tk’emlúps te Secwépemc Water Treatment Plant in Kamloops. He takes pride in his job knowing the community has quality drinking water.
-172	Landscape architect	21201	Landscape architects	2152	Landscape Architects	https://youtu.be/VgEZ7jSAah0	Vancouver	Mainland/Southwest	Pearl, a Vancouver landscape architect, shows Mariam the types of outdoor spaces she designs. She says the most rewarding part of her job is seeing something that she has designed built as she imagined it and seeing people enjoying that space.
-171	Director of counselling	40030	Managers in social, community and correctional services	0423	Managers in Social, Community and Correctional Services	https://youtu.be/lZU3XmxNgAc	Port Coquitlam	Mainland/Southwest	As a director of counselling, Ofir shares with Mariam his daily responsibilities of seeing clients, supporting his counsellors and training new counsellors in the practicum program. “The goal is to improve our clients’ lives to the best of our abilities.”
-170	Registered dietitian	31121	Dietitians and nutritionists	3132	Dietitian and Nutritionist	https://youtu.be/zhCAWGHIZSM	Burnaby	Mainland/Southwest	Annie, a registered dietitian, explains to Mariam how a client’s medical history, diet history and living situation are all connected. She is passionate about her role as a dietitian and helping her clients get to a healthy state.
-169	Aircraft maintenance engineer	72404	Aircraft mechanics and aircraft inspectors	7315	Aircraft Mechanics and Aircraft Inspectors	https://youtu.be/KfGd0MlS71E	Vancouver	Mainland/Southwest	Siraj takes Mariam on an inspection of an airplane, ensuring all components are safe for it to return to the sky. Watch as he explains how his job involves troubleshooting and digging deeper to solve problems.
-168	Audio visual technician project manager	22311	Electronic service technicians (household and business equipment)	2242	Electronic Service Technicians (Household and Business Equipment)	https://youtu.be/upD9AaYOcUo	Vancouver	Mainland/Southwest	Meet Lukas, an audio visual technician, who connects people through technology. He explains to Mariam how understanding technical requirements and being able to troubleshoot is an important part of the job.
-167	Audiologist	31112	Audiologists and speech-language pathologists	3141	Audiologist and Speech Language Pathologist	https://youtu.be/0OdAhEoNp9E	Vancouver	Mainland/Southwest	Watch as Mariam travels to North Vancouver to meet Danielle, an audiologist. Danielle’s focus is to help people manage their hearing health and to ease communication difficulties. She describes an audiological assessment and explains what a great sense of accomplishment knowing how much she is changing someone’s life.
-166	Acupuncturist	32200	Traditional Chinese medicine practitioners and acupuncturists	3232	Practitioners Of Natural Healing	https://youtu.be/2uBZhsMRmrc	East Vancouver	Mainland/Southwest	Sara, an acupuncturist, explains to Mariam how acupuncture can treat pain and help people get back to optimal health. The most rewarding part of her job is when her clients realize how powerful acupuncture is and how able their body is to heal.
-165	Sheet metal worker	72102	Sheet metal workers	7233	Sheet Metal Worker	https://youtu.be/HbtQrE984Uc	Surrey	Mainland/Southwest	Sheet metal workers fabricate, assemble, install and repair sheet metal products. In Surrey, Mariam meets a sheet metal worker who gives her a tour of the plant and explains the importance of air flow through pipes and ducting in buildings. The best part of her job is pride in her work.
-164	Corporate sales manager	60010	Corporate sales managers	0601	Corporate Sales Manager	https://youtu.be/VSHGg7LogAw	Vancouver	Mainland/Southwest	Mariam is in downtown Vancouver meeting a corporate sales manager who works in the hospitality industry and develops sales strategies for corporate clients. She says that curiosity is important in this role; it allows her to understand her customer better and fulfil their needs.
-163	Plumber	72300	Plumbers	7251	Plumber	https://youtu.be/U6JMEzevvyc	Vancouver	Mainland/Southwest	Mariam meets a plumber in Vancouver who loves to work with hands. He talks about installing furnaces and boilers and what training and apprenticeship is required in this career.
-162	Financial sales representative	63102	Financial sales representatives	6235	Financial Sales Representative	https://youtu.be/i0z8tL3a22g	Vancouver	Mainland/Southwest	Mariam meets a financial   sales representative in Vancouver who explains how he supports his clients’ financial portfolios by understanding their needs and providing an appropriate solution. He believes that the best sales people are those who are great at listening.
-161	Gas fitter	72302	Gas fitters	7253	Gas Fitter	https://youtu.be/emqjb08a6zY	Terrace	North Coast & Nechako	Mariam travels to Terrace and meets a gas fitter. She tours his shop and learns about fabricating and fitting different gas systems. Discover what’s challenging and rewarding about this career.
-160	Medical office assistant	13112	Medical administrative assistants	1243	Medical Administrative Assistant	https://youtu.be/w3tpMweWq-s	Kitimat	North Coast & Nechako	A medical office assistant based in Kitimat doctor’s office describes how she supports her doctor and his patients. She explains that to be effective you need to be organized, have a helping attitude and be eager to learn.
-159	Nursery and greenhouse worker	85103	Nursery and greenhouse labourers	8432	Nursery and Greenhouse Workers	https://youtu.be/8zt55n163xc	Vancouver	Mainland/Southwest	Mariam visits a greenhouse worker in Dawson Creek and discovers what it takes to grow greenhouse vegetables and plants. She works with her hands and enjoys both the solitude while transplanting and interacting with customers.
-158	Medical laboratory technologist	32120	Medical laboratory technologists	3211	Medical Laboratory Technologist	https://youtu.be/eym_kFvGDQc	Prince George	Cariboo	Mariam visits a medical laboratory technologist in Prince George who conducts lab tests, experiments, and analyses which help diagnose, treat and prevent disease. She finds her career rewarding and says it literally has an impact on saving lives.
-157	Optometrist	31111	Optometrists	3121	Optometrist	https://youtu.be/7Vj2pUT0JQU	Prince George	Cariboo	Mariam meets an optometrist in Prince George who explains the importance of vision, what to expect during an eye exam, and how to become an optometrist. He emphasizes – Becoming a good listener is an important skill in this career.
-156	Operations manager	62020	Food service supervisors	6311	Food Services Supervisor	https://youtu.be/VFhY-BSijjw	Prince George	Cariboo	Mariam travels to Prince George and meets an operations manager  for a catering company. From planning events to managing inventory to customer service, she describes how she stays organized. The best part of all are the gratifying aspects of her job.
-155	Compost coordinator	90011	Utilities managers	0912	Utilities Managers	https://youtu.be/VdawKA9V8Yk	Vernon	Thompson-Okanagan	Mariam meets the compost coordinator with the city of Kelowna. She takes a tour of the facility and learns about the phases of compost production. See how this “feel-good job” takes something that is usually a waste and turns it into something that is good for the environment.
-154	Photographer	53110	Photographers	5221	Photographer	https://youtu.be/tF8OwRNAugY	Kelowna	Thompson-Okanagan	Mariam travels to Kelowna to meet a photographer who shows her what's involved in capturing great moments. This career offers variety in location, schedule and clients. Her sense of adventure and creativity along with her emotional intelligence allows people to feel at ease in front of the camera.
-153	Electrical technologist	22310	Electrical and electronics engineering technologists and technicians	2241	Electrical and Electronics Engineering Technologists And Technicians	https://youtu.be/QkT9WoAm8mU	Burnaby	Mainland/Southwest	Mariam heads to a BC Hydro office in Burnaby to meet an electrical technologist. He explains how he purchases high quality electrical equipment, conducts quality control and what he enjoys most about the job: hands-on work troubleshooting in the field.
-152	Technical sales consultant	62100	Technical sales specialists - wholesale trade	6221	Technical Sales Specialist - Wholesale Trade	https://youtu.be/1nH0ruOZOyA	New Westminster	Mainland/Southwest	Mariam meets a technical sales consultant in New Westminster who explains how she sells products to scientists to carry out their experiments. The most rewarding part of her job is helping solve issues so that researchers have successful outcomes.
-151	Chiropractor	31201	Chiropractors	3122	Chiropractor	https://youtu.be/rv3kkqkpFfw	Vancouver	Mainland/Southwest	A chiropractor in Vancouver shows Mariam how she works with clients doing chiropractic assessments, adjustments, soft tissue therapy and teaching exercises. Her role in improving her patients’ quality of life is the greatest reward of the job.
-150	Robotics engineer	21301	Mechanical engineers	2132	Mechanical Engineers	https://youtu.be/7kr-Bhk_X94	Abbotsford	Mainland/Southwest	In Abbotsford, Mariam meets a robotics engineer, who loves designing robotics products and programming mechanical automation. She learns about the importance of calibration in automation and robotics and that robots will never replace humans!
-149	Engineer manager	20010	Engineering managers	0211	Engineer Managers	https://youtu.be/8zYTf-IqDMk	Vancouver	Mainland/Southwest	Mariam meets an industrial engineer and project manager in Vancouver whose focus is quality assurance and continuous process improvement. She explains how building relationships and challenging the status quo are key to successful continuous process improvements.
-148	Interior designer	52121	Interior designers and interior decorators	5242	Interior Designer	https://youtu.be/SiWm2NWTBH0	Vancouver	Mainland/Southwest	Mariam meets a Vancouver-based interior designer who explains how his job involves creating a vision and coming up with innovative designs to fulfill the clients’ needs. She learns about his passion for the arts and how interior design is a blend of architecture, fashion and graphic design.
-147	Teacher's assistant	43100	Elementary and secondary school teacher assistants	4413	Elementary and Secondary School Teacher Assistants	https://youtu.be/OzgnNfkXuho	Vancouver	Mainland/Southwest	Brian visits a middle school to meet a teacher’s assistant whose career is supporting both teachers and students. “The job,” he says, “is about helping students understand why they’re awesome.”
-146	Security officer	64410	Security guards and related security service occupations	6541	Security Guards and Related Security Service Occupations	https://youtu.be/bV9-O1aLyrs	Victoria	Vancouver Island/Coast	Brian goes to Victoria to learn about the career of a security officer—and gets to explore the Royal BC Museum exhibits that she protects! A big part of this job is customer service, and in her opinion it’s the best part.
-145	Production manager	13100	Administrative officers	1221	Administrative Officers	https://youtu.be/lJJfYtIeev8	Vancouver	Mainland/Southwest	A production manager walks Brian through a day in the life of her busy career in a film company. From beginning to end, she manages up to 16 projects at a time!
-144	Account manager	64101	Sales and account representatives - wholesale trade (non-technical)	6411	Sales and Account Representatives - Wholesale Trade (Non-Technical)	https://youtu.be/tN1H0hxjJTs	Vancouver	Mainland/Southwest	An account manager for a corporate travel agency takes Brian on a tour of this career. He arranges everything from cars, hotels and flights for his company’s clients, getting them home to their families and making their day easier.
-143	Home and building renovations manager	70011	Home building and renovation managers	0712	Home Building and Renovation Managers	https://youtu.be/nXfp3Ef5SPQ	Coquitlam	Mainland/Southwest	Brian goes to Coquitlam to visit the work site of a home building and renovations manager, whose job it is to manage a renovation from the drawing phase to the last coat of paint.
-142	Chemistry lab manager	21101	Chemists	2112	Chemists	https://youtu.be/mgi-iWMq1eY	Vancouver	Mainland/Southwest	Brian visits a Vancouver-based brewery to meet a chemistry lab manager. This career requires a passion for science and the scientific method, which she has! She loves the little “aha!” moments that happen during a discovery.
-141	Legal administrative assistant	13111	Legal administrative assistants	1242	Legal Administrative Assistants	https://youtu.be/2cS63-hyf4Y	Vancouver	Mainland/Southwest	Brian visits a Vancouver-based family law office to meet a legal administrative assistant. To be successful in this career, it’s important to be very organized to help make sure each day is seamless for the lawyers in the firm.
-140	Health and safety consultant	22232	Occupational health and safety specialists	2263	Inspectors in Public and Environmental Health and Occupational Health and Safety	https://youtu.be/LmvZ_XMUuUc	Vancouver	Mainland/Southwest	Brian meets with a health and safety consultant whose job is to look for potential dangers in the workplace and provide solutions. A reward of this career is knowing that people will make it home safe and sound.
-139	Social policy consultant	41403	Social policy researchers, consultants and program officers	4164	Social Policy Researchers, Consultants and Program Officers	https://youtu.be/EaE0PMmxN1M	Vancouver	Mainland/Southwest	A social policy consultant works with companies and communities. Her job is to understand both sides, and then help them to understand each other. Brian goes to her office in Vancouver to learn more about this career.
-138	Tattoo artist	63211	Estheticians, electrologists and related occupations	6562	Estheticians, Electrologists and Related Occupations	https://youtu.be/M4HnqVyH0gQ	Mission	Mainland/Southwest	She turned a hobby into a career, and now she gets to create art that people can cherish and love forever. Brian goes to Mission to meet a tattoo artist and learn all about this creative career.
-137	Recreation director	50012	Recreation, sports and fitness program and service directors	0513	Recreation, Sports and Fitness Program and Service Directors	https://youtu.be/QLRs7dnvn0E	Vancouver	Mainland/Southwest	Brian meets the director of the BC Wheelchair Basketball Society’s Let’s Play program, which helps to keep kids active. Her job includes planning activities, coaching and more. She loves helping people improve their quality of life.
-136	Home child care provider	44100	Home child care providers	4411	Home Child Care Providers	https://youtu.be/ZWeY7fy2iyM	Vancouver	Mainland/Southwest	Brian visits a home child care provider in Vancouver and observes how she looks after the well-being and social development of children in her care. “This career is suited to someone who is loving, caring and loves being around children”.
-135	Psychiatrist	31100	Specialists in clinical and laboratory medicine	3111	Specialist Physicians	https://youtu.be/isFI0eqGFBg	Prince George	Cariboo	A psychiatrist in Prince George meets with Brian and shares how she helps people.  She notes that excellent listening and communication skills are essential in her role. She finds it very rewarding helping people to improve their lives.
-134	Audio video technician	52113	Audio and video recording technicians	5225	Audio and Video Recording Technicians	https://youtu.be/kELGabgwMQk	Prince George	Cariboo	Brian meets with an AV technician who shows how he installs and operates lighting, audio and visual equipment to create event spaces—­all within 24 hours!  He says half the job is technical and the other half is service related.
-133	Drafting technician	22212	Drafting technologists and technicians	2253	Drafting Technologists and Technicians	https://youtu.be/-zpx84KT_8s	Prince George	Cariboo	A drafting technician shows Brian how he prepares drawings and process diagrams to map industrial projects. In his work he uses computers to develop models, and sometimes does field work to collect notes and measurements using 3D scanners.
-132	Managing editor	51110	Editors	5122	Editors	https://youtu.be/UsLsx3o55Wk	Dawson Creek	Northeast	Brian interviews a managing editor from Dawson Creek and learns what’s involved in editing a newspaper—­ both online and in print. It’s a fast-paced job where it’s critical to see fine details and be knowledgeable in a variety of areas.
-131	General office support worker	14100	General office support workers	1411	General Office Support Workers	https://youtu.be/4867Bc9ktDw	Ft. St. John	Northeast	An office support worker from Fort St. John explains the importance of being detail-oriented and having clerical skills in her role. The most rewarding part of her job is providing the best service possible to her colleagues and clients.
-130	Home support worker	44101	Home support workers, caregivers and related occupations	4412	Home Support Workers, Housekeepers and Related Occupations	https://youtu.be/PJu38LNOtRg	Castlegar	Kootenay	Brian travels to Castlegar to meet a home support worker, and learns how rewarding it is to play a role in providing care and companionship to seniors.  Workers in this field help their clients keep their independence and mobility.
-129	Natural science policy program manager	41400	Natural and applied science policy researchers, consultants and program officers	4161	Natural and Applied Science Policy Researchers, Consultants and Program Officers	https://youtu.be/ibMhoXvmItc	Nelson	Kootenay	Brian meets a natural science policy program manager who says that her job is a mix of office and field work.  She conducts research and gives advice on environmental projects. It’s rewarding for her to see improvements to wildlife areas.
-128	Insurance broker	63100	Insurance agents and brokers	6231	Insurance Agents and Brokers	https://youtu.be/0iRvVzxuJmc	Nelson	Kootenay	Brian meets a Nelson insurance broker who explains the job involves giving sound advice and customizing insurance plans to suit her clients’ needs. She enjoys this role, as she likes working with people and because no two days are the same.
-127	User support technician	22221	User support technicians	2282	User Support Technicians	https://youtu.be/Udl63UA2U0c	Nelson	Kootenay	A user support technician talks to Brian about how he provides technical support to clients who are experiencing issues with their computers or devices. This job is about research, problem solving and communicating solutions to customers.
-126	Dental hygienist	32111	Dental hygienists and dental therapists	3222	Dental Hygienists and Dental Therapists	https://youtu.be/iyO906A2Iwo	Summerland	Thompson-Okanagan	A dental hygienist shares with Brian all the elements of her job, from reviewing clinical data to cleaning and polishing teeth. She explains that educating her clients on how to keep a healthy smile is also a big part of her job.
-125	CNC machine operator	94106	Machining tool operators	9417	Machining Tool Operators	https://youtu.be/Ptsj6-V-qu8	Penticton	Thompson-Okanagan	A machine operator gives Brian a tour of his shop where he transforms raw steel plates into finished products. He takes care to be precise and accurate to ensure quality. He says “when you have pride in your work, it makes work enjoyable.”
-124	Retail sales supervisor	62010	Retail sales supervisors	6211	Retail Sales Supervisors	https://youtu.be/deNr7yOyK2Y	Kelowna	Thompson-Okanagan	Brian heads to Kelowna to meet a retail sales supervisor at a natural pet food store. Her duties include hiring and supervising staff, maintaining inventories, overseeing social media and ensuring customer satisfaction.
-123	Author	51111	Authors and writers (except technical)	5121	Authors and Writers	https://youtu.be/WEZU4d9Szqo	Kelowna	Thompson-Okanagan	Brian interviews an author who describes a typical day in her career. She offers advice for those just starting out, noting that you have to be persistent. She also describes some other avenues that authors may take in their career.
-122	Medical sonographer	32122	Medical sonographers	3216	Medical Sonographers	https://youtu.be/IHDU67A0uAM	Kelowna	Thompson-Okanagan	A Kelowna medical sonographer shows Brian how she takes diagnostic ultrasound images and prepares preliminary findings to help in a patient’s diagnosis. She takes images of babies, but explains she also does a wide variety of imaging.
-121	Computer network technician	22220	Computer network and web technicians	2281	Computer Network Technicians	https://youtu.be/ISMsrEsaOWs	West Vancouver	Mainland/Southwest	A computer network technician takes Brian through a typical day of working on networks, hardware, software and computer equipment.  What he really likes about this career is that it “is changing all the time in a good, positive way”.
-120	Boom operator	53111	Motion pictures, broadcasting, photography and performing arts assistants and operators	5227	Support Occupations in Motion Pictures, Broadcasting, Photography and The Performing Arts	https://youtu.be/9qSjMOb9Vj0	Vancouver	Mainland/Southwest	Brian interviews one of Career Treks’ own crew—a boom operator!  He operates the boom microphone and assists the production sound mixer. He says it’s a great career if you want to work in film, with technology, and with creative people.
-119	Electrical engineer	21310	Electrical and electronics engineers	2133	Electrical and Electronics Engineers	https://youtu.be/V3gjgqxN238	Vancouver	Mainland/Southwest	Brian interviews an electrical engineer who plans and designs electrical systems for buildings. She says engineering is about innovation, creativity, and problem solving. It also involves a lot of teamwork—her favourite part of the job.
-118	Executive assistant	12100	Executive assistants	1222	Executive Assistants	https://youtu.be/mnti-_qFxA8	Vancouver	Mainland/Southwest	An executive assistant with the Vancouver Canucks meets Brian and describes how she supports her executive. She explains that to be effective you need to be organized and have excellent communication and relationship building skills.
-117	Nurse practitioner	31302	Nurse practitioners	3124	Allied Primary Health Practitioners	https://youtu.be/uSxv2k_PlqY	Chemainus	Vancouver Island/Coast	Brian visits a nurse practitioner at the H’ulh-etun health centre who explains that she diagnoses illnesses, performs procedures and promotes healthy living and disease prevention to make sure her patients’ health-care needs are met.
-116	Accounting clerk	14200	Accounting and related clerks	1431	Accounting and Related Clerks	https://youtu.be/aWn7mULLowQ	Victoria	Vancouver Island/Coast	Brian heads to Victoria to meet an accounting clerk who shares that he works on accounts payable and receivable, financial statements, and more. He really likes working with clients to help them achieve their financial goals.
-115	Architect	21200	Architects	2151	Architects	https://youtu.be/5mA9sIMvTzE	Victoria	Vancouver Island/Coast	An architect shows Brian how he uses sketches, technical drawings and 3D animation in his work. He talks about the many areas an architect can specialize in, from design architecture to technical architecture to business ownership.
-114	Optician	32100	Opticians	3231	Opticians	https://youtu.be/z3SdQ3g0PR0	Victoria	Vancouver Island/Coast	An optician describes her job as a blend of helping people find glasses, and doing adjustments and repairs. Her work requires problem solving and an eye for detail. She loves helping people find glasses that they’re excited to wear.
-113	Software developer	21232	Software developers and programmers	2174	Computer Programmers and Interactive Media Developers	https://youtu.be/i-SNbWdyCLg	Victoria	Vancouver Island/Coast	Viviana talks to a software developer about the skills he uses in his job. During the visit, he explains that his field is dynamic and growing, with a lot of opportunities. His advice is that if you are interested in this career, start your training early.
-112	Web developer	21234	Web developers and programmers	2175	Web Designers And Developers	https://youtu.be/n1XvWSkQBqA	Victoria	Vancouver Island/Coast	When Viviana talks to a web developer, she learns the skills to success in this career. You must be able to visualize and come up with fresh ideas, as well as understand code and be good at math. Also, ongoing learning is key because the technology is always changing.
-111	Bookkeeper	12200	Accounting technicians and bookkeepers	1311	Accounting Technicians and Bookkeepers	https://youtu.be/uoWPgJrJbmU	Prince Rupert	North Coast & Nechako	In Prince Rupert, Viviana meets a bookkeeper, who loves making sure numbers are entered correctly into the accounting system. In this career, organizational skills are key, as well as being detail-oriented, good with numbers and accurate.
-110	Account manager	10021	Banking, credit and other investment managers	0122	Banking, Credit and Other Investment Managers	https://youtu.be/iBQlSfAHDoY	Terrace	North Coast & Nechako	An account manager solves clients’ problems and helps them achieve their financial goals. It’s important to be social for this work, and as Viviana finds out, there is nothing boring about it—no two clients, situations or days are the same in this fast-paced career.
-109	Welder	72106	Welders and related machine operators	7237	Welders and Related Machine Operators	https://youtu.be/wM6gG_woqmk	Terrace	North Coast & Nechako	In this hands-on, diverse job, a welder can work on projects from building boats to erecting steel buildings to repairing equipment out in the field. Viviana gets to try out welding as she learns about this job, its rewarding aspects and the path to this career.
-108	Chartered professional accountant	11100	Financial auditors and accountants	1111	Financial Auditors and Accountants	https://youtu.be/s9Tk7nraMcM	Williams Lake	Cariboo	Even though he does personal and corporate taxes, audits and “compiles numbers” for reports, Viviana learns a chartered professional accountant’s work is centred on people. A common misconception, he says, is the job is dry and boring, but it’s actually a lot of fun!
-107	Retail manager	60020	Retail and wholesale trade managers	0621	Retail and Wholesale Trade Managers	https://youtu.be/AT9TaZqWmT0	Nelson	Kootenay	In Nelson, Viviana meets a retail manager at a busy sports gear store. He describes his work, which involves managing staff, guiding the team, and selling products to customers. He also talks about the career’s opportunities for growth.
-106	Construction manager	70010	Construction managers	0711	Construction Managers	https://youtu.be/3NsPnDWtLg0	Kelowna	Thompson-Okanagan	As a young man he loved building things. Now he develops people instead of buildings and instead of working with his hands, he works with his experience. Viviana visits a construction manager at his job site, where no two days are the same.
-105	Construction millwright	72400	Construction millwrights and industrial mechanics	7311	Construction Millwrights and Industrial Mechanics	https://youtu.be/PykipkwcOIU	Kelowna	Thompson-Okanagan	Viviana meets with the person who maintains and repairs equipment in a Kelowna sawmill. For this construction millwright, the best part of his detail-oriented career is “getting that piece of equipment back up and running.”
-104	Chef	62200	Chefs	6321	Chefs	https://youtu.be/e2EZ5Zv0nfg	Kelowna	Thompson-Okanagan	Viviana cooks with a chef, who describes himself as a creator of food, a keeper of standards, and an enforcer of policies. She discovers that this career is not just about food—it involves problem-solving, motivating people and being a good leader.
-103	Social and community service worker	42201	Social and community service workers	4212	Social and Community Service Workers	https://youtu.be/n2QZK3uSk5Y	Oliver	Thompson-Okanagan	This career is “more than a job,” as Viviana learns when she meets with a social and community worker, who feels honoured to be with community members during their most vulnerable time. She empowers the community, leading them toward health and wellness.
-102	Respiratory therapist	32103	Respiratory therapists, clinical perfusionists and cardiopulmonary technologists	3214	Respiratory Therapists, Clinical Perfusionists and Cardiopulmonary Technologists	https://youtu.be/t8YWz8o5HYQ	Vancouver	Mainland/Southwest	Viviana visits a hospital to talk to a respiratory therapist, who looks after the breathing portion of a patient’s life support. He is part of a multi-disciplinary team that helps patients regain their health, one of the many rewarding aspects of his job.
-101	Licensed practical nurse	32101	Licensed practical nurses	3233	Licensed Practical Nurses	https://youtu.be/fUdiEP-FD9g	Vancouver	Mainland/Southwest	The first stop and the last stop, the licensed practical nurse is there throughout a patient’s stay in the hospital. Among her many tasks, she ensures continuity of care, administers injections and tracks vitals. One of the rewards of this career is saving lives.
-100	Police officer	42100	Police officers (except commissioned)	4311	Police Officers (Except Commissioned)	https://youtu.be/rx1iBH9-hLs	Victoria	Vancouver Island/Coast	During a visit at the Victoria Police Department, Viviana rides with a police officer, is shown around the station and learns about forensic technology. Discover the rewards that come with serving the community in this multi-faceted job.
-99	Advertising marketer	11202	Professional occupations in advertising, marketing and public relations	1123	Professional Occupations In Advertising, Marketing and Public Relations	https://youtu.be/zXBY9QH_dhU	Victoria	Vancouver Island/Coast	Viviana goes to Victoria to meet an advertising marketer who works with clients to develop and evolve their brand strategies. This career would be ideal for someone who is creative, innovative, and entrepreneurial—and thrives under the pressure of deadlines.
-98	Human resources manager	10011	Human resources managers	0112	Human Resources Managers	https://youtu.be/B8Lubga0tNA	Vancouver	Mainland/Southwest	Viviana talks to a human resources manager at a non-profit organization and finds out that this career involves being a jack of all trades. Her roles range from hiring staff and helping employees advance in their careers to “teaching leaders to be better leaders”.
-97	University professor	41200	University professors and lecturers	4011	University Professors and Lecturers	https://youtu.be/-D8kxS8BQfw	Vancouver	Mainland/Southwest	Viviana meets a chemistry professor at a university, who describes her typical day. It includes collaborating with people and time in the research lab, the lecture hall and in her office. She finds learning something new from her bright students to be very rewarding.
-96	Receptionist	14101	Receptionists	1414	Receptionists	https://youtu.be/gCizwITonaY	Vancouver	Mainland/Southwest	Viviana visits a receptionist, the first person people see when they enter a business—but who does so much more than greet visitors. Viviana is walked through answering the phone, preparing paperwork, and keeping everyone in a busy office organized and on track.
-95	Conductor	73311	Railway conductors and brakemen/women	7362	Railway Conductors and Brakemen/Women	https://youtu.be/-nSmJnTBjhE	Port Coquitlam	Mainland/Southwest	Viviana visits Port Coquitlam to find out how railway conductors help get trains safely to their destinations. She talks to a conductor who describes a physical job on the move, with her favourite part “working with all the great people.”
-94	Chief financial officer	00018	Senior managers - public and private sector	0015	Senior Managers - Trade, Broadcasting and Other Services, N.e.c.	https://youtu.be/B4ztw5v9CzY	Vancouver	Mainland/Southwest	Viviana meets a chief financial officer of a Vancouver chocolate manufacturer. Touring the factory, she learns about the financial side of business management and his roles as a leader and executive team member of a growing company.
-93	Camera operator	52110	Film and video camera operators	5222	Film and Video Camera Operators	https://youtu.be/Vnl2WRaqu5g	Vancouver	Mainland/Southwest	A Vancouver camera operator shows Viviana what’s involved in capturing great moments on screen. Her exciting career offers daily variety in location, schedule and people, and she also likes the opportunity for continued growth and learning.
-92	Producer	51120	Producers, directors, choreographers and related occupations	5131	Producers, Directors, Choreographers and Related Occupations	https://youtu.be/OXvsdJs1v0o	Vancouver	Mainland/Southwest	Viviana heads to a Vancouver TV studio to interview a producer, who explains how she communicates the program vision to the crew. In this fast-paced environment, each day is different. Seeing the end product of her efforts is “really cool.”
-91	Fashion designer	53123	Theatre, fashion, exhibit and other creative designers	5243	Theatre, Fashion, Exhibit and Other Creative Designers	https://youtu.be/IfCgW_rmOo0	Vancouver	Mainland/Southwest	A Vancouver fashion designer shows Viviana how he follows and incorporates current trends in his collections. Deadline-driven but flexible, this social, hands-on career emphasizes being creative and working as part of a team.
-90	Special effects makeup	52119	Other technical and coordinating occupations in motion pictures, broadcasting and the performing arts	5226	Other Technical and Co-Ordinating Occupations in Motion Pictures, Broadcasting and The Performing Arts	https://youtu.be/0U9LpYQjiuc	Coquitlam	Mainland/Southwest	Viviana tours a special effects makeup artist’s Coquitlam studio and observes the creative process at work. This fascinating job combines fine art and problem-solving challenges. Seeing the finished product is the crowning part of the day.
-89	Chief economist	41401	Economists and economic policy researchers and analysts	4162	Economists and Economic Policy Researchers and Analysts	https://youtu.be/lklBAFlCvwU	Vancouver	Mainland/Southwest	Viviana meets a chief economist in Vancouver, who explains his job of analyzing economic data and predicting the behaviour of markets. His forecasts, reports and presentations help clients make informed decisions.
-88	Web developer	21234	Web developers and programmers	2175	Web Designers And Developers	https://youtu.be/WmJ8NqHAh6M	Vancouver	Mainland/Southwest	A Vancouver web developer tells Viviana how he translates ideas into visual stories on the web. His greatest rewards come from working together to solve problems and bring a project to reality. This dynamic career “can take you anywhere.”
-87	Designer, furniture maker	94210	Furniture and fixture assemblers, finishers, refinishers and inspectors	9532	Furniture and Fixture Assemblers and Inspectors	https://youtu.be/9mm9PWMEbmM	Vancouver	Mainland/Southwest	A Vancouver furniture maker and designer shows Brian how he creates unique pieces for his clients. The key to success is finding the work; the rewards come in his original designs. His career offers many avenues and endless opportunities.
-86	Customs broker	13200	Customs, ship and other brokers	1315	Customs, Ship and Other Brokers	https://youtu.be/zToLB35zBv8	Vancouver	Mainland/Southwest	A Vancouver customs broker tells Brian how she helps clients import shipments into Canada. To do her job well, she stays in touch, juggles emails and keeps precise records. She mostly works at her desk, but has also travelled for the job.
-85	Brew master	22100	Chemical technologists and technicians	2211	Chemical Technologists and Technicians	https://youtu.be/1zYHWQrQDZ4	Fernie	Kootenay	A Fernie brew master shows Viviana the dynamic and meticulous process of making beer.  A blend of science and creativity, the job allows him to maintain quality and develop new and innovative brands.
-84	Conservation officer	22113	Conservation and fishery officers	2224	Conservation and Fishery Officers	https://youtu.be/JdxOcGs7MBw	Fernie	Kootenay	Viviana rides along with a conservation officer, who protects the environment and natural resources. Dealing with wildlife, hunting and angling issues and pollution, he investigates possible violations. A grateful public is his key reward.
-83	Librarian	51100	Librarians	5111	Librarians	https://youtu.be/OxebUahoL5w	Nelson	Kootenay	A Nelson librarian tells Viviana about the services and programs they provide to the public, from babies to seniors. Behind-the-scenes detail is vital, but helping people find things and making a difference in their lives is her top reward.
-82	Journalist	51113	Journalists	5123	Journalists	https://youtu.be/T4YaKm0NyX8	Nelson	Kootenay	Viviana heads to Nelson to meet a journalist who shows her the exciting process of creating a newspaper, from blank slate to finished product. The job involves writing well, putting people at ease, passion and openness to the unexpected.
-81	Graphic designer	52120	Graphic designers and illustrators	5241	Graphic Designers and Illustrators	https://youtu.be/pOz68qngB34	Penticton	Thompson-Okanagan	A graphic designer shows Brian the kind of design work she does for customers. She describes her job as a blend of innovation, art, design and communication skills. She likes the job’s many opportunities to grow and expand her knowledge.
-80	Real estate agent	63101	Real estate agents and salespersons	6232	Real Estate Agents and Salespersons	https://youtu.be/oubdrAb3LsM	Kelowna	Thompson-Okanagan	A Kelowna realtor shares a day with Brian, discussing how she builds relationships and manages transactions from start to finish. She describes her varied schedule and routine. Her greatest reward is landing the perfect home for her client.
-79	Boat builder	94219	Other products assemblers, finishers and inspectors	9531	Boat Assemblers and Inspectors	https://youtu.be/Qq_mClkGTPA	Vernon	Thompson-Okanagan	Brian visits a Vernon boat builder, who describes the process and skills required to build a quality water-worthy boat. The most rewarding part of his job is delivering the finished product and putting a smile on the customer’s face.
-78	Community planner	21202	Urban and land use planners	2153	Urban and Land Use Planners	https://youtu.be/qvViXTAe3Ts	Kamloops	Thompson-Okanagan	A Kamloops community planner tells Brian that it takes teamwork and creativity to move a plan from concept to reality. He reviews applications, reads maps, attends meetings and submits reports. His biggest reward: solving people’s problems.
-77	Registered massage therapist	32201	Massage therapists	3236	Massage Therapists	https://youtu.be/LvjN5sAEnLI	Kamloops	Thompson-Okanagan	A registered massage therapist in Kamloops shows Brian how she works with clients to relieve pain and discomfort and increase range of motion, often after an injury. Her role in someone’s healthy recovery is the greatest reward of the job.
-76	Facility operation and maintenance manager	70012	Facility operation and maintenance managers	0714	Facility Operation and Maintenance Managers	https://youtu.be/7XXDoaZtQ60	108 Mile Ranch	Cariboo	Viviana tours a Cariboo health ranch with a facility operations and maintenance manager. He describes what makes for smooth operation of a multi-faceted resort. He loves providing top-quality services to people from all over the world.
-75	Employment case manager	41321	Career development practitioners and career counsellors (except education)	4156	Employment Counsellors	https://youtu.be/MSqphLKFG_c	Williams Lake	Cariboo	Viviana heads to Williams Lake to meet an employment case manager, who describes helping clients learn how to search for and land a job. When clients win the jobs they’ve worked toward, she shares their joy. “It’s the most amazing feeling.”
-74	Butcher	63201	Butchers - retail and wholesale	6331	Butchers, Meat Cutters And Fishmongers - Retail and Wholesale	https://youtu.be/ea37cSOY86s	Williams Lake	Cariboo	A Williams Lake butcher takes Viviana around his shop. He stresses the need to know meat cuts and quality and how to safely operate a range of machines. His biggest reward comes from sending happy customers home with a quality product.
-73	Silviculturist	84111	Silviculture and forestry workers	8422	Silviculture and Forestry Workers	https://youtu.be/ZwI2cJrmPVQ	Quesnel	Cariboo	Viviana heads to Quesnel to meet a silviculturist who shows her how to plant trees. He describes the effort that goes into preparing for the May to July planting season, and visits his tree planters to check their surroundings and safety.
-72	Deck hand	74201	Water transport deck and engine room crew	7532	Water Transport Deck and Engine Room Crew	https://youtu.be/gqQlVrcHm7s	Prince Rupert	North Coast & Nechako	Viviana visits a Prince Rupert deck hand and learns about his job, from directing traffic on the car deck to steering on the ship’s bridge. She learns all about the procedures that keep a vessel shipshape and its cargo and passengers safe.
-71	Tug master	72602	Deck officers, water transport	2273	Deck Officers, Water Transport	https://youtu.be/Rhe9vH8cXPI	Prince Rupert	North Coast & Nechako	Viviana interviews a Prince Rupert tug master and boards his tugboat to learn what it takes to safely guide ships in and out of the harbour. In his job, every day brings different activities and people, and an amazing view from his office!
-70	Deputy harbour master	72604	Railway traffic controllers and marine traffic regulators	2275	Railway Traffic Controllers and Marine Traffic Regulators	https://youtu.be/YrqUwYmN4yA	Prince Rupert	North Coast & Nechako	Viviana tours the busy Port of Prince Rupert, where she meets the deputy harbour master, whose team manages the safety and security of the harbour and visiting ships. Watch him monitor the action from the busy control room and harbourside.
-69	Forester	21111	Forestry professionals	2122	Forestry Professionals	https://youtu.be/cNQCUbei8to	Terrace	North Coast & Nechako	A Terrace forester explains to Brian how he looks after a forest’s interests. With no typical days, his work blends office and field work, and the travel involved offers adventure. “Just being outdoors” represents a key reward on the job.
-68	Vocational instructor	41210	College and other vocational instructors	4021	College and Other Vocational Instructors	https://youtu.be/bjF7yRE0RH8	Prince George	Cariboo	Brian heads to Prince George to meet a vocational instructor, who explains how she prepares students for a practical nursing career. A mix of classroom and hands-on training actively engages students.
-67	Certified personal trainer	54100	Program leaders and instructors in recreation, sport and fitness	5254	Program Leaders and Instructors in Recreation, Sport and Fitness	https://youtu.be/dMRmQban5ak	Prince George	Cariboo	A Prince George certified personal trainer shows Brian how she helps clients meet their exercise goals. She creates programs, trains clients and adapts programs to fit their progress. Helping people change their lives gives her inspiration.
-66	Dietitian	31121	Dietitians and nutritionists	3132	Dietitians and Nutritionists	https://youtu.be/JX3mPYjW7cs	Prince George	Cariboo	Brian learns how a Prince George dietitian works with clients to balance their diets and meet their health goals. She tailors nutritional plans for a wide range of people and needs, becoming a key part of their journey to better health.
-65	Land surveyor	21203	Land surveyors	2154	Land Surveyors	https://youtu.be/nsaQ3iQ66QU	Ft. St. John	Northeast	A Fort St. John land surveyor explains why precision is crucial when dealing with clients’ properties and land boundaries. He likes the variety of office and fieldwork and may travel to remote locations by ATV, snowmobile or helicopter.
-64	Firefighter	42101	Firefighters	4312	Firefighters	https://youtu.be/LgMvz1gp-QI	Ft. St. John	Northeast	Brian visits a Fort St. John firefighter, who says the job requires excellent social and physical skills and fast reactions. He describes serving the community as exciting and fun, with camaraderie and “no two days that are the same.”
-63	Medical laboratory technologist	32120	Medical laboratory technologists	3211	Medical Laboratory Technologists	https://youtu.be/124t9bcW6ms	Dawson Creek	Northeast	A medical lab technologist tells Brian how organization and attention to detail are essential for controlling quality. She finds her career rewarding and varied, with plenty of opportunities to learn and have “an impact on somebody’s life.”
-62	Building inspector	22233	Construction inspectors	2264	Construction Inspectors	https://youtu.be/RYbZHeNApSU	Dawson Creek	Northeast	Brian meets a building inspector at construction site in Dawson Creek. He learns about inspecting concrete, framing, reinforcing and plumbing to ensure building code regulations are met.
-61	Hairstylist	63210	Hairstylists and barbers	6341	Hairstylists and Barbers	https://youtu.be/BDIptsGxLUk	Squamish	Mainland/Southwest	Brian learns what it takes to be a successful hairstylist. Social skills and communication are key in creating new looks and meeting clients' expectations. This career offers exciting opportunities in the beauty and entertainment industry.
-60	Heavy-duty equipment mechanic	72401	Heavy-duty equipment mechanics	7312	Heavy-Duty Equipment Mechanics	https://youtu.be/BtZGjIzCFNk	Squamish	Mainland/Southwest	Brian visits a heavy duty mechanic and learns that this trade involves anything from maintenance to rebuilds of engines and other parts of heavy equipment. He learns that problem solving and computer skills are needed for success.
-59	Instrument mechanic	22312	Industrial instrument technicians and mechanics	2243	Industrial Instrument Technicians and Mechanics	https://youtu.be/hfKsTV4sbFI	Crofton	Vancouver Island/Coast	An instrument mechanic explains to Viviana how his role is important to the successful operation of a mill. In this broad trade, he works with a vast array of equipment and keeps up with the latest technologies.
-58	Refrigeration and air conditioning mechanic	72402	Heating, refrigeration and air conditioning mechanics	7313	Refrigeration and Air Conditioning Mechanics	https://youtu.be/AlYSO5XpYCc	Campbell River	Vancouver Island/Coast	Viviana is taken on a tour of a shop and a work site and learns how these mechanics maintain and install air conditioning, refrigeration and heating systems. She learns how this trade is gratifying by meeting clients' needs.
-57	Machinist	72100	Machinists and machining and tooling inspectors	7231	Machinists And Machining and Tooling Inspectors	https://youtu.be/nYfzgVnJHN0	Victoria	Vancouver Island/Coast	A machinist in a shipyard shows Viviana what it takes to produce complex parts that are essential to keeping machines working.  He also talks about training and apprenticeship and shares how rewarding the career is.
-56	Pipefitter	72301	Steamfitters, pipefitters and sprinkler system installers	7252	Steamfitters, Pipefitters and Sprinkler System Installers	https://youtu.be/h67AieE95yk	Victoria	Vancouver Island/Coast	Viviana travels to Vancouver Island and meets a pipefitter who works on a submarine! She learns about bending and fabricating different pipes, and discovers how he solves problems with complex pipe systems.
-55	Landscape horticulturalist	22114	Landscape and horticulture technicians and specialists	2225	Landscape and Horticulture Technicians and Specialists	https://youtu.be/fl00YEWdYDI	Victoria	Vancouver Island/Coast	A horticulturist shares with Viviana her passion for working with plants. She demonstrates pruning, seeding and dead heading, and explains about career avenues and the endless possibilities in the horticulture field.
-54	Ironworker	72105	Ironworkers	7236	Ironworkers	https://youtu.be/KzSmE6zthKA	Victoria	Vancouver Island/Coast	Viviana visits an ironworker in Victoria and discovers what it takes to install and assemble what is essentially the skeleton of a building. She learns about how ironworkers interpret drawings, pack, lay and tie steel.
-53	Power engineer	92100	Power engineers and power systems operators	9241	Power Engineers and Power Systems Operators	https://youtu.be/_OmTDEtFTAY	Crofton	Vancouver Island/Coast	Brian heads to Crofton where he visits a power engineer. He takes a tour of a mill and learns how important the role of the power engineer is. He also learns how you can work in this profession in a variety of industries.
-52	Geologist	21102	Geoscientists and oceanographers	2113	Geoscientists and Oceanographers	https://youtu.be/cc6cISY752M	Vancouver	Mainland/Southwest	An exploration geologist shows Brian how she examines rocks for mineral deposits and analyzes data about potential sources of minerals. She explains how geologists often work both in an office and in the field. It’s a great job if you love to be outdoors!
-51	Occupational therapist	31203	Occupational therapists	3143	Occupational Therapists	https://youtu.be/cyryORXanjo	Victoria	Vancouver Island/Coast	An occupational therapist helps a person become as independent as possible physically, mentally and socially. Viviana joins her on a typical day with a client. The therapist explains how rewarding it is to help people achieve things they thought they couldn’t do!
-50	General practitioner	31102	General practitioners and family physicians	3112	General Practitioners and Family Physicians	https://youtu.be/hWtpNEZ4C10	Victoria	Vancouver Island/Coast	A doctor shows Viviana how to take a patient’s blood pressure. He sees 4 to 5 patients an hour, makes decisions all day, and notes that much of his work involves counselling. He really enjoys the friendships he develops with his patients as well as helping people.
-49	Civil engineer	21300	Civil engineers	2131	Civil Engineers	https://youtu.be/I0qke6LOHro	Nanaimo	Vancouver Island/Coast	Civil engineers plan, design and manage infrastructure projects like building roadways, pipelines, bridges, docks and harbours, and waterworks. A civil engineer in Nanaimo shows Viviana how he designs a bridge.
-48	Information systems professional	21222	Information systems specialists	2171	Information Systems Analysts and Consultants	https://youtu.be/l9Zbx-yJHN4	Nanaimo	Vancouver Island/Coast	Viviana meets an IT professional who works with software, hardware, wiring, and makes recommendations on how to improve a company’s computer network, performance and security. He manages over 700 computers remotely and loves working with new technologies.
-47	Registered clinical counsellor	41301	Therapists in counselling and related specialized therapies	4153	Family, Marriage and Other Related Counsellors	https://youtu.be/Mhynjl3e_Yc	Victoria	Vancouver Island/Coast	Viviana visits a registered clinical counsellor in Victoria who explains how he guides people through their troubles and recovery process. He explains that a counsellor must be a good listener and care about people. He loves helping people!
-46	Registered animal health technician	32104	Animal health technologists and veterinary technicians	3213	Animal Health Technologists and Veterinary Technicians	https://youtu.be/qu-lmIlWJfE	Saanichton	Vancouver Island/Coast	A vet technician shows Viviana how she assists the veterinarian by taking x-rays, taking blood samples, providing anaesthesia, monitoring the animal during surgery, and providing emergency care. This is a great career if you love animals!
-45	Lawyer	41101	Lawyers and Quebec notaries	4112	Lawyers and Quebec Notaries	https://youtu.be/NidOHUKzVMQ	Victoria	Vancouver Island/Coast	Viviana interviews a lawyer who has two areas of practice. She’s a litigator in court and is a solicitor who prepares documents and gives advice in areas such as real estate and selling a business. She has to be organized, confident and able to communicate well.
-44	Paralegal	42200	Paralegals and related occupations	4211	Paralegal and Related Occupations	https://youtu.be/s6DEu9--TAg	Victoria	Vancouver Island/Coast	A paralegal in Victoria shows Viviana how she prepares documents and takes initiative to support the case and get everything ready for court. Paralegals can specialize, or learn about all areas of the law. There’s “never a dull moment”.
-43	Food and beverage server	65200	Food and beverage servers	6513	Food and Beverage Servers	https://youtu.be/ahlciXcDh2A	Victoria	Vancouver Island/Coast	A server shows Viviana how she establishes a relationship with the customer, takes an order, serves the food efficiently, and cashes out at the end of the day. She explains how she organizes her work and the gratifying aspects of her job.
-42	Baker	63202	Bakers	6332	Bakers	https://youtu.be/x0rYO5ig2bo	Cowichan Bay	Vancouver Island/Coast	A baker in Cowichan Bay demonstrates how she uses machinery and hand skills to make a variety of baked goods. Viviana makes croissants! The baker takes pride in baking products that make her customers happy. She plans to open her own bakery business.
-41	Cook	63200	Cooks	6322	Cooks	https://youtu.be/3gYAN-cJa-k	Victoria	Vancouver Island/Coast	Viviana heads to Victoria and visits a cook who prepares meals and prioritizes tasks for the day. She learns all aspects of being a cook and how to prepare lemon ginger chicken! A busy kitchen requires coordination and awareness of safety.
-40	Pharmacist	31120	Pharmacists	3131	Pharmacists	https://youtu.be/m4OX-t2m01w	Cranbrook	Kootenay	A pharmacist in Cranbrook shows Brian how she provides people with medications safely, prepares injection needles, gives good directions to the patient, and uses computer systems. It’s a great job that makes a difference in people’s lives!
-39	Registered nurse	31301	Registered nurses and registered psychiatric nurses	3012	Registered Nurses and Registered Psychiatric Nurses	https://youtu.be/afZwxA4A2A4	Cranbrook	Kootenay	A registered nurse tells Brian that “a huge part of nursing is having compassion”. A registered nurse has primary responsibility for coordination of the patient’s care and interacts with doctors, medical staff, social workers and the patient’s family.
-38	Clinical psychologist	31200	Psychologists	4151	Psychologists	https://youtu.be/inD3woCw1Xs	Nelson	Kootenay	Brian meets a clinical psychologist who assesses patients’ problems and teaches them how to change their behaviour. She demonstrates how she communicates with children. She says a great psychologist needs to be empathic and really connect with people.
-37	Retail salesperson	64100	Retail salespersons and visual merchandisers	6421	Retail Salespersons	https://youtu.be/i0rUVZmINAw	Nelson	Kootenay	Brian visits a clerk in a sports equipment store in Nelson and learns about how he sells a culture. He explains how he loves sports and is passionate about the products he sells. A job in sales can be a step to careers in real estate and other types of sales.
-36	Biologist	21110	Biologists and related scientists	2121	Biologists and Related Scientists	https://youtu.be/Ji8bLaBa_YQ	Castlegar	Kootenay	A biologist shows Brian how she monitors the impact of a hydro facility on the local environment. She describes different career paths in environmental sciences, and talks about how she likes to work outdoors and see the results of her work.
-35	Vineyard manager	80020	Managers in agriculture	0821	Managers in Agriculture	https://youtu.be/NUAG0a02Coc	Osoyoos	Thompson-Okanagan	Brian takes a tour of a vineyard with the manager who is responsible for all aspects of the cultivation of grapes, including preparing the ground, irrigation, care of the plants, and planning for the next year. It’s a blend of art, science and business.
-34	Physiotherapist	31202	Physiotherapists	3142	Physiotherapists	https://youtu.be/bAztsMnE_Fk	Penticton	Thompson-Okanagan	A physiotherapist in Penticton shows Brian how she helps people move better, reduce pain, and recover from injuries. She advises patients on how muscles and joints can become stronger and move better.
-33	Dental assistant	33100	Dental assistants and dental laboratory assistants	3411	Dental Assistants	https://youtu.be/ciX-LlzGJfU	Summerland	Thompson-Okanagan	Brian meets a dental assistant in Summerland who helps the dentist by passing instruments during treatment, taking x-rays, recording everything that is done, and maintains the patient’s records. It’s a great stepping stone to careers in health care!
-32	Helicopter pilot	72600	Air pilots, flight engineers and flying instructors	2271	Air Pilots, Flight Engineers and Flying Instructors	https://youtu.be/wNSbw_NYxgI	Vancouver	Mainland/Southwest	Brian gets a bird’s eye view when he flies along with a helicopter pilot. The pilot describes different career paths and explains how pilots must not only understand the helicopter’s systems and technology, but also be a leader with “an adventurous spirit”.
-31	School principal	40021	School principals and administrators of elementary and secondary education	0422	School Principals and Administrators of Elementary and Secondary Education	https://youtu.be/fbPrT9g2GmY	Kelowna	Thompson-Okanagan	Brian meets a school principal who supervises instruction programs, health and safety, events, and interacts with children, parents and the school board. She shares how she values the connections she makes with the children and their families.
-30	Restaurant manager	60030	Restaurant and food service managers	0631	Restaurant and Food Service Managers	https://youtu.be/rb_2YXACcYk	Kelowna	Thompson-Okanagan	Viviana heads to Kelowna to meet a restaurant manager. The manager shows Viviana how she ensures standards are met, keeps up with trends, plans events, manages inventory and leads her team. She also describes how she uses her social and communication skills.
-29	Grounds maintenance worker	85121	Landscaping and grounds maintenance labourers	8612	Landscaping and Grounds Maintenance Labourers	https://youtu.be/Z_ifQaIiaUk	Kamloops	Thompson-Okanagan	Viviana rides along with an assistant superintendent of golf course maintenance in Kamloops. He describes his work in landscaping, trail maintenance, road upkeep, stonework, pest control, machine operation, and management.
-28	Social development worker	41300	Social workers	4152	Social Workers	https://youtu.be/_VHlBeBn9gQ	Williams Lake	Cariboo	A social worker in Williams Lake tells Viviana about her education and background in helping people. She describes her work at City Hall where she works with many agencies to improve the quality of life in the community.
-27	Electrician	72200	Electricians (except industrial and power system)	7241	Electricians (Except Industrial and Power System)	https://youtu.be/cjsMfu9Qj9Q	Williams Lake	Cariboo	Viviana is guided through a house under construction by an electrician who works on residential, commercial and industrial projects. He says it’s fun to work on a design team of electricians, carpenters, concrete experts and drywallers.
-26	Sawmill operator	94120	Sawmill machine operators	9431	Sawmill Machine Operators	https://youtu.be/i6dKpSqR2qA	Vanderhoof	Cariboo	A machine operator takes Viviana on a tour of a sawmill where he makes sure the machines are working properly. He uses technology and modern machinery to optimize the processing of wood. He works in a fast paced environment where safety is important.
-25	Carpenter	72310	Carpenters	7271	Carpenters	https://youtu.be/oIUK0ItCIQo	Prince George	Cariboo	Viviana takes a trip to Prince George to visit a carpenter. She learns how carpenters interpret drawings, create footings for walls, pour concrete into the footings, and mark posts for walls and beams. She also learns about training and apprenticeship.
-24	Mill worker	95103	Labourers in wood, pulp and paper processing	9614	Labourers in Wood, Pulp and Paper Processing	https://youtu.be/UutVLyqbqls	Smithers	North Coast & Nechako	Brian heads to Smithers to check out how mill workers can turn trees into anything. He sees how logs are delivered to the mill, cleaned, dried, cut, packaged and shipped to the customer. He learns this is a career with lots of variety and opportunity.
-23	Early childhood educator	42202	Early childhood educators and assistants	4214	Early Childhood Educators and Assistants	https://youtu.be/-qxLEZwlUHs	Smithers	North Coast & Nechako	An educator at a daycare centre leads Brian and the children through various activities. There is no limit to the training available for preschool educators. In this rewarding career, you teach children the skills they’ll use for a lifetime.
-22	Truck driver	73300	Transport truck drivers	7511	Transport Truck Drivers	https://youtu.be/A81nvDdP5KY	Terrace	North Coast & Nechako	Brian heads to Terrace where he meets a truck driver. He rides along and learns about local and long distance trips and other opportunities, such as running your own business or becoming a heavy equipment operator. This job can be like a “paid tourist”.
-21	Paramedic	32102	Paramedical occupations	3234	Paramedical Occupations	https://youtu.be/njRyrPjYQx4	Prince Rupert	North Coast & Nechako	Brian rides along with a paramedic in Prince Rupert who demonstrates how the ambulance crew respond to a call, administer treatment, and transport an injured person to the hospital. He describes different routes to a career as a paramedic.
-20	Longshore worker	75100	Longshore workers	7451	Longshore Workers	https://youtu.be/40hRk0VPE2c	Prince Rupert	North Coast & Nechako	A longshore worker in Prince Rupert describes how he drives cranes to move cargo from ocean shipping containers to trucks and trains. A driver moves at least 20 containers an hour. Brian sits beside him as he operates the crane from 150 feet above the ground!
-19	Heavy equipment operator	73400	Heavy equipment operators	7521	Heavy Equipment Operators (Except Crane)	https://youtu.be/mVeIwGbDlMc	Ft. St. John	Northeast	Brian visits a heavy equipment operator in Fort St. John who works on road construction, pipelines and major excavations. He shows Brian how to maintain equipment safety, and describes other careers in the industry closely related to heavy equipment.
-18	Mine manager	80010	Managers in natural resources production and fishing	0811	Managers in Natural Resources Production and Fishing	https://youtu.be/ObcqWez2ruI	Dawson Creek	Northeast	Brian interviews a mine manager who is responsible for the safety and smooth operation of a coal mine in northeastern B.C. He interacts with employees in different departments and describes the opportunities for advancement in the mining industry.
-17	Automotive technician	72410	Automotive service technicians, truck and bus mechanics and mechanical repairers	7321	Automotive Service Technicians, Truck and Bus Mechanics and Mechanical Repairers	https://youtu.be/VJSxZsZEVCY	Dawson Creek	Northeast	Brian visits an automotive technician in northern B.C. and discovers how he solves problems with vehicles. Brian learns about his training and apprenticeship, the variety in the work, and the modern tools and technology used in his job.
-16	Geological technician	22101	Geological and mineral technologists and technicians	2212	Geological and Mineral Technologists and Technicians	https://youtu.be/wGlZIT2twbg	Dawson Creek	Northeast	A geotechnician in Dawson Creek shows Brian how he analyzes rock samples that are found through drilling, uses scientific equipment, and produces technical reports. He has experience at over 160 well site locations.
-15	Well site supervisor	82021	Contractors and supervisors, oil and gas drilling and services	8222	Contractors and Supervisors, Oil and Gas Drilling and Services	https://youtu.be/RcRcdYLPy1M	Dawson Creek	Northeast	Brian heads to northern B.C. to meet a supervisor of natural gas drilling. He shows Brian the tools, processes and working conditions in oil and gas well site operations. Technical skills, safety and attention to detail are important.
-14	Human resource specialist	11200	Human resources professionals	1121	Human Resources Professionals	https://youtu.be/lbuYUY0FfIo	Vancouver	Mainland/Southwest	A human resources specialist in Vancouver tells Brian about his involvement in hiring, benefits, employee career growth, working with managers to build their teams, and generally making the organization a great place to work.
-13	Packaging associate	95106	Labourers in food and beverage processing	9617	Labourers in Food, Beverage and Associated Products Processing	https://youtu.be/DjaICqD6akg	Langley	Mainland/Southwest	Food processing is a modern and growing industry. A packaging associate in a meat processing plant shows Brian how she packages, labels and inspects food and food machinery. She works with technology and complies with high standards for public safety.
-12	Patient care attendant	33102	Nurse aides, orderlies and patient service associates	3413	Nurse Aides, Orderlies and Patient Service Associates	https://youtu.be/tWXThcDKYjY	Vancouver	Mainland/Southwest	A patient care attendant in a hospital shows Brian how he monitors patients’ vital signs, updates their records, and provides emotional support. He says this job is for you if you “have a big heart and like to help people”.
-11	Event planner	12103	Conference and event planners	1226	Conference And Event Planners	https://youtu.be/VZzto0mEJ_o	Vancouver	Mainland/Southwest	A Vancouver event planner gives Viviana an inside glimpse into organizing a festival. Integrating suggestions from others, she coordinates plans and details, staying within the budget. Her joy comes from seeing visitors having a great time.
-10	Sr. manager of communications	10022	Advertising, marketing and public relations managers	0124	Advertising, Marketing and Public Relations Managers	https://youtu.be/SOngj24r4IU	Vancouver	Mainland/Southwest	The manager of communications at Canada’s largest credit union tells Brian about the variety in her work and the need to integrate complex ideas. This job can lead to careers in management, consulting and launching your own business.
-9	Sales coordinator	10022	Advertising, marketing and public relations managers	0124	Advertising, Marketing and Public Relations Managers	https://youtu.be/52xU5UoWp7c	Vancouver	Mainland/Southwest	The senior sales coordinator for the BC Lions sells suites and corporate sponsorships. She needs to be competitive and creative, while developing strong relationships with partners. If you’re good at sales, you can sell anything, including yourself!
-8	Lead hand - warehouse department	14400	Shippers and receivers	1521	Shippers and Receivers	https://youtu.be/PISPgBrwUAo	Richmond	Mainland/Southwest	A shipper-receiver shows Viviana how he prepares products for shipping from a warehouse to businesses in the supply chain. The job requires teamwork and physical agility, and can lead to careers in business operations management.
-7	Dentist	31110	Dentists	3113	Dentists	https://youtu.be/2wAZjF3xlaw	Vancouver	Mainland/Southwest	Brian heads to Vancouver to meet a dentist. Here he meets a dentist who emphasizes the creativity she brings to running her business and in her work where “each tooth is like a little sculpture”. It’s rewarding to make people smile!
-6	Courier	74102	Couriers and messengers	1513	Couriers, Messengers and Door-To-Door Distributors	https://youtu.be/MRnjyXvIIQQ	Vancouver	Mainland/Southwest	Couriers work outdoors in a fast-paced environment that requires instant decision-making. Viviana learns how couriers must balance aggressiveness, professionalism and courtesy “in a giant game of chess”.
-5	Midwife	31303	Physician assistants, midwives and allied health professionals	3124	Allied Primary Health Practitioners	https://youtu.be/ix9DzmPuv58	Vancouver	Mainland/Southwest	A registered midwife explains to Viviana how she delivers a full program of regulated medical care for pregnant women, including helping to deliver babies and providing care before and after the birth. She loves being part of such a big event in people’s lives!
-4	Program advisor	43203	Border services, customs, and immigration officers	1228	Employment Insurance, Immigration, Border Services and Revenue Officers	https://youtu.be/F9b2s14K9cc	Vancouver	Mainland/Southwest	An advisor in the B.C. Provincial Nominee Program tells Viviana how she helps employers bring foreign workers to BC. She processes applications, travels overseas to recruit workers, and works with the public. She helps people’s dreams come true!
-3	Researcher	21110	Biologists and related scientists	4165	Health Policy Researchers, Consultants and Program Officers	https://youtu.be/hOpgJ8bRAhg	Vancouver	Mainland/Southwest	A spinal chord researcher shows Viviana how she develops new ways to treat people with spinal injuries. She presents her research at conferences all over the world. What’s most rewarding is knowing that her work will help a lot of people.
-2	Software engineer	21231	Software engineers and designers	2173	Software Engineers and Designers	https://youtu.be/obTfVrY5KLc	Burnaby	Mainland/Southwest	Viviana interviews a software engineer in Vancouver who creates NHL video games for XBoxes and mobile devices. He says his problem-solving skills, work as part of a team, and communication skills are preparing him for any job.
-1	Bus driver	73301	Bus drivers, subway operators and other transit operators	7512	Bus Drivers, Subway Operators and Other Transit Operators	https://youtu.be/yYUbhKgdJRE	Vancouver	Mainland/Southwest	A bus driver describes what being a “people person” really means—he works with thousands of people every day. He shows Viviana the importance of safety and manual dexterity in this job and that he has “a corner office with a view that always changes”.
+1	Bus Driver	73301	Bus drivers, subway operators and other transit operators	0015	Bus Drivers, Subway Operators and Other Transit Operators	https://youtu.be/yYUbhKgdJRE	Vancouver	Mainland/Southwest	A bus driver describes what being a “people person” really means—he works with thousands of people every day. He shows Viviana the importance of safety and manual dexterity in this job and that he has “a corner office with a view that always changes”.
+2	Software Engineer	21231	Software engineers and designers	0112	Software Engineers and Designers	https://youtu.be/obTfVrY5KLc	Burnaby	Mainland/Southwest	Viviana interviews a software engineer in Vancouver who creates NHL video games for XBoxes and mobile devices. He says his problem-solving skills, work as part of a team, and communication skills are preparing him for any job.
+3	Researcher	21110	Biologists and related scientists	0122	Health Policy Researchers, Consultants and Program Officers	https://youtu.be/hOpgJ8bRAhg	Vancouver	Mainland/Southwest	A spinal chord researcher shows Viviana how she develops new ways to treat people with spinal injuries. She presents her research at conferences all over the world. What’s most rewarding is knowing that her work will help a lot of people.
+4	Program Advisor	43203	Border services, customs, and immigration officers	0124	Employment Insurance, Immigration, Border Services and Revenue Officers	https://youtu.be/F9b2s14K9cc	Vancouver	Mainland/Southwest	An advisor in the B.C. Provincial Nominee Program tells Viviana how she helps employers bring foreign workers to BC. She processes applications, travels overseas to recruit workers, and works with the public. She helps people’s dreams come true!
+5	Midwife	31303	Physician assistants, midwives and allied health professionals	0124	Allied Primary Health Practitioners	https://youtu.be/ix9DzmPuv58	Vancouver	Mainland/Southwest	A registered midwife explains to Viviana how she delivers a full program of regulated medical care for pregnant women, including helping to deliver babies and providing care before and after the birth. She loves being part of such a big event in people’s lives!
+6	Courier	74102	Couriers and messengers	1111	Couriers, Messengers and Door-To-Door Distributors	https://youtu.be/MRnjyXvIIQQ	Vancouver	Mainland/Southwest	Couriers work outdoors in a fast-paced environment that requires instant decision-making. Viviana learns how couriers must balance aggressiveness, professionalism and courtesy “in a giant game of chess”.
+7	Dentist	31110	Dentists	1121	Dentists	https://youtu.be/2wAZjF3xlaw	Vancouver	Mainland/Southwest	Brian heads to Vancouver to meet a dentist. Here he meets a dentist who emphasizes the creativity she brings to running her business and in her work where “each tooth is like a little sculpture”. It’s rewarding to make people smile!
+8	Lead Hand - Warehouse Department	14400	Shippers and receivers	1123	Shippers and Receivers	https://youtu.be/PISPgBrwUAo	Richmond	Mainland/Southwest	A shipper-receiver shows Viviana how he prepares products for shipping from a warehouse to businesses in the supply chain. The job requires teamwork and physical agility, and can lead to careers in business operations management.
+9	Sales Coordinator	10022	Advertising, marketing and public relations managers	1222	Advertising, Marketing and Public Relations Managers	https://youtu.be/52xU5UoWp7c	Vancouver	Mainland/Southwest	The senior sales coordinator for the BC Lions sells suites and corporate sponsorships. She needs to be competitive and creative, while developing strong relationships with partners. If you’re good at sales, you can sell anything, including yourself!
+10	Sr. Manager of Communications	10022	Advertising, marketing and public relations managers	1226	Advertising, Marketing and Public Relations Managers	https://youtu.be/SOngj24r4IU	Vancouver	Mainland/Southwest	The manager of communications at Canada’s largest credit union tells Brian about the variety in her work and the need to integrate complex ideas. This job can lead to careers in management, consulting and launching your own business.
+11	Event Planner	12103	Conference and event planners	1311	Conference And Event Planners	https://youtu.be/VZzto0mEJ_o	Vancouver	Mainland/Southwest	A Vancouver event planner gives Viviana an inside glimpse into organizing a festival. Integrating suggestions from others, she coordinates plans and details, staying within the budget. Her joy comes from seeing visitors having a great time.
+12	Patient Care Attendant	33102	Nurse aides, orderlies and patient service associates	1221	Nurse Aides, Orderlies and Patient Service Associates	https://youtu.be/tWXThcDKYjY	Vancouver	Mainland/Southwest	A patient care attendant in a hospital shows Brian how he monitors patients’ vital signs, updates their records, and provides emotional support. He says this job is for you if you “have a big heart and like to help people”.
+13	Packaging Associate	95106	Labourers in food and beverage processing	1242	Labourers in Food, Beverage and Associated Products Processing	https://youtu.be/DjaICqD6akg	Langley	Mainland/Southwest	Food processing is a modern and growing industry. A packaging associate in a meat processing plant shows Brian how she packages, labels and inspects food and food machinery. She works with technology and complies with high standards for public safety.
+14	Human Resource Specialist	11200	Human resources professionals	1243	Human Resources Professionals	https://youtu.be/lbuYUY0FfIo	Vancouver	Mainland/Southwest	A human resources specialist in Vancouver tells Brian about his involvement in hiring, benefits, employee career growth, working with managers to build their teams, and generally making the organization a great place to work.
+15	Well Site Supervisor	82021	Contractors and supervisors, oil and gas drilling and services	1315	Contractors and Supervisors, Oil and Gas Drilling and Services	https://youtu.be/RcRcdYLPy1M	Dawson Creek	Northeast	Brian heads to northern B.C. to meet a supervisor of natural gas drilling. He shows Brian the tools, processes and working conditions in oil and gas well site operations. Technical skills, safety and attention to detail are important.
+16	Geological Technician	22101	Geological and mineral technologists and technicians	1411	Geological and Mineral Technologists and Technicians	https://youtu.be/wGlZIT2twbg	Dawson Creek	Northeast	A geotechnician in Dawson Creek shows Brian how he analyzes rock samples that are found through drilling, uses scientific equipment, and produces technical reports. He has experience at over 160 well site locations.
+17	Automotive Technician	72410	Automotive service technicians, truck and bus mechanics and mechanical repairers	1414	Automotive Service Technicians, Truck and Bus Mechanics and Mechanical Repairers	https://youtu.be/VJSxZsZEVCY	Dawson Creek	Northeast	Brian visits an automotive technician in northern B.C. and discovers how he solves problems with vehicles. Brian learns about his training and apprenticeship, the variety in the work, and the modern tools and technology used in his job.
+36	Biologist	21110	Biologists and related scientists	2175	Biologists and Related Scientists	https://youtu.be/Ji8bLaBa_YQ	Castlegar	Kootenay	A biologist shows Brian how she monitors the impact of a hydro facility on the local environment. She describes different career paths in environmental sciences, and talks about how she likes to work outdoors and see the results of her work.
+18	Mine Manager	80010	Managers in natural resources production and fishing	1431	Managers in Natural Resources Production and Fishing	https://youtu.be/ObcqWez2ruI	Dawson Creek	Northeast	Brian interviews a mine manager who is responsible for the safety and smooth operation of a coal mine in northeastern B.C. He interacts with employees in different departments and describes the opportunities for advancement in the mining industry.
+19	Heavy Equipment Operator	73400	Heavy equipment operators	1521	Heavy Equipment Operators (Except Crane)	https://youtu.be/mVeIwGbDlMc	Ft. St. John	Northeast	Brian visits a heavy equipment operator in Fort St. John who works on road construction, pipelines and major excavations. He shows Brian how to maintain equipment safety, and describes other careers in the industry closely related to heavy equipment.
+20	Longshore Worker	75100	Longshore workers	0211	Longshore Workers	https://youtu.be/40hRk0VPE2c	Prince Rupert	North Coast & Nechako	A longshore worker in Prince Rupert describes how he drives cranes to move cargo from ocean shipping containers to trucks and trains. A driver moves at least 20 containers an hour. Brian sits beside him as he operates the crane from 150 feet above the ground!
+21	Paramedic	32102	Paramedical occupations	0213	Paramedical Occupations	https://youtu.be/njRyrPjYQx4	Prince Rupert	North Coast & Nechako	Brian rides along with a paramedic in Prince Rupert who demonstrates how the ambulance crew respond to a call, administer treatment, and transport an injured person to the hospital. He describes different routes to a career as a paramedic.
+22	Truck Driver	73300	Transport truck drivers	2112	Transport Truck Drivers	https://youtu.be/A81nvDdP5KY	Terrace	North Coast & Nechako	Brian heads to Terrace where he meets a truck driver. He rides along and learns about local and long distance trips and other opportunities, such as running your own business or becoming a heavy equipment operator. This job can be like a “paid tourist”.
+23	Early Childhood Educator	42202	Early childhood educators and assistants	2113	Early Childhood Educators and Assistants	https://youtu.be/-qxLEZwlUHs	Smithers	North Coast & Nechako	An educator at a daycare centre leads Brian and the children through various activities. There is no limit to the training available for preschool educators. In this rewarding career, you teach children the skills they’ll use for a lifetime.
+24	Mill Worker	95103	Labourers in wood, pulp and paper processing	4165	Labourers in Wood, Pulp and Paper Processing	https://youtu.be/UutVLyqbqls	Smithers	North Coast & Nechako	Brian heads to Smithers to check out how mill workers can turn trees into anything. He sees how logs are delivered to the mill, cleaned, dried, cut, packaged and shipped to the customer. He learns this is a career with lots of variety and opportunity.
+25	Carpenter	72310	Carpenters	2121	Carpenters	https://youtu.be/oIUK0ItCIQo	Prince George	Cariboo	Viviana takes a trip to Prince George to visit a carpenter. She learns how carpenters interpret drawings, create footings for walls, pour concrete into the footings, and mark posts for walls and beams. She also learns about training and apprenticeship.
+26	Sawmill Operator	94120	Sawmill machine operators	2122	Sawmill Machine Operators	https://youtu.be/i6dKpSqR2qA	Vanderhoof	Cariboo	A machine operator takes Viviana on a tour of a sawmill where he makes sure the machines are working properly. He uses technology and modern machinery to optimize the processing of wood. He works in a fast paced environment where safety is important.
+27	Electrician	72200	Electricians (except industrial and power system)	2151	Electricians (Except Industrial and Power System)	https://youtu.be/cjsMfu9Qj9Q	Williams Lake	Cariboo	Viviana is guided through a house under construction by an electrician who works on residential, commercial and industrial projects. He says it’s fun to work on a design team of electricians, carpenters, concrete experts and drywallers.
+28	Social Development Worker	41300	Social workers	2152	Social Workers	https://youtu.be/_VHlBeBn9gQ	Williams Lake	Cariboo	A social worker in Williams Lake tells Viviana about her education and background in helping people. She describes her work at City Hall where she works with many agencies to improve the quality of life in the community.
+29	Grounds Maintenance Worker	85121	Landscaping and grounds maintenance labourers	2153	Landscaping and Grounds Maintenance Labourers	https://youtu.be/Z_ifQaIiaUk	Kamloops	Thompson-Okanagan	Viviana rides along with an assistant superintendent of golf course maintenance in Kamloops. He describes his work in landscaping, trail maintenance, road upkeep, stonework, pest control, machine operation, and management.
+30	Restaurant Manager	60030	Restaurant and food service managers	2154	Restaurant and Food Service Managers	https://youtu.be/rb_2YXACcYk	Kelowna	Thompson-Okanagan	Viviana heads to Kelowna to meet a restaurant manager. The manager shows Viviana how she ensures standards are met, keeps up with trends, plans events, manages inventory and leads her team. She also describes how she uses her social and communication skills.
+31	School Principal	40021	School principals and administrators of elementary and secondary education	2171	School Principals and Administrators of Elementary and Secondary Education	https://youtu.be/fbPrT9g2GmY	Kelowna	Thompson-Okanagan	Brian meets a school principal who supervises instruction programs, health and safety, events, and interacts with children, parents and the school board. She shares how she values the connections she makes with the children and their families.
+32	Helicopter Pilot	72600	Air pilots, flight engineers and flying instructors	2173	Air Pilots, Flight Engineers and Flying Instructors	https://youtu.be/wNSbw_NYxgI	Vancouver	Mainland/Southwest	Brian gets a bird’s eye view when he flies along with a helicopter pilot. The pilot describes different career paths and explains how pilots must not only understand the helicopter’s systems and technology, but also be a leader with “an adventurous spirit”.
+33	Dental Assistant	33100	Dental assistants and dental laboratory assistants	2174	Dental Assistants	https://youtu.be/ciX-LlzGJfU	Summerland	Thompson-Okanagan	Brian meets a dental assistant in Summerland who helps the dentist by passing instruments during treatment, taking x-rays, recording everything that is done, and maintains the patient’s records. It’s a great stepping stone to careers in health care!
+34	Physiotherapist	31202	Physiotherapists	2174	Physiotherapists	https://youtu.be/bAztsMnE_Fk	Penticton	Thompson-Okanagan	A physiotherapist in Penticton shows Brian how she helps people move better, reduce pain, and recover from injuries. She advises patients on how muscles and joints can become stronger and move better.
+35	Vineyard Manager	80020	Managers in agriculture	2175	Managers in Agriculture	https://youtu.be/NUAG0a02Coc	Osoyoos	Thompson-Okanagan	Brian takes a tour of a vineyard with the manager who is responsible for all aspects of the cultivation of grapes, including preparing the ground, irrigation, care of the plants, and planning for the next year. It’s a blend of art, science and business.
+37	Retail Salesperson	64100	Retail salespersons and visual merchandisers	2131	Retail Salespersons	https://youtu.be/i0rUVZmINAw	Nelson	Kootenay	Brian visits a clerk in a sports equipment store in Nelson and learns about how he sells a culture. He explains how he loves sports and is passionate about the products he sells. A job in sales can be a step to careers in real estate and other types of sales.
+38	Clinical Psychologist	31200	Psychologists	2131	Psychologists	https://youtu.be/inD3woCw1Xs	Nelson	Kootenay	Brian meets a clinical psychologist who assesses patients’ problems and teaches them how to change their behaviour. She demonstrates how she communicates with children. She says a great psychologist needs to be empathic and really connect with people.
+39	Registered Nurse	31301	Registered nurses and registered psychiatric nurses	2132	Registered Nurses and Registered Psychiatric Nurses	https://youtu.be/afZwxA4A2A4	Cranbrook	Kootenay	A registered nurse tells Brian that “a huge part of nursing is having compassion”. A registered nurse has primary responsibility for coordination of the patient’s care and interacts with doctors, medical staff, social workers and the patient’s family.
+40	Pharmacist	31120	Pharmacists	2133	Pharmacists	https://youtu.be/m4OX-t2m01w	Cranbrook	Kootenay	A pharmacist in Cranbrook shows Brian how she provides people with medications safely, prepares injection needles, gives good directions to the patient, and uses computer systems. It’s a great job that makes a difference in people’s lives!
+41	Cook	63200	Cooks	2211	Cooks	https://youtu.be/3gYAN-cJa-k	Victoria	Vancouver Island/Coast	Viviana heads to Victoria and visits a cook who prepares meals and prioritizes tasks for the day. She learns all aspects of being a cook and how to prepare lemon ginger chicken! A busy kitchen requires coordination and awareness of safety.
+42	Baker	63202	Bakers	2212	Bakers	https://youtu.be/x0rYO5ig2bo	Cowichan Bay	Vancouver Island/Coast	A baker in Cowichan Bay demonstrates how she uses machinery and hand skills to make a variety of baked goods. Viviana makes croissants! The baker takes pride in baking products that make her customers happy. She plans to open her own bakery business.
+43	Food and Beverage Server	65200	Food and beverage servers	2224	Food and Beverage Servers	https://youtu.be/ahlciXcDh2A	Victoria	Vancouver Island/Coast	A server shows Viviana how she establishes a relationship with the customer, takes an order, serves the food efficiently, and cashes out at the end of the day. She explains how she organizes her work and the gratifying aspects of her job.
+44	Paralegal	42200	Paralegals and related occupations	2225	Paralegal and Related Occupations	https://youtu.be/s6DEu9--TAg	Victoria	Vancouver Island/Coast	A paralegal in Victoria shows Viviana how she prepares documents and takes initiative to support the case and get everything ready for court. Paralegals can specialize, or learn about all areas of the law. There’s “never a dull moment”.
+45	Lawyer	41101	Lawyers and Quebec notaries	2253	Lawyers and Quebec Notaries	https://youtu.be/NidOHUKzVMQ	Victoria	Vancouver Island/Coast	Viviana interviews a lawyer who has two areas of practice. She’s a litigator in court and is a solicitor who prepares documents and gives advice in areas such as real estate and selling a business. She has to be organized, confident and able to communicate well.
+46	Registered Animal Health Technician	32104	Animal health technologists and veterinary technicians	2281	Animal Health Technologists and Veterinary Technicians	https://youtu.be/qu-lmIlWJfE	Saanichton	Vancouver Island/Coast	A vet technician shows Viviana how she assists the veterinarian by taking x-rays, taking blood samples, providing anaesthesia, monitoring the animal during surgery, and providing emergency care. This is a great career if you love animals!
+47	Registered Clinical Counsellor	41301	Therapists in counselling and related specialized therapies	2282	Family, Marriage and Other Related Counsellors	https://youtu.be/Mhynjl3e_Yc	Victoria	Vancouver Island/Coast	Viviana visits a registered clinical counsellor in Victoria who explains how he guides people through their troubles and recovery process. He explains that a counsellor must be a good listener and care about people. He loves helping people!
+48	Information Systems Professional	21222	Information systems specialists	2263	Information Systems Analysts and Consultants	https://youtu.be/l9Zbx-yJHN4	Nanaimo	Vancouver Island/Coast	Viviana meets an IT professional who works with software, hardware, wiring, and makes recommendations on how to improve a company’s computer network, performance and security. He manages over 700 computers remotely and loves working with new technologies.
+49	Civil Engineer	21300	Civil engineers	2264	Civil Engineers	https://youtu.be/I0qke6LOHro	Nanaimo	Vancouver Island/Coast	Civil engineers plan, design and manage infrastructure projects like building roadways, pipelines, bridges, docks and harbours, and waterworks. A civil engineer in Nanaimo shows Viviana how he designs a bridge.
+50	General Practitioner	31102	General practitioners and family physicians	2241	General Practitioners and Family Physicians	https://youtu.be/hWtpNEZ4C10	Victoria	Vancouver Island/Coast	A doctor shows Viviana how to take a patient’s blood pressure. He sees 4 to 5 patients an hour, makes decisions all day, and notes that much of his work involves counselling. He really enjoys the friendships he develops with his patients as well as helping people.
+51	Occupational Therapist	31203	Occupational therapists	2242	Occupational Therapists	https://youtu.be/cyryORXanjo	Victoria	Vancouver Island/Coast	An occupational therapist helps a person become as independent as possible physically, mentally and socially. Viviana joins her on a typical day with a client. The therapist explains how rewarding it is to help people achieve things they thought they couldn’t do!
+52	Geologist	21102	Geoscientists and oceanographers	2243	Geoscientists and Oceanographers	https://youtu.be/cc6cISY752M	Vancouver	Mainland/Southwest	An exploration geologist shows Brian how she examines rocks for mineral deposits and analyzes data about potential sources of minerals. She explains how geologists often work both in an office and in the field. It’s a great job if you love to be outdoors!
+53	Power Engineer	92100	Power engineers and power systems operators	3111	Power Engineers and Power Systems Operators	https://youtu.be/_OmTDEtFTAY	Crofton	Vancouver Island/Coast	Brian heads to Crofton where he visits a power engineer. He takes a tour of a mill and learns how important the role of the power engineer is. He also learns how you can work in this profession in a variety of industries.
+54	Ironworker	72105	Ironworkers	3112	Ironworkers	https://youtu.be/KzSmE6zthKA	Victoria	Vancouver Island/Coast	Viviana visits an ironworker in Victoria and discovers what it takes to install and assemble what is essentially the skeleton of a building. She learns about how ironworkers interpret drawings, pack, lay and tie steel.
+55	Landscape Horticulturalist	22114	Landscape and horticulture technicians and specialists	3114	Landscape and Horticulture Technicians and Specialists	https://youtu.be/fl00YEWdYDI	Victoria	Vancouver Island/Coast	A horticulturist shares with Viviana her passion for working with plants. She demonstrates pruning, seeding and dead heading, and explains about career avenues and the endless possibilities in the horticulture field.
+56	Pipefitter	72301	Steamfitters, pipefitters and sprinkler system installers	3113	Steamfitters, Pipefitters and Sprinkler System Installers	https://youtu.be/h67AieE95yk	Victoria	Vancouver Island/Coast	Viviana travels to Vancouver Island and meets a pipefitter who works on a submarine! She learns about bending and fabricating different pipes, and discovers how he solves problems with complex pipe systems.
+57	Machinist	72100	Machinists and machining and tooling inspectors	3121	Machinists And Machining and Tooling Inspectors	https://youtu.be/nYfzgVnJHN0	Victoria	Vancouver Island/Coast	A machinist in a shipyard shows Viviana what it takes to produce complex parts that are essential to keeping machines working.  He also talks about training and apprenticeship and shares how rewarding the career is.
+58	Refrigeration and Air Conditioning Mechanic	72402	Heating, refrigeration and air conditioning mechanics	3141	Refrigeration and Air Conditioning Mechanics	https://youtu.be/AlYSO5XpYCc	Campbell River	Vancouver Island/Coast	Viviana is taken on a tour of a shop and a work site and learns how these mechanics maintain and install air conditioning, refrigeration and heating systems. She learns how this trade is gratifying by meeting clients' needs.
+59	Instrument Mechanic	22312	Industrial instrument technicians and mechanics	3131	Industrial Instrument Technicians and Mechanics	https://youtu.be/hfKsTV4sbFI	Crofton	Vancouver Island/Coast	An instrument mechanic explains to Viviana how his role is important to the successful operation of a mill. In this broad trade, he works with a vast array of equipment and keeps up with the latest technologies.
+60	Heavy-Duty Equipment Mechanic	72401	Heavy-duty equipment mechanics	3132	Heavy-Duty Equipment Mechanics	https://youtu.be/BtZGjIzCFNk	Squamish	Mainland/Southwest	Brian visits a heavy duty mechanic and learns that this trade involves anything from maintenance to rebuilds of engines and other parts of heavy equipment. He learns that problem solving and computer skills are needed for success.
+61	Hairstylist	63210	Hairstylists and barbers	3132	Hairstylists and Barbers	https://youtu.be/BDIptsGxLUk	Squamish	Mainland/Southwest	Brian learns what it takes to be a successful hairstylist. Social skills and communication are key in creating new looks and meeting clients' expectations. This career offers exciting opportunities in the beauty and entertainment industry.
+62	Building Inspector	22233	Construction inspectors	4151	Construction Inspectors	https://youtu.be/RYbZHeNApSU	Dawson Creek	Northeast	Brian meets a building inspector at construction site in Dawson Creek. He learns about inspecting concrete, framing, reinforcing and plumbing to ensure building code regulations are met.
+63	Medical Laboratory Technologist	32120	Medical laboratory technologists	3122	Medical Laboratory Technologists	https://youtu.be/124t9bcW6ms	Dawson Creek	Northeast	A medical lab technologist tells Brian how organization and attention to detail are essential for controlling quality. She finds her career rewarding and varied, with plenty of opportunities to learn and have “an impact on somebody’s life.”
+64	Firefighter	42101	Firefighters	3142	Firefighters	https://youtu.be/LgMvz1gp-QI	Ft. St. John	Northeast	Brian visits a Fort St. John firefighter, who says the job requires excellent social and physical skills and fast reactions. He describes serving the community as exciting and fun, with camaraderie and “no two days that are the same.”
+65	Land Surveyor	21203	Land surveyors	3143	Land Surveyors	https://youtu.be/nsaQ3iQ66QU	Ft. St. John	Northeast	A Fort St. John land surveyor explains why precision is crucial when dealing with clients’ properties and land boundaries. He likes the variety of office and fieldwork and may travel to remote locations by ATV, snowmobile or helicopter.
+66	Dietitian	31121	Dietitians and nutritionists	3012	Dietitians and Nutritionists	https://youtu.be/JX3mPYjW7cs	Prince George	Cariboo	Brian learns how a Prince George dietitian works with clients to balance their diets and meet their health goals. She tailors nutritional plans for a wide range of people and needs, becoming a key part of their journey to better health.
+67	Certified Personal Trainer	54100	Program leaders and instructors in recreation, sport and fitness	3124	Program Leaders and Instructors in Recreation, Sport and Fitness	https://youtu.be/dMRmQban5ak	Prince George	Cariboo	A Prince George certified personal trainer shows Brian how she helps clients meet their exercise goals. She creates programs, trains clients and adapts programs to fit their progress. Helping people change their lives gives her inspiration.
+68	Vocational Instructor	41210	College and other vocational instructors	3124	College and Other Vocational Instructors	https://youtu.be/bjF7yRE0RH8	Prince George	Cariboo	Brian heads to Prince George to meet a vocational instructor, who explains how she prepares students for a practical nursing career. A mix of classroom and hands-on training actively engages students.
+69	Forester	21111	Forestry professionals	3231	Forestry Professionals	https://youtu.be/cNQCUbei8to	Terrace	North Coast & Nechako	A Terrace forester explains to Brian how he looks after a forest’s interests. With no typical days, his work blends office and field work, and the travel involved offers adventure. “Just being outdoors” represents a key reward on the job.
+70	Deputy Harbour Master	72604	Railway traffic controllers and marine traffic regulators	3233	Railway Traffic Controllers and Marine Traffic Regulators	https://youtu.be/YrqUwYmN4yA	Prince Rupert	North Coast & Nechako	Viviana tours the busy Port of Prince Rupert, where she meets the deputy harbour master, whose team manages the safety and security of the harbour and visiting ships. Watch him monitor the action from the busy control room and harbourside.
+71	Tug Master	72602	Deck officers, water transport	3234	Deck Officers, Water Transport	https://youtu.be/Rhe9vH8cXPI	Prince Rupert	North Coast & Nechako	Viviana interviews a Prince Rupert tug master and boards his tugboat to learn what it takes to safely guide ships in and out of the harbour. In his job, every day brings different activities and people, and an amazing view from his office!
+72	Deck Hand	74201	Water transport deck and engine room crew	3214	Water Transport Deck and Engine Room Crew	https://youtu.be/gqQlVrcHm7s	Prince Rupert	North Coast & Nechako	Viviana visits a Prince Rupert deck hand and learns about his job, from directing traffic on the car deck to steering on the ship’s bridge. She learns all about the procedures that keep a vessel shipshape and its cargo and passengers safe.
+73	Silviculturist	84111	Silviculture and forestry workers	3213	Silviculture and Forestry Workers	https://youtu.be/ZwI2cJrmPVQ	Quesnel	Cariboo	Viviana heads to Quesnel to meet a silviculturist who shows her how to plant trees. He describes the effort that goes into preparing for the May to July planting season, and visits his tree planters to check their surroundings and safety.
+74	Butcher	63201	Butchers - retail and wholesale	3222	Butchers, Meat Cutters And Fishmongers - Retail and Wholesale	https://youtu.be/ea37cSOY86s	Williams Lake	Cariboo	A Williams Lake butcher takes Viviana around his shop. He stresses the need to know meat cuts and quality and how to safely operate a range of machines. His biggest reward comes from sending happy customers home with a quality product.
+75	Employment Case Manager	41321	Career development practitioners and career counsellors (except education)	3211	Employment Counsellors	https://youtu.be/MSqphLKFG_c	Williams Lake	Cariboo	Viviana heads to Williams Lake to meet an employment case manager, who describes helping clients learn how to search for and land a job. When clients win the jobs they’ve worked toward, she shares their joy. “It’s the most amazing feeling.”
+76	Facility Operation and Maintenance Manager	70012	Facility operation and maintenance managers	3211	Facility Operation and Maintenance Managers	https://youtu.be/7XXDoaZtQ60	108 Mile Ranch	Cariboo	Viviana tours a Cariboo health ranch with a facility operations and maintenance manager. He describes what makes for smooth operation of a multi-faceted resort. He loves providing top-quality services to people from all over the world.
+77	Registered Massage Therapist	32201	Massage therapists	3216	Massage Therapists	https://youtu.be/LvjN5sAEnLI	Kamloops	Thompson-Okanagan	A registered massage therapist in Kamloops shows Brian how she works with clients to relieve pain and discomfort and increase range of motion, often after an injury. Her role in someone’s healthy recovery is the greatest reward of the job.
+78	Community Planner	21202	Urban and land use planners	3232	Urban and Land Use Planners	https://youtu.be/qvViXTAe3Ts	Kamloops	Thompson-Okanagan	A Kamloops community planner tells Brian that it takes teamwork and creativity to move a plan from concept to reality. He reviews applications, reads maps, attends meetings and submits reports. His biggest reward: solving people’s problems.
+79	Boat Builder	94219	Other products assemblers, finishers and inspectors	3236	Boat Assemblers and Inspectors	https://youtu.be/Qq_mClkGTPA	Vernon	Thompson-Okanagan	Brian visits a Vernon boat builder, who describes the process and skills required to build a quality water-worthy boat. The most rewarding part of his job is delivering the finished product and putting a smile on the customer’s face.
+80	Real Estate Agent	63101	Real estate agents and salespersons	3411	Real Estate Agents and Salespersons	https://youtu.be/oubdrAb3LsM	Kelowna	Thompson-Okanagan	A Kelowna realtor shares a day with Brian, discussing how she builds relationships and manages transactions from start to finish. She describes her varied schedule and routine. Her greatest reward is landing the perfect home for her client.
+81	Graphic Designer	52120	Graphic designers and illustrators	3413	Graphic Designers and Illustrators	https://youtu.be/pOz68qngB34	Penticton	Thompson-Okanagan	A graphic designer shows Brian the kind of design work she does for customers. She describes her job as a blend of innovation, art, design and communication skills. She likes the job’s many opportunities to grow and expand her knowledge.
+82	Journalist	51113	Journalists	0422	Journalists	https://youtu.be/T4YaKm0NyX8	Nelson	Kootenay	Viviana heads to Nelson to meet a journalist who shows her the exciting process of creating a newspaper, from blank slate to finished product. The job involves writing well, putting people at ease, passion and openness to the unexpected.
+83	Librarian	51100	Librarians	0423	Librarians	https://youtu.be/OxebUahoL5w	Nelson	Kootenay	A Nelson librarian tells Viviana about the services and programs they provide to the public, from babies to seniors. Behind-the-scenes detail is vital, but helping people find things and making a difference in their lives is her top reward.
+84	Conservation Officer	22113	Conservation and fishery officers	4112	Conservation and Fishery Officers	https://youtu.be/JdxOcGs7MBw	Fernie	Kootenay	Viviana rides along with a conservation officer, who protects the environment and natural resources. Dealing with wildlife, hunting and angling issues and pollution, he investigates possible violations. A grateful public is his key reward.
+85	Brew Master	22100	Chemical technologists and technicians	4011	Chemical Technologists and Technicians	https://youtu.be/1zYHWQrQDZ4	Fernie	Kootenay	A Fernie brew master shows Viviana the dynamic and meticulous process of making beer.  A blend of science and creativity, the job allows him to maintain quality and develop new and innovative brands.
+86	Customs Broker	13200	Customs, ship and other brokers	4021	Customs, Ship and Other Brokers	https://youtu.be/zToLB35zBv8	Vancouver	Mainland/Southwest	A Vancouver customs broker tells Brian how she helps clients import shipments into Canada. To do her job well, she stays in touch, juggles emails and keeps precise records. She mostly works at her desk, but has also travelled for the job.
+87	Designer, Furniture Maker	94210	Furniture and fixture assemblers, finishers, refinishers and inspectors	4032	Furniture and Fixture Assemblers and Inspectors	https://youtu.be/9mm9PWMEbmM	Vancouver	Mainland/Southwest	A Vancouver furniture maker and designer shows Brian how he creates unique pieces for his clients. The key to success is finding the work; the rewards come in his original designs. His career offers many avenues and endless opportunities.
+88	Web Developer	21234	Web developers and programmers	4152	Web Designers And Developers	https://youtu.be/WmJ8NqHAh6M	Vancouver	Mainland/Southwest	A Vancouver web developer tells Viviana how he translates ideas into visual stories on the web. His greatest rewards come from working together to solve problems and bring a project to reality. This dynamic career “can take you anywhere.”
+89	Chief Economist	41401	Economists and economic policy researchers and analysts	4152	Economists and Economic Policy Researchers and Analysts	https://youtu.be/lklBAFlCvwU	Vancouver	Mainland/Southwest	Viviana meets a chief economist in Vancouver, who explains his job of analyzing economic data and predicting the behaviour of markets. His forecasts, reports and presentations help clients make informed decisions.
+90	Special Effects Makeup	52119	Other technical and coordinating occupations in motion pictures, broadcasting and the performing arts	4153	Other Technical and Co-Ordinating Occupations in Motion Pictures, Broadcasting and The Performing Arts	https://youtu.be/0U9LpYQjiuc	Coquitlam	Mainland/Southwest	Viviana tours a special effects makeup artist’s Coquitlam studio and observes the creative process at work. This fascinating job combines fine art and problem-solving challenges. Seeing the finished product is the crowning part of the day.
+91	Fashion Designer	53123	Theatre, fashion, exhibit and other creative designers	4156	Theatre, Fashion, Exhibit and Other Creative Designers	https://youtu.be/IfCgW_rmOo0	Vancouver	Mainland/Southwest	A Vancouver fashion designer shows Viviana how he follows and incorporates current trends in his collections. Deadline-driven but flexible, this social, hands-on career emphasizes being creative and working as part of a team.
+92	Producer	51120	Producers, directors, choreographers and related occupations	4161	Producers, Directors, Choreographers and Related Occupations	https://youtu.be/OXvsdJs1v0o	Vancouver	Mainland/Southwest	Viviana heads to a Vancouver TV studio to interview a producer, who explains how she communicates the program vision to the crew. In this fast-paced environment, each day is different. Seeing the end product of her efforts is “really cool.”
+93	Camera Operator	52110	Film and video camera operators	4162	Film and Video Camera Operators	https://youtu.be/Vnl2WRaqu5g	Vancouver	Mainland/Southwest	A Vancouver camera operator shows Viviana what’s involved in capturing great moments on screen. Her exciting career offers daily variety in location, schedule and people, and she also likes the opportunity for continued growth and learning.
+94	Chief Financial Officer	00018	Senior managers - public and private sector	4164	Senior Managers - Trade, Broadcasting and Other Services, N.e.c.	https://youtu.be/B4ztw5v9CzY	Vancouver	Mainland/Southwest	Viviana meets a chief financial officer of a Vancouver chocolate manufacturer. Touring the factory, she learns about the financial side of business management and his roles as a leader and executive team member of a growing company.
+95	Conductor	73311	Railway conductors and brakemen/women	4311	Railway Conductors and Brakemen/Women	https://youtu.be/-nSmJnTBjhE	Port Coquitlam	Mainland/Southwest	Viviana visits Port Coquitlam to find out how railway conductors help get trains safely to their destinations. She talks to a conductor who describes a physical job on the move, with her favourite part “working with all the great people.”
+96	Receptionist	14101	Receptionists	4312	Receptionists	https://youtu.be/gCizwITonaY	Vancouver	Mainland/Southwest	Viviana visits a receptionist, the first person people see when they enter a business—but who does so much more than greet visitors. Viviana is walked through answering the phone, preparing paperwork, and keeping everyone in a busy office organized and on track.
+97	University Professor	41200	University professors and lecturers	4211	University Professors and Lecturers	https://youtu.be/-D8kxS8BQfw	Vancouver	Mainland/Southwest	Viviana meets a chemistry professor at a university, who describes her typical day. It includes collaborating with people and time in the research lab, the lecture hall and in her office. She finds learning something new from her bright students to be very rewarding.
+98	Human Resources Manager	10011	Human resources managers	4212	Human Resources Managers	https://youtu.be/B8Lubga0tNA	Vancouver	Mainland/Southwest	Viviana talks to a human resources manager at a non-profit organization and finds out that this career involves being a jack of all trades. Her roles range from hiring staff and helping employees advance in their careers to “teaching leaders to be better leaders”.
+99	Advertising Marketer	11202	Professional occupations in advertising, marketing and public relations	4214	Professional Occupations In Advertising, Marketing and Public Relations	https://youtu.be/zXBY9QH_dhU	Victoria	Vancouver Island/Coast	Viviana goes to Victoria to meet an advertising marketer who works with clients to develop and evolve their brand strategies. This career would be ideal for someone who is creative, innovative, and entrepreneurial—and thrives under the pressure of deadlines.
+100	Police Officer	42100	Police officers (except commissioned)	4214	Police Officers (Except Commissioned)	https://youtu.be/rx1iBH9-hLs	Victoria	Vancouver Island/Coast	During a visit at the Victoria Police Department, Viviana rides with a police officer, is shown around the station and learns about forensic technology. Discover the rewards that come with serving the community in this multi-faceted job.
+101	Licensed Practical Nurse	32101	Licensed practical nurses	4413	Licensed Practical Nurses	https://youtu.be/fUdiEP-FD9g	Vancouver	Mainland/Southwest	The first stop and the last stop, the licensed practical nurse is there throughout a patient’s stay in the hospital. Among her many tasks, she ensures continuity of care, administers injections and tracks vitals. One of the rewards of this career is saving lives.
+102	Respiratory Therapist	32103	Respiratory therapists, clinical perfusionists and cardiopulmonary technologists	1228	Respiratory Therapists, Clinical Perfusionists and Cardiopulmonary Technologists	https://youtu.be/t8YWz8o5HYQ	Vancouver	Mainland/Southwest	Viviana visits a hospital to talk to a respiratory therapist, who looks after the breathing portion of a patient’s life support. He is part of a multi-disciplinary team that helps patients regain their health, one of the many rewarding aspects of his job.
+103	Social and Community Service Worker	42201	Social and community service workers	4411	Social and Community Service Workers	https://youtu.be/n2QZK3uSk5Y	Oliver	Thompson-Okanagan	This career is “more than a job,” as Viviana learns when she meets with a social and community worker, who feels honoured to be with community members during their most vulnerable time. She empowers the community, leading them toward health and wellness.
+104	Chef	62200	Chefs	4412	Chefs	https://youtu.be/e2EZ5Zv0nfg	Kelowna	Thompson-Okanagan	Viviana cooks with a chef, who describes himself as a creator of food, a keeper of standards, and an enforcer of policies. She discovers that this career is not just about food—it involves problem-solving, motivating people and being a good leader.
+105	Construction Millwright	72400	Construction millwrights and industrial mechanics	0513	Construction Millwrights and Industrial Mechanics	https://youtu.be/PykipkwcOIU	Kelowna	Thompson-Okanagan	Viviana meets with the person who maintains and repairs equipment in a Kelowna sawmill. For this construction millwright, the best part of his detail-oriented career is “getting that piece of equipment back up and running.”
+106	Construction Manager	70010	Construction managers	5111	Construction Managers	https://youtu.be/3NsPnDWtLg0	Kelowna	Thompson-Okanagan	As a young man he loved building things. Now he develops people instead of buildings and instead of working with his hands, he works with his experience. Viviana visits a construction manager at his job site, where no two days are the same.
+107	Retail Manager	60020	Retail and wholesale trade managers	5122	Retail and Wholesale Trade Managers	https://youtu.be/AT9TaZqWmT0	Nelson	Kootenay	In Nelson, Viviana meets a retail manager at a busy sports gear store. He describes his work, which involves managing staff, guiding the team, and selling products to customers. He also talks about the career’s opportunities for growth.
+108	Chartered Professional Accountant	11100	Financial auditors and accountants	5121	Financial Auditors and Accountants	https://youtu.be/s9Tk7nraMcM	Williams Lake	Cariboo	Even though he does personal and corporate taxes, audits and “compiles numbers” for reports, Viviana learns a chartered professional accountant’s work is centred on people. A common misconception, he says, is the job is dry and boring, but it’s actually a lot of fun!
+109	Welder	72106	Welders and related machine operators	5123	Welders and Related Machine Operators	https://youtu.be/wM6gG_woqmk	Terrace	North Coast & Nechako	In this hands-on, diverse job, a welder can work on projects from building boats to erecting steel buildings to repairing equipment out in the field. Viviana gets to try out welding as she learns about this job, its rewarding aspects and the path to this career.
+110	Account Manager	10021	Banking, credit and other investment managers	5131	Banking, Credit and Other Investment Managers	https://youtu.be/iBQlSfAHDoY	Terrace	North Coast & Nechako	An account manager solves clients’ problems and helps them achieve their financial goals. It’s important to be social for this work, and as Viviana finds out, there is nothing boring about it—no two clients, situations or days are the same in this fast-paced career.
+111	Bookkeeper	12200	Accounting technicians and bookkeepers	5222	Accounting Technicians and Bookkeepers	https://youtu.be/uoWPgJrJbmU	Prince Rupert	North Coast & Nechako	In Prince Rupert, Viviana meets a bookkeeper, who loves making sure numbers are entered correctly into the accounting system. In this career, organizational skills are key, as well as being detail-oriented, good with numbers and accurate.
+112	Web Developer	21234	Web developers and programmers	5225	Web Designers And Developers	https://youtu.be/n1XvWSkQBqA	Victoria	Vancouver Island/Coast	When Viviana talks to a web developer, she learns the skills to success in this career. You must be able to visualize and come up with fresh ideas, as well as understand code and be good at math. Also, ongoing learning is key because the technology is always changing.
+113	Software Developer	21232	Software developers and programmers	5226	Computer Programmers and Interactive Media Developers	https://youtu.be/i-SNbWdyCLg	Victoria	Vancouver Island/Coast	Viviana talks to a software developer about the skills he uses in his job. During the visit, he explains that his field is dynamic and growing, with a lot of opportunities. His advice is that if you are interested in this career, start your training early.
+114	Optician	32100	Opticians	5241	Opticians	https://youtu.be/z3SdQ3g0PR0	Victoria	Vancouver Island/Coast	An optician describes her job as a blend of helping people find glasses, and doing adjustments and repairs. Her work requires problem solving and an eye for detail. She loves helping people find glasses that they’re excited to wear.
+115	Architect	21200	Architects	5242	Architects	https://youtu.be/5mA9sIMvTzE	Victoria	Vancouver Island/Coast	An architect shows Brian how he uses sketches, technical drawings and 3D animation in his work. He talks about the many areas an architect can specialize in, from design architecture to technical architecture to business ownership.
+116	Accounting Clerk	14200	Accounting and related clerks	5221	Accounting and Related Clerks	https://youtu.be/aWn7mULLowQ	Victoria	Vancouver Island/Coast	Brian heads to Victoria to meet an accounting clerk who shares that he works on accounts payable and receivable, financial statements, and more. He really likes working with clients to help them achieve their financial goals.
+117	Nurse Practitioner	31302	Nurse practitioners	5227	Allied Primary Health Practitioners	https://youtu.be/uSxv2k_PlqY	Chemainus	Vancouver Island/Coast	Brian visits a nurse practitioner at the H’ulh-etun health centre who explains that she diagnoses illnesses, performs procedures and promotes healthy living and disease prevention to make sure her patients’ health-care needs are met.
+118	Executive Assistant	12100	Executive assistants	5243	Executive Assistants	https://youtu.be/mnti-_qFxA8	Vancouver	Mainland/Southwest	An executive assistant with the Vancouver Canucks meets Brian and describes how she supports her executive. She explains that to be effective you need to be organized and have excellent communication and relationship building skills.
+119	Electrical Engineer	21310	Electrical and electronics engineers	5254	Electrical and Electronics Engineers	https://youtu.be/V3gjgqxN238	Vancouver	Mainland/Southwest	Brian interviews an electrical engineer who plans and designs electrical systems for buildings. She says engineering is about innovation, creativity, and problem solving. It also involves a lot of teamwork—her favourite part of the job.
+120	Boom Operator	53111	Motion pictures, broadcasting, photography and performing arts assistants and operators	0601	Support Occupations in Motion Pictures, Broadcasting, Photography and The Performing Arts	https://youtu.be/9qSjMOb9Vj0	Vancouver	Mainland/Southwest	Brian interviews one of Career Treks’ own crew—a boom operator!  He operates the boom microphone and assists the production sound mixer. He says it’s a great career if you want to work in film, with technology, and with creative people.
+121	Computer Network Technician	22220	Computer network and web technicians	0621	Computer Network Technicians	https://youtu.be/ISMsrEsaOWs	West Vancouver	Mainland/Southwest	A computer network technician takes Brian through a typical day of working on networks, hardware, software and computer equipment.  What he really likes about this career is that it “is changing all the time in a good, positive way”.
+122	Medical Sonographer	32122	Medical sonographers	0631	Medical Sonographers	https://youtu.be/IHDU67A0uAM	Kelowna	Thompson-Okanagan	A Kelowna medical sonographer shows Brian how she takes diagnostic ultrasound images and prepares preliminary findings to help in a patient’s diagnosis. She takes images of babies, but explains she also does a wide variety of imaging.
+123	Author	51111	Authors and writers (except technical)	6211	Authors and Writers	https://youtu.be/WEZU4d9Szqo	Kelowna	Thompson-Okanagan	Brian interviews an author who describes a typical day in her career. She offers advice for those just starting out, noting that you have to be persistent. She also describes some other avenues that authors may take in their career.
+124	Retail Sales Supervisor	62010	Retail sales supervisors	6311	Retail Sales Supervisors	https://youtu.be/deNr7yOyK2Y	Kelowna	Thompson-Okanagan	Brian heads to Kelowna to meet a retail sales supervisor at a natural pet food store. Her duties include hiring and supervising staff, maintaining inventories, overseeing social media and ensuring customer satisfaction.
+125	Computer numerically controlled (CNC) Machine Operator	94106	Machining tool operators	6221	Machining Tool Operators	https://youtu.be/Ptsj6-V-qu8	Penticton	Thompson-Okanagan	A machine operator gives Brian a tour of his shop where he transforms raw steel plates into finished products. He takes care to be precise and accurate to ensure quality. He says “when you have pride in your work, it makes work enjoyable.”
+126	Dental Hygienist	32111	Dental hygienists and dental therapists	6321	Dental Hygienists and Dental Therapists	https://youtu.be/iyO906A2Iwo	Summerland	Thompson-Okanagan	A dental hygienist shares with Brian all the elements of her job, from reviewing clinical data to cleaning and polishing teeth. She explains that educating her clients on how to keep a healthy smile is also a big part of her job.
+127	User Support Technician	22221	User support technicians	6231	User Support Technicians	https://youtu.be/Udl63UA2U0c	Nelson	Kootenay	A user support technician talks to Brian about how he provides technical support to clients who are experiencing issues with their computers or devices. This job is about research, problem solving and communicating solutions to customers.
+128	Insurance Broker	63100	Insurance agents and brokers	6232	Insurance Agents and Brokers	https://youtu.be/0iRvVzxuJmc	Nelson	Kootenay	Brian meets a Nelson insurance broker who explains the job involves giving sound advice and customizing insurance plans to suit her clients’ needs. She enjoys this role, as she likes working with people and because no two days are the same.
+129	Natural Science Policy Program Manager	41400	Natural and applied science policy researchers, consultants and program officers	6235	Natural and Applied Science Policy Researchers, Consultants and Program Officers	https://youtu.be/ibMhoXvmItc	Nelson	Kootenay	Brian meets a natural science policy program manager who says that her job is a mix of office and field work.  She conducts research and gives advice on environmental projects. It’s rewarding for her to see improvements to wildlife areas.
+130	Home Support Worker	44101	Home support workers, caregivers and related occupations	6322	Home Support Workers, Housekeepers and Related Occupations	https://youtu.be/PJu38LNOtRg	Castlegar	Kootenay	Brian travels to Castlegar to meet a home support worker, and learns how rewarding it is to play a role in providing care and companionship to seniors.  Workers in this field help their clients keep their independence and mobility.
+131	General Office Support Worker	14100	General office support workers	6331	General Office Support Workers	https://youtu.be/4867Bc9ktDw	Ft. St. John	Northeast	An office support worker from Fort St. John explains the importance of being detail-oriented and having clerical skills in her role. The most rewarding part of her job is providing the best service possible to her colleagues and clients.
+132	Managing Editor	51110	Editors	6332	Editors	https://youtu.be/UsLsx3o55Wk	Dawson Creek	Northeast	Brian interviews a managing editor from Dawson Creek and learns what’s involved in editing a newspaper—­ both online and in print. It’s a fast-paced job where it’s critical to see fine details and be knowledgeable in a variety of areas.
+133	Drafting Technician	22212	Drafting technologists and technicians	6341	Drafting Technologists and Technicians	https://youtu.be/-zpx84KT_8s	Prince George	Cariboo	A drafting technician shows Brian how he prepares drawings and process diagrams to map industrial projects. In his work he uses computers to develop models, and sometimes does field work to collect notes and measurements using 3D scanners.
+134	Audio Video Technician	52113	Audio and video recording technicians	6341	Audio and Video Recording Technicians	https://youtu.be/kELGabgwMQk	Prince George	Cariboo	Brian meets with an AV technician who shows how he installs and operates lighting, audio and visual equipment to create event spaces—­all within 24 hours!  He says half the job is technical and the other half is service related.
+135	Psychiatrist	31100	Specialists in clinical and laboratory medicine	6562	Specialist Physicians	https://youtu.be/isFI0eqGFBg	Prince George	Cariboo	A psychiatrist in Prince George meets with Brian and shares how she helps people.  She notes that excellent listening and communication skills are essential in her role. She finds it very rewarding helping people to improve their lives.
+136	Home Child Care Provider	44100	Home child care providers	6421	Home Child Care Providers	https://youtu.be/ZWeY7fy2iyM	Vancouver	Mainland/Southwest	Brian visits a home child care provider in Vancouver and observes how she looks after the well-being and social development of children in her care. “This career is suited to someone who is loving, caring and loves being around children”.
+137	Recreation Director	50012	Recreation, sports and fitness program and service directors	6411	Recreation, Sports and Fitness Program and Service Directors	https://youtu.be/QLRs7dnvn0E	Vancouver	Mainland/Southwest	Brian meets the director of the BC Wheelchair Basketball Society’s Let’s Play program, which helps to keep kids active. Her job includes planning activities, coaching and more. She loves helping people improve their quality of life.
+138	Tattoo Artist	63211	Estheticians, electrologists and related occupations	6541	Estheticians, Electrologists and Related Occupations	https://youtu.be/M4HnqVyH0gQ	Mission	Mainland/Southwest	She turned a hobby into a career, and now she gets to create art that people can cherish and love forever. Brian goes to Mission to meet a tattoo artist and learn all about this creative career.
+139	Social Policy Consultant	41403	Social policy researchers, consultants and program officers	6513	Social Policy Researchers, Consultants and Program Officers	https://youtu.be/EaE0PMmxN1M	Vancouver	Mainland/Southwest	A social policy consultant works with companies and communities. Her job is to understand both sides, and then help them to understand each other. Brian goes to her office in Vancouver to learn more about this career.
+140	Health and Safety Consultant	22232	Occupational health and safety specialists	0711	Inspectors in Public and Environmental Health and Occupational Health and Safety	https://youtu.be/LmvZ_XMUuUc	Vancouver	Mainland/Southwest	Brian meets with a health and safety consultant whose job is to look for potential dangers in the workplace and provide solutions. A reward of this career is knowing that people will make it home safe and sound.
+141	Legal Administrative Assistant	13111	Legal administrative assistants	0712	Legal Administrative Assistants	https://youtu.be/2cS63-hyf4Y	Vancouver	Mainland/Southwest	Brian visits a Vancouver-based family law office to meet a legal administrative assistant. To be successful in this career, it’s important to be very organized to help make sure each day is seamless for the lawyers in the firm.
+142	Chemistry Lab Manager	21101	Chemists	0714	Chemists	https://youtu.be/mgi-iWMq1eY	Vancouver	Mainland/Southwest	Brian visits a Vancouver-based brewery to meet a chemistry lab manager. This career requires a passion for science and the scientific method, which she has! She loves the little “aha!” moments that happen during a discovery.
+143	Home and Building Renovations Manager	70011	Home building and renovation managers	7231	Home Building and Renovation Managers	https://youtu.be/nXfp3Ef5SPQ	Coquitlam	Mainland/Southwest	Brian goes to Coquitlam to visit the work site of a home building and renovations manager, whose job it is to manage a renovation from the drawing phase to the last coat of paint.
+144	Account Manager	64101	Sales and account representatives - wholesale trade (non-technical)	7233	Sales and Account Representatives - Wholesale Trade (Non-Technical)	https://youtu.be/tN1H0hxjJTs	Vancouver	Mainland/Southwest	An account manager for a corporate travel agency takes Brian on a tour of this career. He arranges everything from cars, hotels and flights for his company’s clients, getting them home to their families and making their day easier.
+145	Production  Manager	13100	Administrative officers	7236	Administrative Officers	https://youtu.be/lJJfYtIeev8	Vancouver	Mainland/Southwest	A production manager walks Brian through a day in the life of her busy career in a film company. From beginning to end, she manages up to 16 projects at a time!
+146	Security Officer	64410	Security guards and related security service occupations	7237	Security Guards and Related Security Service Occupations	https://youtu.be/bV9-O1aLyrs	Victoria	Vancouver Island/Coast	Brian goes to Victoria to learn about the career of a security officer—and gets to explore the Royal BC Museum exhibits that she protects! A big part of this job is customer service, and in her opinion it’s the best part.
+147	Teacher's Assistant	43100	Elementary and secondary school teacher assistants	7241	Elementary and Secondary School Teacher Assistants	https://youtu.be/OzgnNfkXuho	Vancouver	Mainland/Southwest	Brian visits a middle school to meet a teacher’s assistant whose career is supporting both teachers and students. “The job,” he says, “is about helping students understand why they’re awesome.”
+148	Interior Designer	52121	Interior designers and interior decorators	7241	Interior Designer	https://youtu.be/SiWm2NWTBH0	Vancouver	Mainland/Southwest	Mariam meets a Vancouver-based interior designer who explains how his job involves creating a vision and coming up with innovative designs to fulfill the clients’ needs. She learns about his passion for the arts and how interior design is a blend of architecture, fashion and graphic design.
+149	Engineer Manager	20010	Engineering managers	7251	Engineer Managers	https://youtu.be/8zYTf-IqDMk	Vancouver	Mainland/Southwest	Mariam meets an industrial engineer and project manager in Vancouver whose focus is quality assurance and continuous process improvement. She explains how building relationships and challenging the status quo are key to successful continuous process improvements.
+150	Robotics Engineer	21301	Mechanical engineers	7252	Mechanical Engineers	https://youtu.be/7kr-Bhk_X94	Abbotsford	Mainland/Southwest	In Abbotsford, Mariam meets a robotics engineer, who loves designing robotics products and programming mechanical automation. She learns about the importance of calibration in automation and robotics and that robots will never replace humans!
+151	Chiropractor	31201	Chiropractors	7253	Chiropractor	https://youtu.be/rv3kkqkpFfw	Vancouver	Mainland/Southwest	A chiropractor in Vancouver shows Mariam how she works with clients doing chiropractic assessments, adjustments, soft tissue therapy and teaching exercises. Her role in improving her patients’ quality of life is the greatest reward of the job.
+152	Technical Sales Consultant	62100	Technical sales specialists - wholesale trade	7271	Technical Sales Specialist - Wholesale Trade	https://youtu.be/1nH0ruOZOyA	New Westminster	Mainland/Southwest	Mariam meets a technical sales consultant in New Westminster who explains how she sells products to scientists to carry out their experiments. The most rewarding part of her job is helping solve issues so that researchers have successful outcomes.
+153	Electrical Technologist	22310	Electrical and electronics engineering technologists and technicians	7311	Electrical and Electronics Engineering Technologists And Technicians	https://youtu.be/QkT9WoAm8mU	Burnaby	Mainland/Southwest	Mariam heads to a BC Hydro office in Burnaby to meet an electrical technologist. He explains how he purchases high quality electrical equipment, conducts quality control and what he enjoys most about the job: hands-on work troubleshooting in the field.
+154	Photographer	53110	Photographers	7312	Photographer	https://youtu.be/tF8OwRNAugY	Kelowna	Thompson-Okanagan	Mariam travels to Kelowna to meet a photographer who shows her what's involved in capturing great moments. This career offers variety in location, schedule and clients. Her sense of adventure and creativity along with her emotional intelligence allows people to feel at ease in front of the camera.
+155	Compost Coordinator	90011	Utilities managers	7313	Utilities Managers	https://youtu.be/VdawKA9V8Yk	Vernon	Thompson-Okanagan	Mariam meets the compost coordinator with the city of Kelowna. She takes a tour of the facility and learns about the phases of compost production. See how this “feel-good job” takes something that is usually a waste and turns it into something that is good for the environment.
+156	Operations Manager	62020	Food service supervisors	7315	Food Services Supervisor	https://youtu.be/VFhY-BSijjw	Prince George	Cariboo	Mariam travels to Prince George and meets an operations manager  for a catering company. From planning events to managing inventory to customer service, she describes how she stays organized. The best part of all are the gratifying aspects of her job.
+157	Optometrist	31111	Optometrists	7321	Optometrist	https://youtu.be/7Vj2pUT0JQU	Prince George	Cariboo	Mariam meets an optometrist in Prince George who explains the importance of vision, what to expect during an eye exam, and how to become an optometrist. He emphasizes – Becoming a good listener is an important skill in this career.
+158	Medical Laboratory Technologist	32120	Medical laboratory technologists	7321	Medical Laboratory Technologist	https://youtu.be/eym_kFvGDQc	Prince George	Cariboo	Mariam visits a medical laboratory technologist in Prince George who conducts lab tests, experiments, and analyses which help diagnose, treat and prevent disease. She finds her career rewarding and says it literally has an impact on saving lives.
+159	Nursery and Greenhouse Worker	85103	Nursery and greenhouse labourers	2271	Nursery and Greenhouse Workers	https://youtu.be/8zt55n163xc	Vancouver	Mainland/Southwest	Mariam visits a greenhouse worker in Dawson Creek and discovers what it takes to grow greenhouse vegetables and plants. She works with her hands and enjoys both the solitude while transplanting and interacting with customers.
+160	Medical Office Assistant	13112	Medical administrative assistants	2273	Medical Administrative Assistant	https://youtu.be/w3tpMweWq-s	Kitimat	North Coast & Nechako	A medical office assistant based in Kitimat doctor’s office describes how she supports her doctor and his patients. She explains that to be effective you need to be organized, have a helping attitude and be eager to learn.
+161	Gas Fitter	72302	Gas fitters	2275	Gas Fitter	https://youtu.be/emqjb08a6zY	Terrace	North Coast & Nechako	Mariam travels to Terrace and meets a gas fitter. She tours his shop and learns about fabricating and fitting different gas systems. Discover what’s challenging and rewarding about this career.
+162	Financial Sales Representative	63102	Financial sales representatives	7511	Financial Sales Representative	https://youtu.be/i0z8tL3a22g	Vancouver	Mainland/Southwest	Mariam meets a financial   sales representative in Vancouver who explains how he supports his clients’ financial portfolios by understanding their needs and providing an appropriate solution. He believes that the best sales people are those who are great at listening.
+163	Plumber	72300	Plumbers	7512	Plumber	https://youtu.be/U6JMEzevvyc	Vancouver	Mainland/Southwest	Mariam meets a plumber in Vancouver who loves to work with hands. He talks about installing furnaces and boilers and what training and apprenticeship is required in this career.
+164	Corporate Sales Manager	60010	Corporate sales managers	7362	Corporate Sales Manager	https://youtu.be/VSHGg7LogAw	Vancouver	Mainland/Southwest	Mariam is in downtown Vancouver meeting a corporate sales manager who works in the hospitality industry and develops sales strategies for corporate clients. She says that curiosity is important in this role; it allows her to understand her customer better and fulfil their needs.
+165	Sheet Metal Worker	72102	Sheet metal workers	7521	Sheet Metal Worker	https://youtu.be/HbtQrE984Uc	Surrey	Mainland/Southwest	Sheet metal workers fabricate, assemble, install and repair sheet metal products. In Surrey, Mariam meets a sheet metal worker who gives her a tour of the plant and explains the importance of air flow through pipes and ducting in buildings. The best part of her job is pride in her work.
+166	Acupuncturist	32200	Traditional Chinese medicine practitioners and acupuncturists	7521	Practitioners Of Natural Healing	https://youtu.be/2uBZhsMRmrc	East Vancouver	Mainland/Southwest	Sara, an acupuncturist, explains to Mariam how acupuncture can treat pain and help people get back to optimal health. The most rewarding part of her job is when her clients realize how powerful acupuncture is and how able their body is to heal.
+167	Audiologist	31112	Audiologists and speech-language pathologists	1513	Audiologist and Speech Language Pathologist	https://youtu.be/0OdAhEoNp9E	Vancouver	Mainland/Southwest	Watch as Mariam travels to North Vancouver to meet Danielle, an audiologist. Danielle’s focus is to help people manage their hearing health and to ease communication difficulties. She describes an audiological assessment and explains what a great sense of accomplishment knowing how much she is changing someone’s life.
+168	Audio Visual Technician Project Manager	22311	Electronic service technicians (household and business equipment)	7532	Electronic Service Technicians (Household and Business Equipment)	https://youtu.be/upD9AaYOcUo	Vancouver	Mainland/Southwest	Meet Lukas, an audio visual technician, who connects people through technology. He explains to Mariam how understanding technical requirements and being able to troubleshoot is an important part of the job.
+169	Aircraft Maintenance Engineer	72404	Aircraft mechanics and aircraft inspectors	7451	Aircraft Mechanics and Aircraft Inspectors	https://youtu.be/KfGd0MlS71E	Vancouver	Mainland/Southwest	Siraj takes Mariam on an inspection of an airplane, ensuring all components are safe for it to return to the sky. Watch as he explains how his job involves troubleshooting and digging deeper to solve problems.
+170	Registered Dietitian	31121	Dietitians and nutritionists	0811	Dietitian and Nutritionist	https://youtu.be/zhCAWGHIZSM	Burnaby	Mainland/Southwest	Annie, a registered dietitian, explains to Mariam how a client’s medical history, diet history and living situation are all connected. She is passionate about her role as a dietitian and helping her clients get to a healthy state.
+171	Director of Counselling	40030	Managers in social, community and correctional services	0821	Managers in Social, Community and Correctional Services	https://youtu.be/lZU3XmxNgAc	Port Coquitlam	Mainland/Southwest	As a director of counselling, Ofir shares with Mariam his daily responsibilities of seeing clients, supporting his counsellors and training new counsellors in the practicum program. “The goal is to improve our clients’ lives to the best of our abilities.”
+172	Landscaped Architect	21201	Landscape architects	8222	Landscape Architects	https://youtu.be/VgEZ7jSAah0	Vancouver	Mainland/Southwest	Pearl, a Vancouver landscape architect, shows Mariam the types of outdoor spaces she designs. She says the most rewarding part of her job is seeing something that she has designed built as she imagined it and seeing people enjoying that space.
+173	Water Treatment Plant Supervisor	92101	Water and waste treatment plant operators	8422	Water and Waste Treatment Plant Operators	https://youtu.be/7ZXRvtCZvZI	Kamloops	Thompson-Okanagan	Darrell, a water treatment plant supervisor, takes Mariam on a tour of the Tk’emlúps te Secwépemc Water Treatment Plant in Kamloops. He takes pride in his job knowing the community has quality drinking water.
+174	Veterinarian	31103	Veterinarians	8432	Veterinarian	https://youtu.be/mI2Swv-T610	Burnaby	Mainland/Southwest	Being a veterinarian involves the care and well being of animals. Mariam watches as Caitlin performs a physical exam on a dog named Miss Piglet. Caitlin shares that working in animal medicine is like solving a mystery, looking at pattern recognition and trying to put the pieces together.
+175	Electric Vehicle Mechanic	72410	Automotive service technicians, truck and bus mechanics and mechanical repairers	8612	Automotive Service Technicians, Truck and Bus Mechanics and Mechanical Repairers	https://youtu.be/k8klzO8Jaco	Nelson	Kootenay	Doug, automotive service technician and owner of Downtown Automotive in Nelson, solves his customers’ car problems and educates them on how to take care of their vehicles. He demonstrates hands-on how to access the computer system of an electric vehicle. Doug stresses the importance of specializing in a particular area of the trade due to the different types of automotive transportation. Solving problems is the most rewarding part of his career.
+176	Heavy Equipment Operator	73400	Heavy equipment operators	0912	Heavy Equipment Operators (Except Crane)	https://youtu.be/8oj2YxsdmQM	Nelson	Kootenay	Matt, owner of Kays Contracting in Nelson, describes the daily tasks and responsibilities of heavy equipment operators, emphasizing the amount of planning and attention to detail required. Matt has learned through experience that a career in trades is rewarding and there are always new and exciting projects to work on.
+177	Barber	63210	Hairstylists and barbers	9241	Hairstylist and Barber	https://youtu.be/P_qh9m4lkcY	Victoria	Vancouver Island/Coast	Troy, owner of Status Barber Shop in Victoria, shows Mariam the tools and processes barbers use to give their customers great haircuts and styles. Troy feels passionately about helping people look and feel their best.
+178	Civil Engineer	21300	Civil engineers	9243	Civil Engineers	https://youtu.be/SmOXVn0NRjk	Victoria	Vancouver Island/Coast	Corey, civil engineer and owner of Gwaii Engineering in Victoria, works with land surveyors and architects to plan, design and develop infrastructure. Corey’s clients are often private land developers but also First Nations communities. The most rewarding part of his job is servicing his community.
+179	Kindergarten teacher	41221	Elementary school and kindergarten teachers	9417	Elementary school and Kindergarten Teachers	https://youtu.be/D6QlqkQu5mU	Victoria	Vancouver Island/Coast	Carolyn, a kindergarten teacher in Victoria, guides her students to becoming mindful individuals. The most rewarding part of her job is watching her students grow and gain the language needed to express themselves.
+180	Social worker	41300	Social workers	9431	Social workers	https://youtu.be/vtgOv5ap5IA	Nelson	Kootenay	Malorie works as the service accessibility manager at the Kootenay Career Development Society in Nelson to develop programs and provide services to help people facing barriers to employment. The most rewarding part of Malorie’s career in social work is feeling like she’s helping to make the world a better place.
+181	Virtual reality software developer	21232	Software developers and programmers	9532	Computer programmers and interactive media developers	https://youtu.be/8OoS_PLEMm0	Vancouver	Mainland/Southwest	Aamrah, a virtual reality software developer in Vancouver, walks Mariam through the process of developing a virtual reality game. Problem-solving through creativity, logic, math and coding makes Aamrah feel like she’s a wizard doing magic!
+182	Computer & information systems manager	20012	Computer and information systems managers	9531	Computer and information Systems Managers	https://youtu.be/GYV76mxDL4Q	Vancouver	Mainland/Southwest	Osner, a computer and information systems manager in Vancouver, translates human language into code, bringing client ideas into reality, usually with the goal of simplifying tasks via software. Osner emphasizes the importance of ongoing learning in this career field as technology is always changing and evolving.
+183	Early childhood educator	42202	Early childhood educators and assistants	9614	Early childhood educators and assistants	https://youtu.be/Itg5PS29BKU	Kelowna	Thompson-Okanagan	Brenna, early childhood educator and manager of Kelowna’s Aboriginal Head Start program, works with three- to five-year-old children of First Nations, Métis and Inuit heritage to teach them language, social skills and cultural identity. Giving children the opportunity to be proud of who they are and where they come from is the most fulfilling aspect of Brenna’s work.
+184	Electrician	72200	Electricians (except industrial and power system)	9617	Electricians (Except Industrial and Power System)	https://youtu.be/Iphb6H8B9W4	Kelowna	Thompson-Okanagan	Chad, a master electrician in Kelowna, answers service calls to fix electrical issues in residences. He also completes renovations and new building projects for clients. Chad gives Mariam an overview of the tools he needs to do his job and explains the process of becoming a certified Red Seal electrician.
+185	Cybersecurity specialists	21220	Cybersecurity specialists	NIL	\N	https://youtu.be/aAVrYtZyo50	Prince George	Cariboo	As a cybersecurity analyst for the College of New Caledonia, Hawkeye monitors, prevents and responds to cyberattacks, ensuring the safety of data and systems. His work involves investigation and problem solving, which make Hawkeye feel like a detective. He also regularly researches to stay up to date on evolving cyber threats. His job isn’t always easy, but he enjoys solving problems and having positive interactions with the people he is helping and his colleagues in the field.
+186	Marine ecosystems biologist	21110	Biologists and related scientists	NIL	\N	https://youtu.be/Y-5nEOk69lY	Prince George	Cariboo	Aaron’s work as an aquatic ecosystems biologist involves field work like collecting and observing environmental samples and in-office work such as data analysis and report writing. A career as a biologist is a great choice for those that love being outdoors, are passionate about the environment and don’t mind getting their hands dirty.
+187	Painter	73112	Painter and decorators (except interior decorators)	NIL	\N	https://youtu.be/dJBJZVyMnVQ	Dawson Creek	Northeast	Karla runs her own painting business and uses her skills to help people feel happier in their workplace or home. She pays careful attention to detail, ensuring her customers get a high-quality result. Karla’s favourite part of her job is meeting people and getting to brighten their day by going above and beyond their expectations.
+188	Pharmacy assistant	33103	Pharmacy technical assistants and pharmacy assistants	NIL	\N	https://youtu.be/t9Ir5Mb-HwY	Terrace	North Coast & Nechako	As a pharmacy assistant, Tish works in a retail environment and prepares prescriptions for patients, ensuring they receive the correct medications and dosages. Tish also recommends over-the-counter medications to those who come into the pharmacy seeking advice. Tish enjoys working in a team where everyone’s roles and responsibilities complement one another to achieve the same goal of helping people feel better.
+189	Marine technician and remote vehicle pilot	22310	Electrical and electronic engineering technologists and technicians	NIL	\N	https://youtu.be/e5CBflHUPDs	Prince Rupert	North Coast & Nechako	Hamza, a marine technician and remote vehicle pilot, uses his math skills, curiosity and patience to maintain the fleet of tugboats at SAAM Towage in Prince Rupert. He uses tools such as remotely operated vehicles for underwater inspections, ensuring that the boats are in safe working condition.
+190	Machine learning engineer	21211	Data scientists	NIL	\N	https://youtu.be/2BackbDu2aY	Vancouver	Mainland/Southwest	Suro, a machine learning engineer, spends his days building credit models and doing credit risk assessments for small businesses. Through his work, Suro helps small businesses receive the funding they need to stay competitive and grow. He says people entering this career should commit to life-long learning and absorbing knowledge from others in the industry.
+191	Secondary school art teacher	41220	Secondary school teacher	NIL	\N	https://youtu.be/oUyNDMdus5U	Smithers	North Coast & Nechako	Perry helps students succeed academically and personally through his work as a secondary school art teacher. He cultivates hands-on creative experiences for his students in his classroom that he operates like an open studio. Perry expresses how much teachers, including himself, care about their students and want to make school a positive environment for them to learn, grow and prepare for their future.
+192	Business data analyst	21221	Business systems specialist	NIL	\N	https://youtu.be/zKr1YIi5f6A	Prince George	Cariboo	Ruby, a member of the Wet'suwet'en Nation, is a business data analyst for Northern Health in the Lheidli T'enneh territory. She uses her math and problem-solving skills to tell a story with data. Ruby finds her work meaningful because she can use data to make a positive impact in her community. She encourages Indigenous people to pursue a career in data analytics so they can have a say in how data is collected, used and seen.
+193	Radiation therapist	32121	Medical radiation technologists	NIL	\N	https://youtu.be/OXS0lSll2nI	Prince George	Cariboo	Kaitlyn, a radiation therapist, plans and delivers radiation treatments to cancer patients. She counsels patients on side effects and supports them through their treatment process. Kaitlyn finds getting to know each patient, supporting them through treatment and celebrating their milestones the most rewarding aspects of her job.
+194	Hydrogeology engineer	21331	Geological engineers	NIL	\N	https://youtu.be/0euKFwZLAhw	Vancouver	Mainland/Southwest	As a hydrogeological engineer, Emily’s goal is to prevent water contamination by studying ground water problems and designing solutions. As part of her work, she spends time in the field collecting data and inspecting damage to ground water systems such as wells. Emily is passionate about environmental and social issues and finds her career is the perfect blend of addressing both.
+195	Registered psychiatric nurse	31301	Registered nurses and registered psychiatric nurses	NIL	\N	https://youtu.be/qCsdQPiKTHs	Coquitlam	Mainland/Southwest	As a registered psychiatric nurse, Jade works with people who have mental health and substance use disorders. Her work includes stabilizing patient health, providing medications and using therapeutic interventions. Jade says her career is a good fit for those who are passionate about connecting with people and having an impact on their lives.
+196	Strata property manager	13101	Property administrators	NIL	\N	https://youtu.be/nssNwfIRrR0	Langford	Vancouver Island/Coast	Paul is a strata property manager who keeps his strata communities running smoothly by ensuring efficient operation and value for owners. He makes sure everything works, everyone’s heard and the place feels like home. Paul says the heart of the job is being a people person—understanding what clients need and jumping in to make it happen.
+197	Oceanographer	21102	Geoscientists and oceanographers	NIL	\N	https://youtu.be/5eC1WQZNisg	Sidney	Vancouver Island/Coast	Jennifer is an oceanographer who collects and analyzes data to understand how climate change is reshaping our oceans. One of her biggest challenges is figuring out what the data means and how to use it. But she loves the work—especially being out at sea—and says the job gives her room to be creative and have fun.
+198	Environmental safety consultant	21120	Public and environmental health and safety professionals	NIL	\N	https://youtu.be/6xqPoUGhb-c	Nanaimo	Vancouver Island/Coast	Jennifer is an environmental safety consultant who makes sure people are safe at work and at home. She’s out in the field testing for hazards like asbestos, then giving clients clear recommendations. Jennifer is passionate about helping people and giving them the information they need to stay safe.
+199	Athletic therapist	31204	Kinesiologists and other professional occupations in therapy and assessment	NIL	\N	https://youtu.be/xFEiZvKkIP4	Nanaimo	Vancouver Island/Coast	Athletic therapist, Monika helps everyone—from athletes to grandparents—recover from injuries. She figures out what’s wrong, builds a treatment plan and works with her clients every step of the way. She says the best part of the job is watching people thrive and get back to doing what they love.
+200	University dean	40020	Administrators - post-secondary education and vocational training	NIL	\N	https://youtu.be/64jT4Rc1amA	Nanaimo	Vancouver Island/Coast	Rachel is a university dean who keeps programs, faculty and students on track. Her days are a mix of meetings, big‑picture planning and handling whatever urgent issue lands on her desk. She says she thrives in the fast pace—there’s always a new challenge or opportunity waiting for her and that the ability to pivot is important.
+201	Indigenous advisor	41320	Educational counsellors	NIL	\N	https://youtu.be/EBORaV3EzLY	Burnaby	Mainland/Southwest	Zaa is an Indigenous advisor who supports First Nations, Métis and Inuit youth, students and job seekers. He listens, connects, and meets people where they’re at, sharing his own story when it helps. Most days he talks with students, works with faculty and links people to bursary and scholarship supports. Zaa says the positivity he gets from the work is pretty incredible.
+202	Retail owner and manager	60020	Retail and wholesale trade managers	NIL	\N	https://youtu.be/pcLoMtIfbVY	Duncan	Vancouver Island/Coast	Rose is a retail owner and manager who oversees all aspects of her specialty gift shop. She creates a great first impression—both for her store and the town—by keeping the space inviting and stocking products from local artists. She trusts her instincts when choosing products and doesn’t chase every trend. Her favourite part of the job is helping people find beautiful gifts for the people they care about.
+203	Excavation labourer and lead hand	75110	Construction trades helpers and labourers	NIL	\N	https://youtu.be/Y1NWGgS-6F4	Langley	Mainland/Southwest	Corbin is an excavation labourer and lead hand who gets construction sites ready so the crew can hit the ground running. He’s the one setting up equipment, coordinating with the team and keeping safety front and centre. He says trust is everything on a job site and he works closely with coworkers to make sure everyone goes home safely. Corbin also points out that you can grow your career in construction; if you put in the work, there is potential to advance to other roles.
 \.
 
 
@@ -68933,6 +68980,10 @@ COPY public.monthly_labour_market_updates (year, month, total_employed, total_un
 2025	10	2941800	207300	201900	343100	1995700	603000	348100	1991500	605200	1394800	1546900	1394300	1550400	-0.1	-2900	0	100	-0.5	-3200	0.2	6.6	0	64.9	0.1	6.1	0.1	65	4847700	807900	3071600	552000	150600	141600	69700	54200	6.5	5.8	2942000	5.3	4.6	472200	6.6	6.3	1902800	7.3	4.6	325500	6.3	5.2	87300	9.3	5.3	77500	6.7	7.5	40300	7.6	4.9	36400	-3.1	-6100	6	1100	-1.8	-4700	1.9	4200	-0.2	-300	0.3	1400	-0.6	-1100	-9.1	-3800	-5	-5800	-0.3	-900	1.5	2400	4.7	7000	3.7	500	0.6	2800	-1.2	-1100	0.9	1200
 2025	11	2948000	203000	207300	358800	1973100	616100	343100	1995700	603000	1395300	1552700	1394800	1546900	0.2	6200	0.1	2700	0.6	3600	-0.2	6.4	0.1	65	0.2	6.6	0	64.9	4848400	808200	3072200	551900	150700	141600	69600	54200	6.1	5.5	2942200	4.5	4.4	473300	6	6	1911000	8.1	4.3	320600	6.8	3.6	82000	8.3	5.8	78800	7.4	5.4	39900	6.4	5	36700	0.3	500	7.7	1500	0	0	-0.9	-2000	-3.5	-6800	1.3	5200	-1	-1900	0.5	200	3.3	3700	3	9400	0.4	700	-2.1	-3300	10	1400	-0.6	-2800	0.7	600	0.1	100
 2025	12	2944700	200600	203000	342300	1990500	611800	358800	1973100	616100	1406400	1538200	1395300	1552700	-0.1	-3300	0.1	1300	-0.8	-4600	0	6.4	-0.1	64.9	0.1	6.1	0.1	65	4848000	808200	3072100	551600	150800	141600	69600	54200	6	5.3	2938100	4.5	4.3	469600	5.9	5.4	1911500	7.4	5.8	318900	6.3	6.3	81800	8.1	5.5	81200	8.3	6.4	39000	7.4	7	36200	2.3	4500	6.2	1300	3.5	9100	1.1	2600	0.2	400	1.5	6000	-5.2	-9800	9.1	3500	1	1100	-1.5	-4900	0.4	700	-2.9	-4400	0	0	-1.1	-4800	1.1	1000	-7.5	-9900
+2026	1	2947600	190400	199600	343500	1983200	620900	342000	1991100	611000	1413700	1534000	1405900	1538200	0.1	3500	1.6	36400	-5.5	-33000	-0.2	6.1	-0.1	64.8	-0.10000000000000053	6.3	-0.09999999999999432	64.9	4846400	808100	3070800	551300	150800	141500	69600	54200	6	5.7	2924800	4.5	4.3	463500	6	6.2	1907500	6.8	5.2	316800	5.9	3.8	82200	7.5	7.2	81400	9.6	4	37700	7.8	6.3	35700	-2.784810126582282	-5500	-3.111111111111109	-700	0.1474926253687281	400	-3.520208604954367	-8100	0.9554140127388644	1800	1.4775977121067596	6200	0.9024252679074918	1600	-1.9093078758949833	-800	-0.2581755593803803	-300	-0.44800000000000395	-1400	-1.9435736677115956	-3100	2.779661016949153	4100	3.2467532467532534	500	-1.282948448798693	-5500	5.5734190782422255	5200	7.585644371941269	9300
+2026	2	2927400	190700	190400	331800	1970000	625600	343500	1983200	620900	1408900	1518500	1413700	1534000	-0.7	-20200	-1.4	-32500	2.2	12300	0	6.1	-0.4	64.4	0.1	6.1	0.1	65	4844200	808100	3068600	551200	150900	141600	69700	54200	6	5.9	2912400	5.2	4.3	457700	6	6.3	1906100	6.5	5.7	311700	6.4	4.4	82200	6.7	7.3	82300	9.5	4.3	37200	8.8	6.2	35200	3.8	7200	9.2	2000	-2.5	-6900	-0.7	-1600	-2.8	-5400	-1.2	-4900	-2	-3600	-2.4	-1000	-2.9	-3400	1.7	5300	-0.1	-100	-1.6	-2400	0.6	100	0.6	2400	-3.9	-3800	-3.4	-4500
+2026	3	2908200	209800	190700	327600	1955000	625600	331800	1970000	625600	1396100	1512100	1408900	1518500	-0.7	-19200	-1	-23700	0.8	4600	0.6	6.7	0	64.4	0.1	6.1	0.1	65	4842000	808200	3065800	551300	150900	141700	69800	54300	6.6	5.3	2898200	5.7	4.3	455500	6.5	5.4	1899800	7.8	5.8	306100	7.1	6.3	82200	6.3	5.5	82900	9.5	6.4	37100	8.7	7	34600	3.8	7200	9.2	2000	-2.5	-6900	-0.7	-1600	-2.8	-5400	-1.2	-4900	-2	-3600	-2.4	-1000	-2.9	-3400	1.7	5300	-0.1	-100	-1.6	-2400	0.6	100	0.6	2400	-3.9	-3800	-3.4	-4500
+2026	4	2903900	210700	209800	331600	1947400	624900	327600	1955000	625600	1390200	1513700	1396100	1512100	-0.1	-4300	-0.5	-11700	1.2	7300	0.1	6.8	0	64.4	0.6	6.7	0	64.4	4840200	808500	3063200	551600	151000	141800	69900	54300	6.7	5.3	2898300	5.8	4.3	455700	6.7	5.4	1898400	8.1	5.8	302200	6.5	6.3	83300	5.8	5.5	86200	8.8	6.4	38200	9	7	34300	-3.3	-6400	-6.4	-1400	0.5	1400	1.5	3300	0.9	1600	0.5	1900	2.2	3900	-2.9	-1200	-5.3	-6200	0.4	1200	1.9	2900	-2.6	-3800	-3.4	-600	-1.9	-7700	7.3	6600	0.2	200
 \.
 
 
@@ -90887,14 +90938,14 @@ COPY public.skills (noc, skills_competencies, importance, importance_description
 
 COPY public.sources (endpoint, label, period, datapoint, filename, sheet, range, author, date) FROM stdin;
 wages	B.C. Labour Market Information Office, derived from 2025 Job Bank Wage data	2025-01-01 08:00:00+00	\N	WorkBC_2025_Wage_Data	Data Table	A2-G513	\N	2026-02-02 08:00:00+00
-titles	\N	2021-01-01 08:00:00+00	\N	NOC2021/noc_2021_version_1.0_-_elements.csv	\N	\N	\N	2025-02-18 08:00:00+00
+titles	\N	2021-01-01 08:00:00+00	\N	NOC2021/noc_2021_version_1.0_-_elements.csv	\N	\N	\N	2026-08-06 08:00:00+00
 skills	\N	2021-01-01 08:00:00+00	\N	skills_data_for_career_profiles_2025-08-21	Sheet 1	A2-G17641	\N	2025-11-24 08:00:00+00
 openings_careers	B.C. Labour Market Outlook	2025-01-01 08:00:00+00	\N	Job_Openings_by_Industry_LMO_2025	Career Profiles	A5-Q515	\N	2025-11-24 08:00:00+00
 education	\N	2023-01-01 08:00:00+00	\N	All_Occupations'_TEERs_2023_Jan22_24	Sheet 1	A2-D513	\N	2024-01-22 08:00:00+00
 census	2021 Census	2021-01-01 08:00:00+00	\N	2021_Census_Jan18_23	Career Profiles	A5-R516	\N	2023-01-18 08:00:00+00
 career_regional	B.C. Labour Market Outlook	2025-01-01 08:00:00+00	\N	WorkBC_Career_Profile_Data_2025	Regional Outlook	A5-AC516	\N	2025-11-24 08:00:00+00
 career_provincial	B.C. Labour Market Outlook	2025-01-01 08:00:00+00	\N	WorkBC_Career_Profile_Data_2025	Provincial Outlook	A4-L515	\N	2025-11-24 08:00:00+00
-career_related	\N	2021-01-01 08:00:00+00	\N	NOC2021/noc_2021_version_1.0_-_elements.csv	\N	\N	\N	2025-07-02 08:00:00+00
+career_related	\N	2021-01-01 08:00:00+00	\N	NOC2021/noc_2021_version_1.0_-_elements.csv	\N	\N	\N	2026-08-06 08:00:00+00
 high_opportunity_occupations	\N	2025-01-01 08:00:00+00	\N	HOO_BC_and_Region_for_new_tool_(corrected)2025	Sheet1	A2-O851	B.C. Labour Market Information Office	2025-11-24 08:00:00+00
 occupational_interests	\N	2023-01-01 08:00:00+00	\N	Occupational_Interests_2023_Apr5_24	Sheet1	A2-C1537	\N	2024-04-05 08:00:00+00
 fyp_categories_interests	\N	2025-01-01 08:00:00+00	\N	FYP - Categories, Areas of interest, and NOCs 2025-04-23	CONSOLIDATED LIST	A2-F909	\N	2025-04-23 08:00:00+00
@@ -90907,7 +90958,7 @@ labour_force_survey_regional_industry_region	2024 Labour Force Survey	2024-01-01
 labour_force_survey_regional_industry_province	2024 Labour Force Survey	2024-01-01 08:00:00+00	\N	2024_LFS_data_sheet(2025-02-26)	Regional Profiles	A35-U42	BC Labour Market Information Office	2025-11-24 08:00:00+00
 regional_labour_market_outlook	B.C. Labour Market Outlook	2025-01-01 08:00:00+00	\N	WorkBC_Regional_Profile_Data_2025	Regional Profiles - LMO	A5-L12	\N	2025-11-24 08:00:00+00
 regional_top_occupations	B.C. Labour Market Outlook	2025-01-01 08:00:00+00	\N	WorkBC_Regional_Profile_Data_2025	Top Occupation	A4-D73	\N	2026-01-12 08:00:00+00
-career_trek	\N	2025-01-01 08:00:00+00	\N	WorkBC_Career_Trek_2025__July07_25	LMO	A2-J195	\N	2025-12-05 08:00:00+00
+career_trek	\N	2026-01-01 08:00:00+00	\N	SSOT_WorkBC_Career_Trek_2025_26__Apr24	LMO	A2-J195	\N	2026-04-24 08:00:00+00
 career_search_openings	\N	2024-01-01 08:00:00+00	\N	Career_Search_Tool_Job_Openings_2024_Jan_13_2025	Sheet 1	A2-L35617	\N	2025-01-13 08:00:00+00
 career_search_groups	\N	2024-01-01 08:00:00+00	\N	career_search_tool_occupation_groups_manual_update_2024_Jan_15_2025	Sheet 1	A2-C10492	\N	2025-01-15 08:00:00+00
 career_transition_opportunities	\N	2025-01-01 08:00:00+00	\N	career_transition_tool_opportunities_2025 V2	Sheet 1	A2-I10041	\N	2024-12-01 08:00:00+00
@@ -90995,9 +91046,13 @@ monthly_labour_market_updates	Labour Force Survey (monthly, seasonally adjusted)
 monthly_labour_market_updates	Labour Force Survey (monthly, seasonally adjusted)	2025-07-01 08:00:00+00	\N	WorkBC LMS July_2025	Sheet3	\N	\N	2025-08-11 17:40:00+00
 monthly_labour_market_updates	Labour Force Survey (monthly, seasonally adjusted)	2025-08-01 08:00:00+00	\N	WorkBC LMS August_2025 (5)	Sheet3	\N	\N	2025-09-08 08:28:00+00
 monthly_labour_market_updates	Labour Force Survey (monthly, seasonally adjusted)	2025-09-01 08:00:00+00	\N	WorkBC LMS September_2025	Sheet3	\N	\N	2025-11-17 20:03:00+00
-monthly_labour_market_updates	Labour Force Survey (monthly, seasonally adjusted)	2025-10-01 08:00:00+00	\N	WorkBC LMS October_2025	Sheet3	\N	\N	2025-11-10 17:19:00+00
+monthly_labour_market_updates	Labour Force Survey (monthly, seasonally adjusted)	2025-10-01 08:00:00+00	\N	WorkBC LMS October_2025 (1)_1	Sheet3	\N	\N	2026-04-13 15:35:00+00
 monthly_labour_market_updates	Labour Force Survey (monthly, seasonally adjusted)	2025-11-01 08:00:00+00	\N	WorkBC LMS November_2025	Sheet3	\N	\N	2026-01-22 17:11:00+00
 monthly_labour_market_updates	Labour Force Survey (monthly, seasonally adjusted)	2025-12-01 08:00:00+00	\N	WorkBC LMS December_2025	Sheet3	\N	\N	2026-01-22 17:52:00+00
+monthly_labour_market_updates	Labour Force Survey (monthly, seasonally adjusted)	2026-02-01 08:00:00+00	\N	WorkBC LMS February_2026	Sheet3	\N	\N	2026-04-14 11:00:00+00
+monthly_labour_market_updates	Labour Force Survey (monthly, seasonally adjusted)	2026-01-01 08:00:00+00	\N	WorkBC LMS January_2026 (Updated)	Sheet3	\N	\N	2026-04-29 14:06:00+00
+monthly_labour_market_updates	Labour Force Survey (monthly, seasonally adjusted)	2026-03-01 08:00:00+00	\N	WorkBC LMS March_2026	Sheet3	\N	\N	2026-05-05 10:39:00+00
+monthly_labour_market_updates	Labour Force Survey (monthly, seasonally adjusted)	2026-04-01 08:00:00+00	\N	WorkBC LMS April_2026	Sheet3	\N	\N	2026-05-15 08:24:00+00
 \.
 
 
@@ -93971,6 +94026,7 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 21102	Exploration geologist	1
 21102	Exploration geophysicist	0
 21102	Fisheries oceanographer	0
+21102	Forensic geologist	0
 21102	Geochemist	1
 21102	Geodesist	0
 21102	Geological oceanographer	0
@@ -94063,6 +94119,7 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 21110	Biologist	1
 21110	Biology systematist	0
 21110	Biology taxonomist	0
+21110	Biology technologist	0
 21110	Biomedical nanotechnology research scientist	0
 21110	Botanist	1
 21110	Bryologist	0
@@ -94086,11 +94143,13 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 21110	Domestic animal scientist	0
 21110	Ecobiologist	0
 21110	Ecologist	1
-21110	Economic botanist	0
+21110	Professional biologist	0
 21110	Embryologist	1
 21110	Entomologist	0
 21110	Environmental and occupational toxicologist	0
 21110	Environmental biologist	0
+21110	Environmental coordinator	0
+21110	Environmental planner	0
 21110	Environmental toxicologist	0
 21110	Enzymologist	0
 21110	Enzymology biologist	0
@@ -94160,6 +94219,8 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 21110	Protozoologist	1
 21110	Protozoology biologist	0
 21110	Public health bacteriologist	0
+21110	Registered biological technologist (RBTech)	0
+21110	Registered professional biologist (RPBio)	0
 21110	Regulatory toxicologist	0
 21110	Research biologist	0
 21110	Rural ecologist	0
@@ -94443,6 +94504,7 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 21222	Enterprise architect - information technology (IT)	0
 21222	Informatics applications analyst	0
 21222	Informatics consultant	1
+21311	Microwave systems engineer	0
 21222	Informatics quality assurance (QA) analyst	0
 21222	Information systems analyst - computer systems	0
 21222	Information systems contingency planner	0
@@ -94788,7 +94850,6 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 21311	Information technology (IT) solutions engineer	0
 21311	Infrastructure architect - information technology (IT)	0
 21311	Microprocessor designer and application engineer	0
-21311	Microwave systems engineer	0
 21311	Microwave transmission systems engineer	0
 21311	Network architect - computer systems	0
 21311	Network capacity planner	0
@@ -96387,7 +96448,6 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 31100	Skin specialist	0
 31100	Specialist doctor	0
 31100	Specialist in cardiology	0
-31103	Veterinary pharmacologist	0
 31100	Specialist in community medicine	0
 31100	Specialist in critical care medicine	0
 31100	Specialist in emergency medicine	0
@@ -96511,6 +96571,7 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 31103	Veterinary ophthalmologist	0
 31103	Veterinary parasitologist	0
 31103	Veterinary pathologist	1
+31103	Veterinary pharmacologist	0
 31103	Veterinary physiologist	1
 31103	Veterinary radiologist	0
 31103	Veterinary surgeon	1
@@ -96684,7 +96745,6 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 31209	Osteopathic physician	1
 31209	Podiatrist	1
 31300	Acute care coordinator - nursing	0
-31300	Assistant head nurse	0
 31300	Birthing room nursing supervisor	0
 31300	Burn unit nursing coordinator	0
 31300	Burn unit nursing supervisor	0
@@ -96692,10 +96752,10 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 31300	Critical care nursing supervisor	0
 31300	Delivery room nursing supervisor	0
 31300	Geriatric nursing supervisor	0
-31300	Head nurse	0
 31300	Nurse - team leader	0
 31300	Nursing care coordinator	1
 31300	Nursing coordinator	0
+31300	Nursing manager	0
 31300	Nursing officer - Canadian Armed Forces	0
 31300	Nursing services coordinator	1
 31300	Nursing supervisor	1
@@ -96710,9 +96770,7 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 31300	Rehabilitation nursing supervisor	0
 31300	Surgical coordinator - nursing	0
 31300	Surgical ward supervisor - nursing	0
-31300	Ward supervisor - nursing	0
 31301	Ambulatory care nurse	0
-31301	Bedside nurse	0
 31301	Birthing room nurse	0
 31301	Burn patient care nurse	0
 31301	Burn victim care nurse	0
@@ -96734,6 +96792,8 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 31301	Doctor's office nurse	0
 31301	Emergency care nurse	1
 31301	Emergency nurse	0
+31301	Employed student nurse (ESN)	0
+31301	Employed student psychiatric nurse (ESPN)	0
 31301	First aid nurse	0
 31301	Float nurse	0
 31301	Foot care nurse	0
@@ -96742,7 +96802,6 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 31301	Geriatric care nurse	0
 31301	Geriatric nurse	0
 31301	Gerontology nurse	0
-31301	Graduate nurse	0
 31301	Graduate nurse - occupational health	0
 31301	Graduate nurse - physician's office	0
 31301	Graduate private duty nurse	0
@@ -96751,7 +96810,6 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 31301	Home care nurse	0
 31301	Hospital hygiene nurse	0
 31301	Hospital hygienist - nursing	0
-31301	Hospital nurse	0
 31301	Industrial nurse	0
 31301	Infection control coordinator - hospital	0
 31301	Infection control nurse	0
@@ -96759,6 +96817,7 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 31301	Intensive care nurse	1
 31301	Intensive care unit (ICU) nurse	0
 31301	Liaison nurse	0
+31301	Licensed graduate nurse (LGN)	0
 31301	Medical intensive care nurse	0
 31301	Mental health nurse	0
 31301	Nephrology and kidney transplantation nurse	0
@@ -96780,8 +96839,6 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 31301	Occupational health nurse	1
 31301	Occupational health nurse consultant	0
 31301	Occupational medicine nurse	0
-31301	Office nurse	0
-31301	On-call nurse	0
 31301	Oncology nurse	0
 31301	Operating room (OR) nurse	0
 31301	Out-patient clinic nurse	0
@@ -96811,6 +96868,9 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 31301	Registered nurse - public and community health	0
 31301	Registered nurse - telehealth	0
 31301	Registered nurse (R.N.)	1
+31301	Registered nurse with certified practice (RN-C), first call	0
+31301	Registered nurse with certified practice (RN-C), remote nursing	0
+31301	Registered nurse with certified practice (RN-C), reproductive health	0
 31301	Registered psychiatric nurse (R.P.N.)	1
 31301	Registered public health nurse	0
 31301	Respiratory care nurse	0
@@ -96818,13 +96878,10 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 31301	School health nurse	0
 31301	School nurse	0
 31301	Scrub nurse	0
-31301	Staff nurse	0
 31301	Surgical intensive care nurse	0
 31301	Telehealth registered nurse	0
 31301	Tele-nurse	0
 31301	Triage nurse	0
-31301	Victoria Order nurse	0
-31301	Victorian Order of Nurses (VON) nurse	0
 31301	Visiting nurse	0
 31301	Ward nurse	0
 31301	Youth centre nurse	0
@@ -96934,23 +96991,16 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 32103	Cardiopulmonary technologist	1
 32103	Cardiopulmonary technology instructor	0
 32103	Cardiopulmonary technology supervisor	0
-32103	Cardiovascular perfusion clinical instructor	0
 32103	Cardiovascular perfusion instructor	0
 32103	Cardiovascular perfusion supervisor	1
-32103	Cardiovascular perfusion technologist	0
 32103	Cardiovascular perfusionist	1
 32103	Certified clinical perfusionist (CCP)	1
 32103	Chief perfusionist	0
 32103	Chief respiratory technologist	1
-32103	Clinical perfusion clinical instructor	0
 32103	Clinical perfusion supervisor	0
 32103	Clinical perfusionist	1
-32103	Extracorporal circulation technologist	0
-32103	Extracorporal technician	0
-32103	Extracorporal technologist	0
 32103	Inhalation technologist	0
 32103	Oxygen therapy technician	0
-32103	Perfusion technologist	0
 32103	Perfusionist	1
 32103	Polysomnographic technologist	0
 32103	Pulmonary function technologist	0
@@ -96980,7 +97030,12 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 32104	Veterinary technician	1
 32104	Veterinary technician supervisor	0
 32104	Veterinary technologist	1
+32109	Activity aide	0
+32109	Activity coordinator	0
+32109	Activity worker	0
 32109	Assistive listening device technician	0
+32109	Recreation support worker	0
+32109	Therapeutic therapy assistant	0
 32109	Audiological technician	0
 32109	Audiology technician	1
 32109	Audiometrician	0
@@ -97024,6 +97079,10 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 32109	Physiotherapy aide	0
 32109	Physiotherapy assistant	1
 32109	Physiotherapy technician	1
+32109	Recreation assistant	0
+32109	Recreation coordinator	0
+32109	Recreation program assistant	0
+32109	Recreation programmer	0
 32109	Recreation therapy assistant	0
 32109	Rehabilitation assistant	1
 32109	Speech aide	1
@@ -97666,10 +97725,10 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 40010	Rural and Aboriginal housing regional manager - government services	0
 40010	Rural and Aboriginal housing services district director - government services	0
 40010	Rural and Native housing regional manager - government services	0
+40042	Admiral	1
 40010	Rural and Native housing services district director - government services	0
 40010	Rural housing programs director - government services	0
 40010	Settlement programs director - government services	0
-40030	Director of counselling	0
 40010	Social development programs chief - government services	0
 40010	Social planning director - government services	0
 40010	Social programs administrator - government services	0
@@ -97763,7 +97822,6 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 40012	Education curriculum development director	1
 40012	Education curriculum development director - public administration	0
 40012	Education director	1
-40030	Director of guidance services	0
 40012	Education policy analysis and research director	1
 40012	Education policy and research director - public administration	0
 40012	Education policy development manager	0
@@ -97864,6 +97922,7 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 40020	Dean of science	0
 40020	Dean of student activities	0
 40020	Dean of technical and technological programs	0
+40042	Air combat systems officer	0
 40020	Director of admissions - post-secondary education	0
 40020	Director of research - university or college	0
 40020	Director of student affairs	0
@@ -97979,6 +98038,8 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 40030	Counselling services director	0
 40030	Counselling services manager	0
 40030	Detention centre director	1
+40030	Director of counselling	0
+40030	Director of guidance services	0
 40030	Director of operations - housing department	0
 40030	Director of public welfare	0
 40030	Environmental group director	1
@@ -98090,8 +98151,6 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 40041	Sawmill fire chief	0
 40041	Senior firefighting officer	0
 40042	Acting sub-lieutenant	0
-40042	Admiral	1
-40042	Air combat systems officer	0
 40042	Armour officer	0
 40042	Artillery officer	1
 40042	Brigadier general	1
@@ -98336,7 +98395,6 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 41200	Religion professor - university	0
 41200	Research professor - university	0
 41200	Sculpture professor - university	0
-41302	Assistant minister - religion	0
 41200	Social sciences professor - university	0
 41200	Social work professor - university	0
 41200	Sociology professor - university	0
@@ -98443,7 +98501,6 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 41210	Drafting teacher - college level	0
 41210	Drafting teacher	0
 41210	Early childhood education instructor - college level	0
-41302	Bishop	1
 41210	Early childhood education teacher - college level	0
 41210	Economics teacher - college level	0
 41210	Electrolysis instructor - vocational institute	0
@@ -98549,7 +98606,6 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 41210	Vocational trainer	0
 41210	Welding teacher - technical institute	0
 41210	Workplace trainer	0
-41302	Cardinal	1
 41220	Aboriginal school community teacher - secondary school	0
 41220	Academic subjects high school teacher	0
 41220	Academic subjects secondary school teacher	0
@@ -98770,6 +98826,9 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 41301	Zootherapist	0
 41302	Archbishop	1
 41302	Archdeacon	0
+41302	Assistant minister - religion	0
+41302	Bishop	1
+41302	Cardinal	1
 41302	Chancellor - religion	0
 41302	Chaplain	1
 41302	Chaplain - Canadian Armed Forces	0
@@ -98889,7 +98948,6 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 41400	Bioscience officer - Canadian Armed Forces	0
 41400	Certified ergonomist	1
 41400	Certified industrial hygienist	0
-41405	Curriculum developer	1
 41400	Communications policy researcher	0
 41400	Disaster emergency response planner	0
 41400	Emergency management analyst	1
@@ -99230,6 +99288,7 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 41405	Course coordinator - secondary school	0
 41405	Course coordinator - university	0
 41405	Curriculum consultant	0
+41405	Curriculum developer	1
 41405	Curriculum planner	1
 41405	Distance education program coordinator	0
 41405	Distance education project officer	0
@@ -99342,7 +99401,6 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 41406	Sports, recreational and leisure programs supervisor	0
 41406	Teen club programs coordinator	0
 41406	Youth recreational and leisure activities consultant	0
-42100	Constable	1
 41406	Youth recreational and leisure activities counsellor	0
 41406	Youth recreational and leisure activities program coordinator	0
 41407	Aboriginal land claims liaison officer	0
@@ -99466,6 +99524,7 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 42100	Community police officer	0
 42100	Community relations officer - police	1
 42100	Community services officer - police	0
+42100	Constable	1
 42100	Crime prevention constable	1
 42100	Crime scene technician - police	0
 42100	Desk officer - police	0
@@ -99814,7 +99873,6 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 42204	Faith healer	0
 42204	Gospel worker	0
 42204	Hazzan	0
-43202	Right of way inspector	0
 42204	Home mission worker - religion	0
 42204	Missionary	1
 42204	Mohel	0
@@ -99937,6 +99995,7 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 43202	Pound officer	0
 43202	Property standards inspector	1
 43202	Property use inspector	0
+43202	Right of way inspector	0
 43202	Road transport inspector	0
 43202	Service station inspector	0
 43202	Sign inspector	0
@@ -101694,7 +101753,6 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 53201	Luge coach	0
 53201	Luge instructor	0
 53201	National team coach	1
-60031	Hotel director	1
 53201	Professional athletes team coach	0
 53201	Professional sports scout	0
 53201	Professional sports team coach	0
@@ -102065,11 +102123,13 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 60031	Country inn operator	0
 60031	Fishing camp operator	0
 60031	Front desk hotel manager	0
+62029	Security guard supervisor	1
 60031	Front desk manager - accommodation services	1
 60031	Guest services manager	0
 60031	Guest-house operator	1
 60031	Hostel manager	0
 60031	Hotel assistant manager	1
+60031	Hotel director	1
 60031	Hotel front desk manager	0
 60031	Hotel front office manager	0
 60031	Hotel manager	1
@@ -102302,7 +102362,6 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 62029	Racetrack betting supervisor	0
 62029	Racetrack clerk supervisor	0
 62029	Rug cleaning foreman/woman - dry cleaning	0
-62029	Security guard supervisor	1
 62029	Ski area supervisor	0
 62029	Ski lift attendants supervisor	1
 62029	Spa supervisor	1
@@ -103493,6 +103552,7 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 64409	Tourism information technician	0
 64409	Tourist booth attendant	0
 64409	Tourist information clerk	1
+65102	Produce clerk	1
 64409	Tourist information office attendant	0
 64409	Tourist information officer	0
 64410	Air courier guard	0
@@ -103619,7 +103679,6 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 65102	Price checker - grocery store	0
 65102	Price clerk - retail	1
 65102	Price marker - supermarket	0
-65102	Produce clerk	1
 65102	Retail shelf stocker	0
 65102	Shelf stocker - retail	1
 65102	Shelf stocker - supermarket	0
@@ -104475,7 +104534,6 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 72010	Machinists and machine tool set-up operators foreman/woman	0
 72010	Machinists foreman/woman	1
 72010	Machinists supervisor	1
-72100	Computer-assisted machinist	0
 72010	Maintenance machine shop foreman/woman	1
 72010	Metal fabricator foreman/woman	0
 72010	Metal fitters foreman/woman	0
@@ -104898,7 +104956,6 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 72020	Machine builders foreman/woman	0
 72020	Machine fitters foreman/woman	0
 72020	Machine fitters supervisor	0
-72100	Diesel engine machinist	0
 72020	Machine maintenance foreman/woman - manufacturing	0
 72020	Machinery assembly foreman/woman	0
 72020	Machinery manufacturing foreman/woman	0
@@ -105106,6 +105163,7 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 72022	Hot composition foreman/woman - printing	0
 72022	Letterpress foreman/woman - printing	0
 72022	Letterpress room foreman/woman	0
+72102	Sheet metal lay-out worker	0
 72022	Mechanical composition foreman/woman - printing	0
 72022	Offset lithography foreman/woman - printing	0
 72022	Offset press foreman/woman - printing	0
@@ -105219,6 +105277,8 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 72100	Ballistic laboratory machinist	0
 72100	Bench machinist	0
 72100	Computer numerical control (CNC) machinist	0
+72100	Computer-assisted machinist	0
+72100	Diesel engine machinist	0
 72100	Differential gear testing machinist	0
 72100	Dimensional inspector - machine shop	0
 72100	Electrical machinist	0
@@ -105340,7 +105400,6 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 72102	Residential (low rise) sheet metal installer	0
 72102	Sheet metal fabricator	1
 72102	Sheet metal installer	0
-72102	Sheet metal lay-out worker	0
 72102	Sheet metal mechanic	1
 72102	Sheet metal mechanic apprentice	0
 72102	Sheet metal mechanic bench hand	0
@@ -105585,6 +105644,7 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 72200	Apprentice electrician	1
 72200	Building construction electrician	0
 72200	Building electrician	0
+72300	Plumber apprentice	1
 72200	Construction and maintenance electrician	0
 72200	Construction electrician	1
 72200	Construction electrician apprentice	1
@@ -105687,11 +105747,11 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 72203	Meter installer - electric power systems	0
 72203	Power line maintainer - electric power systems	0
 72203	Power line patroller	1
+72400	Factory maintenance mechanic	0
 72203	Power line repairer - electric power systems	0
 72203	Power lineman/woman	1
 72203	Power lineman/woman - electricity production and transmission	0
 72203	Powerline technician	1
-72205	Frame wirer - telephone	0
 72203	Repair lineman/woman - electric power systems	0
 72203	Service lineman/woman - electric power systems	0
 72203	Streetlight repairer	0
@@ -105790,6 +105850,7 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 72205	Facilities man/woman - telecommunications	0
 72205	Facilities wirer - telecommunications	0
 72205	Facsimile equipment installer	0
+72205	Frame wirer - telephone	0
 72205	Frameman/woman - telecommunications	0
 72205	Head end technician - cable television	0
 72205	Installation and repair technician - telecommunications	0
@@ -105885,7 +105946,6 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 72300	Marine plumber	0
 72300	Plumber	1
 72300	Plumber - pipefitting	0
-72300	Plumber apprentice	1
 72300	Plumbing heat technician - Canadian Armed Forces	0
 72300	Plumbing installer	0
 72300	Plumbing mechanic	1
@@ -106130,7 +106190,6 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 72400	Fabric-shearing machine fixer - textile manufacturing	0
 72400	Fabric-shearing machine setter - textile manufacturing	0
 72400	Fabric-shearing machine setter-fixer - textile manufacturing	0
-72400	Factory maintenance mechanic	0
 72400	Fibreglass-forming machine repairer	0
 72400	Flyer repairer - textile manufacturing	0
 72400	Forge equipment repairer	0
@@ -106241,6 +106300,7 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 72400	Quilting machine fixer - textile manufacturing	0
 72400	Quilting machine mechanic - textile manufacturing	0
 72400	Quilting machine setter-fixer - textile manufacturing	0
+72999	Loftsman/woman - shipbuilding	0
 72400	Reed fixer - textile manufacturing	0
 72400	Reed setter - textile manufacturing	0
 72400	Ride mechanical technician	0
@@ -106680,6 +106740,7 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 72411	Used car renovator	0
 72420	Coal furnace installer	0
 72420	Coal furnace installer-mechanic	0
+72999	Model and mock-up maker	0
 72420	Forced air furnace installer (except gas)	0
 72420	Furnace installer and repairer (except gas)	1
 72420	Furnace maintenance mechanic (except gas)	0
@@ -106949,7 +107010,6 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 72600	Experimental test pilot	0
 72600	Fire patrol pilot	0
 72600	First officer - air transport	0
-72600	Flight engineer	1
 72600	Flight instructor	0
 72600	Flight simulator instructor	0
 72600	Flying instructor	1
@@ -107152,8 +107212,6 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 72999	Locksmith	1
 72999	Locksmithing expert	0
 72999	Loftsman/woman - aircraft manufacturing	0
-72999	Loftsman/woman - shipbuilding	0
-72999	Model and mock-up maker	0
 72999	Model and mock-up maker - aeronautics	0
 72999	Model and mould maker - concrete products	0
 72999	Model maker	0
@@ -107899,7 +107957,6 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 73400	Shovel operator - heavy equipment	0
 73400	Side boom operator - pipeline construction	0
 73400	Side boom tractor operator	1
-73402	Quarry driller	0
 73400	Snow removal equipment operator - private home	0
 73400	Snow-grooming machine operator	0
 73400	Spreader operator - heavy equipment	0
@@ -108012,6 +108069,7 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 73402	Foundation drill operator - construction	0
 73402	Open-pit blaster	1
 73402	Open-pit driller	0
+73402	Quarry driller	0
 73402	Rotary drilling machine operator	1
 73402	Rotary drilling machine operator - surface mining and quarrying	0
 73402	Seismic prospecting driller	0
@@ -108478,6 +108536,7 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 75101	Stock-keeper helper	0
 75101	Stockpiler	1
 75101	Storage man/woman	0
+75110	Grade tamper - construction	0
 75101	Storage worker - material handling	1
 75101	Straddle carrier operator	0
 75101	Straddle truck operator	0
@@ -108601,7 +108660,6 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 75110	Glass setter helper	0
 75110	Glass worker helper - construction	0
 75110	Glazier helper	1
-75110	Grade tamper - construction	0
 75110	Grout machine operator	0
 75110	Grout pump operator	0
 75110	Grouter	0
@@ -109680,6 +109738,7 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 84100	Rotary driller helper - raise mining	0
 84100	Rotary raise driller helper	0
 84100	Sand fill man/woman	0
+84111	Silviculture worker	1
 84100	Sand fill man/woman - hydraulic stowing	0
 84100	Service crew worker - underground mining	0
 84100	Shaft conveyance operator	0
@@ -109795,7 +109854,6 @@ COPY public.titles (noc, commonjobtitle, illustrative) FROM stdin;
 84111	Scarifier operator - silviculture	0
 84111	Seed cone collector	0
 84111	Seed cone picker	0
-84111	Silviculture worker	1
 84111	Spacing saw operator	0
 84111	Spacing saw operator - forestry	0
 84111	Thinning saw operator	1

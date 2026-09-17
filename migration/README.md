@@ -7,7 +7,8 @@ This folder contains a simple migration system from Excel / CSV files to a Postg
 Run the `ssot-full` script to rebuild the full database:
 ```
 docker-compose exec -T postgres psql --username workbc ssot < ssot-reset.sql
-docker-compose exec migrator ssot-full.sh
+docker-compose exec -T postgres psql --username workbc ssot < postgres-init/init.sql
+docker-compose exec migrator bash -c "./ssot-full.sh"
 ```
 
 ## Ingesting a new data source or updating an existing one

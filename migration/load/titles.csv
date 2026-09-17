@@ -2963,6 +2963,7 @@
 21102,"Exploration geologist",1
 21102,"Exploration geophysicist",0
 21102,"Fisheries oceanographer",0
+21102,"Forensic geologist",0
 21102,Geochemist,1
 21102,Geodesist,0
 21102,"Geological oceanographer",0
@@ -3055,6 +3056,7 @@
 21110,Biologist,1
 21110,"Biology systematist",0
 21110,"Biology taxonomist",0
+21110,"Biology technologist",0
 21110,"Biomedical nanotechnology research scientist",0
 21110,Botanist,1
 21110,Bryologist,0
@@ -3078,11 +3080,13 @@
 21110,"Domestic animal scientist",0
 21110,Ecobiologist,0
 21110,Ecologist,1
-21110,"Economic botanist",0
+21110,"Professional biologist",0
 21110,Embryologist,1
 21110,Entomologist,0
 21110,"Environmental and occupational toxicologist",0
 21110,"Environmental biologist",0
+21110,"Environmental coordinator",0
+21110,"Environmental planner",0
 21110,"Environmental toxicologist",0
 21110,Enzymologist,0
 21110,"Enzymology biologist",0
@@ -3152,6 +3156,8 @@
 21110,Protozoologist,1
 21110,"Protozoology biologist",0
 21110,"Public health bacteriologist",0
+21110,"Registered biological technologist (RBTech)",0
+21110,"Registered professional biologist (RPBio)",0
 21110,"Regulatory toxicologist",0
 21110,"Research biologist",0
 21110,"Rural ecologist",0
@@ -5676,7 +5682,6 @@
 31209,"Osteopathic physician",1
 31209,Podiatrist,1
 31300,"Acute care coordinator - nursing",0
-31300,"Assistant head nurse",0
 31300,"Birthing room nursing supervisor",0
 31300,"Burn unit nursing coordinator",0
 31300,"Burn unit nursing supervisor",0
@@ -5684,10 +5689,10 @@
 31300,"Critical care nursing supervisor",0
 31300,"Delivery room nursing supervisor",0
 31300,"Geriatric nursing supervisor",0
-31300,"Head nurse",0
 31300,"Nurse - team leader",0
 31300,"Nursing care coordinator",1
 31300,"Nursing coordinator",0
+31300,"Nursing manager",0
 31300,"Nursing officer - Canadian Armed Forces",0
 31300,"Nursing services coordinator",1
 31300,"Nursing supervisor",1
@@ -5702,9 +5707,7 @@
 31300,"Rehabilitation nursing supervisor",0
 31300,"Surgical coordinator - nursing",0
 31300,"Surgical ward supervisor - nursing",0
-31300,"Ward supervisor - nursing",0
 31301,"Ambulatory care nurse",0
-31301,"Bedside nurse",0
 31301,"Birthing room nurse",0
 31301,"Burn patient care nurse",0
 31301,"Burn victim care nurse",0
@@ -5726,6 +5729,8 @@
 31301,"Doctor's office nurse",0
 31301,"Emergency care nurse",1
 31301,"Emergency nurse",0
+31301,"Employed student nurse (ESN)",0
+31301,"Employed student psychiatric nurse (ESPN)",0
 31301,"First aid nurse",0
 31301,"Float nurse",0
 31301,"Foot care nurse",0
@@ -5734,7 +5739,6 @@
 31301,"Geriatric care nurse",0
 31301,"Geriatric nurse",0
 31301,"Gerontology nurse",0
-31301,"Graduate nurse",0
 31301,"Graduate nurse - occupational health",0
 31301,"Graduate nurse - physician's office",0
 31301,"Graduate private duty nurse",0
@@ -5743,7 +5747,6 @@
 31301,"Home care nurse",0
 31301,"Hospital hygiene nurse",0
 31301,"Hospital hygienist - nursing",0
-31301,"Hospital nurse",0
 31301,"Industrial nurse",0
 31301,"Infection control coordinator - hospital",0
 31301,"Infection control nurse",0
@@ -5751,6 +5754,7 @@
 31301,"Intensive care nurse",1
 31301,"Intensive care unit (ICU) nurse",0
 31301,"Liaison nurse",0
+31301,"Licensed graduate nurse (LGN)",0
 31301,"Medical intensive care nurse",0
 31301,"Mental health nurse",0
 31301,"Nephrology and kidney transplantation nurse",0
@@ -5772,8 +5776,6 @@
 31301,"Occupational health nurse",1
 31301,"Occupational health nurse consultant",0
 31301,"Occupational medicine nurse",0
-31301,"Office nurse",0
-31301,"On-call nurse",0
 31301,"Oncology nurse",0
 31301,"Operating room (OR) nurse",0
 31301,"Out-patient clinic nurse",0
@@ -5803,6 +5805,9 @@
 31301,"Registered nurse - public and community health",0
 31301,"Registered nurse - telehealth",0
 31301,"Registered nurse (R.N.)",1
+31301,"Registered nurse with certified practice (RN-C), first call",0
+31301,"Registered nurse with certified practice (RN-C), remote nursing",0
+31301,"Registered nurse with certified practice (RN-C), reproductive health",0
 31301,"Registered psychiatric nurse (R.P.N.)",1
 31301,"Registered public health nurse",0
 31301,"Respiratory care nurse",0
@@ -5810,13 +5815,10 @@
 31301,"School health nurse",0
 31301,"School nurse",0
 31301,"Scrub nurse",0
-31301,"Staff nurse",0
 31301,"Surgical intensive care nurse",0
 31301,"Telehealth registered nurse",0
 31301,Tele-nurse,0
 31301,"Triage nurse",0
-31301,"Victoria Order nurse",0
-31301,"Victorian Order of Nurses (VON) nurse",0
 31301,"Visiting nurse",0
 31301,"Ward nurse",0
 31301,"Youth centre nurse",0
@@ -5926,23 +5928,16 @@
 32103,"Cardiopulmonary technologist",1
 32103,"Cardiopulmonary technology instructor",0
 32103,"Cardiopulmonary technology supervisor",0
-32103,"Cardiovascular perfusion clinical instructor",0
 32103,"Cardiovascular perfusion instructor",0
 32103,"Cardiovascular perfusion supervisor",1
-32103,"Cardiovascular perfusion technologist",0
 32103,"Cardiovascular perfusionist",1
 32103,"Certified clinical perfusionist (CCP)",1
 32103,"Chief perfusionist",0
 32103,"Chief respiratory technologist",1
-32103,"Clinical perfusion clinical instructor",0
 32103,"Clinical perfusion supervisor",0
 32103,"Clinical perfusionist",1
-32103,"Extracorporal circulation technologist",0
-32103,"Extracorporal technician",0
-32103,"Extracorporal technologist",0
 32103,"Inhalation technologist",0
 32103,"Oxygen therapy technician",0
-32103,"Perfusion technologist",0
 32103,Perfusionist,1
 32103,"Polysomnographic technologist",0
 32103,"Pulmonary function technologist",0
@@ -5972,7 +5967,12 @@
 32104,"Veterinary technician",1
 32104,"Veterinary technician supervisor",0
 32104,"Veterinary technologist",1
+32109,"Activity aide",0
+32109,"Activity coordinator",0
+32109,"Activity worker",0
 32109,"Assistive listening device technician",0
+32109,"Recreation support worker",0
+32109,"Therapeutic therapy assistant",0
 32109,"Audiological technician",0
 32109,"Audiology technician",1
 32109,Audiometrician,0
@@ -6016,6 +6016,10 @@
 32109,"Physiotherapy aide",0
 32109,"Physiotherapy assistant",1
 32109,"Physiotherapy technician",1
+32109,"Recreation assistant",0
+32109,"Recreation coordinator",0
+32109,"Recreation program assistant",0
+32109,"Recreation programmer",0
 32109,"Recreation therapy assistant",0
 32109,"Rehabilitation assistant",1
 32109,"Speech aide",1
@@ -15941,7 +15945,6 @@
 72600,"Experimental test pilot",0
 72600,"Fire patrol pilot",0
 72600,"First officer - air transport",0
-72600,"Flight engineer",1
 72600,"Flight instructor",0
 72600,"Flight simulator instructor",0
 72600,"Flying instructor",1
