@@ -17,8 +17,24 @@ CREATE OR REPLACE FUNCTION public.pgrst_watch() RETURNS event_trigger
   AS $$
 BEGIN
   NOTIFY pgrst, 'reload schema';
-END;
-$$;
+END $$;
+
+-- Assertion functions for data migration purposes
+CREATE OR REPLACE FUNCTION public.assert_empty(
+    p_query text,
+    p_params text[] DEFAULT '{}',
+    p_message text DEFAULT 'Assertion failed: Found matching rows'
+) RETURNS void LANGUAGE plpgsql AS $$
+DECLARE
+    has_rows boolean;
+BEGIN
+    EXECUTE format('SELECT EXISTS(%s)', p_query)
+		INTO has_rows
+		USING p_params;
+    IF has_rows THEN
+        RAISE EXCEPTION '%', p_message;
+    END IF;
+END $$;
 
 -- This event trigger will fire after every ddl_command_end event
 CREATE EVENT TRIGGER pgrst_watch

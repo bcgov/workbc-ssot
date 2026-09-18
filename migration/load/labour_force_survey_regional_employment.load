@@ -100,6 +100,9 @@ load csv
     $$ update labour_force_survey_regional_employment set region = 'thompson_okanagan' where region = 'Thompson Okanagan'; $$,
     $$ update labour_force_survey_regional_employment set region = 'vancouver_island_coast' where region = 'Vancouver Island And Coast'; $$,
     $$ update labour_force_survey_regional_employment set region = 'north_coast_nechako' where region = 'North Coast And Nechako'; $$,
+    $$ select assert_empty('select * from labour_force_survey_regional_employment lfs where lfs.region != all($1)', array[
+	    'british_columbia', 'cariboo', 'kootenay', 'northeast', 'mainland_southwest', 'thompson_okanagan', 'vancouver_island_coast', 'north_coast_nechako'
+    ], 'Found rows with unexpected region names') $$,
     $$ comment on table labour_force_survey_regional_employment is 'LFS Data Sheet {2024} > Regional Profiles > Table 1'; $$,
     $$ comment on column labour_force_survey_regional_employment.region is 'Region'; $$,
     $$ comment on column labour_force_survey_regional_employment.age_distribution_0_14 is 'Population Distribution > Age distribution > 0-14'; $$,
