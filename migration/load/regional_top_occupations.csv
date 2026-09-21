@@ -1,70 +1,70 @@
-#31301,"Registered nurses and registered psychiatric nurses",850,Cariboo
+#31301,"Registered nurses and registered psychiatric nurses",960,Cariboo
 #60020,"Retail and wholesale trade managers",810,Cariboo
-#73300,"Transport truck drivers",700,Cariboo
-#64100,"Retail salespersons and visual merchandisers",640,Cariboo
-#42201,"Social and community service workers",640,Cariboo
-#33102,"Nurse aides, orderlies and patient service associates",640,Cariboo
-#13100,"Administrative officers",510,Cariboo
-#65310,"Light duty cleaners",360,Cariboo
-#13110,"Administrative assistants",340,Cariboo
-#72310,Carpenters,330,Cariboo
-#60020,"Retail and wholesale trade managers",1050,Kootenay
-#33102,"Nurse aides, orderlies and patient service associates",820,Kootenay
+#73300,"Transport truck drivers",710,Cariboo
+#64100,"Retail salespersons and visual merchandisers",670,Cariboo
+#33102,"Nurse aides, orderlies and patient service associates",650,Cariboo
+#13100,"Administrative officers",540,Cariboo
+#42201,"Social and community service workers",500,Cariboo
+#13110,"Administrative assistants",350,Cariboo
+#65100,Cashiers,330,Cariboo
+#65310,"Light duty cleaners",310,Cariboo
+#60020,"Retail and wholesale trade managers",1160,Kootenay
+#33102,"Nurse aides, orderlies and patient service associates",790,Kootenay
 #31301,"Registered nurses and registered psychiatric nurses",790,Kootenay
-#73300,"Transport truck drivers",780,Kootenay
+#73300,"Transport truck drivers",760,Kootenay
 #13100,"Administrative officers",730,Kootenay
-#73400,"Heavy equipment operators",670,Kootenay
-#64100,"Retail salespersons and visual merchandisers",620,Kootenay
-#42201,"Social and community service workers",490,Kootenay
-#72310,Carpenters,450,Kootenay
-#41221,"Elementary school and kindergarten teachers",440,Kootenay
-#31301,"Registered nurses and registered psychiatric nurses",17500,Mainland/Southwest
-#60020,"Retail and wholesale trade managers",16880,Mainland/Southwest
-#64100,"Retail salespersons and visual merchandisers",16480,Mainland/Southwest
-#00018,"Senior managers - public and private sector",15320,Mainland/Southwest
-#33102,"Nurse aides, orderlies and patient service associates",12430,Mainland/Southwest
-#21231,"Software engineers and designers",12270,Mainland/Southwest
-#13100,"Administrative officers",12090,Mainland/Southwest
-#42202,"Early childhood educators and assistants",9400,Mainland/Southwest
-#21232,"Software developers and programmers",9320,Mainland/Southwest
-#65201,"Food counter attendants, kitchen helpers and related support occupations",8850,Mainland/Southwest
-#73300,"Transport truck drivers",660,"North Coast and Nechako"
-#60020,"Retail and wholesale trade managers",500,"North Coast and Nechako"
-#75100,"Longshore workers",330,"North Coast and Nechako"
-#73310,"Railway and yard locomotive engineers",330,"North Coast and Nechako"
-#42201,"Social and community service workers",310,"North Coast and Nechako"
+#64100,"Retail salespersons and visual merchandisers",700,Kootenay
+#73400,"Heavy equipment operators",630,Kootenay
+#72310,Carpenters,510,Kootenay
+#65310,"Light duty cleaners",430,Kootenay
+#13110,"Administrative assistants",390,Kootenay
+#60020,"Retail and wholesale trade managers",15930,Mainland/Southwest
+#31301,"Registered nurses and registered psychiatric nurses",15680,Mainland/Southwest
+#64100,"Retail salespersons and visual merchandisers",15170,Mainland/Southwest
+#00018,"Senior managers - public and private sector",13570,Mainland/Southwest
+#13100,"Administrative officers",11450,Mainland/Southwest
+#33102,"Nurse aides, orderlies and patient service associates",11410,Mainland/Southwest
+#21231,"Software engineers and designers",9200,Mainland/Southwest
+#75110,"Construction trades helpers and labourers",8500,Mainland/Southwest
+#42202,"Early childhood educators and assistants",8300,Mainland/Southwest
+#65201,"Food counter attendants, kitchen helpers and related support occupations",8290,Mainland/Southwest
+#73300,"Transport truck drivers",750,"North Coast and Nechako"
+#73400,"Heavy equipment operators",390,"North Coast and Nechako"
+#42202,"Early childhood educators and assistants",330,"North Coast and Nechako"
 #72310,Carpenters,310,"North Coast and Nechako"
-#64100,"Retail salespersons and visual merchandisers",300,"North Coast and Nechako"
-#13100,"Administrative officers",270,"North Coast and Nechako"
-#73400,"Heavy equipment operators",250,"North Coast and Nechako"
+#75110,"Construction trades helpers and labourers",310,"North Coast and Nechako"
+#60020,"Retail and wholesale trade managers",260,"North Coast and Nechako"
+#75100,"Longshore workers",260,"North Coast and Nechako"
+#13100,"Administrative officers",260,"North Coast and Nechako"
+#42201,"Social and community service workers",230,"North Coast and Nechako"
 #31301,"Registered nurses and registered psychiatric nurses",230,"North Coast and Nechako"
 #73300,"Transport truck drivers",600,Northeast
-#64100,"Retail salespersons and visual merchandisers",390,Northeast
-#60020,"Retail and wholesale trade managers",360,Northeast
-#93101,"Central control and process operators, petroleum, gas and chemical processing",280,Northeast
-#13100,"Administrative officers",260,Northeast
-#12200,"Accounting technicians and bookkeepers",260,Northeast
-#73400,"Heavy equipment operators",250,Northeast
-#13110,"Administrative assistants",220,Northeast
-#31301,"Registered nurses and registered psychiatric nurses",200,Northeast
-#41221,"Elementary school and kindergarten teachers",190,Northeast
-#60020,"Retail and wholesale trade managers",3980,Thompson-Okanagan
-#31301,"Registered nurses and registered psychiatric nurses",3070,Thompson-Okanagan
-#64100,"Retail salespersons and visual merchandisers",3040,Thompson-Okanagan
-#33102,"Nurse aides, orderlies and patient service associates",2780,Thompson-Okanagan
-#13100,"Administrative officers",2570,Thompson-Okanagan
-#42201,"Social and community service workers",2210,Thompson-Okanagan
-#73300,"Transport truck drivers",2140,Thompson-Okanagan
-#00018,"Senior managers - public and private sector",2030,Thompson-Okanagan
-#12200,"Accounting technicians and bookkeepers",1760,Thompson-Okanagan
-#13110,"Administrative assistants",1540,Thompson-Okanagan
-#33102,"Nurse aides, orderlies and patient service associates",5940,"Vancouver Island/Coast"
-#31301,"Registered nurses and registered psychiatric nurses",5800,"Vancouver Island/Coast"
-#60020,"Retail and wholesale trade managers",5780,"Vancouver Island/Coast"
-#64100,"Retail salespersons and visual merchandisers",5490,"Vancouver Island/Coast"
-#13100,"Administrative officers",4140,"Vancouver Island/Coast"
-#42201,"Social and community service workers",3850,"Vancouver Island/Coast"
-#00018,"Senior managers - public and private sector",3480,"Vancouver Island/Coast"
-#65310,"Light duty cleaners",2910,"Vancouver Island/Coast"
-#13110,"Administrative assistants",2420,"Vancouver Island/Coast"
-#12200,"Accounting technicians and bookkeepers",2310,"Vancouver Island/Coast"
+#60020,"Retail and wholesale trade managers",430,Northeast
+#64100,"Retail salespersons and visual merchandisers",420,Northeast
+#31301,"Registered nurses and registered psychiatric nurses",290,Northeast
+#73400,"Heavy equipment operators",280,Northeast
+#13100,"Administrative officers",280,Northeast
+#13110,"Administrative assistants",270,Northeast
+#41221,"Elementary school and kindergarten teachers",240,Northeast
+#65310,"Light duty cleaners",240,Northeast
+#93101,"Central control and process operators, petroleum, gas and chemical processing",240,Northeast
+#60020,"Retail and wholesale trade managers",4000,Thompson-Okanagan
+#64100,"Retail salespersons and visual merchandisers",3400,Thompson-Okanagan
+#13100,"Administrative officers",2750,Thompson-Okanagan
+#31301,"Registered nurses and registered psychiatric nurses",2610,Thompson-Okanagan
+#33102,"Nurse aides, orderlies and patient service associates",2330,Thompson-Okanagan
+#73300,"Transport truck drivers",2210,Thompson-Okanagan
+#00018,"Senior managers - public and private sector",2060,Thompson-Okanagan
+#72310,Carpenters,1620,Thompson-Okanagan
+#42201,"Social and community service workers",1590,Thompson-Okanagan
+#65310,"Light duty cleaners",1550,Thompson-Okanagan
+#31301,"Registered nurses and registered psychiatric nurses",5040,"Vancouver Island/Coast"
+#60020,"Retail and wholesale trade managers",4800,"Vancouver Island/Coast"
+#33102,"Nurse aides, orderlies and patient service associates",4590,"Vancouver Island/Coast"
+#64100,"Retail salespersons and visual merchandisers",4280,"Vancouver Island/Coast"
+#13100,"Administrative officers",3770,"Vancouver Island/Coast"
+#42201,"Social and community service workers",3360,"Vancouver Island/Coast"
+#00018,"Senior managers - public and private sector",2990,"Vancouver Island/Coast"
+#41221,"Elementary school and kindergarten teachers",2210,"Vancouver Island/Coast"
+#13110,"Administrative assistants",2190,"Vancouver Island/Coast"
+#65310,"Light duty cleaners",2100,"Vancouver Island/Coast"

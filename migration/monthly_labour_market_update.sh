@@ -3,6 +3,8 @@
 ##
 ## Convert and load a new LMMU sheet.
 ##
+## Usage monthly_labour_market_update.sh SheetName["WorkBC LMS May_2026.xlsx"] ReportYear[2026] ReportMonth[5] UpdateDate["2026/04/29 14:06"]
+##
 
 set -xeuo pipefail
 
@@ -41,6 +43,7 @@ SOURCE="/app/load/updates/monthly_labour_market_updates_${year}_${month_with_zer
 csvq --repository load --datetime-format "%Y/%m/%d %H:%i" \
 "REPLACE INTO sources (filename, date, endpoint, period, sheet, label) USING (endpoint, period) VALUES('${filename%.xlsx}', '${date}', 'monthly_labour_market_updates', '${year}/${month_with_zero}/01 08:00', 'Sheet3', 'Labour Force Survey (monthly, seasonally adjusted)')"
 pgloader -l workbc.lisp load/sources.load
+chmod ugoa+rw load/sources.csv
 
 # If we reach this line, the whole script ran successfully.
 echo "LMMU SUCCESSFULLY UPDATED."
