@@ -18,18 +18,18 @@ ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/HOO_B
 cat "data/HOO_BC_and_Region_for_new_tool_2026-08-05-Sheet 1.csv" | php csv_extract.php --range 2 --cols 15 > "load/high_opportunity_occupations.csv"
 
 # B.C. Labour Market Outlook, Career Profiles
-ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/WorkBC_Career_Profile_Data_2025.xlsx" "data/WorkBC_Career_Profile_Data_2025-%s.csv"
-cat "data/WorkBC_Career_Profile_Data_2025-Regional Outlook.csv" | php csv_extract.php --range 5 > load/career_regional.csv
-cat "data/WorkBC_Career_Profile_Data_2025-Provincial Outlook.csv" | php csv_extract.php --range 4 > load/career_provincial.csv
+ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/WorkBC_Career_Profile_Data_2026-08-05.xlsx" "data/WorkBC_Career_Profile_Data_2026-08-05-%s.csv"
+cat "data/WorkBC_Career_Profile_Data_2026-08-05-Regional Outlook.csv" | php csv_extract.php --range 5 > load/career_regional.csv
+cat "data/WorkBC_Career_Profile_Data_2026-08-05-Provincial Outlook.csv" | php csv_extract.php --range 4 > load/career_provincial.csv
 
 # B.C. Labour Market Outlook, Industry Profiles
-ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/WorkBC_Industry_Profile_2025.xlsx" "data/WorkBC_Industry_Profile_2025-%s.csv"
-cat "data/WorkBC_Industry_Profile_2025-Sheet1.csv" | php csv_extract.php --range 3 > load/industry_outlook.csv
+ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/WorkBC_Industry_Profile_2026-08-05.xlsx" "data/WorkBC_Industry_Profile_2026-08-05-%s.csv"
+cat "data/WorkBC_Industry_Profile_2026-08-05-Sheet1.csv" | php csv_extract.php --range 3 > load/industry_outlook.csv
 
 # B.C. Labour Market Outlook, Regional Profiles
-ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/WorkBC_Regional_Profile_Data_2025.xlsx" "data/WorkBC_Regional_Profile_Data_2025-%s.csv"
-cat "data/WorkBC_Regional_Profile_Data_2025-Regional Profiles - LMO.csv" | php csv_extract.php --range 5 > load/regional_labour_market_outlook.csv
-cat "data/WorkBC_Regional_Profile_Data_2025-Top Occupation.csv" | php csv_extract.php --range 4 | php csv_empty.php > load/regional_top_occupations.csv
+ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/WorkBC_Regional_Profile_Data_2026-08-05.xlsx" "data/WorkBC_Regional_Profile_Data_2026-08-05-%s.csv"
+cat "data/WorkBC_Regional_Profile_Data_2026-08-05-Regional Profiles - LMO.csv" | php csv_extract.php --range 5 > load/regional_labour_market_outlook.csv
+cat "data/WorkBC_Regional_Profile_Data_2026-08-05-Top Occupation.csv" | php csv_extract.php --range 4 | php csv_empty.php > load/regional_top_occupations.csv
 
 # B.C. Labour Market Outlook, Job Openings
 ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/Job_Openings_by_Industry_LMO_2026-08-05.xlsx" "data/Job_Openings_by_Industry_LMO_2026-08-05-%s.csv"

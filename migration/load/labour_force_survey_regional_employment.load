@@ -92,17 +92,7 @@ load csv
     $$ update labour_force_survey_regional_employment set total_employment_num = full_time_employment_num * 100 / full_time_employment_pct; $$,
     $$ update labour_force_survey_regional_employment set part_time_employment_pct = 100 - full_time_employment_pct; $$,
     $$ update labour_force_survey_regional_employment set part_time_employment_num = total_employment_num * part_time_employment_pct / 100; $$,
-    $$ update labour_force_survey_regional_employment set region = 'british_columbia' where region = 'British Columbia'; $$,
-    $$ update labour_force_survey_regional_employment set region = 'cariboo' where region = 'Cariboo'; $$,
-    $$ update labour_force_survey_regional_employment set region = 'kootenay' where region = 'Kootenay'; $$,
-    $$ update labour_force_survey_regional_employment set region = 'northeast' where region = 'Northeast'; $$,
-    $$ update labour_force_survey_regional_employment set region = 'mainland_southwest' where region = 'Lower Mainland SouthWest'; $$,
-    $$ update labour_force_survey_regional_employment set region = 'thompson_okanagan' where region = 'Thompson Okanagan'; $$,
-    $$ update labour_force_survey_regional_employment set region = 'vancouver_island_coast' where region = 'Vancouver Island And Coast'; $$,
-    $$ update labour_force_survey_regional_employment set region = 'north_coast_nechako' where region = 'North Coast And Nechako'; $$,
-    $$ select assert_empty('select * from labour_force_survey_regional_employment lfs where lfs.region != all($1)', array[
-	    'british_columbia', 'cariboo', 'kootenay', 'northeast', 'mainland_southwest', 'thompson_okanagan', 'vancouver_island_coast', 'north_coast_nechako'
-    ], 'Found rows with unexpected region names') $$,
+    $$ update labour_force_survey_regional_employment set region = normalize_region_name(region); $$,
     $$ comment on table labour_force_survey_regional_employment is 'LFS Data Sheet {2024} > Regional Profiles > Table 1'; $$,
     $$ comment on column labour_force_survey_regional_employment.region is 'Region'; $$,
     $$ comment on column labour_force_survey_regional_employment.age_distribution_0_14 is 'Population Distribution > Age distribution > 0-14'; $$,

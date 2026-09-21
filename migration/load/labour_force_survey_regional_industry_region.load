@@ -131,17 +131,7 @@ load csv
     $$
 
     after load do
-    $$ update labour_force_survey_regional_industry_region set region = 'british_columbia' where region = 'British Columbia'; $$,
-    $$ update labour_force_survey_regional_industry_region set region = 'cariboo' where region = 'Cariboo'; $$,
-    $$ update labour_force_survey_regional_industry_region set region = 'kootenay' where region = 'Kootenay'; $$,
-    $$ update labour_force_survey_regional_industry_region set region = 'northeast' where region = 'Northeast'; $$,
-    $$ update labour_force_survey_regional_industry_region set region = 'mainland_southwest' where region = 'Lower Mainland SouthWest'; $$,
-    $$ update labour_force_survey_regional_industry_region set region = 'thompson_okanagan' where region = 'Thompson Okanagan'; $$,
-    $$ update labour_force_survey_regional_industry_region set region = 'vancouver_island_coast' where region = 'Vancouver Island And Coast'; $$,
-    $$ update labour_force_survey_regional_industry_region set region = 'north_coast_nechako' where region = 'North Coast And Nechako'; $$,
-    $$ select assert_empty('select * from labour_force_survey_regional_industry_region lfs where lfs.region != all($1)', array[
-	    'british_columbia', 'cariboo', 'kootenay', 'northeast', 'mainland_southwest', 'thompson_okanagan', 'vancouver_island_coast', 'north_coast_nechako'
-    ], 'Found rows with unexpected region names') $$,
+    $$ update labour_force_survey_regional_industry_region set region = normalize_region_name(region); $$,
     $$ comment on table labour_force_survey_regional_industry_region is 'LFS Data Sheet {2024} > Regional Profiles > Table 2'; $$,
     $$ comment on column labour_force_survey_regional_industry_region.region is 'Region'; $$,
     $$ comment on column labour_force_survey_regional_industry_region.accommodation_food_services is 'This region''s industries and sectors > Industry > Share of this region''s employment (%) / Share of Industry Employment within a Region (%) > Accommodation and Food Services > %'; $$,
