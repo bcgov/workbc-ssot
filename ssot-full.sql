@@ -67634,6 +67634,7 @@ COPY public.high_opportunity_occupations (noc, occupation, openings_forecast, wa
 33109	Other assisting occupations in support of health services	2850	18	24.99	30	52119.144	Social, Realistic, Conventional	Active Listening	Speaking	Reading Comprehension	3	british_columbia
 40010	Government managers - health and social policy development and program administration	580	43.08	54	80	112622.4	Enterprising	Active Listening	Reading Comprehension	Time Management	0	british_columbia
 40011	Government managers - economic analysis, policy development and program administration	850	43.75	60	75	125136	Enterprising	Active Listening	Reading Comprehension	Time Management	0	british_columbia
+00018	Senior managers - public and private sector	120	\N	\N	\N	125000	\N	\N	\N	\N	0	northeast
 40019	Other managers in public administration	280	35.9	54.95	75	114603.72	Enterprising	Active Listening	Reading Comprehension	Speaking	0	british_columbia
 40020	Administrators - post-secondary education and vocational training	1510	39.56	57.69	78.5699999999999	120318.264	Enterprising	Reading Comprehension	Active Listening	Time Management	0	british_columbia
 40021	School principals and administrators of elementary and secondary education	2290	36.86	56.73	76.92	118316.088	Enterprising	Critical Thinking	Judgment and Decision Making	Speaking	0	british_columbia
@@ -67886,7 +67887,6 @@ COPY public.high_opportunity_occupations (noc, occupation, openings_forecast, wa
 92014	Supervisors, forest products processing	30	28	39.5	57.69	82381.2	Enterprising	Active Listening	Management of Personnel Resources	Speaking	2	kootenay
 92100	Power engineers and power systems operators	260	31.07	40.7	60	84883.92	Realistic	Operations Monitoring	Operation and Control	Critical Thinking	2	kootenay
 93100	Central control and process operators, mineral and metal processing	140	38	40.65	48.3	84779.64	Realistic	Operations Monitoring	Operation and Control	Monitoring	3	kootenay
-00018	Senior managers - public and private sector	120	\N	\N	\N	125000	\N	\N	\N	\N	0	northeast
 10011	Human resources managers	40	31.25	56.5	79.33	117836.4	Enterprising	Active Listening	Speaking	Reading Comprehension	0	northeast
 10021	Banking, credit and other investment managers	40	35.1	52.88	104.4	110286.528	Enterprising	Critical Thinking	Reading Comprehension	Active Listening	0	northeast
 11100	Financial auditors and accountants	30	24.04	37.86	62.37	78960.816	Conventional, Enterprising	Reading Comprehension	Active Listening	Critical Thinking	1	northeast
@@ -68129,6 +68129,7 @@ COPY public.high_opportunity_occupations (noc, occupation, openings_forecast, wa
 31204	Kinesiologists and other professional occupations in therapy and assessment	120	20	30	45.92	62568	Social	Active Listening	Social Perceptiveness	Speaking	1	thompson_okanagan
 31209	Other professional occupations in health diagnosing and treating	70	36973	71500	124000	71500	Investigative, Social	Active Listening	Critical Thinking	Speaking	1	thompson_okanagan
 31300	Nursing coordinators and supervisors	130	27	47.58	57.13	99232.848	Social	Active Listening	Social Perceptiveness	Critical Thinking	1	thompson_okanagan
+42101	Firefighters	240	34	48.7	61.81	101568.72	Realistic	Critical Thinking	Active Listening	Speaking	2	thompson_okanagan
 31301	Registered nurses and registered psychiatric nurses	3070	32.5	45	52	93852	Social	Active Listening	Social Perceptiveness	Critical Thinking	1	thompson_okanagan
 31302	Nurse practitioners	50	39.2	55	73	114708	Social, Investigative	Active Listening	Reading Comprehension	Critical Thinking	1	thompson_okanagan
 32100	Opticians	90	21	27	32	56311.2	Enterprising, Conventional	Speaking	Active Listening	Reading Comprehension	2	thompson_okanagan
@@ -68168,7 +68169,6 @@ COPY public.high_opportunity_occupations (noc, occupation, openings_forecast, wa
 41404	Health policy researchers, consultants and program officers	180	27.4	40	52.88	83424	Conventional, Enterprising	Active Listening	Speaking	Reading Comprehension	1	thompson_okanagan
 41406	Recreation, sports and fitness policy researchers, consultants and program officers	90	25.64	30	37.17	62568	Enterprising	Speaking	Active Listening	Coordination	1	thompson_okanagan
 42100	Police officers (except commissioned)	380	35.95	50.96	62.5	106282.176	Enterprising, Realistic, Conventional	Active Listening	Speaking	Critical Thinking	2	thompson_okanagan
-42101	Firefighters	240	34	48.7	61.81	101568.72	Realistic	Critical Thinking	Active Listening	Speaking	2	thompson_okanagan
 43201	Correctional service officers	90	32	36	48.35	75081.6	Enterprising, Realistic	Active Listening	Monitoring	Social Perceptiveness	3	thompson_okanagan
 43202	By-law enforcement and other regulatory officers	60	27	38.01	46	79273.656	Conventional	Active Listening	Speaking	Critical Thinking	3	thompson_okanagan
 51111	Authors and writers (except technical)	190	22	35.67	50	74393.352	Artistic	Writing	Reading Comprehension	Speaking	1	thompson_okanagan
@@ -68984,6 +68984,7 @@ COPY public.monthly_labour_market_updates (year, month, total_employed, total_un
 2026	2	2927400	190700	190400	331800	1970000	625600	343500	1983200	620900	1408900	1518500	1413700	1534000	-0.7	-20200	-1.4	-32500	2.2	12300	0	6.1	-0.4	64.4	0.1	6.1	0.1	65	4844200	808100	3068600	551200	150900	141600	69700	54200	6	5.9	2912400	5.2	4.3	457700	6	6.3	1906100	6.5	5.7	311700	6.4	4.4	82200	6.7	7.3	82300	9.5	4.3	37200	8.8	6.2	35200	3.8	7200	9.2	2000	-2.5	-6900	-0.7	-1600	-2.8	-5400	-1.2	-4900	-2	-3600	-2.4	-1000	-2.9	-3400	1.7	5300	-0.1	-100	-1.6	-2400	0.6	100	0.6	2400	-3.9	-3800	-3.4	-4500
 2026	3	2908200	209800	190700	327600	1955000	625600	331800	1970000	625600	1396100	1512100	1408900	1518500	-0.7	-19200	-1	-23700	0.8	4600	0.6	6.7	0	64.4	0.1	6.1	0.1	65	4842000	808200	3065800	551300	150900	141700	69800	54300	6.6	5.3	2898200	5.7	4.3	455500	6.5	5.4	1899800	7.8	5.8	306100	7.1	6.3	82200	6.3	5.5	82900	9.5	6.4	37100	8.7	7	34600	3.8	7200	9.2	2000	-2.5	-6900	-0.7	-1600	-2.8	-5400	-1.2	-4900	-2	-3600	-2.4	-1000	-2.9	-3400	1.7	5300	-0.1	-100	-1.6	-2400	0.6	100	0.6	2400	-3.9	-3800	-3.4	-4500
 2026	4	2903900	210700	209800	331600	1947400	624900	327600	1955000	625600	1390200	1513700	1396100	1512100	-0.1	-4300	-0.5	-11700	1.2	7300	0.1	6.8	0	64.4	0.6	6.7	0	64.4	4840200	808500	3063200	551600	151000	141800	69900	54300	6.7	5.3	2898300	5.8	4.3	455700	6.7	5.4	1898400	8.1	5.8	302200	6.5	6.3	83300	5.8	5.5	86200	8.8	6.4	38200	9	7	34300	-3.3	-6400	-6.4	-1400	0.5	1400	1.5	3300	0.9	1600	0.5	1900	2.2	3900	-2.9	-1200	-5.3	-6200	0.4	1200	1.9	2900	-2.6	-3800	-3.4	-600	-1.9	-7700	7.3	6600	0.2	200
+2026	7	2954700	196600	204900	354800	1981100	618800	351000	1956600	629300	1416100	1538600	1412900	1524000	0.6	17800	1.4	32500	-2.5	-14700	-0.3	6.2	0.2	65.1	-0.3	6.5	0	64.9	4839000	809700	3058400	552600	151300	142400	70200	54400	6.6	6.2	2968300	5.9	5.9	455500	6.6	6.4	1938600	7.5	5.4	316100	5.2	5.9	88100	6.3	5.4	89400	6.8	5.6	44200	7.4	7	36300	0.4	800	-2.3	-500	2.6	7000	1	2200	-0.3	-500	1.2	5000	1.7	3100	-3.5	-1400	-3.6	-4400	1.7	5300	-1.7	-2700	-0.3	-400	-6	-900	1	4000	1.1	1000	0.1	100
 \.
 
 
@@ -70933,6 +70934,7 @@ COPY public.onet_nocs (noc2021, noc2016, soc2018, soc2018_title, soc2019) FROM s
 22300	2231	17-3029	Engineering Technologists and Technicians, Except Drafters, All Other	17-3029.08
 22300	2231	19-4042	Environmental Science and Protection Technicians, Including Health	19-4042.00
 22300	2231	53-6041	Traffic Technicians	53-6041.00
+31103	3114	29-1131	Veterinarians	29-1131.00
 22301	2232	17-3021	Aerospace Engineering and Operations Technologists and Technicians	17-3021.00
 22301	2232	17-3024	Electro-Mechanical and Mechatronics Technologists and Technicians	17-3024.00
 22301	2232	17-3024	Electro-Mechanical and Mechatronics Technologists and Technicians	17-3024.01
@@ -71019,7 +71021,6 @@ COPY public.onet_nocs (noc2021, noc2016, soc2018, soc2018_title, soc2019) FROM s
 31101	3111	29-1249	Surgeons, All Other	29-1249.00
 31102	3112	29-1215	Family Medicine Physicians	29-1215.00
 31103	3114	19-1041	Epidemiologists	19-1041.00
-31103	3114	29-1131	Veterinarians	29-1131.00
 31110	3113	29-1021	Dentists, General	29-1021.00
 31110	3113	29-1022	Oral and Maxillofacial Surgeons	29-1022.00
 31110	3113	29-1023	Orthodontists	29-1023.00
@@ -71279,6 +71280,7 @@ COPY public.onet_nocs (noc2021, noc2016, soc2018, soc2018_title, soc2019) FROM s
 41200	4011	25-1111	Criminal Justice and Law Enforcement Teachers, Postsecondary	25-1111.00
 41200	4011	25-1112	Law Teachers, Postsecondary	25-1112.00
 41200	4011	25-1113	Social Work Teachers, Postsecondary	25-1113.00
+41302	4154	21-2011	Clergy	21-2011.00
 41200	4011	25-1121	Art, Drama, and Music Teachers, Postsecondary	25-1121.00
 41200	4011	25-1122	Communications Teachers, Postsecondary	25-1122.00
 41200	4011	25-1123	English Language and Literature Teachers, Postsecondary	25-1123.00
@@ -71359,7 +71361,6 @@ COPY public.onet_nocs (noc2021, noc2016, soc2018, soc2018_title, soc2019) FROM s
 41301	3144	29-1129	Therapists, All Other	29-1129.02
 41301	3144	29-9091	Athletic Trainers	29-9091.00
 41301	4153	29-9092	Genetic Counselors	29-9092.00
-41302	4154	21-2011	Clergy	21-2011.00
 41310	0431	11-1021	General and Operations Managers	11-1021.00
 41310	4165	13-1041	Compliance Officers	13-1041.00
 41310	4165	13-1041	Compliance Officers	13-1041.01
@@ -72800,6 +72801,7 @@ COPY public.openings_careers (noc, description, industry_1_name, industry_1_perc
 63220	Shoe repairers and shoemakers	other_private_services	64	50	retail_trade	26	20	manufacturing	10	10	\N	\N	\N	\N	\N	\N
 63221	Upholsterers	other_private_services	71	100	manufacturing	12	20	transportation_warehousing	9	10	retail_trade	5	10	construction	3	0
 73209	Other repairers and servicers	retail_trade	63	320	other_private_services	22	110	wholesale_trade	8	40	information_culture_recreation	4	20	public_administration	3	10
+72320	Bricklayers	construction	95	470	business_building_other_support_services	3	20	professional_scientific_technical_services	1	0	retail_trade	1	0	educational_services	1	0
 64100	Retail salespersons and visual merchandisers	retail_trade	85	20990	wholesale_trade	6	1510	manufacturing	3	810	information_culture_recreation	3	730	professional_scientific_technical_services	3	710
 64101	Sales and account representatives - wholesale trade (non-technical)	wholesale_trade	56.99999999999999	1730	manufacturing	18	540	professional_scientific_technical_services	10	300	retail_trade	9	280	information_culture_recreation	5	170
 64200	Tailors, dressmakers, furriers and milliners	other_private_services	45	360	retail_trade	25	200	manufacturing	17	140	professional_scientific_technical_services	7.000000000000001	60	information_culture_recreation	5	40
@@ -72866,7 +72868,6 @@ COPY public.openings_careers (noc, description, industry_1_name, industry_1_perc
 72301	Steamfitters, pipefitters and sprinkler system installers	construction	70	600	manufacturing	15	120	mining_oil_gas_extraction	9	80	other_private_services	5	40	utilities	2	20
 72310	Carpenters	construction	94	9260	manufacturing	2	200	information_culture_recreation	1	140	public_administration	1	110	business_building_other_support_services	1	100
 72311	Cabinetmakers	manufacturing	54	370	construction	39	270	professional_scientific_technical_services	3	20	educational_services	2	10	retail_trade	1	10
-72320	Bricklayers	construction	95	470	business_building_other_support_services	3	20	professional_scientific_technical_services	1	0	retail_trade	1	0	educational_services	1	0
 72321	Insulators	construction	96	360	manufacturing	2	10	retail_trade	1	0	wholesale_trade	1	0	business_building_other_support_services	1	0
 72400	Construction millwrights and industrial mechanics	manufacturing	50	1100	mining_oil_gas_extraction	21	470	construction	12	260	other_private_services	9	210	wholesale_trade	7.000000000000001	160
 72401	Heavy-duty equipment mechanics	other_private_services	31	580	mining_oil_gas_extraction	24	460	wholesale_trade	20	380	construction	13	250	transportation_warehousing	12	220
@@ -91053,6 +91054,7 @@ monthly_labour_market_updates	Labour Force Survey (monthly, seasonally adjusted)
 monthly_labour_market_updates	Labour Force Survey (monthly, seasonally adjusted)	2026-01-01 08:00:00+00	\N	WorkBC LMS January_2026 (Updated)	Sheet3	\N	\N	2026-04-29 14:06:00+00
 monthly_labour_market_updates	Labour Force Survey (monthly, seasonally adjusted)	2026-03-01 08:00:00+00	\N	WorkBC LMS March_2026	Sheet3	\N	\N	2026-05-05 10:39:00+00
 monthly_labour_market_updates	Labour Force Survey (monthly, seasonally adjusted)	2026-04-01 08:00:00+00	\N	WorkBC LMS April_2026	Sheet3	\N	\N	2026-05-15 08:24:00+00
+monthly_labour_market_updates	Labour Force Survey (monthly, seasonally adjusted)	2026-07-01 08:00:00+00	\N	WorkBC LMS July_2026	Sheet3	\N	\N	2026-09-24 12:37:00+00
 \.
 
 
