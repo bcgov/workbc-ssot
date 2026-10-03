@@ -50,6 +50,8 @@ ALTER TABLE ONLY public.regional_labour_market_outlook DROP CONSTRAINT regional_
 ALTER TABLE ONLY public.openings_careers DROP CONSTRAINT openings_careers_pkey;
 ALTER TABLE ONLY public.nocs DROP CONSTRAINT nocs_pkey;
 ALTER TABLE ONLY public.monthly_labour_market_updates DROP CONSTRAINT monthly_labour_market_updates_pkey;
+ALTER TABLE ONLY public.lmo_report_2026_job_openings_regions DROP CONSTRAINT lmo_report_2026_job_openings_regions_pkey;
+ALTER TABLE ONLY public.lmo_report_2026_job_openings_industries DROP CONSTRAINT lmo_report_2026_job_openings_industries_pkey;
 ALTER TABLE ONLY public.lmo_report_2025_job_openings_regions DROP CONSTRAINT lmo_report_2025_job_openings_regions_pkey;
 ALTER TABLE ONLY public.lmo_report_2025_job_openings_industries DROP CONSTRAINT lmo_report_2025_job_openings_industries_pkey;
 ALTER TABLE ONLY public.lmo_report_2024_job_openings_regions DROP CONSTRAINT lmo_report_2024_job_openings_regions_pkey;
@@ -79,6 +81,18 @@ DROP VIEW public.nocs_nocs;
 DROP VIEW public.nocs_categories;
 DROP TABLE public.nocs;
 DROP TABLE public.monthly_labour_market_updates;
+DROP TABLE public.lmo_report_2026_job_openings_vancouver_island_coast;
+DROP TABLE public.lmo_report_2026_job_openings_thompson_okanagan;
+DROP TABLE public.lmo_report_2026_job_openings_teers;
+DROP TABLE public.lmo_report_2026_job_openings_regions;
+DROP TABLE public.lmo_report_2026_job_openings_northeast;
+DROP TABLE public.lmo_report_2026_job_openings_north_coast_nechako;
+DROP TABLE public.lmo_report_2026_job_openings_mainland_southwest;
+DROP TABLE public.lmo_report_2026_job_openings_kootenay;
+DROP TABLE public.lmo_report_2026_job_openings_industries;
+DROP TABLE public.lmo_report_2026_job_openings_cariboo;
+DROP TABLE public.lmo_report_2026_job_openings_broad_categories;
+DROP TABLE public.lmo_report_2026_job_openings_10y;
 DROP TABLE public.lmo_report_2025_job_openings_vancouver_island_coast;
 DROP TABLE public.lmo_report_2025_job_openings_thompson_okanagan;
 DROP TABLE public.lmo_report_2025_job_openings_teers;
@@ -4283,6 +4297,802 @@ COMMENT ON COLUMN public.lmo_report_2025_job_openings_vancouver_island_coast.rep
 --
 
 COMMENT ON COLUMN public.lmo_report_2025_job_openings_vancouver_island_coast.growth_rate IS 'Annual employment growth rate (%) {2025-2035}';
+
+
+--
+-- Name: lmo_report_2026_job_openings_10y; Type: TABLE; Schema: public; Owner: workbc
+--
+
+CREATE TABLE public.lmo_report_2026_job_openings_10y (
+    key text,
+    variable text,
+    amount integer,
+    fraction numeric
+);
+
+
+ALTER TABLE public.lmo_report_2026_job_openings_10y OWNER TO workbc;
+
+--
+-- Name: TABLE lmo_report_2026_job_openings_10y; Type: COMMENT; Schema: public; Owner: workbc
+--
+
+COMMENT ON TABLE public.lmo_report_2026_job_openings_10y IS 'Labour Market Outlook {2026-2036} > Figure 1.1-1. Job Openings, B.C., 2026-2036';
+
+
+--
+-- Name: COLUMN lmo_report_2026_job_openings_10y.key; Type: COMMENT; Schema: public; Owner: workbc
+--
+
+COMMENT ON COLUMN public.lmo_report_2026_job_openings_10y.key IS 'Key';
+
+
+--
+-- Name: COLUMN lmo_report_2026_job_openings_10y.variable; Type: COMMENT; Schema: public; Owner: workbc
+--
+
+COMMENT ON COLUMN public.lmo_report_2026_job_openings_10y.variable IS 'Variable';
+
+
+--
+-- Name: COLUMN lmo_report_2026_job_openings_10y.amount; Type: COMMENT; Schema: public; Owner: workbc
+--
+
+COMMENT ON COLUMN public.lmo_report_2026_job_openings_10y.amount IS 'Amount (Rounded)';
+
+
+--
+-- Name: COLUMN lmo_report_2026_job_openings_10y.fraction; Type: COMMENT; Schema: public; Owner: workbc
+--
+
+COMMENT ON COLUMN public.lmo_report_2026_job_openings_10y.fraction IS 'Fraction';
+
+
+--
+-- Name: lmo_report_2026_job_openings_broad_categories; Type: TABLE; Schema: public; Owner: workbc
+--
+
+CREATE TABLE public.lmo_report_2026_job_openings_broad_categories (
+    category text,
+    name text,
+    expansion integer,
+    replacement integer,
+    openings integer,
+    expansion_fraction numeric,
+    replacement_fraction numeric,
+    openings_fraction numeric
+);
+
+
+ALTER TABLE public.lmo_report_2026_job_openings_broad_categories OWNER TO workbc;
+
+--
+-- Name: TABLE lmo_report_2026_job_openings_broad_categories; Type: COMMENT; Schema: public; Owner: workbc
+--
+
+COMMENT ON TABLE public.lmo_report_2026_job_openings_broad_categories IS 'Labour Market Outlook {2026-2036} > Figure 4.1-1: Job Openings by Main Occupational Group, B.C., 2026-2036';
+
+
+--
+-- Name: COLUMN lmo_report_2026_job_openings_broad_categories.category; Type: COMMENT; Schema: public; Owner: workbc
+--
+
+COMMENT ON COLUMN public.lmo_report_2026_job_openings_broad_categories.category IS 'NOC';
+
+
+--
+-- Name: COLUMN lmo_report_2026_job_openings_broad_categories.name; Type: COMMENT; Schema: public; Owner: workbc
+--
+
+COMMENT ON COLUMN public.lmo_report_2026_job_openings_broad_categories.name IS 'Description';
+
+
+--
+-- Name: COLUMN lmo_report_2026_job_openings_broad_categories.expansion; Type: COMMENT; Schema: public; Owner: workbc
+--
+
+COMMENT ON COLUMN public.lmo_report_2026_job_openings_broad_categories.expansion IS 'Expansion';
+
+
+--
+-- Name: COLUMN lmo_report_2026_job_openings_broad_categories.replacement; Type: COMMENT; Schema: public; Owner: workbc
+--
+
+COMMENT ON COLUMN public.lmo_report_2026_job_openings_broad_categories.replacement IS 'Replacement';
+
+
+--
+-- Name: COLUMN lmo_report_2026_job_openings_broad_categories.openings; Type: COMMENT; Schema: public; Owner: workbc
+--
+
+COMMENT ON COLUMN public.lmo_report_2026_job_openings_broad_categories.openings IS 'Job Openings';
+
+
+--
+-- Name: COLUMN lmo_report_2026_job_openings_broad_categories.expansion_fraction; Type: COMMENT; Schema: public; Owner: workbc
+--
+
+COMMENT ON COLUMN public.lmo_report_2026_job_openings_broad_categories.expansion_fraction IS 'Expansion (%)';
+
+
+--
+-- Name: COLUMN lmo_report_2026_job_openings_broad_categories.replacement_fraction; Type: COMMENT; Schema: public; Owner: workbc
+--
+
+COMMENT ON COLUMN public.lmo_report_2026_job_openings_broad_categories.replacement_fraction IS 'Replacement (%)';
+
+
+--
+-- Name: COLUMN lmo_report_2026_job_openings_broad_categories.openings_fraction; Type: COMMENT; Schema: public; Owner: workbc
+--
+
+COMMENT ON COLUMN public.lmo_report_2026_job_openings_broad_categories.openings_fraction IS 'Job Openings (%)';
+
+
+--
+-- Name: lmo_report_2026_job_openings_cariboo; Type: TABLE; Schema: public; Owner: workbc
+--
+
+CREATE TABLE public.lmo_report_2026_job_openings_cariboo (
+    industry text,
+    employment integer,
+    openings integer,
+    expansion integer,
+    replacement integer,
+    growth_rate numeric
+);
+
+
+ALTER TABLE public.lmo_report_2026_job_openings_cariboo OWNER TO workbc;
+
+--
+-- Name: TABLE lmo_report_2026_job_openings_cariboo; Type: COMMENT; Schema: public; Owner: workbc
+--
+
+COMMENT ON TABLE public.lmo_report_2026_job_openings_cariboo IS 'Labour Market Outlook {2026-2036} > Table 5.5-1 Top five industries by total job openings, 2026-2036 - Cariboo';
+
+
+--
+-- Name: COLUMN lmo_report_2026_job_openings_cariboo.industry; Type: COMMENT; Schema: public; Owner: workbc
+--
+
+COMMENT ON COLUMN public.lmo_report_2026_job_openings_cariboo.industry IS 'Industry';
+
+
+--
+-- Name: COLUMN lmo_report_2026_job_openings_cariboo.employment; Type: COMMENT; Schema: public; Owner: workbc
+--
+
+COMMENT ON COLUMN public.lmo_report_2026_job_openings_cariboo.employment IS 'Employment {2026}';
+
+
+--
+-- Name: COLUMN lmo_report_2026_job_openings_cariboo.openings; Type: COMMENT; Schema: public; Owner: workbc
+--
+
+COMMENT ON COLUMN public.lmo_report_2026_job_openings_cariboo.openings IS 'Job Openings {2026-2036} > Total';
+
+
+--
+-- Name: COLUMN lmo_report_2026_job_openings_cariboo.expansion; Type: COMMENT; Schema: public; Owner: workbc
+--
+
+COMMENT ON COLUMN public.lmo_report_2026_job_openings_cariboo.expansion IS 'Job Openings {2026-2036} > Expansion';
+
+
+--
+-- Name: COLUMN lmo_report_2026_job_openings_cariboo.replacement; Type: COMMENT; Schema: public; Owner: workbc
+--
+
+COMMENT ON COLUMN public.lmo_report_2026_job_openings_cariboo.replacement IS 'Job Openings {2026-2036} > Replacement';
+
+
+--
+-- Name: COLUMN lmo_report_2026_job_openings_cariboo.growth_rate; Type: COMMENT; Schema: public; Owner: workbc
+--
+
+COMMENT ON COLUMN public.lmo_report_2026_job_openings_cariboo.growth_rate IS 'Annual employment growth rate (%) {2026-2036}';
+
+
+--
+-- Name: lmo_report_2026_job_openings_industries; Type: TABLE; Schema: public; Owner: workbc
+--
+
+CREATE TABLE public.lmo_report_2026_job_openings_industries (
+    industry text NOT NULL,
+    name text,
+    expansion integer,
+    replacement integer,
+    openings integer,
+    expansion_fraction numeric,
+    replacement_fraction numeric,
+    openings_fraction numeric
+);
+
+
+ALTER TABLE public.lmo_report_2026_job_openings_industries OWNER TO workbc;
+
+--
+-- Name: TABLE lmo_report_2026_job_openings_industries; Type: COMMENT; Schema: public; Owner: workbc
+--
+
+COMMENT ON TABLE public.lmo_report_2026_job_openings_industries IS 'Labour Market Outlook {2026-2036} > Figure 3-1: Top Ten Major Industry Groups by Job Openings, B.C., 2026-35';
+
+
+--
+-- Name: COLUMN lmo_report_2026_job_openings_industries.industry; Type: COMMENT; Schema: public; Owner: workbc
+--
+
+COMMENT ON COLUMN public.lmo_report_2026_job_openings_industries.industry IS 'Industry key';
+
+
+--
+-- Name: COLUMN lmo_report_2026_job_openings_industries.name; Type: COMMENT; Schema: public; Owner: workbc
+--
+
+COMMENT ON COLUMN public.lmo_report_2026_job_openings_industries.name IS 'Industry name';
+
+
+--
+-- Name: COLUMN lmo_report_2026_job_openings_industries.expansion; Type: COMMENT; Schema: public; Owner: workbc
+--
+
+COMMENT ON COLUMN public.lmo_report_2026_job_openings_industries.expansion IS 'Expansion';
+
+
+--
+-- Name: COLUMN lmo_report_2026_job_openings_industries.replacement; Type: COMMENT; Schema: public; Owner: workbc
+--
+
+COMMENT ON COLUMN public.lmo_report_2026_job_openings_industries.replacement IS 'Replacement';
+
+
+--
+-- Name: COLUMN lmo_report_2026_job_openings_industries.openings; Type: COMMENT; Schema: public; Owner: workbc
+--
+
+COMMENT ON COLUMN public.lmo_report_2026_job_openings_industries.openings IS 'Job Openings';
+
+
+--
+-- Name: COLUMN lmo_report_2026_job_openings_industries.expansion_fraction; Type: COMMENT; Schema: public; Owner: workbc
+--
+
+COMMENT ON COLUMN public.lmo_report_2026_job_openings_industries.expansion_fraction IS 'Expansion (%)';
+
+
+--
+-- Name: COLUMN lmo_report_2026_job_openings_industries.replacement_fraction; Type: COMMENT; Schema: public; Owner: workbc
+--
+
+COMMENT ON COLUMN public.lmo_report_2026_job_openings_industries.replacement_fraction IS 'Replacement (%)';
+
+
+--
+-- Name: COLUMN lmo_report_2026_job_openings_industries.openings_fraction; Type: COMMENT; Schema: public; Owner: workbc
+--
+
+COMMENT ON COLUMN public.lmo_report_2026_job_openings_industries.openings_fraction IS 'Job Openings (%)';
+
+
+--
+-- Name: lmo_report_2026_job_openings_kootenay; Type: TABLE; Schema: public; Owner: workbc
+--
+
+CREATE TABLE public.lmo_report_2026_job_openings_kootenay (
+    industry text,
+    employment integer,
+    openings integer,
+    expansion integer,
+    replacement integer,
+    growth_rate numeric
+);
+
+
+ALTER TABLE public.lmo_report_2026_job_openings_kootenay OWNER TO workbc;
+
+--
+-- Name: TABLE lmo_report_2026_job_openings_kootenay; Type: COMMENT; Schema: public; Owner: workbc
+--
+
+COMMENT ON TABLE public.lmo_report_2026_job_openings_kootenay IS 'Labour Market Outlook {2026-2036} > Table 5.4-1 Top five industries by total job openings, 2026-2036 - Kootenay';
+
+
+--
+-- Name: COLUMN lmo_report_2026_job_openings_kootenay.industry; Type: COMMENT; Schema: public; Owner: workbc
+--
+
+COMMENT ON COLUMN public.lmo_report_2026_job_openings_kootenay.industry IS 'Industry';
+
+
+--
+-- Name: COLUMN lmo_report_2026_job_openings_kootenay.employment; Type: COMMENT; Schema: public; Owner: workbc
+--
+
+COMMENT ON COLUMN public.lmo_report_2026_job_openings_kootenay.employment IS 'Employment {2026}';
+
+
+--
+-- Name: COLUMN lmo_report_2026_job_openings_kootenay.openings; Type: COMMENT; Schema: public; Owner: workbc
+--
+
+COMMENT ON COLUMN public.lmo_report_2026_job_openings_kootenay.openings IS 'Job Openings {2026-2036} > Total';
+
+
+--
+-- Name: COLUMN lmo_report_2026_job_openings_kootenay.expansion; Type: COMMENT; Schema: public; Owner: workbc
+--
+
+COMMENT ON COLUMN public.lmo_report_2026_job_openings_kootenay.expansion IS 'Job Openings {2026-2036} > Expansion';
+
+
+--
+-- Name: COLUMN lmo_report_2026_job_openings_kootenay.replacement; Type: COMMENT; Schema: public; Owner: workbc
+--
+
+COMMENT ON COLUMN public.lmo_report_2026_job_openings_kootenay.replacement IS 'Job Openings {2026-2036} > Replacement';
+
+
+--
+-- Name: COLUMN lmo_report_2026_job_openings_kootenay.growth_rate; Type: COMMENT; Schema: public; Owner: workbc
+--
+
+COMMENT ON COLUMN public.lmo_report_2026_job_openings_kootenay.growth_rate IS 'Annual employment growth rate (%) {2026-2036}';
+
+
+--
+-- Name: lmo_report_2026_job_openings_mainland_southwest; Type: TABLE; Schema: public; Owner: workbc
+--
+
+CREATE TABLE public.lmo_report_2026_job_openings_mainland_southwest (
+    industry text,
+    employment integer,
+    openings integer,
+    expansion integer,
+    replacement integer,
+    growth_rate numeric
+);
+
+
+ALTER TABLE public.lmo_report_2026_job_openings_mainland_southwest OWNER TO workbc;
+
+--
+-- Name: TABLE lmo_report_2026_job_openings_mainland_southwest; Type: COMMENT; Schema: public; Owner: workbc
+--
+
+COMMENT ON TABLE public.lmo_report_2026_job_openings_mainland_southwest IS 'Labour Market Outlook {2026-2036} > Table 5.2-1 Top five industries by total job openings, 2026-2036 - Mainland/Southwest';
+
+
+--
+-- Name: COLUMN lmo_report_2026_job_openings_mainland_southwest.industry; Type: COMMENT; Schema: public; Owner: workbc
+--
+
+COMMENT ON COLUMN public.lmo_report_2026_job_openings_mainland_southwest.industry IS 'Industry';
+
+
+--
+-- Name: COLUMN lmo_report_2026_job_openings_mainland_southwest.employment; Type: COMMENT; Schema: public; Owner: workbc
+--
+
+COMMENT ON COLUMN public.lmo_report_2026_job_openings_mainland_southwest.employment IS 'Employment {2026}';
+
+
+--
+-- Name: COLUMN lmo_report_2026_job_openings_mainland_southwest.openings; Type: COMMENT; Schema: public; Owner: workbc
+--
+
+COMMENT ON COLUMN public.lmo_report_2026_job_openings_mainland_southwest.openings IS 'Job Openings {2026-2036} > Total';
+
+
+--
+-- Name: COLUMN lmo_report_2026_job_openings_mainland_southwest.expansion; Type: COMMENT; Schema: public; Owner: workbc
+--
+
+COMMENT ON COLUMN public.lmo_report_2026_job_openings_mainland_southwest.expansion IS 'Job Openings {2026-2036} > Expansion';
+
+
+--
+-- Name: COLUMN lmo_report_2026_job_openings_mainland_southwest.replacement; Type: COMMENT; Schema: public; Owner: workbc
+--
+
+COMMENT ON COLUMN public.lmo_report_2026_job_openings_mainland_southwest.replacement IS 'Job Openings {2026-2036} > Replacement';
+
+
+--
+-- Name: COLUMN lmo_report_2026_job_openings_mainland_southwest.growth_rate; Type: COMMENT; Schema: public; Owner: workbc
+--
+
+COMMENT ON COLUMN public.lmo_report_2026_job_openings_mainland_southwest.growth_rate IS 'Annual employment growth rate (%) {2026-2036}';
+
+
+--
+-- Name: lmo_report_2026_job_openings_north_coast_nechako; Type: TABLE; Schema: public; Owner: workbc
+--
+
+CREATE TABLE public.lmo_report_2026_job_openings_north_coast_nechako (
+    industry text,
+    employment integer,
+    openings integer,
+    expansion integer,
+    replacement integer,
+    growth_rate numeric
+);
+
+
+ALTER TABLE public.lmo_report_2026_job_openings_north_coast_nechako OWNER TO workbc;
+
+--
+-- Name: TABLE lmo_report_2026_job_openings_north_coast_nechako; Type: COMMENT; Schema: public; Owner: workbc
+--
+
+COMMENT ON TABLE public.lmo_report_2026_job_openings_north_coast_nechako IS 'Labour Market Outlook {2026-2036} > Table 5.6-1 Top five industries by total job openings, 2026-2036 - North Coast and Nechako';
+
+
+--
+-- Name: COLUMN lmo_report_2026_job_openings_north_coast_nechako.industry; Type: COMMENT; Schema: public; Owner: workbc
+--
+
+COMMENT ON COLUMN public.lmo_report_2026_job_openings_north_coast_nechako.industry IS 'Industry';
+
+
+--
+-- Name: COLUMN lmo_report_2026_job_openings_north_coast_nechako.employment; Type: COMMENT; Schema: public; Owner: workbc
+--
+
+COMMENT ON COLUMN public.lmo_report_2026_job_openings_north_coast_nechako.employment IS 'Employment {2026}';
+
+
+--
+-- Name: COLUMN lmo_report_2026_job_openings_north_coast_nechako.openings; Type: COMMENT; Schema: public; Owner: workbc
+--
+
+COMMENT ON COLUMN public.lmo_report_2026_job_openings_north_coast_nechako.openings IS 'Job Openings {2026-2036} > Total';
+
+
+--
+-- Name: COLUMN lmo_report_2026_job_openings_north_coast_nechako.expansion; Type: COMMENT; Schema: public; Owner: workbc
+--
+
+COMMENT ON COLUMN public.lmo_report_2026_job_openings_north_coast_nechako.expansion IS 'Job Openings {2026-2036} > Expansion';
+
+
+--
+-- Name: COLUMN lmo_report_2026_job_openings_north_coast_nechako.replacement; Type: COMMENT; Schema: public; Owner: workbc
+--
+
+COMMENT ON COLUMN public.lmo_report_2026_job_openings_north_coast_nechako.replacement IS 'Job Openings {2026-2036} > Replacement';
+
+
+--
+-- Name: COLUMN lmo_report_2026_job_openings_north_coast_nechako.growth_rate; Type: COMMENT; Schema: public; Owner: workbc
+--
+
+COMMENT ON COLUMN public.lmo_report_2026_job_openings_north_coast_nechako.growth_rate IS 'Annual employment growth rate (%) {2026-2036}';
+
+
+--
+-- Name: lmo_report_2026_job_openings_northeast; Type: TABLE; Schema: public; Owner: workbc
+--
+
+CREATE TABLE public.lmo_report_2026_job_openings_northeast (
+    industry text,
+    employment integer,
+    openings integer,
+    expansion integer,
+    replacement integer,
+    growth_rate numeric
+);
+
+
+ALTER TABLE public.lmo_report_2026_job_openings_northeast OWNER TO workbc;
+
+--
+-- Name: TABLE lmo_report_2026_job_openings_northeast; Type: COMMENT; Schema: public; Owner: workbc
+--
+
+COMMENT ON TABLE public.lmo_report_2026_job_openings_northeast IS 'Labour Market Outlook {2026-2036} > Table 5.7-1 Top five industries by total job openings, 2026-2036 - Northeast';
+
+
+--
+-- Name: COLUMN lmo_report_2026_job_openings_northeast.industry; Type: COMMENT; Schema: public; Owner: workbc
+--
+
+COMMENT ON COLUMN public.lmo_report_2026_job_openings_northeast.industry IS 'Industry';
+
+
+--
+-- Name: COLUMN lmo_report_2026_job_openings_northeast.employment; Type: COMMENT; Schema: public; Owner: workbc
+--
+
+COMMENT ON COLUMN public.lmo_report_2026_job_openings_northeast.employment IS 'Employment {2026}';
+
+
+--
+-- Name: COLUMN lmo_report_2026_job_openings_northeast.openings; Type: COMMENT; Schema: public; Owner: workbc
+--
+
+COMMENT ON COLUMN public.lmo_report_2026_job_openings_northeast.openings IS 'Job Openings {2026-2036} > Total';
+
+
+--
+-- Name: COLUMN lmo_report_2026_job_openings_northeast.expansion; Type: COMMENT; Schema: public; Owner: workbc
+--
+
+COMMENT ON COLUMN public.lmo_report_2026_job_openings_northeast.expansion IS 'Job Openings {2026-2036} > Expansion';
+
+
+--
+-- Name: COLUMN lmo_report_2026_job_openings_northeast.replacement; Type: COMMENT; Schema: public; Owner: workbc
+--
+
+COMMENT ON COLUMN public.lmo_report_2026_job_openings_northeast.replacement IS 'Job Openings {2026-2036} > Replacement';
+
+
+--
+-- Name: COLUMN lmo_report_2026_job_openings_northeast.growth_rate; Type: COMMENT; Schema: public; Owner: workbc
+--
+
+COMMENT ON COLUMN public.lmo_report_2026_job_openings_northeast.growth_rate IS 'Annual employment growth rate (%) {2026-2036}';
+
+
+--
+-- Name: lmo_report_2026_job_openings_regions; Type: TABLE; Schema: public; Owner: workbc
+--
+
+CREATE TABLE public.lmo_report_2026_job_openings_regions (
+    region text NOT NULL,
+    name text,
+    employment integer,
+    openings integer,
+    expansion integer,
+    replacement integer,
+    growth_rate numeric
+);
+
+
+ALTER TABLE public.lmo_report_2026_job_openings_regions OWNER TO workbc;
+
+--
+-- Name: TABLE lmo_report_2026_job_openings_regions; Type: COMMENT; Schema: public; Owner: workbc
+--
+
+COMMENT ON TABLE public.lmo_report_2026_job_openings_regions IS 'Labour Market Outlook {2026-2036} > Table 5-1: Employment and Job Openings by Development Region, 2026-2036';
+
+
+--
+-- Name: COLUMN lmo_report_2026_job_openings_regions.region; Type: COMMENT; Schema: public; Owner: workbc
+--
+
+COMMENT ON COLUMN public.lmo_report_2026_job_openings_regions.region IS 'Region key';
+
+
+--
+-- Name: COLUMN lmo_report_2026_job_openings_regions.name; Type: COMMENT; Schema: public; Owner: workbc
+--
+
+COMMENT ON COLUMN public.lmo_report_2026_job_openings_regions.name IS 'Region name';
+
+
+--
+-- Name: COLUMN lmo_report_2026_job_openings_regions.employment; Type: COMMENT; Schema: public; Owner: workbc
+--
+
+COMMENT ON COLUMN public.lmo_report_2026_job_openings_regions.employment IS 'Employment {2026}';
+
+
+--
+-- Name: COLUMN lmo_report_2026_job_openings_regions.openings; Type: COMMENT; Schema: public; Owner: workbc
+--
+
+COMMENT ON COLUMN public.lmo_report_2026_job_openings_regions.openings IS 'Job Openings {2026-2036} > Total';
+
+
+--
+-- Name: COLUMN lmo_report_2026_job_openings_regions.expansion; Type: COMMENT; Schema: public; Owner: workbc
+--
+
+COMMENT ON COLUMN public.lmo_report_2026_job_openings_regions.expansion IS 'Job Openings {2026-2036} > Expansion';
+
+
+--
+-- Name: COLUMN lmo_report_2026_job_openings_regions.replacement; Type: COMMENT; Schema: public; Owner: workbc
+--
+
+COMMENT ON COLUMN public.lmo_report_2026_job_openings_regions.replacement IS 'Job Openings {2026-2036} > Replacement';
+
+
+--
+-- Name: COLUMN lmo_report_2026_job_openings_regions.growth_rate; Type: COMMENT; Schema: public; Owner: workbc
+--
+
+COMMENT ON COLUMN public.lmo_report_2026_job_openings_regions.growth_rate IS 'Annual employment growth rate (%) {2026-2036}';
+
+
+--
+-- Name: lmo_report_2026_job_openings_teers; Type: TABLE; Schema: public; Owner: workbc
+--
+
+CREATE TABLE public.lmo_report_2026_job_openings_teers (
+    teer text,
+    openings numeric,
+    openings_rounded integer,
+    fraction numeric,
+    nocs integer
+);
+
+
+ALTER TABLE public.lmo_report_2026_job_openings_teers OWNER TO workbc;
+
+--
+-- Name: TABLE lmo_report_2026_job_openings_teers; Type: COMMENT; Schema: public; Owner: workbc
+--
+
+COMMENT ON TABLE public.lmo_report_2026_job_openings_teers IS 'Labour Market Outlook {2026-2036} > Figure 2-1: Job Openings by TEER, B.C., 2026-2036';
+
+
+--
+-- Name: COLUMN lmo_report_2026_job_openings_teers.teer; Type: COMMENT; Schema: public; Owner: workbc
+--
+
+COMMENT ON COLUMN public.lmo_report_2026_job_openings_teers.teer IS 'TEER';
+
+
+--
+-- Name: COLUMN lmo_report_2026_job_openings_teers.openings; Type: COMMENT; Schema: public; Owner: workbc
+--
+
+COMMENT ON COLUMN public.lmo_report_2026_job_openings_teers.openings IS 'Job Openings';
+
+
+--
+-- Name: COLUMN lmo_report_2026_job_openings_teers.openings_rounded; Type: COMMENT; Schema: public; Owner: workbc
+--
+
+COMMENT ON COLUMN public.lmo_report_2026_job_openings_teers.openings_rounded IS 'Job Openings (Rounded)';
+
+
+--
+-- Name: COLUMN lmo_report_2026_job_openings_teers.fraction; Type: COMMENT; Schema: public; Owner: workbc
+--
+
+COMMENT ON COLUMN public.lmo_report_2026_job_openings_teers.fraction IS '% of Total';
+
+
+--
+-- Name: COLUMN lmo_report_2026_job_openings_teers.nocs; Type: COMMENT; Schema: public; Owner: workbc
+--
+
+COMMENT ON COLUMN public.lmo_report_2026_job_openings_teers.nocs IS '# of NOCs';
+
+
+--
+-- Name: lmo_report_2026_job_openings_thompson_okanagan; Type: TABLE; Schema: public; Owner: workbc
+--
+
+CREATE TABLE public.lmo_report_2026_job_openings_thompson_okanagan (
+    industry text,
+    employment integer,
+    openings integer,
+    expansion integer,
+    replacement integer,
+    growth_rate numeric
+);
+
+
+ALTER TABLE public.lmo_report_2026_job_openings_thompson_okanagan OWNER TO workbc;
+
+--
+-- Name: TABLE lmo_report_2026_job_openings_thompson_okanagan; Type: COMMENT; Schema: public; Owner: workbc
+--
+
+COMMENT ON TABLE public.lmo_report_2026_job_openings_thompson_okanagan IS 'Labour Market Outlook {2026-2036} > Table 5.3-1 Top five industries by total job openings, 2026-2036 - Thompson-Okanagan';
+
+
+--
+-- Name: COLUMN lmo_report_2026_job_openings_thompson_okanagan.industry; Type: COMMENT; Schema: public; Owner: workbc
+--
+
+COMMENT ON COLUMN public.lmo_report_2026_job_openings_thompson_okanagan.industry IS 'Industry';
+
+
+--
+-- Name: COLUMN lmo_report_2026_job_openings_thompson_okanagan.employment; Type: COMMENT; Schema: public; Owner: workbc
+--
+
+COMMENT ON COLUMN public.lmo_report_2026_job_openings_thompson_okanagan.employment IS 'Employment {2026}';
+
+
+--
+-- Name: COLUMN lmo_report_2026_job_openings_thompson_okanagan.openings; Type: COMMENT; Schema: public; Owner: workbc
+--
+
+COMMENT ON COLUMN public.lmo_report_2026_job_openings_thompson_okanagan.openings IS 'Job Openings {2026-2036} > Total';
+
+
+--
+-- Name: COLUMN lmo_report_2026_job_openings_thompson_okanagan.expansion; Type: COMMENT; Schema: public; Owner: workbc
+--
+
+COMMENT ON COLUMN public.lmo_report_2026_job_openings_thompson_okanagan.expansion IS 'Job Openings {2026-2036} > Expansion';
+
+
+--
+-- Name: COLUMN lmo_report_2026_job_openings_thompson_okanagan.replacement; Type: COMMENT; Schema: public; Owner: workbc
+--
+
+COMMENT ON COLUMN public.lmo_report_2026_job_openings_thompson_okanagan.replacement IS 'Job Openings {2026-2036} > Replacement';
+
+
+--
+-- Name: COLUMN lmo_report_2026_job_openings_thompson_okanagan.growth_rate; Type: COMMENT; Schema: public; Owner: workbc
+--
+
+COMMENT ON COLUMN public.lmo_report_2026_job_openings_thompson_okanagan.growth_rate IS 'Annual employment growth rate (%) {2026-2036}';
+
+
+--
+-- Name: lmo_report_2026_job_openings_vancouver_island_coast; Type: TABLE; Schema: public; Owner: workbc
+--
+
+CREATE TABLE public.lmo_report_2026_job_openings_vancouver_island_coast (
+    industry text,
+    employment integer,
+    openings integer,
+    expansion integer,
+    replacement integer,
+    growth_rate numeric
+);
+
+
+ALTER TABLE public.lmo_report_2026_job_openings_vancouver_island_coast OWNER TO workbc;
+
+--
+-- Name: TABLE lmo_report_2026_job_openings_vancouver_island_coast; Type: COMMENT; Schema: public; Owner: workbc
+--
+
+COMMENT ON TABLE public.lmo_report_2026_job_openings_vancouver_island_coast IS 'Labour Market Outlook {2026-2036} > Table 5.1-1  Top five industries by total job openings, 2026-2036 - Vancouver Island/Coast';
+
+
+--
+-- Name: COLUMN lmo_report_2026_job_openings_vancouver_island_coast.industry; Type: COMMENT; Schema: public; Owner: workbc
+--
+
+COMMENT ON COLUMN public.lmo_report_2026_job_openings_vancouver_island_coast.industry IS 'Industry';
+
+
+--
+-- Name: COLUMN lmo_report_2026_job_openings_vancouver_island_coast.employment; Type: COMMENT; Schema: public; Owner: workbc
+--
+
+COMMENT ON COLUMN public.lmo_report_2026_job_openings_vancouver_island_coast.employment IS 'Employment {2026}';
+
+
+--
+-- Name: COLUMN lmo_report_2026_job_openings_vancouver_island_coast.openings; Type: COMMENT; Schema: public; Owner: workbc
+--
+
+COMMENT ON COLUMN public.lmo_report_2026_job_openings_vancouver_island_coast.openings IS 'Job Openings {2026-2036} > Total';
+
+
+--
+-- Name: COLUMN lmo_report_2026_job_openings_vancouver_island_coast.expansion; Type: COMMENT; Schema: public; Owner: workbc
+--
+
+COMMENT ON COLUMN public.lmo_report_2026_job_openings_vancouver_island_coast.expansion IS 'Job Openings {2026-2036} > Expansion';
+
+
+--
+-- Name: COLUMN lmo_report_2026_job_openings_vancouver_island_coast.replacement; Type: COMMENT; Schema: public; Owner: workbc
+--
+
+COMMENT ON COLUMN public.lmo_report_2026_job_openings_vancouver_island_coast.replacement IS 'Job Openings {2026-2036} > Replacement';
+
+
+--
+-- Name: COLUMN lmo_report_2026_job_openings_vancouver_island_coast.growth_rate; Type: COMMENT; Schema: public; Owner: workbc
+--
+
+COMMENT ON COLUMN public.lmo_report_2026_job_openings_vancouver_island_coast.growth_rate IS 'Annual employment growth rate (%) {2026-2036}';
 
 
 --
@@ -68989,6 +69799,198 @@ Nursing and residential care facilities	15800	9200	5100	4100	2.7
 
 
 --
+-- Data for Name: lmo_report_2026_job_openings_10y; Type: TABLE DATA; Schema: public; Owner: workbc
+--
+
+COPY public.lmo_report_2026_job_openings_10y (key, variable, amount, fraction) FROM stdin;
+total_job_openings	Total Job Openings (978,000)	978000	1
+replacement_69	Replacement (69%)	677000	0.692229038854806
+expansion_31	Expansion (31%)	302000	0.307770961145194
+supply_additions	Supply Additions	988000	1
+young_people_starting_work	Young people starting work	514000	0.520242914979757
+immigrants	Immigrants	331000	0.33502024291498
+migrants_from_other_provinces	Migrants from other provinces	72000	0.0728744939271255
+changing_labour_market_participation	Changing labour market participation*	61000	0.0617408906882591
+net_other_mobility	Net other mobility	71000	0.0718623481781376
+decline_in_unemployment	Decline in unemployment	-10000	-0.0101214574898785
+\.
+
+
+--
+-- Data for Name: lmo_report_2026_job_openings_broad_categories; Type: TABLE DATA; Schema: public; Owner: workbc
+--
+
+COPY public.lmo_report_2026_job_openings_broad_categories (category, name, expansion, replacement, openings, expansion_fraction, replacement_fraction, openings_fraction) FROM stdin;
+8	Natural resources, agriculture and related production	1200	12800	14000	0.0830363397344945	0.91696008991569	0.0143135812733189
+0	Legislative and senior management	4900	15100	20000	0.243108520388435	0.756891479611565	0.020432587875171
+9	Manufacturing and utilities	5500	27400	32900	0.165975873594449	0.834019259880643	0.0336039326419488
+5	Art, culture, recreation and sport	13200	24500	37700	0.349470282060706	0.650531310078373	0.0385176091311136
+2	Natural and applied sciences and related	44900	58000	102900	0.436272434676366	0.563728148149731	0.105220735786739
+3	Health	46700	58100	104900	0.445689145991871	0.554311712233004	0.10718412949584
+4	Education, law and social, community and government services	26700	82100	108900	0.245455869067079	0.754546151842909	0.111266591418368
+7	Trades, transport and equipment operators and related	51900	122300	174200	0.297841097046569	0.702156951387174	0.178067511630386
+1	Business, finance and administration	50000	131800	181800	0.27514922685684	0.724850938183646	0.185788930249799
+6	Sales and service	57000	144200	201200	0.283124623000567	0.716875824402749	0.205604390497316
+T	All occupations	301900	676500	978400	0.30854800209696	0.69145199790304	1
+\.
+
+
+--
+-- Data for Name: lmo_report_2026_job_openings_cariboo; Type: TABLE DATA; Schema: public; Owner: workbc
+--
+
+COPY public.lmo_report_2026_job_openings_cariboo (industry, employment, openings, expansion, replacement, growth_rate) FROM stdin;
+All industries	80300	22000	3000	18900	0.4
+Hospitals	6100	2900	1400	1500	2
+Other retail trade (excluding cars and personal care)	7000	2200	700	1500	1
+Ambulatory health care services	2800	1200	500	700	1.7
+Personal, non-automotive repair and non-profit services	2800	1100	400	700	1.4
+Wholesale trade	3100	900	100	800	0.4
+\.
+
+
+--
+-- Data for Name: lmo_report_2026_job_openings_industries; Type: TABLE DATA; Schema: public; Owner: workbc
+--
+
+COPY public.lmo_report_2026_job_openings_industries (industry, name, expansion, replacement, openings, expansion_fraction, replacement_fraction, openings_fraction) FROM stdin;
+accommodation_food_services	Accommodation and food services	13300	34500	47800	28	72	5
+agriculture_fishing	Agriculture and fishing	-2500	4500	2000	-127	227	0
+business_building_other_support_services	Business, building and other support services	4300	22700	27000	16	84	3
+construction	Construction	40000	63100	103100	39	61	11
+educational_services	Educational services	8700	52400	61100	14	86	6
+finance_insurance_real_estate	Finance, insurance and real estate	20400	45800	66200	31	69	7
+forestry_logging_support_activities	Forestry, logging and support activities	-700	3600	3000	-23	123	0
+health_care_social_assistance	Health care and social assistance	79400	96700	176000	45	55	18
+information_culture_recreation	Information, culture and recreation	10600	29000	39600	27	73	4
+manufacturing	Manufacturing	7600	44500	52000	15	85	5
+mining_oil_gas_extraction	Mining and oil and gas extraction	5800	9200	14900	39	61	2
+professional_scientific_technical_services	Professional, scientific and technical services	64800	71200	136000	48	52	14
+public_administration	Public administration	-900	39900	39000	-2	102	4
+other_private_services	Repair, personal and non-profit services	8400	24400	32800	26	74	3
+retail_trade	Retail trade	25000	69300	94300	26	74	10
+transportation_warehousing	Transportation and warehousing	8000	37600	45600	18	82	5
+utilities	Utilities	2200	4200	6400	34	66	1
+wholesale_trade	Wholesale trade	7500	24000	31500	24	76	3
+\.
+
+
+--
+-- Data for Name: lmo_report_2026_job_openings_kootenay; Type: TABLE DATA; Schema: public; Owner: workbc
+--
+
+COPY public.lmo_report_2026_job_openings_kootenay (industry, employment, openings, expansion, replacement, growth_rate) FROM stdin;
+All industries	84000	27300	5200	22100	0.6
+Other retail trade (excluding cars and personal care)	9000	2600	500	2100	0.6
+Hospitals	4600	2100	900	1200	1.8
+Ambulatory health care services	3800	1900	800	1100	2
+Mining	5000	1800	500	1400	0.9
+Elementary and secondary schools	4400	1200	0	1300	0
+\.
+
+
+--
+-- Data for Name: lmo_report_2026_job_openings_mainland_southwest; Type: TABLE DATA; Schema: public; Owner: workbc
+--
+
+COPY public.lmo_report_2026_job_openings_mainland_southwest (industry, employment, openings, expansion, replacement, growth_rate) FROM stdin;
+All industries	1929200	626200	212200	414000	1
+Computer systems design and related services	95400	56000	34400	21600	3
+Other retail trade (excluding cars and personal care)	167000	42900	10700	32100	0.6
+Specialty trade contractors	98100	39800	19600	20200	1.8
+Hospitals	97100	39300	18900	20400	1.8
+Ambulatory health care services	84000	34700	17100	17600	1.8
+\.
+
+
+--
+-- Data for Name: lmo_report_2026_job_openings_north_coast_nechako; Type: TABLE DATA; Schema: public; Owner: workbc
+--
+
+COPY public.lmo_report_2026_job_openings_north_coast_nechako (industry, employment, openings, expansion, replacement, growth_rate) FROM stdin;
+All industries	41500	12000	1900	10100	0.5
+Forestry, logging and support activities	1400	900	400	400	2.6
+Residential building construction	600	800	500	200	6
+Ambulatory health care services	1600	800	400	400	2.2
+Ports and freight transportation arrangement	1000	600	300	300	2.8
+Truck transportation and support activities	1200	600	300	400	2
+\.
+
+
+--
+-- Data for Name: lmo_report_2026_job_openings_northeast; Type: TABLE DATA; Schema: public; Owner: workbc
+--
+
+COPY public.lmo_report_2026_job_openings_northeast (industry, employment, openings, expansion, replacement, growth_rate) FROM stdin;
+All industries	36300	12200	3400	8800	0.9
+Other retail trade (excluding cars and personal care)	3100	1200	500	700	1.4
+Mining	1300	900	500	400	2.9
+Residential building construction	700	700	500	200	5.5
+Hospitals	1600	700	300	400	1.8
+Personal, non-automotive repair and non-profit services	1400	700	300	300	2
+\.
+
+
+--
+-- Data for Name: lmo_report_2026_job_openings_regions; Type: TABLE DATA; Schema: public; Owner: workbc
+--
+
+COPY public.lmo_report_2026_job_openings_regions (region, name, employment, openings, expansion, replacement, growth_rate) FROM stdin;
+northeast	Northeast	36300	12200	3400	8800	0.9
+north_coast_nechako	North Coast/Nechako	41500	12000	1900	10100	0.5
+cariboo	Cariboo	80300	22000	3000	18900	0.4
+kootenay	Kootenay	84000	27300	5200	22100	0.6
+thompson_okanagan	Thompson-Okanagan	310500	115800	32800	83000	1
+vancouver_island_coast	Vancouver Island/Coast	476500	162900	43300	119600	0.9
+mainland_southwest	Mainland/Southwest	1929200	626200	212200	414000	1
+british_columbia	British Columbia	2958000	978000	302000	677000	1
+\.
+
+
+--
+-- Data for Name: lmo_report_2026_job_openings_teers; Type: TABLE DATA; Schema: public; Owner: workbc
+--
+
+COPY public.lmo_report_2026_job_openings_teers (teer, openings, openings_rounded, fraction, nocs) FROM stdin;
+TEER 0 Management	157640.83	157600	0.161123091537232	44
+TEER 1 University degree	211316.89	211300	0.215984847395394	97
+TEER 2 College or apprenticeship (two or more years)	218062.68	218100	0.222879650852474	162
+TEER 3 College or apprenticeship (less than two years)	170081.74	170100	0.1738388193137	69
+TEER 4 Secondary school	117263.27	117300	0.119853597485913	95
+TEER 5 No formal educational	104022.16	104000	0.106319993415288	45
+Total	978387.569999999	978400	1	512
+\.
+
+
+--
+-- Data for Name: lmo_report_2026_job_openings_thompson_okanagan; Type: TABLE DATA; Schema: public; Owner: workbc
+--
+
+COPY public.lmo_report_2026_job_openings_thompson_okanagan (industry, employment, openings, expansion, replacement, growth_rate) FROM stdin;
+All industries	310500	115800	32800	83000	1
+Other retail trade (excluding cars and personal care)	27900	9600	3100	6600	1.1
+Specialty trade contractors	21500	7600	1700	5900	0.8
+Hospitals	17800	6700	2200	4500	1.2
+Ambulatory health care services	11900	5500	2200	3300	1.7
+Business and building support services (excluding travel)	9200	5500	2800	2700	2.6
+\.
+
+
+--
+-- Data for Name: lmo_report_2026_job_openings_vancouver_island_coast; Type: TABLE DATA; Schema: public; Owner: workbc
+--
+
+COPY public.lmo_report_2026_job_openings_vancouver_island_coast (industry, employment, openings, expansion, replacement, growth_rate) FROM stdin;
+All industries	476500	162900	43300	119600	0.9
+Other retail trade (excluding cars and personal care)	44600	12900	3200	9700	0.7
+Hospitals	31700	12500	4900	7600	1.4
+Ambulatory health care services	22600	10600	4800	5800	1.9
+Legal, accounting, design, research and advertising services	17000	8600	4100	4500	2.2
+Elementary and secondary schools	21600	7100	1000	6200	0.5
+\.
+
+
+--
 -- Data for Name: monthly_labour_market_updates; Type: TABLE DATA; Schema: public; Owner: workbc
 --
 
@@ -91066,6 +92068,18 @@ lmo_report_2025_job_openings_kootenay	B.C. Labour Market Outlook	2025-01-01 08:0
 lmo_report_2025_job_openings_cariboo	B.C. Labour Market Outlook	2025-01-01 08:00:00+00	\N	tidy LMO 2025E Charts and Tables_09.18.2025	tab_5_5_1	A2-I7	\N	2025-11-26 08:00:00+00
 lmo_report_2025_job_openings_north_coast_nechako	B.C. Labour Market Outlook	2025-01-01 08:00:00+00	\N	tidy LMO 2025E Charts and Tables_09.18.2025	tab_5_6_1	A2-I7	\N	2025-11-26 08:00:00+00
 lmo_report_2025_job_openings_northeast	B.C. Labour Market Outlook	2025-01-01 08:00:00+00	\N	tidy LMO 2025E Charts and Tables_09.18.2025	tab_5_7_1	A2-I7	\N	2025-11-26 08:00:00+00
+lmo_report_2026_job_openings_10y	B.C. Labour Market Outlook	2026-01-01 08:00:00+00	\N	tidy LMO 2026E Charts and tables	Figure 1_2	A2-E11	\N	2026-10-02 08:00:00+00
+lmo_report_2026_job_openings_teers	B.C. Labour Market Outlook	2026-01-01 08:00:00+00	\N	tidy LMO 2026E Charts and tables	Figure_2_2	A2-H8	\N	2026-10-02 08:00:00+00
+lmo_report_2026_job_openings_industries	B.C. Labour Market Outlook	2026-01-01 08:00:00+00	\N	tidy LMO 2026E Charts and tables	fig_3_1	A2-I19	\N	2026-10-02 08:00:00+00
+lmo_report_2026_job_openings_broad_categories	B.C. Labour Market Outlook	2026-01-01 08:00:00+00	\N	tidy LMO 2026E Charts and tables	fig_4_1	A2-J12	\N	2026-10-02 08:00:00+00
+lmo_report_2026_job_openings_regions	B.C. Labour Market Outlook	2026-01-01 08:00:00+00	\N	tidy LMO 2026E Charts and tables	tab_5_1	A2-H9	\N	2026-10-02 08:00:00+00
+lmo_report_2026_job_openings_vancouver_island_coast	B.C. Labour Market Outlook	2026-01-01 08:00:00+00	\N	tidy LMO 2026E Charts and tables	tab_5_1_1	A2-I7	\N	2026-10-02 08:00:00+00
+lmo_report_2026_job_openings_mainland_southwest	B.C. Labour Market Outlook	2026-01-01 08:00:00+00	\N	tidy LMO 2026E Charts and tables	tab_5_2_1	A2-I7	\N	2026-10-02 08:00:00+00
+lmo_report_2026_job_openings_thompson_okanagan	B.C. Labour Market Outlook	2026-01-01 08:00:00+00	\N	tidy LMO 2026E Charts and tables	tab_5_3_1	A2-I7	\N	2026-10-02 08:00:00+00
+lmo_report_2026_job_openings_kootenay	B.C. Labour Market Outlook	2026-01-01 08:00:00+00	\N	tidy LMO 2026E Charts and tables	tab_5_4_1	A2-I7	\N	2026-10-02 08:00:00+00
+lmo_report_2026_job_openings_cariboo	B.C. Labour Market Outlook	2026-01-01 08:00:00+00	\N	tidy LMO 2026E Charts and tables	tab_5_5_1	A2-I7	\N	2026-10-02 08:00:00+00
+lmo_report_2026_job_openings_north_coast_nechako	B.C. Labour Market Outlook	2026-01-01 08:00:00+00	\N	tidy LMO 2026E Charts and tables	tab_5_6_1	A2-I7	\N	2026-10-02 08:00:00+00
+lmo_report_2026_job_openings_northeast	B.C. Labour Market Outlook	2026-01-01 08:00:00+00	\N	tidy LMO 2026E Charts and tables	tab_5_7_1	A2-I7	\N	2026-10-02 08:00:00+00
 monthly_labour_market_updates	Labour Force Survey (monthly, seasonally adjusted)	2021-01-01 08:00:00+00	\N	REFRESH_WorkBC LMS _2021 Jan FINAL	Sheet3	\N	\N	2021-02-01 08:00:00+00
 monthly_labour_market_updates	Labour Force Survey (monthly, seasonally adjusted)	2021-02-01 08:00:00+00	\N	REFRESH_WorkBC LMS _2021 Feb FINAL	Sheet3	\N	\N	2021-03-01 08:00:00+00
 monthly_labour_market_updates	Labour Force Survey (monthly, seasonally adjusted)	2021-03-01 08:00:00+00	\N	REFRESH_WorkBC LMS _2021 Mar FINAL	Sheet3	\N	\N	2021-04-01 08:00:00+00
@@ -119724,6 +120738,22 @@ ALTER TABLE ONLY public.lmo_report_2025_job_openings_regions
 
 
 --
+-- Name: lmo_report_2026_job_openings_industries lmo_report_2026_job_openings_industries_pkey; Type: CONSTRAINT; Schema: public; Owner: workbc
+--
+
+ALTER TABLE ONLY public.lmo_report_2026_job_openings_industries
+    ADD CONSTRAINT lmo_report_2026_job_openings_industries_pkey PRIMARY KEY (industry);
+
+
+--
+-- Name: lmo_report_2026_job_openings_regions lmo_report_2026_job_openings_regions_pkey; Type: CONSTRAINT; Schema: public; Owner: workbc
+--
+
+ALTER TABLE ONLY public.lmo_report_2026_job_openings_regions
+    ADD CONSTRAINT lmo_report_2026_job_openings_regions_pkey PRIMARY KEY (region);
+
+
+--
 -- Name: monthly_labour_market_updates monthly_labour_market_updates_pkey; Type: CONSTRAINT; Schema: public; Owner: workbc
 --
 
@@ -120340,6 +121370,102 @@ GRANT SELECT ON TABLE public.lmo_report_2025_job_openings_thompson_okanagan TO s
 
 GRANT SELECT ON TABLE public.lmo_report_2025_job_openings_vancouver_island_coast TO ssot_readonly;
 GRANT SELECT ON TABLE public.lmo_report_2025_job_openings_vancouver_island_coast TO ssot_lmmu;
+
+
+--
+-- Name: TABLE lmo_report_2026_job_openings_10y; Type: ACL; Schema: public; Owner: workbc
+--
+
+GRANT SELECT ON TABLE public.lmo_report_2026_job_openings_10y TO ssot_readonly;
+GRANT SELECT ON TABLE public.lmo_report_2026_job_openings_10y TO ssot_lmmu;
+
+
+--
+-- Name: TABLE lmo_report_2026_job_openings_broad_categories; Type: ACL; Schema: public; Owner: workbc
+--
+
+GRANT SELECT ON TABLE public.lmo_report_2026_job_openings_broad_categories TO ssot_readonly;
+GRANT SELECT ON TABLE public.lmo_report_2026_job_openings_broad_categories TO ssot_lmmu;
+
+
+--
+-- Name: TABLE lmo_report_2026_job_openings_cariboo; Type: ACL; Schema: public; Owner: workbc
+--
+
+GRANT SELECT ON TABLE public.lmo_report_2026_job_openings_cariboo TO ssot_readonly;
+GRANT SELECT ON TABLE public.lmo_report_2026_job_openings_cariboo TO ssot_lmmu;
+
+
+--
+-- Name: TABLE lmo_report_2026_job_openings_industries; Type: ACL; Schema: public; Owner: workbc
+--
+
+GRANT SELECT ON TABLE public.lmo_report_2026_job_openings_industries TO ssot_readonly;
+GRANT SELECT ON TABLE public.lmo_report_2026_job_openings_industries TO ssot_lmmu;
+
+
+--
+-- Name: TABLE lmo_report_2026_job_openings_kootenay; Type: ACL; Schema: public; Owner: workbc
+--
+
+GRANT SELECT ON TABLE public.lmo_report_2026_job_openings_kootenay TO ssot_readonly;
+GRANT SELECT ON TABLE public.lmo_report_2026_job_openings_kootenay TO ssot_lmmu;
+
+
+--
+-- Name: TABLE lmo_report_2026_job_openings_mainland_southwest; Type: ACL; Schema: public; Owner: workbc
+--
+
+GRANT SELECT ON TABLE public.lmo_report_2026_job_openings_mainland_southwest TO ssot_readonly;
+GRANT SELECT ON TABLE public.lmo_report_2026_job_openings_mainland_southwest TO ssot_lmmu;
+
+
+--
+-- Name: TABLE lmo_report_2026_job_openings_north_coast_nechako; Type: ACL; Schema: public; Owner: workbc
+--
+
+GRANT SELECT ON TABLE public.lmo_report_2026_job_openings_north_coast_nechako TO ssot_readonly;
+GRANT SELECT ON TABLE public.lmo_report_2026_job_openings_north_coast_nechako TO ssot_lmmu;
+
+
+--
+-- Name: TABLE lmo_report_2026_job_openings_northeast; Type: ACL; Schema: public; Owner: workbc
+--
+
+GRANT SELECT ON TABLE public.lmo_report_2026_job_openings_northeast TO ssot_readonly;
+GRANT SELECT ON TABLE public.lmo_report_2026_job_openings_northeast TO ssot_lmmu;
+
+
+--
+-- Name: TABLE lmo_report_2026_job_openings_regions; Type: ACL; Schema: public; Owner: workbc
+--
+
+GRANT SELECT ON TABLE public.lmo_report_2026_job_openings_regions TO ssot_readonly;
+GRANT SELECT ON TABLE public.lmo_report_2026_job_openings_regions TO ssot_lmmu;
+
+
+--
+-- Name: TABLE lmo_report_2026_job_openings_teers; Type: ACL; Schema: public; Owner: workbc
+--
+
+GRANT SELECT ON TABLE public.lmo_report_2026_job_openings_teers TO ssot_readonly;
+GRANT SELECT ON TABLE public.lmo_report_2026_job_openings_teers TO ssot_lmmu;
+
+
+--
+-- Name: TABLE lmo_report_2026_job_openings_thompson_okanagan; Type: ACL; Schema: public; Owner: workbc
+--
+
+GRANT SELECT ON TABLE public.lmo_report_2026_job_openings_thompson_okanagan TO ssot_readonly;
+GRANT SELECT ON TABLE public.lmo_report_2026_job_openings_thompson_okanagan TO ssot_lmmu;
+
+
+--
+-- Name: TABLE lmo_report_2026_job_openings_vancouver_island_coast; Type: ACL; Schema: public; Owner: workbc
+--
+
+GRANT SELECT ON TABLE public.lmo_report_2026_job_openings_vancouver_island_coast TO ssot_readonly;
+GRANT SELECT ON TABLE public.lmo_report_2026_job_openings_vancouver_island_coast TO ssot_lmmu;
 
 
 --

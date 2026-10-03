@@ -129,6 +129,21 @@ cat "data/tidy LMO 2025E Charts and Tables_09.18.2025-tab_5_5_1.csv" | php csv_e
 cat "data/tidy LMO 2025E Charts and Tables_09.18.2025-tab_5_6_1.csv" | php csv_extract.php --range 2-7 > load/lmo_report_2025_job_openings_north_coast_nechako.csv
 cat "data/tidy LMO 2025E Charts and Tables_09.18.2025-tab_5_7_1.csv" | php csv_extract.php --range 2-7 > load/lmo_report_2025_job_openings_northeast.csv
 
+# LMO 2026 Report
+ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/tidy LMO 2026E Charts and tables.xlsx" "data/tidy LMO 2026E Charts and tables-%s.csv"
+cat "data/tidy LMO 2026E Charts and tables-Figure 1_2.csv" | php csv_extract.php --range 2-11 --cols 5 | php csv_colkey.php --column 3 > load/lmo_report_2026_job_openings_10y.csv
+cat "data/tidy LMO 2026E Charts and tables-Figure_2_2.csv" | php csv_extract.php --range 2-8 > load/lmo_report_2026_job_openings_teers.csv
+cat "data/tidy LMO 2026E Charts and tables-fig_3_1.csv" | php csv_extract.php --range 2-19 | php csv_colkey.php --column 3 --industries > load/lmo_report_2026_job_openings_industries.csv
+cat "data/tidy LMO 2026E Charts and tables-fig_4_1.csv" | php csv_extract.php --range 2-12 | php csv_trimpad.php --column="3:L:0:0:#" > load/lmo_report_2026_job_openings_broad_categories.csv
+cat "data/tidy LMO 2026E Charts and tables-tab_5_1.csv" | php csv_extract.php --range 2-9 | php csv_colkey.php --column 3 --regions > load/lmo_report_2026_job_openings_regions.csv
+cat "data/tidy LMO 2026E Charts and tables-tab_5_1_1.csv" | php csv_extract.php --range 2-7 > load/lmo_report_2026_job_openings_vancouver_island_coast.csv
+cat "data/tidy LMO 2026E Charts and tables-tab_5_2_1.csv" | php csv_extract.php --range 2-7 > load/lmo_report_2026_job_openings_mainland_southwest.csv
+cat "data/tidy LMO 2026E Charts and tables-tab_5_3_1.csv" | php csv_extract.php --range 2-7 > load/lmo_report_2026_job_openings_thompson_okanagan.csv
+cat "data/tidy LMO 2026E Charts and tables-tab_5_4_1.csv" | php csv_extract.php --range 2-7 > load/lmo_report_2026_job_openings_kootenay.csv
+cat "data/tidy LMO 2026E Charts and tables-tab_5_5_1.csv" | php csv_extract.php --range 2-7 > load/lmo_report_2026_job_openings_cariboo.csv
+cat "data/tidy LMO 2026E Charts and tables-tab_5_6_1.csv" | php csv_extract.php --range 2-7 > load/lmo_report_2026_job_openings_north_coast_nechako.csv
+cat "data/tidy LMO 2026E Charts and tables-tab_5_7_1.csv" | php csv_extract.php --range 2-7 > load/lmo_report_2026_job_openings_northeast.csv
+
 # FYP Categories & Areas of Interest.
 ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/FYP - Categories, Areas of interest, and NOCs 2025-04-23.xlsx" "data/FYP - Categories, Areas of interest, and NOCs 2025-04-23-%s.csv"
 cat "data/FYP - Categories, Areas of interest, and NOCs 2025-04-23-CONSOLIDATED LIST.csv" | php csv_extract.php --range 2 | php csv_trimpad.php --column="3:L:5:0:#" > load/fyp_categories_interests.csv
