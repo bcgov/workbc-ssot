@@ -72012,6 +72012,7 @@ COPY public.onet_nocs (noc2021, noc2016, soc2018, soc2018_title, soc2019) FROM s
 22300	2231	17-3029	Engineering Technologists and Technicians, Except Drafters, All Other	17-3029.08
 22300	2231	19-4042	Environmental Science and Protection Technicians, Including Health	19-4042.00
 22300	2231	53-6041	Traffic Technicians	53-6041.00
+31103	3114	29-1131	Veterinarians	29-1131.00
 22301	2232	17-3021	Aerospace Engineering and Operations Technologists and Technicians	17-3021.00
 22301	2232	17-3024	Electro-Mechanical and Mechatronics Technologists and Technicians	17-3024.00
 22301	2232	17-3024	Electro-Mechanical and Mechatronics Technologists and Technicians	17-3024.01
@@ -72098,7 +72099,6 @@ COPY public.onet_nocs (noc2021, noc2016, soc2018, soc2018_title, soc2019) FROM s
 31101	3111	29-1249	Surgeons, All Other	29-1249.00
 31102	3112	29-1215	Family Medicine Physicians	29-1215.00
 31103	3114	19-1041	Epidemiologists	19-1041.00
-31103	3114	29-1131	Veterinarians	29-1131.00
 31110	3113	29-1021	Dentists, General	29-1021.00
 31110	3113	29-1022	Oral and Maxillofacial Surgeons	29-1022.00
 31110	3113	29-1023	Orthodontists	29-1023.00
@@ -72358,6 +72358,7 @@ COPY public.onet_nocs (noc2021, noc2016, soc2018, soc2018_title, soc2019) FROM s
 41200	4011	25-1111	Criminal Justice and Law Enforcement Teachers, Postsecondary	25-1111.00
 41200	4011	25-1112	Law Teachers, Postsecondary	25-1112.00
 41200	4011	25-1113	Social Work Teachers, Postsecondary	25-1113.00
+41302	4154	21-2011	Clergy	21-2011.00
 41200	4011	25-1121	Art, Drama, and Music Teachers, Postsecondary	25-1121.00
 41200	4011	25-1122	Communications Teachers, Postsecondary	25-1122.00
 41200	4011	25-1123	English Language and Literature Teachers, Postsecondary	25-1123.00
@@ -72438,7 +72439,6 @@ COPY public.onet_nocs (noc2021, noc2016, soc2018, soc2018_title, soc2019) FROM s
 41301	3144	29-1129	Therapists, All Other	29-1129.02
 41301	3144	29-9091	Athletic Trainers	29-9091.00
 41301	4153	29-9092	Genetic Counselors	29-9092.00
-41302	4154	21-2011	Clergy	21-2011.00
 41310	0431	11-1021	General and Operations Managers	11-1021.00
 41310	4165	13-1041	Compliance Officers	13-1041.00
 41310	4165	13-1041	Compliance Officers	13-1041.01
