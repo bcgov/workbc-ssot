@@ -3,7 +3,7 @@
 ##
 ## Convert and load a new LMMU sheet.
 ##
-## Usage monthly_labour_market_update.sh SheetName["WorkBC LMS May_2026.xlsx"] ReportYear[2026] ReportMonth[5] UpdateDate["2026/04/29 14:06"]
+## Usage: monthly_labour_market_update.sh SheetName["WorkBC LMS May_2026.xlsx"] ReportYear[2026] ReportMonth[5] UpdateDate["2026/04/29 14:06"]
 ##
 
 set -xeuo pipefail

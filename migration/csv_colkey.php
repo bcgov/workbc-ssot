@@ -82,7 +82,7 @@ function parameterize($string, $sep = '_') {
   $parameterized_string = iconv('UTF-8', 'ASCII', $string);
 
   # Remove numbers between brackets.
-  $parameterized_string = preg_replace("/\([0-9,]+\)/i", $sep, $parameterized_string);
+  $parameterized_string = preg_replace("/\([0-9,%]+\)/i", $sep, $parameterized_string);
 
   # Get rid of anything thats not a valid letter, number, dash and underscore and
   # replace with a dash.

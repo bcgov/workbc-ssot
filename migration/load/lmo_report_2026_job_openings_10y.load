@@ -34,7 +34,7 @@ load csv
     $$
 
     after load do
-    $$ comment on table lmo_report_2026_job_openings_10y is 'Labour Market Outlook {2026-2036} > Figure 1.1-1. Job Openings, B.C., 2026-2036'; $$,
+    $$ comment on table lmo_report_2026_job_openings_10y is 'Labour Market Outlook {2026-2036} > Figure 1-2: Job Openings, B.C., 2026-2036'; $$,
     $$ comment on column lmo_report_2026_job_openings_10y.key is 'Key'; $$,
     $$ comment on column lmo_report_2026_job_openings_10y.variable is 'Variable'; $$,
     $$ comment on column lmo_report_2026_job_openings_10y.amount is 'Amount (Rounded)'; $$,
