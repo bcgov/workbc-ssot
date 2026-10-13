@@ -46,7 +46,7 @@ load csv
 
     after load do
     $$ create index career_transition_opportunities_noc_idx on career_transition_opportunities (noc); $$,
-    $$ comment on table career_transition_opportunities is 'WorkBC Career Transition Tool Opportunities {2025}'; $$,
+    $$ comment on table career_transition_opportunities is 'WorkBC Career Transition Tool Opportunities {2026}'; $$,
     $$ comment on column career_transition_opportunities.noc is 'Current Occupation (NOC)'; $$,
     $$ comment on column career_transition_opportunities.title is 'Current Occupation Title'; $$,
     $$ comment on column career_transition_opportunities.teer is 'Current Occupation TEER'; $$,

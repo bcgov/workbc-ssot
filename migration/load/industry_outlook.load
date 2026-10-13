@@ -44,22 +44,14 @@ load csv
     $$
 
     after load do
-    $$
-    update industry_outlook tbl set industry = coalesce (
-    (
-        select key
-        from industries
-        where regexp_replace(name, 'with|and|,|\s*', '', 1, 0, 'i') ilike
-            regexp_replace(tbl.industry, 'with|and|,|\s*', '', 1, 0, 'i')
-    ), tbl.industry)
-    $$,
-    $$ comment on table industry_outlook is 'WorkBC Industry Profile {2025-2035}'; $$,
+    $$ update industry_outlook tbl set industry = normalize_industry_name(industry) $$,
+    $$ comment on table industry_outlook is 'WorkBC Industry Profile {2026-2036}'; $$,
     $$ comment on column industry_outlook.industry is 'Industry'; $$,
-    $$ comment on column industry_outlook.openings is 'Job Openings > {2025-2035}'; $$,
-    $$ comment on column industry_outlook.share_total_employment_pct_first is 'Forecasted industry share of total employment (%) > {2025}'; $$,
-    $$ comment on column industry_outlook.share_total_employment_pct_second is 'Forecasted industry share of total employment (%) > {2030}'; $$,
-    $$ comment on column industry_outlook.share_total_employment_pct_third is 'Forecasted industry share of total employment (%) > {2035}'; $$,
-    $$ comment on column industry_outlook.annual_employment_growth_rate_pct_first5y is 'Forecasted average annual employment growth rate (%) > {2025-2030}'; $$,
-    $$ comment on column industry_outlook.annual_employment_growth_rate_pct_second5y is 'Forecasted average annual employment growth rate (%) > {2030-2035}'; $$,
-    $$ comment on column industry_outlook.annual_employment_growth_rate_pct_10y is 'Forecasted average annual employment growth rate (%) > {2025-2035}'; $$
+    $$ comment on column industry_outlook.openings is 'Job Openings > {2026-2036}'; $$,
+    $$ comment on column industry_outlook.share_total_employment_pct_first is 'Forecasted industry share of total employment (%) > {2026}'; $$,
+    $$ comment on column industry_outlook.share_total_employment_pct_second is 'Forecasted industry share of total employment (%) > {2031}'; $$,
+    $$ comment on column industry_outlook.share_total_employment_pct_third is 'Forecasted industry share of total employment (%) > {2036}'; $$,
+    $$ comment on column industry_outlook.annual_employment_growth_rate_pct_first5y is 'Forecasted average annual employment growth rate (%) > {2026-2031}'; $$,
+    $$ comment on column industry_outlook.annual_employment_growth_rate_pct_second5y is 'Forecasted average annual employment growth rate (%) > {2031-2036}'; $$,
+    $$ comment on column industry_outlook.annual_employment_growth_rate_pct_10y is 'Forecasted average annual employment growth rate (%) > {2026-2036}'; $$
 ;
