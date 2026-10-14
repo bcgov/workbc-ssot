@@ -130,7 +130,7 @@ cat "data/tidy LMO 2025E Charts and Tables_09.18.2025-tab_5_6_1.csv" | php csv_e
 cat "data/tidy LMO 2025E Charts and Tables_09.18.2025-tab_5_7_1.csv" | php csv_extract.php --range 2-7 > load/lmo_report_2025_job_openings_northeast.csv
 
 # LMO 2026 Report
-ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/tidy LMO 2026E Charts and tables.xlsx" "data/tidy LMO 2026E Charts and tables-%s.csv"
+ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/tidy LMO 2026E Charts and tables_2026-10-14.xlsx" "data/tidy LMO 2026E Charts and tables-%s.csv"
 cat "data/tidy LMO 2026E Charts and tables-Figure 1_2.csv" | php csv_extract.php --range 2-11 --cols 5 | php csv_colkey.php --column 3 > load/lmo_report_2026_job_openings_10y.csv
 cat "data/tidy LMO 2026E Charts and tables-Figure_2_2.csv" | php csv_extract.php --range 2-8 > load/lmo_report_2026_job_openings_teers.csv
 cat "data/tidy LMO 2026E Charts and tables-fig_3_1.csv" | php csv_extract.php --range 2-19 | php csv_colkey.php --column 3 --industries > load/lmo_report_2026_job_openings_industries.csv
