@@ -69957,7 +69957,7 @@ TEER 1 University degree	211316.89	211300	0.215984847395394	97
 TEER 2 College or apprenticeship (two or more years)	218062.68	218100	0.222879650852474	162
 TEER 3 College or apprenticeship (less than two years)	170081.74	170100	0.1738388193137	69
 TEER 4 Secondary school	117263.27	117300	0.119853597485913	95
-TEER 5 No formal educational	104022.16	104000	0.106319993415288	45
+TEER 5 No formal education	104022.16	104000	0.106319993415288	45
 Total	978387.569999999	978400	1	512
 \.
 
@@ -92068,18 +92068,18 @@ lmo_report_2025_job_openings_kootenay	B.C. Labour Market Outlook	2025-01-01 08:0
 lmo_report_2025_job_openings_cariboo	B.C. Labour Market Outlook	2025-01-01 08:00:00+00	\N	tidy LMO 2025E Charts and Tables_09.18.2025	tab_5_5_1	A2-I7	\N	2025-11-26 08:00:00+00
 lmo_report_2025_job_openings_north_coast_nechako	B.C. Labour Market Outlook	2025-01-01 08:00:00+00	\N	tidy LMO 2025E Charts and Tables_09.18.2025	tab_5_6_1	A2-I7	\N	2025-11-26 08:00:00+00
 lmo_report_2025_job_openings_northeast	B.C. Labour Market Outlook	2025-01-01 08:00:00+00	\N	tidy LMO 2025E Charts and Tables_09.18.2025	tab_5_7_1	A2-I7	\N	2025-11-26 08:00:00+00
-lmo_report_2026_job_openings_10y	B.C. Labour Market Outlook	2026-01-01 08:00:00+00	\N	tidy LMO 2026E Charts and tables	Figure 1_2	A2-E11	\N	2026-10-02 08:00:00+00
-lmo_report_2026_job_openings_teers	B.C. Labour Market Outlook	2026-01-01 08:00:00+00	\N	tidy LMO 2026E Charts and tables	Figure_2_2	A2-H8	\N	2026-10-02 08:00:00+00
-lmo_report_2026_job_openings_industries	B.C. Labour Market Outlook	2026-01-01 08:00:00+00	\N	tidy LMO 2026E Charts and tables	fig_3_1	A2-I19	\N	2026-10-02 08:00:00+00
-lmo_report_2026_job_openings_broad_categories	B.C. Labour Market Outlook	2026-01-01 08:00:00+00	\N	tidy LMO 2026E Charts and tables	fig_4_1	A2-J12	\N	2026-10-02 08:00:00+00
-lmo_report_2026_job_openings_regions	B.C. Labour Market Outlook	2026-01-01 08:00:00+00	\N	tidy LMO 2026E Charts and tables	tab_5_1	A2-H9	\N	2026-10-02 08:00:00+00
-lmo_report_2026_job_openings_vancouver_island_coast	B.C. Labour Market Outlook	2026-01-01 08:00:00+00	\N	tidy LMO 2026E Charts and tables	tab_5_1_1	A2-I7	\N	2026-10-02 08:00:00+00
-lmo_report_2026_job_openings_mainland_southwest	B.C. Labour Market Outlook	2026-01-01 08:00:00+00	\N	tidy LMO 2026E Charts and tables	tab_5_2_1	A2-I7	\N	2026-10-02 08:00:00+00
-lmo_report_2026_job_openings_thompson_okanagan	B.C. Labour Market Outlook	2026-01-01 08:00:00+00	\N	tidy LMO 2026E Charts and tables	tab_5_3_1	A2-I7	\N	2026-10-02 08:00:00+00
-lmo_report_2026_job_openings_kootenay	B.C. Labour Market Outlook	2026-01-01 08:00:00+00	\N	tidy LMO 2026E Charts and tables	tab_5_4_1	A2-I7	\N	2026-10-02 08:00:00+00
-lmo_report_2026_job_openings_cariboo	B.C. Labour Market Outlook	2026-01-01 08:00:00+00	\N	tidy LMO 2026E Charts and tables	tab_5_5_1	A2-I7	\N	2026-10-02 08:00:00+00
-lmo_report_2026_job_openings_north_coast_nechako	B.C. Labour Market Outlook	2026-01-01 08:00:00+00	\N	tidy LMO 2026E Charts and tables	tab_5_6_1	A2-I7	\N	2026-10-02 08:00:00+00
-lmo_report_2026_job_openings_northeast	B.C. Labour Market Outlook	2026-01-01 08:00:00+00	\N	tidy LMO 2026E Charts and tables	tab_5_7_1	A2-I7	\N	2026-10-02 08:00:00+00
+lmo_report_2026_job_openings_10y	B.C. Labour Market Outlook	2026-01-01 08:00:00+00	\N	tidy LMO 2026E Charts and tables_2026-10-14	Figure 1_2	A2-E11	\N	2026-10-14 08:00:00+00
+lmo_report_2026_job_openings_teers	B.C. Labour Market Outlook	2026-01-01 08:00:00+00	\N	tidy LMO 2026E Charts and tables_2026-10-14	Figure_2_2	A2-H8	\N	2026-10-14 08:00:00+00
+lmo_report_2026_job_openings_industries	B.C. Labour Market Outlook	2026-01-01 08:00:00+00	\N	tidy LMO 2026E Charts and tables_2026-10-14	fig_3_1	A2-I19	\N	2026-10-14 08:00:00+00
+lmo_report_2026_job_openings_broad_categories	B.C. Labour Market Outlook	2026-01-01 08:00:00+00	\N	tidy LMO 2026E Charts and tables_2026-10-14	fig_4_1	A2-J12	\N	2026-10-14 08:00:00+00
+lmo_report_2026_job_openings_regions	B.C. Labour Market Outlook	2026-01-01 08:00:00+00	\N	tidy LMO 2026E Charts and tables_2026-10-14	tab_5_1	A2-H9	\N	2026-10-14 08:00:00+00
+lmo_report_2026_job_openings_vancouver_island_coast	B.C. Labour Market Outlook	2026-01-01 08:00:00+00	\N	tidy LMO 2026E Charts and tables_2026-10-14	tab_5_1_1	A2-I7	\N	2026-10-14 08:00:00+00
+lmo_report_2026_job_openings_mainland_southwest	B.C. Labour Market Outlook	2026-01-01 08:00:00+00	\N	tidy LMO 2026E Charts and tables_2026-10-14	tab_5_2_1	A2-I7	\N	2026-10-14 08:00:00+00
+lmo_report_2026_job_openings_thompson_okanagan	B.C. Labour Market Outlook	2026-01-01 08:00:00+00	\N	tidy LMO 2026E Charts and tables_2026-10-14	tab_5_3_1	A2-I7	\N	2026-10-14 08:00:00+00
+lmo_report_2026_job_openings_kootenay	B.C. Labour Market Outlook	2026-01-01 08:00:00+00	\N	tidy LMO 2026E Charts and tables_2026-10-14	tab_5_4_1	A2-I7	\N	2026-10-14 08:00:00+00
+lmo_report_2026_job_openings_cariboo	B.C. Labour Market Outlook	2026-01-01 08:00:00+00	\N	tidy LMO 2026E Charts and tables_2026-10-14	tab_5_5_1	A2-I7	\N	2026-10-14 08:00:00+00
+lmo_report_2026_job_openings_north_coast_nechako	B.C. Labour Market Outlook	2026-01-01 08:00:00+00	\N	tidy LMO 2026E Charts and tables_2026-10-14	tab_5_6_1	A2-I7	\N	2026-10-14 08:00:00+00
+lmo_report_2026_job_openings_northeast	B.C. Labour Market Outlook	2026-01-01 08:00:00+00	\N	tidy LMO 2026E Charts and tables_2026-10-14	tab_5_7_1	A2-I7	\N	2026-10-14 08:00:00+00
 monthly_labour_market_updates	Labour Force Survey (monthly, seasonally adjusted)	2021-01-01 08:00:00+00	\N	REFRESH_WorkBC LMS _2021 Jan FINAL	Sheet3	\N	\N	2021-02-01 08:00:00+00
 monthly_labour_market_updates	Labour Force Survey (monthly, seasonally adjusted)	2021-02-01 08:00:00+00	\N	REFRESH_WorkBC LMS _2021 Feb FINAL	Sheet3	\N	\N	2021-03-01 08:00:00+00
 monthly_labour_market_updates	Labour Force Survey (monthly, seasonally adjusted)	2021-03-01 08:00:00+00	\N	REFRESH_WorkBC LMS _2021 Mar FINAL	Sheet3	\N	\N	2021-04-01 08:00:00+00
