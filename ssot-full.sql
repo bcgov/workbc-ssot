@@ -121561,7 +121561,7 @@ GRANT SELECT ON TABLE public.skills TO ssot_lmmu;
 --
 
 GRANT SELECT ON TABLE public.sources TO ssot_readonly;
-GRANT SELECT ON TABLE public.sources TO ssot_lmmu;
+GRANT SELECT,INSERT,UPDATE ON TABLE public.sources TO ssot_lmmu;
 
 
 --
