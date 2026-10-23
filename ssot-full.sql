@@ -56879,6 +56879,7 @@ COPY public.career_transition_opportunities (noc, title, teer, option_noc, optio
 13100	Administrative officers	College Diploma or Apprenticeship, less than 2 years	11100	Financial auditors and accountants	University Degree	high	6.26247164242278
 13100	Administrative officers	College Diploma or Apprenticeship, less than 2 years	14201	Banking, insurance and other financial clerks	High School Diploma	medium	6.35208366161917
 13100	Administrative officers	College Diploma or Apprenticeship, less than 2 years	12201	Insurance adjusters and claims examiners	College Diploma or Apprenticeship, 2 or more years	medium	6.40574205258168
+31110	Dentists	University Degree	31202	Physiotherapists	University Degree	medium	8.50991961223207
 13100	Administrative officers	College Diploma or Apprenticeship, less than 2 years	21223	Database analysts and data administrators	University Degree	medium	6.55202157513862
 13100	Administrative officers	College Diploma or Apprenticeship, less than 2 years	14403	Purchasing and inventory control workers	High School Diploma	medium	6.57903367842042
 13100	Administrative officers	College Diploma or Apprenticeship, less than 2 years	42200	Paralegals and related occupations	College Diploma or Apprenticeship, 2 or more years	medium	6.66812589923322
@@ -58738,6 +58739,7 @@ COPY public.career_transition_opportunities (noc, title, teer, option_noc, optio
 31101	Specialists in surgery	University Degree	31203	Occupational therapists	University Degree	medium	9.22524763385396
 31102	General practitioners and family physicians	University Degree	31112	Audiologists and speech-language pathologists	University Degree	medium	8.66806119883621
 31102	General practitioners and family physicians	University Degree	31303	Physician assistants, midwives and allied health professionals	University Degree	medium	8.68153064374015
+31110	Dentists	University Degree	32100	Opticians	College Diploma or Apprenticeship, 2 or more years	medium	8.5038279087605
 31102	General practitioners and family physicians	University Degree	31209	Other professional occupations in health diagnosing and treating	University Degree	medium	8.68725784084008
 31102	General practitioners and family physicians	University Degree	31120	Pharmacists	University Degree	medium	8.79525790439281
 31102	General practitioners and family physicians	University Degree	31103	Veterinarians	University Degree	medium	9.315799608674
@@ -58787,8 +58789,6 @@ COPY public.career_transition_opportunities (noc, title, teer, option_noc, optio
 31110	Dentists	University Degree	41310	Police investigators and other investigative occupations	University Degree	medium	8.04051870922219
 31110	Dentists	University Degree	31300	Nursing coordinators and supervisors	University Degree	medium	8.23217654687413
 31110	Dentists	University Degree	31301	Registered nurses and registered psychiatric nurses	University Degree	medium	8.23217654687413
-31110	Dentists	University Degree	32100	Opticians	College Diploma or Apprenticeship, 2 or more years	medium	8.5038279087605
-31110	Dentists	University Degree	31202	Physiotherapists	University Degree	medium	8.50991961223207
 31110	Dentists	University Degree	31303	Physician assistants, midwives and allied health professionals	University Degree	medium	8.63283961431777
 31110	Dentists	University Degree	32121	Medical radiation technologists	College Diploma or Apprenticeship, 2 or more years	medium	9.15191727852305
 31110	Dentists	University Degree	32101	Licensed practical nurses	College Diploma or Apprenticeship, 2 or more years	medium	9.21081430624357
@@ -58935,6 +58935,7 @@ COPY public.career_transition_opportunities (noc, title, teer, option_noc, optio
 31202	Physiotherapists	University Degree	32124	Pharmacy technicians	College Diploma or Apprenticeship, 2 or more years	medium	7.30040837292761
 31202	Physiotherapists	University Degree	31112	Audiologists and speech-language pathologists	University Degree	medium	7.3018359020513
 41320	Educational counsellors	University Degree	10019	Other administrative services managers	Management	medium	7.59203222412768
+41320	Educational counsellors	University Degree	41311	Probation and parole officers	University Degree	medium	7.69990763901335
 31202	Physiotherapists	University Degree	32123	Cardiology technologists and electrophysiological diagnostic technologists	College Diploma or Apprenticeship, 2 or more years	medium	7.56805691468448
 31202	Physiotherapists	University Degree	42203	Instructors of persons with disabilities	College Diploma or Apprenticeship, 2 or more years	medium	7.59417042006543
 31203	Occupational therapists	University Degree	31204	Kinesiologists and other professional occupations in therapy and assessment	University Degree	high	3.20924516734994
@@ -59988,7 +59989,6 @@ COPY public.career_transition_opportunities (noc, title, teer, option_noc, optio
 41320	Educational counsellors	University Degree	31200	Psychologists	University Degree	high	6.1723243741931
 41320	Educational counsellors	University Degree	42201	Social and community service workers	College Diploma or Apprenticeship, 2 or more years	high	6.19419522639214
 41320	Educational counsellors	University Degree	41101	Lawyers and Quebec notaries	University Degree	medium	6.8548559271245
-41320	Educational counsellors	University Degree	41311	Probation and parole officers	University Degree	medium	7.69990763901335
 41320	Educational counsellors	University Degree	64201	Image, social and other personal consultants	High School Diploma	medium	7.84340642460776
 41320	Educational counsellors	University Degree	41220	Secondary school teachers	University Degree	medium	8.01057417993686
 41320	Educational counsellors	University Degree	43203	Border services, customs, and immigration officers	College Diploma or Apprenticeship, less than 2 years	medium	8.03950031969448
@@ -60027,6 +60027,7 @@ COPY public.career_transition_opportunities (noc, title, teer, option_noc, optio
 41400	Natural and applied science policy researchers, consultants and program officers	University Degree	21321	Industrial and manufacturing engineers	University Degree	high	5.86956188797028
 41400	Natural and applied science policy researchers, consultants and program officers	University Degree	21332	Petroleum engineers	University Degree	high	6.05831753809859
 41400	Natural and applied science policy researchers, consultants and program officers	University Degree	41403	Social policy researchers, consultants and program officers	University Degree	high	6.25928399844003
+64320	Tour and travel guides	High School Diploma	64322	Outdoor sport and recreational guides	High School Diploma	high	0
 41400	Natural and applied science policy researchers, consultants and program officers	University Degree	21109	Other professional occupations in physical sciences	University Degree	medium	6.3172556535558
 41400	Natural and applied science policy researchers, consultants and program officers	University Degree	20010	Engineering managers	Management	medium	6.81305865794783
 41400	Natural and applied science policy researchers, consultants and program officers	University Degree	21202	Urban and land use planners	University Degree	medium	7.37757656221543
@@ -62016,7 +62017,6 @@ COPY public.career_transition_opportunities (noc, title, teer, option_noc, optio
 64314	Hotel front desk clerks	High School Diploma	64101	Sales and account representatives - wholesale trade (non-technical)	High School Diploma	medium	6.76524984903855
 64314	Hotel front desk clerks	High School Diploma	64313	Ground and water transport ticket agents, cargo service representatives and related clerks	High School Diploma	medium	6.82284814896897
 64314	Hotel front desk clerks	High School Diploma	64312	Airline ticket and service agents	High School Diploma	medium	6.82284814896897
-64320	Tour and travel guides	High School Diploma	64322	Outdoor sport and recreational guides	High School Diploma	high	0
 64320	Tour and travel guides	High School Diploma	64100	Retail salespersons and visual merchandisers	High School Diploma	high	5.56055449698172
 64320	Tour and travel guides	High School Diploma	64314	Hotel front desk clerks	High School Diploma	high	5.65750392523884
 64320	Tour and travel guides	High School Diploma	64311	Pursers and flight attendants	High School Diploma	high	5.8374806350107
@@ -62273,6 +62273,7 @@ COPY public.career_transition_opportunities (noc, title, teer, option_noc, optio
 65201	Food counter attendants, kitchen helpers and related support occupations	No Formal Education	63220	Shoe repairers and shoemakers	College Diploma or Apprenticeship, less than 2 years	medium	7.72477569425878
 65201	Food counter attendants, kitchen helpers and related support occupations	No Formal Education	63210	Hairstylists and barbers	College Diploma or Apprenticeship, less than 2 years	medium	7.86342548762346
 65201	Food counter attendants, kitchen helpers and related support occupations	No Formal Education	94143	Testers and graders, food and beverage processing	High School Diploma	medium	7.87154991665524
+65329	Other service support occupations	No Formal Education	65200	Food and beverage servers	No Formal Education	high	3.65602395545141
 65201	Food counter attendants, kitchen helpers and related support occupations	No Formal Education	85121	Landscaping and grounds maintenance labourers	No Formal Education	medium	7.90540446473465
 65201	Food counter attendants, kitchen helpers and related support occupations	No Formal Education	94132	Industrial sewing machine operators	High School Diploma	medium	7.99159530996122
 65201	Food counter attendants, kitchen helpers and related support occupations	No Formal Education	65220	Pet groomers and animal care workers	No Formal Education	medium	8.10228638449967
@@ -62398,6 +62399,7 @@ COPY public.career_transition_opportunities (noc, title, teer, option_noc, optio
 65311	Specialized cleaners	No Formal Education	72106	Welders and related machine operators	College Diploma or Apprenticeship, 2 or more years	high	5.87458687411038
 65320	Dry cleaning, laundry and related occupations	No Formal Education	74100	Mail and parcel sorters and related occupations	High School Diploma	medium	7.73655637517196
 65312	Janitors, caretakers and heavy-duty cleaners	No Formal Education	73201	General building maintenance workers and building superintendents	College Diploma or Apprenticeship, less than 2 years	high	0
+65329	Other service support occupations	No Formal Education	65310	Light duty cleaners	No Formal Education	high	3.97696096884542
 65312	Janitors, caretakers and heavy-duty cleaners	No Formal Education	72423	Motorcycle, all-terrain vehicle and other related mechanics	College Diploma or Apprenticeship, 2 or more years	high	3.5135391697943
 65312	Janitors, caretakers and heavy-duty cleaners	No Formal Education	93200	Aircraft assemblers and aircraft assembly inspectors	College Diploma or Apprenticeship, less than 2 years	high	3.81187522211376
 65312	Janitors, caretakers and heavy-duty cleaners	No Formal Education	72999	Other technical trades and related occupations	College Diploma or Apprenticeship, 2 or more years	high	4.09080020048651
@@ -62438,8 +62440,6 @@ COPY public.career_transition_opportunities (noc, title, teer, option_noc, optio
 65320	Dry cleaning, laundry and related occupations	No Formal Education	65311	Specialized cleaners	No Formal Education	medium	7.50879899735643
 70011	Home building and renovation managers	Management	20010	Engineering managers	Management	medium	9.03670222263571
 65329	Other service support occupations	No Formal Education	64300	Maîtres d'hôtel and hosts/hostesses	High School Diploma	high	3.4044816574951
-65329	Other service support occupations	No Formal Education	65200	Food and beverage servers	No Formal Education	high	3.65602395545141
-65329	Other service support occupations	No Formal Education	65310	Light duty cleaners	No Formal Education	high	3.97696096884542
 65329	Other service support occupations	No Formal Education	65211	Operators and attendants in amusement, recreation and sport	No Formal Education	high	4.93007219605369
 65329	Other service support occupations	No Formal Education	65210	Support occupations in accommodation, travel and facilities set-up services	No Formal Education	high	5.23404908120805
 65329	Other service support occupations	No Formal Education	74100	Mail and parcel sorters and related occupations	High School Diploma	high	5.35034348779823
@@ -62568,6 +62568,7 @@ COPY public.career_transition_opportunities (noc, title, teer, option_noc, optio
 72010	Contractors and supervisors, machining, metal forming, shaping and erecting trades and related occupations	College Diploma or Apprenticeship, 2 or more years	92013	Supervisors, plastic and rubber products manufacturing	College Diploma or Apprenticeship, 2 or more years	high	4.68194827832335
 72010	Contractors and supervisors, machining, metal forming, shaping and erecting trades and related occupations	College Diploma or Apprenticeship, 2 or more years	92022	Supervisors, furniture and fixtures manufacturing	College Diploma or Apprenticeship, 2 or more years	high	4.68194827832335
 72010	Contractors and supervisors, machining, metal forming, shaping and erecting trades and related occupations	College Diploma or Apprenticeship, 2 or more years	72022	Supervisors, printing and related occupations	College Diploma or Apprenticeship, 2 or more years	high	4.68194827832335
+72101	Tool and die makers	College Diploma or Apprenticeship, 2 or more years	72106	Welders and related machine operators	College Diploma or Apprenticeship, 2 or more years	high	6.24857047916805
 72010	Contractors and supervisors, machining, metal forming, shaping and erecting trades and related occupations	College Diploma or Apprenticeship, 2 or more years	92024	Supervisors, other products manufacturing and assembly	College Diploma or Apprenticeship, 2 or more years	high	4.68194827832335
 72010	Contractors and supervisors, machining, metal forming, shaping and erecting trades and related occupations	College Diploma or Apprenticeship, 2 or more years	92023	Supervisors, other mechanical and metal products manufacturing	College Diploma or Apprenticeship, 2 or more years	high	4.68194827832335
 72010	Contractors and supervisors, machining, metal forming, shaping and erecting trades and related occupations	College Diploma or Apprenticeship, 2 or more years	92014	Supervisors, forest products processing	College Diploma or Apprenticeship, 2 or more years	high	4.68194827832335
@@ -62743,6 +62744,7 @@ COPY public.career_transition_opportunities (noc, title, teer, option_noc, optio
 72024	Supervisors, motor transport and other ground transit operators	College Diploma or Apprenticeship, 2 or more years	40010	Government managers - health and social policy development and program administration	Management	high	5.10367284871092
 72024	Supervisors, motor transport and other ground transit operators	College Diploma or Apprenticeship, 2 or more years	64313	Ground and water transport ticket agents, cargo service representatives and related clerks	High School Diploma	high	5.3874459429721
 72024	Supervisors, motor transport and other ground transit operators	College Diploma or Apprenticeship, 2 or more years	64312	Airline ticket and service agents	High School Diploma	high	5.3874459429721
+72101	Tool and die makers	College Diploma or Apprenticeship, 2 or more years	94124	Woodworking machine operators	High School Diploma	high	6.25723574553144
 72024	Supervisors, motor transport and other ground transit operators	College Diploma or Apprenticeship, 2 or more years	12013	Supervisors, supply chain, tracking and scheduling coordination occupations	College Diploma or Apprenticeship, 2 or more years	high	5.91557529937901
 72024	Supervisors, motor transport and other ground transit operators	College Diploma or Apprenticeship, 2 or more years	60031	Accommodation service managers	Management	high	6.03127940744401
 72024	Supervisors, motor transport and other ground transit operators	College Diploma or Apprenticeship, 2 or more years	50012	Recreation, sports and fitness program and service directors	Management	high	6.09259130262283
@@ -62775,6 +62777,7 @@ COPY public.career_transition_opportunities (noc, title, teer, option_noc, optio
 72025	Supervisors, mail and message distribution occupations	College Diploma or Apprenticeship, 2 or more years	10012	Purchasing managers	Management	high	5.9534246420854
 72025	Supervisors, mail and message distribution occupations	College Diploma or Apprenticeship, 2 or more years	41406	Recreation, sports and fitness policy researchers, consultants and program officers	University Degree	medium	6.63759705550542
 72101	Tool and die makers	College Diploma or Apprenticeship, 2 or more years	94111	Plastics processing machine operators	High School Diploma	high	6.21140778126558
+72101	Tool and die makers	College Diploma or Apprenticeship, 2 or more years	94210	Furniture and fixture assemblers, finishers, refinishers and inspectors	High School Diploma	high	6.26277190225035
 72025	Supervisors, mail and message distribution occupations	College Diploma or Apprenticeship, 2 or more years	12102	Procurement and purchasing agents and officers	College Diploma or Apprenticeship, 2 or more years	medium	6.68183025278832
 72025	Supervisors, mail and message distribution occupations	College Diploma or Apprenticeship, 2 or more years	11200	Human resources professionals	University Degree	medium	6.88275948587438
 72025	Supervisors, mail and message distribution occupations	College Diploma or Apprenticeship, 2 or more years	60040	Managers in customer and personal services	Management	medium	6.88558190779817
@@ -62811,9 +62814,6 @@ COPY public.career_transition_opportunities (noc, title, teer, option_noc, optio
 72101	Tool and die makers	College Diploma or Apprenticeship, 2 or more years	94102	Glass forming and finishing machine operators and glass cutters	High School Diploma	high	6.06333014072734
 72101	Tool and die makers	College Diploma or Apprenticeship, 2 or more years	95105	Labourers in textile processing and cutting	No Formal Education	high	6.20169044763714
 72101	Tool and die makers	College Diploma or Apprenticeship, 2 or more years	94152	Binding and finishing machine operators	High School Diploma	high	6.20949182422239
-72101	Tool and die makers	College Diploma or Apprenticeship, 2 or more years	72106	Welders and related machine operators	College Diploma or Apprenticeship, 2 or more years	high	6.24857047916805
-72101	Tool and die makers	College Diploma or Apprenticeship, 2 or more years	94124	Woodworking machine operators	High School Diploma	high	6.25723574553144
-72101	Tool and die makers	College Diploma or Apprenticeship, 2 or more years	94210	Furniture and fixture assemblers, finishers, refinishers and inspectors	High School Diploma	high	6.26277190225035
 72101	Tool and die makers	College Diploma or Apprenticeship, 2 or more years	94100	Machine operators, mineral and metal processing	High School Diploma	high	6.2973906603488
 72101	Tool and die makers	College Diploma or Apprenticeship, 2 or more years	94213	Industrial painters, coaters and metal finishing process operators	High School Diploma	medium	6.32172624939065
 72101	Tool and die makers	College Diploma or Apprenticeship, 2 or more years	94201	Electronics assemblers, fabricators, inspectors and testers	High School Diploma	medium	6.41085371818052
@@ -62993,6 +62993,7 @@ COPY public.career_transition_opportunities (noc, title, teer, option_noc, optio
 72203	Electrical power line and cable workers	College Diploma or Apprenticeship, 2 or more years	73200	Residential and commercial installers and servicers	College Diploma or Apprenticeship, less than 2 years	high	5.3111813673669
 72203	Electrical power line and cable workers	College Diploma or Apprenticeship, 2 or more years	93200	Aircraft assemblers and aircraft assembly inspectors	College Diploma or Apprenticeship, less than 2 years	high	5.52681756055297
 72203	Electrical power line and cable workers	College Diploma or Apprenticeship, 2 or more years	72310	Carpenters	College Diploma or Apprenticeship, 2 or more years	high	5.56346513048678
+72321	Insulators	College Diploma or Apprenticeship, 2 or more years	65311	Specialized cleaners	No Formal Education	high	4.75738411387429
 72203	Electrical power line and cable workers	College Diploma or Apprenticeship, 2 or more years	73201	General building maintenance workers and building superintendents	College Diploma or Apprenticeship, less than 2 years	high	5.84378556480673
 72203	Electrical power line and cable workers	College Diploma or Apprenticeship, 2 or more years	65312	Janitors, caretakers and heavy-duty cleaners	No Formal Education	high	5.84378556480673
 72203	Electrical power line and cable workers	College Diploma or Apprenticeship, 2 or more years	72402	Heating, refrigeration and air conditioning mechanics	College Diploma or Apprenticeship, 2 or more years	high	5.94851459460827
@@ -63023,6 +63024,7 @@ COPY public.career_transition_opportunities (noc, title, teer, option_noc, optio
 72205	Telecommunications equipment installation and cable television service technicians	College Diploma or Apprenticeship, 2 or more years	72420	Oil and solid fuel heating mechanics	College Diploma or Apprenticeship, 2 or more years	high	5.53502234883031
 72205	Telecommunications equipment installation and cable television service technicians	College Diploma or Apprenticeship, 2 or more years	72406	Elevator constructors and mechanics	College Diploma or Apprenticeship, 2 or more years	high	5.73629259474742
 72205	Telecommunications equipment installation and cable television service technicians	College Diploma or Apprenticeship, 2 or more years	72410	Automotive service technicians, truck and bus mechanics and mechanical repairers	College Diploma or Apprenticeship, 2 or more years	high	5.73830694458625
+72300	Plumbers	College Diploma or Apprenticeship, 2 or more years	94200	Motor vehicle assemblers, inspectors and testers	High School Diploma	high	6.09495554296292
 72205	Telecommunications equipment installation and cable television service technicians	College Diploma or Apprenticeship, 2 or more years	72201	Industrial electricians	College Diploma or Apprenticeship, 2 or more years	high	5.76925383155415
 72205	Telecommunications equipment installation and cable television service technicians	College Diploma or Apprenticeship, 2 or more years	72204	Telecommunications line and cable installers and repairers	College Diploma or Apprenticeship, 2 or more years	high	5.92462759387982
 72205	Telecommunications equipment installation and cable television service technicians	College Diploma or Apprenticeship, 2 or more years	72421	Appliance servicers and repairers	College Diploma or Apprenticeship, 2 or more years	high	5.93477354540893
@@ -63055,7 +63057,6 @@ COPY public.career_transition_opportunities (noc, title, teer, option_noc, optio
 72300	Plumbers	College Diploma or Apprenticeship, 2 or more years	72102	Sheet metal workers	College Diploma or Apprenticeship, 2 or more years	high	5.89208138849539
 72302	Gas fitters	College Diploma or Apprenticeship, 2 or more years	72203	Electrical power line and cable workers	College Diploma or Apprenticeship, 2 or more years	high	4.7621544279728
 72300	Plumbers	College Diploma or Apprenticeship, 2 or more years	72410	Automotive service technicians, truck and bus mechanics and mechanical repairers	College Diploma or Apprenticeship, 2 or more years	high	6.05706279384408
-72300	Plumbers	College Diploma or Apprenticeship, 2 or more years	94200	Motor vehicle assemblers, inspectors and testers	High School Diploma	high	6.09495554296292
 72300	Plumbers	College Diploma or Apprenticeship, 2 or more years	72201	Industrial electricians	College Diploma or Apprenticeship, 2 or more years	high	6.20781085074382
 72300	Plumbers	College Diploma or Apprenticeship, 2 or more years	75119	Other trades helpers and labourers	No Formal Education	high	6.24459798843387
 72300	Plumbers	College Diploma or Apprenticeship, 2 or more years	72205	Telecommunications equipment installation and cable television service technicians	College Diploma or Apprenticeship, 2 or more years	medium	6.31581064324459
@@ -63168,7 +63169,6 @@ COPY public.career_transition_opportunities (noc, title, teer, option_noc, optio
 72321	Insulators	College Diploma or Apprenticeship, 2 or more years	22114	Landscape and horticulture technicians and specialists	College Diploma or Apprenticeship, 2 or more years	high	4.58455036356403
 72321	Insulators	College Diploma or Apprenticeship, 2 or more years	74203	Automotive and heavy truck and equipment parts installers and servicers	High School Diploma	high	4.58594461985887
 72321	Insulators	College Diploma or Apprenticeship, 2 or more years	75212	Public works and maintenance labourers	No Formal Education	high	4.66625688897327
-72321	Insulators	College Diploma or Apprenticeship, 2 or more years	65311	Specialized cleaners	No Formal Education	high	4.75738411387429
 72321	Insulators	College Diploma or Apprenticeship, 2 or more years	73111	Glaziers	College Diploma or Apprenticeship, less than 2 years	high	4.80079610981304
 72321	Insulators	College Diploma or Apprenticeship, 2 or more years	73112	Painters and decorators (except interior decorators)	College Diploma or Apprenticeship, less than 2 years	high	4.89784831650889
 72321	Insulators	College Diploma or Apprenticeship, 2 or more years	72411	Auto body collision, refinishing and glass technicians and damage repair estimators	College Diploma or Apprenticeship, 2 or more years	high	4.95950436780811
@@ -63203,6 +63203,7 @@ COPY public.career_transition_opportunities (noc, title, teer, option_noc, optio
 72401	Heavy-duty equipment mechanics	College Diploma or Apprenticeship, 2 or more years	72422	Electrical mechanics	College Diploma or Apprenticeship, 2 or more years	high	3.91934297471662
 72401	Heavy-duty equipment mechanics	College Diploma or Apprenticeship, 2 or more years	72423	Motorcycle, all-terrain vehicle and other related mechanics	College Diploma or Apprenticeship, 2 or more years	high	4.91926522470955
 72401	Heavy-duty equipment mechanics	College Diploma or Apprenticeship, 2 or more years	72201	Industrial electricians	College Diploma or Apprenticeship, 2 or more years	high	5.11749825511004
+74200	Railway yard and track maintenance workers	High School Diploma	75100	Longshore workers	No Formal Education	high	4.98765243807647
 72401	Heavy-duty equipment mechanics	College Diploma or Apprenticeship, 2 or more years	72421	Appliance servicers and repairers	College Diploma or Apprenticeship, 2 or more years	high	5.3384049674216
 72401	Heavy-duty equipment mechanics	College Diploma or Apprenticeship, 2 or more years	94200	Motor vehicle assemblers, inspectors and testers	High School Diploma	high	5.40069160931621
 72401	Heavy-duty equipment mechanics	College Diploma or Apprenticeship, 2 or more years	72400	Construction millwrights and industrial mechanics	College Diploma or Apprenticeship, 2 or more years	high	5.6140137425862
@@ -63235,6 +63236,7 @@ COPY public.career_transition_opportunities (noc, title, teer, option_noc, optio
 72402	Heating, refrigeration and air conditioning mechanics	College Diploma or Apprenticeship, 2 or more years	72200	Electricians (except industrial and power system)	College Diploma or Apprenticeship, 2 or more years	high	6.08514041752
 72402	Heating, refrigeration and air conditioning mechanics	College Diploma or Apprenticeship, 2 or more years	72201	Industrial electricians	College Diploma or Apprenticeship, 2 or more years	high	6.17097939430307
 72402	Heating, refrigeration and air conditioning mechanics	College Diploma or Apprenticeship, 2 or more years	93200	Aircraft assemblers and aircraft assembly inspectors	College Diploma or Apprenticeship, less than 2 years	high	6.19140278543836
+72406	Elevator constructors and mechanics	College Diploma or Apprenticeship, 2 or more years	72201	Industrial electricians	College Diploma or Apprenticeship, 2 or more years	high	4.87519696158694
 72402	Heating, refrigeration and air conditioning mechanics	College Diploma or Apprenticeship, 2 or more years	72423	Motorcycle, all-terrain vehicle and other related mechanics	College Diploma or Apprenticeship, 2 or more years	high	6.19629834822542
 72402	Heating, refrigeration and air conditioning mechanics	College Diploma or Apprenticeship, 2 or more years	94200	Motor vehicle assemblers, inspectors and testers	High School Diploma	medium	6.34438571741877
 72402	Heating, refrigeration and air conditioning mechanics	College Diploma or Apprenticeship, 2 or more years	72204	Telecommunications line and cable installers and repairers	College Diploma or Apprenticeship, 2 or more years	medium	6.90940080451103
@@ -63269,6 +63271,7 @@ COPY public.career_transition_opportunities (noc, title, teer, option_noc, optio
 72404	Aircraft mechanics and aircraft inspectors	College Diploma or Apprenticeship, 2 or more years	72200	Electricians (except industrial and power system)	College Diploma or Apprenticeship, 2 or more years	medium	6.68764639648812
 72404	Aircraft mechanics and aircraft inspectors	College Diploma or Apprenticeship, 2 or more years	22230	Non-destructive testers and inspectors	College Diploma or Apprenticeship, 2 or more years	medium	6.91018696084542
 72404	Aircraft mechanics and aircraft inspectors	College Diploma or Apprenticeship, 2 or more years	22310	Electrical and electronics engineering technologists and technicians	College Diploma or Apprenticeship, 2 or more years	medium	6.98579555302087
+72422	Electrical mechanics	College Diploma or Apprenticeship, 2 or more years	72401	Heavy-duty equipment mechanics	College Diploma or Apprenticeship, 2 or more years	high	3.91934297471662
 72404	Aircraft mechanics and aircraft inspectors	College Diploma or Apprenticeship, 2 or more years	72205	Telecommunications equipment installation and cable television service technicians	College Diploma or Apprenticeship, 2 or more years	medium	7.05118562214547
 72404	Aircraft mechanics and aircraft inspectors	College Diploma or Apprenticeship, 2 or more years	72201	Industrial electricians	College Diploma or Apprenticeship, 2 or more years	medium	7.07028078489973
 72404	Aircraft mechanics and aircraft inspectors	College Diploma or Apprenticeship, 2 or more years	72401	Heavy-duty equipment mechanics	College Diploma or Apprenticeship, 2 or more years	medium	7.09468643740251
@@ -63305,7 +63308,6 @@ COPY public.career_transition_opportunities (noc, title, teer, option_noc, optio
 72406	Elevator constructors and mechanics	College Diploma or Apprenticeship, 2 or more years	72402	Heating, refrigeration and air conditioning mechanics	College Diploma or Apprenticeship, 2 or more years	high	4.31483015981206
 72406	Elevator constructors and mechanics	College Diploma or Apprenticeship, 2 or more years	72420	Oil and solid fuel heating mechanics	College Diploma or Apprenticeship, 2 or more years	high	4.31483015981206
 72406	Elevator constructors and mechanics	College Diploma or Apprenticeship, 2 or more years	72202	Power system electricians	College Diploma or Apprenticeship, 2 or more years	high	4.8641303200951
-72406	Elevator constructors and mechanics	College Diploma or Apprenticeship, 2 or more years	72201	Industrial electricians	College Diploma or Apprenticeship, 2 or more years	high	4.87519696158694
 72406	Elevator constructors and mechanics	College Diploma or Apprenticeship, 2 or more years	72423	Motorcycle, all-terrain vehicle and other related mechanics	College Diploma or Apprenticeship, 2 or more years	high	4.88634101195872
 72406	Elevator constructors and mechanics	College Diploma or Apprenticeship, 2 or more years	72410	Automotive service technicians, truck and bus mechanics and mechanical repairers	College Diploma or Apprenticeship, 2 or more years	high	5.12666068573811
 72406	Elevator constructors and mechanics	College Diploma or Apprenticeship, 2 or more years	72999	Other technical trades and related occupations	College Diploma or Apprenticeship, 2 or more years	high	5.16036839679145
@@ -63336,6 +63338,7 @@ COPY public.career_transition_opportunities (noc, title, teer, option_noc, optio
 72410	Automotive service technicians, truck and bus mechanics and mechanical repairers	College Diploma or Apprenticeship, 2 or more years	73201	General building maintenance workers and building superintendents	College Diploma or Apprenticeship, less than 2 years	high	5.4584626361613
 73111	Glaziers	College Diploma or Apprenticeship, less than 2 years	72105	Ironworkers	College Diploma or Apprenticeship, 2 or more years	high	5.86760455969014
 72410	Automotive service technicians, truck and bus mechanics and mechanical repairers	College Diploma or Apprenticeship, 2 or more years	65312	Janitors, caretakers and heavy-duty cleaners	No Formal Education	high	5.4584626361613
+72500	Crane operators	College Diploma or Apprenticeship, 2 or more years	94100	Machine operators, mineral and metal processing	High School Diploma	high	4.75809581327739
 72410	Automotive service technicians, truck and bus mechanics and mechanical repairers	College Diploma or Apprenticeship, 2 or more years	72302	Gas fitters	College Diploma or Apprenticeship, 2 or more years	high	5.52769581428904
 72410	Automotive service technicians, truck and bus mechanics and mechanical repairers	College Diploma or Apprenticeship, 2 or more years	72205	Telecommunications equipment installation and cable television service technicians	College Diploma or Apprenticeship, 2 or more years	high	5.73830694458625
 72410	Automotive service technicians, truck and bus mechanics and mechanical repairers	College Diploma or Apprenticeship, 2 or more years	72402	Heating, refrigeration and air conditioning mechanics	College Diploma or Apprenticeship, 2 or more years	high	5.88753980098613
@@ -63366,6 +63369,7 @@ COPY public.career_transition_opportunities (noc, title, teer, option_noc, optio
 72420	Oil and solid fuel heating mechanics	College Diploma or Apprenticeship, 2 or more years	72302	Gas fitters	College Diploma or Apprenticeship, 2 or more years	high	3.40665466219103
 72420	Oil and solid fuel heating mechanics	College Diploma or Apprenticeship, 2 or more years	72406	Elevator constructors and mechanics	College Diploma or Apprenticeship, 2 or more years	high	4.31483015981206
 72420	Oil and solid fuel heating mechanics	College Diploma or Apprenticeship, 2 or more years	72310	Carpenters	College Diploma or Apprenticeship, 2 or more years	high	4.89001868935649
+72421	Appliance servicers and repairers	College Diploma or Apprenticeship, 2 or more years	72301	Steamfitters, pipefitters and sprinkler system installers	College Diploma or Apprenticeship, 2 or more years	high	5.69609997732517
 72420	Oil and solid fuel heating mechanics	College Diploma or Apprenticeship, 2 or more years	72205	Telecommunications equipment installation and cable television service technicians	College Diploma or Apprenticeship, 2 or more years	high	5.53502234883031
 72420	Oil and solid fuel heating mechanics	College Diploma or Apprenticeship, 2 or more years	72421	Appliance servicers and repairers	College Diploma or Apprenticeship, 2 or more years	high	5.64902759396262
 72420	Oil and solid fuel heating mechanics	College Diploma or Apprenticeship, 2 or more years	72400	Construction millwrights and industrial mechanics	College Diploma or Apprenticeship, 2 or more years	high	5.7746945590119
@@ -63400,8 +63404,6 @@ COPY public.career_transition_opportunities (noc, title, teer, option_noc, optio
 72421	Appliance servicers and repairers	College Diploma or Apprenticeship, 2 or more years	72420	Oil and solid fuel heating mechanics	College Diploma or Apprenticeship, 2 or more years	high	5.64902759396262
 72421	Appliance servicers and repairers	College Diploma or Apprenticeship, 2 or more years	72300	Plumbers	College Diploma or Apprenticeship, 2 or more years	high	5.69609997732517
 73111	Glaziers	College Diploma or Apprenticeship, less than 2 years	75101	Material handlers	No Formal Education	high	5.87222661232048
-72421	Appliance servicers and repairers	College Diploma or Apprenticeship, 2 or more years	72301	Steamfitters, pipefitters and sprinkler system installers	College Diploma or Apprenticeship, 2 or more years	high	5.69609997732517
-72422	Electrical mechanics	College Diploma or Apprenticeship, 2 or more years	72401	Heavy-duty equipment mechanics	College Diploma or Apprenticeship, 2 or more years	high	3.91934297471662
 72422	Electrical mechanics	College Diploma or Apprenticeship, 2 or more years	93200	Aircraft assemblers and aircraft assembly inspectors	College Diploma or Apprenticeship, less than 2 years	high	4.28655535302544
 72422	Electrical mechanics	College Diploma or Apprenticeship, 2 or more years	72400	Construction millwrights and industrial mechanics	College Diploma or Apprenticeship, 2 or more years	high	4.31709838536993
 72422	Electrical mechanics	College Diploma or Apprenticeship, 2 or more years	72410	Automotive service technicians, truck and bus mechanics and mechanical repairers	College Diploma or Apprenticeship, 2 or more years	high	4.64995447133888
@@ -63435,6 +63437,7 @@ COPY public.career_transition_opportunities (noc, title, teer, option_noc, optio
 72423	Motorcycle, all-terrain vehicle and other related mechanics	College Diploma or Apprenticeship, 2 or more years	22311	Electronic service technicians (household and business equipment)	College Diploma or Apprenticeship, 2 or more years	high	4.80176282892977
 72423	Motorcycle, all-terrain vehicle and other related mechanics	College Diploma or Apprenticeship, 2 or more years	72406	Elevator constructors and mechanics	College Diploma or Apprenticeship, 2 or more years	high	4.88634101195872
 72423	Motorcycle, all-terrain vehicle and other related mechanics	College Diploma or Apprenticeship, 2 or more years	72422	Electrical mechanics	College Diploma or Apprenticeship, 2 or more years	high	4.89246051113091
+72500	Crane operators	College Diploma or Apprenticeship, 2 or more years	94111	Plastics processing machine operators	High School Diploma	high	4.91073171109813
 72423	Motorcycle, all-terrain vehicle and other related mechanics	College Diploma or Apprenticeship, 2 or more years	72204	Telecommunications line and cable installers and repairers	College Diploma or Apprenticeship, 2 or more years	high	4.89936715200628
 72423	Motorcycle, all-terrain vehicle and other related mechanics	College Diploma or Apprenticeship, 2 or more years	72401	Heavy-duty equipment mechanics	College Diploma or Apprenticeship, 2 or more years	high	4.91926522470955
 72423	Motorcycle, all-terrain vehicle and other related mechanics	College Diploma or Apprenticeship, 2 or more years	74204	Utility maintenance workers	High School Diploma	high	5.1213604813075
@@ -63469,8 +63472,6 @@ COPY public.career_transition_opportunities (noc, title, teer, option_noc, optio
 72500	Crane operators	College Diploma or Apprenticeship, 2 or more years	74204	Utility maintenance workers	High School Diploma	high	4.39540753128065
 72500	Crane operators	College Diploma or Apprenticeship, 2 or more years	75101	Material handlers	No Formal Education	high	4.40279164467419
 72500	Crane operators	College Diploma or Apprenticeship, 2 or more years	83110	Logging machinery operators	College Diploma or Apprenticeship, less than 2 years	high	4.54088330376559
-72500	Crane operators	College Diploma or Apprenticeship, 2 or more years	94100	Machine operators, mineral and metal processing	High School Diploma	high	4.75809581327739
-72500	Crane operators	College Diploma or Apprenticeship, 2 or more years	94111	Plastics processing machine operators	High School Diploma	high	4.91073171109813
 72500	Crane operators	College Diploma or Apprenticeship, 2 or more years	93100	Central control and process operators, mineral and metal processing	College Diploma or Apprenticeship, less than 2 years	high	4.95069571057814
 72500	Crane operators	College Diploma or Apprenticeship, 2 or more years	85111	Oil and gas drilling, servicing and related labourers	No Formal Education	high	5.02024157892231
 72500	Crane operators	College Diploma or Apprenticeship, 2 or more years	75100	Longshore workers	No Formal Education	high	5.04737157578691
@@ -63606,6 +63607,7 @@ COPY public.career_transition_opportunities (noc, title, teer, option_noc, optio
 72999	Other technical trades and related occupations	College Diploma or Apprenticeship, 2 or more years	72429	Other small engine and small equipment repairers	College Diploma or Apprenticeship, 2 or more years	high	3.0468753839788
 72999	Other technical trades and related occupations	College Diploma or Apprenticeship, 2 or more years	72421	Appliance servicers and repairers	College Diploma or Apprenticeship, 2 or more years	high	3.30067847160035
 72999	Other technical trades and related occupations	College Diploma or Apprenticeship, 2 or more years	73201	General building maintenance workers and building superintendents	College Diploma or Apprenticeship, less than 2 years	high	4.09080020048651
+73101	Tilesetters	College Diploma or Apprenticeship, less than 2 years	72321	Insulators	College Diploma or Apprenticeship, 2 or more years	high	3.53272337965549
 72999	Other technical trades and related occupations	College Diploma or Apprenticeship, 2 or more years	65312	Janitors, caretakers and heavy-duty cleaners	No Formal Education	high	4.09080020048651
 72999	Other technical trades and related occupations	College Diploma or Apprenticeship, 2 or more years	72103	Boilermakers	College Diploma or Apprenticeship, 2 or more years	high	4.1581874188926
 72999	Other technical trades and related occupations	College Diploma or Apprenticeship, 2 or more years	72302	Gas fitters	College Diploma or Apprenticeship, 2 or more years	high	4.37764568667351
@@ -63643,7 +63645,6 @@ COPY public.career_transition_opportunities (noc, title, teer, option_noc, optio
 73101	Tilesetters	College Diploma or Apprenticeship, less than 2 years	73113	Floor covering installers	College Diploma or Apprenticeship, less than 2 years	high	2.81488661436499
 73101	Tilesetters	College Diploma or Apprenticeship, less than 2 years	75110	Construction trades helpers and labourers	No Formal Education	high	3.09747433735022
 73101	Tilesetters	College Diploma or Apprenticeship, less than 2 years	72320	Bricklayers	College Diploma or Apprenticeship, 2 or more years	high	3.43842309104784
-73101	Tilesetters	College Diploma or Apprenticeship, less than 2 years	72321	Insulators	College Diploma or Apprenticeship, 2 or more years	high	3.53272337965549
 73101	Tilesetters	College Diploma or Apprenticeship, less than 2 years	72105	Ironworkers	College Diploma or Apprenticeship, 2 or more years	high	3.59356561368562
 73101	Tilesetters	College Diploma or Apprenticeship, less than 2 years	73111	Glaziers	College Diploma or Apprenticeship, less than 2 years	high	3.6655617419934
 73101	Tilesetters	College Diploma or Apprenticeship, less than 2 years	72104	Structural metal and platework fabricators and fitters	College Diploma or Apprenticeship, 2 or more years	high	4.2029505027656
@@ -63679,6 +63680,7 @@ COPY public.career_transition_opportunities (noc, title, teer, option_noc, optio
 73102	Plasterers, drywall installers and finishers and lathers	College Diploma or Apprenticeship, less than 2 years	74203	Automotive and heavy truck and equipment parts installers and servicers	High School Diploma	medium	6.41995209783944
 73102	Plasterers, drywall installers and finishers and lathers	College Diploma or Apprenticeship, less than 2 years	95101	Labourers in metal fabrication	No Formal Education	medium	6.42622540831268
 73102	Plasterers, drywall installers and finishers and lathers	College Diploma or Apprenticeship, less than 2 years	95100	Labourers in mineral and metal processing	No Formal Education	medium	6.42622540831268
+73300	Transport truck drivers	College Diploma or Apprenticeship, less than 2 years	75101	Material handlers	No Formal Education	medium	8.86862752625676
 73102	Plasterers, drywall installers and finishers and lathers	College Diploma or Apprenticeship, less than 2 years	95103	Labourers in wood, pulp and paper processing	No Formal Education	medium	6.42622540831268
 73110	Roofers and shinglers	College Diploma or Apprenticeship, less than 2 years	73200	Residential and commercial installers and servicers	College Diploma or Apprenticeship, less than 2 years	high	3.74634778747493
 73110	Roofers and shinglers	College Diploma or Apprenticeship, less than 2 years	73100	Concrete finishers	College Diploma or Apprenticeship, less than 2 years	high	4.0048136716913
@@ -63754,6 +63756,7 @@ COPY public.career_transition_opportunities (noc, title, teer, option_noc, optio
 73113	Floor covering installers	College Diploma or Apprenticeship, less than 2 years	73110	Roofers and shinglers	College Diploma or Apprenticeship, less than 2 years	high	5.72482304563805
 73113	Floor covering installers	College Diploma or Apprenticeship, less than 2 years	94219	Other products assemblers, finishers and inspectors	High School Diploma	high	5.7905973789022
 73113	Floor covering installers	College Diploma or Apprenticeship, less than 2 years	22114	Landscape and horticulture technicians and specialists	College Diploma or Apprenticeship, 2 or more years	high	5.89723805162514
+74100	Mail and parcel sorters and related occupations	High School Diploma	95106	Labourers in food and beverage processing	No Formal Education	medium	6.40373729321318
 73113	Floor covering installers	College Diploma or Apprenticeship, less than 2 years	84120	Specialized livestock workers and farm machinery operators	High School Diploma	high	5.93701481677864
 73113	Floor covering installers	College Diploma or Apprenticeship, less than 2 years	85100	Livestock labourers	No Formal Education	high	5.93701481677864
 73113	Floor covering installers	College Diploma or Apprenticeship, less than 2 years	73200	Residential and commercial installers and servicers	College Diploma or Apprenticeship, less than 2 years	high	6.15774295074959
@@ -63787,6 +63790,7 @@ COPY public.career_transition_opportunities (noc, title, teer, option_noc, optio
 74100	Mail and parcel sorters and related occupations	High School Diploma	95103	Labourers in wood, pulp and paper processing	No Formal Education	medium	6.40373729321318
 73201	General building maintenance workers and building superintendents	College Diploma or Apprenticeship, less than 2 years	94200	Motor vehicle assemblers, inspectors and testers	High School Diploma	high	4.34002029399442
 73201	General building maintenance workers and building superintendents	College Diploma or Apprenticeship, less than 2 years	94107	Machine operators of other metal products	High School Diploma	high	5.00745551516686
+74101	Letter carriers	High School Diploma	65329	Other service support occupations	No Formal Education	medium	6.76275535853183
 73201	General building maintenance workers and building superintendents	College Diploma or Apprenticeship, less than 2 years	72421	Appliance servicers and repairers	College Diploma or Apprenticeship, 2 or more years	high	5.08873974557865
 73201	General building maintenance workers and building superintendents	College Diploma or Apprenticeship, less than 2 years	72104	Structural metal and platework fabricators and fitters	College Diploma or Apprenticeship, 2 or more years	high	5.14887040758265
 73201	General building maintenance workers and building superintendents	College Diploma or Apprenticeship, less than 2 years	72103	Boilermakers	College Diploma or Apprenticeship, 2 or more years	high	5.16225207609804
@@ -63857,7 +63861,6 @@ COPY public.career_transition_opportunities (noc, title, teer, option_noc, optio
 73300	Transport truck drivers	College Diploma or Apprenticeship, less than 2 years	84101	Oil and gas well drilling and related workers and services operators	High School Diploma	medium	8.43283640113202
 73300	Transport truck drivers	College Diploma or Apprenticeship, less than 2 years	85102	Aquaculture and marine harvest labourers	No Formal Education	medium	8.6329371697553
 73300	Transport truck drivers	College Diploma or Apprenticeship, less than 2 years	93100	Central control and process operators, mineral and metal processing	College Diploma or Apprenticeship, less than 2 years	medium	8.84955781031981
-73300	Transport truck drivers	College Diploma or Apprenticeship, less than 2 years	75101	Material handlers	No Formal Education	medium	8.86862752625676
 73300	Transport truck drivers	College Diploma or Apprenticeship, less than 2 years	93102	Pulping, papermaking and coating control operators	College Diploma or Apprenticeship, less than 2 years	medium	8.96355805360504
 73301	Bus drivers, subway operators and other transit operators	College Diploma or Apprenticeship, less than 2 years	75210	Boat and cable ferry operators and related occupations	No Formal Education	high	5.0640186722361
 73301	Bus drivers, subway operators and other transit operators	College Diploma or Apprenticeship, less than 2 years	73311	Railway conductors and brakemen/women	College Diploma or Apprenticeship, less than 2 years	high	5.14262349772519
@@ -63891,6 +63894,7 @@ COPY public.career_transition_opportunities (noc, title, teer, option_noc, optio
 73310	Railway and yard locomotive engineers	College Diploma or Apprenticeship, less than 2 years	93101	Central control and process operators, petroleum, gas and chemical processing	College Diploma or Apprenticeship, less than 2 years	medium	7.54344604085399
 73310	Railway and yard locomotive engineers	College Diploma or Apprenticeship, less than 2 years	75210	Boat and cable ferry operators and related occupations	No Formal Education	medium	7.67241808638424
 73310	Railway and yard locomotive engineers	College Diploma or Apprenticeship, less than 2 years	72602	Deck officers, water transport	College Diploma or Apprenticeship, 2 or more years	medium	7.8016074841767
+74101	Letter carriers	High School Diploma	74102	Couriers and messengers	High School Diploma	medium	7.2778690503483
 73310	Railway and yard locomotive engineers	College Diploma or Apprenticeship, less than 2 years	84101	Oil and gas well drilling and related workers and services operators	High School Diploma	medium	8.03421005379061
 73310	Railway and yard locomotive engineers	College Diploma or Apprenticeship, less than 2 years	83100	Underground production and development miners	College Diploma or Apprenticeship, less than 2 years	medium	8.3160598478996
 73310	Railway and yard locomotive engineers	College Diploma or Apprenticeship, less than 2 years	73301	Bus drivers, subway operators and other transit operators	College Diploma or Apprenticeship, less than 2 years	medium	8.42914184649408
@@ -63926,6 +63930,7 @@ COPY public.career_transition_opportunities (noc, title, teer, option_noc, optio
 73400	Heavy equipment operators	College Diploma or Apprenticeship, less than 2 years	72501	Water well drillers	College Diploma or Apprenticeship, 2 or more years	high	3.87740442708272
 73400	Heavy equipment operators	College Diploma or Apprenticeship, less than 2 years	84101	Oil and gas well drilling and related workers and services operators	High School Diploma	high	4.07826203364709
 73400	Heavy equipment operators	College Diploma or Apprenticeship, less than 2 years	74204	Utility maintenance workers	High School Diploma	high	4.10900914853046
+75110	Construction trades helpers and labourers	No Formal Education	85100	Livestock labourers	No Formal Education	high	4.63574601801698
 73400	Heavy equipment operators	College Diploma or Apprenticeship, less than 2 years	83110	Logging machinery operators	College Diploma or Apprenticeship, less than 2 years	high	4.10971673187922
 73400	Heavy equipment operators	College Diploma or Apprenticeship, less than 2 years	75101	Material handlers	No Formal Education	high	4.69125944655594
 73400	Heavy equipment operators	College Diploma or Apprenticeship, less than 2 years	72320	Bricklayers	College Diploma or Apprenticeship, 2 or more years	high	4.86922479555467
@@ -63962,6 +63967,7 @@ COPY public.career_transition_opportunities (noc, title, teer, option_noc, optio
 73402	Drillers and blasters - surface mining, quarrying and construction	College Diploma or Apprenticeship, less than 2 years	83101	Oil and gas well drillers, servicers, testers and related workers	College Diploma or Apprenticeship, less than 2 years	high	3.77654582784984
 73402	Drillers and blasters - surface mining, quarrying and construction	College Diploma or Apprenticeship, less than 2 years	72603	Engineer officers, water transport	College Diploma or Apprenticeship, 2 or more years	high	4.93161539859892
 73402	Drillers and blasters - surface mining, quarrying and construction	College Diploma or Apprenticeship, less than 2 years	82030	Agricultural service contractors and farm supervisors	College Diploma or Apprenticeship, 2 or more years	high	4.93274658873941
+74101	Letter carriers	High School Diploma	75201	Delivery service drivers and door-to-door distributors	No Formal Education	medium	7.2778690503483
 73402	Drillers and blasters - surface mining, quarrying and construction	College Diploma or Apprenticeship, less than 2 years	92101	Water and waste treatment plant operators	College Diploma or Apprenticeship, 2 or more years	high	5.78078866411617
 73402	Drillers and blasters - surface mining, quarrying and construction	College Diploma or Apprenticeship, less than 2 years	72404	Aircraft mechanics and aircraft inspectors	College Diploma or Apprenticeship, 2 or more years	high	6.10857479613792
 73402	Drillers and blasters - surface mining, quarrying and construction	College Diploma or Apprenticeship, less than 2 years	72602	Deck officers, water transport	College Diploma or Apprenticeship, 2 or more years	medium	6.53761103881595
@@ -63997,10 +64003,6 @@ COPY public.career_transition_opportunities (noc, title, teer, option_noc, optio
 74100	Mail and parcel sorters and related occupations	High School Diploma	95101	Labourers in metal fabrication	No Formal Education	medium	6.40373729321318
 74100	Mail and parcel sorters and related occupations	High School Diploma	95100	Labourers in mineral and metal processing	No Formal Education	medium	6.40373729321318
 74100	Mail and parcel sorters and related occupations	High School Diploma	95104	Labourers in rubber and plastic products manufacturing	No Formal Education	medium	6.40373729321318
-74100	Mail and parcel sorters and related occupations	High School Diploma	95106	Labourers in food and beverage processing	No Formal Education	medium	6.40373729321318
-74101	Letter carriers	High School Diploma	65329	Other service support occupations	No Formal Education	medium	6.76275535853183
-74101	Letter carriers	High School Diploma	74102	Couriers and messengers	High School Diploma	medium	7.2778690503483
-74101	Letter carriers	High School Diploma	75201	Delivery service drivers and door-to-door distributors	No Formal Education	medium	7.2778690503483
 74101	Letter carriers	High School Diploma	65201	Food counter attendants, kitchen helpers and related support occupations	No Formal Education	medium	8.15556126399927
 74101	Letter carriers	High School Diploma	65310	Light duty cleaners	No Formal Education	medium	8.31034474147791
 74101	Letter carriers	High School Diploma	74100	Mail and parcel sorters and related occupations	High School Diploma	medium	8.31425743092456
@@ -64046,7 +64048,7 @@ COPY public.career_transition_opportunities (noc, title, teer, option_noc, optio
 74200	Railway yard and track maintenance workers	High School Diploma	72500	Crane operators	College Diploma or Apprenticeship, 2 or more years	high	3.75198113043706
 74200	Railway yard and track maintenance workers	High School Diploma	74201	Water transport deck and engine room crew	High School Diploma	high	4.87829327582427
 74200	Railway yard and track maintenance workers	High School Diploma	72203	Electrical power line and cable workers	College Diploma or Apprenticeship, 2 or more years	high	4.98130904245553
-74200	Railway yard and track maintenance workers	High School Diploma	75100	Longshore workers	No Formal Education	high	4.98765243807647
+80021	Managers in horticulture	Management	80022	Managers in aquaculture	Management	high	0
 74200	Railway yard and track maintenance workers	High School Diploma	84120	Specialized livestock workers and farm machinery operators	High School Diploma	high	5.32830697848734
 74200	Railway yard and track maintenance workers	High School Diploma	85100	Livestock labourers	No Formal Education	high	5.32830697848734
 74200	Railway yard and track maintenance workers	High School Diploma	72403	Railway carmen/women	College Diploma or Apprenticeship, 2 or more years	high	5.33695671866957
@@ -64213,7 +64215,6 @@ COPY public.career_transition_opportunities (noc, title, teer, option_noc, optio
 75110	Construction trades helpers and labourers	No Formal Education	72104	Structural metal and platework fabricators and fitters	College Diploma or Apprenticeship, 2 or more years	high	4.52926754436605
 75110	Construction trades helpers and labourers	No Formal Education	73100	Concrete finishers	College Diploma or Apprenticeship, less than 2 years	high	4.58767342003008
 75110	Construction trades helpers and labourers	No Formal Education	84120	Specialized livestock workers and farm machinery operators	High School Diploma	high	4.63574601801698
-75110	Construction trades helpers and labourers	No Formal Education	85100	Livestock labourers	No Formal Education	high	4.63574601801698
 75110	Construction trades helpers and labourers	No Formal Education	75211	Railway and motor transport labourers	No Formal Education	high	4.67801045145722
 75110	Construction trades helpers and labourers	No Formal Education	72411	Auto body collision, refinishing and glass technicians and damage repair estimators	College Diploma or Apprenticeship, 2 or more years	high	4.72502346460529
 75110	Construction trades helpers and labourers	No Formal Education	73102	Plasterers, drywall installers and finishers and lathers	College Diploma or Apprenticeship, less than 2 years	high	4.83944148705364
@@ -64377,7 +64378,6 @@ COPY public.career_transition_opportunities (noc, title, teer, option_noc, optio
 80020	Managers in agriculture	Management	64200	Tailors, dressmakers, furriers and milliners	High School Diploma	medium	8.58602144336245
 80020	Managers in agriculture	Management	72321	Insulators	College Diploma or Apprenticeship, 2 or more years	medium	8.65582829675274
 80020	Managers in agriculture	Management	75211	Railway and motor transport labourers	No Formal Education	medium	8.6971535094971
-80021	Managers in horticulture	Management	80022	Managers in aquaculture	Management	high	0
 80021	Managers in horticulture	Management	80010	Managers in natural resources production and fishing	Management	high	1.31489077328683
 80021	Managers in horticulture	Management	21111	Forestry professionals	University Degree	high	5.35081935711703
 80021	Managers in horticulture	Management	82010	Supervisors, logging and forestry	College Diploma or Apprenticeship, 2 or more years	high	5.5743528752632
@@ -64419,6 +64419,7 @@ COPY public.career_transition_opportunities (noc, title, teer, option_noc, optio
 80022	Managers in aquaculture	Management	92013	Supervisors, plastic and rubber products manufacturing	College Diploma or Apprenticeship, 2 or more years	medium	8.2012998533015
 82010	Supervisors, logging and forestry	College Diploma or Apprenticeship, 2 or more years	80021	Managers in horticulture	Management	high	5.5743528752632
 82010	Supervisors, logging and forestry	College Diploma or Apprenticeship, 2 or more years	80022	Managers in aquaculture	Management	high	5.5743528752632
+82020	Supervisors, mining and quarrying	College Diploma or Apprenticeship, 2 or more years	92014	Supervisors, forest products processing	College Diploma or Apprenticeship, 2 or more years	high	5.44634799723329
 82010	Supervisors, logging and forestry	College Diploma or Apprenticeship, 2 or more years	82031	Contractors and supervisors, landscaping, grounds maintenance and horticulture services	College Diploma or Apprenticeship, 2 or more years	high	5.65927675065318
 82010	Supervisors, logging and forestry	College Diploma or Apprenticeship, 2 or more years	72010	Contractors and supervisors, machining, metal forming, shaping and erecting trades and related occupations	College Diploma or Apprenticeship, 2 or more years	high	5.69714794716399
 82010	Supervisors, logging and forestry	College Diploma or Apprenticeship, 2 or more years	80010	Managers in natural resources production and fishing	Management	high	5.78378416147754
@@ -64451,7 +64452,6 @@ COPY public.career_transition_opportunities (noc, title, teer, option_noc, optio
 82020	Supervisors, mining and quarrying	College Diploma or Apprenticeship, 2 or more years	72022	Supervisors, printing and related occupations	College Diploma or Apprenticeship, 2 or more years	high	5.44634799723329
 82020	Supervisors, mining and quarrying	College Diploma or Apprenticeship, 2 or more years	92024	Supervisors, other products manufacturing and assembly	College Diploma or Apprenticeship, 2 or more years	high	5.44634799723329
 82020	Supervisors, mining and quarrying	College Diploma or Apprenticeship, 2 or more years	92023	Supervisors, other mechanical and metal products manufacturing	College Diploma or Apprenticeship, 2 or more years	high	5.44634799723329
-82020	Supervisors, mining and quarrying	College Diploma or Apprenticeship, 2 or more years	92014	Supervisors, forest products processing	College Diploma or Apprenticeship, 2 or more years	high	5.44634799723329
 82020	Supervisors, mining and quarrying	College Diploma or Apprenticeship, 2 or more years	92015	Supervisors, textile, fabric, fur and leather products processing and manufacturing	College Diploma or Apprenticeship, 2 or more years	high	5.44634799723329
 82020	Supervisors, mining and quarrying	College Diploma or Apprenticeship, 2 or more years	92010	Supervisors, mineral and metal processing	College Diploma or Apprenticeship, 2 or more years	high	5.44634799723329
 82020	Supervisors, mining and quarrying	College Diploma or Apprenticeship, 2 or more years	92012	Supervisors, food and beverage processing	College Diploma or Apprenticeship, 2 or more years	high	5.44634799723329
@@ -64481,6 +64481,7 @@ COPY public.career_transition_opportunities (noc, title, teer, option_noc, optio
 82030	Agricultural service contractors and farm supervisors	College Diploma or Apprenticeship, 2 or more years	73402	Drillers and blasters - surface mining, quarrying and construction	College Diploma or Apprenticeship, less than 2 years	high	4.93274658873941
 82030	Agricultural service contractors and farm supervisors	College Diploma or Apprenticeship, 2 or more years	83101	Oil and gas well drillers, servicers, testers and related workers	College Diploma or Apprenticeship, less than 2 years	high	5.01853467945981
 82030	Agricultural service contractors and farm supervisors	College Diploma or Apprenticeship, 2 or more years	85102	Aquaculture and marine harvest labourers	No Formal Education	high	5.66795597390222
+85100	Livestock labourers	No Formal Education	85102	Aquaculture and marine harvest labourers	No Formal Education	high	3.5462265725074
 82030	Agricultural service contractors and farm supervisors	College Diploma or Apprenticeship, 2 or more years	74200	Railway yard and track maintenance workers	High School Diploma	high	5.71146406288949
 82030	Agricultural service contractors and farm supervisors	College Diploma or Apprenticeship, 2 or more years	84120	Specialized livestock workers and farm machinery operators	High School Diploma	high	5.73814118735756
 82030	Agricultural service contractors and farm supervisors	College Diploma or Apprenticeship, 2 or more years	85100	Livestock labourers	No Formal Education	high	5.73814118735756
@@ -64511,6 +64512,7 @@ COPY public.career_transition_opportunities (noc, title, teer, option_noc, optio
 82031	Contractors and supervisors, landscaping, grounds maintenance and horticulture services	College Diploma or Apprenticeship, 2 or more years	72011	Contractors and supervisors, electrical trades and telecommunications occupations	College Diploma or Apprenticeship, 2 or more years	medium	6.45146568121528
 82031	Contractors and supervisors, landscaping, grounds maintenance and horticulture services	College Diploma or Apprenticeship, 2 or more years	72014	Contractors and supervisors, other construction trades, installers, repairers and servicers	College Diploma or Apprenticeship, 2 or more years	medium	6.45146568121528
 82031	Contractors and supervisors, landscaping, grounds maintenance and horticulture services	College Diploma or Apprenticeship, 2 or more years	92021	Supervisors, electronics and electrical products manufacturing	College Diploma or Apprenticeship, 2 or more years	medium	6.45857656953013
+90011	Utilities managers	Management	70010	Construction managers	Management	high	6.26985302893154
 82031	Contractors and supervisors, landscaping, grounds maintenance and horticulture services	College Diploma or Apprenticeship, 2 or more years	92011	Supervisors, petroleum, gas and chemical processing and utilities	College Diploma or Apprenticeship, 2 or more years	medium	6.45857656953013
 82031	Contractors and supervisors, landscaping, grounds maintenance and horticulture services	College Diploma or Apprenticeship, 2 or more years	92020	Supervisors, motor vehicle assembling	College Diploma or Apprenticeship, 2 or more years	medium	6.45857656953013
 82031	Contractors and supervisors, landscaping, grounds maintenance and horticulture services	College Diploma or Apprenticeship, 2 or more years	92013	Supervisors, plastic and rubber products manufacturing	College Diploma or Apprenticeship, 2 or more years	medium	6.45857656953013
@@ -64542,6 +64544,7 @@ COPY public.career_transition_opportunities (noc, title, teer, option_noc, optio
 83101	Oil and gas well drillers, servicers, testers and related workers	College Diploma or Apprenticeship, less than 2 years	73402	Drillers and blasters - surface mining, quarrying and construction	College Diploma or Apprenticeship, less than 2 years	high	3.77654582784984
 83101	Oil and gas well drillers, servicers, testers and related workers	College Diploma or Apprenticeship, less than 2 years	82030	Agricultural service contractors and farm supervisors	College Diploma or Apprenticeship, 2 or more years	high	5.01853467945981
 83101	Oil and gas well drillers, servicers, testers and related workers	College Diploma or Apprenticeship, less than 2 years	75100	Longshore workers	No Formal Education	high	5.4552852282897
+83121	Fishermen/women	College Diploma or Apprenticeship, less than 2 years	73100	Concrete finishers	College Diploma or Apprenticeship, less than 2 years	medium	9.42259747453692
 83101	Oil and gas well drillers, servicers, testers and related workers	College Diploma or Apprenticeship, less than 2 years	72603	Engineer officers, water transport	College Diploma or Apprenticeship, 2 or more years	high	5.94654147661186
 83101	Oil and gas well drillers, servicers, testers and related workers	College Diploma or Apprenticeship, less than 2 years	94110	Chemical plant machine operators	High School Diploma	high	6.03566315251452
 83101	Oil and gas well drillers, servicers, testers and related workers	College Diploma or Apprenticeship, less than 2 years	94107	Machine operators of other metal products	High School Diploma	high	6.05018930846955
@@ -64615,7 +64618,6 @@ COPY public.career_transition_opportunities (noc, title, teer, option_noc, optio
 83121	Fishermen/women	College Diploma or Apprenticeship, less than 2 years	72310	Carpenters	College Diploma or Apprenticeship, 2 or more years	medium	9.39636266795346
 83121	Fishermen/women	College Diploma or Apprenticeship, less than 2 years	84101	Oil and gas well drilling and related workers and services operators	High School Diploma	medium	9.40460555246634
 83121	Fishermen/women	College Diploma or Apprenticeship, less than 2 years	73110	Roofers and shinglers	College Diploma or Apprenticeship, less than 2 years	medium	9.42089259959539
-83121	Fishermen/women	College Diploma or Apprenticeship, less than 2 years	73100	Concrete finishers	College Diploma or Apprenticeship, less than 2 years	medium	9.42259747453692
 83121	Fishermen/women	College Diploma or Apprenticeship, less than 2 years	74201	Water transport deck and engine room crew	High School Diploma	medium	9.48511829944381
 84100	Underground mine service and support workers	High School Diploma	74205	Public works maintenance equipment operators and related workers	High School Diploma	high	4.45886388120111
 84100	Underground mine service and support workers	High School Diploma	22114	Landscape and horticulture technicians and specialists	College Diploma or Apprenticeship, 2 or more years	high	5.44545675348249
@@ -64654,6 +64656,7 @@ COPY public.career_transition_opportunities (noc, title, teer, option_noc, optio
 84101	Oil and gas well drilling and related workers and services operators	High School Diploma	85100	Livestock labourers	No Formal Education	high	4.93994731719039
 84101	Oil and gas well drilling and related workers and services operators	High School Diploma	95102	Labourers in chemical products processing and utilities	No Formal Education	high	5.12973037878874
 84101	Oil and gas well drilling and related workers and services operators	High School Diploma	72203	Electrical power line and cable workers	College Diploma or Apprenticeship, 2 or more years	high	5.16763892219672
+84111	Silviculture and forestry workers	High School Diploma	75212	Public works and maintenance labourers	No Formal Education	medium	6.81673553964184
 84101	Oil and gas well drilling and related workers and services operators	High School Diploma	93102	Pulping, papermaking and coating control operators	College Diploma or Apprenticeship, less than 2 years	high	5.18202132648166
 84101	Oil and gas well drilling and related workers and services operators	High School Diploma	72103	Boilermakers	College Diploma or Apprenticeship, 2 or more years	high	5.23903614123717
 84101	Oil and gas well drilling and related workers and services operators	High School Diploma	94213	Industrial painters, coaters and metal finishing process operators	High School Diploma	high	5.29337503906179
@@ -64696,7 +64699,6 @@ COPY public.career_transition_opportunities (noc, title, teer, option_noc, optio
 84111	Silviculture and forestry workers	High School Diploma	74203	Automotive and heavy truck and equipment parts installers and servicers	High School Diploma	medium	6.73330128049093
 84111	Silviculture and forestry workers	High School Diploma	94140	Process control and machine operators, food and beverage processing	High School Diploma	medium	6.77988339885373
 84111	Silviculture and forestry workers	High School Diploma	72204	Telecommunications line and cable installers and repairers	College Diploma or Apprenticeship, 2 or more years	medium	6.78342710380536
-84111	Silviculture and forestry workers	High School Diploma	75212	Public works and maintenance labourers	No Formal Education	medium	6.81673553964184
 84120	Specialized livestock workers and farm machinery operators	High School Diploma	85100	Livestock labourers	No Formal Education	high	0
 84120	Specialized livestock workers and farm machinery operators	High School Diploma	84111	Silviculture and forestry workers	High School Diploma	high	3.1988839306945
 84120	Specialized livestock workers and farm machinery operators	High School Diploma	85102	Aquaculture and marine harvest labourers	No Formal Education	high	3.5462265725074
@@ -64739,7 +64741,6 @@ COPY public.career_transition_opportunities (noc, title, teer, option_noc, optio
 84121	Fishing vessel deckhands	High School Diploma	74201	Water transport deck and engine room crew	High School Diploma	medium	9.48511829944381
 85100	Livestock labourers	No Formal Education	84120	Specialized livestock workers and farm machinery operators	High School Diploma	high	0
 85100	Livestock labourers	No Formal Education	84111	Silviculture and forestry workers	High School Diploma	high	3.1988839306945
-85100	Livestock labourers	No Formal Education	85102	Aquaculture and marine harvest labourers	No Formal Education	high	3.5462265725074
 85100	Livestock labourers	No Formal Education	74204	Utility maintenance workers	High School Diploma	high	4.05362968178064
 85100	Livestock labourers	No Formal Education	75101	Material handlers	No Formal Education	high	4.25386433010718
 85100	Livestock labourers	No Formal Education	85103	Nursery and greenhouse labourers	No Formal Education	high	4.38323418654242
@@ -64786,6 +64787,7 @@ COPY public.career_transition_opportunities (noc, title, teer, option_noc, optio
 85102	Aquaculture and marine harvest labourers	No Formal Education	83120	Fishing masters and officers	College Diploma or Apprenticeship, less than 2 years	high	4.91376420988655
 85102	Aquaculture and marine harvest labourers	No Formal Education	83121	Fishermen/women	College Diploma or Apprenticeship, less than 2 years	high	4.91376420988655
 85102	Aquaculture and marine harvest labourers	No Formal Education	74204	Utility maintenance workers	High School Diploma	high	5.65977852671719
+90011	Utilities managers	Management	70011	Home building and renovation managers	Management	high	6.26985302893154
 85102	Aquaculture and marine harvest labourers	No Formal Education	82030	Agricultural service contractors and farm supervisors	College Diploma or Apprenticeship, 2 or more years	high	5.66795597390222
 85102	Aquaculture and marine harvest labourers	No Formal Education	74200	Railway yard and track maintenance workers	High School Diploma	high	5.79843632844748
 85102	Aquaculture and marine harvest labourers	No Formal Education	84101	Oil and gas well drilling and related workers and services operators	High School Diploma	high	6.13288738585059
@@ -64829,6 +64831,7 @@ COPY public.career_transition_opportunities (noc, title, teer, option_noc, optio
 85104	Trappers and hunters	No Formal Education	74204	Utility maintenance workers	High School Diploma	medium	8.57122209720274
 85104	Trappers and hunters	No Formal Education	85103	Nursery and greenhouse labourers	No Formal Education	medium	8.72558335805072
 85104	Trappers and hunters	No Formal Education	73300	Transport truck drivers	College Diploma or Apprenticeship, less than 2 years	medium	9.04625639333437
+90011	Utilities managers	Management	20010	Engineering managers	Management	medium	6.46830985755463
 85104	Trappers and hunters	No Formal Education	74205	Public works maintenance equipment operators and related workers	High School Diploma	medium	9.19526905538527
 85104	Trappers and hunters	No Formal Education	73200	Residential and commercial installers and servicers	College Diploma or Apprenticeship, less than 2 years	medium	9.27577146200654
 85104	Trappers and hunters	No Formal Education	72429	Other small engine and small equipment repairers	College Diploma or Apprenticeship, 2 or more years	medium	9.36928162347311
@@ -64871,6 +64874,7 @@ COPY public.career_transition_opportunities (noc, title, teer, option_noc, optio
 85111	Oil and gas drilling, servicing and related labourers	No Formal Education	72104	Structural metal and platework fabricators and fitters	College Diploma or Apprenticeship, 2 or more years	high	5.47305681016771
 85111	Oil and gas drilling, servicing and related labourers	No Formal Education	74204	Utility maintenance workers	High School Diploma	high	5.580617808938
 85111	Oil and gas drilling, servicing and related labourers	No Formal Education	73101	Tilesetters	College Diploma or Apprenticeship, less than 2 years	high	5.59358813343978
+90011	Utilities managers	Management	90010	Manufacturing managers	Management	medium	6.54076185066416
 85111	Oil and gas drilling, servicing and related labourers	No Formal Education	94213	Industrial painters, coaters and metal finishing process operators	High School Diploma	high	5.70009977409682
 85111	Oil and gas drilling, servicing and related labourers	No Formal Education	83100	Underground production and development miners	College Diploma or Apprenticeship, less than 2 years	high	5.76208247072809
 85111	Oil and gas drilling, servicing and related labourers	No Formal Education	72105	Ironworkers	College Diploma or Apprenticeship, 2 or more years	high	5.81026259217882
@@ -64916,10 +64920,6 @@ COPY public.career_transition_opportunities (noc, title, teer, option_noc, optio
 90010	Manufacturing managers	Management	10012	Purchasing managers	Management	medium	6.82803695813993
 90010	Manufacturing managers	Management	21331	Geological engineers	University Degree	medium	6.84024404536253
 90010	Manufacturing managers	Management	21330	Mining engineers	University Degree	medium	6.84024404536253
-90011	Utilities managers	Management	70010	Construction managers	Management	high	6.26985302893154
-90011	Utilities managers	Management	70011	Home building and renovation managers	Management	high	6.26985302893154
-90011	Utilities managers	Management	20010	Engineering managers	Management	medium	6.46830985755463
-90011	Utilities managers	Management	90010	Manufacturing managers	Management	medium	6.54076185066416
 90011	Utilities managers	Management	70012	Facility operation and maintenance managers	Management	medium	6.64438278690636
 90011	Utilities managers	Management	92011	Supervisors, petroleum, gas and chemical processing and utilities	College Diploma or Apprenticeship, 2 or more years	medium	6.7415914398563
 90011	Utilities managers	Management	92012	Supervisors, food and beverage processing	College Diploma or Apprenticeship, 2 or more years	medium	6.7415914398563
@@ -65046,6 +65046,7 @@ COPY public.career_transition_opportunities (noc, title, teer, option_noc, optio
 92015	Supervisors, textile, fabric, fur and leather products processing and manufacturing	College Diploma or Apprenticeship, 2 or more years	92024	Supervisors, other products manufacturing and assembly	College Diploma or Apprenticeship, 2 or more years	high	0
 92015	Supervisors, textile, fabric, fur and leather products processing and manufacturing	College Diploma or Apprenticeship, 2 or more years	92023	Supervisors, other mechanical and metal products manufacturing	College Diploma or Apprenticeship, 2 or more years	high	0
 92015	Supervisors, textile, fabric, fur and leather products processing and manufacturing	College Diploma or Apprenticeship, 2 or more years	92014	Supervisors, forest products processing	College Diploma or Apprenticeship, 2 or more years	high	0
+92020	Supervisors, motor vehicle assembling	College Diploma or Apprenticeship, 2 or more years	72013	Contractors and supervisors, carpentry trades	College Diploma or Apprenticeship, 2 or more years	high	5.44634799723329
 92015	Supervisors, textile, fabric, fur and leather products processing and manufacturing	College Diploma or Apprenticeship, 2 or more years	92010	Supervisors, mineral and metal processing	College Diploma or Apprenticeship, 2 or more years	high	0
 92015	Supervisors, textile, fabric, fur and leather products processing and manufacturing	College Diploma or Apprenticeship, 2 or more years	92012	Supervisors, food and beverage processing	College Diploma or Apprenticeship, 2 or more years	high	0
 92015	Supervisors, textile, fabric, fur and leather products processing and manufacturing	College Diploma or Apprenticeship, 2 or more years	92020	Supervisors, motor vehicle assembling	College Diploma or Apprenticeship, 2 or more years	high	0
@@ -65075,7 +65076,6 @@ COPY public.career_transition_opportunities (noc, title, teer, option_noc, optio
 92020	Supervisors, motor vehicle assembling	College Diploma or Apprenticeship, 2 or more years	72011	Contractors and supervisors, electrical trades and telecommunications occupations	College Diploma or Apprenticeship, 2 or more years	high	4.79462341695945
 92020	Supervisors, motor vehicle assembling	College Diploma or Apprenticeship, 2 or more years	72014	Contractors and supervisors, other construction trades, installers, repairers and servicers	College Diploma or Apprenticeship, 2 or more years	high	4.79462341695945
 92020	Supervisors, motor vehicle assembling	College Diploma or Apprenticeship, 2 or more years	82020	Supervisors, mining and quarrying	College Diploma or Apprenticeship, 2 or more years	high	5.44634799723329
-92020	Supervisors, motor vehicle assembling	College Diploma or Apprenticeship, 2 or more years	72013	Contractors and supervisors, carpentry trades	College Diploma or Apprenticeship, 2 or more years	high	5.44634799723329
 92020	Supervisors, motor vehicle assembling	College Diploma or Apprenticeship, 2 or more years	72012	Contractors and supervisors, pipefitting trades	College Diploma or Apprenticeship, 2 or more years	high	5.44634799723329
 92020	Supervisors, motor vehicle assembling	College Diploma or Apprenticeship, 2 or more years	82021	Contractors and supervisors, oil and gas drilling and services	College Diploma or Apprenticeship, 2 or more years	high	5.44634799723329
 92020	Supervisors, motor vehicle assembling	College Diploma or Apprenticeship, 2 or more years	72020	Contractors and supervisors, mechanic trades	College Diploma or Apprenticeship, 2 or more years	high	5.48815142858439
@@ -65135,6 +65135,7 @@ COPY public.career_transition_opportunities (noc, title, teer, option_noc, optio
 92023	Supervisors, other mechanical and metal products manufacturing	College Diploma or Apprenticeship, 2 or more years	72011	Contractors and supervisors, electrical trades and telecommunications occupations	College Diploma or Apprenticeship, 2 or more years	high	4.79462341695945
 92023	Supervisors, other mechanical and metal products manufacturing	College Diploma or Apprenticeship, 2 or more years	72014	Contractors and supervisors, other construction trades, installers, repairers and servicers	College Diploma or Apprenticeship, 2 or more years	high	4.79462341695945
 92023	Supervisors, other mechanical and metal products manufacturing	College Diploma or Apprenticeship, 2 or more years	82020	Supervisors, mining and quarrying	College Diploma or Apprenticeship, 2 or more years	high	5.44634799723329
+94100	Machine operators, mineral and metal processing	High School Diploma	72405	Machine fitters	College Diploma or Apprenticeship, 2 or more years	high	4.35125649723315
 92023	Supervisors, other mechanical and metal products manufacturing	College Diploma or Apprenticeship, 2 or more years	72013	Contractors and supervisors, carpentry trades	College Diploma or Apprenticeship, 2 or more years	high	5.44634799723329
 92023	Supervisors, other mechanical and metal products manufacturing	College Diploma or Apprenticeship, 2 or more years	72012	Contractors and supervisors, pipefitting trades	College Diploma or Apprenticeship, 2 or more years	high	5.44634799723329
 92023	Supervisors, other mechanical and metal products manufacturing	College Diploma or Apprenticeship, 2 or more years	82021	Contractors and supervisors, oil and gas drilling and services	College Diploma or Apprenticeship, 2 or more years	high	5.44634799723329
@@ -65294,7 +65295,6 @@ COPY public.career_transition_opportunities (noc, title, teer, option_noc, optio
 94100	Machine operators, mineral and metal processing	High School Diploma	93102	Pulping, papermaking and coating control operators	College Diploma or Apprenticeship, less than 2 years	high	4.2313099790647
 94100	Machine operators, mineral and metal processing	High School Diploma	94204	Mechanical assemblers and inspectors	High School Diploma	high	4.25087027632771
 94100	Machine operators, mineral and metal processing	High School Diploma	94140	Process control and machine operators, food and beverage processing	High School Diploma	high	4.34387539895981
-94100	Machine operators, mineral and metal processing	High School Diploma	72405	Machine fitters	College Diploma or Apprenticeship, 2 or more years	high	4.35125649723315
 94100	Machine operators, mineral and metal processing	High School Diploma	94112	Rubber processing machine operators and related workers	High School Diploma	high	4.3595349048939
 94100	Machine operators, mineral and metal processing	High School Diploma	84101	Oil and gas well drilling and related workers and services operators	High School Diploma	high	4.57903029103101
 94100	Machine operators, mineral and metal processing	High School Diploma	75101	Material handlers	No Formal Education	high	4.63833965777787
@@ -65620,6 +65620,7 @@ COPY public.career_transition_opportunities (noc, title, teer, option_noc, optio
 94130	Textile fibre and yarn, hide and pelt processing machine operators and workers	High School Diploma	94124	Woodworking machine operators	High School Diploma	high	2.54111653147125
 94130	Textile fibre and yarn, hide and pelt processing machine operators and workers	High School Diploma	94129	Other wood processing machine operators	High School Diploma	high	2.85273019537055
 94130	Textile fibre and yarn, hide and pelt processing machine operators and workers	High School Diploma	72106	Welders and related machine operators	College Diploma or Apprenticeship, 2 or more years	high	2.9188160774268
+94132	Industrial sewing machine operators	High School Diploma	95103	Labourers in wood, pulp and paper processing	No Formal Education	high	3.64341681850889
 94130	Textile fibre and yarn, hide and pelt processing machine operators and workers	High School Diploma	94102	Glass forming and finishing machine operators and glass cutters	High School Diploma	high	3.21299899970611
 94130	Textile fibre and yarn, hide and pelt processing machine operators and workers	High School Diploma	94121	Pulp mill, papermaking and finishing machine operators	High School Diploma	high	3.82263115383979
 94130	Textile fibre and yarn, hide and pelt processing machine operators and workers	High School Diploma	94105	Metalworking and forging machine operators	High School Diploma	high	3.90239954414098
@@ -65658,7 +65659,6 @@ COPY public.career_transition_opportunities (noc, title, teer, option_noc, optio
 94131	Weavers, knitters and other fabric making occupations	High School Diploma	94213	Industrial painters, coaters and metal finishing process operators	High School Diploma	high	6.21550169048236
 94132	Industrial sewing machine operators	High School Diploma	95101	Labourers in metal fabrication	No Formal Education	high	3.64341681850889
 94132	Industrial sewing machine operators	High School Diploma	95100	Labourers in mineral and metal processing	No Formal Education	high	3.64341681850889
-94132	Industrial sewing machine operators	High School Diploma	95103	Labourers in wood, pulp and paper processing	No Formal Education	high	3.64341681850889
 94132	Industrial sewing machine operators	High School Diploma	95104	Labourers in rubber and plastic products manufacturing	No Formal Education	high	3.64341681850889
 94132	Industrial sewing machine operators	High School Diploma	95106	Labourers in food and beverage processing	No Formal Education	high	3.64341681850889
 94132	Industrial sewing machine operators	High School Diploma	94131	Weavers, knitters and other fabric making occupations	High School Diploma	high	4.40982762552748
@@ -65889,6 +65889,7 @@ COPY public.career_transition_opportunities (noc, title, teer, option_noc, optio
 94201	Electronics assemblers, fabricators, inspectors and testers	High School Diploma	94213	Industrial painters, coaters and metal finishing process operators	High School Diploma	high	4.70291168548088
 94201	Electronics assemblers, fabricators, inspectors and testers	High School Diploma	94103	Concrete, clay and stone forming operators	High School Diploma	high	4.81454535729392
 94201	Electronics assemblers, fabricators, inspectors and testers	High School Diploma	94219	Other products assemblers, finishers and inspectors	High School Diploma	high	5.04287163540118
+94211	Assemblers and inspectors of other wood products	High School Diploma	94104	Inspectors and testers, mineral and metal processing	High School Diploma	high	0
 94201	Electronics assemblers, fabricators, inspectors and testers	High School Diploma	94203	Assemblers, fabricators and inspectors, industrial electrical motors and transformers	High School Diploma	high	5.20912489893233
 94201	Electronics assemblers, fabricators, inspectors and testers	High School Diploma	94111	Plastics processing machine operators	High School Diploma	high	5.26410763938447
 94201	Electronics assemblers, fabricators, inspectors and testers	High School Diploma	94105	Metalworking and forging machine operators	High School Diploma	high	5.28743919149076
@@ -65996,7 +65997,6 @@ COPY public.career_transition_opportunities (noc, title, teer, option_noc, optio
 94210	Furniture and fixture assemblers, finishers, refinishers and inspectors	High School Diploma	94106	Machining tool operators	High School Diploma	high	5.27016692033495
 94210	Furniture and fixture assemblers, finishers, refinishers and inspectors	High School Diploma	94140	Process control and machine operators, food and beverage processing	High School Diploma	high	5.29644509120684
 94210	Furniture and fixture assemblers, finishers, refinishers and inspectors	High School Diploma	73101	Tilesetters	College Diploma or Apprenticeship, less than 2 years	high	5.35777137766361
-94211	Assemblers and inspectors of other wood products	High School Diploma	94104	Inspectors and testers, mineral and metal processing	High School Diploma	high	0
 94211	Assemblers and inspectors of other wood products	High School Diploma	94133	Inspectors and graders, textile, fabric, fur and leather products manufacturing	High School Diploma	high	0
 94211	Assemblers and inspectors of other wood products	High School Diploma	94201	Electronics assemblers, fabricators, inspectors and testers	High School Diploma	high	3.92363135132834
 94211	Assemblers and inspectors of other wood products	High School Diploma	94140	Process control and machine operators, food and beverage processing	High School Diploma	high	4.2509706673592
@@ -68506,6 +68506,7 @@ COPY public.high_opportunity_occupations (noc, occupation, openings_forecast, wa
 11102	Financial advisors	770	24	35	73.08	69626.1764461252	Conventional, Enterprising, Investigative	Reading Comprehension	Active Listening	Critical Thinking	1	vancouver_island_coast
 11102	Financial advisors	710	24	35	73.08	69626.1764461252	Conventional, Enterprising, Investigative	Reading Comprehension	Active Listening	Critical Thinking	1	thompson_okanagan
 11102	Financial advisors	160	24	35	73.08	69626.1764461252	Conventional, Enterprising, Investigative	Reading Comprehension	Active Listening	Critical Thinking	1	kootenay
+43204	Operations members of the Canadian Armed Forces	470	29.42	38.12	49.72	83000	\N	\N	\N	\N	3	vancouver_island_coast
 11102	Financial advisors	60	24	35	73.08	69626.1764461252	Conventional, Enterprising, Investigative	Reading Comprehension	Active Listening	Critical Thinking	1	cariboo
 11102	Financial advisors	50	24	35	73.08	69626.1764461252	Conventional, Enterprising, Investigative	Reading Comprehension	Active Listening	Critical Thinking	1	northeast
 11103	Securities agents, investment dealers and brokers	1110	30	38.46	69.71	70086.1197008693	Enterprising, Conventional, Social	Active Listening	Critical Thinking	Judgment and Decision Making	1	british_columbia
@@ -69016,7 +69017,6 @@ COPY public.high_opportunity_occupations (noc, occupation, openings_forecast, wa
 43202	By-law enforcement and other regulatory officers	130	31	38.6	48	76290.9103053042	Realistic, Conventional, Investigative	Critical Thinking	Speaking	Active Listening	3	vancouver_island_coast
 43202	By-law enforcement and other regulatory officers	70	31	38.6	48	76290.9103053042	Realistic, Conventional, Investigative	Critical Thinking	Speaking	Active Listening	3	thompson_okanagan
 43202	By-law enforcement and other regulatory officers	30	31	38.6	48	76290.9103053042	Realistic, Conventional, Investigative	Critical Thinking	Speaking	Active Listening	3	kootenay
-43204	Operations members of the Canadian Armed Forces	470	29.42	38.12	49.72	83000	\N	\N	\N	\N	3	vancouver_island_coast
 50011	Managers - publishing, motion pictures, broadcasting and performing arts	30	29.17	44.11	79.53	90255.0668731401	Enterprising, Conventional, Social	Active Listening	Monitoring	Reading Comprehension	0	kootenay
 50012	Recreation, sports and fitness program and service directors	20	23.08	39.9	107.69	82702.1569334936	Enterprising, Conventional, Social	Critical Thinking	Management of Personnel Resources	Speaking	0	northeast
 51110	Editors	80	20	33.33	50	50812.2689925074	Artistic, Conventional, Enterprising	Reading Comprehension	Writing	Active Listening	1	thompson_okanagan
@@ -70059,10 +70059,10 @@ COPY public.monthly_labour_market_updates (year, month, total_employed, total_un
 2026	2	2927400	190700	190400	331800	1970000	625600	343500	1983200	620900	1408900	1518500	1413700	1534000	-0.7	-20200	-1.4	-32500	2.2	12300	0	6.1	-0.4	64.4	0.1	6.1	0.1	65	4844200	808100	3068600	551200	150900	141600	69700	54200	6	5.9	2912400	5.2	4.3	457700	6	6.3	1906100	6.5	5.7	311700	6.4	4.4	82200	6.7	7.3	82300	9.5	4.3	37200	8.8	6.2	35200	3.8	7200	9.2	2000	-2.5	-6900	-0.7	-1600	-2.8	-5400	-1.2	-4900	-2	-3600	-2.4	-1000	-2.9	-3400	1.7	5300	-0.1	-100	-1.6	-2400	0.6	100	0.6	2400	-3.9	-3800	-3.4	-4500
 2026	3	2908200	209800	190700	327600	1955000	625600	331800	1970000	625600	1396100	1512100	1408900	1518500	-0.7	-19200	-1	-23700	0.8	4600	0.6	6.7	0	64.4	0.1	6.1	0.1	65	4842000	808200	3065800	551300	150900	141700	69800	54300	6.6	5.3	2898200	5.7	4.3	455500	6.5	5.4	1899800	7.8	5.8	306100	7.1	6.3	82200	6.3	5.5	82900	9.5	6.4	37100	8.7	7	34600	3.8	7200	9.2	2000	-2.5	-6900	-0.7	-1600	-2.8	-5400	-1.2	-4900	-2	-3600	-2.4	-1000	-2.9	-3400	1.7	5300	-0.1	-100	-1.6	-2400	0.6	100	0.6	2400	-3.9	-3800	-3.4	-4500
 2026	4	2903900	210700	209800	331600	1947400	624900	327600	1955000	625600	1390200	1513700	1396100	1512100	-0.1	-4300	-0.5	-11700	1.2	7300	0.1	6.8	0	64.4	0.6	6.7	0	64.4	4840200	808500	3063200	551600	151000	141800	69900	54300	6.7	5.3	2898300	5.8	4.3	455700	6.7	5.4	1898400	8.1	5.8	302200	6.5	6.3	83300	5.8	5.5	86200	8.8	6.4	38200	9	7	34300	-3.3	-6400	-6.4	-1400	0.5	1400	1.5	3300	0.9	1600	0.5	1900	2.2	3900	-2.9	-1200	-5.3	-6200	0.4	1200	1.9	2900	-2.6	-3800	-3.4	-600	-1.9	-7700	7.3	6600	0.2	200
-2026	5	2929100	212200	210700	338800	1957400	632900	331600	1947400	624900	1410800	1518300	1390200	1513700	0.9	25200	1.5	33600	-1.4	-8400	0	6.8	0.5	64.9	0.1	6.1	0.1	65	4839000	808700	3061000	551900	151000	142000	69900	54300	7	6.3	2915000	6	5.4	456500	7.1	6.4	1904000	8.1	6.8	304600	5.2	6.7	86100	6.2	6.9	88700	8.7	6.6	40000	8.6	8.5	35100	3	5700	7.8	1600	0.9	2400	0.1	300	-2	-3600	0.6	2500	2.5	4600	-3.3	-1300	5.9	6500	-0.3	-800	0.6	1000	7.2	10200	-4.1	-700	-0.5	-2200	-4.7	-4600	2.6	3400
 2026	6	2936900	204900	212200	351000	1956600	629300	338800	1957400	632900	1412900	1524000	1410800	1518300	0.3	7800	0.2	5200	0.4	2600	-0.3	6.5	0	64.9	0.1	6.1	0.1	65	4838700	809200	3059500	552200	151100	142200	70100	54300	6.6	6.1	2945900	5.7	5.4	454300	6.8	6.3	1923100	7.5	5.9	311600	4.6	6.3	88100	5.7	6.1	90400	7.4	6.4	42600	8.2	7.3	35900	-4.6	-9000	-2.3	-500	-1.1	-3000	2.2	5000	-0.3	-500	2	8500	-1.5	-2900	2.9	1100	3.9	4600	-1	-3100	0.5	800	4.8	7300	-8.5	-1400	0	-100	-1.3	-1200	1.8	2400
 2026	7	2954700	196600	204900	354800	1981100	618800	351000	1956600	629300	1416100	1538600	1412900	1524000	0.6	17800	1.4	32500	-2.5	-14700	-0.3	6.2	0.2	65.1	-0.3	6.5	0	64.9	4839000	809700	3058400	552600	151300	142400	70200	54400	6.6	6.2	2968300	5.9	5.9	455500	6.6	6.4	1938600	7.5	5.4	316100	5.2	5.9	88100	6.3	5.4	89400	6.8	5.6	44200	7.4	7	36300	0.4	800	-2.3	-500	2.6	7000	1	2200	-0.3	-500	1.2	5000	1.7	3100	-3.5	-1400	-3.6	-4400	1.7	5300	-1.7	-2700	-0.3	-400	-6	-900	1	4000	1.1	1000	0.1	100
 2026	8	2949200	204000	196600	358300	1978200	612800	354800	1981100	618800	1414500	1534800	1416100	1538600	-0.2	-5500	-1.1	-26000	3.6	20600	0.3	6.5	0	65.1	-0.3	6.2	0.2	65.1	4839900	810300	3057700	553100	151400	142600	70400	54400	6.6	6.3	2967600	5.8	6	454400	6.8	6.6	1942200	7.2	5.1	315700	5.8	5.8	88000	5.7	7.2	87700	6.8	5.9	43800	7	8.2	35700	1.8	3400	-11.4	-2400	-1.7	-4800	-2.7	-6300	1.2	2100	2.3	10000	1.4	2700	-6.8	-2600	-1.2	-1400	-1.4	-4500	0.9	1400	0.7	1100	5	700	-0.9	-3800	-7.7	-7100	4.5	6100
+2026	5	2929100	212200	210700	338800	1957400	632900	331600	1947400	624900	1410800	1518300	1390200	1513700	0.9	25200	1.5	33600	-1.4	-8400	0	6.8	0.5	64.9	0.1	6.1	0.1	65	4839000	808700	3061000	551900	151000	142000	69900	54300	7	6.3	2915000	6	5.4	456500	7.1	6.4	1904000	8.1	6.8	304600	5.2	6.7	86100	6.2	6.9	88700	8.7	6.6	40000	8.6	8.5	35100	3	5700	7.8	1600	0.9	2400	0.1	300	-2	-3600	0.6	2500	2.5	4600	-3.3	-1300	5.9	6500	-0.3	-800	0.6	1000	7.2	10200	-4.1	-700	-0.5	-2200	-4.7	-4600	2.6	3400
 \.
 
 
@@ -72012,6 +72012,7 @@ COPY public.onet_nocs (noc2021, noc2016, soc2018, soc2018_title, soc2019) FROM s
 22300	2231	17-3029	Engineering Technologists and Technicians, Except Drafters, All Other	17-3029.08
 22300	2231	19-4042	Environmental Science and Protection Technicians, Including Health	19-4042.00
 22300	2231	53-6041	Traffic Technicians	53-6041.00
+31103	3114	29-1131	Veterinarians	29-1131.00
 22301	2232	17-3021	Aerospace Engineering and Operations Technologists and Technicians	17-3021.00
 22301	2232	17-3024	Electro-Mechanical and Mechatronics Technologists and Technicians	17-3024.00
 22301	2232	17-3024	Electro-Mechanical and Mechatronics Technologists and Technicians	17-3024.01
@@ -72098,7 +72099,6 @@ COPY public.onet_nocs (noc2021, noc2016, soc2018, soc2018_title, soc2019) FROM s
 31101	3111	29-1249	Surgeons, All Other	29-1249.00
 31102	3112	29-1215	Family Medicine Physicians	29-1215.00
 31103	3114	19-1041	Epidemiologists	19-1041.00
-31103	3114	29-1131	Veterinarians	29-1131.00
 31110	3113	29-1021	Dentists, General	29-1021.00
 31110	3113	29-1022	Oral and Maxillofacial Surgeons	29-1022.00
 31110	3113	29-1023	Orthodontists	29-1023.00
@@ -72358,6 +72358,7 @@ COPY public.onet_nocs (noc2021, noc2016, soc2018, soc2018_title, soc2019) FROM s
 41200	4011	25-1111	Criminal Justice and Law Enforcement Teachers, Postsecondary	25-1111.00
 41200	4011	25-1112	Law Teachers, Postsecondary	25-1112.00
 41200	4011	25-1113	Social Work Teachers, Postsecondary	25-1113.00
+41302	4154	21-2011	Clergy	21-2011.00
 41200	4011	25-1121	Art, Drama, and Music Teachers, Postsecondary	25-1121.00
 41200	4011	25-1122	Communications Teachers, Postsecondary	25-1122.00
 41200	4011	25-1123	English Language and Literature Teachers, Postsecondary	25-1123.00
@@ -72438,7 +72439,6 @@ COPY public.onet_nocs (noc2021, noc2016, soc2018, soc2018_title, soc2019) FROM s
 41301	3144	29-1129	Therapists, All Other	29-1129.02
 41301	3144	29-9091	Athletic Trainers	29-9091.00
 41301	4153	29-9092	Genetic Counselors	29-9092.00
-41302	4154	21-2011	Clergy	21-2011.00
 41310	0431	11-1021	General and Operations Managers	11-1021.00
 41310	4165	13-1041	Compliance Officers	13-1041.00
 41310	4165	13-1041	Compliance Officers	13-1041.01
@@ -73610,6 +73610,7 @@ COPY public.openings_careers (noc, description, industry_1_name, industry_1_perc
 11103	Securities agents, investment dealers and brokers	finance_insurance_real_estate	97	1080	professional_scientific_technical_services	2	20	construction	0	10	transportation_warehousing	0	0	retail_trade	0	0
 11109	Other financial officers	finance_insurance_real_estate	92	1750	professional_scientific_technical_services	3	70	public_administration	3	60	health_care_social_assistance	1	20	business_building_other_support_services	0	10
 11200	Human resources professionals	professional_scientific_technical_services	28.000000000000004	720	health_care_social_assistance	24	620	public_administration	19	480	other_private_services	16	400	finance_insurance_real_estate	13	330
+51100	Librarians	information_culture_recreation	100	300	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
 11201	Professional occupations in business management consulting	professional_scientific_technical_services	71	2770	finance_insurance_real_estate	11	420	health_care_social_assistance	9	340	public_administration	5	210	educational_services	4	140
 11202	Professional occupations in advertising, marketing and public relations	professional_scientific_technical_services	64	3410	information_culture_recreation	10	530	educational_services	9	500	retail_trade	8	440	other_private_services	8	420
 12010	Supervisors, general office and administrative support workers	health_care_social_assistance	38	300	public_administration	25	200	professional_scientific_technical_services	14.000000000000002	110	transportation_warehousing	14.000000000000002	110	wholesale_trade	10	80
@@ -73810,7 +73811,6 @@ COPY public.openings_careers (noc, description, industry_1_name, industry_1_perc
 45100	Student monitors, crossing guards and related occupations	educational_services	100	440	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
 50010	Library, archive, museum and art gallery managers	information_culture_recreation	86	320	retail_trade	9	30	professional_scientific_technical_services	2	10	educational_services	1	10	public_administration	1	0
 50011	Managers - publishing, motion pictures, broadcasting and performing arts	information_culture_recreation	80	610	professional_scientific_technical_services	13	100	educational_services	4	30	other_private_services	1	10	retail_trade	1	10
-51100	Librarians	information_culture_recreation	100	300	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
 51101	Conservators and curators	information_culture_recreation	82	110	professional_scientific_technical_services	7.000000000000001	10	public_administration	4	10	retail_trade	4	0	educational_services	3	0
 51102	Archivists	information_culture_recreation	52	20	public_administration	33	10	educational_services	15	0	\N	\N	\N	\N	\N	\N
 73402	Drillers and blasters - surface mining, quarrying and construction	construction	53	110	mining_oil_gas_extraction	47	100	forestry_logging_support_activities	1	0	\N	\N	\N	\N	\N	\N
@@ -92144,7 +92144,7 @@ monthly_labour_market_updates	Labour Force Survey (monthly, seasonally adjusted)
 monthly_labour_market_updates	Labour Force Survey (monthly, seasonally adjusted)	2026-01-01 08:00:00+00	\N	WorkBC LMS January_2026 (Updated)	Sheet3	\N	\N	2026-04-29 14:06:00+00
 monthly_labour_market_updates	Labour Force Survey (monthly, seasonally adjusted)	2026-03-01 08:00:00+00	\N	WorkBC LMS March_2026	Sheet3	\N	\N	2026-05-05 10:39:00+00
 monthly_labour_market_updates	Labour Force Survey (monthly, seasonally adjusted)	2026-04-01 08:00:00+00	\N	WorkBC LMS April_2026	Sheet3	\N	\N	2026-05-15 08:24:00+00
-monthly_labour_market_updates	Labour Force Survey (monthly, seasonally adjusted)	2026-05-01 08:00:00+00	\N	WorkBC LMS May_2026	Sheet3	\N	\N	2026-06-18 09:10:00+00
+monthly_labour_market_updates	Labour Force Survey (monthly, seasonally adjusted)	2026-05-01 08:00:00+00	\N	WorkBC LMS May_2026_2	Sheet3	\N	\N	2026-10-23 08:40:00+00
 monthly_labour_market_updates	Labour Force Survey (monthly, seasonally adjusted)	2026-06-01 08:00:00+00	\N	WorkBC LMS June_2026	Sheet3	\N	\N	2026-07-16 11:02:00+00
 monthly_labour_market_updates	Labour Force Survey (monthly, seasonally adjusted)	2026-07-01 08:00:00+00	\N	WorkBC LMS July_2026	Sheet3	\N	\N	2026-09-10 15:56:00+00
 monthly_labour_market_updates	Labour Force Survey (monthly, seasonally adjusted)	2026-08-01 08:00:00+00	\N	WorkBC LMS Aug_2026	Sheet3	\N	\N	2026-09-10 15:59:00+00
