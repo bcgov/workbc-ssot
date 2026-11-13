@@ -71,7 +71,6 @@ jobs:
 
     - name: Convert and load the Industry Outlook file
       run: |
-        sudo chmod +x migration/industry_outlook.sh
         docker-compose exec -T migrator bash -c "./industry_outlook.sh \"${{ github.event.client_payload.filename }}\" ${{ github.event.client_payload.year }} ${{ github.event.client_payload.month }} \"${{ github.event.client_payload.date }}\""
         sudo chown runner:docker migration/load/sources.csv
 
