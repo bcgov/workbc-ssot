@@ -121145,7 +121145,7 @@ GRANT SELECT ON TABLE public.industries TO ssot_lmmu;
 --
 
 GRANT SELECT ON TABLE public.industry_outlook TO ssot_readonly;
-GRANT SELECT ON TABLE public.industry_outlook TO ssot_lmmu;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE public.industry_outlook TO ssot_lmmu;
 
 
 --
@@ -121153,7 +121153,7 @@ GRANT SELECT ON TABLE public.industry_outlook TO ssot_lmmu;
 --
 
 GRANT SELECT ON TABLE public.labour_force_survey_industry TO ssot_readonly;
-GRANT SELECT ON TABLE public.labour_force_survey_industry TO ssot_lmmu;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE public.labour_force_survey_industry TO ssot_lmmu;
 
 
 --
@@ -121161,7 +121161,7 @@ GRANT SELECT ON TABLE public.labour_force_survey_industry TO ssot_lmmu;
 --
 
 GRANT SELECT ON TABLE public.labour_force_survey_regional_employment TO ssot_readonly;
-GRANT SELECT ON TABLE public.labour_force_survey_regional_employment TO ssot_lmmu;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE public.labour_force_survey_regional_employment TO ssot_lmmu;
 
 
 --
@@ -121169,7 +121169,7 @@ GRANT SELECT ON TABLE public.labour_force_survey_regional_employment TO ssot_lmm
 --
 
 GRANT SELECT ON TABLE public.labour_force_survey_regional_industry_province TO ssot_readonly;
-GRANT SELECT ON TABLE public.labour_force_survey_regional_industry_province TO ssot_lmmu;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE public.labour_force_survey_regional_industry_province TO ssot_lmmu;
 
 
 --
@@ -121177,7 +121177,7 @@ GRANT SELECT ON TABLE public.labour_force_survey_regional_industry_province TO s
 --
 
 GRANT SELECT ON TABLE public.labour_force_survey_regional_industry_region TO ssot_readonly;
-GRANT SELECT ON TABLE public.labour_force_survey_regional_industry_region TO ssot_lmmu;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE public.labour_force_survey_regional_industry_region TO ssot_lmmu;
 
 
 --

@@ -36,11 +36,11 @@ date="$4"
 
 # B.C. Labour Market Outlook, Industry Profiles
 ssconvert --export-type=Gnumeric_stf:stf_csv --export-file-per-sheet "data/$filename" "data/${filename%.xlsx}-%s.csv"
-cat "data/${filename%.xlsx}-Sheet1.csv" | php csv_extract.php --range 3 > load/updates/industry_outlook_${year}.csv
+cat "data/${filename%.xlsx}-Sheet1.csv" | php csv_extract.php --range 3 > load/industry_outlook.csv
 
 # Load file into database.
 psql -c "DELETE FROM industry_outlook;"
-SOURCE="/app/load/updates/industry_outlook_${year}.csv" pgloader -l workbc.lisp load/updates/industry_outlook.load
+pgloader -l workbc.lisp load/industry_outlook.load
 
 # Update sources.csv and load it into database.
 csvq --repository load --datetime-format "%Y/%m/%d %H:%i" \
