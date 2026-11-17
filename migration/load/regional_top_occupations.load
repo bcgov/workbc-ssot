@@ -34,9 +34,9 @@ load csv
 
     after load do
     $$ update regional_top_occupations set region = normalize_region_name(region); $$,
-    $$ comment on table regional_top_occupations is 'WorkBC Regional Profile Data {2026-2036} > Top 10 Occupations by region'; $$,
+    $$ comment on table regional_top_occupations is 'WorkBC Regional Profile Data {0-10} > Top 10 Occupations by region'; $$,
     $$ comment on column regional_top_occupations.region is 'Region'; $$,
     $$ comment on column regional_top_occupations.noc is 'NOC'; $$,
     $$ comment on column regional_top_occupations.occupation is 'Occupation'; $$,
-    $$ comment on column regional_top_occupations.openings is 'Job Openings {2026-2036}'; $$
+    $$ comment on column regional_top_occupations.openings is 'Job Openings {0-10}'; $$
 ;

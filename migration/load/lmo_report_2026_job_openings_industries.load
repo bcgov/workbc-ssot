@@ -46,7 +46,7 @@ load csv
     $$
 
     after load do
-    $$ comment on table lmo_report_2026_job_openings_industries is 'Labour Market Outlook {2026-2036} > Figure 3-1: Top Ten Major Industry Groups by Job Openings, B.C., 2026-35'; $$,
+    $$ comment on table lmo_report_2026_job_openings_industries is 'Labour Market Outlook {0-10} > Figure 3-1: Top Ten Major Industry Groups by Job Openings, B.C., 2026-35'; $$,
     $$ comment on column lmo_report_2026_job_openings_industries.industry is 'Industry key'; $$,
     $$ comment on column lmo_report_2026_job_openings_industries.name is 'Industry name'; $$,
     $$ comment on column lmo_report_2026_job_openings_industries.expansion is 'Expansion'; $$,

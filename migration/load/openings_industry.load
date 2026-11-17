@@ -33,9 +33,9 @@ load csv
 
     after load do
     $$ update openings_industry tbl set industry = normalize_industry_name(industry); $$,
-    $$ comment on table openings_industry is 'Top 10 careers by aggregate industry {2026}'; $$,
+    $$ comment on table openings_industry is 'Top 10 careers by aggregate industry {0}'; $$,
     $$ comment on column openings_industry.industry is 'Aggregate Industry'; $$,
     $$ comment on column openings_industry.noc is 'NOC'; $$,
     $$ comment on column openings_industry.description is 'Occupation'; $$,
-    $$ comment on column openings_industry.openings is 'Job Openings {2026-2036}'; $$
+    $$ comment on column openings_industry.openings is 'Job Openings {0-10}'; $$
 ;

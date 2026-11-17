@@ -41,11 +41,11 @@ load csv
     $$
 
     after load do
-    $$ comment on table lmo_report_2025_job_openings_thompson_okanagan is 'Labour Market Outlook {2025-2035} > Table 5.3-1 Top five industries by total job openings, 2025-2035 - Thompson-Okanagan'; $$,
+    $$ comment on table lmo_report_2025_job_openings_thompson_okanagan is 'Labour Market Outlook {0-10} > Table 5.3-1 Top five industries by total job openings, 2025-2035 - Thompson-Okanagan'; $$,
     $$ comment on column lmo_report_2025_job_openings_thompson_okanagan.industry is 'Industry'; $$,
-    $$ comment on column lmo_report_2025_job_openings_thompson_okanagan.employment is 'Employment {2025}'; $$,
-    $$ comment on column lmo_report_2025_job_openings_thompson_okanagan.openings is 'Job Openings {2025-2035} > Total'; $$,
-    $$ comment on column lmo_report_2025_job_openings_thompson_okanagan.expansion is 'Job Openings {2025-2035} > Expansion'; $$,
-    $$ comment on column lmo_report_2025_job_openings_thompson_okanagan.replacement is 'Job Openings {2025-2035} > Replacement'; $$,
-    $$ comment on column lmo_report_2025_job_openings_thompson_okanagan.growth_rate is 'Annual employment growth rate (%) {2025-2035}'; $$
+    $$ comment on column lmo_report_2025_job_openings_thompson_okanagan.employment is 'Employment {0}'; $$,
+    $$ comment on column lmo_report_2025_job_openings_thompson_okanagan.openings is 'Job Openings {0-10} > Total'; $$,
+    $$ comment on column lmo_report_2025_job_openings_thompson_okanagan.expansion is 'Job Openings {0-10} > Expansion'; $$,
+    $$ comment on column lmo_report_2025_job_openings_thompson_okanagan.replacement is 'Job Openings {0-10} > Replacement'; $$,
+    $$ comment on column lmo_report_2025_job_openings_thompson_okanagan.growth_rate is 'Annual employment growth rate (%) {0-10}'; $$
 ;

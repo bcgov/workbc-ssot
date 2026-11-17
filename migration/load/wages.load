@@ -47,14 +47,14 @@ load csv
     $$
 
     after load do
-    $$ comment on table wages is 'WorkBC {2025} Wage Data'; $$,
+    $$ comment on table wages is 'WorkBC {0} Wage Data'; $$,
     $$ comment on column wages.noc is 'NOC'; $$,
     $$ comment on column wages.occupation_title is 'Occupation Title'; $$,
-    $$ comment on column wages.esdc_wage_rate_low is 'ESDC Wage Rate Low {2025}'; $$,
-    $$ comment on column wages.esdc_wage_rate_median is 'ESDC Wage Rate Median {2025}'; $$,
-    $$ comment on column wages.esdc_wage_rate_high is 'ESDC Wage Rate High {2025}'; $$,
-    $$ comment on column wages.hours_week is 'Usual Hours Worked Per Week {2024-2025}'; $$,
-    $$ comment on column wages.calculated_median_annual_salary_old is 'Calculated Median Annual Salary {2025} (Old Method)'; $$,
-    $$ comment on column wages.calculated_median_annual_salary is 'Calculated Median Annual Salary {2025} (New Method)'; $$,
+    $$ comment on column wages.esdc_wage_rate_low is 'ESDC Wage Rate Low {0}'; $$,
+    $$ comment on column wages.esdc_wage_rate_median is 'ESDC Wage Rate Median {0}'; $$,
+    $$ comment on column wages.esdc_wage_rate_high is 'ESDC Wage Rate High {0}'; $$,
+    $$ comment on column wages.hours_week is 'Usual Hours Worked Per Week {-1-0}'; $$,
+    $$ comment on column wages.calculated_median_annual_salary_old is 'Calculated Median Annual Salary {0} (Old Method)'; $$,
+    $$ comment on column wages.calculated_median_annual_salary is 'Calculated Median Annual Salary {0} (New Method)'; $$,
     $$ comment on column wages.source_information is 'Source Information'; $$
 ;

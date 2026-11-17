@@ -41,12 +41,12 @@ load csv
     $$
 
     after load do
-    $$ comment on table lmo_report_2024_job_openings_regions is 'Labour Market Outlook {2024-2034} > Table 5-1: Employment and Job Openings by Development Region, 2024-2034'; $$,
+    $$ comment on table lmo_report_2024_job_openings_regions is 'Labour Market Outlook {0-10} > Table 5-1: Employment and Job Openings by Development Region, 2024-2034'; $$,
     $$ comment on column lmo_report_2024_job_openings_regions.region is 'Region key'; $$,
     $$ comment on column lmo_report_2024_job_openings_regions.name is 'Region name'; $$,
-    $$ comment on column lmo_report_2024_job_openings_regions.employment is 'Employment {2024}'; $$,
-    $$ comment on column lmo_report_2024_job_openings_regions.openings is 'Job Openings {2024-2034} > Total'; $$,
-    $$ comment on column lmo_report_2024_job_openings_regions.expansion is 'Job Openings {2024-2034} > Expansion'; $$,
-    $$ comment on column lmo_report_2024_job_openings_regions.replacement is 'Job Openings {2024-2034} > Replacement'; $$,
-    $$ comment on column lmo_report_2024_job_openings_regions.growth_rate is 'Annual employment growth rate (%) {2024-2034}'; $$
+    $$ comment on column lmo_report_2024_job_openings_regions.employment is 'Employment {0}'; $$,
+    $$ comment on column lmo_report_2024_job_openings_regions.openings is 'Job Openings {0-10} > Total'; $$,
+    $$ comment on column lmo_report_2024_job_openings_regions.expansion is 'Job Openings {0-10} > Expansion'; $$,
+    $$ comment on column lmo_report_2024_job_openings_regions.replacement is 'Job Openings {0-10} > Replacement'; $$,
+    $$ comment on column lmo_report_2024_job_openings_regions.growth_rate is 'Annual employment growth rate (%) {0-10}'; $$
 ;

@@ -46,7 +46,7 @@ load csv
     $$
 
     after load do
-    $$ comment on table lmo_report_2025_job_openings_broad_categories is 'Labour Market Outlook {2025-2035} > Figure 4.1-1: Job Openings by Main Occupational Group, B.C., 2025-2035'; $$,
+    $$ comment on table lmo_report_2025_job_openings_broad_categories is 'Labour Market Outlook {0-10} > Figure 4.1-1: Job Openings by Main Occupational Group, B.C., 2025-2035'; $$,
     $$ comment on column lmo_report_2025_job_openings_broad_categories.category is 'NOC'; $$,
     $$ comment on column lmo_report_2025_job_openings_broad_categories.name is 'Description'; $$,
     $$ comment on column lmo_report_2025_job_openings_broad_categories.expansion is 'Expansion'; $$,
