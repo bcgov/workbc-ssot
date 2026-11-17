@@ -2,10 +2,10 @@
 -- PostgreSQL database dump
 --
 
-\restrict h6ALgfoeMOWUxsEXtW8JvqMqx6jszmvweU9oeNx0LCfdJkTk3nI88iFIBprqQwm
+\restrict HARMdKnzl6mMECEkSgI6runHBWvJky4Ai2Zb9ECzGAxIqiE7qUNNzDqZwV4ZOQu
 
--- Dumped from database version 16.16 (Debian 16.16-1.pgdg12+1)
--- Dumped by pg_dump version 16.16 (Debian 16.16-1.pgdg12+1)
+-- Dumped from database version 16.15 (Debian 16.15-1.pgdg12+2)
+-- Dumped by pg_dump version 16.15 (Debian 16.15-1.pgdg12+2)
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -121147,7 +121147,7 @@ GRANT SELECT ON TABLE public.industries TO ssot_lmmu;
 --
 
 GRANT SELECT ON TABLE public.industry_outlook TO ssot_readonly;
-GRANT SELECT ON TABLE public.industry_outlook TO ssot_lmmu;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE public.industry_outlook TO ssot_lmmu;
 
 
 --
@@ -121155,7 +121155,7 @@ GRANT SELECT ON TABLE public.industry_outlook TO ssot_lmmu;
 --
 
 GRANT SELECT ON TABLE public.labour_force_survey_industry TO ssot_readonly;
-GRANT SELECT ON TABLE public.labour_force_survey_industry TO ssot_lmmu;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE public.labour_force_survey_industry TO ssot_lmmu;
 
 
 --
@@ -121163,7 +121163,7 @@ GRANT SELECT ON TABLE public.labour_force_survey_industry TO ssot_lmmu;
 --
 
 GRANT SELECT ON TABLE public.labour_force_survey_regional_employment TO ssot_readonly;
-GRANT SELECT ON TABLE public.labour_force_survey_regional_employment TO ssot_lmmu;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE public.labour_force_survey_regional_employment TO ssot_lmmu;
 
 
 --
@@ -121171,7 +121171,7 @@ GRANT SELECT ON TABLE public.labour_force_survey_regional_employment TO ssot_lmm
 --
 
 GRANT SELECT ON TABLE public.labour_force_survey_regional_industry_province TO ssot_readonly;
-GRANT SELECT ON TABLE public.labour_force_survey_regional_industry_province TO ssot_lmmu;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE public.labour_force_survey_regional_industry_province TO ssot_lmmu;
 
 
 --
@@ -121179,7 +121179,7 @@ GRANT SELECT ON TABLE public.labour_force_survey_regional_industry_province TO s
 --
 
 GRANT SELECT ON TABLE public.labour_force_survey_regional_industry_region TO ssot_readonly;
-GRANT SELECT ON TABLE public.labour_force_survey_regional_industry_region TO ssot_lmmu;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE public.labour_force_survey_regional_industry_region TO ssot_lmmu;
 
 
 --
@@ -121475,7 +121475,7 @@ GRANT SELECT ON TABLE public.lmo_report_2026_job_openings_vancouver_island_coast
 --
 
 GRANT SELECT ON TABLE public.monthly_labour_market_updates TO ssot_readonly;
-GRANT SELECT ON TABLE public.monthly_labour_market_updates TO ssot_lmmu;
+GRANT SELECT,INSERT,UPDATE ON TABLE public.monthly_labour_market_updates TO ssot_lmmu;
 
 
 --
@@ -121563,7 +121563,7 @@ GRANT SELECT ON TABLE public.skills TO ssot_lmmu;
 --
 
 GRANT SELECT ON TABLE public.sources TO ssot_readonly;
-GRANT SELECT ON TABLE public.sources TO ssot_lmmu;
+GRANT SELECT,INSERT,UPDATE ON TABLE public.sources TO ssot_lmmu;
 
 
 --
@@ -121604,5 +121604,5 @@ ALTER EVENT TRIGGER pgrst_watch OWNER TO workbc;
 -- PostgreSQL database dump complete
 --
 
-\unrestrict h6ALgfoeMOWUxsEXtW8JvqMqx6jszmvweU9oeNx0LCfdJkTk3nI88iFIBprqQwm
+\unrestrict HARMdKnzl6mMECEkSgI6runHBWvJky4Ai2Zb9ECzGAxIqiE7qUNNzDqZwV4ZOQu
 
