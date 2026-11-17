@@ -5,10 +5,10 @@ load csv
         title_2021 [trim both whitespace],
         industry_sub [trim both whitespace],
         region [trim both whitespace],
-        job_openings,
+        job_openings [null if '__SSOT_NULL__'],
         teer_level,
         teer_description [trim both whitespace],
-        calculated_median_annual_salary,
+        calculated_median_annual_salary [null if '__SSOT_NULL__'],
         workbc_url,
         jobboard_url,
         industry_agg [trim both whitespace],
@@ -18,13 +18,13 @@ load csv
     target table career_search_openings
     target columns
     (
-        noc_2021 text using (trim-hash noc_2021),
+        noc_2021,
         title_2021,
         teer_level,
         teer_description,
         region,
-        job_openings int using (not-available-to-null job_openings),
-        calculated_median_annual_salary numeric using (not-available-to-null calculated_median_annual_salary),
+        job_openings,
+        calculated_median_annual_salary,
         industry_agg,
         industry_sub,
         part_full_time

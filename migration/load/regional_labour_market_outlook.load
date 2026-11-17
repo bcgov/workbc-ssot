@@ -2,6 +2,23 @@ load csv
     from 'regional_labour_market_outlook.csv'
     (
         region,
+        job_openings_first5y [null if '__SSOT_NULL__'],
+        job_openings_second5y [null if '__SSOT_NULL__'],
+        job_openings_10y [null if '__SSOT_NULL__'],
+        replacement_of_retiring_workers_openings [null if '__SSOT_NULL__'],
+        replacement_of_retiring_workers_pct [null if '__SSOT_NULL__'],
+        new_jobs_due_to_economic_growth_openings [null if '__SSOT_NULL__'],
+        new_jobs_due_to_economic_growth_pct [null if '__SSOT_NULL__'],
+        forecasted_total_employment_growth_10y [null if '__SSOT_NULL__'],
+        forecasted_annual_employment_growth_rate [null if '__SSOT_NULL__'],
+        forecasted_employment_growth_rate_first5y [null if '__SSOT_NULL__'],
+        forecasted_employment_growth_rate_second5y [null if '__SSOT_NULL__']
+    )
+    into postgresql:///ssot
+    target table regional_labour_market_outlook
+    target columns
+    (
+        region,
         job_openings_first5y,
         job_openings_second5y,
         job_openings_10y,
@@ -13,23 +30,6 @@ load csv
         forecasted_annual_employment_growth_rate,
         forecasted_employment_growth_rate_first5y,
         forecasted_employment_growth_rate_second5y
-    )
-    into postgresql:///ssot
-    target table regional_labour_market_outlook
-    target columns
-    (
-        region,
-        job_openings_first5y numeric using (not-available-to-null job_openings_first5y),
-        job_openings_second5y numeric using (not-available-to-null job_openings_second5y),
-        job_openings_10y numeric using (not-available-to-null job_openings_10y),
-        replacement_of_retiring_workers_openings int using (not-available-to-null replacement_of_retiring_workers_openings),
-        replacement_of_retiring_workers_pct numeric using (not-available-to-null replacement_of_retiring_workers_pct),
-        new_jobs_due_to_economic_growth_openings int using (not-available-to-null new_jobs_due_to_economic_growth_openings),
-        new_jobs_due_to_economic_growth_pct numeric using (not-available-to-null new_jobs_due_to_economic_growth_pct),
-        forecasted_total_employment_growth_10y int using (not-available-to-null forecasted_total_employment_growth_10y),
-        forecasted_annual_employment_growth_rate numeric using (not-available-to-null forecasted_annual_employment_growth_rate),
-        forecasted_employment_growth_rate_first5y numeric using (not-available-to-null forecasted_employment_growth_rate_first5y),
-        forecasted_employment_growth_rate_second5y numeric using (not-available-to-null forecasted_employment_growth_rate_second5y)
     )
     with
         fields optionally enclosed by '"',

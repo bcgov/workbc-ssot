@@ -2,6 +2,33 @@ load csv
     from 'labour_force_survey_regional_employment.csv'
     (
         region,
+        age_distribution_0_14 [null if '__SSOT_NULL__'],
+        age_distribution_15_24 [null if '__SSOT_NULL__'],
+        age_distribution_25_54 [null if '__SSOT_NULL__'],
+        age_distribution_55_64 [null if '__SSOT_NULL__'],
+        age_distribution_65 [null if '__SSOT_NULL__'],
+        full_time_employment_pct [null if '__SSOT_NULL__'],
+        full_time_employment_num [null if '__SSOT_NULL__'],
+        unemployment_rate_year_1 [null if '__SSOT_NULL__'],
+        unemployment_rate_year_2 [null if '__SSOT_NULL__'],
+        unemployment_rate_year_3 [null if '__SSOT_NULL__'],
+        unemployment_rate_year_4 [null if '__SSOT_NULL__'],
+        unemployment_rate_year_5 [null if '__SSOT_NULL__'],
+        unemployment_rate_year_6 [null if '__SSOT_NULL__'],
+        unemployment_rate_year_7 [null if '__SSOT_NULL__'],
+        unemployment_rate_year_8 [null if '__SSOT_NULL__'],
+        unemployment_rate_year_9 [null if '__SSOT_NULL__'],
+        unemployment_rate_year_10 [null if '__SSOT_NULL__'],
+        unemployment_rate_year_11 [null if '__SSOT_NULL__'],
+        unemployment_rate_year_low [null if '__SSOT_NULL__'],
+        unemployment_rate_year_high [null if '__SSOT_NULL__'],
+        unemployment_rate_year_avg [null if '__SSOT_NULL__']
+    )
+    into postgresql:///ssot
+    target table labour_force_survey_regional_employment
+    target columns
+    (
+        region,
         age_distribution_0_14,
         age_distribution_15_24,
         age_distribution_25_54,
@@ -23,33 +50,6 @@ load csv
         unemployment_rate_year_low,
         unemployment_rate_year_high,
         unemployment_rate_year_avg
-    )
-    into postgresql:///ssot
-    target table labour_force_survey_regional_employment
-    target columns
-    (
-        region,
-        age_distribution_0_14 numeric using (not-available-to-null age_distribution_0_14),
-        age_distribution_15_24 numeric using (not-available-to-null age_distribution_15_24),
-        age_distribution_25_54 numeric using (not-available-to-null age_distribution_25_54),
-        age_distribution_55_64 numeric using (not-available-to-null age_distribution_55_64),
-        age_distribution_65 numeric using (not-available-to-null age_distribution_65),
-        full_time_employment_pct numeric using (not-available-to-null full_time_employment_pct),
-        full_time_employment_num numeric using (not-available-to-null full_time_employment_num),
-        unemployment_rate_year_1 numeric using (not-available-to-null unemployment_rate_year_1),
-        unemployment_rate_year_2 numeric using (not-available-to-null unemployment_rate_year_2),
-        unemployment_rate_year_3 numeric using (not-available-to-null unemployment_rate_year_3),
-        unemployment_rate_year_4 numeric using (not-available-to-null unemployment_rate_year_4),
-        unemployment_rate_year_5 numeric using (not-available-to-null unemployment_rate_year_5),
-        unemployment_rate_year_6 numeric using (not-available-to-null unemployment_rate_year_6),
-        unemployment_rate_year_7 numeric using (not-available-to-null unemployment_rate_year_7),
-        unemployment_rate_year_8 numeric using (not-available-to-null unemployment_rate_year_8),
-        unemployment_rate_year_9 numeric using (not-available-to-null unemployment_rate_year_9),
-        unemployment_rate_year_10 numeric using (not-available-to-null unemployment_rate_year_10),
-        unemployment_rate_year_11 numeric using (not-available-to-null unemployment_rate_year_11),
-        unemployment_rate_year_low numeric using (not-available-to-null unemployment_rate_year_low),
-        unemployment_rate_year_high numeric using (not-available-to-null unemployment_rate_year_high),
-        unemployment_rate_year_avg numeric using (not-available-to-null unemployment_rate_year_avg)
     )
     with
         fields optionally enclosed by '"',

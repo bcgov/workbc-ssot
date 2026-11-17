@@ -3,10 +3,10 @@
 /**
 * Transform the EDM NAICS CSV dumps into a single CSV suitable for import.
 *
-* Usage: php industries.php /path/to/EDM/files/ > /path/to/output.csv
+* Usage: php src/industries.php /path/to/EDM/files/ > /path/to/output.csv
 */
 
-$usage = "Usage: php industries.php /path/to/EDM/files/ > /path/to/output.csv";
+$usage = "Usage: php src/industries.php /path/to/EDM/files/ > /path/to/output.csv";
 if (count($argv) < 2) {
     die("Expecting 1 argument.\n" . $usage . PHP_EOL);
 }

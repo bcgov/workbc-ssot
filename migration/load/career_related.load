@@ -8,7 +8,7 @@ load csv
     target table career_related
     target columns
     (
-        noc text using (trim-hash noc),
+        noc,
         noc_related
     )
     with

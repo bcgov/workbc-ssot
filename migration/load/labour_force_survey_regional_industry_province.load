@@ -2,6 +2,32 @@ load csv
     from 'labour_force_survey_regional_industry_province.csv'
     (
         region,
+        accommodation_food_services [null if '__SSOT_NULL__'],
+        agriculture_fishing [null if '__SSOT_NULL__'],
+        business_building_other_support_services [null if '__SSOT_NULL__'],
+        construction [null if '__SSOT_NULL__'],
+        educational_services [null if '__SSOT_NULL__'],
+        finance_insurance_real_estate [null if '__SSOT_NULL__'],
+        forestry_logging_support_activities [null if '__SSOT_NULL__'],
+        health_care_social_assistance [null if '__SSOT_NULL__'],
+        information_culture_recreation [null if '__SSOT_NULL__'],
+        manufacturing [null if '__SSOT_NULL__'],
+        mining_oil_gas_extraction [null if '__SSOT_NULL__'],
+        professional_scientific_technical_services [null if '__SSOT_NULL__'],
+        public_administration [null if '__SSOT_NULL__'],
+        other_private_services [null if '__SSOT_NULL__'],
+        retail_trade [null if '__SSOT_NULL__'],
+        transportation_warehousing [null if '__SSOT_NULL__'],
+        utilities [null if '__SSOT_NULL__'],
+        wholesale_trade [null if '__SSOT_NULL__'],
+        goods [null if '__SSOT_NULL__'],
+        services [null if '__SSOT_NULL__']
+    )
+    into postgresql:///ssot
+    target table labour_force_survey_regional_industry_province
+    target columns
+    (
+        region,
         accommodation_food_services,
         agriculture_fishing,
         business_building_other_support_services,
@@ -22,32 +48,6 @@ load csv
         wholesale_trade,
         goods,
         services
-    )
-    into postgresql:///ssot
-    target table labour_force_survey_regional_industry_province
-    target columns
-    (
-        region,
-        accommodation_food_services numeric using (not-available-to-null accommodation_food_services),
-        agriculture_fishing numeric using (not-available-to-null agriculture_fishing),
-        business_building_other_support_services numeric using (not-available-to-null business_building_other_support_services),
-        construction numeric using (not-available-to-null construction),
-        educational_services numeric using (not-available-to-null educational_services),
-        finance_insurance_real_estate numeric using (not-available-to-null finance_insurance_real_estate),
-        forestry_logging_support_activities numeric using (not-available-to-null forestry_logging_support_activities),
-        health_care_social_assistance numeric using (not-available-to-null health_care_social_assistance),
-        information_culture_recreation numeric using (not-available-to-null information_culture_recreation),
-        manufacturing numeric using (not-available-to-null manufacturing),
-        mining_oil_gas_extraction numeric using (not-available-to-null mining_oil_gas_extraction),
-        professional_scientific_technical_services numeric using (not-available-to-null professional_scientific_technical_services),
-        public_administration numeric using (not-available-to-null public_administration),
-        other_private_services numeric using (not-available-to-null other_private_services),
-        retail_trade numeric using (not-available-to-null retail_trade),
-        transportation_warehousing numeric using (not-available-to-null transportation_warehousing),
-        utilities numeric using (not-available-to-null utilities),
-        wholesale_trade numeric using (not-available-to-null wholesale_trade),
-        goods numeric using (not-available-to-null goods),
-        services numeric using (not-available-to-null services)
     )
     with
         fields optionally enclosed by '"',

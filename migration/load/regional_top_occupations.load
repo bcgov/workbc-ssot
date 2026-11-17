@@ -11,7 +11,7 @@ load csv
     target columns
     (
         region,
-        noc text using (trim-hash noc),
+        noc,
         occupation,
         openings
     )

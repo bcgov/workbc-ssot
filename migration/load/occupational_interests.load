@@ -2,16 +2,16 @@ load csv
     from 'occupational_interests.csv'
     (
         noc,
-        options,
-        occupational_interest [null if blanks, trim both whitespace]
+        options [null if '__SSOT_NULL__'],
+        occupational_interest [null if '__SSOT_NULL__', trim both whitespace]
     )
     into postgresql:///ssot
     target table occupational_interests
     target columns
     (
-        noc text using (trim-hash noc),
-        options text using (not-available-to-null options),
-        occupational_interest text using (not-available-to-null occupational_interest)
+        noc,
+        options,
+        occupational_interest
     )
     with
         fields optionally enclosed by '"',

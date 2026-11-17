@@ -3,13 +3,13 @@
 /**
 * Fill empty column cells with previous values in a CSV.
 *
-* Usage: php csv_refill.php --col col1 [--col col2 ...] < /path/to/input.csv > /path/to/output.csv
+* Usage: php src/csv_refill.php --col col1 [--col col2 ...] < /path/to/input.csv > /path/to/output.csv
 */
 
 $opts = getopt('', [
   'col:',
 ]);
-$usage = 'Usage: php csv_refill.php --col col1 [--col col2 ...] < /path/to/input.csv > /path/to/output.csv';
+$usage = 'Usage: php src/csv_refill.php --col col1 [--col col2 ...] < /path/to/input.csv > /path/to/output.csv';
 if (!array_key_exists('col', $opts)) {
   die("Column specification not found\n" . $usage . PHP_EOL);
 }

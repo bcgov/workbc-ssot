@@ -18,9 +18,9 @@ load csv
     (
         episode_num,
         episode_title,
-        noc_2021 text using (trim-hash noc_2021),
+        noc_2021,
         title_2021,
-        noc_2016 text using (trim-hash noc_2016),
+        noc_2016,
         title_2016,
         youtube_link,
         location,

@@ -3,6 +3,23 @@ load csv
     (
         noc,
         description,
+        forecasted_average_employment_growth_rate_first5y [null if '__SSOT_NULL__'],
+        forecasted_average_employment_growth_rate_second5y [null if '__SSOT_NULL__'],
+        forecasted_average_employment_growth_rate_10y [null if '__SSOT_NULL__'],
+        job_openings_first5y [null if '__SSOT_NULL__'],
+        job_openings_second5y [null if '__SSOT_NULL__'],
+        expected_job_openings_10y [null if '__SSOT_NULL__'],
+        replacement_of_retiring_workers_10y_pct [null if '__SSOT_NULL__'],
+        replacement_of_retiring_workers_10y [null if '__SSOT_NULL__'],
+        new_jobs_due_to_economic_growth_10y_pct [null if '__SSOT_NULL__'],
+        new_jobs_due_to_economic_growth_10y [null if '__SSOT_NULL__']
+    )
+    into postgresql:///ssot
+    target table career_provincial
+    target columns
+    (
+        noc,
+        description,
         forecasted_average_employment_growth_rate_first5y,
         forecasted_average_employment_growth_rate_second5y,
         forecasted_average_employment_growth_rate_10y,
@@ -13,23 +30,6 @@ load csv
         replacement_of_retiring_workers_10y,
         new_jobs_due_to_economic_growth_10y_pct,
         new_jobs_due_to_economic_growth_10y
-    )
-    into postgresql:///ssot
-    target table career_provincial
-    target columns
-    (
-        noc text using (trim-hash noc),
-        description,
-        forecasted_average_employment_growth_rate_first5y numeric using (not-available-to-null forecasted_average_employment_growth_rate_first5y),
-        forecasted_average_employment_growth_rate_second5y numeric using (not-available-to-null forecasted_average_employment_growth_rate_second5y),
-        forecasted_average_employment_growth_rate_10y numeric using (not-available-to-null forecasted_average_employment_growth_rate_10y),
-        job_openings_first5y int using (not-available-to-null job_openings_first5y),
-        job_openings_second5y int using (not-available-to-null job_openings_second5y),
-        expected_job_openings_10y int using (not-available-to-null expected_job_openings_10y),
-        replacement_of_retiring_workers_10y_pct numeric using (not-available-to-null replacement_of_retiring_workers_10y_pct),
-        replacement_of_retiring_workers_10y int using (not-available-to-null replacement_of_retiring_workers_10y),
-        new_jobs_due_to_economic_growth_10y_pct numeric using (not-available-to-null new_jobs_due_to_economic_growth_10y_pct),
-        new_jobs_due_to_economic_growth_10y int using (not-available-to-null new_jobs_due_to_economic_growth_10y)
     )
     with
         fields optionally enclosed by '"',

@@ -3,7 +3,7 @@
 /**
 * Inject CSV column that can be used as a unique key based on the value of another column. Also supports B.C. Industry / Region keys.
 *
-* Usage: php csv_colkey --column N [--industries | --regions] < /path/to/input.csv > /path/to/output.csv
+* Usage: php src/csv_colkey.php --column N [--industries | --regions] < /path/to/input.csv > /path/to/output.csv
 */
 
 $opts = getopt('', [
@@ -11,7 +11,7 @@ $opts = getopt('', [
   'industries',
   'regions',
 ]);
-$usage = 'Usage: php csv_colkey --column N [--industries | --regions] < /path/to/input.csv > /path/to/output.csv';
+$usage = 'Usage: php src/csv_colkey.php --column N [--industries | --regions] < /path/to/input.csv > /path/to/output.csv';
 if (!array_key_exists('column', $opts)) {
   die("Column specification not found\n" . $usage . PHP_EOL);
 }

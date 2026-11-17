@@ -4,10 +4,10 @@
  * Extract related NOCs from the NOC 2021 elements table into a CSV suitable for import.
  * https://www.statcan.gc.ca/en/subjects/standard/noc/2021/indexV1
  *
- * Usage: php related.php path/to/noc_2021_version_1.0_-_elements.csv > /path/to/output.csv
+ * Usage: php src/related.php path/to/noc_2021_version_1.0_-_elements.csv > /path/to/output.csv
  */
 
-$usage = "Usage: php related.php path/to/noc_2021_version_1.0_-_elements.csv > /path/to/output.csv";
+$usage = "Usage: php src/related.php path/to/noc_2021_version_1.0_-_elements.csv > /path/to/output.csv";
 if (count($argv) < 2) {
   die("Expecting 1 argument.\n" . $usage . PHP_EOL);
 }

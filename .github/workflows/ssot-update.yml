@@ -2,12 +2,13 @@ name: SSoT Update
 
 on:
   repository_dispatch:
-    types: [monthly_labour_market_update, industry_outlook_update]
+    types: [ssot_update]
 
 jobs:
-  monthly_labour_market_update:
-    if: github.event.action == 'monthly_labour_market_update'
+  update:
     runs-on: ubuntu-22.04
+    permissions:
+      contents: write
 
     steps:
     - uses: actions/checkout@v3
@@ -28,10 +29,15 @@ jobs:
       run: |
         docker-compose exec -T postgres psql --username workbc ssot < ssot-full.sql
 
-    - name: Convert and load the LMMU file
+    - name: Register uploaded source metadata
       run: |
-        docker-compose exec -T migrator bash -c "./monthly_labour_market_update.sh \"${{ github.event.client_payload.filename }}\" ${{ github.event.client_payload.year }} ${{ github.event.client_payload.month }} \"${{ github.event.client_payload.date }}\""
-        sudo chown runner:docker migration/load/sources.csv
+        docker-compose exec -T migrator php src/register_sources.php load/sources.csv data < "$GITHUB_EVENT_PATH"
+
+    - name: Convert and load the uploaded workbook
+      env:
+        SOURCE_FILENAME: ${{ github.event.client_payload.filename }}
+      run: |
+        docker-compose exec -T migrator php src/ssot_ingest.php --file "$SOURCE_FILENAME"
 
     - name: Export SSoT snapshot
       run: |
@@ -40,49 +46,14 @@ jobs:
         && gunzip -k -c ssot-full.sql.gz > ssot-full.sql
 
     - name: Commit and push the changes
-      uses: devops-infra/action-commit-push@master
-      with:
-        github_token: "${{ secrets.GITHUB_TOKEN }}"
-        commit_prefix: "[AUTO] "
-        commit_message: "${{ github.event.client_payload.notes }}"
-
-  industry_outlook_update:
-    if: github.event.action == 'industry_outlook_update'
-    runs-on: ubuntu-22.04
-
-    steps:
-    - uses: actions/checkout@v3
-      with:
-        ref: ${{ github.event.client_payload.branch }}
-
-    - name: Install docker-compose
+      env:
+        TARGET_BRANCH: ${{ github.event.client_payload.branch }}
+        COMMIT_NOTES: ${{ github.event.client_payload.notes }}
       run: |
-        sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
-        sudo chmod +x /usr/local/bin/docker-compose
-
-    - name: Run docker-compose
-      uses: hoverkraft-tech/compose-action@v2.0.2
-      with:
-        compose-file: "./docker-compose.yml"
-
-    - name: Load SSoT snapshot
-      run: |
-        docker-compose exec -T postgres psql --username workbc ssot < ssot-full.sql
-
-    - name: Convert and load the Industry Outlook file
-      run: |
-        docker-compose exec -T migrator bash -c "./industry_outlook.sh \"${{ github.event.client_payload.filename }}\" ${{ github.event.client_payload.year }} ${{ github.event.client_payload.month }} \"${{ github.event.client_payload.date }}\""
-        sudo chown runner:docker migration/load/sources.csv
-
-    - name: Export SSoT snapshot
-      run: |
-        docker-compose exec -T postgres psql --username workbc ssot < ssot-grants.sql \
-        && docker-compose exec -T postgres pg_dump --clean --username workbc ssot | gzip > ssot-full.sql.gz \
-        && gunzip -k -c ssot-full.sql.gz > ssot-full.sql
-
-    - name: Commit and push the changes
-      uses: devops-infra/action-commit-push@master
-      with:
-        github_token: "${{ secrets.GITHUB_TOKEN }}"
-        commit_prefix: "[AUTO] "
-        commit_message: "${{ github.event.client_payload.notes }}"
+        git config user.name "github-actions[bot]"
+        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        git add -- migration/load ssot-full.sql ssot-full.sql.gz
+        if ! git diff --cached --quiet; then
+          git commit -m "[AUTO] $COMMIT_NOTES"
+          git push origin "HEAD:refs/heads/$TARGET_BRANCH"
+        fi

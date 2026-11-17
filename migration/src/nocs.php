@@ -4,10 +4,10 @@
  * Transform the NOC 2021 concordance tables into a single CSV suitable for import.
  * https://noc.esdc.gc.ca/Versions/ConcordanceTables
  *
- * Usage: php nocs.php /path/to/concordance/files/ > /path/to/output.csv
+ * Usage: php src/nocs.php /path/to/concordance/files/ > /path/to/output.csv
  */
 
-$usage = "Usage: php nocs.php /path/to/concordance/files/ > /path/to/output.csv";
+$usage = "Usage: php src/nocs.php /path/to/concordance/files/ > /path/to/output.csv";
 if (count($argv) < 2) {
     die("Expecting 1 argument.\n" . $usage . PHP_EOL);
 }

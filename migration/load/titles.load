@@ -9,7 +9,7 @@ load csv
     target table titles
     target columns
     (
-        noc text using (trim-hash noc),
+        noc,
         commonjobtitle,
         illustrative
     )

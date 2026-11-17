@@ -4,20 +4,20 @@ load csv
         noc,
         noc_title,
         skills_competencies,
-        importance,
+        importance [null if '__SSOT_NULL__'],
         importance_description,
-        proficiency,
+        proficiency [null if '__SSOT_NULL__'],
         proficiency_description
     )
     into postgresql:///ssot
     target table skills
     target columns
     (
-        noc text using (trim-hash noc),
+        noc,
         skills_competencies,
-        importance numeric using (not-available-to-null importance),
+        importance,
         importance_description,
-        proficiency numeric using (not-available-to-null proficiency),
+        proficiency,
         proficiency_description
     )
     with

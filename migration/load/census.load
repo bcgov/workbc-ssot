@@ -3,6 +3,29 @@ load csv
     (
         noc,
         description,
+        workers_employed [null if '__SSOT_NULL__'],
+        workers_full_time [null if '__SSOT_NULL__'],
+        cariboo_employment_of_this_occupation [null if '__SSOT_NULL__'],
+        cariboo_employed_in_this_occupation [null if '__SSOT_NULL__'],
+        kootenay_employment_of_this_occupation [null if '__SSOT_NULL__'],
+        kootenay_employed_in_this_occupation [null if '__SSOT_NULL__'],
+        mainland_southwest_employment_of_this_occupation [null if '__SSOT_NULL__'],
+        mainland_southwest_employed_in_this_occupation [null if '__SSOT_NULL__'],
+        north_coast_nechako_employment_of_this_occupation [null if '__SSOT_NULL__'],
+        north_coast_nechako_employed_in_this_occupation [null if '__SSOT_NULL__'],
+        northeast_employment_of_this_occupation [null if '__SSOT_NULL__'],
+        northeast_employed_in_this_occupation [null if '__SSOT_NULL__'],
+        thompson_okanagan_employment_of_this_occupation [null if '__SSOT_NULL__'],
+        thompson_okanagan_employed_in_this_occupation [null if '__SSOT_NULL__'],
+        vancouver_island_coast_employment_of_this_occupation [null if '__SSOT_NULL__'],
+        vancouver_island_coast_employed_in_this_occupation [null if '__SSOT_NULL__']
+    )
+    into postgresql:///ssot
+    target table census
+    target columns
+    (
+        noc,
+        description,
         workers_employed,
         workers_full_time,
         cariboo_employment_of_this_occupation,
@@ -19,29 +42,6 @@ load csv
         thompson_okanagan_employed_in_this_occupation,
         vancouver_island_coast_employment_of_this_occupation,
         vancouver_island_coast_employed_in_this_occupation
-    )
-    into postgresql:///ssot
-    target table census
-    target columns
-    (
-        noc text using (trim-hash noc),
-        description,
-        workers_employed int using (not-available-to-null workers_employed),
-        workers_full_time numeric using (not-available-to-null workers_full_time),
-        cariboo_employment_of_this_occupation numeric using (not-available-to-null cariboo_employment_of_this_occupation),
-        cariboo_employed_in_this_occupation int using (not-available-to-null cariboo_employed_in_this_occupation),
-        kootenay_employment_of_this_occupation numeric using (not-available-to-null kootenay_employment_of_this_occupation),
-        kootenay_employed_in_this_occupation int using (not-available-to-null kootenay_employed_in_this_occupation),
-        mainland_southwest_employment_of_this_occupation numeric using (not-available-to-null mainland_southwest_employment_of_this_occupation),
-        mainland_southwest_employed_in_this_occupation int using (not-available-to-null mainland_southwest_employed_in_this_occupation),
-        north_coast_nechako_employment_of_this_occupation numeric using (not-available-to-null north_coast_nechako_employment_of_this_occupation),
-        north_coast_nechako_employed_in_this_occupation int using (not-available-to-null north_coast_nechako_employed_in_this_occupation),
-        northeast_employment_of_this_occupation numeric using (not-available-to-null northeast_employment_of_this_occupation),
-        northeast_employed_in_this_occupation int using (not-available-to-null northeast_employed_in_this_occupation),
-        thompson_okanagan_employment_of_this_occupation numeric using (not-available-to-null thompson_okanagan_employment_of_this_occupation),
-        thompson_okanagan_employed_in_this_occupation int using (not-available-to-null thompson_okanagan_employed_in_this_occupation),
-        vancouver_island_coast_employment_of_this_occupation numeric using (not-available-to-null vancouver_island_coast_employment_of_this_occupation),
-        vancouver_island_coast_employed_in_this_occupation int using (not-available-to-null vancouver_island_coast_employed_in_this_occupation)
     )
     with
         fields optionally enclosed by '"',

@@ -1,0 +1,1011 @@
+{
+  "version": 1,
+  "datasets": {
+    "wages": {
+      "source": {
+        "type": "xlsx"
+      },
+      "output": "load/wages.csv",
+      "steps": [
+        ["csv_extract.php", "--range", "{range}"],
+        ["csv_trimpad.php", "--column", "1:L:5:0"],
+        ["csv_trimpad.php", "--column", "1:L:0:0:#"],
+        ["csv_null.php", "--loader", "{loader}"]
+      ],
+      "load": {
+        "file": "load/wages.load",
+        "order": 100,
+        "mode": "snapshot"
+      }
+    },
+    "titles": {
+      "source": {
+        "type": "csv",
+        "reader": ["titles.php", "{input}"]
+      },
+      "output": "load/titles.csv",
+      "steps": [
+        ["csv_trimpad.php", "--column", "1:L:0:0:#"],
+        ["csv_null.php", "--loader", "{loader}"]
+      ],
+      "load": {
+        "file": "load/titles.load",
+        "order": 30,
+        "mode": "snapshot"
+      }
+    },
+    "skills": {
+      "source": {
+        "type": "xlsx"
+      },
+      "output": "load/skills.csv",
+      "steps": [
+        ["csv_extract.php", "--range", "{range}"],
+        ["csv_trimpad.php", "--column", "1:L:5:0"],
+        ["csv_trimpad.php", "--column", "1:L:0:0:#"],
+        ["csv_null.php", "--loader", "{loader}"]
+      ],
+      "load": {
+        "file": "load/skills.load",
+        "order": 100,
+        "mode": "snapshot"
+      }
+    },
+    "openings_careers": {
+      "source": {
+        "type": "xlsx"
+      },
+      "output": "load/openings_careers.csv",
+      "steps": [
+        ["csv_extract.php", "--range", "{range}"],
+        ["csv_trimpad.php", "--column", "1:L:0:0:#"],
+        ["csv_null.php", "--loader", "{loader}"]
+      ],
+      "load": {
+        "file": "load/openings_careers.load",
+        "order": 100,
+        "mode": "snapshot"
+      }
+    },
+    "education": {
+      "source": {
+        "type": "xlsx"
+      },
+      "output": "load/education.csv",
+      "steps": [
+        ["csv_extract.php", "--range", "{range}"],
+        ["csv_trimpad.php", "--column", "1:L:0:0:#"],
+        ["csv_null.php", "--loader", "{loader}"]
+      ],
+      "load": {
+        "file": "load/education.load",
+        "order": 100,
+        "mode": "snapshot"
+      }
+    },
+    "census": {
+      "source": {
+        "type": "xlsx"
+      },
+      "output": "load/census.csv",
+      "steps": [
+        ["csv_extract.php", "--range", "{range}"],
+        ["csv_trimpad.php", "--column", "1:L:0:0:#"],
+        ["csv_null.php", "--loader", "{loader}"]
+      ],
+      "load": {
+        "file": "load/census.load",
+        "order": 100,
+        "mode": "snapshot"
+      }
+    },
+    "career_regional": {
+      "source": {
+        "type": "xlsx"
+      },
+      "output": "load/career_regional.csv",
+      "steps": [
+        ["csv_extract.php", "--range", "{range}"],
+        ["csv_trimpad.php", "--column", "1:L:0:0:#"],
+        ["csv_null.php", "--loader", "{loader}"]
+      ],
+      "load": {
+        "file": "load/career_regional.load",
+        "order": 100,
+        "mode": "snapshot"
+      }
+    },
+    "career_provincial": {
+      "source": {
+        "type": "xlsx"
+      },
+      "output": "load/career_provincial.csv",
+      "steps": [
+        ["csv_extract.php", "--range", "{range}"],
+        ["csv_trimpad.php", "--column", "1:L:0:0:#"],
+        ["csv_null.php", "--loader", "{loader}"]
+      ],
+      "load": {
+        "file": "load/career_provincial.load",
+        "order": 100,
+        "mode": "snapshot"
+      }
+    },
+    "career_related": {
+      "source": {
+        "type": "csv",
+        "reader": ["related.php", "{input}"]
+      },
+      "output": "load/career_related.csv",
+      "steps": [
+        ["csv_trimpad.php", "--column", "1:L:0:0:#"],
+        ["csv_null.php", "--loader", "{loader}"]
+      ],
+      "load": {
+        "file": "load/career_related.load",
+        "order": 40,
+        "mode": "snapshot"
+      }
+    },
+    "high_opportunity_occupations": {
+      "source": {
+        "type": "xlsx"
+      },
+      "output": "load/high_opportunity_occupations.csv",
+      "steps": [
+        ["csv_extract.php", "--range", "{range}"],
+        ["csv_trimpad.php", "--column", "12:L:0:0:#"],
+        ["csv_null.php", "--loader", "{loader}"]
+      ],
+      "load": {
+        "file": "load/high_opportunity_occupations.load",
+        "order": 100,
+        "mode": "snapshot"
+      }
+    },
+    "occupational_interests": {
+      "source": {
+        "type": "xlsx"
+      },
+      "output": "load/occupational_interests.csv",
+      "steps": [
+        ["csv_extract.php", "--range", "{range}"],
+        ["csv_trimpad.php", "--column", "1:L:0:0:#"],
+        ["csv_null.php", "--loader", "{loader}"]
+      ],
+      "load": {
+        "file": "load/occupational_interests.load",
+        "order": 100,
+        "mode": "snapshot"
+      }
+    },
+    "fyp_categories_interests": {
+      "source": {
+        "type": "xlsx"
+      },
+      "output": "load/fyp_categories_interests.csv",
+      "steps": [
+        ["csv_extract.php", "--range", "{range}"],
+        ["csv_trimpad.php", "--column", "3:L:5:0:#"],
+        ["csv_null.php", "--loader", "{loader}"]
+      ],
+      "load": {
+        "file": "load/fyp_categories_interests.load",
+        "order": 100,
+        "mode": "snapshot"
+      }
+    },
+    "industry_outlook": {
+      "source": {
+        "type": "xlsx"
+      },
+      "output": "load/industry_outlook.csv",
+      "steps": [
+        ["csv_extract.php", "--range", "{range}"],
+        ["csv_null.php", "--loader", "{loader}"]
+      ],
+      "load": {
+        "file": "load/industry_outlook.load",
+        "order": 100,
+        "mode": "snapshot"
+      }
+    },
+    "openings_industry": {
+      "source": {
+        "type": "xlsx"
+      },
+      "output": "load/openings_industry.csv",
+      "steps": [
+        ["csv_extract.php", "--range", "{range}"],
+        ["csv_trimpad.php", "--column", "2:L:0:0:#"],
+        ["csv_null.php", "--loader", "{loader}"]
+      ],
+      "load": {
+        "file": "load/openings_industry.load",
+        "order": 100,
+        "mode": "snapshot"
+      }
+    },
+    "labour_force_survey_industry": {
+      "source": {
+        "type": "xlsx"
+      },
+      "output": "load/labour_force_survey_industry.csv",
+      "steps": [
+        ["csv_extract.php", "--range", "{range}"],
+        ["csv_refill.php", "--col", "7", "--col", "8", "--col", "11", "--col", "14", "--col", "17", "--col", "20", "--col", "23", "--col", "26", "--col", "29", "--col", "32", "--col", "35", "--col", "38", "--col", "41", "--col", "43", "--col", "45", "--col", "47", "--col", "49", "--col", "51", "--col", "53", "--col", "55"],
+        ["csv_null.php", "--loader", "{loader}"]
+      ],
+      "load": {
+        "file": "load/labour_force_survey_industry.load",
+        "order": 100,
+        "mode": "snapshot"
+      }
+    },
+    "labour_force_survey_regional_employment": {
+      "source": {
+        "type": "xlsx"
+      },
+      "output": "load/labour_force_survey_regional_employment.csv",
+      "steps": [
+        ["csv_extract.php", "--range", "{range}"],
+        ["csv_null.php", "--loader", "{loader}"]
+      ],
+      "load": {
+        "file": "load/labour_force_survey_regional_employment.load",
+        "order": 100,
+        "mode": "snapshot"
+      }
+    },
+    "labour_force_survey_regional_industry_region": {
+      "source": {
+        "type": "xlsx"
+      },
+      "output": "load/labour_force_survey_regional_industry_region.csv",
+      "steps": [
+        ["csv_extract.php", "--range", "{range}"],
+        ["csv_null.php", "--loader", "{loader}"]
+      ],
+      "load": {
+        "file": "load/labour_force_survey_regional_industry_region.load",
+        "order": 100,
+        "mode": "snapshot"
+      }
+    },
+    "labour_force_survey_regional_industry_province": {
+      "source": {
+        "type": "xlsx"
+      },
+      "output": "load/labour_force_survey_regional_industry_province.csv",
+      "steps": [
+        ["csv_extract.php", "--range", "{range}"],
+        ["csv_null.php", "--loader", "{loader}"]
+      ],
+      "load": {
+        "file": "load/labour_force_survey_regional_industry_province.load",
+        "order": 100,
+        "mode": "snapshot"
+      }
+    },
+    "regional_labour_market_outlook": {
+      "source": {
+        "type": "xlsx"
+      },
+      "output": "load/regional_labour_market_outlook.csv",
+      "steps": [
+        ["csv_extract.php", "--range", "{range}"],
+        ["csv_null.php", "--loader", "{loader}"]
+      ],
+      "load": {
+        "file": "load/regional_labour_market_outlook.load",
+        "order": 100,
+        "mode": "snapshot"
+      }
+    },
+    "regional_top_occupations": {
+      "source": {
+        "type": "xlsx"
+      },
+      "output": "load/regional_top_occupations.csv",
+      "steps": [
+        ["csv_extract.php", "--range", "{range}"],
+        ["csv_empty.php"],
+        ["csv_trimpad.php", "--column", "1:L:0:0:#"],
+        ["csv_null.php", "--loader", "{loader}"]
+      ],
+      "load": {
+        "file": "load/regional_top_occupations.load",
+        "order": 100,
+        "mode": "snapshot"
+      }
+    },
+    "career_trek": {
+      "source": {
+        "type": "xlsx"
+      },
+      "output": "load/career_trek.csv",
+      "steps": [
+        ["csv_extract.php", "--range", "{range}"],
+        ["csv_trimpad.php", "--column", "1:L:0:0:#", "--column", "2:L:0:0:#"],
+        ["csv_null.php", "--loader", "{loader}"]
+      ],
+      "load": {
+        "file": "load/career_trek.load",
+        "order": 100,
+        "mode": "snapshot"
+      }
+    },
+    "career_search_openings": {
+      "source": {
+        "type": "xlsx"
+      },
+      "output": "load/career_search_openings.csv",
+      "steps": [
+        ["csv_extract.php", "--range", "{range}"],
+        ["csv_trimpad.php", "--column", "1:L:0:0:#"],
+        ["csv_null.php", "--loader", "{loader}"]
+      ],
+      "load": {
+        "file": "load/career_search_openings.load",
+        "order": 100,
+        "mode": "snapshot"
+      }
+    },
+    "career_search_groups": {
+      "source": {
+        "type": "xlsx"
+      },
+      "output": "load/career_search_groups.csv",
+      "steps": [
+        ["csv_extract.php", "--range", "{range}"],
+        ["csv_trimpad.php", "--column", "1:L:0:0:#"],
+        ["csv_null.php", "--loader", "{loader}"]
+      ],
+      "load": {
+        "file": "load/career_search_groups.load",
+        "order": 100,
+        "mode": "snapshot"
+      }
+    },
+    "career_transition_opportunities": {
+      "source": {
+        "type": "xlsx"
+      },
+      "output": "load/career_transition_opportunities.csv",
+      "steps": [
+        ["csv_extract.php", "--range", "{range}"],
+        ["csv_trimpad.php", "--column", "1:L:0:0:#", "--column", "5:L:0:0:#"],
+        ["csv_null.php", "--loader", "{loader}"]
+      ],
+      "load": {
+        "file": "load/career_transition_opportunities.load",
+        "order": 100,
+        "mode": "snapshot"
+      }
+    },
+    "onet_nocs": {
+      "source": {
+        "type": "xlsx"
+      },
+      "output": "load/onet_nocs.csv",
+      "steps": [
+        ["csv_extract.php", "--range", "{range}"],
+        ["csv_trimpad.php", "--column", "1:L:5:0", "--column", "3:L:4:0"],
+        ["csv_null.php", "--loader", "{loader}"]
+      ],
+      "load": {
+        "file": "load/onet_nocs.load",
+        "order": 100,
+        "mode": "snapshot"
+      }
+    },
+    "nocs": {
+      "source": {
+        "type": "directory",
+        "input": "data/NOC2021/",
+        "reader": ["nocs.php", "{input}"]
+      },
+      "output": "load/nocs.csv",
+      "steps": [
+        ["csv_null.php", "--loader", "{loader}"]
+      ],
+      "load": {
+        "file": "load/nocs.load",
+        "order": 20,
+        "mode": "snapshot"
+      }
+    },
+    "industries": {
+      "source": {
+        "type": "directory",
+        "input": "data/EDM/",
+        "reader": ["industries.php", "{input}"]
+      },
+      "output": "load/industries.csv",
+      "steps": [
+        ["csv_null.php", "--loader", "{loader}"]
+      ],
+      "load": {
+        "file": "load/industries.load",
+        "order": 10,
+        "mode": "snapshot"
+      }
+    },
+    "lmo_report_2024_job_openings_10y": {
+      "source": {
+        "type": "xlsx"
+      },
+      "output": "load/lmo_report_2024_job_openings_10y.csv",
+      "steps": [
+        ["csv_extract.php", "--range", "{range}"],
+        ["csv_colkey.php", "--column", "1"],
+        ["csv_null.php", "--loader", "{loader}"]
+      ],
+      "load": {
+        "file": "load/lmo_report_2024_job_openings_10y.load",
+        "order": 100,
+        "mode": "snapshot"
+      }
+    },
+    "lmo_report_2024_job_openings_teers": {
+      "source": {
+        "type": "xlsx"
+      },
+      "output": "load/lmo_report_2024_job_openings_teers.csv",
+      "steps": [
+        ["csv_extract.php", "--range", "{range}", "--column-offset", "1"],
+        ["csv_null.php", "--loader", "{loader}"]
+      ],
+      "load": {
+        "file": "load/lmo_report_2024_job_openings_teers.load",
+        "order": 100,
+        "mode": "snapshot"
+      }
+    },
+    "lmo_report_2024_job_openings_industries": {
+      "source": {
+        "type": "xlsx"
+      },
+      "prepare_requires": ["industries"],
+      "output": "load/lmo_report_2024_job_openings_industries.csv",
+      "steps": [
+        ["csv_extract.php", "--range", "{range}"],
+        ["csv_colkey.php", "--column", "1", "--industries"],
+        ["csv_null.php", "--loader", "{loader}"]
+      ],
+      "load": {
+        "file": "load/lmo_report_2024_job_openings_industries.load",
+        "order": 100,
+        "mode": "snapshot"
+      }
+    },
+    "lmo_report_2024_job_openings_broad_categories": {
+      "source": {
+        "type": "xlsx"
+      },
+      "output": "load/lmo_report_2024_job_openings_broad_categories.csv",
+      "steps": [
+        ["csv_extract.php", "--range", "{range}"],
+        ["csv_trimpad.php", "--column", "1:L:0:0:#"],
+        ["csv_null.php", "--loader", "{loader}"]
+      ],
+      "load": {
+        "file": "load/lmo_report_2024_job_openings_broad_categories.load",
+        "order": 100,
+        "mode": "snapshot"
+      }
+    },
+    "lmo_report_2024_job_openings_regions": {
+      "source": {
+        "type": "xlsx"
+      },
+      "output": "load/lmo_report_2024_job_openings_regions.csv",
+      "steps": [
+        ["csv_extract.php", "--range", "{range}"],
+        ["csv_colkey.php", "--column", "1", "--regions"],
+        ["csv_null.php", "--loader", "{loader}"]
+      ],
+      "load": {
+        "file": "load/lmo_report_2024_job_openings_regions.load",
+        "order": 100,
+        "mode": "snapshot"
+      }
+    },
+    "lmo_report_2024_job_openings_vancouver_island_coast": {
+      "source": {
+        "type": "xlsx"
+      },
+      "output": "load/lmo_report_2024_job_openings_vancouver_island_coast.csv",
+      "steps": [
+        ["csv_extract.php", "--range", "{range}"],
+        ["csv_null.php", "--loader", "{loader}"]
+      ],
+      "load": {
+        "file": "load/lmo_report_2024_job_openings_vancouver_island_coast.load",
+        "order": 100,
+        "mode": "snapshot"
+      }
+    },
+    "lmo_report_2024_job_openings_mainland_southwest": {
+      "source": {
+        "type": "xlsx"
+      },
+      "output": "load/lmo_report_2024_job_openings_mainland_southwest.csv",
+      "steps": [
+        ["csv_extract.php", "--range", "{range}"],
+        ["csv_null.php", "--loader", "{loader}"]
+      ],
+      "load": {
+        "file": "load/lmo_report_2024_job_openings_mainland_southwest.load",
+        "order": 100,
+        "mode": "snapshot"
+      }
+    },
+    "lmo_report_2024_job_openings_thompson_okanagan": {
+      "source": {
+        "type": "xlsx"
+      },
+      "output": "load/lmo_report_2024_job_openings_thompson_okanagan.csv",
+      "steps": [
+        ["csv_extract.php", "--range", "{range}"],
+        ["csv_null.php", "--loader", "{loader}"]
+      ],
+      "load": {
+        "file": "load/lmo_report_2024_job_openings_thompson_okanagan.load",
+        "order": 100,
+        "mode": "snapshot"
+      }
+    },
+    "lmo_report_2024_job_openings_kootenay": {
+      "source": {
+        "type": "xlsx"
+      },
+      "output": "load/lmo_report_2024_job_openings_kootenay.csv",
+      "steps": [
+        ["csv_extract.php", "--range", "{range}"],
+        ["csv_null.php", "--loader", "{loader}"]
+      ],
+      "load": {
+        "file": "load/lmo_report_2024_job_openings_kootenay.load",
+        "order": 100,
+        "mode": "snapshot"
+      }
+    },
+    "lmo_report_2024_job_openings_cariboo": {
+      "source": {
+        "type": "xlsx"
+      },
+      "output": "load/lmo_report_2024_job_openings_cariboo.csv",
+      "steps": [
+        ["csv_extract.php", "--range", "{range}"],
+        ["csv_null.php", "--loader", "{loader}"]
+      ],
+      "load": {
+        "file": "load/lmo_report_2024_job_openings_cariboo.load",
+        "order": 100,
+        "mode": "snapshot"
+      }
+    },
+    "lmo_report_2024_job_openings_north_coast_nechako": {
+      "source": {
+        "type": "xlsx"
+      },
+      "output": "load/lmo_report_2024_job_openings_north_coast_nechako.csv",
+      "steps": [
+        ["csv_extract.php", "--range", "{range}"],
+        ["csv_null.php", "--loader", "{loader}"]
+      ],
+      "load": {
+        "file": "load/lmo_report_2024_job_openings_north_coast_nechako.load",
+        "order": 100,
+        "mode": "snapshot"
+      }
+    },
+    "lmo_report_2024_job_openings_northeast": {
+      "source": {
+        "type": "xlsx"
+      },
+      "output": "load/lmo_report_2024_job_openings_northeast.csv",
+      "steps": [
+        ["csv_extract.php", "--range", "{range}"],
+        ["csv_null.php", "--loader", "{loader}"]
+      ],
+      "load": {
+        "file": "load/lmo_report_2024_job_openings_northeast.load",
+        "order": 100,
+        "mode": "snapshot"
+      }
+    },
+    "lmo_report_2025_job_openings_10y": {
+      "source": {
+        "type": "xlsx"
+      },
+      "output": "load/lmo_report_2025_job_openings_10y.csv",
+      "steps": [
+        ["csv_extract.php", "--range", "{range}"],
+        ["csv_colkey.php", "--column", "3"],
+        ["csv_null.php", "--loader", "{loader}"]
+      ],
+      "load": {
+        "file": "load/lmo_report_2025_job_openings_10y.load",
+        "order": 100,
+        "mode": "snapshot"
+      }
+    },
+    "lmo_report_2025_job_openings_teers": {
+      "source": {
+        "type": "xlsx"
+      },
+      "output": "load/lmo_report_2025_job_openings_teers.csv",
+      "steps": [
+        ["csv_extract.php", "--range", "{range}"],
+        ["csv_null.php", "--loader", "{loader}"]
+      ],
+      "load": {
+        "file": "load/lmo_report_2025_job_openings_teers.load",
+        "order": 100,
+        "mode": "snapshot"
+      }
+    },
+    "lmo_report_2025_job_openings_industries": {
+      "source": {
+        "type": "xlsx"
+      },
+      "prepare_requires": ["industries"],
+      "output": "load/lmo_report_2025_job_openings_industries.csv",
+      "steps": [
+        ["csv_extract.php", "--range", "{range}"],
+        ["csv_colkey.php", "--column", "3", "--industries"],
+        ["csv_null.php", "--loader", "{loader}"]
+      ],
+      "load": {
+        "file": "load/lmo_report_2025_job_openings_industries.load",
+        "order": 100,
+        "mode": "snapshot"
+      }
+    },
+    "lmo_report_2025_job_openings_broad_categories": {
+      "source": {
+        "type": "xlsx"
+      },
+      "output": "load/lmo_report_2025_job_openings_broad_categories.csv",
+      "steps": [
+        ["csv_extract.php", "--range", "{range}"],
+        ["csv_trimpad.php", "--column", "3:L:0:0:#"],
+        ["csv_null.php", "--loader", "{loader}"]
+      ],
+      "load": {
+        "file": "load/lmo_report_2025_job_openings_broad_categories.load",
+        "order": 100,
+        "mode": "snapshot"
+      }
+    },
+    "lmo_report_2025_job_openings_regions": {
+      "source": {
+        "type": "xlsx"
+      },
+      "output": "load/lmo_report_2025_job_openings_regions.csv",
+      "steps": [
+        ["csv_extract.php", "--range", "{range}"],
+        ["csv_colkey.php", "--column", "3", "--regions"],
+        ["csv_null.php", "--loader", "{loader}"]
+      ],
+      "load": {
+        "file": "load/lmo_report_2025_job_openings_regions.load",
+        "order": 100,
+        "mode": "snapshot"
+      }
+    },
+    "lmo_report_2025_job_openings_vancouver_island_coast": {
+      "source": {
+        "type": "xlsx"
+      },
+      "output": "load/lmo_report_2025_job_openings_vancouver_island_coast.csv",
+      "steps": [
+        ["csv_extract.php", "--range", "{range}"],
+        ["csv_null.php", "--loader", "{loader}"]
+      ],
+      "load": {
+        "file": "load/lmo_report_2025_job_openings_vancouver_island_coast.load",
+        "order": 100,
+        "mode": "snapshot"
+      }
+    },
+    "lmo_report_2025_job_openings_mainland_southwest": {
+      "source": {
+        "type": "xlsx"
+      },
+      "output": "load/lmo_report_2025_job_openings_mainland_southwest.csv",
+      "steps": [
+        ["csv_extract.php", "--range", "{range}"],
+        ["csv_null.php", "--loader", "{loader}"]
+      ],
+      "load": {
+        "file": "load/lmo_report_2025_job_openings_mainland_southwest.load",
+        "order": 100,
+        "mode": "snapshot"
+      }
+    },
+    "lmo_report_2025_job_openings_thompson_okanagan": {
+      "source": {
+        "type": "xlsx"
+      },
+      "output": "load/lmo_report_2025_job_openings_thompson_okanagan.csv",
+      "steps": [
+        ["csv_extract.php", "--range", "{range}"],
+        ["csv_null.php", "--loader", "{loader}"]
+      ],
+      "load": {
+        "file": "load/lmo_report_2025_job_openings_thompson_okanagan.load",
+        "order": 100,
+        "mode": "snapshot"
+      }
+    },
+    "lmo_report_2025_job_openings_kootenay": {
+      "source": {
+        "type": "xlsx"
+      },
+      "output": "load/lmo_report_2025_job_openings_kootenay.csv",
+      "steps": [
+        ["csv_extract.php", "--range", "{range}"],
+        ["csv_null.php", "--loader", "{loader}"]
+      ],
+      "load": {
+        "file": "load/lmo_report_2025_job_openings_kootenay.load",
+        "order": 100,
+        "mode": "snapshot"
+      }
+    },
+    "lmo_report_2025_job_openings_cariboo": {
+      "source": {
+        "type": "xlsx"
+      },
+      "output": "load/lmo_report_2025_job_openings_cariboo.csv",
+      "steps": [
+        ["csv_extract.php", "--range", "{range}"],
+        ["csv_null.php", "--loader", "{loader}"]
+      ],
+      "load": {
+        "file": "load/lmo_report_2025_job_openings_cariboo.load",
+        "order": 100,
+        "mode": "snapshot"
+      }
+    },
+    "lmo_report_2025_job_openings_north_coast_nechako": {
+      "source": {
+        "type": "xlsx"
+      },
+      "output": "load/lmo_report_2025_job_openings_north_coast_nechako.csv",
+      "steps": [
+        ["csv_extract.php", "--range", "{range}"],
+        ["csv_null.php", "--loader", "{loader}"]
+      ],
+      "load": {
+        "file": "load/lmo_report_2025_job_openings_north_coast_nechako.load",
+        "order": 100,
+        "mode": "snapshot"
+      }
+    },
+    "lmo_report_2025_job_openings_northeast": {
+      "source": {
+        "type": "xlsx"
+      },
+      "output": "load/lmo_report_2025_job_openings_northeast.csv",
+      "steps": [
+        ["csv_extract.php", "--range", "{range}"],
+        ["csv_null.php", "--loader", "{loader}"]
+      ],
+      "load": {
+        "file": "load/lmo_report_2025_job_openings_northeast.load",
+        "order": 100,
+        "mode": "snapshot"
+      }
+    },
+    "lmo_report_2026_job_openings_10y": {
+      "source": {
+        "type": "xlsx"
+      },
+      "output": "load/lmo_report_2026_job_openings_10y.csv",
+      "steps": [
+        ["csv_extract.php", "--range", "{range}"],
+        ["csv_colkey.php", "--column", "3"],
+        ["csv_null.php", "--loader", "{loader}"]
+      ],
+      "load": {
+        "file": "load/lmo_report_2026_job_openings_10y.load",
+        "order": 100,
+        "mode": "snapshot"
+      }
+    },
+    "lmo_report_2026_job_openings_teers": {
+      "source": {
+        "type": "xlsx"
+      },
+      "output": "load/lmo_report_2026_job_openings_teers.csv",
+      "steps": [
+        ["csv_extract.php", "--range", "{range}"],
+        ["csv_null.php", "--loader", "{loader}"]
+      ],
+      "load": {
+        "file": "load/lmo_report_2026_job_openings_teers.load",
+        "order": 100,
+        "mode": "snapshot"
+      }
+    },
+    "lmo_report_2026_job_openings_industries": {
+      "source": {
+        "type": "xlsx"
+      },
+      "prepare_requires": ["industries"],
+      "output": "load/lmo_report_2026_job_openings_industries.csv",
+      "steps": [
+        ["csv_extract.php", "--range", "{range}"],
+        ["csv_colkey.php", "--column", "3", "--industries"],
+        ["csv_null.php", "--loader", "{loader}"]
+      ],
+      "load": {
+        "file": "load/lmo_report_2026_job_openings_industries.load",
+        "order": 100,
+        "mode": "snapshot"
+      }
+    },
+    "lmo_report_2026_job_openings_broad_categories": {
+      "source": {
+        "type": "xlsx"
+      },
+      "output": "load/lmo_report_2026_job_openings_broad_categories.csv",
+      "steps": [
+        ["csv_extract.php", "--range", "{range}"],
+        ["csv_trimpad.php", "--column", "3:L:0:0:#"],
+        ["csv_null.php", "--loader", "{loader}"]
+      ],
+      "load": {
+        "file": "load/lmo_report_2026_job_openings_broad_categories.load",
+        "order": 100,
+        "mode": "snapshot"
+      }
+    },
+    "lmo_report_2026_job_openings_regions": {
+      "source": {
+        "type": "xlsx"
+      },
+      "output": "load/lmo_report_2026_job_openings_regions.csv",
+      "steps": [
+        ["csv_extract.php", "--range", "{range}"],
+        ["csv_colkey.php", "--column", "3", "--regions"],
+        ["csv_null.php", "--loader", "{loader}"]
+      ],
+      "load": {
+        "file": "load/lmo_report_2026_job_openings_regions.load",
+        "order": 100,
+        "mode": "snapshot"
+      }
+    },
+    "lmo_report_2026_job_openings_vancouver_island_coast": {
+      "source": {
+        "type": "xlsx"
+      },
+      "output": "load/lmo_report_2026_job_openings_vancouver_island_coast.csv",
+      "steps": [
+        ["csv_extract.php", "--range", "{range}"],
+        ["csv_null.php", "--loader", "{loader}"]
+      ],
+      "load": {
+        "file": "load/lmo_report_2026_job_openings_vancouver_island_coast.load",
+        "order": 100,
+        "mode": "snapshot"
+      }
+    },
+    "lmo_report_2026_job_openings_mainland_southwest": {
+      "source": {
+        "type": "xlsx"
+      },
+      "output": "load/lmo_report_2026_job_openings_mainland_southwest.csv",
+      "steps": [
+        ["csv_extract.php", "--range", "{range}"],
+        ["csv_null.php", "--loader", "{loader}"]
+      ],
+      "load": {
+        "file": "load/lmo_report_2026_job_openings_mainland_southwest.load",
+        "order": 100,
+        "mode": "snapshot"
+      }
+    },
+    "lmo_report_2026_job_openings_thompson_okanagan": {
+      "source": {
+        "type": "xlsx"
+      },
+      "output": "load/lmo_report_2026_job_openings_thompson_okanagan.csv",
+      "steps": [
+        ["csv_extract.php", "--range", "{range}"],
+        ["csv_null.php", "--loader", "{loader}"]
+      ],
+      "load": {
+        "file": "load/lmo_report_2026_job_openings_thompson_okanagan.load",
+        "order": 100,
+        "mode": "snapshot"
+      }
+    },
+    "lmo_report_2026_job_openings_kootenay": {
+      "source": {
+        "type": "xlsx"
+      },
+      "output": "load/lmo_report_2026_job_openings_kootenay.csv",
+      "steps": [
+        ["csv_extract.php", "--range", "{range}"],
+        ["csv_null.php", "--loader", "{loader}"]
+      ],
+      "load": {
+        "file": "load/lmo_report_2026_job_openings_kootenay.load",
+        "order": 100,
+        "mode": "snapshot"
+      }
+    },
+    "lmo_report_2026_job_openings_cariboo": {
+      "source": {
+        "type": "xlsx"
+      },
+      "output": "load/lmo_report_2026_job_openings_cariboo.csv",
+      "steps": [
+        ["csv_extract.php", "--range", "{range}"],
+        ["csv_null.php", "--loader", "{loader}"]
+      ],
+      "load": {
+        "file": "load/lmo_report_2026_job_openings_cariboo.load",
+        "order": 100,
+        "mode": "snapshot"
+      }
+    },
+    "lmo_report_2026_job_openings_north_coast_nechako": {
+      "source": {
+        "type": "xlsx"
+      },
+      "output": "load/lmo_report_2026_job_openings_north_coast_nechako.csv",
+      "steps": [
+        ["csv_extract.php", "--range", "{range}"],
+        ["csv_null.php", "--loader", "{loader}"]
+      ],
+      "load": {
+        "file": "load/lmo_report_2026_job_openings_north_coast_nechako.load",
+        "order": 100,
+        "mode": "snapshot"
+      }
+    },
+    "lmo_report_2026_job_openings_northeast": {
+      "source": {
+        "type": "xlsx"
+      },
+      "output": "load/lmo_report_2026_job_openings_northeast.csv",
+      "steps": [
+        ["csv_extract.php", "--range", "{range}"],
+        ["csv_null.php", "--loader", "{loader}"]
+      ],
+      "load": {
+        "file": "load/lmo_report_2026_job_openings_northeast.load",
+        "order": 100,
+        "mode": "snapshot"
+      }
+    },
+    "monthly_labour_market_updates": {
+      "source": {
+        "type": "xlsx"
+      },
+      "output": "load/updates/monthly_labour_market_updates_{year}_{month02}.csv",
+      "steps": [
+        ["csv_empty.php"],
+        ["monthly_labour_market_update.php", "{year}", "{month}"],
+        ["csv_null.php", "--loader", "{loader}", "--pad-missing"]
+      ],
+      "load": {
+        "file": "load/updates/monthly_labour_market_updates.load",
+        "order": 100,
+        "mode": "partition",
+        "table": "monthly_labour_market_updates",
+        "partition": {
+          "year": "{year}",
+          "month": "{month}"
+        }
+      }
+    }
+  }
+}

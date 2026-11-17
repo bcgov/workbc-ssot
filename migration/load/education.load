@@ -10,7 +10,7 @@ load csv
     target table education
     target columns
     (
-        noc text using (trim-hash noc),
+        noc,
         teer,
         teer_description
     )

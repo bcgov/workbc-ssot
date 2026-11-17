@@ -2,6 +2,19 @@ load csv
     from 'industry_outlook.csv'
     (
         industry,
+        openings [null if '__SSOT_NULL__'],
+        share_total_employment_pct_first [null if '__SSOT_NULL__'],
+        share_total_employment_pct_second [null if '__SSOT_NULL__'],
+        share_total_employment_pct_third [null if '__SSOT_NULL__'],
+        annual_employment_growth_rate_pct_first5y [null if '__SSOT_NULL__'],
+        annual_employment_growth_rate_pct_second5y [null if '__SSOT_NULL__'],
+        annual_employment_growth_rate_pct_10y [null if '__SSOT_NULL__']
+    )
+    into postgresql:///ssot
+    target table industry_outlook
+    target columns
+    (
+        industry,
         openings,
         share_total_employment_pct_first,
         share_total_employment_pct_second,
@@ -9,19 +22,6 @@ load csv
         annual_employment_growth_rate_pct_first5y,
         annual_employment_growth_rate_pct_second5y,
         annual_employment_growth_rate_pct_10y
-    )
-    into postgresql:///ssot
-    target table industry_outlook
-    target columns
-    (
-        industry,
-        openings int using (not-available-to-null openings),
-        share_total_employment_pct_first numeric using (not-available-to-null share_total_employment_pct_first),
-        share_total_employment_pct_second numeric using (not-available-to-null share_total_employment_pct_second),
-        share_total_employment_pct_third numeric using (not-available-to-null share_total_employment_pct_third),
-        annual_employment_growth_rate_pct_first5y numeric using (not-available-to-null annual_employment_growth_rate_pct_first5y),
-        annual_employment_growth_rate_pct_second5y numeric using (not-available-to-null annual_employment_growth_rate_pct_second5y),
-        annual_employment_growth_rate_pct_10y numeric using (not-available-to-null annual_employment_growth_rate_pct_10y)
     )
     with
         fields optionally enclosed by '"',

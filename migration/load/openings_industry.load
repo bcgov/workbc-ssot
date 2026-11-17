@@ -4,16 +4,16 @@ load csv
         industry,
         noc,
         description,
-        openings
+        openings [null if '__SSOT_NULL__']
     )
     into postgresql:///ssot
     target table openings_industry
     target columns
     (
         industry,
-        noc text using (trim-hash noc),
+        noc,
         description,
-        openings int using (not-available-to-null openings)
+        openings
     )
     with
         fields optionally enclosed by '"',

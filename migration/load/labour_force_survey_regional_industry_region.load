@@ -2,6 +2,48 @@ load csv
     from 'labour_force_survey_regional_industry_region.csv'
     (
         region,
+        accommodation_food_services_num [null if '__SSOT_NULL__'],
+        accommodation_food_services [null if '__SSOT_NULL__'],
+        agriculture_fishing_num [null if '__SSOT_NULL__'],
+        agriculture_fishing [null if '__SSOT_NULL__'],
+        business_building_other_support_services_num [null if '__SSOT_NULL__'],
+        business_building_other_support_services [null if '__SSOT_NULL__'],
+        construction_num [null if '__SSOT_NULL__'],
+        construction [null if '__SSOT_NULL__'],
+        educational_services_num [null if '__SSOT_NULL__'],
+        educational_services [null if '__SSOT_NULL__'],
+        finance_insurance_real_estate_num [null if '__SSOT_NULL__'],
+        finance_insurance_real_estate [null if '__SSOT_NULL__'],
+        forestry_logging_support_activities_num [null if '__SSOT_NULL__'],
+        forestry_logging_support_activities [null if '__SSOT_NULL__'],
+        health_care_social_assistance_num [null if '__SSOT_NULL__'],
+        health_care_social_assistance [null if '__SSOT_NULL__'],
+        information_culture_recreation_num [null if '__SSOT_NULL__'],
+        information_culture_recreation [null if '__SSOT_NULL__'],
+        manufacturing_num [null if '__SSOT_NULL__'],
+        manufacturing [null if '__SSOT_NULL__'],
+        mining_oil_gas_extraction_num [null if '__SSOT_NULL__'],
+        mining_oil_gas_extraction [null if '__SSOT_NULL__'],
+        professional_scientific_technical_services_num [null if '__SSOT_NULL__'],
+        professional_scientific_technical_services [null if '__SSOT_NULL__'],
+        public_administration_num [null if '__SSOT_NULL__'],
+        public_administration [null if '__SSOT_NULL__'],
+        other_private_services_num [null if '__SSOT_NULL__'],
+        other_private_services [null if '__SSOT_NULL__'],
+        retail_trade_num [null if '__SSOT_NULL__'],
+        retail_trade [null if '__SSOT_NULL__'],
+        transportation_warehousing_num [null if '__SSOT_NULL__'],
+        transportation_warehousing [null if '__SSOT_NULL__'],
+        utilities_num [null if '__SSOT_NULL__'],
+        utilities [null if '__SSOT_NULL__'],
+        wholesale_trade_num [null if '__SSOT_NULL__'],
+        wholesale_trade [null if '__SSOT_NULL__']
+    )
+    into postgresql:///ssot
+    target table labour_force_survey_regional_industry_region
+    target columns
+    (
+        region,
         accommodation_food_services_num,
         accommodation_food_services,
         agriculture_fishing_num,
@@ -38,48 +80,6 @@ load csv
         utilities,
         wholesale_trade_num,
         wholesale_trade
-    )
-    into postgresql:///ssot
-    target table labour_force_survey_regional_industry_region
-    target columns
-    (
-        region,
-        accommodation_food_services_num int using (not-available-to-null accommodation_food_services_num),
-        accommodation_food_services numeric using (not-available-to-null accommodation_food_services),
-        agriculture_fishing_num int using (not-available-to-null agriculture_fishing_num),
-        agriculture_fishing numeric using (not-available-to-null agriculture_fishing),
-        business_building_other_support_services_num int using (not-available-to-null business_building_other_support_services_num),
-        business_building_other_support_services numeric using (not-available-to-null business_building_other_support_services),
-        construction_num int using (not-available-to-null construction_num),
-        construction numeric using (not-available-to-null construction),
-        educational_services_num int using (not-available-to-null educational_services_num),
-        educational_services numeric using (not-available-to-null educational_services),
-        finance_insurance_real_estate_num int using (not-available-to-null finance_insurance_real_estate_num),
-        finance_insurance_real_estate numeric using (not-available-to-null finance_insurance_real_estate),
-        forestry_logging_support_activities_num int using (not-available-to-null forestry_logging_support_activities_num),
-        forestry_logging_support_activities numeric using (not-available-to-null forestry_logging_support_activities),
-        health_care_social_assistance_num int using (not-available-to-null health_care_social_assistance_num),
-        health_care_social_assistance numeric using (not-available-to-null health_care_social_assistance),
-        information_culture_recreation_num int using (not-available-to-null information_culture_recreation_num),
-        information_culture_recreation numeric using (not-available-to-null information_culture_recreation),
-        manufacturing_num int using (not-available-to-null manufacturing_num),
-        manufacturing numeric using (not-available-to-null manufacturing),
-        mining_oil_gas_extraction_num int using (not-available-to-null mining_oil_gas_extraction_num),
-        mining_oil_gas_extraction numeric using (not-available-to-null mining_oil_gas_extraction),
-        professional_scientific_technical_services_num int using (not-available-to-null professional_scientific_technical_services_num),
-        professional_scientific_technical_services numeric using (not-available-to-null professional_scientific_technical_services),
-        public_administration_num int using (not-available-to-null public_administration_num),
-        public_administration numeric using (not-available-to-null public_administration),
-        other_private_services_num int using (not-available-to-null other_private_services_num),
-        other_private_services numeric using (not-available-to-null other_private_services),
-        retail_trade_num int using (not-available-to-null retail_trade_num),
-        retail_trade numeric using (not-available-to-null retail_trade),
-        transportation_warehousing_num int using (not-available-to-null transportation_warehousing_num),
-        transportation_warehousing numeric using (not-available-to-null transportation_warehousing),
-        utilities_num int using (not-available-to-null utilities_num),
-        utilities numeric using (not-available-to-null utilities),
-        wholesale_trade_num int using (not-available-to-null wholesale_trade_num),
-        wholesale_trade numeric using (not-available-to-null wholesale_trade)
     )
     with
         fields optionally enclosed by '"',

@@ -3,6 +3,20 @@ load csv
     (
         noc,
         occupation_title,
+        esdc_wage_rate_low [null if '__SSOT_NULL__'],
+        esdc_wage_rate_median [null if '__SSOT_NULL__'],
+        esdc_wage_rate_high [null if '__SSOT_NULL__'],
+        hours_week [null if '__SSOT_NULL__'],
+        calculated_median_annual_salary_old [null if '__SSOT_NULL__'],
+        calculated_median_annual_salary [null if '__SSOT_NULL__'],
+        source_information [null if '__SSOT_NULL__']
+    )
+    into postgresql:///ssot
+    target table wages
+    target columns
+    (
+        noc,
+        occupation_title,
         esdc_wage_rate_low,
         esdc_wage_rate_median,
         esdc_wage_rate_high,
@@ -10,20 +24,6 @@ load csv
         calculated_median_annual_salary_old,
         calculated_median_annual_salary,
         source_information
-    )
-    into postgresql:///ssot
-    target table wages
-    target columns
-    (
-        noc text using (trim-hash noc),
-        occupation_title,
-        esdc_wage_rate_low numeric using (not-available-to-null esdc_wage_rate_low),
-        esdc_wage_rate_median numeric using (not-available-to-null esdc_wage_rate_median),
-        esdc_wage_rate_high numeric using (not-available-to-null esdc_wage_rate_high),
-        hours_week numeric using (not-available-to-null hours_week),
-        calculated_median_annual_salary_old numeric using (not-available-to-null calculated_median_annual_salary_old),
-        calculated_median_annual_salary numeric using (not-available-to-null calculated_median_annual_salary),
-        source_information text using (not-available-to-null source_information)
     )
     with
         fields optionally enclosed by '"',

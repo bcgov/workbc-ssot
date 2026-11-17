@@ -15,10 +15,10 @@ load csv
     target table career_transition_opportunities
     target columns
     (
-        noc text using (trim-hash noc),
+        noc,
         title,
         teer,
-        option_noc text using (trim-hash option_noc),
+        option_noc,
         option_title,
         option_teer,
         similarity,

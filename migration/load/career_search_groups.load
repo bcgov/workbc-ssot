@@ -9,7 +9,7 @@ load csv
     target table career_search_groups
     target columns
     (
-        noc text using (trim-hash noc),
+        noc,
         occupational_category,
         region
     )

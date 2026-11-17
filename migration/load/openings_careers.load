@@ -3,6 +3,28 @@ load csv
     (
         noc,
         description,
+        industry_1_name [null if '__SSOT_NULL__'],
+        industry_1_percent [null if '__SSOT_NULL__'],
+        industry_1_openings [null if '__SSOT_NULL__'],
+        industry_2_name [null if '__SSOT_NULL__'],
+        industry_2_percent [null if '__SSOT_NULL__'],
+        industry_2_openings [null if '__SSOT_NULL__'],
+        industry_3_name [null if '__SSOT_NULL__'],
+        industry_3_percent [null if '__SSOT_NULL__'],
+        industry_3_openings [null if '__SSOT_NULL__'],
+        industry_4_name [null if '__SSOT_NULL__'],
+        industry_4_percent [null if '__SSOT_NULL__'],
+        industry_4_openings [null if '__SSOT_NULL__'],
+        industry_5_name [null if '__SSOT_NULL__'],
+        industry_5_percent [null if '__SSOT_NULL__'],
+        industry_5_openings [null if '__SSOT_NULL__']
+    )
+    into postgresql:///ssot
+    target table openings_careers
+    target columns
+    (
+        noc,
+        description,
         industry_1_name,
         industry_1_percent,
         industry_1_openings,
@@ -18,28 +40,6 @@ load csv
         industry_5_name,
         industry_5_percent,
         industry_5_openings
-    )
-    into postgresql:///ssot
-    target table openings_careers
-    target columns
-    (
-        noc text using (trim-hash noc),
-        description,
-        industry_1_name text using (not-available-to-null industry_1_name),
-        industry_1_percent numeric using (not-available-to-null industry_1_percent),
-        industry_1_openings int using (not-available-to-null industry_1_openings),
-        industry_2_name text using (not-available-to-null industry_2_name),
-        industry_2_percent numeric using (not-available-to-null industry_2_percent),
-        industry_2_openings int using (not-available-to-null industry_2_openings),
-        industry_3_name text using (not-available-to-null industry_3_name),
-        industry_3_percent numeric using (not-available-to-null industry_3_percent),
-        industry_3_openings int using (not-available-to-null industry_3_openings),
-        industry_4_name text using (not-available-to-null industry_4_name),
-        industry_4_percent numeric using (not-available-to-null industry_4_percent),
-        industry_4_openings int using (not-available-to-null industry_4_openings),
-        industry_5_name text using (not-available-to-null industry_5_name),
-        industry_5_percent numeric using (not-available-to-null industry_5_percent),
-        industry_5_openings int using (not-available-to-null industry_5_openings)
     )
     with
         fields optionally enclosed by '"',
