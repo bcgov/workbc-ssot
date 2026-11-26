@@ -92149,7 +92149,7 @@ monthly_labour_market_updates	Labour Force Survey (monthly, seasonally adjusted)
 monthly_labour_market_updates	Labour Force Survey (monthly, seasonally adjusted)	2026-06-01 08:00:00+00	\N	WorkBC LMS June_2026	Sheet3	\N	\N	2026-07-16 11:02:00+00
 monthly_labour_market_updates	Labour Force Survey (monthly, seasonally adjusted)	2026-07-01 08:00:00+00	\N	WorkBC LMS July_2026	Sheet3	\N	\N	2026-09-10 15:56:00+00
 monthly_labour_market_updates	Labour Force Survey (monthly, seasonally adjusted)	2026-08-01 08:00:00+00	\N	WorkBC LMS Aug_2026	Sheet3	\N	\N	2026-09-10 15:59:00+00
-monthly_labour_market_updates	Labour Force Survey (monthly, seasonally adjusted)	2026-10-01 08:00:00+00	\N	WorkBC LMS Oct_2026	Sheet3	\N	\N	2026-11-26 09:40:00+00
+monthly_labour_market_updates	Labour Force Survey (monthly, seasonally adjusted)	2026-10-01 08:00:00+00	\N	WorkBC LMS Oct_2026	Sheet3	\N	\N	2026-11-26 10:57:00+00
 \.
 
 
