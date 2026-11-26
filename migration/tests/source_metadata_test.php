@@ -57,6 +57,22 @@ metadata_check(count($rows) === 5 && array_slice($rows, 0, 3) === array_slice(me
   && array_column(array_slice($rows, 3), 'filename') === ['annual', 'annual']
   && array_column(array_slice($rows, 3), 'range') === ['A2-B3', 'A2-C3'] && $rows[3]['author'] === 'Office',
   'snapshot workbook updates every dataset, normalizes ranges and preserves author');
+$resolved = array_replace($annual, ['datasets' => [
+  ['endpoint' => 'regional', 'sheet' => 'Regional', 'range' => 'B2:C4', 'match' => 'endpoint'],
+]]);
+$registered = metadata_rows(register_sources($csv, 'annual.xlsx', $resolved));
+$range = end($registered)['range'];
+$process = proc_open(['php', dirname(__DIR__) . '/src/csv_extract.php', '--range', $range],
+  [0 => ['pipe', 'r'], 1 => ['pipe', 'w'], 2 => ['pipe', 'w']], $pipes);
+fwrite($pipes[0], "a,b,c\n1,2,3\n4,5,6\n7,8,9\n10,11,12\n");
+fclose($pipes[0]);
+$output = stream_get_contents($pipes[1]);
+$error = stream_get_contents($pipes[2]);
+fclose($pipes[1]);
+fclose($pipes[2]);
+$status = proc_close($process);
+metadata_check($range === 'B2-C4' && $status === 0 && $output === "2,3\n5,6\n8,9\n",
+  "resolved range survives registration and extracts the same rows: $error");
 $rows = metadata_rows(register_sources($csv, 'march.XLSX', array_replace($upload, ['month' => 3])));
 metadata_check(count($rows) === 6 && $rows[5]['period'] === '2026/03/01 08:00' && $rows[5]['filename'] === 'march',
   'new month is appended with a case-insensitive XLSX extension');

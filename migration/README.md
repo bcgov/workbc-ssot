@@ -172,6 +172,8 @@ header and column order:
 - `sheet` is the exact worksheet title.
 - `range` uses inclusive spreadsheet coordinates. Both `A2-B3` and `A2:B3`
   are accepted. Use `;` for disjoint rectangles, e.g. `A2-B3;A6-B8`.
+  Drupal resolves any open-ended upload range to a closed range before sending
+  source metadata; open-ended spreadsheet ranges are not accepted here.
 - Empty `datapoint` means dataset-level provenance. Nonempty values describe
   individual datapoints and do not create ingestion jobs.
 - `date` records the update/delivery date; `period` records validity.
